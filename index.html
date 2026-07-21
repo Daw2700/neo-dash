@@ -510,6 +510,11 @@ function rDecisions(){return`
     <div class="dline"><span class="k">EVIDENCE</span><span class="mono" style="font-size:12px">${esc(d.evidence)}</span></div>
     <div class="dline"><span class="k">YES MEANS</span><span class="warn">${esc(d.what_yes_means)}${golden?` <span class="iico" data-g="holdout">i</span>`:""}</span></div>
     ${golden?`<div class="dim" style="font-size:11.5px;margin-top:6px">Nothing is lost by waiting — the bundle is immutable on the ledger. Review when ready.</div>`:""}
+    ${d.recap||d.steps?`<details class="bd"><summary>what this will do</summary>
+      ${d.recap?`<div class="dline" style="margin-top:8px"><span class="k">RECAP</span><span>${esc(d.recap)}</span></div>`:""}
+      ${d.steps&&d.steps.length?`<div class="dline" style="margin-top:8px"><span class="k">STEP BY STEP</span><span></span></div>
+      <ol style="margin:4px 0 0 18px;padding:0;font-size:12.5px;line-height:1.5;display:flex;flex-direction:column;gap:6px">${d.steps.map(s=>`<li>${esc(s)}</li>`).join("")}</ol>`:""}
+    </details>`:""}
     ${(()=>{const ob=(window.OUTBOX||[]).find(x=>x.id===d.id);
       return ob?`<div class="dbtns"><span class="chip ${ob.action==="approve"?"g":"y"}" style="font-size:11px;padding:6px 10px">${ob.action==="approve"?"✓ APPROVED":"✕ DENIED"} — queued for engine${ob.posted?"":" · offline, will retry"}</span><span class="btn" onclick="undoDecision('${d.id}')">undo</span></div>`
       :`<div class="dbtns"><span class="btn approve" onclick="toggleNote('${d.id}')">Approve…</span><span class="btn veto" onclick="sendDecision('${d.id}','deny')">Deny</span></div>

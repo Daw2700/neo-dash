@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-21T22:10:52Z",
+  "stamp": "2026-07-21T22:18:06Z",
   "stale_after_min": 30,
   "status": "engine awaiting GO",
   "engine_state": "idle",
@@ -1326,6 +1326,15 @@
    "recommendation": "DEMOTE both \u2014 recommended out; your veto pending",
    "evidence": "lunch-compression overlaps monday-family weeks; bigday-fade PF 1.08 marginal at n=202",
    "what_yes_means": "Both leave the candidate pool (reversible via ledger)",
+   "recap": "Moves lunch-break and bigday-fade out of the candidate pool. They stop being considered for bundles and future books. Nothing is deleted.",
+   "steps": [
+    "DEMOTED verdicts are appended to the ledger for both strategies (append-only \u2014 history stays intact)",
+    "Their leaderboard tier drops from candidate to demoted; rows dim",
+    "They are excluded from the bundle pool and every future sizing run",
+    "Trade logs and all past results are kept on disk untouched",
+    "If new evidence ever clears them, a fresh ledger entry can reinstate \u2014 nothing is irreversible",
+    "Dashboard republishes on the next cycle"
+   ],
    "staged": "2026-07-20T00:00:00Z"
   },
   {
@@ -1336,6 +1345,14 @@
    "recommendation": "Verify $4k drawdown, split and consistency rules on their site",
    "evidence": "Apex blocks bots \u2014 needs your eyes (or claude-in-chrome with you present)",
    "what_yes_means": "Confirms the ~18-account Apex leg of the $10k route is real",
+   "recap": "You log into Apex yourself and confirm their real rules. The engine then replaces every ASSUMED Apex number on this site with verified ones.",
+   "steps": [
+    "You check on Apex's site: 150K trailing threshold amount, whether trailing is intraday or end-of-day, payout consistency %, profit split, and max accounts allowed",
+    "Send the numbers back via the Approve box (or any chat with Claude)",
+    "Engine updates its Apex-150K account model to the verified rules",
+    "All Apex sizings, bundles, and first-payout estimates re-run automatically",
+    "ASSUMED chips disappear; the 18-account leg of the $10k route becomes real math"
+   ],
    "staged": "2026-07-20T00:00:00Z"
   },
   {
@@ -1346,6 +1363,14 @@
    "recommendation": "Repurpose as live slippage collector (its strategy is dead)",
    "evidence": "6a-neo300-real-honest: PF 1.078 on real data \u2014 below survival bar",
    "what_yes_means": "Bot keeps running but only to measure real fills vs sim",
+   "recap": "Keeps the Neo-300 paper bot alive but changes its job: measuring real fill prices against simulated ones. Its trading signals get ignored.",
+   "steps": [
+    "Bot keeps firing its usual paper orders \u2014 zero money at risk",
+    "Every fill is logged: actual paper fill price vs the bar-data assumption backtests use",
+    "The differences become a slippage dataset that hardens the cost model behind every sleeve's numbers",
+    "Once enough samples accumulate (~100+), the bot retires for good",
+    "If instead you Deny with 'retire', the bot shuts down now and we skip the slippage data"
+   ],
    "staged": "2026-07-20T00:00:00Z"
   }
  ],
