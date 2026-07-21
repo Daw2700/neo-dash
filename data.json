@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-21T22:59:12Z",
+  "stamp": "2026-07-21T23:06:18Z",
   "stale_after_min": 30,
-  "status": "d-neo300 approve applied \u2014 slippage collector built, awaiting GO to route paper orders",
+  "status": "applying your question",
   "engine_state": "ok",
-  "n_registered": 114,
-  "n_results": 189,
+  "n_registered": 115,
+  "n_results": 190,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-21T23:01:07.165441+00:00",
+   "hash": "33a11ddf",
+   "name": "qa-lunch-monday-overlap",
+   "status": "fail",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-21T20:03:03.321427+00:00",
    "hash": "f00f783b",
    "name": "sweep-2-grammar10k",
@@ -421,14 +429,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.095"
-  },
-  {
-   "t": "2026-07-21T19:50:31.450755+00:00",
-   "hash": "6e849cdb",
-   "name": "b10-mcl-goldman-roll",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.853"
   }
  ],
  "pipeline": {
@@ -498,7 +498,7 @@
    },
    {
     "date": "2026-07-21",
-    "trials": 11345
+    "trials": 11346
    }
   ]
  },
@@ -1319,24 +1319,33 @@
  },
  "decisions": [
   {
-   "id": "d-demotions",
+   "id": "d-demotions-r753",
    "kind": "demotion",
    "needs_attention": true,
-   "title": "Sign off: demote lunch-break + bigday-fade",
-   "recommendation": "DEMOTE both \u2014 recommended out; your veto pending",
-   "evidence": "lunch-compression overlaps monday-family weeks; bigday-fade PF 1.08 marginal at n=202",
+   "title": "Sign off: demote lunch-break + bigday-fade (overlap claim retracted)",
+   "recommendation": "DEMOTE both \u2014 lunch on failed MES replication, not on overlap; your veto pending",
+   "evidence": "lunch-break MES replication FAILED (PF 0.926, net -$3,278, n=1,357) + morning-control drift + 2022 concentration; bigday-fade t=0.42 at n=202, MES PF 1.008, ex-2020 MES net -$4,060. Overlap-with-monday evidence RETRACTED: weekly r=0.028, 50% sign agreement, combined maxDD -$1,794 < either sleeve alone.",
    "what_yes_means": "Both leave the candidate pool (reversible via ledger)",
-   "recap": "Moves lunch-break and bigday-fade out of the candidate pool. They stop being considered for bundles and future books. Nothing is deleted.",
-   "why": "Lunch-break makes its money in the same calendar weeks as the monday family \u2014 that's double-counting one edge, and the down-weeks lesson showed overlapping sleeves inflate a book's numbers while doubling its real risk. Bigday-fade's PF 1.08 at n=202 sits inside what pure luck produces at that trade count, and it failed mechanism controls. Keeping weak sleeves isn't neutral: they eat micro allocations and breach budget that stronger sleeves could use.",
+   "recap": "Moves lunch-break and bigday-fade out of the candidate pool. They stop being considered for bundles and future books. Nothing is deleted. The original overlap argument against lunch-break was tested and withdrawn \u2014 the demotion now rests only on its failed MES replication.",
+   "why": "Your question was right and it changed this card. I measured the overlap on dev-era data: lunch-break and monday-long share 137 weeks, but their weekly P&L correlation is 0.028, they agree in direction 50% of the time, and lunch made +$2,371 across the 60 weeks monday lost. Together their max drawdown is -$1,794 \u2014 smaller than lunch alone (-$3,048) or monday alone (-$2,354). That is diversification, not double-counting, so the overlap evidence is retracted. Overlap only ever matters as a book-risk argument \u2014 sleeves are sized off the book's drawdown, so sleeves that lose in the same weeks stack into one breach \u2014 and it does not apply here. What does still stand: lunch-break fails MES replication outright (PF 0.926, -$3,278 over 1,357 trades), its morning-window control kept a positive drift (so part of it is generic range-break momentum, not a lunch-specific mechanism), and $6,436 of its $10,603 came from 2022 with 2023 negative. Bigday-fade is untouched by the question: mean $10.05 on sd $337 at n=202 is t=0.42, MES PF 1.008, ex-2020 MES net -$4,060 \u2014 a 2020-crash artifact.",
    "steps": [
     "DEMOTED verdicts are appended to the ledger for both strategies (append-only \u2014 history stays intact)",
+    "The lunch-break verdict cites the failed MES replication, NOT overlap; the retracted overlap claim and its numbers (r=0.028, combined maxDD -$1,794) are recorded alongside it",
     "Their leaderboard tier drops from candidate to demoted; rows dim",
     "They are excluded from the bundle pool and every future sizing run",
     "Trade logs and all past results are kept on disk untouched",
-    "If new evidence ever clears them, a fresh ledger entry can reinstate \u2014 nothing is irreversible",
+    "If new evidence ever clears them \u2014 e.g. lunch-break replicating on a fresh instrument \u2014 a fresh ledger entry reinstates; nothing is irreversible",
     "Dashboard republishes on the next cycle"
    ],
-   "staged": "2026-07-20T00:00:00Z"
+   "qa": [
+    {
+     "q": "Why does it matter if it overlaps if it's its own strategy?",
+     "a": "You were right to push back \u2014 I measured it and the overlap claim does not hold. On the dev era (2022-03-01..2025-02-28) lunch-break and monday-long share 137 active weeks, but their weekly P&L correlation is r=0.028 and they agree on direction in only 50% of those weeks \u2014 a coin flip. Lunch actually made +$2,371 across the 60 weeks monday LOST money (avg +$40/wk, versus +$15/wk in monday's winning weeks). Run together, the book's max drawdown is -$1,794 \u2014 smaller than either sleeve alone (lunch -$3,048, monday -$2,354). Calendar overlap is not the same thing as edge overlap, and I have retracted that evidence line.\n\nWhy overlap matters at all, when it is real: a sleeve is sized off the BOOK's drawdown, not its own. Two sleeves that lose in the same weeks stack their losses into a single breach while the blended backtest still looks smooth \u2014 that was the down-weeks lesson. It is always a book-risk argument, never an argument that the strategy is invalid on its own. Here the numbers say these two are genuinely uncorrelated, so the argument does not apply.\n\nLunch-break's demotion still stands, on the reason that actually survives: it FAILED MES replication \u2014 PF 0.926, net -$3,278 over n=1,357, i.e. it loses money on the second instrument. Add the morning-window control that kept a positive drift (so part of it is generic range-break momentum, not a lunch-specific mechanism) and the 2022 concentration ($6,436 of $10,603 from 2022, with 2023 negative). Three independent strikes on the mechanism.\n\nBigday-fade is unchanged by your question: n=202, mean $10.05/trade on sd $337 \u2014 t=0.42, indistinguishable from zero; MES PF 1.008 and ex-2020 MES net -$4,060, so its edge is substantially a 2020-crash artifact.",
+     "q_t": "2026-07-21T22:27:38.853Z",
+     "t": "2026-07-21T23:02:01Z"
+    }
+   ],
+   "staged": "2026-07-21T23:02:01Z"
   },
   {
    "id": "d-apex-verify-numbers",
