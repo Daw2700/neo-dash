@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-21T23:06:22Z",
+  "stamp": "2026-07-21T23:20:44Z",
   "stale_after_min": 30,
-  "status": "applying your question",
+  "status": "scouting new ideas",
   "engine_state": "ok",
-  "n_registered": 115,
+  "n_registered": 116,
   "n_results": 190,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
@@ -335,6 +335,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-21T23:07:44.462198+00:00",
+   "hash": "b06a8ddd",
+   "name": "scout-11-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-21T23:01:07.165441+00:00",
    "hash": "33a11ddf",
    "name": "qa-lunch-monday-overlap",
@@ -421,22 +429,105 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.73"
-  },
-  {
-   "t": "2026-07-21T19:50:31.451921+00:00",
-   "hash": "67056ed5",
-   "name": "b10-fomc-cycle-even",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.095"
   }
  ],
  "pipeline": {
   "workers": [],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "crypto-european-hours-drift",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-weekend-insurance-roundtrip",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 3,
+    "idea": "perp-funding-clock-impulse",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 4,
+    "idea": "wti-settlement-window-reversal",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.24
+   },
+   {
+    "rank": 5,
+    "idea": "silver-london-to-comex-handoff",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.22
+   },
+   {
+    "rank": 6,
+    "idea": "wasde-overshoot-fade",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.2
+   },
+   {
+    "rank": 7,
+    "idea": "grain-halt-risk-transfer",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.18
+   },
+   {
+    "rank": 8,
+    "idea": "vol-target-unwind-continuation",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.15
+   },
+   {
+    "rank": 9,
+    "idea": "crypto-expiry-twap-unwind",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.12
+   },
+   {
+    "rank": 10,
+    "idea": "buyback-blackout-regime",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.1
+   }
+  ],
   "funnel": {
-   "idea": 0,
-   "registered": 1,
+   "idea": 10,
+   "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
