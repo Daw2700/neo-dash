@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-21T22:50:50Z",
+  "stamp": "2026-07-21T22:59:12Z",
   "stale_after_min": 30,
-  "status": "apex approve applied \u2014 awaiting Daniel's five Apex numbers",
+  "status": "d-neo300 approve applied \u2014 slippage collector built, awaiting GO to route paper orders",
   "engine_state": "ok",
   "n_registered": 114,
   "n_results": 189,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 2
+  "needs_attention_count": 3
  },
  "leaderboard": [
   {
@@ -1339,25 +1339,6 @@
    "staged": "2026-07-20T00:00:00Z"
   },
   {
-   "id": "d-neo300",
-   "kind": "cleanup",
-   "needs_attention": false,
-   "title": "Neo-300 paper bot: retire or repurpose",
-   "recommendation": "Repurpose as live slippage collector (its strategy is dead)",
-   "evidence": "6a-neo300-real-honest: PF 1.078 on real data \u2014 below survival bar",
-   "what_yes_means": "Bot keeps running but only to measure real fills vs sim",
-   "recap": "Keeps the Neo-300 paper bot alive but changes its job: measuring real fill prices against simulated ones. Its trading signals get ignored.",
-   "why": "Every dollar figure on this site assumes backtest fill prices are close to real fills. That assumption has never been measured \u2014 and it's the same fill-modeling blind spot that killed Morpheus. The bot already exists, runs free, and its strategy being dead doesn't matter for measuring slippage. A few weeks of real-fill samples either validates the cost model behind every sleeve or catches an error before real money does.",
-   "steps": [
-    "Bot keeps firing its usual paper orders \u2014 zero money at risk",
-    "Every fill is logged: actual paper fill price vs the bar-data assumption backtests use",
-    "The differences become a slippage dataset that hardens the cost model behind every sleeve's numbers",
-    "Once enough samples accumulate (~100+), the bot retires for good",
-    "If instead you Deny with 'retire', the bot shuts down now and we skip the slippage data"
-   ],
-   "staged": "2026-07-20T00:00:00Z"
-  },
-  {
    "id": "d-apex-verify-numbers",
    "kind": "funding",
    "needs_attention": true,
@@ -1383,6 +1364,34 @@
     }
    ],
    "staged": "2026-07-21T22:45:08Z"
+  },
+  {
+   "id": "d-neo300-enable-paper",
+   "kind": "cleanup",
+   "needs_attention": true,
+   "title": "Slippage collector is built \u2014 but the bot places no orders",
+   "recommendation": "Give the GO (and Tradovate demo creds) to route paper orders, or the sample count stays 0",
+   "evidence": "Repurpose approved 2026-07-21 and the machinery is live: scheduler/slippage_collector.py logs the backtest-assumed fill prices at arm and pairs them with actual broker fills at flatten (scheduler/slippage.jsonl). Hand-verified on synthetic fills. BUT scheduler/.env has MNQ_LIVE=0 and all four TRADOVATE_* credentials blank, so the bot sends nothing and there is no actual fill to measure. Separately, the 09:30-09:45 OR levels are not wired (Tradovate market data is a WebSocket feed); arming needs ORB_OR_HI/ORB_OR_LO set by hand.",
+   "what_yes_means": "Paper orders start flowing on the Tradovate DEMO account and real fill samples accumulate",
+   "recap": "The measuring machinery is finished and hooked into the bot. It just has nothing to measure yet: the bot is in notify-only mode with no broker login, so it never actually places the paper orders whose fills we wanted to compare.",
+   "why": "The whole point of approving the repurpose was to test the assumption that backtest fills are close to real fills. A collector that logs 'no broker' every day tests nothing. Rather than flip the bot to order-sending mode on my own \u2014 your standing order is that no paper or live routing starts without your GO \u2014 the engine stops here and asks. Two things are missing: your GO plus Tradovate demo credentials, and a way to get the opening-range levels to the bot (either wire the market-data feed or paste the two numbers daily).",
+   "steps": [
+    "You approve and put Tradovate DEMO credentials in scheduler/.env (TRADOVATE_USER/PASS/CID/SEC, TRADOVATE_DEMO=1)",
+    "Engine runs orb_intraday_bot.py --test-connection first (auth + account lookup, no orders placed)",
+    "Only if that passes: MNQ_LIVE=1, so the bot sends its usual paper orders to the demo account",
+    "Each arm freezes the assumed fill prices; each flatten pulls the actual fills and logs the difference",
+    "At ~100 samples the bot retires for good and the measured slippage replaces the assumed cost model",
+    "Deny instead and the bot shuts down now with 0 slippage samples collected"
+   ],
+   "qa": [
+    {
+     "q": "Approve: Neo-300 paper bot \u2014 retire or repurpose as slippage collector",
+     "a": "Approved by Daniel 2026-07-21. Repurpose executed: the bot's strategy is flagged dead and its signals are no longer to be acted on; slippage_collector.py is built, hand-verified and wired into arm/flatten. Blocker found on execution: MNQ_LIVE=0 and no Tradovate credentials, so 0 fills can be observed. This card holds for the GO to route paper orders.",
+     "t": "2026-07-21T22:54:16Z",
+     "q_t": "2026-07-20T00:00:00Z"
+    }
+   ],
+   "staged": "2026-07-21T22:54:16Z"
   }
  ],
  "roadmap": {
