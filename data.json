@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-21T23:20:44Z",
+  "stamp": "2026-07-21T23:28:23Z",
   "stale_after_min": 30,
-  "status": "scouting new ideas",
+  "status": "testing crypto-european-hours-drift",
   "engine_state": "ok",
-  "n_registered": 116,
-  "n_results": 190,
+  "n_registered": 117,
+  "n_results": 191,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-21T23:24:05.564420+00:00",
+   "hash": "04a0bea6",
+   "name": "crypto-european-hours-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.051"
+  },
+  {
    "t": "2026-07-21T23:07:44.462198+00:00",
    "hash": "b06a8ddd",
    "name": "scout-11-screen",
@@ -421,28 +429,11 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.463"
-  },
-  {
-   "t": "2026-07-21T19:50:31.452906+00:00",
-   "hash": "d5c4c238",
-   "name": "b10-zn-monthend-duration",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.73"
   }
  ],
  "pipeline": {
   "workers": [],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "crypto-european-hours-drift",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 2,
     "idea": "mcl-weekend-insurance-roundtrip",
@@ -526,7 +517,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
@@ -589,7 +580,7 @@
    },
    {
     "date": "2026-07-21",
-    "trials": 11346
+    "trials": 11347
    }
   ]
  },
@@ -598,8 +589,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 44,
-   "n_killed": 23,
+   "n_tested": 45,
+   "n_killed": 24,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
