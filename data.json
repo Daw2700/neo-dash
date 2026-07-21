@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-21T22:40:50Z",
+  "stamp": "2026-07-21T22:50:50Z",
   "stale_after_min": 30,
-  "status": "engine awaiting GO",
-  "engine_state": "idle",
+  "status": "apex approve applied \u2014 awaiting Daniel's five Apex numbers",
+  "engine_state": "ok",
   "n_registered": 114,
   "n_results": 189,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 1
+  "needs_attention_count": 2
  },
  "leaderboard": [
   {
@@ -1339,25 +1339,6 @@
    "staged": "2026-07-20T00:00:00Z"
   },
   {
-   "id": "d-apex-verify",
-   "kind": "funding",
-   "needs_attention": false,
-   "title": "Apex account verification before any funding",
-   "recommendation": "Verify $4k drawdown, split and consistency rules on their site",
-   "evidence": "Apex blocks bots \u2014 needs your eyes (or claude-in-chrome with you present)",
-   "what_yes_means": "Confirms the ~18-account Apex leg of the $10k route is real",
-   "recap": "You log into Apex yourself and confirm their real rules. The engine then replaces every ASSUMED Apex number on this site with verified ones.",
-   "why": "18 of the 23 accounts in the $10k route are Apex \u2014 nearly every top bundle on this site leans on assumed Apex rules. If the real trailing drawdown is intraday instead of end-of-day, or the payout caps differ, the survival and payout math changes materially. Verifying costs you ten minutes; funding thousands of dollars of eval fees on unverified rules is the expensive way to find out.",
-   "steps": [
-    "You check on Apex's site: 150K trailing threshold amount, whether trailing is intraday or end-of-day, payout consistency %, profit split, and max accounts allowed",
-    "Send the numbers back via the Approve box (or any chat with Claude)",
-    "Engine updates its Apex-150K account model to the verified rules",
-    "All Apex sizings, bundles, and first-payout estimates re-run automatically",
-    "ASSUMED chips disappear; the 18-account leg of the $10k route becomes real math"
-   ],
-   "staged": "2026-07-20T00:00:00Z"
-  },
-  {
    "id": "d-neo300",
    "kind": "cleanup",
    "needs_attention": false,
@@ -1375,6 +1356,33 @@
     "If instead you Deny with 'retire', the bot shuts down now and we skip the slippage data"
    ],
    "staged": "2026-07-20T00:00:00Z"
+  },
+  {
+   "id": "d-apex-verify-numbers",
+   "kind": "funding",
+   "needs_attention": true,
+   "title": "Apex verification APPROVED \u2014 paste the five numbers",
+   "recommendation": "Send the 5 verified Apex-150K values; the engine cannot read Apex (bot-blocked)",
+   "evidence": "Approved 2026-07-21. No numbers came with the approval, so the Apex-150K model is still ASSUMED: start 150,000 / target 159,000 / EOD trailing buffer 4,000 / floor freezes at 150,000 (114_apex_sim.py). Profit split, consistency % and max-accounts are not modelled at all \u2014 there is no apex150 plan in gauntlet/account.py.",
+   "what_yes_means": "Numbers land -> engine builds a VERIFIED apex150 plan and re-runs all Apex sizings",
+   "recap": "You said yes to verifying Apex. The engine cannot open Apex's site itself, so it is holding here until you paste the five values from your own login.",
+   "why": "Approving the check does not change any math on its own \u2014 every Apex number on this site is still the assumption set from 114_apex_sim.py, and the split / consistency / max-accounts rules were never modelled. 18 of the 23 accounts in the $10k route depend on those values. Rather than silently promote assumptions to 'verified', the engine keeps one open card until the real numbers arrive.",
+   "steps": [
+    "You read off Apex's site, for the 150K account: (1) trailing threshold amount in $, (2) whether trailing is intraday or end-of-day, (3) payout consistency % rule, (4) profit split %, (5) max accounts allowed per person",
+    "Paste those five values into the Approve box on this card",
+    "Engine adds a verified 'apex150' plan to gauntlet/account.py PLANS using exactly those rules",
+    "All Apex sizings, bundles and first-payout estimates re-run against the verified plan",
+    "ASSUMED chips are removed only for the fields you supply; anything skipped stays flagged ASSUMED"
+   ],
+   "qa": [
+    {
+     "q": "Approve: Apex account verification before any funding",
+     "a": "Approved by Daniel 2026-07-21. Approval recorded in ledger.jsonl; no rule values were included, so no Apex number was changed. Card replaced with this one, which holds until the five values arrive.",
+     "t": "2026-07-21T22:45:08Z",
+     "q_t": "2026-07-20T00:00:00Z"
+    }
+   ],
+   "staged": "2026-07-21T22:45:08Z"
   }
  ],
  "roadmap": {
