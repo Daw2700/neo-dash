@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-21T23:47:21Z",
+  "stamp": "2026-07-21T23:53:24Z",
   "stale_after_min": 30,
-  "status": "testing wti-settlement-window-reversal",
+  "status": "testing silver-london-to-comex-handoff",
   "engine_state": "ok",
-  "n_registered": 120,
-  "n_results": 194,
+  "n_registered": 121,
+  "n_results": 195,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-21T23:49:09.458310+00:00",
+   "hash": "f18c8fea",
+   "name": "silver-london-to-comex-handoff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.88"
+  },
+  {
    "t": "2026-07-21T23:43:15.797459+00:00",
    "hash": "ba06a4fa",
    "name": "wti-settlement-window-reversal",
@@ -421,28 +429,11 @@
    "status": "passes",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-21T19:50:31.456648+00:00",
-   "hash": "cb920b65",
-   "name": "b10-eod-rebalance-momentum",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.723"
   }
  ],
  "pipeline": {
   "workers": [],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "silver-london-to-comex-handoff",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.22
-   },
    {
     "rank": 6,
     "idea": "wasde-overshoot-fade",
@@ -490,7 +481,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
@@ -553,7 +544,7 @@
    },
    {
     "date": "2026-07-21",
-    "trials": 11350
+    "trials": 11351
    }
   ]
  },
@@ -562,7 +553,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 47,
+   "n_tested": 48,
    "n_killed": 26,
    "book_sleeves": [
     "b3-nr7-breakout",
