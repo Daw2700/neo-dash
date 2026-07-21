@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-21T23:41:35Z",
+  "stamp": "2026-07-21T23:47:21Z",
   "stale_after_min": 30,
-  "status": "testing perp-funding-clock-impulse",
+  "status": "testing wti-settlement-window-reversal",
   "engine_state": "ok",
-  "n_registered": 119,
-  "n_results": 193,
+  "n_registered": 120,
+  "n_results": 194,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-21T23:43:15.797459+00:00",
+   "hash": "ba06a4fa",
+   "name": "wti-settlement-window-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.65"
+  },
+  {
    "t": "2026-07-21T23:37:24.053178+00:00",
    "hash": "5b0a2153",
    "name": "funding-clock-impulse",
@@ -421,28 +429,11 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.723"
-  },
-  {
-   "t": "2026-07-21T19:50:31.455721+00:00",
-   "hash": "e3178f05",
-   "name": "b10-ism-1000-reaction",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.248"
   }
  ],
  "pipeline": {
   "workers": [],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "wti-settlement-window-reversal",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.24
-   },
    {
     "rank": 5,
     "idea": "silver-london-to-comex-handoff",
@@ -499,7 +490,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
@@ -562,7 +553,7 @@
    },
    {
     "date": "2026-07-21",
-    "trials": 11349
+    "trials": 11350
    }
   ]
  },
@@ -571,8 +562,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 46,
-   "n_killed": 25,
+   "n_tested": 47,
+   "n_killed": 26,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
