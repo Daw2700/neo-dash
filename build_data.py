@@ -134,49 +134,22 @@ pipeline = {"workers": [], "backlog": [],
                        "mes_replication": 0, "book_candidate": 0, "golden_staged": 0},
             "throughput": throughput}
 
-# --- decision queue (real items from project handoff; engine will manage this later) ---
-decisions = [
-    {"id": "d-demotions", "kind": "demotion", "needs_attention": True,
-     "title": "Sign off: demote lunch-break + bigday-fade",
-     "recommendation": "DEMOTE both — recommended out; your veto pending",
-     "evidence": "lunch-compression overlaps monday-family weeks; bigday-fade PF 1.08 marginal at n=202",
-     "what_yes_means": "Both leave the candidate pool (reversible via ledger)",
-     "recap": "Moves lunch-break and bigday-fade out of the candidate pool. They stop being considered for bundles and future books. Nothing is deleted.",
-     "why": "Lunch-break makes its money in the same calendar weeks as the monday family — that's double-counting one edge, and the down-weeks lesson showed overlapping sleeves inflate a book's numbers while doubling its real risk. Bigday-fade's PF 1.08 at n=202 sits inside what pure luck produces at that trade count, and it failed mechanism controls. Keeping weak sleeves isn't neutral: they eat micro allocations and breach budget that stronger sleeves could use.",
-     "steps": ["DEMOTED verdicts are appended to the ledger for both strategies (append-only — history stays intact)",
-               "Their leaderboard tier drops from candidate to demoted; rows dim",
-               "They are excluded from the bundle pool and every future sizing run",
-               "Trade logs and all past results are kept on disk untouched",
-               "If new evidence ever clears them, a fresh ledger entry can reinstate — nothing is irreversible",
-               "Dashboard republishes on the next cycle"],
-     "staged": "2026-07-20T00:00:00Z"},
-    {"id": "d-apex-verify", "kind": "funding", "needs_attention": False,
-     "title": "Apex account verification before any funding",
-     "recommendation": "Verify $4k drawdown, split and consistency rules on their site",
-     "evidence": "Apex blocks bots — needs your eyes (or claude-in-chrome with you present)",
-     "what_yes_means": "Confirms the ~18-account Apex leg of the $10k route is real",
-     "recap": "You log into Apex yourself and confirm their real rules. The engine then replaces every ASSUMED Apex number on this site with verified ones.",
-     "why": "18 of the 23 accounts in the $10k route are Apex — nearly every top bundle on this site leans on assumed Apex rules. If the real trailing drawdown is intraday instead of end-of-day, or the payout caps differ, the survival and payout math changes materially. Verifying costs you ten minutes; funding thousands of dollars of eval fees on unverified rules is the expensive way to find out.",
-     "steps": ["You check on Apex's site: 150K trailing threshold amount, whether trailing is intraday or end-of-day, payout consistency %, profit split, and max accounts allowed",
-               "Send the numbers back via the Approve box (or any chat with Claude)",
-               "Engine updates its Apex-150K account model to the verified rules",
-               "All Apex sizings, bundles, and first-payout estimates re-run automatically",
-               "ASSUMED chips disappear; the 18-account leg of the $10k route becomes real math"],
-     "staged": "2026-07-20T00:00:00Z"},
-    {"id": "d-neo300", "kind": "cleanup", "needs_attention": False,
-     "title": "Neo-300 paper bot: retire or repurpose",
-     "recommendation": "Repurpose as live slippage collector (its strategy is dead)",
-     "evidence": "6a-neo300-real-honest: PF 1.078 on real data — below survival bar",
-     "what_yes_means": "Bot keeps running but only to measure real fills vs sim",
-     "recap": "Keeps the Neo-300 paper bot alive but changes its job: measuring real fill prices against simulated ones. Its trading signals get ignored.",
-     "why": "Every dollar figure on this site assumes backtest fill prices are close to real fills. That assumption has never been measured — and it's the same fill-modeling blind spot that killed Morpheus. The bot already exists, runs free, and its strategy being dead doesn't matter for measuring slippage. A few weeks of real-fill samples either validates the cost model behind every sleeve or catches an error before real money does.",
-     "steps": ["Bot keeps firing its usual paper orders — zero money at risk",
-               "Every fill is logged: actual paper fill price vs the bar-data assumption backtests use",
-               "The differences become a slippage dataset that hardens the cost model behind every sleeve's numbers",
-               "Once enough samples accumulate (~100+), the bot retires for good",
-               "If instead you Deny with 'retire', the bot shuts down now and we skip the slippage data"],
-     "staged": "2026-07-20T00:00:00Z"},
-]
+# --- decisions / pipeline live state (from ~/neo-engine/state; engine owns these) ---
+ENG = Path.home() / "neo-engine/state"
+def _state(name, default):
+    try:
+        return json.loads((ENG / name).read_text())
+    except Exception:
+        return default
+decisions = _state("decisions.json", [])
+_workers = _state("workers.json", [])
+_backlog = _state("backlog.json", [])
+_es = _state("engine_state.json", {})
+pipeline["workers"] = _workers
+pipeline["backlog"] = [{"rank": b.get("rank", i + 1), "idea": b.get("idea"),
+                        "source": b.get("source"), "markets": [b.get("market")],
+                        "score": b.get("score")} for i, b in enumerate(_backlog)]
+pipeline["funnel"]["idea"] = len(_backlog)
 
 # --- roadmap ---
 bg = json.loads((ROOT / "data/book4_goal.json").read_text())
@@ -213,7 +186,8 @@ if sf.exists():
 
 pinned_id = next((r["id"] for r in leaderboard if r["pinned"]), None)
 data = {"meta": {"stamp": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                 "stale_after_min": 30, "status": "engine awaiting GO", "engine_state": "idle",
+                 "stale_after_min": 30, "status": _es.get("status", "engine awaiting GO"),
+                 "engine_state": _es.get("engine_state", "idle"),
                  "n_registered": len(regs), "n_results": len(results), "n_trials": n_trials,
                  "holdout_looks_spent": sum(1 for r in results if r.get("stage") == "holdout"),
                  "pinned_id": pinned_id,

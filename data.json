@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-21T22:20:18Z",
+  "stamp": "2026-07-21T22:40:50Z",
   "stale_after_min": 30,
   "status": "engine awaiting GO",
   "engine_state": "idle",
@@ -1453,16 +1453,6 @@
    "usd_mo": 516,
    "usd_mo_5acct": 2580,
    "pct_goal": 0.929,
-   "wr": 0.511,
-   "first_pay_days": 59,
-   "pay_rate_1yr": 0.965,
-   "wr_month": 0.75,
-   "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 1345,
-    "avg_lose": -772
-   },
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 9288
@@ -1487,16 +1477,6 @@
    "usd_mo": 449,
    "usd_mo_5acct": 2245,
    "pct_goal": 0.808,
-   "wr": 0.532,
-   "first_pay_days": 66,
-   "pay_rate_1yr": 0.963,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1173,
-    "avg_lose": -757
-   },
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 8082
@@ -1520,16 +1500,6 @@
    "usd_mo": 378,
    "usd_mo_5acct": 1890,
    "pct_goal": 0.68,
-   "wr": 0.5,
-   "first_pay_days": 75,
-   "pay_rate_1yr": 0.941,
-   "wr_month": 0.667,
-   "months": {
-    "win_per_yr": 8.0,
-    "lose_per_yr": 4.0,
-    "avg_win": 1191,
-    "avg_lose": -488
-   },
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6804
@@ -1552,16 +1522,6 @@
    "usd_mo": 348,
    "usd_mo_5acct": 1740,
    "pct_goal": 0.626,
-   "wr": 0.495,
-   "first_pay_days": 74,
-   "pay_rate_1yr": 0.917,
-   "wr_month": 0.694,
-   "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1163,
-    "avg_lose": -754
-   },
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6264
@@ -1586,16 +1546,6 @@
    "usd_mo": 346,
    "usd_mo_5acct": 1730,
    "pct_goal": 0.623,
-   "wr": 0.462,
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.859,
-   "wr_month": 0.611,
-   "months": {
-    "win_per_yr": 7.3,
-    "lose_per_yr": 4.7,
-    "avg_win": 1301,
-    "avg_lose": -365
-   },
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6228
@@ -1616,16 +1566,6 @@
    "usd_mo": 346,
    "usd_mo_5acct": 1730,
    "pct_goal": 0.623,
-   "wr": 0.545,
-   "first_pay_days": 95,
-   "pay_rate_1yr": 0.88,
-   "wr_month": 0.667,
-   "months": {
-    "win_per_yr": 8.0,
-    "lose_per_yr": 4.0,
-    "avg_win": 1209,
-    "avg_lose": -463
-   },
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6228
@@ -1651,16 +1591,6 @@
    "usd_mo": 811,
    "usd_mo_5acct": 4055,
    "pct_goal": 0.406,
-   "wr": 0.495,
-   "first_pay_days": 108,
-   "pay_rate_1yr": 0.87,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2224,
-    "avg_lose": -1015
-   },
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 4055
@@ -1685,16 +1615,6 @@
    "usd_mo": 707,
    "usd_mo_5acct": 3535,
    "pct_goal": 0.353,
-   "wr": 0.52,
-   "first_pay_days": 108,
-   "pay_rate_1yr": 0.849,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 1977,
-    "avg_lose": -834
-   },
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3535
@@ -1719,16 +1639,6 @@
    "usd_mo": 668,
    "usd_mo_5acct": 3340,
    "pct_goal": 0.334,
-   "wr": 0.489,
-   "first_pay_days": 114,
-   "pay_rate_1yr": 0.835,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 1942,
-    "avg_lose": -1067
-   },
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3340
@@ -1752,16 +1662,6 @@
    "usd_mo": 653,
    "usd_mo_5acct": 3265,
    "pct_goal": 0.327,
-   "wr": 0.498,
-   "first_pay_days": 111,
-   "pay_rate_1yr": 0.847,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 1849,
-    "avg_lose": -868
-   },
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3265
@@ -1785,16 +1685,6 @@
    "usd_mo": 520,
    "usd_mo_5acct": 2600,
    "pct_goal": 0.26,
-   "wr": 0.55,
-   "first_pay_days": 125,
-   "pay_rate_1yr": 0.676,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2005,
-    "avg_lose": -777
-   },
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 2600
@@ -1819,16 +1709,6 @@
    "usd_mo": 335,
    "usd_mo_5acct": 1675,
    "pct_goal": 0.168,
-   "wr": 0.552,
-   "first_pay_days": 132,
-   "pay_rate_1yr": 0.608,
-   "wr_month": 0.611,
-   "months": {
-    "win_per_yr": 7.3,
-    "lose_per_yr": 4.7,
-    "avg_win": 2025,
-    "avg_lose": -773
-   },
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 1675
