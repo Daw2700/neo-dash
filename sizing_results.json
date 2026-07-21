@@ -189,7 +189,9 @@
    "usd_mo": 811,
    "usd_mo_5acct": 4055,
    "pct_goal": 0.406,
-   "wr": 0.495
+   "wr": 0.495,
+   "first_pay_days": 108,
+   "pay_rate_1yr": 0.87
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -211,7 +213,9 @@
    "usd_mo": 707,
    "usd_mo_5acct": 3535,
    "pct_goal": 0.353,
-   "wr": 0.52
+   "wr": 0.52,
+   "first_pay_days": 108,
+   "pay_rate_1yr": 0.849
   },
   {
    "id": "Frequent-firing engine|growth",
@@ -233,7 +237,9 @@
    "usd_mo": 668,
    "usd_mo_5acct": 3340,
    "pct_goal": 0.334,
-   "wr": 0.489
+   "wr": 0.489,
+   "first_pay_days": 114,
+   "pay_rate_1yr": 0.835
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -254,7 +260,9 @@
    "usd_mo": 653,
    "usd_mo_5acct": 3265,
    "pct_goal": 0.327,
-   "wr": 0.498
+   "wr": 0.498,
+   "first_pay_days": 111,
+   "pay_rate_1yr": 0.847
   },
   {
    "id": "Cross-market spread|growth",
@@ -275,7 +283,9 @@
    "usd_mo": 520,
    "usd_mo_5acct": 2600,
    "pct_goal": 0.26,
-   "wr": 0.55
+   "wr": 0.55,
+   "first_pay_days": 125,
+   "pay_rate_1yr": 0.676
   },
   {
    "id": "Everything (full pool)|apex150",
@@ -297,7 +307,9 @@
    "usd_mo": 516,
    "usd_mo_5acct": 2580,
    "pct_goal": 0.258,
-   "wr": 0.511
+   "wr": 0.511,
+   "first_pay_days": 59,
+   "pay_rate_1yr": 0.965
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -319,7 +331,9 @@
    "usd_mo": 449,
    "usd_mo_5acct": 2245,
    "pct_goal": 0.225,
-   "wr": 0.532
+   "wr": 0.532,
+   "first_pay_days": 66,
+   "pay_rate_1yr": 0.963
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -340,7 +354,9 @@
    "usd_mo": 378,
    "usd_mo_5acct": 1890,
    "pct_goal": 0.189,
-   "wr": 0.5
+   "wr": 0.5,
+   "first_pay_days": 75,
+   "pay_rate_1yr": 0.941
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -360,7 +376,9 @@
    "usd_mo": 348,
    "usd_mo_5acct": 1740,
    "pct_goal": 0.174,
-   "wr": 0.495
+   "wr": 0.495,
+   "first_pay_days": 74,
+   "pay_rate_1yr": 0.917
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -382,7 +400,9 @@
    "usd_mo": 346,
    "usd_mo_5acct": 1730,
    "pct_goal": 0.173,
-   "wr": 0.462
+   "wr": 0.462,
+   "first_pay_days": 99,
+   "pay_rate_1yr": 0.859
   },
   {
    "id": "Cross-market spread|apex150",
@@ -400,7 +420,9 @@
    "usd_mo": 346,
    "usd_mo_5acct": 1730,
    "pct_goal": 0.173,
-   "wr": 0.545
+   "wr": 0.545,
+   "first_pay_days": 95,
+   "pay_rate_1yr": 0.88
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -422,7 +444,9 @@
    "usd_mo": 335,
    "usd_mo_5acct": 1675,
    "pct_goal": 0.168,
-   "wr": 0.552
+   "wr": 0.552,
+   "first_pay_days": 132,
+   "pay_rate_1yr": 0.608
   }
  ]
 }

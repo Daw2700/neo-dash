@@ -219,6 +219,7 @@ const G = {
   sleeve:{t:"Sleeve",b:"A validated strategy slot in the trading book. The book is assembled from sleeves, each sized in micro contracts.",x:"book_sleeves"},
   pinned:{t:"Pinned strategy",b:"Daniel's chosen always-on-top row, regardless of sort. Currently the vix-reversion candidate he watches daily.",x:"meta.pinned_id"},
   dev3yr:{t:"dev3yr — development window",b:"The 36-month window (2022-03 → 2025-02) every leaderboard metric comes from. Data after it is never touched during development.",x:"$/mo = net / 36"},
+  firstpay:{t:"First payout",b:"Median simulated trading time from FUNDED account start until the first payout clears the plan\u2019s gate and caps. Add eval-passing time on top. The % is how many simulated accounts get any payout inside year one.",x:"3000 block-bootstrap sims"},
   maxmu:{t:"Max micros",b:"The largest micro-contract count this strategy can trade ALONE before its 1-year breach probability passes the 20% cap, under Tradeify growth rules. Leaderboard $ figures stay per 1 micro.",x:"block-bootstrap sims, dev3yr trades"},
   bundle:{t:"Bundles",b:"A bundle is a book: several sleeves traded together in one funded account, each at its own micro count. The allocator adds one micro at a time, keeping 1-yr breach probability ≤ 20%, and maximizes survival-adjusted $/mo — the goal metric.",x:"engine re-sizes after every book change"},
   provisional:{t:"Provisional",b:"Contains at least one candidate that has not passed MES replication — not deployable until it does.",x:"standing order: replication before book entry"},
@@ -324,6 +325,7 @@ function rBundles(){const bs=DATA.bundles||[];const nm=id=>(DATA.leaderboard.fin
       <div class="fe"><span class="k">profit / month</span><span class="good num" style="margin-left:auto;font-weight:700;font-size:16px">${money(b.usd_mo_total)}</span></div>
       <div class="fe"><span class="k">win rate</span><span class="num" style="margin-left:auto">${Math.round(b.wr*100)}%</span></div>
       <div class="fe"><span class="k" data-g="bundle">fail prob · 1yr</span><span class="num" style="margin-left:auto;${b.p_breach>0.15?"color:var(--warn)":""}">${Math.round(b.p_breach*100)}%</span></div>
+      <div class="fe"><span class="k" data-g="firstpay">first payout</span><span class="num" style="margin-left:auto">${b.first_pay_days?`~${(b.first_pay_days/21).toFixed(1).replace(".0","")} mo <span class="dim">· ${Math.round((b.pay_rate_1yr||0)*100)}% pay in yr 1</span>`:"—"}</span></div>
     </div>
     <details class="bd"><summary>full breakdown</summary>
       <div class="kv" style="margin-top:10px">
