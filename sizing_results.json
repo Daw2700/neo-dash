@@ -191,7 +191,14 @@
    "pct_goal": 0.406,
    "wr": 0.495,
    "first_pay_days": 108,
-   "pay_rate_1yr": 0.87
+   "pay_rate_1yr": 0.87,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2224,
+    "avg_lose": -1015
+   }
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -215,7 +222,14 @@
    "pct_goal": 0.353,
    "wr": 0.52,
    "first_pay_days": 108,
-   "pay_rate_1yr": 0.849
+   "pay_rate_1yr": 0.849,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1977,
+    "avg_lose": -834
+   }
   },
   {
    "id": "Frequent-firing engine|growth",
@@ -239,7 +253,14 @@
    "pct_goal": 0.334,
    "wr": 0.489,
    "first_pay_days": 114,
-   "pay_rate_1yr": 0.835
+   "pay_rate_1yr": 0.835,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1942,
+    "avg_lose": -1067
+   }
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -262,7 +283,14 @@
    "pct_goal": 0.327,
    "wr": 0.498,
    "first_pay_days": 111,
-   "pay_rate_1yr": 0.847
+   "pay_rate_1yr": 0.847,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1849,
+    "avg_lose": -868
+   }
   },
   {
    "id": "Cross-market spread|growth",
@@ -285,7 +313,14 @@
    "pct_goal": 0.26,
    "wr": 0.55,
    "first_pay_days": 125,
-   "pay_rate_1yr": 0.676
+   "pay_rate_1yr": 0.676,
+   "wr_month": 0.778,
+   "months": {
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 2005,
+    "avg_lose": -777
+   }
   },
   {
    "id": "Everything (full pool)|apex150",
@@ -309,7 +344,14 @@
    "pct_goal": 0.258,
    "wr": 0.511,
    "first_pay_days": 59,
-   "pay_rate_1yr": 0.965
+   "pay_rate_1yr": 0.965,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1345,
+    "avg_lose": -772
+   }
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -333,7 +375,14 @@
    "pct_goal": 0.225,
    "wr": 0.532,
    "first_pay_days": 66,
-   "pay_rate_1yr": 0.963
+   "pay_rate_1yr": 0.963,
+   "wr_month": 0.778,
+   "months": {
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 1173,
+    "avg_lose": -757
+   }
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -356,7 +405,14 @@
    "pct_goal": 0.189,
    "wr": 0.5,
    "first_pay_days": 75,
-   "pay_rate_1yr": 0.941
+   "pay_rate_1yr": 0.941,
+   "wr_month": 0.667,
+   "months": {
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 1191,
+    "avg_lose": -488
+   }
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -378,7 +434,14 @@
    "pct_goal": 0.174,
    "wr": 0.495,
    "first_pay_days": 74,
-   "pay_rate_1yr": 0.917
+   "pay_rate_1yr": 0.917,
+   "wr_month": 0.694,
+   "months": {
+    "win_per_yr": 8.3,
+    "lose_per_yr": 3.7,
+    "avg_win": 1163,
+    "avg_lose": -754
+   }
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -402,7 +465,14 @@
    "pct_goal": 0.173,
    "wr": 0.462,
    "first_pay_days": 99,
-   "pay_rate_1yr": 0.859
+   "pay_rate_1yr": 0.859,
+   "wr_month": 0.611,
+   "months": {
+    "win_per_yr": 7.3,
+    "lose_per_yr": 4.7,
+    "avg_win": 1301,
+    "avg_lose": -365
+   }
   },
   {
    "id": "Cross-market spread|apex150",
@@ -422,7 +492,14 @@
    "pct_goal": 0.173,
    "wr": 0.545,
    "first_pay_days": 95,
-   "pay_rate_1yr": 0.88
+   "pay_rate_1yr": 0.88,
+   "wr_month": 0.667,
+   "months": {
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 1209,
+    "avg_lose": -463
+   }
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -446,7 +523,14 @@
    "pct_goal": 0.168,
    "wr": 0.552,
    "first_pay_days": 132,
-   "pay_rate_1yr": 0.608
+   "pay_rate_1yr": 0.608,
+   "wr_month": 0.611,
+   "months": {
+    "win_per_yr": 7.3,
+    "lose_per_yr": 4.7,
+    "avg_win": 2025,
+    "avg_lose": -773
+   }
   }
  ]
 }

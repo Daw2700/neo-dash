@@ -207,6 +207,31 @@ details.bd{margin-top:12px}details.bd summary{cursor:pointer;font:700 12px Manro
 <main id="view"></main>
 <div id="tip" role="tooltip"><span class="close" onclick="hideTip()">✕</span><div class="tt"></div><div class="tb"></div><div class="tx"></div></div>
 <script>
+/* ============ command channel (decisions -> engine via ntfy inbox) ============ */
+function cmdKey(){let k=localStorage.getItem("neo_cmd_key");
+  if(!k){k=prompt("One-time setup — enter your NEO command key:");
+    if(k){localStorage.setItem("neo_cmd_key",k.trim())}}
+  return localStorage.getItem("neo_cmd_key")}
+function outboxGet(){try{return JSON.parse(localStorage.getItem("neo_outbox")||"[]")}catch(e){return[]}}
+function outboxSave(o){localStorage.setItem("neo_outbox",JSON.stringify(o));window.OUTBOX=o}
+async function postCmd(m){const k=localStorage.getItem("neo_cmd_key");if(!k)return false;
+  try{const r=await fetch("https://ntfy.sh/"+encodeURIComponent(k),{method:"POST",
+    body:JSON.stringify(m),headers:{"Title":"NEO "+m.type+" "+m.action,"Tags":"scales"}});
+    return r.ok}catch(e){return false}}
+function toggleNote(id){const el=document.getElementById("note-"+id);
+  if(el)el.style.display=el.style.display==="none"?"block":"none"}
+async function sendDecision(id,action){if(!cmdKey())return;
+  const note=(document.getElementById("txt-"+id)||{value:""}).value.trim();
+  const m={type:"decision",id,action,note,t:new Date().toISOString(),posted:false};
+  const o=outboxGet().filter(x=>x.id!==id);o.push(m);outboxSave(o);
+  m.posted=await postCmd(m);outboxSave(o);route()}
+async function undoDecision(id){const o=outboxGet();const m=o.find(x=>x.id===id);
+  if(m&&m.posted)await postCmd({type:"decision",id,action:"undo",note:"",t:new Date().toISOString()});
+  outboxSave(o.filter(x=>x.id!==id));route()}
+async function flushOutbox(){const o=outboxGet();let dirty=false;
+  for(const m of o){if(!m.posted){m.posted=await postCmd(m);dirty=true}}
+  if(dirty)outboxSave(o)}
+
 /* ================= glossary ================= */
 const G = {
   heartbeat:{t:"Heartbeat",b:"When the engine last republished data.json. Green = fresh. Amber = older than the allowed staleness window — the engine may be down or stuck.",x:"stale_after_min in meta"},
@@ -290,6 +315,9 @@ window.addEventListener("hashchange",route);
 /* ================= data ================= */
 async function load(){try{
   const r=await fetch("data.json",{cache:"no-store"});DATA=await r.json();fetchedAt=Date.now();
+  const ids=new Set((DATA.decisions||[]).map(d=>d.id));
+  window.OUTBOX=outboxGet().filter(x=>ids.has(x.id));outboxSave(window.OUTBOX);
+  flushOutbox();
   paintChrome();route();
 }catch(e){$("#view").innerHTML=`<div class="card"><h2>Can't load data.json</h2><div class="dim">${esc(e.message)}</div></div>`}}
 function staleMin(){return DATA?Math.floor((Date.now()-new Date(DATA.meta.stamp))/60000):0}
@@ -323,8 +351,8 @@ function rBundles(){const bs=DATA.bundles||[];const nm=id=>(DATA.leaderboard.fin
     <div>
       <div class="fe"><span class="k">prop firm</span><span style="margin-left:auto;font-weight:700">${b.accounts} × ${esc(b.firm)}${b.assumed_rules?` <span class="chip y" data-g="apexrules">ASSUMED</span>`:""}</span></div>
       <div class="fe"><span class="k">profit / month</span><span class="good num" style="margin-left:auto;font-weight:700;font-size:16px">${money(b.usd_mo_total)}</span></div>
-      <div class="fe"><span class="k">win rate</span><span class="num" style="margin-left:auto">${Math.round(b.wr*100)}%</span></div>
-      <div class="fe"><span class="k" data-g="bundle">fail prob · 1yr</span><span class="num" style="margin-left:auto;${b.p_breach>0.15?"color:var(--warn)":""}">${Math.round(b.p_breach*100)}%</span></div>
+      <div class="fe"><span class="k">profitable months</span><span class="num" style="margin-left:auto">${Math.round((b.wr_month??b.wr)*100)}%</span></div>
+      <div class="fe"><span class="k" data-g="bundle">acct survives yr 1</span><span class="num" style="margin-left:auto;${b.p_breach>0.18?"color:var(--warn)":"color:var(--good)"}">${100-Math.round(b.p_breach*100)}%</span></div>
       <div class="fe"><span class="k" data-g="firstpay">first payout</span><span class="num" style="margin-left:auto">${b.first_pay_days?`~${(b.first_pay_days/21).toFixed(1).replace(".0","")} mo <span class="dim">· ${Math.round((b.pay_rate_1yr||0)*100)}% pay in yr 1</span>`:"—"}</span></div>
     </div>
     <details class="bd"><summary>full breakdown</summary>
@@ -334,6 +362,12 @@ function rBundles(){const bs=DATA.bundles||[];const nm=id=>(DATA.leaderboard.fin
         <div><span class="k">total micros</span><span>×${b.total_micros}</span></div>
         <div><span class="k">plan</span><span class="num" style="font-size:12px">${esc(b.plan)}</span></div>
       </div>
+      ${b.months?`<div class="kv" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)">
+        <div><span class="k">winning months</span><span>${b.months.win_per_yr} / yr</span></div>
+        <div><span class="k">losing months</span><span>${b.months.lose_per_yr} / yr</span></div>
+        <div><span class="k">avg winning month</span><span class="good">${money(b.months.avg_win)}</span></div>
+        <div><span class="k">avg losing month</span><span class="bad">${money(b.months.avg_lose)}</span></div>
+      </div><div class="dim" style="font-size:11px;margin-top:6px">Raw trading P&amp;L per single account over the dev window — before payout gates, so it won't match the survival-adjusted profit/month above.</div>`:""}
       <div style="margin-top:10px">${Object.entries(b.members).map(([m,q])=>`<div class="fe" style="cursor:pointer" onclick="location.hash='#/strategy/${encodeURIComponent(m)}'">
         <span class="chip ${tclass(m)}">×${q}μ</span><span style="font-family:Manrope,system-ui,sans-serif;font-weight:600">${esc(nm(m))}</span><span class="t" style="margin-left:auto">${(DATA.leaderboard.find(r=>r.id===m)||{}).tier||"pool"}</span></div>`).join("")}</div>
     </details>
@@ -476,8 +510,14 @@ function rDecisions(){return`
     <div class="dline"><span class="k">EVIDENCE</span><span class="mono" style="font-size:12px">${esc(d.evidence)}</span></div>
     <div class="dline"><span class="k">YES MEANS</span><span class="warn">${esc(d.what_yes_means)}${golden?` <span class="iico" data-g="holdout">i</span>`:""}</span></div>
     ${golden?`<div class="dim" style="font-size:11.5px;margin-top:6px">Nothing is lost by waiting — the bundle is immutable on the ledger. Review when ready.</div>`:""}
-    <div class="dbtns"><span class="btn approve">Approve</span><span class="btn veto">Veto</span></div>
-    <div class="dnote">Approval happens in the engine session — buttons are a preview of the future flow.</div>
+    ${(()=>{const ob=(window.OUTBOX||[]).find(x=>x.id===d.id);
+      return ob?`<div class="dbtns"><span class="chip ${ob.action==="approve"?"g":"y"}" style="font-size:11px;padding:6px 10px">${ob.action==="approve"?"✓ APPROVED":"✕ DENIED"} — queued for engine${ob.posted?"":" · offline, will retry"}</span><span class="btn" onclick="undoDecision('${d.id}')">undo</span></div>`
+      :`<div class="dbtns"><span class="btn approve" onclick="toggleNote('${d.id}')">Approve…</span><span class="btn veto" onclick="sendDecision('${d.id}','deny')">Deny</span></div>
+      <div id="note-${d.id}" style="display:none;margin-top:8px">
+        <textarea id="txt-${d.id}" placeholder="Optional instructions for Claude — sent with your approval" style="width:100%;min-height:64px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:8px;font:400 13px Manrope,system-ui,sans-serif;box-sizing:border-box"></textarea>
+        <div class="dbtns" style="margin-top:6px"><span class="btn approve" onclick="sendDecision('${d.id}','approve')">Send approval</span></div>
+      </div>`})()}
+    <div class="dnote">Decisions post to your private command inbox; the engine applies them on its next loop and this page reflects it after refresh.</div>
   </div>`}).join("")}`}
 
 function rRoadmap(){const r=DATA.roadmap;const best=r.books.reduce((a,b)=>b.usd_mo_5acct>a.usd_mo_5acct?b:a,r.books[0]);
