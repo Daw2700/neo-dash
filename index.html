@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NEO — strategy research engine</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0c0f; --panel:#16181d; --panel2:#1c1e24; --line:#262933; --line2:#2c2f3a;
+  --txt:#e7e9ee; --dim:#8b8f99; --faint:#565b66;
+  --acc:#6d7cff; --good:#4ade80; --bad:#f87171; --warn:#f0b95c;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --ui:Manrope,-apple-system,system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--ui);font-size:14px;line-height:1.45}
+a{color:#8b95ff;text-decoration:none}a:hover{color:#b3baff}
+.mono{font-family:var(--mono)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.dim{color:var(--dim)}.faint{color:var(--faint)}.good{color:var(--good)}.bad{color:var(--bad)}.warn{color:var(--warn)}.acc{color:var(--acc)}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(11,12,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hrow{display:flex;align-items:center;gap:10px;padding:10px 14px}
+.logo{width:24px;height:24px;border-radius:7px;background:linear-gradient(135deg,#6d7cff,#4d5ae0);box-shadow:0 4px 14px rgba(109,124,255,.4);flex:none}
+.wordmark{font-weight:800;font-size:15px;letter-spacing:.02em}
+.heartbeat{margin-left:auto;display:flex;align-items:center;gap:7px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 11px;font:500 11px var(--mono);color:var(--dim);cursor:pointer}
+.hb-dot{width:7px;height:7px;border-radius:50%;background:var(--good);animation:pulse 2s infinite}
+.heartbeat.stale .hb-dot{background:var(--warn);animation:pulse 1s infinite}
+.heartbeat.stale{border-color:#4a3d20;color:var(--warn)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* tabs */
+nav{display:flex;gap:2px;padding:0 8px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;padding:11px 13px;font-size:13px;font-weight:700;color:var(--dim);border-bottom:2px solid transparent;min-height:44px;display:flex;align-items:center;gap:6px}
+nav a.on{color:var(--txt);border-bottom-color:var(--acc)}
+nav a:hover{color:var(--txt)}
+.navbadge{background:var(--bad);color:#fff;font:700 10px var(--mono);border-radius:999px;padding:1px 6px}
+
+/* attention banner */
+.banner{display:flex;align-items:center;gap:10px;margin:12px 14px 0;padding:12px 14px;border-radius:12px;background:linear-gradient(135deg,rgba(109,124,255,.16),rgba(244,114,182,.10));border:1px solid #3d4470;cursor:pointer;box-shadow:0 10px 30px rgba(109,124,255,.15)}
+.banner .bdot{width:9px;height:9px;border-radius:50%;background:var(--warn);animation:pulse 1.2s infinite;flex:none}
+.banner b{font-size:13px}
+.banner .sub{font-size:12px;color:var(--dim)}
+.banner .go{margin-left:auto;font:700 12px var(--ui);color:#fff;background:var(--acc);border-radius:8px;padding:8px 12px;flex:none}
+
+main{padding:12px 14px 90px;max-width:1100px;margin:0 auto}
+@media(min-width:720px){main{padding:16px 24px 60px}}
+
+/* cards */
+.card{background:linear-gradient(180deg,#1a1c22,#141519);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 14px 34px rgba(0,0,0,.5)}
+.card h2{margin:0 0 10px;font-size:14px;font-weight:800;display:flex;align-items:center;gap:8px}
+.card h2 .right{margin-left:auto;font:500 11px var(--mono);color:var(--dim)}
+.grid2{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:840px){.grid2{grid-template-columns:1fr 1fr}}
+
+/* status strip */
+.strip{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:720px){.strip{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px}
+.stat .l{font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--dim)}
+.stat .v{font:700 19px/1.5 var(--mono)}
+.stat.sacred{border-color:#3d4470;background:linear-gradient(135deg,rgba(109,124,255,.12),var(--panel2))}
+.stat.sacred .v{color:var(--acc);font-size:23px}
+
+/* tier chips */
+.tier{font:700 9.5px var(--mono);letter-spacing:.05em;border-radius:5px;padding:2.5px 6px;white-space:nowrap}
+.tier.BOOK{background:rgba(74,222,128,.13);color:var(--good);border:1px solid rgba(74,222,128,.35)}
+.tier.candidate{background:rgba(109,124,255,.14);color:#98a3ff;border:1px solid rgba(109,124,255,.4)}
+.tier.demoted{background:rgba(240,185,92,.12);color:var(--warn);border:1px solid rgba(240,185,92,.3)}
+.tier.killed{background:rgba(248,113,113,.1);color:var(--bad);border:1px solid rgba(248,113,113,.28)}
+
+/* leaderboard */
+.lb-head,.lb-row{display:grid;gap:8px;align-items:center;grid-template-columns:22px 1fr 74px 64px}
+@media(min-width:720px){.lb-head,.lb-row{grid-template-columns:26px 1.5fr 92px 46px 42px 48px 62px 48px 58px}}
+.lb-head{padding:4px 10px;font:700 10px var(--mono);color:var(--faint);letter-spacing:.06em}
+.lb-head span{cursor:help}
+.lb-row{padding:9px 10px;border-radius:9px;min-height:44px;cursor:pointer;border:1px solid transparent}
+.lb-row:hover{background:var(--panel2);border-color:var(--line2)}
+.lb-row.pinned{background:rgba(109,124,255,.07);border-color:#343a55}
+.lb-row.dead{opacity:.45}
+.lb-row .nm{font-weight:700;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb-row .mk{font:500 10px var(--mono);color:var(--faint)}
+.r{text-align:right}
+.lb-m{display:flex;gap:10px;font:500 11px var(--mono);color:var(--dim);margin-top:2px}
+@media(min-width:720px){.lb-m{display:none}}
+.lb-desk{display:none}
+@media(min-width:720px){.lb-desk{display:block}.lb-mob{display:none}}
+
+/* feed */
+.fe{display:flex;gap:10px;padding:9px 4px;border-top:1px solid #1d2027;align-items:baseline;flex-wrap:wrap}
+.fe:first-of-type{border-top:none}
+.fe .t{font:500 10.5px var(--mono);color:var(--faint);flex:none;width:52px}
+.fe .h{font:500 10.5px var(--mono);color:var(--faint)}
+.fe .n{font-weight:700;font-size:12.5px}
+.fe .d{font-size:11.5px;color:var(--dim);width:100%;padding-left:62px}
+@media(min-width:720px){.fe .d{width:auto;padding-left:0;margin-left:auto}}
+.chip{font:700 9.5px var(--mono);border-radius:5px;padding:2px 6px;letter-spacing:.04em}
+.chip.g{background:rgba(74,222,128,.13);color:var(--good)}
+.chip.r{background:rgba(248,113,113,.12);color:var(--bad)}
+.chip.b{background:rgba(109,124,255,.14);color:#98a3ff}
+.chip.y{background:rgba(240,185,92,.12);color:var(--warn)}
+.chip.n{background:#22242b;color:var(--dim)}
+
+/* pipeline */
+.worker{display:flex;gap:10px;align-items:flex-start;padding:10px 4px;border-top:1px solid #1d2027}
+.worker:first-of-type{border-top:none}
+.wdot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex:none}
+.wdot.running{background:var(--acc);animation:pulse 1.4s infinite}
+.wdot.idle{background:var(--faint)}
+.worker .task{font-size:12.5px}
+.worker .meta{font:500 10.5px var(--mono);color:var(--faint);display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+.funnel{display:flex;gap:3px;margin:6px 0 8px}
+.fseg{flex:1;border-radius:4px;padding:7px 4px 5px;text-align:center;background:var(--panel2);border:1px solid var(--line);cursor:help;min-width:0}
+.fseg .fv{font:700 15px var(--mono)}
+.fseg .fl{font-size:8.5px;font-weight:700;letter-spacing:.03em;color:var(--faint);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fseg.hot{border-color:#3d4470;background:rgba(109,124,255,.1)}
+.fseg.hot .fv{color:var(--acc)}
+.bk{display:flex;gap:10px;align-items:center;padding:9px 4px;border-top:1px solid #1d2027;min-height:44px}
+.bk:first-of-type{border-top:none}
+.bk .rk{font:700 11px var(--mono);color:var(--acc);width:18px;flex:none}
+.bk .idea{font-weight:600;font-size:12.5px;flex:1}
+.bk .scorebar{width:52px;height:4px;background:#22242b;border-radius:2px;overflow:hidden;flex:none}
+.bk .scorebar i{display:block;height:100%;background:linear-gradient(90deg,#6d7cff,#a78bfa)}
+
+/* markets */
+.mgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:560px){.mgrid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:860px){.mgrid{grid-template-columns:repeat(4,1fr)}}
+.mtile{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:12px;cursor:pointer;min-height:44px}
+.mtile:hover{border-color:#3d4470;background:#20222c}
+.mtile .tk{font:700 15px var(--mono)}
+.mtile .dn{font-size:11px;color:var(--dim)}
+.mtile .ms{display:flex;gap:8px;margin-top:8px;font:500 10px var(--mono);color:var(--faint)}
+.mdot{width:7px;height:7px;border-radius:50%;background:var(--good);float:right;margin-top:4px}
+.sleeve{font:600 11px var(--mono);background:rgba(74,222,128,.09);border:1px solid rgba(74,222,128,.25);color:var(--good);border-radius:6px;padding:4px 8px}
+
+/* decisions */
+.dcard{position:relative;border-radius:14px;padding:16px;margin-bottom:12px;background:linear-gradient(180deg,#1a1c22,#141519);border:1px solid var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 14px 34px rgba(0,0,0,.5)}
+.dcard.glow{border-color:#4a54a0;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 0 0 1px rgba(109,124,255,.25),0 14px 44px rgba(109,124,255,.22)}
+.dkind{font:700 10px var(--mono);letter-spacing:.08em;color:var(--acc)}
+.dcard h3{margin:6px 0 8px;font-size:15.5px;font-weight:800}
+.dline{display:flex;gap:8px;font-size:12.5px;margin:7px 0;align-items:baseline}
+.dline .k{font:700 10px var(--mono);letter-spacing:.05em;color:var(--faint);width:84px;flex:none}
+.frozen{display:inline-flex;align-items:center;gap:6px;font:700 10px var(--mono);letter-spacing:.08em;color:#9fb4ff;background:rgba(109,124,255,.1);border:1px dashed #4a54a0;border-radius:6px;padding:4px 8px}
+.dbtns{display:flex;gap:8px;margin-top:12px}
+.btn{flex:1;text-align:center;border-radius:10px;padding:12px;font-weight:800;font-size:13px;cursor:not-allowed;min-height:44px}
+.btn.approve{background:var(--acc);color:#fff;opacity:.9}
+.btn.veto{background:transparent;border:1px solid var(--line2);color:var(--dim)}
+.dnote{font-size:10.5px;color:var(--faint);margin-top:6px;text-align:center}
+
+/* roadmap */
+.goal{margin:4px 0 10px}
+.goalbar{height:14px;background:#22242b;border-radius:8px;overflow:hidden;position:relative}
+.goalbar i{display:block;height:100%;background:linear-gradient(90deg,#6d7cff,#a78bfa);border-radius:8px}
+.micros{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}
+.micro{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:7px 8px;text-align:center}
+.micro .mv{font:700 14px var(--mono)}
+.micro .ml{font-size:9px;font-weight:700;color:var(--faint);letter-spacing:.03em}
+.breach{height:6px;background:#22242b;border-radius:3px;position:relative;margin-top:6px}
+.breach i{display:block;height:100%;border-radius:3px;background:var(--good)}
+.breach .cap{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--bad);left:80%}
+.simtag{font:700 9.5px var(--mono);letter-spacing:.06em;color:var(--warn);background:rgba(240,185,92,.1);border:1px solid rgba(240,185,92,.3);border-radius:5px;padding:2px 6px}
+
+/* strategy page */
+.backlink{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;margin-bottom:10px;min-height:44px}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:7px 16px;font:400 12.5px var(--mono)}
+@media(min-width:720px){.kv{grid-template-columns:repeat(3,1fr)}}
+.kv div{display:flex;justify-content:space-between;gap:8px}
+.kv .k{color:var(--dim)}
+.rob{display:flex;flex-wrap:wrap;gap:6px}
+.rob span{font:600 10.5px var(--mono)}
+
+/* glossary tooltips */
+[data-g]{cursor:help;text-decoration:underline dotted var(--faint);text-underline-offset:3px}
+.iico{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;border:1px solid var(--faint);color:var(--dim);font:600 10px var(--mono);cursor:help;flex:none;vertical-align:1px}
+.iico:hover{border-color:var(--acc);color:var(--acc)}
+#tip{position:fixed;z-index:100;max-width:300px;background:#20222c;border:1px solid #3d4470;border-radius:11px;padding:12px 13px;box-shadow:0 18px 44px rgba(0,0,0,.65);display:none}
+#tip .tt{font-weight:800;font-size:12.5px;margin-bottom:4px;color:#b3baff}
+#tip .tb{font-size:12px;color:#c6cad2;line-height:1.5}
+#tip .tx{font:500 10.5px var(--mono);color:var(--faint);margin-top:6px}
+@media(max-width:719px){
+  #tip{left:10px!important;right:10px;bottom:calc(14px + env(safe-area-inset-bottom));top:auto!important;max-width:none;padding:15px 16px}
+  #tip .tt{font-size:14px}#tip .tb{font-size:13.5px}
+  #tip .close{position:absolute;top:8px;right:10px;color:var(--faint);font-size:18px;padding:6px;cursor:pointer}
+}
+@media(min-width:720px){#tip .close{display:none}}
+.updated{font-size:11px;color:var(--faint);text-align:center;padding:14px 0 4px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hrow">
+    <div class="logo"></div>
+    <div class="wordmark">NEO</div>
+    <div class="dim" style="font-size:11.5px" id="hstatus"></div>
+    <div class="heartbeat" id="heartbeat" data-g="heartbeat"><span class="hb-dot"></span><span id="hbtext">—</span></div>
+  </div>
+  <nav id="tabs"></nav>
+</header>
+<div id="bannerSlot"></div>
+<main id="view"></main>
+<div id="tip" role="tooltip"><span class="close" onclick="hideTip()">✕</span><div class="tt"></div><div class="tb"></div><div class="tx"></div></div>
+<script>
+/* ================= glossary ================= */
+const G = {
+  heartbeat:{t:"Heartbeat",b:"When the engine last republished data.json. Green = fresh. Amber = older than the allowed staleness window — the engine may be down or stuck.",x:"stale_after_min in meta"},
+  pf:{t:"PF — profit factor",b:"Gross wins ÷ gross losses. 1.0 is breakeven. Bars to clear: frequent-firing strategies need PF ≥ 1.05, rare-firing need PF ≥ 1.15.",x:"pf"},
+  n:{t:"n — trade count",b:"Number of trades in the 36-month development window. Low n means the edge could be luck; the robustness battery weighs this heavily.",x:"n"},
+  wr:{t:"WR — win rate",b:"Share of trades that closed profitable. High WR with low PF usually means small wins / big losses — read them together.",x:"wr"},
+  usd_mo:{t:"$/mo",b:"Net dollars per month over the 36-month dev window (net ÷ 36), at 1 micro contract. All money in NEO is quoted per-month, never as totals.",x:"usd_mo = net / 36"},
+  usd_trade:{t:"$/trade — expectancy",b:"Average net dollars per trade. Thin expectancy (< ~$10) is fragile: one tick of extra slippage can erase it.",x:"usd_trade"},
+  tier:{t:"Tiers",b:"BOOK SLEEVE = validated and in the book. candidate = passes so far, not yet replicated/booked. demoted = failed a later check. killed = rejected; kept for the record (dimmed).",x:"tier"},
+  sleeve:{t:"Sleeve",b:"A validated strategy slot in the trading book. The book is assembled from sleeves, each sized in micro contracts.",x:"book_sleeves"},
+  pinned:{t:"Pinned strategy",b:"Daniel's chosen always-on-top row, regardless of sort. Currently the vix-reversion candidate he watches daily.",x:"meta.pinned_id"},
+  dev3yr:{t:"dev3yr — development window",b:"The 36-month window (2022-03 → 2025-02) every leaderboard metric comes from. Data after it is never touched during development.",x:"$/mo = net / 36"},
+  holdout:{t:"Holdout looks spent",b:"The sacred counter. Data after 2025-03-01 is the one-shot final exam; each look at it is irreversible and only Daniel can approve one. It has never been spent.",x:"holdout_looks_spent"},
+  golden:{t:"Golden test",b:"The one-shot run of a frozen book on never-touched holdout data (after 2025-03-01). Passing it is the last gate before real money. The engine can stage one but never run it without approval.",x:"kind: golden_test"},
+  gauntlet:{t:"Gauntlet",b:"The registration → test → verdict machinery. Every result is appended to an immutable ledger — nothing is edited or deleted, so the record can't be quietly rewritten.",x:"append-only ledger"},
+  registered:{t:"Registered",b:"Strategy ideas formally entered into the gauntlet with a frozen config, awaiting or undergoing testing.",x:"n_registered"},
+  trials:{t:"Trials",b:"Individual backtest runs executed, including parameter sweeps. One strategy idea can consume thousands of trials.",x:"n_trials"},
+  results:{t:"Results",b:"Verdicts recorded in the ledger: PASSES, KILLED, DEMOTED, etc. One per completed test stage.",x:"n_results"},
+  funnel:{t:"Pipeline funnel",b:"Where work sits right now, left to right: raw ideas → registered → dev3yr backtest → robustness battery → MES replication → book candidate → staged for golden test. Counts shrink at every gate — that's the point.",x:"pipeline.funnel"},
+  backlog:{t:"Idea backlog",b:"Ranked queue of untested ideas from literature scouting and data screens. An empty backlog is a failure state — it means the scouts have stalled.",x:"pipeline.backlog"},
+  score:{t:"Idea score",b:"Scout's prior that the idea survives testing (0–1), from mechanism plausibility, literature support, and data-screen strength. Sets queue order.",x:"score"},
+  throughput:{t:"Throughput",b:"Backtest trials completed per day, last 14 days. Spiky is normal (sweeps land in bursts); zero for days is not.",x:"pipeline.throughput"},
+  robustness:{t:"Robustness battery",b:"Checks a pass must survive: parameter plateau (edge isn't one magic setting), mechanism controls (profit comes from the claimed cause), ex-best-year (works without its luckiest year), MES replication.",x:"robustness"},
+  plateau:{t:"Parameter plateau",b:"Nearby parameter settings must also be profitable. If only one exact setting works, it's curve-fit noise, not an edge.",x:"plateau"},
+  mechanism:{t:"Mechanism controls",b:"Control tests proving profits come from the claimed cause (e.g. weekend risk premium) and not an overlapping known effect.",x:"mechanism_controls"},
+  exbest:{t:"Ex-best-year",b:"Metrics recomputed with the strategy's best year removed. An edge that only existed in 2022 fails here.",x:"ex_best_year"},
+  mesrep:{t:"MES replication",b:"The same mechanism must show up on S&P micros (MES). A real market-wide effect replicates; an artifact of one contract doesn't.",x:"mes_replication"},
+  killrate:{t:"Kill rate",b:"Share of strategies tested on this market that were killed. High kill rates are healthy — the gauntlet is supposed to be lethal.",x:"n_killed / n_tested"},
+  p_breach:{t:"p_breach",b:"Probability the book breaches a funded-account drawdown limit in a month, from simulation. Hard cap: 20% — sizing must keep it under the red line.",x:"cap 0.20"},
+  surv:{t:"Survival-adjusted $/mo",b:"Projected monthly dollars after discounting for the odds of blowing an account (p_breach). Honest money, not best-case money.",x:"usd_mo_5acct"},
+  micros:{t:"Micro sizing",b:"Contracts of each sleeve per account, in micro futures. Sizing balances $/mo against the 20% breach cap per funding plan.",x:"micros"},
+  evalplan:{t:"Eval-account plan",b:"Funded-account path: 5 Tradeify + ~18 Apex evaluations, ~$7–11k one-time cost, first payouts ~month 4 after GO, full run-rate months 6–9.",x:"eval_plan"},
+  sim:{t:"Simulation-tier",b:"Every dollar figure here comes from backtests and simulation. Nothing is live money until funded accounts GO.",x:"disclaimer"},
+  status:{t:"Engine state",b:"What the autonomous pipeline is doing overall. 'funnel running' = scouts, testers and robustness workers are cycling on their own.",x:"meta.status"},
+  agent:{t:"Agents / workers",b:"Autonomous AI workers: scouts hunt ideas (literature + data screens), testers run dev3yr backtests, robust-* run the battery, repl-* check MES replication.",x:"pipeline.workers"},
+  stagefrozen:{t:"Staged & frozen",b:"The candidate's config and evidence bundle are written to the ledger and can no longer change. Nothing is lost by waiting — review when ready.",x:"gauntlet/staged/"},
+  ledger:{t:"Ledger hash",b:"Content hash of this event in the append-only ledger — the tamper-evident ID of the record.",x:"hash"},
+  decision:{t:"Decision queue",b:"Everything waiting on Daniel. The engine acts alone everywhere else, but spending holdout looks, demotions and budgets require a human yes.",x:"decisions[]"}
+};
+/* ================= state ================= */
+let DATA=null, fetchedAt=0;
+const $=s=>document.querySelector(s);
+const fmt=n=>n==null?"—":n.toLocaleString("en-US");
+const money=n=>n==null?"—":(n<0?"-$":"$")+Math.abs(n).toLocaleString("en-US");
+const pct=n=>n==null?"—":(n*100).toFixed(1)+"%";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ago=iso=>{const m=Math.max(0,Math.floor((Date.now()-new Date(iso))/60000));if(m<1)return"just now";if(m<60)return m+"m ago";const h=Math.floor(m/60);if(h<24)return h+"h "+(m%60)+"m ago";return Math.floor(h/24)+"d ago"};
+const hhmm=iso=>new Date(iso).toISOString().slice(11,16);
+const tierCls=t=>t==="BOOK SLEEVE"?"BOOK":t;
+const tierChip=t=>`<span class="tier ${tierCls(t)}" data-g="tier">${t==="BOOK SLEEVE"?"BOOK SLEEVE":t.toUpperCase()}</span>`;
+const TIER_ORD={"BOOK SLEEVE":0,candidate:1,demoted:2,killed:3};
+
+/* ================= tooltips ================= */
+const tip=$("#tip");let tipLock=false;
+function showTip(key,el){const g=G[key];if(!g)return;
+  tip.querySelector(".tt").textContent=g.t;tip.querySelector(".tb").textContent=g.b;tip.querySelector(".tx").textContent=g.x||"";
+  tip.style.display="block";
+  if(window.innerWidth>=720){const r=el.getBoundingClientRect(),tw=tip.offsetWidth,th=tip.offsetHeight;
+    let x=Math.min(Math.max(8,r.left+r.width/2-tw/2),window.innerWidth-tw-8);
+    let y=r.top-th-10;if(y<8)y=r.bottom+10;
+    tip.style.left=x+"px";tip.style.top=y+"px";}}
+function hideTip(){tip.style.display="none";tipLock=false}
+document.addEventListener("pointerover",e=>{if(tipLock||!matchMedia("(hover:hover)").matches)return;const el=e.target.closest("[data-g]");if(el)showTip(el.dataset.g,el)});
+document.addEventListener("pointerout",e=>{if(tipLock)return;if(e.target.closest("[data-g]"))hideTip()});
+document.addEventListener("click",e=>{const el=e.target.closest("[data-g]");
+  if(el){e.stopPropagation();tipLock=true;showTip(el.dataset.g,el);return}
+  if(!e.target.closest("#tip"))hideTip()});
+
+/* ================= routing ================= */
+const TABS=[["#/overview","Overview"],["#/pipeline","Pipeline"],["#/markets","Markets"],["#/decisions","Decisions"],["#/roadmap","Roadmap"]];
+function route(){const h=location.hash||"#/overview";const seg=h.slice(2).split("/");render(seg);
+  document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",h.startsWith(a.getAttribute("href"))||(a.getAttribute("href")==="#/markets"&&seg[0]==="market")||(a.getAttribute("href")==="#/overview"&&seg[0]==="strategy")));
+  window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);
+
+/* ================= data ================= */
+async function load(){try{
+  const r=await fetch("data.json",{cache:"no-store"});DATA=await r.json();fetchedAt=Date.now();
+  paintChrome();route();
+}catch(e){$("#view").innerHTML=`<div class="card"><h2>Can't load data.json</h2><div class="dim">${esc(e.message)}</div></div>`}}
+function staleMin(){return DATA?Math.floor((Date.now()-new Date(DATA.meta.stamp))/60000):0}
+function isStale(){return DATA&&staleMin()>DATA.meta.stale_after_min}
+function paintChrome(){const m=DATA.meta;
+  $("#tabs").innerHTML=TABS.map(([h,l])=>`<a href="${h}">${l}${h==="#/decisions"&&m.needs_attention_count?` <span class="navbadge">${m.needs_attention_count}</span>`:""}</a>`).join("");
+  $("#hstatus").textContent=m.status;
+  const hb=$("#heartbeat");hb.classList.toggle("stale",isStale());
+  $("#hbtext").textContent=isStale()?`STALE · ${ago(m.stamp)}`:`updated ${ago(m.stamp)}`;
+  const need=(DATA.decisions||[]).filter(d=>d.needs_attention);
+  $("#bannerSlot").innerHTML=need.length?`<div class="banner" onclick="location.hash='#/decisions'"><span class="bdot"></span><div><b>${need.length===1?"1 decision needs":need.length+" decisions need"} your attention</b><div class="sub">${esc(need[0].title)}</div></div><span class="go">Review →</span></div>`:"";}
+setInterval(()=>{if(DATA)paintChrome()},30000);
+setInterval(load,60000);
+
+/* ================= svg helpers ================= */
+function line(vals,w,h,stroke,fill){if(!vals.length)return"";
+  const mn=Math.min(...vals,0),mx=Math.max(...vals);const sp=mx-mn||1;
+  const pts=vals.map((v,i)=>`${(i*(w/(vals.length-1))).toFixed(1)},${(h-4-((v-mn)/sp)*(h-8)).toFixed(1)}`);
+  return`<svg width="100%" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">${fill?`<polyline points="${pts.join(" ")} ${w},${h} 0,${h}" fill="${stroke}" opacity=".1" stroke="none"></polyline>`:""}<polyline points="${pts.join(" ")}" fill="none" stroke="${stroke}" stroke-width="2"></polyline></svg>`}
+function bars(vals,w,h,color){const mx=Math.max(...vals)||1;const bw=w/vals.length-2;
+  return`<svg width="100%" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">${vals.map((v,i)=>`<rect x="${(i*(w/vals.length)+1).toFixed(1)}" y="${(h-(v/mx)*(h-4)).toFixed(1)}" width="${bw.toFixed(1)}" height="${((v/mx)*(h-4)).toFixed(1)}" rx="1.5" fill="${color}"></rect>`).join("")}</svg>`}
+
+/* ================= renderers ================= */
+function render(seg){if(!DATA)return;
+  const v=seg[0]||"overview";
+  if(v==="overview")return $("#view").innerHTML=rOverview();
+  if(v==="pipeline")return $("#view").innerHTML=rPipeline();
+  if(v==="markets")return $("#view").innerHTML=rMarkets();
+  if(v==="market")return $("#view").innerHTML=rMarket(seg[1]);
+  if(v==="decisions")return $("#view").innerHTML=rDecisions();
+  if(v==="roadmap")return $("#view").innerHTML=rRoadmap();
+  if(v==="strategy")return $("#view").innerHTML=rStrategy(decodeURIComponent(seg[1]||""));
+  $("#view").innerHTML=rOverview()}
+
+function lbSorted(rows){const pin=DATA.meta.pinned_id;
+  return[...rows].sort((a,b)=>{if(a.id===pin)return-1;if(b.id===pin)return 1;
+    const t=TIER_ORD[a.tier]-TIER_ORD[b.tier];return t||b.usd_mo-a.usd_mo})}
+function lbRows(rows,limit){return lbSorted(rows).slice(0,limit||99).map((s,i)=>{
+  const dead=s.tier==="killed";
+  return`<div class="lb-row ${s.pinned||s.id===DATA.meta.pinned_id?"pinned":""} ${dead?"dead":""}" onclick="location.hash='#/strategy/${encodeURIComponent(s.id)}'">
+    <span class="num faint" style="font-size:11px">${s.id===DATA.meta.pinned_id?"📌":i+1}</span>
+    <div style="min-width:0"><div class="nm">${esc(s.name)} <span class="mk">${s.market}</span></div>
+      <div class="lb-m"><span data-g="n">n ${fmt(s.n)}</span><span data-g="wr">WR ${s.wr==null?"—":Math.round(s.wr*100)+"%"}</span><span data-g="usd_trade">${money(s.usd_trade)}/tr</span></div></div>
+    ${tierChip(s.tier)}
+    <span class="num r ${s.usd_mo>=0?"good":"bad"}" style="font-weight:700">${money(s.usd_mo)}</span>
+    <span class="num r lb-desk dim">${fmt(s.n)}</span>
+    <span class="num r lb-desk dim">${s.wr==null?"—":Math.round(s.wr*100)+"%"}</span>
+    <span class="num r lb-desk ${s.pf>=1?"":"bad"}">${s.pf?.toFixed(2)??"—"}</span>
+    <span class="num r lb-desk dim">${money(s.usd_trade)}</span>
+    <span class="lb-desk"></span>
+  </div>`}).join("")}
+const lbHead=`<div class="lb-head"><span>#</span><span>STRATEGY</span><span data-g="tier">TIER</span><span class="r" data-g="usd_mo">$/MO</span><span class="r lb-desk" data-g="n">N</span><span class="r lb-desk" data-g="wr">WR</span><span class="r lb-desk" data-g="pf">PF</span><span class="r lb-desk" data-g="usd_trade">$/TR</span><span class="lb-desk"></span></div>`;
+
+function rOverview(){const m=DATA.meta;
+  return`
+  <div class="card"><h2>Engine <span data-g="status" class="chip ${m.engine_state==="ok"?"g":"y"}">${esc(m.status).toUpperCase()}</span><span class="right">${hhmm(m.stamp)} UTC heartbeat</span></h2>
+    <div class="strip">
+      <div class="stat" data-g="registered"><div class="l">STRATEGIES REGISTERED</div><div class="v">${fmt(m.n_registered)}</div></div>
+      <div class="stat" data-g="results"><div class="l">RESULTS ON LEDGER</div><div class="v">${fmt(m.n_results)}</div></div>
+      <div class="stat" data-g="trials"><div class="l">TRIALS RUN</div><div class="v">${fmt(m.n_trials)}</div></div>
+      <div class="stat sacred" data-g="holdout"><div class="l">HOLDOUT LOOKS SPENT <span class="iico">i</span></div><div class="v">${m.holdout_looks_spent}</div></div>
+    </div></div>
+  <div class="card"><h2>Leaderboard — top 20 <span class="right" data-g="dev3yr">dev3yr · 1 micro</span></h2>
+    ${lbHead}${lbRows(DATA.leaderboard,20)}</div>
+  <div class="card"><h2>Activity <span class="right" data-g="gauntlet">append-only ledger</span></h2>
+    ${DATA.feed.map(f=>`<div class="fe"><span class="t">${hhmm(f.t)}</span><span class="h" data-g="ledger">${esc(f.hash)}</span><span class="n">${esc(f.name)}</span>${feedChip(f)}<span class="d">${esc(f.detail)}</span></div>`).join("")}</div>`}
+function feedChip(f){const s=f.status.toLowerCase();
+  const cls=s.includes("pass")?"g":s.includes("kill")?"r":s.includes("demot")?"y":s.includes("golden")||s.includes("staged")?"b":s.includes("register")?"b":"n";
+  return`<span class="chip ${cls}">${esc(f.status).toUpperCase()}</span>`}
+
+function rPipeline(){const p=DATA.pipeline;const f=p.funnel;
+  const stages=[["idea","IDEAS"],["registered","REG"],["dev3yr","DEV3YR"],["robustness","ROBUST"],["mes_replication","MES-REP"],["book_candidate","BOOK-C"],["golden_staged","GOLDEN"]];
+  const empty=!p.backlog.length;
+  return`
+  <div class="card"><h2>Funnel <span class="iico" data-g="funnel">i</span><span class="right">idea → golden test</span></h2>
+    <div class="funnel">${stages.map(([k,l])=>`<div class="fseg ${f[k]>0?"hot":""}" data-g="funnel"><div class="fv">${f[k]}</div><div class="fl">${l}</div></div>`).join("")}</div></div>
+  <div class="card"><h2>Workers — right now <span class="iico" data-g="agent">i</span><span class="right">${p.workers.filter(w=>w.state==="running").length} running</span></h2>
+    ${p.workers.map(w=>`<div class="worker"><span class="wdot ${w.state}"></span><div style="min-width:0;flex:1">
+      <div class="task"><b class="mono" style="font-size:12px">${esc(w.agent)}</b> ${w.market?`<span class="chip n">${w.market}</span>`:""} — ${esc(w.task)}</div>
+      <div class="meta"><span class="chip b">${esc(w.stage).toUpperCase()}</span><span>started ${ago(w.started)}</span><span>${w.state==="running"?"● running":"○ idle"}</span></div></div></div>`).join("")}</div>
+  <div class="grid2">
+  <div class="card"><h2>Idea backlog <span class="iico" data-g="backlog">i</span><span class="right ${empty?"warn":""}">depth ${p.backlog.length}${empty?" — EMPTY (failure state)":""}</span></h2>
+    ${empty?`<div class="warn" style="padding:16px;text-align:center;font-weight:700">Backlog empty — scouts stalled</div>`:
+    p.backlog.map(b=>`<div class="bk"><span class="rk">${b.rank}</span><div class="idea">${esc(b.idea)}<div class="meta" style="font:500 10.5px var(--mono);color:var(--faint);margin-top:2px">${b.markets.join(" · ")} · <span class="chip ${b.source==="literature"?"b":"n"}" style="font-size:9px">${b.source.toUpperCase()}</span></div></div><span class="num dim" style="font-size:11px" data-g="score">${b.score.toFixed(2)}</span><div class="scorebar"><i style="width:${b.score*100}%"></i></div></div>`).join("")}</div>
+  <div class="card"><h2>Throughput <span class="iico" data-g="throughput">i</span><span class="right">trials/day · 14d</span></h2>
+    ${bars(p.throughput.map(t=>t.trials),300,90,"#6d7cff")}
+    <div style="display:flex;justify-content:space-between;font:500 10px var(--mono);color:var(--faint);margin-top:6px"><span>${p.throughput[0].date.slice(5)}</span><span>today</span></div>
+    <div class="kv" style="margin-top:10px"><div><span class="k">yesterday</span><span>${fmt(p.throughput.at(-2).trials)}</span></div><div><span class="k">today</span><span>${fmt(p.throughput.at(-1).trials)}</span></div><div><span class="k">14d total</span><span>${fmt(p.throughput.reduce((a,t)=>a+t.trials,0))}</span></div></div></div>
+  </div>`}
+
+function rMarkets(){return`
+  <div class="card"><h2>Markets <span class="right">14 futures · micro contracts</span></h2>
+    <div class="mgrid">${DATA.markets.map(mk=>{const kr=mk.n_tested?Math.round(mk.n_killed/mk.n_tested*100):0;
+      return`<div class="mtile" onclick="location.hash='#/market/${mk.ticker}'">
+        <span class="mdot" style="background:${mk.agents_now.length?"var(--acc)":"var(--faint)"}"></span>
+        <div class="tk">${mk.ticker}</div><div class="dn">${esc(mk.display)}</div>
+        <div class="ms"><span>${mk.n_tested} tested</span><span data-g="killrate">${kr}% killed</span>${mk.book_sleeves.length?`<span class="good">${mk.book_sleeves.length} sleeve${mk.book_sleeves.length>1?"s":""}</span>`:""}</div>
+      </div>`}).join("")}</div></div>`}
+
+function rMarket(tk){const mk=DATA.markets.find(m=>m.ticker===tk);if(!mk)return rMarkets();
+  const rows=DATA.leaderboard.filter(s=>s.market===tk);
+  const kr=mk.n_tested?Math.round(mk.n_killed/mk.n_tested*100):0;
+  return`<a class="backlink" href="#/markets">← Markets</a>
+  <div class="card"><h2><span class="mono">${mk.ticker}</span> — ${esc(mk.display)}<span class="right">${mk.status}</span></h2>
+    <div class="strip">
+      <div class="stat"><div class="l">TESTED</div><div class="v">${mk.n_tested}</div></div>
+      <div class="stat" data-g="killrate"><div class="l">KILL RATE</div><div class="v">${kr}%</div></div>
+      <div class="stat" data-g="sleeve"><div class="l">BOOK SLEEVES</div><div class="v">${mk.book_sleeves.length}</div></div>
+      <div class="stat" data-g="agent"><div class="l">AGENTS NOW</div><div class="v">${mk.agents_now.length}</div></div>
+    </div>
+    ${mk.agents_now.length?`<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">${mk.agents_now.map(a=>`<span class="chip b">● ${esc(a)}</span>`).join("")}</div>`:""}
+  </div>
+  ${mk.book_sleeves.length?`<div class="card"><h2>Validated sleeves <span class="iico" data-g="sleeve">i</span></h2><div style="display:flex;gap:6px;flex-wrap:wrap">${mk.book_sleeves.map(s=>`<a class="sleeve" href="#/strategy/${encodeURIComponent(s)}">${esc(s)}</a>`).join("")}</div></div>`:""}
+  <div class="card"><h2>Strategies tried here <span class="right">${rows.length} shown</span></h2>
+    ${rows.length?lbHead+lbRows(rows):`<div class="dim" style="padding:10px">Nothing on the leaderboard for ${mk.ticker} yet.</div>`}</div>`}
+
+function rStrategy(id){const s=DATA.strategies[id];const row=DATA.leaderboard.find(r=>r.id===id);
+  if(!s&&!row)return`<a class="backlink" href="#/overview">← Overview</a><div class="card"><h2>${esc(id)}</h2><div class="dim">Not in the ledger snapshot.</div></div>`;
+  const name=s?.name||row.name, market=s?.market||row.market, tier=s?.tier||row.tier;
+  const met=s?.metrics||row;
+  return`<a class="backlink" href="javascript:history.back()">← Back</a>
+  <div class="card"><h2><span class="mono">${esc(name)}</span> ${tierChip(tier)}<span class="right">${market}</span></h2>
+    ${s?`<div style="font-size:13px;color:#c6cad2;margin-bottom:12px">${esc(s.mechanism)}</div>`:""}
+    <div class="kv">
+      <div><span class="k" data-g="n">n</span><span>${fmt(met.n)}</span></div>
+      <div><span class="k" data-g="wr">WR</span><span>${met.wr==null?"—":Math.round(met.wr*100)+"%"}</span></div>
+      <div><span class="k" data-g="pf">PF</span><span class="${met.pf>=1?"":"bad"}">${met.pf?.toFixed(3)??"—"}</span></div>
+      <div><span class="k" data-g="usd_mo">$/mo</span><span class="${met.usd_mo>=0?"good":"bad"}">${money(met.usd_mo)}</span></div>
+      <div><span class="k" data-g="usd_trade">$/trade</span><span>${money(met.usd_trade)}</span></div>
+      <div><span class="k" data-g="dev3yr">window</span><span>dev3yr</span></div>
+    </div></div>
+  ${s?`
+  <div class="card"><h2>Equity — dev3yr <span class="right" data-g="sim">simulation-tier</span></h2>
+    ${s.equity_curve?.length?line(s.equity_curve,420,120,s.equity_curve.at(-1)>=0?"#4ade80":"#f87171",true):'<div class="dim" style="padding:10px">per-trade equity log not captured for this strategy yet — engine v2 will record it</div>'}
+    <div class="kv" style="margin-top:10px">${Object.entries(s.by_year||{}).map(([y,v])=>`<div><span class="k">${y}</span><span class="${v>=0?"good":"bad"}">${money(v)}</span></div>`).join("")}</div></div>
+  ${s.params&&Object.keys(s.params).length?`<div class="card"><h2>Params</h2><div class="kv">${Object.entries(s.params).map(([k,v])=>`<div><span class="k">${esc(k)}</span><span>${esc(String(v))}</span></div>`).join("")}</div></div>`:""}
+  <div class="card"><h2>Robustness <span class="iico" data-g="robustness">i</span></h2>
+    <div class="rob">${Object.entries(s.robustness||{}).map(([k,v])=>{const g={plateau:"plateau",mechanism_controls:"mechanism",ex_best_year:"exbest",mes_replication:"mesrep"}[k]||"robustness";
+      const cls=v==="pass"?"g":v==="FAIL"?"r":v==="pending"?"b":"n";
+      return`<span class="chip ${cls}" data-g="${g}">${k.replace(/_/g," ").toUpperCase()} · ${String(v).toUpperCase()}</span>`}).join("")}</div></div>
+  <div class="card"><h2>Verdict history</h2>
+    ${(s.verdict_history||[]).map(v=>`<div class="fe"><span class="t">${v.t.slice(5,10)}</span><span class="chip b">${esc(v.stage).toUpperCase()}</span><span class="chip ${v.verdict==="PASSES"?"g":v.verdict==="KILLED"?"r":"y"}">${esc(v.verdict)}</span></div>`).join("")}</div>`:
+  `<div class="card"><div class="dim">Full detail bundle not published for this strategy yet — leaderboard metrics shown.</div></div>`}`}
+
+function rDecisions(){return`
+  <div class="card" style="margin-bottom:12px"><h2>Decision queue <span class="iico" data-g="decision">i</span><span class="right">${DATA.decisions.length} waiting</span></h2>
+  <div class="dim" style="font-size:12px">The engine acts alone everywhere else. These need you.</div></div>
+  ${DATA.decisions.map(d=>{const golden=d.kind==="golden_test";
+  return`<div class="dcard ${d.needs_attention?"glow":""}">
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="dkind" data-g="${golden?"golden":"decision"}">${d.kind.replace(/_/g," ").toUpperCase()}</span>${golden?`<span class="frozen" data-g="stagefrozen">❄ STAGED &amp; FROZEN</span>`:""}<span class="right dim" style="margin-left:auto;font:500 11px var(--mono)">staged ${ago(d.staged)}</span></div>
+    <h3>${esc(d.title)}</h3>
+    <div class="dline"><span class="k">ENGINE REC</span><span style="font-weight:700" class="${d.recommendation.startsWith("APPROVE")?"good":"warn"}">${esc(d.recommendation)}</span></div>
+    <div class="dline"><span class="k">EVIDENCE</span><span class="mono" style="font-size:12px">${esc(d.evidence)}</span></div>
+    <div class="dline"><span class="k">YES MEANS</span><span class="warn">${esc(d.what_yes_means)}${golden?` <span class="iico" data-g="holdout">i</span>`:""}</span></div>
+    ${golden?`<div class="dim" style="font-size:11.5px;margin-top:6px">Nothing is lost by waiting — the bundle is immutable on the ledger. Review when ready.</div>`:""}
+    <div class="dbtns"><span class="btn approve">Approve</span><span class="btn veto">Veto</span></div>
+    <div class="dnote">Approval happens in the engine session — buttons are a preview of the future flow.</div>
+  </div>`}).join("")}`}
+
+function rRoadmap(){const r=DATA.roadmap;const best=r.books.reduce((a,b)=>b.usd_mo_5acct>a.usd_mo_5acct?b:a,r.books[0]);
+  const p=Math.min(1,best.usd_mo_5acct/r.goal_usd_mo);
+  return`
+  <div class="card"><h2>$10k/mo goal <span class="right"><span class="simtag" data-g="sim">SIMULATION-TIER</span></span></h2>
+    <div class="goal"><div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px">
+      <span class="num" style="font-size:24px;font-weight:700" data-g="surv">${money(best.usd_mo_5acct)}<span class="dim" style="font-size:13px">/mo</span></span>
+      <span class="num dim">goal ${money(r.goal_usd_mo)}/mo</span></div>
+    <div class="goalbar"><i style="width:${(p*100).toFixed(1)}%"></i></div>
+    <div class="dim" style="font-size:11.5px;margin-top:6px">${(p*100).toFixed(0)}% of goal · best plan: ${esc(best.name)} · survival-adjusted <span class="iico" data-g="surv">i</span></div></div></div>
+  ${r.books.map(b=>`<div class="card"><h2>${esc(b.name)} <span class="right">plan: ${esc(b.plan)}</span></h2>
+    <div class="kv">
+      <div><span class="k" data-g="usd_mo">$/mo · 1 acct</span><span>${money(b.usd_mo)}</span></div>
+      <div><span class="k" data-g="surv">$/mo · 5 accts</span><span class="good">${money(b.usd_mo_5acct)}</span></div>
+      <div><span class="k">% of goal</span><span>${Math.round(b.pct_of_goal*100)}%</span></div>
+    </div>
+    <div style="margin-top:10px;font-size:11px;color:var(--dim)" data-g="p_breach">p_breach ${pct(b.p_breach)} vs 20% cap</div>
+    <div class="breach"><i style="width:${(b.p_breach/0.25*100).toFixed(1)}%;background:${b.p_breach<0.2?"var(--good)":"var(--bad)"}"></i><span class="cap"></span></div>
+    <div style="font-size:10px;color:var(--faint);margin-top:3px;text-align:right">red line = 20% cap</div>
+    <div class="micros" data-g="micros">${Object.entries(b.micros).map(([k,v])=>`<div class="micro"><div class="mv">${v}</div><div class="ml">${esc(k)}</div></div>`).join("")}</div>
+  </div>`).join("")}
+  <div class="card"><h2>Eval-account plan <span class="iico" data-g="evalplan">i</span></h2>
+    <div class="kv">
+      <div><span class="k">Tradeify accts</span><span>${r.eval_plan.tradeify_accounts}</span></div>
+      <div><span class="k">Apex accts</span><span>~${r.eval_plan.apex_accounts}</span></div>
+      <div><span class="k">one-time cost</span><span>${money(r.eval_plan.one_time_cost_usd[0])}–${money(r.eval_plan.one_time_cost_usd[1])}</span></div>
+      <div><span class="k">first payout</span><span>~month ${r.eval_plan.first_payout_month} from GO</span></div>
+      <div><span class="k">full run-rate</span><span>months ${r.eval_plan.full_runrate_months.join("–")}</span></div>
+    </div>
+    <div style="margin-top:12px"><span class="simtag" data-g="sim">${esc(r.disclaimer).toUpperCase()}</span></div></div>
+  <div class="updated">NEO · data.json republished by the engine every few minutes · this page refetches every 60s</div>`}
+
+load();
+</script>
+</body>
+</html>

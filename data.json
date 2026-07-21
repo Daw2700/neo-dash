@@ -1,0 +1,1247 @@
+{
+ "meta": {
+  "stamp": "2026-07-21T21:03:48Z",
+  "stale_after_min": 30,
+  "status": "engine awaiting GO",
+  "engine_state": "idle",
+  "n_registered": 114,
+  "n_results": 189,
+  "n_trials": 30160,
+  "holdout_looks_spent": 0,
+  "pinned_id": "b2-vix-reversion",
+  "needs_attention_count": 1
+ },
+ "leaderboard": [
+  {
+   "id": "b2-vix-reversion",
+   "name": "b2-vix-reversion",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": true,
+   "n": 28,
+   "wr": 0.714,
+   "usd_mo": 107,
+   "pf": 2.294,
+   "usd_trade": 137.1
+  },
+  {
+   "id": "scan-mcl",
+   "name": "mcl-vix (crude)",
+   "market": "MCL",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 26,
+   "wr": 0.577,
+   "usd_mo": 28,
+   "pf": 1.822,
+   "usd_trade": 39.4
+  },
+  {
+   "id": "scan-mbt",
+   "name": "mbt-nr7 (bitcoin)",
+   "market": "MBT",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 109,
+   "wr": 0.45,
+   "usd_mo": 38,
+   "pf": 1.626,
+   "usd_trade": 12.5
+  },
+  {
+   "id": "scan-mym",
+   "name": "mym-prehol (Dow)",
+   "market": "MYM",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 31,
+   "wr": 0.613,
+   "usd_mo": 16,
+   "pf": 1.619,
+   "usd_trade": 18.7
+  },
+  {
+   "id": "b3-nr7-breakout",
+   "name": "b3-nr7-breakout",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 109,
+   "wr": 0.468,
+   "usd_mo": 131,
+   "pf": 1.599,
+   "usd_trade": 43.4
+  },
+  {
+   "id": "b10-nagel-vix-reversal",
+   "name": "b10-nagel-vix-reversal",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 62,
+   "wr": 0.597,
+   "usd_mo": 63,
+   "pf": 1.576,
+   "usd_trade": 36.9
+  },
+  {
+   "id": "b3-monday-long",
+   "name": "b3-monday-long",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 137,
+   "wr": 0.562,
+   "usd_mo": 150,
+   "pf": 1.448,
+   "usd_trade": 39.3
+  },
+  {
+   "id": "b3-preholiday-drift",
+   "name": "b3-preholiday-drift",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 31,
+   "wr": 0.548,
+   "usd_mo": 29,
+   "pf": 1.325,
+   "usd_trade": 33.8
+  },
+  {
+   "id": "b4-open-drive",
+   "name": "b4-open-drive",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 131,
+   "wr": 0.427,
+   "usd_mo": 102,
+   "pf": 1.312,
+   "usd_trade": 28.0
+  },
+  {
+   "id": "b7-down-weeks-dip",
+   "name": "b7-down-weeks-dip",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 27,
+   "wr": 0.593,
+   "usd_mo": 61,
+   "pf": 1.945,
+   "usd_trade": 81.0
+  },
+  {
+   "id": "b3-pm-trend-continuation",
+   "name": "b3-pm-trend-continuation",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 80,
+   "wr": 0.588,
+   "usd_mo": 58,
+   "pf": 1.468,
+   "usd_trade": 26.3
+  },
+  {
+   "id": "b2-fomc-predrift",
+   "name": "b2-fomc-predrift",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 24,
+   "wr": 0.375,
+   "usd_mo": 8,
+   "pf": 1.448,
+   "usd_trade": 12.7
+  },
+  {
+   "id": "rep-bondflight-mes",
+   "name": "rep-bondflight-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 56,
+   "wr": null,
+   "usd_mo": 35,
+   "pf": 1.413,
+   "usd_trade": 22.5
+  },
+  {
+   "id": "b2-opex-release",
+   "name": "b2-opex-release",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.429,
+   "usd_mo": 16,
+   "pf": 1.407,
+   "usd_trade": 16.0
+  },
+  {
+   "id": "b3-tom-long",
+   "name": "b3-tom-long",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 144,
+   "wr": 0.576,
+   "usd_mo": 185,
+   "pf": 1.399,
+   "usd_trade": 46.1
+  },
+  {
+   "id": "b2-vol-climax-fade",
+   "name": "b2-vol-climax-fade",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 66,
+   "wr": 0.167,
+   "usd_mo": 25,
+   "pf": 1.382,
+   "usd_trade": 13.4
+  },
+  {
+   "id": "b7-bond-flight-unwind",
+   "name": "b7-bond-flight-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 53,
+   "wr": 0.528,
+   "usd_mo": 54,
+   "pf": 1.365,
+   "usd_trade": 36.7
+  },
+  {
+   "id": "8b-biggap-follow",
+   "name": "8b-biggap-follow",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 30,
+   "wr": 0.433,
+   "usd_mo": 37,
+   "pf": 1.354,
+   "usd_trade": 44.6
+  },
+  {
+   "id": "b2-cpi-follow",
+   "name": "b2-cpi-follow",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 21,
+   "wr": 0.524,
+   "usd_mo": 18,
+   "pf": 1.264,
+   "usd_trade": 30.6
+  },
+  {
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5
+  }
+ ],
+ "feed": [
+  {
+   "t": "2026-07-21T20:03:03.321427+00:00",
+   "hash": "f00f783b",
+   "name": "sweep-2-grammar10k",
+   "status": "grammar sweep complete",
+   "kind": "sweep",
+   "detail": "9,160 configs"
+  },
+  {
+   "t": "2026-07-21T19:58:19.175408+00:00",
+   "hash": "92b75f64",
+   "name": "rep-fomccycle-mes",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "PF 1.061"
+  },
+  {
+   "t": "2026-07-21T19:58:19.174504+00:00",
+   "hash": "0f57f763",
+   "name": "rep-nagel-mes",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.211"
+  },
+  {
+   "t": "2026-07-21T19:54:27.438566+00:00",
+   "hash": "ecd00a61",
+   "name": "robust-fomccycle",
+   "status": "passes",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-21T19:54:27.435290+00:00",
+   "hash": "09dc747b",
+   "name": "robust-nagel",
+   "status": "passes",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-21T19:50:31.456648+00:00",
+   "hash": "cb920b65",
+   "name": "b10-eod-rebalance-momentum",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.723"
+  },
+  {
+   "t": "2026-07-21T19:50:31.455721+00:00",
+   "hash": "e3178f05",
+   "name": "b10-ism-1000-reaction",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.248"
+  },
+  {
+   "t": "2026-07-21T19:50:31.454788+00:00",
+   "hash": "94b9b65b",
+   "name": "b10-nagel-vix-reversal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.576"
+  },
+  {
+   "t": "2026-07-21T19:50:31.453854+00:00",
+   "hash": "506a6bdf",
+   "name": "b10-nfp-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.463"
+  },
+  {
+   "t": "2026-07-21T19:50:31.452906+00:00",
+   "hash": "d5c4c238",
+   "name": "b10-zn-monthend-duration",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.73"
+  },
+  {
+   "t": "2026-07-21T19:50:31.451921+00:00",
+   "hash": "67056ed5",
+   "name": "b10-fomc-cycle-even",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.095"
+  },
+  {
+   "t": "2026-07-21T19:50:31.450755+00:00",
+   "hash": "6e849cdb",
+   "name": "b10-mcl-goldman-roll",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.853"
+  }
+ ],
+ "pipeline": {
+  "workers": [],
+  "backlog": [],
+  "funnel": {
+   "idea": 0,
+   "registered": 1,
+   "dev3yr": 0,
+   "robustness": 0,
+   "mes_replication": 0,
+   "book_candidate": 0,
+   "golden_staged": 0
+  },
+  "throughput": [
+   {
+    "date": "2026-07-08",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-09",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-10",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-11",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-12",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-13",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-14",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-15",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-16",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-17",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-18",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-19",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-20",
+    "trials": 0
+   },
+   {
+    "date": "2026-07-21",
+    "trials": 11345
+   }
+  ]
+ },
+ "markets": [
+  {
+   "ticker": "MNQ",
+   "display": "Nasdaq-100",
+   "status": "active",
+   "n_tested": 44,
+   "n_killed": 23,
+   "book_sleeves": [
+    "b3-nr7-breakout",
+    "b10-nagel-vix-reversal",
+    "b3-monday-long",
+    "b3-preholiday-drift",
+    "b4-open-drive"
+   ],
+   "agents_now": []
+  },
+  {
+   "ticker": "MES",
+   "display": "S&P 500",
+   "status": "active",
+   "n_tested": 6,
+   "n_killed": 0,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "MYM",
+   "display": "Dow",
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 0,
+   "book_sleeves": [
+    "mym-prehol (Dow)"
+   ],
+   "agents_now": []
+  },
+  {
+   "ticker": "M2K",
+   "display": "Russell 2000",
+   "status": "active",
+   "n_tested": 4,
+   "n_killed": 1,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "MGC",
+   "display": "Gold",
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 1,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "SIL",
+   "display": "Silver",
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 1,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "MCL",
+   "display": "Crude Oil",
+   "status": "active",
+   "n_tested": 3,
+   "n_killed": 2,
+   "book_sleeves": [
+    "mcl-vix (crude)"
+   ],
+   "agents_now": []
+  },
+  {
+   "ticker": "MNG",
+   "display": "Nat Gas",
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 1,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "MBT",
+   "display": "Bitcoin",
+   "status": "active",
+   "n_tested": 2,
+   "n_killed": 1,
+   "book_sleeves": [
+    "mbt-nr7 (bitcoin)"
+   ],
+   "agents_now": []
+  },
+  {
+   "ticker": "MET",
+   "display": "Ether",
+   "status": "idle",
+   "n_tested": 0,
+   "n_killed": 0,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "M6E",
+   "display": "Euro FX",
+   "status": "active",
+   "n_tested": 2,
+   "n_killed": 2,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "ZN",
+   "display": "10-yr Note",
+   "status": "active",
+   "n_tested": 5,
+   "n_killed": 4,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "ZC",
+   "display": "Corn",
+   "status": "idle",
+   "n_tested": 0,
+   "n_killed": 0,
+   "book_sleeves": [],
+   "agents_now": []
+  },
+  {
+   "ticker": "ZS",
+   "display": "Soybeans",
+   "status": "idle",
+   "n_tested": 0,
+   "n_killed": 0,
+   "book_sleeves": [],
+   "agents_now": []
+  }
+ ],
+ "strategies": {
+  "b2-vix-reversion": {
+   "name": "b2-vix-reversion",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Volatility spikes overshoot because protection is bought at any price; when VIX closes far above its recent norm vol sellers re-enter and equities rebound next session",
+   "metrics": {
+    "n": 28,
+    "wr": 0.714,
+    "pf": 2.294,
+    "usd_mo": 107,
+    "usd_trade": 137.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:02:40.561543+00:00",
+     "stage": "dev",
+     "verdict": "FAIL"
+    },
+    {
+     "t": "2026-07-21T15:31:04.904658+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.698171+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "scan-mcl": {
+   "name": "mcl-vix (crude)",
+   "market": "MCL",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "MARKET-EXPANSION SCAN of MCL (micro WTI crude): the five validated mechanism configs (monday, nr7, prehol, vix-rebound, open-drive) run natively; each market is judged on its own merits per Daniel's scope-opening order \u2014 no cross-market consistency required, and every config counted as a trial",
+   "metrics": {
+    "n": 26,
+    "wr": 0.577,
+    "pf": 1.822,
+    "usd_mo": 28,
+    "usd_trade": 39.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:47:46.012115+00:00",
+     "stage": "dev3yr",
+     "verdict": "SCAN MCL: 3 QUALIFY incl v"
+    },
+    {
+     "t": "2026-07-21T19:48:23.072978+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "scan-mbt": {
+   "name": "mbt-nr7 (bitcoin)",
+   "market": "MBT",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "MARKET-EXPANSION SCAN of MBT (micro bitcoin): the five validated mechanism configs (monday, nr7, prehol, vix-rebound, open-drive) run natively; each market is judged on its own merits per Daniel's scope-opening order \u2014 no cross-market consistency required, and every config counted as a trial",
+   "metrics": {
+    "n": 109,
+    "wr": 0.45,
+    "pf": 1.626,
+    "usd_mo": 38,
+    "usd_trade": 12.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:47:46.014015+00:00",
+     "stage": "dev3yr",
+     "verdict": "SCAN MBT: 3 QUALIFY"
+    },
+    {
+     "t": "2026-07-21T19:48:23.074078+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "scan-mym": {
+   "name": "mym-prehol (Dow)",
+   "market": "MYM",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "MARKET-EXPANSION SCAN of MYM (micro Dow): the five validated mechanism configs (monday, nr7, prehol, vix-rebound, open-drive) run natively; each market is judged on its own merits per Daniel's scope-opening order \u2014 no cross-market consistency required, and every config counted as a trial",
+   "metrics": {
+    "n": 31,
+    "wr": 0.613,
+    "pf": 1.619,
+    "usd_mo": 16,
+    "usd_trade": 18.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:47:46.011157+00:00",
+     "stage": "dev3yr",
+     "verdict": "SCAN MYM: 3 QUALIFY (monda"
+    },
+    {
+     "t": "2026-07-21T19:48:23.071279+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "b3-nr7-breakout": {
+   "name": "b3-nr7-breakout",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Volatility compression precedes expansion; a break out of the narrowest range in 7 days carries real information",
+   "metrics": {
+    "n": 109,
+    "wr": 0.468,
+    "pf": 1.599,
+    "usd_mo": 131,
+    "usd_trade": 43.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.934979+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.912038+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.707016+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "b10-nagel-vix-reversal": {
+   "name": "b10-nagel-vix-reversal",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Short-horizon reversal is the return to liquidity provision and spikes when intermediaries retreat (high VIX) \u2014 you are paid to absorb urgency when it is scarcest (Nagel RFS 2012)",
+   "metrics": {
+    "n": 62,
+    "wr": 0.597,
+    "pf": 1.576,
+    "usd_mo": 63,
+    "usd_trade": 36.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T19:50:31.454788+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "b3-monday-long": {
+   "name": "b3-monday-long",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Weekend risk premium and Monday retail inflows favor longs at the week open; the shelf's Monday sleeve has never been honestly measured on real data",
+   "metrics": {
+    "n": 137,
+    "wr": 0.562,
+    "pf": 1.448,
+    "usd_mo": 150,
+    "usd_trade": 39.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:22:09.482910+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.908913+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.703270+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "b3-preholiday-drift": {
+   "name": "b3-preholiday-drift",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Documented pre-holiday drift: shorts cover and liquidity providers mark up ahead of exchange closures",
+   "metrics": {
+    "n": 31,
+    "wr": 0.548,
+    "pf": 1.325,
+    "usd_mo": 29,
+    "usd_trade": 33.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:22:09.483315+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.909361+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.703778+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "b4-open-drive": {
+   "name": "b4-open-drive",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "An open-drive (three one-directional opening bars closing at the extreme) is initiative institutional flow that does not revert intraday",
+   "metrics": {
+    "n": 131,
+    "wr": 0.427,
+    "pf": 1.312,
+    "usd_mo": 102,
+    "usd_trade": 28.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T14:44:57.607913+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.920816+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.716899+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   }
+  },
+  "b7-down-weeks-dip": {
+   "name": "b7-down-weeks-dip",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Two consecutive down weeks trigger mechanical rebalancing inflows and exhaust retail capitulation, so the following Monday carries an amplified risk premium",
+   "metrics": {
+    "n": 27,
+    "wr": 0.593,
+    "pf": 1.945,
+    "usd_mo": 61,
+    "usd_trade": 81.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:12:29.404963+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b3-pm-trend-continuation": {
+   "name": "b3-pm-trend-continuation",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "VWAP-pegged institutional orders split across the whole day create intraday momentum: a strong morning continues in the afternoon",
+   "metrics": {
+    "n": 80,
+    "wr": 0.588,
+    "pf": 1.468,
+    "usd_mo": 58,
+    "usd_trade": 26.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.936955+00:00",
+     "stage": "dev",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-21T15:31:04.915304+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.710625+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b2-fomc-predrift": {
+   "name": "b2-fomc-predrift",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Documented pre-FOMC announcement drift: hedgers pay a de-risking premium into 2pm decisions and equities drift up while they wait",
+   "metrics": {
+    "n": 24,
+    "wr": 0.375,
+    "pf": 1.448,
+    "usd_mo": 8,
+    "usd_trade": 12.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:05:17.884442+00:00",
+     "stage": "dev",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-21T15:31:04.906640+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.700599+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "rep-bondflight-mes": {
+   "name": "rep-bondflight-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Flight-to-quality unwind is a market-wide equity phenomenon and must appear on MES if the treasury fear gauge is real",
+   "metrics": {
+    "n": 56,
+    "wr": null,
+    "pf": 1.413,
+    "usd_mo": 35,
+    "usd_trade": 22.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:20:47.675701+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b2-opex-release": {
+   "name": "b2-opex-release",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
+   "metrics": {
+    "n": 35,
+    "wr": 0.429,
+    "pf": 1.407,
+    "usd_mo": 16,
+    "usd_trade": 16.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:02:40.560966+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.903542+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.697136+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b3-tom-long": {
+   "name": "b3-tom-long",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Pension/401k inflows cluster at month boundaries and are price-insensitive buyers; long the turn-of-month sessions",
+   "metrics": {
+    "n": 144,
+    "wr": 0.576,
+    "pf": 1.399,
+    "usd_mo": 185,
+    "usd_trade": 46.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:22:09.481870+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.908251+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.702496+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b2-vol-climax-fade": {
+   "name": "b2-vol-climax-fade",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "A single afternoon 5-min bar with extreme volume and range is forced-flow exhaustion (stops, liquidations); the aggressor is done and price mean-reverts",
+   "metrics": {
+    "n": 66,
+    "wr": 0.167,
+    "pf": 1.382,
+    "usd_mo": 25,
+    "usd_trade": 13.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:02:40.561655+00:00",
+     "stage": "dev",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-21T15:31:04.905174+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.698740+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b7-bond-flight-unwind": {
+   "name": "b7-bond-flight-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Flight-to-quality overshoots: when treasuries rally hard while equities fall, the fear bid unwinds and equities rebound next session \u2014 same risk-premium family as VIX, measured through the bond market's own fear gauge",
+   "metrics": {
+    "n": 53,
+    "wr": 0.528,
+    "pf": 1.365,
+    "usd_mo": 54,
+    "usd_trade": 36.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:12:29.403504+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "8b-biggap-follow": {
+   "name": "8b-biggap-follow",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Large gaps WITH heavy overnight volume are institutional repricing that continues intraday; underreaction pays the follower",
+   "metrics": {
+    "n": 30,
+    "wr": 0.433,
+    "pf": 1.354,
+    "usd_mo": 37,
+    "usd_trade": 44.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T04:50:38.604604+00:00",
+     "stage": "dev",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-21T15:31:04.902111+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.695595+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b2-cpi-follow": {
+   "name": "b2-cpi-follow",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "8:30 CPI prints reprice rates expectations; when the overnight reaction gaps more than half an ATR the cash session underreacts and continues it",
+   "metrics": {
+    "n": 21,
+    "wr": 0.524,
+    "pf": 1.264,
+    "usd_mo": 18,
+    "usd_trade": 30.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:05:17.885072+00:00",
+     "stage": "dev",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-21T15:31:04.907524+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.701627+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "metrics": {
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  }
+ },
+ "decisions": [
+  {
+   "id": "d-demotions",
+   "kind": "demotion",
+   "needs_attention": true,
+   "title": "Sign off: demote lunch-break + bigday-fade",
+   "recommendation": "DEMOTE both \u2014 recommended out; your veto pending",
+   "evidence": "lunch-compression overlaps monday-family weeks; bigday-fade PF 1.08 marginal at n=202",
+   "what_yes_means": "Both leave the candidate pool (reversible via ledger)",
+   "staged": "2026-07-20T00:00:00Z"
+  },
+  {
+   "id": "d-apex-verify",
+   "kind": "funding",
+   "needs_attention": false,
+   "title": "Apex account verification before any funding",
+   "recommendation": "Verify $4k drawdown, split and consistency rules on their site",
+   "evidence": "Apex blocks bots \u2014 needs your eyes (or claude-in-chrome with you present)",
+   "what_yes_means": "Confirms the ~18-account Apex leg of the $10k route is real",
+   "staged": "2026-07-20T00:00:00Z"
+  },
+  {
+   "id": "d-neo300",
+   "kind": "cleanup",
+   "needs_attention": false,
+   "title": "Neo-300 paper bot: retire or repurpose",
+   "recommendation": "Repurpose as live slippage collector (its strategy is dead)",
+   "evidence": "6a-neo300-real-honest: PF 1.078 on real data \u2014 below survival bar",
+   "what_yes_means": "Bot keeps running but only to measure real fills vs sim",
+   "staged": "2026-07-20T00:00:00Z"
+  }
+ ],
+ "roadmap": {
+  "goal_usd_mo": 10000,
+  "books": [
+   {
+    "name": "book8-SIZED-growth (Tradeify)",
+    "plan": "growth",
+    "p_breach": 0.173,
+    "usd_mo": 582,
+    "usd_mo_5acct": 2911,
+    "pct_of_goal": 0.291,
+    "micros": {
+     "monday": 3,
+     "prehol": 1,
+     "nr7": 1,
+     "opendrive": 1,
+     "mym_prehol": 1,
+     "mcl_vix": 1,
+     "mbt_nr7": 3,
+     "nagel": 2
+    }
+   },
+   {
+    "name": "book8-APEX-sized",
+    "plan": "apex150",
+    "p_breach": 0.165,
+    "usd_mo": 443,
+    "usd_mo_5acct": 2215,
+    "pct_of_goal": 0.222,
+    "micros": {
+     "monday": 1,
+     "prehol": 1,
+     "nr7": 1,
+     "opendrive": 1,
+     "mym_prehol": 1,
+     "mcl_vix": 1,
+     "mbt_nr7": 2,
+     "nagel": 2
+    }
+   }
+  ],
+  "eval_plan": {
+   "tradeify_accounts": 5,
+   "apex_accounts": 18,
+   "one_time_cost_usd": [
+    7000,
+    11000
+   ],
+   "first_payout_month": 4,
+   "full_runrate_months": [
+    6,
+    9
+   ]
+  },
+  "disclaimer": "All figures simulation-tier until live fills."
+ }
+}
