@@ -224,8 +224,11 @@ async function sendQuestion(id){if(!cmdKey())return;
   const note=(document.getElementById("qtxt-"+id)||{value:""}).value.trim();
   if(!note)return;
   const m={type:"decision",id,action:"question",note,t:new Date().toISOString(),posted:false};
-  const o=outboxGet();o.push(m);outboxSave(o);
+  const o=outboxGet().filter(x=>!(x.id===id&&x.action==="question"));o.push(m);outboxSave(o);
   m.posted=await postCmd(m);outboxSave(o);route()}
+async function undoQuestion(id){const o=outboxGet();const m=o.find(x=>x.id===id&&x.action==="question");
+  if(m&&m.posted)await postCmd({type:"decision",id,action:"question_undo",note:"",t:new Date().toISOString()});
+  outboxSave(o.filter(x=>!(x.id===id&&x.action==="question")));route()}
 async function sendDecision(id,action){if(!cmdKey())return;
   const note=(document.getElementById("txt-"+id)||{value:""}).value.trim();
   const m={type:"decision",id,action,note,t:new Date().toISOString(),posted:false};
@@ -511,6 +514,14 @@ function rDecisions(){return`
   <div class="card" style="margin-bottom:12px"><h2>Decision queue <span class="iico" data-g="decision">i</span><span class="right">${DATA.decisions.length} waiting</span></h2>
   <div class="dim" style="font-size:12px">The engine acts alone everywhere else. These need you.</div></div>
   ${DATA.decisions.map(d=>{const golden=d.kind==="golden_test";
+  const qob=(window.OUTBOX||[]).find(x=>x.id===d.id&&x.action==="question");
+  if(qob)return`<div class="dcard" style="opacity:.75">
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="dkind">${d.kind.replace(/_/g," ").toUpperCase()}</span><span class="chip b">↩ SENT BACK WITH YOUR QUESTION</span></div>
+    <h3 style="color:var(--dim)">${esc(d.title)}</h3>
+    <div class="dim" style="font-size:12.5px">“${esc(qob.note)}”${qob.posted?"":" · offline, will retry"}</div>
+    <div class="dim" style="font-size:11.5px;margin-top:6px">A fresh card with the engine's answer will replace this one on its next loop.</div>
+    <div class="dbtns"><span class="btn" onclick="undoQuestion('${d.id}')">cancel question</span></div>
+  </div>`;
   return`<div class="dcard ${d.needs_attention?"glow":""}">
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="dkind" data-g="${golden?"golden":"decision"}">${d.kind.replace(/_/g," ").toUpperCase()}</span>${golden?`<span class="frozen" data-g="stagefrozen">❄ STAGED &amp; FROZEN</span>`:""}<span class="right dim" style="margin-left:auto;font:500 11px var(--mono)">staged ${ago(d.staged)}</span></div>
     <h3>${esc(d.title)}</h3>
@@ -527,7 +538,6 @@ function rDecisions(){return`
     ${(d.qa||[]).map(z=>`<div style="margin-top:8px;padding:8px 10px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;font-size:12.5px">
       <div><span class="k" style="color:var(--acc);font:700 10px var(--mono)">YOU ASKED</span> ${esc(z.q)}</div>
       <div style="margin-top:5px"><span class="k" style="color:var(--good);font:700 10px var(--mono)">ENGINE</span> ${esc(z.a)}</div></div>`).join("")}
-    ${(window.OUTBOX||[]).filter(x=>x.id===d.id&&x.action==="question").map(x=>`<div class="dim" style="margin-top:8px;font-size:12px">? sent — answer will appear here: “${esc(x.note)}”${x.posted?"":" · offline, will retry"}</div>`).join("")}
     ${(()=>{const ob=(window.OUTBOX||[]).find(x=>x.id===d.id&&x.action!=="question");
       return ob?`<div class="dbtns"><span class="chip ${ob.action==="approve"?"g":"y"}" style="font-size:11px;padding:6px 10px">${ob.action==="approve"?"✓ APPROVED":"✕ DENIED"} — queued for engine${ob.posted?"":" · offline, will retry"}</span><span class="btn" onclick="undoDecision('${d.id}')">undo</span></div>`
       :`<div class="dbtns"><span class="btn approve" onclick="toggleBox('note-${d.id}')">Approve…</span><span class="btn" onclick="toggleBox('q-${d.id}')">Question…</span><span class="btn veto" onclick="sendDecision('${d.id}','deny')">Deny</span></div>
