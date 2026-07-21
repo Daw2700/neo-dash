@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-21T23:35:40Z",
+  "stamp": "2026-07-21T23:41:35Z",
   "stale_after_min": 30,
-  "status": "testing mcl-weekend-insurance-roundtrip",
+  "status": "testing perp-funding-clock-impulse",
   "engine_state": "ok",
-  "n_registered": 118,
-  "n_results": 192,
+  "n_registered": 119,
+  "n_results": 193,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-21T23:37:24.053178+00:00",
+   "hash": "5b0a2153",
+   "name": "funding-clock-impulse",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.776"
+  },
+  {
    "t": "2026-07-21T23:31:20.012785+00:00",
    "hash": "2745df64",
    "name": "mcl-weekend-insurance-roundtrip",
@@ -421,28 +429,11 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.248"
-  },
-  {
-   "t": "2026-07-21T19:50:31.454788+00:00",
-   "hash": "94b9b65b",
-   "name": "b10-nagel-vix-reversal",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.576"
   }
  ],
  "pipeline": {
   "workers": [],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "perp-funding-clock-impulse",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.28
-   },
    {
     "rank": 4,
     "idea": "wti-settlement-window-reversal",
@@ -508,7 +499,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
@@ -571,7 +562,7 @@
    },
    {
     "date": "2026-07-21",
-    "trials": 11348
+    "trials": 11349
    }
   ]
  },
@@ -580,8 +571,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 24,
+   "n_tested": 46,
+   "n_killed": 25,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
