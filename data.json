@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-21T21:03:48Z",
+  "stamp": "2026-07-21T21:40:57Z",
   "stale_after_min": 30,
   "status": "engine awaiting GO",
   "engine_state": "idle",
@@ -22,7 +22,11 @@
    "wr": 0.714,
    "usd_mo": 107,
    "pf": 2.294,
-   "usd_trade": 137.1
+   "usd_trade": 137.1,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 7
+   }
   },
   {
    "id": "scan-mcl",
@@ -34,7 +38,11 @@
    "wr": 0.577,
    "usd_mo": 28,
    "pf": 1.822,
-   "usd_trade": 39.4
+   "usd_trade": 39.4,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "scan-mbt",
@@ -46,7 +54,11 @@
    "wr": 0.45,
    "usd_mo": 38,
    "pf": 1.626,
-   "usd_trade": 12.5
+   "usd_trade": 12.5,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "scan-mym",
@@ -58,7 +70,11 @@
    "wr": 0.613,
    "usd_mo": 16,
    "pf": 1.619,
-   "usd_trade": 18.7
+   "usd_trade": 18.7,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "b3-nr7-breakout",
@@ -70,7 +86,11 @@
    "wr": 0.468,
    "usd_mo": 131,
    "pf": 1.599,
-   "usd_trade": 43.4
+   "usd_trade": 43.4,
+   "sizing": {
+    "growth_max": 4,
+    "apex_max": 2
+   }
   },
   {
    "id": "b10-nagel-vix-reversal",
@@ -82,7 +102,11 @@
    "wr": 0.597,
    "usd_mo": 63,
    "pf": 1.576,
-   "usd_trade": 36.9
+   "usd_trade": 36.9,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   },
   {
    "id": "b3-monday-long",
@@ -94,7 +118,11 @@
    "wr": 0.562,
    "usd_mo": 150,
    "pf": 1.448,
-   "usd_trade": 39.3
+   "usd_trade": 39.3,
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   },
   {
    "id": "b3-preholiday-drift",
@@ -106,7 +134,11 @@
    "wr": 0.548,
    "usd_mo": 29,
    "pf": 1.325,
-   "usd_trade": 33.8
+   "usd_trade": 33.8,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   },
   {
    "id": "b4-open-drive",
@@ -118,7 +150,11 @@
    "wr": 0.427,
    "usd_mo": 102,
    "pf": 1.312,
-   "usd_trade": 28.0
+   "usd_trade": 28.0,
+   "sizing": {
+    "growth_max": 3,
+    "apex_max": 2
+   }
   },
   {
    "id": "b7-down-weeks-dip",
@@ -130,7 +166,11 @@
    "wr": 0.593,
    "usd_mo": 61,
    "pf": 1.945,
-   "usd_trade": 81.0
+   "usd_trade": 81.0,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 6
+   }
   },
   {
    "id": "b3-pm-trend-continuation",
@@ -142,7 +182,11 @@
    "wr": 0.588,
    "usd_mo": 58,
    "pf": 1.468,
-   "usd_trade": 26.3
+   "usd_trade": 26.3,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   },
   {
    "id": "b2-fomc-predrift",
@@ -154,7 +198,11 @@
    "wr": 0.375,
    "usd_mo": 8,
    "pf": 1.448,
-   "usd_trade": 12.7
+   "usd_trade": 12.7,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "rep-bondflight-mes",
@@ -166,7 +214,11 @@
    "wr": null,
    "usd_mo": 35,
    "pf": 1.413,
-   "usd_trade": 22.5
+   "usd_trade": 22.5,
+   "sizing": {
+    "growth_max": 6,
+    "apex_max": 5
+   }
   },
   {
    "id": "b2-opex-release",
@@ -178,7 +230,11 @@
    "wr": 0.429,
    "usd_mo": 16,
    "pf": 1.407,
-   "usd_trade": 16.0
+   "usd_trade": 16.0,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "b3-tom-long",
@@ -190,7 +246,11 @@
    "wr": 0.576,
    "usd_mo": 185,
    "pf": 1.399,
-   "usd_trade": 46.1
+   "usd_trade": 46.1,
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   },
   {
    "id": "b2-vol-climax-fade",
@@ -202,7 +262,11 @@
    "wr": 0.167,
    "usd_mo": 25,
    "pf": 1.382,
-   "usd_trade": 13.4
+   "usd_trade": 13.4,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 7
+   }
   },
   {
    "id": "b7-bond-flight-unwind",
@@ -214,7 +278,11 @@
    "wr": 0.528,
    "usd_mo": 54,
    "pf": 1.365,
-   "usd_trade": 36.7
+   "usd_trade": 36.7,
+   "sizing": {
+    "growth_max": 3,
+    "apex_max": 3
+   }
   },
   {
    "id": "8b-biggap-follow",
@@ -226,7 +294,11 @@
    "wr": 0.433,
    "usd_mo": 37,
    "pf": 1.354,
-   "usd_trade": 44.6
+   "usd_trade": 44.6,
+   "sizing": {
+    "growth_max": 4,
+    "apex_max": 4
+   }
   },
   {
    "id": "b2-cpi-follow",
@@ -238,7 +310,11 @@
    "wr": 0.524,
    "usd_mo": 18,
    "pf": 1.264,
-   "usd_trade": 30.6
+   "usd_trade": 30.6,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 5
+   }
   },
   {
    "id": "b3-prior-high-break",
@@ -250,7 +326,11 @@
    "wr": 0.498,
    "usd_mo": 127,
    "pf": 1.237,
-   "usd_trade": 19.5
+   "usd_trade": 19.5,
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   }
  ],
  "feed": [
@@ -591,7 +671,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 7
+   }
   },
   "scan-mcl": {
    "name": "mcl-vix (crude)",
@@ -622,6 +706,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
    }
   },
   "scan-mbt": {
@@ -653,6 +741,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
    }
   },
   "scan-mym": {
@@ -684,6 +776,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
    }
   },
   "b3-nr7-breakout": {
@@ -720,6 +816,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 4,
+    "apex_max": 2
    }
   },
   "b10-nagel-vix-reversal": {
@@ -746,6 +846,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
    }
   },
   "b3-monday-long": {
@@ -782,6 +886,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
    }
   },
   "b3-preholiday-drift": {
@@ -818,6 +926,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
    }
   },
   "b4-open-drive": {
@@ -854,6 +966,10 @@
     "mechanism_controls": "pass",
     "ex_best_year": "pass",
     "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 3,
+    "apex_max": 2
    }
   },
   "b7-down-weeks-dip": {
@@ -874,7 +990,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 6
+   }
   },
   "b3-pm-trend-continuation": {
    "name": "b3-pm-trend-continuation",
@@ -904,7 +1024,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   },
   "b2-fomc-predrift": {
    "name": "b2-fomc-predrift",
@@ -934,7 +1058,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
@@ -954,7 +1082,11 @@
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 6,
+    "apex_max": 5
+   }
   },
   "b2-opex-release": {
    "name": "b2-opex-release",
@@ -984,7 +1116,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   "b3-tom-long": {
    "name": "b3-tom-long",
@@ -1014,7 +1150,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   },
   "b2-vol-climax-fade": {
    "name": "b2-vol-climax-fade",
@@ -1044,7 +1184,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 7
+   }
   },
   "b7-bond-flight-unwind": {
    "name": "b7-bond-flight-unwind",
@@ -1064,7 +1208,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 3,
+    "apex_max": 3
+   }
   },
   "8b-biggap-follow": {
    "name": "8b-biggap-follow",
@@ -1094,7 +1242,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 4,
+    "apex_max": 4
+   }
   },
   "b2-cpi-follow": {
    "name": "b2-cpi-follow",
@@ -1124,7 +1276,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 5
+   }
   },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
@@ -1154,7 +1310,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   }
  },
  "decisions": [
@@ -1243,5 +1403,259 @@
    ]
   },
   "disclaimer": "All figures simulation-tier until live fills."
+ },
+ "bundles": [
+  {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2,
+    "8b-biggap-follow": 1,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 11,
+   "p_breach": 0.196,
+   "usd_mo": 811,
+   "usd_mo_5acct": 4055,
+   "pct_goal": 0.406
+  },
+  {
+   "id": "Validated 8 + vix-reversion|growth",
+   "name": "Validated 8 + vix-reversion",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "scan-mcl": 1,
+    "scan-mym": 2,
+    "b3-nr7-breakout": 3,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 2,
+    "b4-open-drive": 1,
+    "b2-vix-reversion": 2
+   },
+   "total_micros": 13,
+   "p_breach": 0.183,
+   "usd_mo": 707,
+   "usd_mo_5acct": 3535,
+   "pct_goal": 0.353
+  },
+  {
+   "id": "Frequent-firing engine|growth",
+   "name": "Frequent-firing engine",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-pm-trend-continuation": 1,
+    "b3-tom-long": 2,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 9,
+   "p_breach": 0.188,
+   "usd_mo": 668,
+   "usd_mo_5acct": 3340,
+   "pct_goal": 0.334
+  },
+  {
+   "id": "Validated 8 (the book)|growth",
+   "name": "Validated 8 (the book)",
+   "plan": "tradeify-growth",
+   "provisional": false,
+   "assumed_rules": false,
+   "members": {
+    "scan-mbt": 1,
+    "scan-mym": 2,
+    "b3-nr7-breakout": 3,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 2,
+    "b4-open-drive": 2
+   },
+   "total_micros": 12,
+   "p_breach": 0.193,
+   "usd_mo": 653,
+   "usd_mo_5acct": 3265,
+   "pct_goal": 0.327
+  },
+  {
+   "id": "Cross-market spread|growth",
+   "name": "Cross-market spread",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 5,
+    "scan-mcl": 5,
+    "scan-mbt": 5,
+    "scan-mym": 3,
+    "b3-monday-long": 2,
+    "rep-bondflight-mes": 5
+   },
+   "total_micros": 25,
+   "p_breach": 0.194,
+   "usd_mo": 520,
+   "usd_mo_5acct": 2600,
+   "pct_goal": 0.26
+  },
+  {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "b2-vix-reversion": 2,
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "b3-pm-trend-continuation": 1,
+    "b3-tom-long": 1,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 8,
+   "p_breach": 0.189,
+   "usd_mo": 516,
+   "usd_mo_5acct": 2580,
+   "pct_goal": 0.258
+  },
+  {
+   "id": "Validated 8 + vix-reversion|apex150",
+   "name": "Validated 8 + vix-reversion",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "scan-mcl": 1,
+    "scan-mbt": 1,
+    "scan-mym": 2,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 1,
+    "b2-vix-reversion": 1
+   },
+   "total_micros": 10,
+   "p_breach": 0.199,
+   "usd_mo": 449,
+   "usd_mo_5acct": 2245,
+   "pct_goal": 0.225
+  },
+  {
+   "id": "Validated 8 (the book)|apex150",
+   "name": "Validated 8 (the book)",
+   "plan": "apex150 (assumed)",
+   "provisional": false,
+   "assumed_rules": true,
+   "members": {
+    "scan-mbt": 1,
+    "scan-mym": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1
+   },
+   "total_micros": 7,
+   "p_breach": 0.177,
+   "usd_mo": 378,
+   "usd_mo_5acct": 1890,
+   "pct_goal": 0.189
+  },
+  {
+   "id": "Frequent-firing engine|apex150",
+   "name": "Frequent-firing engine",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "scan-mbt": 2,
+    "b3-nr7-breakout": 1,
+    "b3-pm-trend-continuation": 1,
+    "b3-tom-long": 1,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.172,
+   "usd_mo": 348,
+   "usd_mo_5acct": 1740,
+   "pct_goal": 0.174
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "b2-vix-reversion": 3,
+    "scan-mcl": 1,
+    "scan-mym": 1,
+    "b10-nagel-vix-reversal": 2,
+    "b7-down-weeks-dip": 2,
+    "b2-opex-release": 1,
+    "b2-vol-climax-fade": 1
+   },
+   "total_micros": 11,
+   "p_breach": 0.187,
+   "usd_mo": 346,
+   "usd_mo_5acct": 1730,
+   "pct_goal": 0.173
+  },
+  {
+   "id": "Cross-market spread|apex150",
+   "name": "Cross-market spread",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "b2-vix-reversion": 4,
+    "scan-mbt": 2,
+    "b3-monday-long": 1
+   },
+   "total_micros": 7,
+   "p_breach": 0.187,
+   "usd_mo": 346,
+   "usd_mo_5acct": 1730,
+   "pct_goal": 0.173
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "scan-mcl": 2,
+    "scan-mym": 2,
+    "b10-nagel-vix-reversal": 5,
+    "b3-preholiday-drift": 3,
+    "b7-down-weeks-dip": 1,
+    "b2-opex-release": 4
+   },
+   "total_micros": 20,
+   "p_breach": 0.194,
+   "usd_mo": 335,
+   "usd_mo_5acct": 1675,
+   "pct_goal": 0.168
+  }
+ ],
+ "sizing_meta": {
+  "computed": "2026-07-21",
+  "breach_cap": 0.2,
+  "window": [
+   "2022-03-01",
+   "2025-02-28"
+  ]
  }
 }

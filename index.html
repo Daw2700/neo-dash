@@ -218,6 +218,10 @@ const G = {
   sleeve:{t:"Sleeve",b:"A validated strategy slot in the trading book. The book is assembled from sleeves, each sized in micro contracts.",x:"book_sleeves"},
   pinned:{t:"Pinned strategy",b:"Daniel's chosen always-on-top row, regardless of sort. Currently the vix-reversion candidate he watches daily.",x:"meta.pinned_id"},
   dev3yr:{t:"dev3yr — development window",b:"The 36-month window (2022-03 → 2025-02) every leaderboard metric comes from. Data after it is never touched during development.",x:"$/mo = net / 36"},
+  maxmu:{t:"Max micros",b:"The largest micro-contract count this strategy can trade ALONE before its 1-year breach probability passes the 20% cap, under Tradeify growth rules. Leaderboard $ figures stay per 1 micro.",x:"block-bootstrap sims, dev3yr trades"},
+  bundle:{t:"Bundles",b:"A bundle is a book: several sleeves traded together in one funded account, each at its own micro count. The allocator adds one micro at a time, keeping 1-yr breach probability ≤ 20%, and maximizes survival-adjusted $/mo — the goal metric.",x:"engine re-sizes after every book change"},
+  provisional:{t:"Provisional",b:"Contains at least one candidate that has not passed MES replication — not deployable until it does.",x:"standing order: replication before book entry"},
+  apexrules:{t:"Apex rules — ASSUMED",b:"Apex-150K numbers use assumed rules ($5k trailing threshold, 90% split) pending your verification on their site — see the decision card.",x:"decision d-apex-verify"},
   holdout:{t:"Holdout looks spent",b:"The sacred counter. Data after 2025-03-01 is the one-shot final exam; each look at it is irreversible and only Daniel can approve one. It has never been spent.",x:"holdout_looks_spent"},
   golden:{t:"Golden test",b:"The one-shot run of a frozen book on never-touched holdout data (after 2025-03-01). Passing it is the last gate before real money. The engine can stage one but never run it without approval.",x:"kind: golden_test"},
   gauntlet:{t:"Gauntlet",b:"The registration → test → verdict machinery. Every result is appended to an immutable ledger — nothing is edited or deleted, so the record can't be quietly rewritten.",x:"append-only ledger"},
@@ -275,7 +279,7 @@ document.addEventListener("click",e=>{const el=e.target.closest("[data-g]");
   if(!e.target.closest("#tip"))hideTip()});
 
 /* ================= routing ================= */
-const TABS=[["#/overview","Overview"],["#/pipeline","Pipeline"],["#/markets","Markets"],["#/decisions","Decisions"],["#/roadmap","Roadmap"]];
+const TABS=[["#/overview","Overview"],["#/pipeline","Pipeline"],["#/markets","Markets"],["#/bundles","Bundles"],["#/decisions","Decisions"],["#/roadmap","Roadmap"]];
 function route(){const h=location.hash||"#/overview";const seg=h.slice(2).split("/");render(seg);
   document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",h.startsWith(a.getAttribute("href"))||(a.getAttribute("href")==="#/markets"&&seg[0]==="market")||(a.getAttribute("href")==="#/overview"&&seg[0]==="strategy")));
   window.scrollTo(0,0)}
@@ -307,12 +311,31 @@ function bars(vals,w,h,color){const mx=Math.max(...vals)||1;const bw=w/vals.leng
   return`<svg width="100%" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">${vals.map((v,i)=>`<rect x="${(i*(w/vals.length)+1).toFixed(1)}" y="${(h-(v/mx)*(h-4)).toFixed(1)}" width="${bw.toFixed(1)}" height="${((v/mx)*(h-4)).toFixed(1)}" rx="1.5" fill="${color}"></rect>`).join("")}</svg>`}
 
 /* ================= renderers ================= */
+function rBundles(){const bs=DATA.bundles||[];const nm=id=>(DATA.leaderboard.find(r=>r.id===id)||{name:id}).name;
+  const tclass=id=>((DATA.leaderboard.find(r=>r.id===id)||{}).tier==="BOOK SLEEVE"?"g":"b");
+  return`<div class="card"><h2>Bundles <span class="iico" data-g="bundle">i</span><span class="right">sized · 20% breach cap</span></h2>
+    <div class="dim" style="font-size:12px">Sleeve combinations sized micro-by-micro per funded account, ranked by survival-adjusted $/mo. PROVISIONAL = includes a not-yet-replicated candidate. Apex figures use <span data-g="apexrules" style="text-decoration:underline dotted">assumed rules</span>.</div></div>
+  ${bs.length?bs.map((b,i)=>`<div class="card">
+    <h2><span class="num" style="color:var(--acc);font-size:12px">${String(i+1).padStart(2,"0")}</span> ${esc(b.name)}
+      <span class="chip ${b.assumed_rules?"y":"b"}"${b.assumed_rules?` data-g="apexrules"`:""}>${esc(b.plan).toUpperCase()}</span>
+      ${b.provisional?`<span class="chip y" data-g="provisional">PROVISIONAL</span>`:`<span class="chip g">DEPLOYABLE</span>`}</h2>
+    <div class="kv">
+      <div><span class="k">$/mo · 1 acct</span><span class="good" style="font-weight:700">${money(b.usd_mo)}</span></div>
+      <div><span class="k">$/mo · 5 accts</span><span class="good">${money(b.usd_mo_5acct)}</span></div>
+      <div><span class="k">% of $10k goal</span><span>${Math.round(b.pct_goal*100)}%</span></div>
+      <div><span class="k">breach prob · 1yr</span><span>${Math.round(b.p_breach*100)}%</span></div>
+      <div><span class="k">total micros</span><span>×${b.total_micros}</span></div>
+    </div>
+    <div class="rob" style="margin-top:10px">${Object.entries(b.members).map(([m,q])=>`<span class="chip ${tclass(m)}" style="cursor:pointer" onclick="location.hash='#/strategy/${encodeURIComponent(m)}'">${esc(nm(m))} ×${q}</span>`).join("")}</div>
+  </div>`).join(""):`<div class="card"><div class="dim" style="padding:10px">No bundles computed yet — engine will populate this.</div></div>`}`}
+
 function render(seg){if(!DATA)return;
   const v=seg[0]||"overview";
   if(v==="overview")return $("#view").innerHTML=rOverview();
   if(v==="pipeline")return $("#view").innerHTML=rPipeline();
   if(v==="markets")return $("#view").innerHTML=rMarkets();
   if(v==="market")return $("#view").innerHTML=rMarket(seg[1]);
+  if(v==="bundles")return $("#view").innerHTML=rBundles();
   if(v==="decisions")return $("#view").innerHTML=rDecisions();
   if(v==="roadmap")return $("#view").innerHTML=rRoadmap();
   if(v==="strategy")return $("#view").innerHTML=rStrategy(decodeURIComponent(seg[1]||""));
@@ -326,7 +349,7 @@ function lbRows(rows,limit){return lbSorted(rows).slice(0,limit||99).map((s,i)=>
   return`<div class="lb-row ${s.pinned||s.id===DATA.meta.pinned_id?"pinned":""} ${dead?"dead":""}" onclick="location.hash='#/strategy/${encodeURIComponent(s.id)}'">
     <span class="num faint" style="font-size:11px">${s.id===DATA.meta.pinned_id?"📌":i+1}</span>
     <div style="min-width:0"><div class="nm">${esc(s.name)} <span class="mk">${s.market}</span></div>
-      <div class="lb-m"><span data-g="n">n ${fmt(s.n)}</span><span data-g="wr">WR ${s.wr==null?"—":Math.round(s.wr*100)+"%"}</span><span data-g="usd_trade">${money(s.usd_trade)}/tr</span></div></div>
+      <div class="lb-m"><span data-g="n">n ${fmt(s.n)}</span><span data-g="wr">WR ${s.wr==null?"—":Math.round(s.wr*100)+"%"}</span><span data-g="usd_trade">${money(s.usd_trade)}/tr</span>${s.sizing?`<span data-g="maxmu">max ×${s.sizing.growth_max}μ</span>`:""}</div></div>
     ${tierChip(s.tier)}
     <span class="num r ${s.usd_mo>=0?"good":"bad"}" style="font-weight:700">${money(s.usd_mo)}</span>
     <span class="num r lb-desk dim">${fmt(s.n)}</span>
@@ -346,7 +369,7 @@ function rOverview(){const m=DATA.meta;
       <div class="stat" data-g="trials"><div class="l">TRIALS RUN</div><div class="v">${fmt(m.n_trials)}</div></div>
       <div class="stat sacred" data-g="holdout"><div class="l">HOLDOUT LOOKS SPENT <span class="iico">i</span></div><div class="v">${m.holdout_looks_spent}</div></div>
     </div></div>
-  <div class="card"><h2>Leaderboard — top 20 <span class="right" data-g="dev3yr">dev3yr · 1 micro</span></h2>
+  <div class="card"><h2>Leaderboard — top 20 <span class="right" data-g="dev3yr">dev3yr · $ per 1 micro contract</span></h2>
     ${lbHead}${lbRows(DATA.leaderboard,20)}</div>
   <div class="card"><h2>Activity <span class="right" data-g="gauntlet">append-only ledger</span></h2>
     ${DATA.feed.map(f=>`<div class="fe"><span class="t">${hhmm(f.t)}</span><span class="h" data-g="ledger">${esc(f.hash)}</span><span class="n">${esc(f.name)}</span>${feedChip(f)}<span class="d">${esc(f.detail)}</span></div>`).join("")}</div>`}
@@ -403,7 +426,7 @@ function rMarket(tk){const mk=DATA.markets.find(m=>m.ticker===tk);if(!mk)return 
 function rStrategy(id){const s=DATA.strategies[id];const row=DATA.leaderboard.find(r=>r.id===id);
   if(!s&&!row)return`<a class="backlink" href="#/overview">← Overview</a><div class="card"><h2>${esc(id)}</h2><div class="dim">Not in the ledger snapshot.</div></div>`;
   const name=s?.name||row.name, market=s?.market||row.market, tier=s?.tier||row.tier;
-  const met=s?.metrics||row;
+  const met=s?.metrics||row;const siz=(s&&s.sizing)||(row&&row.sizing);
   return`<a class="backlink" href="javascript:history.back()">← Back</a>
   <div class="card"><h2><span class="mono">${esc(name)}</span> ${tierChip(tier)}<span class="right">${market}</span></h2>
     ${s?`<div style="font-size:13px;color:#c6cad2;margin-bottom:12px">${esc(s.mechanism)}</div>`:""}
@@ -415,6 +438,11 @@ function rStrategy(id){const s=DATA.strategies[id];const row=DATA.leaderboard.fi
       <div><span class="k" data-g="usd_trade">$/trade</span><span>${money(met.usd_trade)}</span></div>
       <div><span class="k" data-g="dev3yr">window</span><span>dev3yr</span></div>
     </div></div>
+  ${siz?`<div class="card"><h2>Sizing <span class="iico" data-g="maxmu">i</span></h2><div class="kv">
+    <div><span class="k">max micros · Tradeify growth</span><span style="font-weight:700">×${siz.growth_max}</span></div>
+    <div><span class="k">max micros · Apex150</span><span data-g="apexrules">×${siz.apex_max} (assumed)</span></div>
+    <div><span class="k">raw $/mo at max size</span><span class="good">${money((met.usd_mo??0)*siz.growth_max)}</span></div>
+   </div><div class="dim" style="font-size:11px;margin-top:8px">Solo sizing under the 20% 1-yr breach cap. Survival-adjusted payout $ only exists at book level — see the Bundles tab.</div></div>`:""}
   ${s?`
   <div class="card"><h2>Equity — dev3yr <span class="right" data-g="sim">simulation-tier</span></h2>
     ${s.equity_curve?.length?line(s.equity_curve,420,120,s.equity_curve.at(-1)>=0?"#4ade80":"#f87171",true):'<div class="dim" style="padding:10px">per-trade equity log not captured for this strategy yet — engine v2 will record it</div>'}

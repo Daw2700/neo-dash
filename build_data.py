@@ -168,6 +168,20 @@ roadmap = {"goal_usd_mo": 10000, "books": books,
                          "full_runrate_months": [6, 9]},
            "disclaimer": "All figures simulation-tier until live fills."}
 
+# --- sizing + bundles (from sizing.py; engine v2 re-runs it after book changes) ---
+bundles, sizing_meta = [], {}
+sf = Path(__file__).with_name("sizing_results.json")
+if sf.exists():
+    sj = json.loads(sf.read_text())
+    bundles = sj["bundles"]
+    sizing_meta = {"computed": sj["computed"], "breach_cap": sj["breach_cap"], "window": sj["window"]}
+    for r in leaderboard:
+        if r["id"] in sj["strategies"]:
+            s = sj["strategies"][r["id"]]
+            r["sizing"] = {"growth_max": s["growth"]["max_micros"], "apex_max": s["apex150"]["max_micros"]}
+            if r["id"] in strategies:
+                strategies[r["id"]]["sizing"] = r["sizing"]
+
 pinned_id = next((r["id"] for r in leaderboard if r["pinned"]), None)
 data = {"meta": {"stamp": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                  "stale_after_min": 30, "status": "engine awaiting GO", "engine_state": "idle",
@@ -177,7 +191,8 @@ data = {"meta": {"stamp": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H
                  "needs_attention_count": sum(1 for d in decisions if d["needs_attention"])},
         "leaderboard": [{k: v for k, v in r.items() if k != "_hash"} for r in leaderboard],
         "feed": feed, "pipeline": pipeline, "markets": markets,
-        "strategies": strategies, "decisions": decisions, "roadmap": roadmap}
+        "strategies": strategies, "decisions": decisions, "roadmap": roadmap,
+        "bundles": bundles, "sizing_meta": sizing_meta}
 OUT.write_text(json.dumps(data, indent=1))
 print(f"data.json: {len(leaderboard)} lb rows, {len(strategies)} detail pages, "
       f"{len(feed)} feed events, pinned={pinned_id}, trials={n_trials:,}")
