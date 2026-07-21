@@ -174,6 +174,13 @@ sf = Path(__file__).with_name("sizing_results.json")
 if sf.exists():
     sj = json.loads(sf.read_text())
     bundles = sj["bundles"]
+    for b in bundles:
+        apex = b["plan"].startswith("apex")
+        b["firm"] = "Apex" if apex else "Tradeify"
+        b["accounts"] = 18 if apex else 5
+        b["usd_mo_total"] = b["usd_mo"] * b["accounts"]
+        b["pct_goal"] = round(b["usd_mo_total"] / 10000, 3)
+    bundles.sort(key=lambda b: -b["usd_mo_total"])
     sizing_meta = {"computed": sj["computed"], "breach_cap": sj["breach_cap"], "window": sj["window"]}
     for r in leaderboard:
         if r["id"] in sj["strategies"]:

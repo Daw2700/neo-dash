@@ -188,7 +188,8 @@
    "p_breach": 0.196,
    "usd_mo": 811,
    "usd_mo_5acct": 4055,
-   "pct_goal": 0.406
+   "pct_goal": 0.406,
+   "wr": 0.495
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -209,7 +210,8 @@
    "p_breach": 0.183,
    "usd_mo": 707,
    "usd_mo_5acct": 3535,
-   "pct_goal": 0.353
+   "pct_goal": 0.353,
+   "wr": 0.52
   },
   {
    "id": "Frequent-firing engine|growth",
@@ -230,7 +232,8 @@
    "p_breach": 0.188,
    "usd_mo": 668,
    "usd_mo_5acct": 3340,
-   "pct_goal": 0.334
+   "pct_goal": 0.334,
+   "wr": 0.489
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -250,7 +253,8 @@
    "p_breach": 0.193,
    "usd_mo": 653,
    "usd_mo_5acct": 3265,
-   "pct_goal": 0.327
+   "pct_goal": 0.327,
+   "wr": 0.498
   },
   {
    "id": "Cross-market spread|growth",
@@ -270,7 +274,8 @@
    "p_breach": 0.194,
    "usd_mo": 520,
    "usd_mo_5acct": 2600,
-   "pct_goal": 0.26
+   "pct_goal": 0.26,
+   "wr": 0.55
   },
   {
    "id": "Everything (full pool)|apex150",
@@ -291,7 +296,8 @@
    "p_breach": 0.189,
    "usd_mo": 516,
    "usd_mo_5acct": 2580,
-   "pct_goal": 0.258
+   "pct_goal": 0.258,
+   "wr": 0.511
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -312,7 +318,8 @@
    "p_breach": 0.199,
    "usd_mo": 449,
    "usd_mo_5acct": 2245,
-   "pct_goal": 0.225
+   "pct_goal": 0.225,
+   "wr": 0.532
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -332,7 +339,8 @@
    "p_breach": 0.177,
    "usd_mo": 378,
    "usd_mo_5acct": 1890,
-   "pct_goal": 0.189
+   "pct_goal": 0.189,
+   "wr": 0.5
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -351,7 +359,8 @@
    "p_breach": 0.172,
    "usd_mo": 348,
    "usd_mo_5acct": 1740,
-   "pct_goal": 0.174
+   "pct_goal": 0.174,
+   "wr": 0.495
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -372,7 +381,8 @@
    "p_breach": 0.187,
    "usd_mo": 346,
    "usd_mo_5acct": 1730,
-   "pct_goal": 0.173
+   "pct_goal": 0.173,
+   "wr": 0.462
   },
   {
    "id": "Cross-market spread|apex150",
@@ -389,7 +399,8 @@
    "p_breach": 0.187,
    "usd_mo": 346,
    "usd_mo_5acct": 1730,
-   "pct_goal": 0.173
+   "pct_goal": 0.173,
+   "wr": 0.545
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -410,7 +421,8 @@
    "p_breach": 0.194,
    "usd_mo": 335,
    "usd_mo_5acct": 1675,
-   "pct_goal": 0.168
+   "pct_goal": 0.168,
+   "wr": 0.552
   }
  ]
 }

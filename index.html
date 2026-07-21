@@ -190,6 +190,7 @@ main{padding:12px 14px 90px;max-width:1100px;margin:0 auto}
 }
 @media(min-width:720px){#tip .close{display:none}}
 .updated{font-size:11px;color:var(--faint);text-align:center;padding:14px 0 4px}
+details.bd{margin-top:12px}details.bd summary{cursor:pointer;font:700 12px Manrope,system-ui,sans-serif;color:var(--acc);padding:8px 0;min-height:32px;user-select:none}details.bd summary:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -313,22 +314,28 @@ function bars(vals,w,h,color){const mx=Math.max(...vals)||1;const bw=w/vals.leng
 /* ================= renderers ================= */
 function rBundles(){const bs=DATA.bundles||[];const nm=id=>(DATA.leaderboard.find(r=>r.id===id)||{name:id}).name;
   const tclass=id=>((DATA.leaderboard.find(r=>r.id===id)||{}).tier==="BOOK SLEEVE"?"g":"b");
-  return`<div class="card"><h2>Bundles <span class="iico" data-g="bundle">i</span><span class="right">sized · 20% breach cap</span></h2>
-    <div class="dim" style="font-size:12px">Sleeve combinations sized micro-by-micro per funded account, ranked by survival-adjusted $/mo. PROVISIONAL = includes a not-yet-replicated candidate. Apex figures use <span data-g="apexrules" style="text-decoration:underline dotted">assumed rules</span>.</div></div>
+  return`<div class="card"><h2>Bundles <span class="iico" data-g="bundle">i</span><span class="right">ranked by total profit/mo</span></h2>
+    <div class="dim" style="font-size:12px">Books of sleeves sized micro-by-micro per funded account. PROVISIONAL = includes a not-yet-replicated candidate. Apex figures use <span data-g="apexrules" style="text-decoration:underline dotted">assumed rules</span>.</div></div>
   ${bs.length?bs.map((b,i)=>`<div class="card">
     <h2><span class="num" style="color:var(--acc);font-size:12px">${String(i+1).padStart(2,"0")}</span> ${esc(b.name)}
-      <span class="chip ${b.assumed_rules?"y":"b"}"${b.assumed_rules?` data-g="apexrules"`:""}>${esc(b.plan).toUpperCase()}</span>
       ${b.provisional?`<span class="chip y" data-g="provisional">PROVISIONAL</span>`:`<span class="chip g">DEPLOYABLE</span>`}</h2>
-    <div class="kv">
-      <div><span class="k">$/mo · 1 acct</span><span class="good" style="font-weight:700">${money(b.usd_mo)}</span></div>
-      <div><span class="k">$/mo · 5 accts</span><span class="good">${money(b.usd_mo_5acct)}</span></div>
-      <div><span class="k">% of $10k goal</span><span>${Math.round(b.pct_goal*100)}%</span></div>
-      <div><span class="k">breach prob · 1yr</span><span>${Math.round(b.p_breach*100)}%</span></div>
-      <div><span class="k">total micros</span><span>×${b.total_micros}</span></div>
+    <div>
+      <div class="fe"><span class="k">prop firm</span><span style="margin-left:auto;font-weight:700">${b.accounts} × ${esc(b.firm)}${b.assumed_rules?` <span class="chip y" data-g="apexrules">ASSUMED</span>`:""}</span></div>
+      <div class="fe"><span class="k">profit / month</span><span class="good num" style="margin-left:auto;font-weight:700;font-size:16px">${money(b.usd_mo_total)}</span></div>
+      <div class="fe"><span class="k">win rate</span><span class="num" style="margin-left:auto">${Math.round(b.wr*100)}%</span></div>
+      <div class="fe"><span class="k" data-g="bundle">fail prob · 1yr</span><span class="num" style="margin-left:auto;${b.p_breach>0.15?"color:var(--warn)":""}">${Math.round(b.p_breach*100)}%</span></div>
     </div>
-    <div class="rob" style="margin-top:10px">${Object.entries(b.members).map(([m,q])=>`<span class="chip ${tclass(m)}" style="cursor:pointer" onclick="location.hash='#/strategy/${encodeURIComponent(m)}'">${esc(nm(m))} ×${q}</span>`).join("")}</div>
+    <details class="bd"><summary>full breakdown</summary>
+      <div class="kv" style="margin-top:10px">
+        <div><span class="k">$/mo · single account</span><span>${money(b.usd_mo)}</span></div>
+        <div><span class="k">% of $10k goal</span><span>${Math.round(b.pct_goal*100)}%</span></div>
+        <div><span class="k">total micros</span><span>×${b.total_micros}</span></div>
+        <div><span class="k">plan</span><span class="num" style="font-size:12px">${esc(b.plan)}</span></div>
+      </div>
+      <div style="margin-top:10px">${Object.entries(b.members).map(([m,q])=>`<div class="fe" style="cursor:pointer" onclick="location.hash='#/strategy/${encodeURIComponent(m)}'">
+        <span class="chip ${tclass(m)}">×${q}μ</span><span style="font-family:Manrope,system-ui,sans-serif;font-weight:600">${esc(nm(m))}</span><span class="t" style="margin-left:auto">${(DATA.leaderboard.find(r=>r.id===m)||{}).tier||"pool"}</span></div>`).join("")}</div>
+    </details>
   </div>`).join(""):`<div class="card"><div class="dim" style="padding:10px">No bundles computed yet — engine will populate this.</div></div>`}`}
-
 function render(seg){if(!DATA)return;
   const v=seg[0]||"overview";
   if(v==="overview")return $("#view").innerHTML=rOverview();
