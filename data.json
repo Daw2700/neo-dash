@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:27:20Z",
+  "stamp": "2026-07-22T09:33:30Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 345,
   "n_results": 450,
@@ -408,19 +408,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T09:22:51Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zn-delivery-wildcard-option-pre-settle-pressure",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "zc-price-limit-expansion-regime-state",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 3,
+    "idea": "mes-close-vwap-dislocation-two-sided-repair",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "mes-closing-imbalance-dissemination-1550-absorption",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "mng-tas-settlement-offset-obligation",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "mgc-asia-hours-discovery-share-regime",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "mes-post-shock-book-replenishment-classifier",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 8,
+    "idea": "mes-morning-range-exhaustion-overnight-carry",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 9,
+    "idea": "zn-tick-constraint-quiet-day-queue-reversion",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "mgc-velocity-logic-reserve-momentum-truncation",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "met-attention-share-concentration-unwind",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-closing-hour-flow-concentration-next-session-decay",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "mng-expiring-contract-implied-quote-settlement-fallback",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 41,
    "dev3yr": 0,
    "robustness": 0,
