@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:26:38Z",
+  "stamp": "2026-07-22T11:30:05Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 397,
   "n_results": 506,
@@ -408,19 +408,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T11:21:05Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-overnight-discovery-venue-composition",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mes-drift-burst-volume-bifurcation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-release-collision-attention-split",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 4,
+    "idea": "mes-holiday-inattention-gated-fomc-lag",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-staggered-settlement-information-lag",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "mes-crossmarket-breadth-gate-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.47
+   },
+   {
+    "rank": 7,
+    "idea": "zn-post-blackout-speaker-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mbt-session-beta-channel-regime",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "m6e-policy-meeting-desync-window",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 10,
+    "idea": "mes-financing-drag-rate-regime-overnight-carry",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.43
+   },
+   {
+    "rank": 11,
+    "idea": "mes-event-conditioned-weekend-risk-premium",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "zc-premarket-pause-reopen-queue-reset",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 13,
+    "idea": "mng-storage-season-turn-hedge-rotation",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 14,
+    "idea": "m2k-fund-fiscal-yearend-loser-rebound",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
