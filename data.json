@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:13:11Z",
+  "stamp": "2026-07-22T16:20:23Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 507,
   "n_results": 637,
@@ -404,19 +404,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T16:06:16Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "sil-side-impact-asymmetry-inventory-pressure",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-micro-share-at-capitulation-low",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-day-margin-expiry-forced-flatten",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "sil-comex-london-efp-delivery-squeeze",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-volume-peak-clock-daytype",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mng-fuel-switching-band-elasticity",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "zc-neglect-catchup-attention-deficit",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.43
+   },
+   {
+    "rank": 8,
+    "idea": "mes-maker-risk-budget-crowdout",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "m6e-ecb-concertation-fix-window",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mym-constituent-halt-stale-leg-catchup",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "zn-latehour-hedging-demand-pressure-reversal",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "mgc-exchange-margin-hike-forced-deleveraging",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.32
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 69,
    "dev3yr": 0,
    "robustness": 0,
