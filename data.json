@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:36:58Z",
+  "stamp": "2026-07-22T09:37:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:33:33Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-closing-imbalance-dissemination-1550-absorption",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:37:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-closing-imbalance-dissemination-1550-absorption",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 5,
     "idea": "mng-tas-settlement-offset-obligation",
@@ -519,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 43,
    "dev3yr": 0,
    "robustness": 0,
