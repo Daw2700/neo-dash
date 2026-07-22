@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:29:13Z",
+  "stamp": "2026-07-22T04:29:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T04:28:50Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-south-american-weather-premium-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:29:15Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "zs-south-american-weather-premium-decay",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "m2k-taxloss-turnofyear-reversal",
@@ -443,7 +442,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 13,
    "dev3yr": 0,
    "robustness": 0,
