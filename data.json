@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:05:36Z",
+  "stamp": "2026-07-22T10:06:19Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 362,
   "n_results": 466,
@@ -408,19 +408,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T09:57:13Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-session-range-completed-early-exhaustion",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.72
+   },
+   {
+    "rank": 3,
+    "idea": "mes-information-discreteness-frog-in-the-pan",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-annual-high-producer-hedge-supply",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-cost-basis-overhang-underreaction",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-offshore-participation-share-expansion-gate",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "m6e-london-1600-benchmark-fix-window-reversal",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-session-disagreement-overnight-repair",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "zn-m2k-gradual-information-diffusion-hourly",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "met-capitulation-band-forced-deleveraging-rebound",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 10,
+    "idea": "mng-forced-flow-signature-slow-capital-reversal",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "m6e-transatlantic-clock-misalignment-window",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "zn-cash-market-closed-futures-open-asymmetry",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "mcl-commodity-index-category-beta-dislocation",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 14,
+    "idea": "mym-leverage-constraint-low-beta-tilt",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 45,
    "dev3yr": 0,
    "robustness": 0,
