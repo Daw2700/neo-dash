@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:53:09Z",
+  "stamp": "2026-07-22T09:53:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:52:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MET",
+    "task": "met-attention-share-concentration-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:53:10Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-closing-hour-flow-concentration-next-session-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:53:10Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "met-attention-share-concentration-unwind",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 12,
-    "idea": "mcl-closing-hour-flow-concentration-next-session-decay",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 13,
     "idea": "mng-expiring-contract-implied-quote-settlement-fallback",
@@ -448,7 +446,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 1,
    "registered": 42,
    "dev3yr": 0,
    "robustness": 0,
