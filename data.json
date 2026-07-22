@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:12:34Z",
+  "stamp": "2026-07-22T20:13:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 608,
-  "n_results": 753,
-  "n_trials": 30741,
+  "n_registered": 609,
+  "n_results": 755,
+  "n_trials": 30743,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:13:32.449390+00:00",
+   "hash": "551ff7d3",
+   "name": "mng-bidweek-fixing-concentration",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.131"
+  },
+  {
+   "t": "2026-07-22T20:13:18.482108+00:00",
+   "hash": "7622fb3a",
+   "name": "zc-export-inspections-monday-demand-stamp",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1003"
+  },
+  {
+   "t": "2026-07-22T20:13:06.844968+00:00",
+   "hash": "63b83aad",
+   "name": "m6e-monthend-turn-usd-funding-squeeze",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T20:10:09.444332+00:00",
    "hash": "551ff7d3",
    "name": "mng-bidweek-fixing-concentration",
@@ -373,52 +397,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.317"
-  },
-  {
-   "t": "2026-07-22T19:59:43.486232+00:00",
-   "hash": "f4544f8a",
-   "name": "mnq-overnight-origin-session-information",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF nan"
-  },
-  {
-   "t": "2026-07-22T19:59:05.140116+00:00",
-   "hash": "83758103",
-   "name": "zn-basis-trade-deleverage-cascade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.497"
-  },
-  {
-   "t": "2026-07-22T19:54:10.717963+00:00",
-   "hash": "371ef9b8",
-   "name": "mcl-cot-release-window-crowding-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.38"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "recheck: zc-export-inspections-monday-demand-stamp",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:12:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "recheck: mng-bidweek-fixing-concentration",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:12:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-monthend-turn-usd-funding-squeeze",
     "stage": "dev3yr",
@@ -484,7 +468,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 85,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -546,7 +530,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 574
+    "trials": 576
    }
   ]
  },
