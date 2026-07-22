@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:16:28Z",
+  "stamp": "2026-07-22T19:16:51Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 586,
   "n_results": 725,
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-dst-transatlantic-overlap-shift-weeks",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:12:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-energy-desk-open-0900-overnight-inventory-handoff",
     "stage": "dev3yr",
     "started": "2026-07-22T19:12:17Z",
     "state": "running"
