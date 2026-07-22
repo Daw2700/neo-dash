@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:10:42Z",
+  "stamp": "2026-07-22T06:14:14Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 258,
-  "n_results": 355,
-  "n_trials": 30326,
+  "n_results": 357,
+  "n_trials": 30328,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mes-payroll-15th-window",
-   "name": "mes-payroll-15th-window",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 35,
-   "wr": 0.6,
-   "usd_mo": 22,
-   "pf": 1.465,
-   "usd_trade": 22.9
   },
   {
    "id": "rep-bondflight-mes",
@@ -307,9 +295,37 @@
    "usd_mo": 2,
    "pf": 1.074,
    "usd_trade": 2.3
+  },
+  {
+   "id": "mcl-carry-regime",
+   "name": "mcl-carry-regime",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 37,
+   "wr": 0.4054,
+   "usd_mo": 9,
+   "pf": 1.043,
+   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T06:13:05.064001+00:00",
+   "hash": "01d72293",
+   "name": "mes-vix-term-structure-inversion-regrossing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.054"
+  },
+  {
+   "t": "2026-07-22T06:11:00.583714+00:00",
+   "hash": "edd20964",
+   "name": "mes-payroll-15th-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T06:10:29.544177+00:00",
    "hash": "01d72293",
@@ -389,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.808"
-  },
-  {
-   "t": "2026-07-22T05:50:42.898670+00:00",
-   "hash": "8b1a121a",
-   "name": "zn-post-data-afternoon-vol-collapse-range-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.053"
-  },
-  {
-   "t": "2026-07-22T05:50:19.736876+00:00",
-   "hash": "20cf9990",
-   "name": "ROBUSTNESS-PROTOCOL mes-prerelease-liquidity-withdrawal-drift-fade (5650586a116c5fa5)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "robustness: mes-payroll-15th-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:08:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "recheck: mes-vix-term-structure-inversion-regrossing",
     "stage": "dev3yr",
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 159
+    "trials": 161
    }
   ]
  },
@@ -956,26 +948,6 @@
     "apex_max": 2
    }
   },
-  "mes-payroll-15th-window": {
-   "name": "mes-payroll-15th-window",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "US payroll runs and 401k/retirement-plan contributions are processed on a semimonthly clock anchored to the 1st and the 15th of each month, so index funds receive mechanical, price-insensitive buy flow around the 15th independent of the turn-of-month anchor already tested as b3-tom-long.",
-   "metrics": {
-    "n": 35,
-    "wr": 0.6,
-    "pf": 1.465,
-    "usd_mo": 22,
-    "usd_trade": 22.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T06:05:34.191060+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1257,6 +1229,26 @@
      "t": "2026-07-21T16:04:19.693873+00:00",
      "stage": "dev3yr",
      "verdict": "FAIL"
+    }
+   ]
+  },
+  "mcl-carry-regime": {
+   "name": "mcl-carry-regime",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Crude oil term structure prices the inventory / convenience-yield state: in backwardation inventories are tight and producers pay long speculators a positive risk premium to carry hedged exposure, while in contango that premium reverses and storage holders are paid instead. Signing MCL direction off the front-versus-deferred basis therefore harvests a producer-hedging risk premium rather than any event reaction, per Gorton and Rouwenhorst and Erb and Harvey.",
+   "metrics": {
+    "n": 37,
+    "wr": 0.4054,
+    "pf": 1.043,
+    "usd_mo": 9,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T01:43:38.994772+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
     }
    ]
   }
