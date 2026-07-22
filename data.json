@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:47:03Z",
+  "stamp": "2026-07-22T13:49:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 448,
-  "n_results": 567,
-  "n_trials": 30555,
+  "n_results": 568,
+  "n_trials": 30556,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -201,18 +201,6 @@
    }
   },
   {
-   "id": "mnq-maintenance-break-inventory-reversal",
-   "name": "mnq-maintenance-break-inventory-reversal",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 100,
-   "wr": 0.54,
-   "usd_mo": 20,
-   "pf": 1.399,
-   "usd_trade": 7.1
-  },
-  {
    "id": "mnq-event-free-day-flow-persistence",
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -303,9 +291,29 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T13:47:16.845598+00:00",
+   "hash": "858b343a",
+   "name": "mnq-maintenance-break-inventory-reversal",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.689"
+  },
   {
    "t": "2026-07-22T13:45:46.319307+00:00",
    "hash": "5cf128a9",
@@ -393,43 +401,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.948"
-  },
-  {
-   "t": "2026-07-22T13:17:15.904502+00:00",
-   "hash": "357a99b5",
-   "name": "mes-event-cluster-bracket",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.626"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-tom-daycount-compression",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:39:51Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "robustness: mnq-maintenance-break-inventory-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:39:51Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "replication: mnq-maintenance-break-inventory-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:44:18Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 4,
@@ -586,7 +561,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 388
+    "trials": 389
    }
   ]
  },
@@ -1155,31 +1130,6 @@
     "apex_max": 1
    }
   },
-  "mnq-maintenance-break-inventory-reversal": {
-   "name": "mnq-maintenance-break-inventory-reversal",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "CME's scheduled 17:00-18:00 ET daily maintenance halt is a 60-minute window in which no participant can adjust risk, so liquidity providers flatten inventory into 17:00 at whatever price clears; that forced pre-halt flattening pushes price away from fair value and the 18:00 reopen repairs it. Money changes hands from the desk that must be flat before a known blackout to the desk willing to hold across it.",
-   "metrics": {
-    "n": 100,
-    "wr": 0.54,
-    "pf": 1.399,
-    "usd_mo": 20,
-    "usd_trade": 7.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T13:35:48.645990+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T13:43:18.841315+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "mnq-event-free-day-flow-persistence": {
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -1343,6 +1293,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
