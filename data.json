@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:33:33Z",
+  "stamp": "2026-07-22T07:39:13Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 292,
-  "n_results": 393,
-  "n_trials": 30364,
+  "n_registered": 295,
+  "n_results": 396,
+  "n_trials": 30367,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -189,6 +189,18 @@
    }
   },
   {
+   "id": "mnq-event-free-day-flow-persistence",
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 675,
+   "wr": 0.5481,
+   "usd_mo": 563,
+   "pf": 1.368,
+   "usd_trade": 30.0
+  },
+  {
    "id": "mes-funding-basis-stress-cheapening",
    "name": "mes-funding-basis-stress-cheapening",
    "market": "MES",
@@ -199,6 +211,18 @@
    "usd_mo": 31,
    "pf": 1.273,
    "usd_trade": 15.4
+  },
+  {
+   "id": "mcl-upside-semivariance-exhaustion",
+   "name": "mcl-upside-semivariance-exhaustion",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 318,
+   "wr": 0.522,
+   "usd_mo": 99,
+   "pf": 1.271,
+   "usd_trade": 11.2
   },
   {
    "id": "b3-prior-high-break",
@@ -283,33 +307,33 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
-  },
-  {
-   "id": "b6-prehol-m2k",
-   "name": "b6-prehol-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 31,
-   "wr": null,
-   "usd_mo": 2,
-   "pf": 1.074,
-   "usd_trade": 2.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:37:35.884696+00:00",
+   "hash": "40b25312",
+   "name": "mgc-usd-mechanical-repricing-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.699"
+  },
+  {
+   "t": "2026-07-22T07:36:46.839311+00:00",
+   "hash": "dfc869fe",
+   "name": "mcl-upside-semivariance-exhaustion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.271"
+  },
+  {
+   "t": "2026-07-22T07:36:35.002815+00:00",
+   "hash": "27ca26e3",
+   "name": "mnq-event-free-day-flow-persistence",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.368"
+  },
   {
    "t": "2026-07-22T07:28:59.884243+00:00",
    "hash": "3d2376b9",
@@ -381,52 +405,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T07:13:13.331701+00:00",
-   "hash": "8539391a",
-   "name": "mes-slow-moving-capital-lagged-shock-rebound",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.81"
-  },
-  {
-   "t": "2026-07-22T07:12:56.418285+00:00",
-   "hash": "b43a2c81",
-   "name": "mnq-volclock-exhaustion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.889"
-  },
-  {
-   "t": "2026-07-22T07:12:19.057639+00:00",
-   "hash": "508c095a",
-   "name": "ROBUSTNESS-PROTOCOL mcl-intraday-skew-lottery-demand-fade (1384fbc08f8255ed)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-event-free-day-flow-persistence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:33:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-upside-semivariance-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:33:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "mgc-usd-mechanical-repricing-lag",
     "stage": "dev3yr",
@@ -599,7 +583,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 197
+    "trials": 200
    }
   ]
  },
@@ -608,7 +592,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 67,
+   "n_tested": 68,
    "n_killed": 40,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -652,8 +636,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 14,
+   "n_tested": 17,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -670,7 +654,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 18,
+   "n_tested": 19,
    "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
@@ -1148,6 +1132,26 @@
     "apex_max": 1
    }
   },
+  "mnq-event-free-day-flow-persistence": {
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "On days with no scheduled macro release (no FOMC/CPI on the calendar), intraday price movement is driven by inventory and order-flow imbalance rather than information, so the first-60-minute directional displacement reflects a liquidity-provider inventory imbalance that must keep being paid for through the rest of the session; on scheduled-event days an information shock resets order books and kills that persistence, so the edge should only appear when the macro calendar is empty.",
+   "metrics": {
+    "n": 675,
+    "wr": 0.5481,
+    "pf": 1.368,
+    "usd_mo": 563,
+    "usd_trade": 30.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:36:35.002815+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mes-funding-basis-stress-cheapening": {
    "name": "mes-funding-basis-stress-cheapening",
    "market": "MES",
@@ -1165,6 +1169,26 @@
      "t": "2026-07-22T05:57:32.220572+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "mcl-upside-semivariance-exhaustion": {
+   "name": "mcl-upside-semivariance-exhaustion",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Crude upside intraday volatility comes mostly from supply-disruption headlines and short-covering that do not change the physical barrel balance and decay quickly, while downside volatility reflects persistent demand revisions, so a session whose realized variance is dominated by the upside half is mostly transient risk-premium repricing that should give back the next session.",
+   "metrics": {
+    "n": 318,
+    "wr": 0.522,
+    "pf": 1.271,
+    "usd_mo": 99,
+    "usd_trade": 11.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:36:46.839311+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
    ]
   },
@@ -1312,56 +1336,6 @@
      "t": "2026-07-22T07:08:04.252202+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "b6-prehol-m2k": {
-   "name": "b6-prehol-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Pre-holiday drift comes from US equity market liquidity withdrawal and short-covering, which applies to small-caps as much as tech",
-   "metrics": {
-    "n": 31,
-    "wr": null,
-    "pf": 1.074,
-    "usd_mo": 2,
-    "usd_trade": 2.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.110553+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    },
-    {
-     "t": "2026-07-21T16:04:19.693873+00:00",
-     "stage": "dev3yr",
-     "verdict": "FAIL"
     }
    ]
   }
