@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:00:50Z",
+  "stamp": "2026-07-22T03:01:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 159,
-  "n_results": 248,
-  "n_trials": 30219,
+  "n_registered": 160,
+  "n_results": 249,
+  "n_trials": 30220,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,20 +307,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:01:00.397440+00:00",
+   "hash": "284ae274",
+   "name": "mes-macro-annday-premium-exfomc",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T03:00:58.502531+00:00",
+   "hash": "ce4d9198",
+   "name": "mcl-pre-fnd-retail-liquidation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.107"
+  },
+  {
    "t": "2026-07-22T03:00:26.557190+00:00",
    "hash": "32c13526",
    "name": "zc-crop-progress-reopen-gap",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.208"
-  },
-  {
-   "t": "2026-07-22T02:59:15.380694+00:00",
-   "hash": "ce4d9198",
-   "name": "mcl-pre-fnd-retail-liquidation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T02:54:22.295158+00:00",
@@ -393,28 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T02:25:39.894186+00:00",
-   "hash": "47ea5cce",
-   "name": "scout-14-screen",
-   "status": "screen complete (no costs,",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-pre-first-notice-day-retail-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:57:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-macro-announcement-premium-exfomc",
     "stage": "dev3yr",
@@ -422,11 +414,19 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-coupon-settlement-reserve-drain",
     "stage": "dev3yr",
     "started": "2026-07-22T03:00:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Slippage collector: fill Tradovate demo ",
+    "stage": "decision",
+    "started": "2026-07-22T03:01:12Z",
     "state": "running"
    }
   ],
@@ -514,7 +514,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 52
+    "trials": 53
    }
   ]
  },
@@ -583,8 +583,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 5,
+   "n_tested": 8,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
