@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:43:38Z",
+  "stamp": "2026-07-22T05:44:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 245,
-  "n_results": 342,
-  "n_trials": 30313,
+  "n_results": 343,
+  "n_trials": 30314,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:44:20.139130+00:00",
+   "hash": "6d37b075",
+   "name": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.3437"
+  },
+  {
    "t": "2026-07-22T05:43:11.972415+00:00",
    "hash": "ecae60c7",
    "name": "met-overnight-gap-overshoot-fade-us-open",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.234"
-  },
-  {
-   "t": "2026-07-22T05:43:08.757569+00:00",
-   "hash": "6d37b075",
-   "name": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T05:42:40.826448+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:40:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-post-data-afternoon-vol-collapse-range-fade",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-prerelease-liquidity-withdrawal-drift-fade",
     "stage": "dev3yr",
@@ -519,7 +511,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 23,
+   "registered": 22,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -581,7 +573,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 146
+    "trials": 147
    }
   ]
  },
@@ -690,8 +682,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 10,
+   "n_tested": 11,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
