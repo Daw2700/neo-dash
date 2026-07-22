@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:11:59Z",
+  "stamp": "2026-07-22T12:14:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 419,
-  "n_results": 526,
-  "n_trials": 30497,
+  "n_registered": 421,
+  "n_results": 529,
+  "n_trials": 30500,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "zs-zc-substitution-ratio-reversion",
+   "name": "zs-zc-substitution-ratio-reversion",
+   "market": "ZC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 165,
+   "wr": 0.497,
+   "usd_mo": 386,
+   "pf": 1.453,
+   "usd_trade": 84.1
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -237,6 +249,18 @@
    "usd_trade": 15.4
   },
   {
+   "id": "mgc-late-participation-share-overnight-carry",
+   "name": "mgc-late-participation-share-overnight-carry",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 135,
+   "wr": 0.5333,
+   "usd_mo": 51,
+   "pf": 1.269,
+   "usd_trade": 13.7
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -279,33 +303,33 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
-  },
-  {
-   "id": "b6-vix-m2k",
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 26,
-   "wr": null,
-   "usd_mo": 5,
-   "pf": 1.148,
-   "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T12:14:40.104714+00:00",
+   "hash": "e402e77e",
+   "name": "mnq-jump-hazard-self-excitation-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.15"
+  },
+  {
+   "t": "2026-07-22T12:13:48.520040+00:00",
+   "hash": "b42dbad9",
+   "name": "mgc-late-participation-share-overnight-carry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.269"
+  },
+  {
+   "t": "2026-07-22T12:12:02.586017+00:00",
+   "hash": "1f89e90c",
+   "name": "zs-zc-substitution-ratio-reversion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.453"
+  },
   {
    "t": "2026-07-22T12:11:36.706411+00:00",
    "hash": "a332ce29",
@@ -313,14 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.047"
-  },
-  {
-   "t": "2026-07-22T12:10:05.152570+00:00",
-   "hash": "1f89e90c",
-   "name": "zs-zc-substitution-ratio-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T12:10:04.845880+00:00",
@@ -385,36 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T11:55:53.979901+00:00",
-   "hash": "6cc58b9b",
-   "name": "mng-storage-season-turn-hedge-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T11:55:06.897646+00:00",
-   "hash": "4d8a5978",
-   "name": "zc-premarket-pause-reopen-queue-reset",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.651"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-zc-substitution-ratio-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:08:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-late-participation-share-overnight-carry",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-jump-hazard-self-excitation-window",
     "stage": "dev3yr",
@@ -506,7 +498,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 59,
+   "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -568,7 +560,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 330
+    "trials": 333
    }
   ]
  },
@@ -577,7 +569,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 78,
+   "n_tested": 79,
    "n_killed": 46,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -621,7 +613,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 22,
+   "n_tested": 23,
    "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
@@ -695,7 +687,7 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 16,
+   "n_tested": 17,
    "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
@@ -1045,6 +1037,26 @@
     }
    ]
   },
+  "zs-zc-substitution-ratio-reversion": {
+   "name": "zs-zc-substitution-ratio-reversion",
+   "market": "ZC",
+   "tier": "candidate",
+   "mechanism": "Corn and soybeans compete for the same acres, so the ZS/ZC price ratio is tethered to a planting-economics anchor that farmers and commercial crushers arbitrage through acreage and substitution decisions; when speculative flow pushes the ratio away from that anchor, commercial hedgers take the other side and are paid as the ratio reverts.",
+   "metrics": {
+    "n": 165,
+    "wr": 0.497,
+    "pf": 1.453,
+    "usd_mo": 386,
+    "usd_trade": 84.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T12:12:02.586017+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1207,6 +1219,26 @@
     }
    ]
   },
+  "mgc-late-participation-share-overnight-carry": {
+   "name": "mgc-late-participation-share-overnight-carry",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "Gold's RTH volume distribution reveals who is transacting: a session whose volume is back-loaded into the final hour is dominated by benchmark/programme execution rather than discretionary flow, and that execution is typically the visible leg of a larger order that continues into Asian hours, producing positive close-to-next-RTH-open drift on high-skew days.",
+   "metrics": {
+    "n": 135,
+    "wr": 0.5333,
+    "pf": 1.269,
+    "usd_mo": 51,
+    "usd_trade": 13.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T12:13:48.520040+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1280,46 +1312,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-vix-m2k": {
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
-   "metrics": {
-    "n": 26,
-    "wr": null,
-    "pf": 1.148,
-    "usd_mo": 5,
-    "usd_trade": 6.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
