@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:57:21Z",
+  "stamp": "2026-07-22T22:57:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 675,
+  "n_registered": 676,
   "n_results": 828,
   "n_trials": 30816,
   "holdout_looks_spent": 0,
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:57:22.486937+00:00",
+   "hash": "1a28965c",
+   "name": "mcl-roll-window-liquidity-void-dose-response",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:57:03.858387+00:00",
    "hash": "4ca613c0",
    "name": "mgc-effective-spread-rent-normalization",
@@ -389,14 +397,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:41:15.430002+00:00",
-   "hash": "14f51e73",
-   "name": "zc-rma-volatility-factor-five-day-window",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -408,27 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:55:55Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "SIL",
+    "task": "sil-registered-stock-coverage-delivery-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:57:22Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-biofuel-policy-volume-obligation-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:57:22Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "sil-registered-stock-coverage-delivery-premium",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": null
-   },
-   {
-    "rank": 11,
-    "idea": "zs-biofuel-policy-volume-obligation-window",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": null
-   },
    {
     "rank": 12,
     "idea": "mng-etf-roll-published-schedule-flow",
@@ -449,8 +447,8 @@
    }
   ],
   "funnel": {
-   "idea": 4,
-   "registered": 90,
+   "idea": 2,
+   "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
