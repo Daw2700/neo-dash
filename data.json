@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:35:24Z",
+  "stamp": "2026-07-22T18:35:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 569,
-  "n_results": 705,
-  "n_trials": 30693,
+  "n_results": 706,
+  "n_trials": 30694,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:35:38.798660+00:00",
+   "hash": "6c7bfff5",
+   "name": "xmkt-hourly-systematic-share-divergence-conditioning",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.674"
+  },
+  {
    "t": "2026-07-22T18:35:01.969169+00:00",
    "hash": "6f44a3b6",
    "name": "m2k-open-hour-tilt",
@@ -318,14 +326,6 @@
    "t": "2026-07-22T18:34:11.387180+00:00",
    "hash": "5357b32f",
    "name": "xsec-commodity-hedgepressure-rotation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T18:33:43.218344+00:00",
-   "hash": "6c7bfff5",
-   "name": "xmkt-hourly-systematic-share-divergence-conditioning",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -416,14 +416,6 @@
    {
     "agent": "tester-2",
     "market": "MES",
-    "task": "xmkt-hourly-systematic-share-divergence-conditioning",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:29:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
     "task": "mes-index-annuity-option-reset-monthstart-hedge",
     "stage": "dev3yr",
     "started": "2026-07-22T18:35:24Z",
@@ -443,7 +435,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 82,
+   "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -505,7 +497,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 526
+    "trials": 527
    }
   ]
  },
@@ -514,8 +506,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 94,
-   "n_killed": 54,
+   "n_tested": 95,
+   "n_killed": 55,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
