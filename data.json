@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:10:31Z",
+  "stamp": "2026-07-22T04:12:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 193,
-  "n_results": 286,
-  "n_trials": 30257,
+  "n_registered": 196,
+  "n_results": 287,
+  "n_trials": 30258,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:12:22.407474+00:00",
+   "hash": "5f4b0acd",
+   "name": "mes-corporate-tax-date-reserve-drain",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.749"
+  },
+  {
+   "t": "2026-07-22T04:12:18.252332+00:00",
+   "hash": "98a8a46c",
+   "name": "robust-m2k-russell-recon-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:11:42.928681+00:00",
+   "hash": "90c8f192",
+   "name": "zc-harvest-storage-handoff",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:10:04.811849+00:00",
    "hash": "80a196f3",
    "name": "mes-cta-trigger-level-cross-flow",
@@ -377,30 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T03:55:04.627743+00:00",
-   "hash": "4503ab21",
-   "name": "mes-preopen-volume-range-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.626"
-  },
-  {
-   "t": "2026-07-22T03:54:37.909966+00:00",
-   "hash": "d9eae2c2",
-   "name": "zn-cash-close-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.164"
-  },
-  {
-   "t": "2026-07-22T03:54:11.718217+00:00",
-   "hash": "6fd3d3ca",
-   "name": "m6e-dst-desync-fix-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1169"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-corporate-tax-date-reserve-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:10:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-harvest-storage-handoff",
     "stage": "dev3yr",
@@ -443,7 +435,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 10,
+   "registered": 12,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -505,7 +497,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 90
+    "trials": 91
    }
   ]
  },
@@ -529,8 +521,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 17,
-   "n_killed": 9,
+   "n_tested": 18,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   },
