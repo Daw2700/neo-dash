@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:51:26Z",
+  "stamp": "2026-07-22T07:54:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 301,
-  "n_results": 401,
-  "n_trials": 30372,
+  "n_results": 402,
+  "n_trials": 30373,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mcl-timeseries-momentum-risk-premium",
+   "name": "mcl-timeseries-momentum-risk-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 24,
+   "wr": 0.5417,
+   "usd_mo": 52,
+   "pf": 1.454,
+   "usd_trade": 77.7
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,28 +307,16 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T07:50:18.693533+00:00",
+   "t": "2026-07-22T07:51:35.102359+00:00",
    "hash": "5596f651",
    "name": "mcl-timeseries-momentum-risk-premium",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.454"
   },
   {
    "t": "2026-07-22T07:47:33.531349+00:00",
@@ -408,32 +408,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "replication: mnq-event-free-day-flow-persistence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:44:44Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "replication: mcl-upside-semivariance-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:44:44Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-timeseries-momentum-risk-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:49:06Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 6,
@@ -519,7 +494,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 34,
+   "registered": 33,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -581,7 +556,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 205
+    "trials": 206
    }
   ]
  },
@@ -652,7 +627,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 19,
+   "n_tested": 20,
    "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
@@ -1038,6 +1013,26 @@
     "apex_max": 2
    }
   },
+  "mcl-timeseries-momentum-risk-premium": {
+   "name": "mcl-timeseries-momentum-risk-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Trend followers are paid because they take the other side of commercial hedgers who must transfer price risk regardless of level, and because information about physical balances diffuses slowly through a fragmented supply chain, so the compensation is a risk premium for holding the hedgers exposure, not an arbitrage that could be competed away.",
+   "metrics": {
+    "n": 24,
+    "wr": 0.5417,
+    "pf": 1.454,
+    "usd_mo": 52,
+    "usd_trade": 77.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:51:35.102359+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1322,31 +1317,6 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
