@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:32:57Z",
+  "stamp": "2026-07-22T11:33:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 399,
-  "n_results": 507,
-  "n_trials": 30478,
+  "n_results": 508,
+  "n_trials": 30479,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T11:33:12.421346+00:00",
+   "hash": "34f88c68",
+   "name": "mnq-release-collision-attention-split",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.989"
+  },
+  {
    "t": "2026-07-22T11:32:12.945405+00:00",
    "hash": "e689c6ce",
    "name": "mes-drift-burst-volume-bifurcation",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.641"
-  },
-  {
-   "t": "2026-07-22T11:32:09.900226+00:00",
-   "hash": "34f88c68",
-   "name": "mnq-release-collision-attention-split",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T11:24:28.258644+00:00",
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-release-collision-attention-split",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:30:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-holiday-inattention-gated-fomc-lag",
     "stage": "dev3yr",
@@ -528,7 +520,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 54,
+   "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -590,7 +582,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 311
+    "trials": 312
    }
   ]
  },
@@ -599,8 +591,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 77,
-   "n_killed": 45,
+   "n_tested": 78,
+   "n_killed": 46,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
