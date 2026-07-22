@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:22:09Z",
+  "stamp": "2026-07-22T21:23:54Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,19 +400,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T20:57:06Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "sil-nonreviewable-range-sweep-reversion",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "zn-japan-holiday-tokyo-participant-absence",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "m2k-opening-basket-staleness-catchup",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 4,
+    "idea": "mcl-cushing-tank-constraint-expiry-convexity",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-mm-program-monthly-quota-liquidity-gradient",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 6,
+    "idea": "mnq-fcm-residual-interest-nextsession-liquidation",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 7,
+    "idea": "mes-nav-cutoff-nextmorning-flow-execution-lag",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 8,
+    "idea": "sil-mgc-settlement-stagger-five-minute-stale-mark",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 9,
+    "idea": "m6e-imm-date-forward-roll-concentration",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 10,
+    "idea": "mnq-derived-micro-settlement-anchor-divergence",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 11,
+    "idea": "sil-oi-concentration-margin-addon-trim",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 12,
+    "idea": "mes-cot-tuesday-snapshot-positioning",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
