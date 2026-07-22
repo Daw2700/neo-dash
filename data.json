@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:52:47Z",
+  "stamp": "2026-07-22T14:53:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "robustness: mng-vol-implied-margin-hike-anticipation-deleveraging",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:47:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "robustness: zc-natgas-fertilizer-costpush-diffusion-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:47:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-implied-repo-term-repo-wedge-roll-financing-flow",
     "stage": "dev3yr",
