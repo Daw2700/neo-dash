@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:40:24Z",
+  "stamp": "2026-07-22T05:43:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 242,
-  "n_results": 340,
-  "n_trials": 30311,
+  "n_registered": 245,
+  "n_results": 341,
+  "n_trials": 30312,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:43:08.757569+00:00",
+   "hash": "6d37b075",
+   "name": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T05:42:40.826448+00:00",
+   "hash": "dd6707ab",
+   "name": "mbt-halt-gap-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.8251"
+  },
+  {
+   "t": "2026-07-22T05:41:33.961238+00:00",
+   "hash": "ecae60c7",
+   "name": "met-overnight-gap-overshoot-fade-us-open",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T05:39:16.139880+00:00",
    "hash": "6d2e6f18",
    "name": "mgc-lny-restock-window",
@@ -381,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.476"
-  },
-  {
-   "t": "2026-07-22T05:24:16.002241+00:00",
-   "hash": "c21268d8",
-   "name": "mes-crypto-overnight-riskappetite-overshoot-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.0249"
-  },
-  {
-   "t": "2026-07-22T05:22:28.370881+00:00",
-   "hash": "9686704d",
-   "name": "mcl-monthly-agency-balance-report-cluster",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T05:22:19.258404+00:00",
-   "hash": "c21268d8",
-   "name": "mes-crypto-overnight-riskappetite-overshoot-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.102"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-halt-gap-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:40:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-overnight-gap-overshoot-fade-us-open",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
     "stage": "dev3yr",
@@ -537,7 +529,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 22,
+   "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -599,7 +591,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 144
+    "trials": 145
    }
   ]
  },
@@ -688,7 +680,7 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 3,
+   "n_tested": 4,
    "n_killed": 2,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
