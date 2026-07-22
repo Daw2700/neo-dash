@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:02:19Z",
+  "stamp": "2026-07-22T02:07:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 145,
-  "n_results": 232,
+  "n_registered": 148,
+  "n_results": 235,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T02:05:01.779004+00:00",
+   "hash": "f2da395b",
+   "name": "mnq-european-cash-close-risk-transfer",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.15"
+  },
+  {
+   "t": "2026-07-22T02:04:44.820527+00:00",
+   "hash": "76ea745b",
+   "name": "mnq-roll-week-depth-fragmentation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.667"
+  },
+  {
+   "t": "2026-07-22T02:04:08.924568+00:00",
+   "hash": "f2721edc",
+   "name": "zc-cash-hedge-open-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.623"
+  },
+  {
    "t": "2026-07-22T01:56:33.943560+00:00",
    "hash": "8e75a0d3",
    "name": "mes-cond-monthend-rebal-spread",
@@ -385,30 +409,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T01:30:04.283585+00:00",
-   "hash": "44ea882d",
-   "name": "zn-volshock-equity-degross-rebound",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.081"
-  },
-  {
-   "t": "2026-07-22T01:29:48.558737+00:00",
-   "hash": "190c0a12",
-   "name": "mcl-producer-hedge-window-rth-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.021"
-  },
-  {
-   "t": "2026-07-22T01:21:51.722585+00:00",
-   "hash": "94b9b65b",
-   "name": "b10-nagel-vix-reversal",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-cash-hedge-open-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:01:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-roll-week-depth-fragmentation",
     "stage": "dev3yr",
@@ -522,7 +514,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 36
+    "trials": 39
    }
   ]
  },
@@ -531,8 +523,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 31,
+   "n_tested": 56,
+   "n_killed": 33,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -650,9 +642,9 @@
   {
    "ticker": "ZC",
    "display": "Corn",
-   "status": "idle",
-   "n_tested": 0,
-   "n_killed": 0,
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
   },
