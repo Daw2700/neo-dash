@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:31:40Z",
+  "stamp": "2026-07-22T08:32:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 318,
-  "n_results": 422,
-  "n_trials": 30393,
+  "n_registered": 320,
+  "n_results": 423,
+  "n_trials": 30394,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:32:26.910003+00:00",
+   "hash": "9f825554",
+   "name": "mgc-london-bank-holiday-discovery-transfer",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.067"
+  },
+  {
+   "t": "2026-07-22T08:32:08.958440+00:00",
+   "hash": "7582d1e8",
+   "name": "mgc-london-bank-holiday-discovery-transfer-RECHECK",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T08:31:48.503234+00:00",
+   "hash": "7a4fe978",
+   "name": "zn-treasury-buyback-operation-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T08:31:16.457620+00:00",
    "hash": "99a09482",
    "name": "mbt-monthly-expiry-basis-convergence-unwind",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T08:13:40.382163+00:00",
-   "hash": "934c0bfc",
-   "name": "scout-25-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T08:12:59.581648+00:00",
-   "hash": "7eb60176",
-   "name": "zc-short-horizon-hedger-liquidity-rebate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.757"
-  },
-  {
-   "t": "2026-07-22T08:10:44.449042+00:00",
-   "hash": "9262a29f",
-   "name": "mnq-crypto-internal-risk-gradient",
-   "status": "killed",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "recheck: mgc-london-bank-holiday-discovery-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:31:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-fomc-minutes-release-overreaction-fade",
     "stage": "dev3yr",
@@ -501,7 +493,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 36,
+   "registered": 38,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 226
+    "trials": 227
    }
   ]
  },
