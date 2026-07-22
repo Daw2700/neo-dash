@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:44:36Z",
+  "stamp": "2026-07-22T11:44:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-crossmarket-breadth-gate-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:36:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MBT",
-    "task": "mbt-session-beta-channel-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:37:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: mes-crossmarket-breadth-gate-continuation",
     "stage": "dev3yr",
