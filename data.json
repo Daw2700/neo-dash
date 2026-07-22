@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:13:34Z",
+  "stamp": "2026-07-22T05:14:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 231,
-  "n_results": 324,
-  "n_trials": 30295,
+  "n_results": 326,
+  "n_trials": 30297,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,28 +307,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:14:03.224443+00:00",
+   "hash": "7f9e99fb",
+   "name": "mes-early-close-session-compression",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
+   "t": "2026-07-22T05:14:01.994917+00:00",
+   "hash": "b7e7b003",
+   "name": "mes-macro-surprise-sign-flip-bond-confirmed",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.695"
+  },
+  {
    "t": "2026-07-22T05:13:24.505964+00:00",
    "hash": "0f85c21c",
    "name": "mnq-cme-halt-reopen-queue-clearing",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.767"
-  },
-  {
-   "t": "2026-07-22T05:12:47.746615+00:00",
-   "hash": "b7e7b003",
-   "name": "mes-macro-surprise-sign-flip-bond-confirmed",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T05:12:24.404228+00:00",
-   "hash": "7f9e99fb",
-   "name": "mes-early-close-session-compression",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T05:06:44.870691+00:00",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-macro-surprise-sign-flip-bond-confirmed",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:09:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-early-close-session-compression",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:09:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-european-sovereign-supply-spillover",
     "stage": "dev3yr",
@@ -515,7 +499,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 23,
+   "registered": 21,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -577,7 +561,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 128
+    "trials": 130
    }
   ]
  },
@@ -601,8 +585,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 14,
+   "n_tested": 25,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
