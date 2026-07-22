@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:39:37Z",
+  "stamp": "2026-07-22T08:44:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 323,
-  "n_results": 427,
-  "n_trials": 30398,
+  "n_registered": 325,
+  "n_results": 429,
+  "n_trials": 30400,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mes-bond-holiday-rate-void",
-   "name": "mes-bond-holiday-rate-void",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.5,
-   "usd_mo": 6,
-   "pf": 2.217,
-   "usd_trade": 34.8
   },
   {
    "id": "rep-bondflight-mes",
@@ -307,9 +295,45 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T08:44:02.672407+00:00",
+   "hash": "69b9e8ba",
+   "name": "zc-overnight-session-flow-persistence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.413"
+  },
+  {
+   "t": "2026-07-22T08:43:36.556248+00:00",
+   "hash": "e4888532",
+   "name": "mbt-mgc-debasement-hedge-substitution-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T08:41:56.130405+00:00",
+   "hash": "ddb93fd2",
+   "name": "mes-bond-holiday-rate-void",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T08:37:27.688519+00:00",
    "hash": "fe99af66",
@@ -381,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.247"
-  },
-  {
-   "t": "2026-07-22T08:27:47.099581+00:00",
-   "hash": "f5f47349",
-   "name": "mcl-option-expiry-gamma-pin",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.577"
-  },
-  {
-   "t": "2026-07-22T08:26:18.544016+00:00",
-   "hash": "3fa0d282",
-   "name": "mes-order-flow-toxicity-liquidity-withdrawal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T08:21:27.795808+00:00",
-   "hash": "378ec9fb",
-   "name": "sil-dual-identity-beta-conflict",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-bond-holiday-rate-void",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:39:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-mgc-debasement-hedge-substitution-reversion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-overnight-session-flow-persistence",
     "stage": "dev3yr",
@@ -465,7 +457,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 37,
+   "registered": 38,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +519,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 231
+    "trials": 233
    }
   ]
  },
@@ -654,8 +646,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 11,
+   "n_tested": 12,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -984,26 +976,6 @@
     "apex_max": 2
    }
   },
-  "mes-bond-holiday-rate-void": {
-   "name": "mes-bond-holiday-rate-void",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "On SIFMA bond-market holidays that are NOT equity holidays (Columbus Day, Veterans Day observed) the cash Treasury market is closed while CME equity index futures trade normally, so any discount-rate-relevant repricing that day happens with no functioning rates market to arbitrage against it; the mispricing gets corrected once the rates market reopens the next session, so fading the bond-holiday-session equity move on the next session should be profitable.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.5,
-    "pf": 2.217,
-    "usd_mo": 6,
-    "usd_trade": 34.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T08:36:34.675766+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1288,6 +1260,31 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
