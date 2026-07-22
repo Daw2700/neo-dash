@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:39:51Z",
+  "stamp": "2026-07-22T05:40:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,43 +408,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T05:31:18Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mbt-halt-gap-reversion",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.72
    },
    {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "robustness: mng-final-settlement-physical-exit-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:31:18Z",
-    "state": "running"
+    "rank": 2,
+    "idea": "met-overnight-gap-overshoot-fade-us-open",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.7
    },
    {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-opening-auction-imbalance-print-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:31:18Z",
-    "state": "running"
+    "rank": 3,
+    "idea": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.66
    },
    {
-    "agent": "tester-4",
-    "market": "MGC",
-    "task": "recheck: mgc-lny-restock-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:37:09Z",
-    "state": "running"
+    "rank": 4,
+    "idea": "zn-post-data-afternoon-vol-collapse-range-fade",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 5,
+    "idea": "mes-prerelease-liquidity-withdrawal-drift-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 6,
+    "idea": "mgc-shanghai-open-physical-premium-transmission",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 7,
+    "idea": "mes-post-rates-close-unhedged-final-hour",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.56
+   },
+   {
+    "rank": 8,
+    "idea": "mes-futures-funding-basis-stress-cheapening",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-late-session-inventory-reversal",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 10,
+    "idea": "met-mbt-open-rotation-dispersion",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 11,
+    "idea": "mes-vix-term-structure-inversion-regrossing",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 12,
+    "idea": "mes-semimonthly-payroll-inflow-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 13,
+    "idea": "m6e-us-holiday-orphan-session-europe-drift",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 14,
+    "idea": "m2k-post-holiday-reopen-position-rebuild",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.4
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 22,
    "dev3yr": 0,
    "robustness": 0,
