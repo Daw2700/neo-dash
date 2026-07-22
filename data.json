@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:11:02Z",
+  "stamp": "2026-07-22T03:14:06Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 164,
-  "n_results": 253,
-  "n_trials": 30224,
+  "n_registered": 165,
+  "n_results": 256,
+  "n_trials": 30227,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -173,18 +173,6 @@
    }
   },
   {
-   "id": "fomc-statement-presser-reversal",
-   "name": "fomc-statement-presser-reversal",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 22,
-   "wr": 0.4545,
-   "usd_mo": 11,
-   "pf": 1.248,
-   "usd_trade": 18.7
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -303,9 +291,45 @@
    "usd_mo": -133,
    "pf": 0.481,
    "usd_trade": -31.6
+  },
+  {
+   "id": "b7-down-weeks-dip",
+   "name": "b7-down-weeks-dip",
+   "market": "MNQ",
+   "tier": "demoted",
+   "pinned": false,
+   "n": 27,
+   "wr": 0.593,
+   "usd_mo": 61,
+   "pf": 1.945,
+   "usd_trade": 81.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T03:13:36.093901+00:00",
+   "hash": "b3bae809",
+   "name": "mnq-postclose-index-flow-bleed",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.904"
+  },
+  {
+   "t": "2026-07-22T03:12:19.261169+00:00",
+   "hash": "529bc2f2",
+   "name": "fomc-statement-presser-reversal",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.985"
+  },
+  {
+   "t": "2026-07-22T03:12:01.850541+00:00",
+   "hash": "94b9b65b",
+   "name": "b10-nagel-vix-reversal",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.211"
+  },
   {
    "t": "2026-07-22T03:05:16.603973+00:00",
    "hash": "f574f769",
@@ -377,44 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "PF 1.585"
-  },
-  {
-   "t": "2026-07-22T02:54:15.930926+00:00",
-   "hash": "ec1000b9",
-   "name": "zc-export-sales-thursday-pause-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.023"
-  },
-  {
-   "t": "2026-07-22T02:54:03.772128+00:00",
-   "hash": "5aca6803",
-   "name": "zn-claims-thursday-duration-reset",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.621"
-  },
-  {
-   "t": "2026-07-22T02:50:44.724867+00:00",
-   "hash": "8722398d",
-   "name": "zc-settlement-print-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.039"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "replication: b10-nagel-vix-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:11:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "replication: fomc-statement-presser-reversal",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-postclose-index-flow-bleed",
     "stage": "dev3yr",
@@ -577,7 +569,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 57
+    "trials": 60
    }
   ]
  },
@@ -586,8 +578,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 56,
-   "n_killed": 33,
+   "n_tested": 57,
+   "n_killed": 34,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -854,6 +846,11 @@
      "t": "2026-07-22T01:21:51.722585+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T03:12:01.850541+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ],
    "robustness": {
@@ -1079,31 +1076,6 @@
     "apex_max": 1
    }
   },
-  "fomc-statement-presser-reversal": {
-   "name": "fomc-statement-presser-reversal",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "FOMC releases information in two stages: the 14:00 ET statement, then the 14:30 ET press conference. The 14:00-14:30 move is priced off statement text alone by fast algorithmic readers with no chair commentary, and the presser routinely revises that reading, so the first-stage move is systematically over-extended relative to the full information set. We are paid by whoever had to take the first-stage risk.",
-   "metrics": {
-    "n": 22,
-    "wr": 0.4545,
-    "pf": 1.248,
-    "usd_mo": 11,
-    "usd_trade": 18.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T00:18:27.107468+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T01:21:38.079497+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1308,6 +1280,31 @@
      "t": "2026-07-22T02:50:04.186910+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "b7-down-weeks-dip": {
+   "name": "b7-down-weeks-dip",
+   "market": "MNQ",
+   "tier": "demoted",
+   "mechanism": "Two consecutive down weeks trigger mechanical rebalancing inflows and exhaust retail capitulation, so the following Monday carries an amplified risk premium",
+   "metrics": {
+    "n": 27,
+    "wr": 0.593,
+    "pf": 1.945,
+    "usd_mo": 61,
+    "usd_trade": 81.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:12:29.404963+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T00:58:26.808888+00:00",
+     "stage": "robustness",
+     "verdict": "DEMOTED"
     }
    ]
   }
