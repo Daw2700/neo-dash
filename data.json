@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:58:26Z",
+  "stamp": "2026-07-22T22:58:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:57:22Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-etf-roll-published-schedule-flow",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:58:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "mng-etf-roll-published-schedule-flow",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": null
-   },
    {
     "rank": 13,
     "idea": "mnq-propfirm-consistency-rule-post-win-withdrawal",
@@ -439,7 +438,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
