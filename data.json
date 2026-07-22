@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:59:47Z",
+  "stamp": "2026-07-22T19:03:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 579,
-  "n_results": 717,
-  "n_trials": 30705,
+  "n_registered": 580,
+  "n_results": 718,
+  "n_trials": 30706,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:03:45.595013+00:00",
+   "hash": "6a1e5a22",
+   "name": "mes-asia-leg-accrual-giveback",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.688"
+  },
+  {
    "t": "2026-07-22T18:56:28.490301+00:00",
    "hash": "e4ddd6dc",
    "name": "zs-holiday-compressed-week-hedge-budget",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.797"
-  },
-  {
-   "t": "2026-07-22T18:36:28.742452+00:00",
-   "hash": "210cb4ea",
-   "name": "scout-41-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-asia-leg-accrual-giveback-at-european-cash-open",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:59:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-when-issued-hedge-build-release-asymmetry",
     "stage": "dev3yr",
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 538
+    "trials": 539
    }
   ]
  },
@@ -565,8 +557,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 96,
-   "n_killed": 71,
+   "n_tested": 97,
+   "n_killed": 72,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
