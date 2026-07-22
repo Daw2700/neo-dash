@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:25:31Z",
+  "stamp": "2026-07-22T15:26:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 488,
-  "n_results": 614,
-  "n_trials": 30602,
+  "n_registered": 489,
+  "n_results": 615,
+  "n_trials": 30603,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,9 +307,17 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T15:25:31.347333+00:00",
+   "t": "2026-07-22T15:26:44.453304+00:00",
    "hash": "32382ed8",
    "name": "zs-spot-month-speculative-limit-forced-exit",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.749"
+  },
+  {
+   "t": "2026-07-22T15:25:50.795281+00:00",
+   "hash": "c32ab3d9",
+   "name": "mgc-gap-sign-streak-offshore-accumulation",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -393,28 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.972"
-  },
-  {
-   "t": "2026-07-22T15:08:45.733828+00:00",
-   "hash": "bc99cbf0",
-   "name": "mgc-tas-band-exhaustion-spillover",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-spot-month-speculative-limit-forced-exit",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:23:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-gap-sign-streak-offshore-accumulation-ratification",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-thin-minute-variance-share-noninformation",
     "stage": "dev3yr",
@@ -505,7 +497,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 435
+    "trials": 436
    }
   ]
  },
@@ -641,8 +633,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 5,
+   "n_tested": 6,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   }
