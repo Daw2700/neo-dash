@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:55:04Z",
+  "stamp": "2026-07-22T02:57:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,40 +404,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Book sleeve mym-prehol (scan-mym) failed",
-    "stage": "decision",
-    "started": "2026-07-22T02:51:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-export-sales-thursday-pause-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:51:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-gotobi-tokyo-fix-dollar-demand",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:51:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZN",
-    "task": "zn-claims-thursday-duration-reset",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:51:57Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 7,
@@ -1449,21 +1416,20 @@
    "members": {
     "b2-vix-reversion": 2,
     "scan-mbt": 2,
-    "scan-mym": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b2-opex-release": 1,
     "b3-tom-long": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 10,
+   "total_micros": 9,
    "p_breach": 0.195,
-   "usd_mo": 524,
-   "usd_mo_5acct": 2620,
-   "pct_goal": 0.943,
+   "usd_mo": 512,
+   "usd_mo_5acct": 2560,
+   "pct_goal": 0.922,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9432
+   "usd_mo_total": 9216
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -1473,20 +1439,19 @@
    "assumed_rules": true,
    "members": {
     "scan-mbt": 1,
-    "scan-mym": 2,
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 1,
     "b2-vix-reversion": 1
    },
-   "total_micros": 9,
-   "p_breach": 0.192,
-   "usd_mo": 432,
-   "usd_mo_5acct": 2160,
-   "pct_goal": 0.778,
+   "total_micros": 7,
+   "p_breach": 0.188,
+   "usd_mo": 406,
+   "usd_mo_5acct": 2030,
+   "pct_goal": 0.731,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 7776
+   "usd_mo_total": 7308
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -1496,20 +1461,19 @@
    "assumed_rules": true,
    "members": {
     "scan-mbt": 1,
-    "scan-mym": 1,
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
     "b4-open-drive": 1
    },
-   "total_micros": 7,
-   "p_breach": 0.177,
-   "usd_mo": 378,
-   "usd_mo_5acct": 1890,
-   "pct_goal": 0.68,
+   "total_micros": 6,
+   "p_breach": 0.181,
+   "usd_mo": 368,
+   "usd_mo_5acct": 1840,
+   "pct_goal": 0.662,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6804
+   "usd_mo_total": 6624
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1560,17 +1524,17 @@
    "assumed_rules": true,
    "members": {
     "b2-vix-reversion": 4,
-    "scan-mym": 2,
-    "b3-preholiday-drift": 2
+    "b3-preholiday-drift": 2,
+    "b2-opex-release": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.18,
-   "usd_mo": 251,
-   "usd_mo_5acct": 1255,
-   "pct_goal": 0.452,
+   "total_micros": 7,
+   "p_breach": 0.167,
+   "usd_mo": 245,
+   "usd_mo_5acct": 1225,
+   "pct_goal": 0.441,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 4518
+   "usd_mo_total": 4410
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1604,21 +1568,20 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "scan-mym": 2,
     "b3-nr7-breakout": 3,
-    "b10-nagel-vix-reversal": 3,
+    "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
     "b2-vix-reversion": 2
    },
-   "total_micros": 13,
-   "p_breach": 0.188,
-   "usd_mo": 741,
-   "usd_mo_5acct": 3705,
-   "pct_goal": 0.37,
+   "total_micros": 10,
+   "p_breach": 0.168,
+   "usd_mo": 662,
+   "usd_mo_5acct": 3310,
+   "pct_goal": 0.331,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3705
+   "usd_mo_total": 3310
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -1628,20 +1591,19 @@
    "assumed_rules": false,
    "members": {
     "scan-mbt": 1,
-    "scan-mym": 2,
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
     "b4-open-drive": 2
    },
-   "total_micros": 12,
-   "p_breach": 0.193,
-   "usd_mo": 653,
-   "usd_mo_5acct": 3265,
-   "pct_goal": 0.327,
+   "total_micros": 10,
+   "p_breach": 0.191,
+   "usd_mo": 628,
+   "usd_mo_5acct": 3140,
+   "pct_goal": 0.314,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3265
+   "usd_mo_total": 3140
   },
   {
    "id": "Frequent-firing engine|growth",
@@ -1673,20 +1635,19 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 4,
+    "b2-vix-reversion": 5,
     "scan-mbt": 5,
-    "scan-mym": 5,
     "b3-monday-long": 2,
-    "rep-bondflight-mes": 3
+    "rep-bondflight-mes": 4
    },
-   "total_micros": 19,
-   "p_breach": 0.195,
-   "usd_mo": 482,
-   "usd_mo_5acct": 2410,
-   "pct_goal": 0.241,
+   "total_micros": 16,
+   "p_breach": 0.196,
+   "usd_mo": 435,
+   "usd_mo_5acct": 2175,
+   "pct_goal": 0.217,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 2410
+   "usd_mo_total": 2175
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -1695,20 +1656,19 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 5,
-    "scan-mym": 3,
+    "b2-vix-reversion": 4,
     "b10-nagel-vix-reversal": 4,
-    "b3-preholiday-drift": 3,
-    "b2-opex-release": 5
+    "b3-preholiday-drift": 4,
+    "b2-opex-release": 4
    },
-   "total_micros": 20,
-   "p_breach": 0.194,
-   "usd_mo": 331,
-   "usd_mo_5acct": 1655,
-   "pct_goal": 0.166,
+   "total_micros": 16,
+   "p_breach": 0.193,
+   "usd_mo": 308,
+   "usd_mo_5acct": 1540,
+   "pct_goal": 0.154,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 1655
+   "usd_mo_total": 1540
   }
  ],
  "sizing_meta": {
