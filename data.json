@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:57:02Z",
+  "stamp": "2026-07-22T19:57:44Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 601,
   "n_results": 742,
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-etf-nav-strike-ap-hedge-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:57:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-basis-trade-deleverage-cascade",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-overnight-origin-session-information",
     "stage": "dev3yr",
