@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:57:23Z",
+  "stamp": "2026-07-22T13:00:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 433,
-  "n_results": 545,
-  "n_trials": 30516,
+  "n_registered": 435,
+  "n_results": 547,
+  "n_trials": 30518,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T13:00:10.663078+00:00",
+   "hash": "ff570c0f",
+   "name": "mes-first-extreme-ordering-inventory-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.955"
+  },
+  {
+   "t": "2026-07-22T13:00:10.258402+00:00",
+   "hash": "dd38b58b",
+   "name": "mnq-vwap-time-pressure",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.023"
+  },
+  {
    "t": "2026-07-22T12:52:42.960248+00:00",
    "hash": "8ee8881e",
    "name": "mnq-low-volume-node-traversal-acceleration",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T12:32:39.888379+00:00",
-   "hash": "5325fba2",
-   "name": "mes-binding-tick-reversal-rent",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T12:27:38.209037+00:00",
-   "hash": "4fa7804a",
-   "name": "zn-qra-supply-composition-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.866"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-first-extreme-ordering-inventory-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:57:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-time-above-vwap-shortfall-pressure",
     "stage": "dev3yr",
     "started": "2026-07-22T12:57:23Z",
     "state": "running"
@@ -568,7 +560,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 349
+    "trials": 351
    }
   ]
  },
@@ -577,8 +569,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 81,
-   "n_killed": 47,
+   "n_tested": 82,
+   "n_killed": 48,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -592,8 +584,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 69,
-   "n_killed": 49,
+   "n_tested": 70,
+   "n_killed": 50,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
