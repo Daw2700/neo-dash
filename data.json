@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:24:47Z",
+  "stamp": "2026-07-22T15:25:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 487,
-  "n_results": 613,
-  "n_trials": 30601,
+  "n_results": 614,
+  "n_trials": 30602,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,20 +307,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:25:11.810360+00:00",
+   "hash": "cea36cba",
+   "name": "mgc-concealed-absorber-move-failure",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.587"
+  },
+  {
    "t": "2026-07-22T15:24:22.820428+00:00",
    "hash": "317d30b0",
    "name": "zn-margin-cutoff-clock",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.577"
-  },
-  {
-   "t": "2026-07-22T15:24:11.578788+00:00",
-   "hash": "cea36cba",
-   "name": "mgc-concealed-absorber-move-failure",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T15:21:17.824814+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-concealed-absorber-move-failure",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:23:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-spot-month-speculative-limit-forced-exit",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-gap-sign-streak-offshore-accumulation-ratification",
     "stage": "dev3yr",
@@ -452,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 67,
+   "registered": 66,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 434
+    "trials": 435
    }
   ]
  },
@@ -567,8 +559,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 27,
-   "n_killed": 22,
+   "n_tested": 28,
+   "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
   },
