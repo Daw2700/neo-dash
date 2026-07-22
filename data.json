@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:03:44Z",
+  "stamp": "2026-07-22T08:06:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 305,
-  "n_results": 407,
-  "n_trials": 30378,
+  "n_registered": 306,
+  "n_results": 408,
+  "n_trials": 30379,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:06:02.613804+00:00",
+   "hash": "305fde18",
+   "name": "mes-weekend-crypto-information-transfer",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.05"
+  },
+  {
+   "t": "2026-07-22T08:05:30.978587+00:00",
+   "hash": "e6e265f3",
+   "name": "mes-macro-revision-underreaction-drift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T08:03:31.847087+00:00",
    "hash": "4611b77f",
    "name": "mbt-disposition-run-profit-taking",
@@ -389,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 9.065"
-  },
-  {
-   "t": "2026-07-22T07:46:22.662780+00:00",
-   "hash": "213bf652",
-   "name": "REPLICATION-PROTOCOL mcl-upside-semivariance-exhaustion (dfc869fe181d9a55) on sibling MNG",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:45:46.779931+00:00",
-   "hash": "3e92d55f",
-   "name": "REPLICATION-PROTOCOL mnq-event-free-day-flow-persistence on MES (371)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "recheck: mes-weekend-crypto-information-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:56:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-macro-revision-underreaction-drift",
     "stage": "dev3yr",
     "started": "2026-07-22T08:00:13Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "recheck: mbt-disposition-run-profit-taking",
     "stage": "dev3yr",
@@ -483,7 +475,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 34,
+   "registered": 35,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -545,7 +537,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 211
+    "trials": 212
    }
   ]
  },
