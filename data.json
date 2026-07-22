@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:39:09Z",
+  "stamp": "2026-07-22T09:42:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 349,
-  "n_results": 453,
-  "n_trials": 30424,
+  "n_registered": 351,
+  "n_results": 455,
+  "n_trials": 30426,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "zc-price-limit-expansion-regime-state",
+   "name": "zc-price-limit-expansion-regime-state",
+   "market": "ZC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 8,
+   "wr": 0.5,
+   "usd_mo": 36,
+   "pf": 3.843,
+   "usd_trade": 162.4
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,33 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T09:41:21.144364+00:00",
+   "hash": "d1c99065",
+   "name": "mng-tas-settlement-offset-obligation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.107"
+  },
+  {
+   "t": "2026-07-22T09:41:14.559192+00:00",
+   "hash": "bdc7be24",
+   "name": "mgc-asia-hours-discovery-share-regime",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:39:40.789695+00:00",
+   "hash": "8bb8f16b",
+   "name": "zc-price-limit-expansion-regime-state",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 3.843"
+  },
   {
    "t": "2026-07-22T09:38:57.679647+00:00",
    "hash": "a1370407",
@@ -333,14 +357,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.015"
-  },
-  {
-   "t": "2026-07-22T09:35:32.505351+00:00",
-   "hash": "8bb8f16b",
-   "name": "zc-price-limit-expansion-regime-state",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T09:26:59.057634+00:00",
@@ -389,36 +405,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T09:17:26.682911+00:00",
-   "hash": "fc51ee48",
-   "name": "zn-gamma-hedging-intraday-momentum",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.185"
-  },
-  {
-   "t": "2026-07-22T09:17:24.805546+00:00",
-   "hash": "adbf6493",
-   "name": "robust-mes-fx-channel-open-overshoot-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-price-limit-expansion-regime-state",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:33:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-tas-settlement-offset-obligation",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-asia-hours-discovery-share-regime",
     "stage": "dev3yr",
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 257
+    "trials": 259
    }
   ]
  },
@@ -643,8 +635,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 4,
+   "n_tested": 6,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -690,7 +682,7 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 14,
+   "n_tested": 15,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -1020,6 +1012,26 @@
     "apex_max": 2
    }
   },
+  "zc-price-limit-expansion-regime-state": {
+   "name": "zc-price-limit-expansion-regime-state",
+   "market": "ZC",
+   "tier": "candidate",
+   "mechanism": "CBOT grain daily limits step up about 50 percent from 0.25 to 0.40 dollars per bushel and stay expanded until no contract settles at limit, so the achievable daily range is an exchange published state variable not a market outcome, and participants sized to the old limit are mechanically mispositioned the day after a limit settle.",
+   "metrics": {
+    "n": 8,
+    "wr": 0.5,
+    "pf": 3.843,
+    "usd_mo": 36,
+    "usd_trade": 162.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T09:39:40.789695+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1304,31 +1316,6 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
