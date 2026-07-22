@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:48:29Z",
+  "stamp": "2026-07-22T10:50:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 382,
+  "n_registered": 383,
   "n_results": 486,
   "n_trials": 30457,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:49:58.764677+00:00",
+   "hash": "1618f750",
+   "name": "rep-zn-cash-market-closed-futures-open-asymmetry-m2k",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T10:46:10.359530+00:00",
    "hash": "52440e70",
    "name": "zn-cash-market-closed-futures-open-asymmetry",
@@ -397,14 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T10:31:40.348173+00:00",
-   "hash": "e015ee80",
-   "name": "zn-m2k-info-diffusion-hourly",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9914"
   }
  ],
  "pipeline": {
@@ -424,12 +424,20 @@
     "stage": "dev3yr",
     "started": "2026-07-22T10:43:16Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "replication: zn-cash-market-closed-futures-open-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:48:30Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 51,
+   "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
