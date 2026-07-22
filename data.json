@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:54:04Z",
+  "stamp": "2026-07-22T05:54:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:49:32Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-futures-funding-basis-stress-cheapening",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:54:06Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mes-futures-funding-basis-stress-cheapening",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 9,
     "idea": "mgc-late-session-inventory-reversal",
@@ -492,7 +491,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
