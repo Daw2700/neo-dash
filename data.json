@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:45:03Z",
+  "stamp": "2026-07-22T08:48:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 325,
-  "n_results": 430,
-  "n_trials": 30401,
+  "n_registered": 329,
+  "n_results": 431,
+  "n_trials": 30402,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:48:27.576141+00:00",
+   "hash": "53286522",
+   "name": "zc-post-close-macro-catchup",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T08:48:02.172171+00:00",
+   "hash": "f93e06cb",
+   "name": "met-us-morning-risk-transfer-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.353"
+  },
+  {
+   "t": "2026-07-22T08:46:58.929578+00:00",
+   "hash": "8fb4ffb8",
+   "name": "scout-26-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T08:46:56.013767+00:00",
+   "hash": "f27abe35",
+   "name": "mes-earnings-season-drift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T08:44:41.902553+00:00",
    "hash": "e4888532",
    "name": "mbt-mgc-debasement-hedge-substitution-reversion",
@@ -373,38 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.067"
-  },
-  {
-   "t": "2026-07-22T08:32:08.958440+00:00",
-   "hash": "7582d1e8",
-   "name": "mgc-london-bank-holiday-discovery-transfer-RECHECK",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T08:31:16.457620+00:00",
-   "hash": "99a09482",
-   "name": "mbt-monthly-expiry-basis-convergence-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.658"
-  },
-  {
-   "t": "2026-07-22T08:30:59.764274+00:00",
-   "hash": "9f825554",
-   "name": "mgc-london-bank-holiday-discovery-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.067"
-  },
-  {
-   "t": "2026-07-22T08:28:20.243797+00:00",
-   "hash": "94a827b3",
-   "name": "mes-margin-call-preopen-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.247"
   }
  ],
  "pipeline": {
@@ -427,14 +427,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "MET",
-    "task": "met-us-morning-risk-transfer-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:45:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "ZC",
     "task": "zc-post-close-macro-information-catchup",
     "stage": "dev3yr",
@@ -445,7 +437,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 37,
+   "registered": 40,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +499,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 234
+    "trials": 235
    }
   ]
  },
@@ -607,8 +599,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 3,
+   "n_tested": 4,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
