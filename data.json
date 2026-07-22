@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:08:12Z",
+  "stamp": "2026-07-22T00:09:18Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 126,
   "n_results": 200,
@@ -432,20 +432,27 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 10,
-    "idea": "buyback-blackout-regime",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.1
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T00:08:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "buyback-blackout-regime",
+    "stage": "dev3yr",
+    "started": "2026-07-22T00:08:14Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
