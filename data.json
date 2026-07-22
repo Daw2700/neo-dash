@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:41:56Z",
+  "stamp": "2026-07-22T20:41:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:38:04Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-complex-replication-residual-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:41:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mym-complex-replication-residual-reversion",
-    "source": "data-screen",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 8,
     "idea": "mes-macro-factor-coherence-open-ratification",
@@ -493,7 +492,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
