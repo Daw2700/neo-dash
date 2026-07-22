@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:36:32Z",
+  "stamp": "2026-07-22T03:37:14Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 174,
-  "n_results": 267,
-  "n_trials": 30238,
+  "n_registered": 175,
+  "n_results": 268,
+  "n_trials": 30239,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:37:08.663740+00:00",
+   "hash": "ddb339e5",
+   "name": "scout-16-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T03:36:52.417795+00:00",
+   "hash": "e8f8deba",
+   "name": "mes-eu-closed-momo",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.445"
+  },
+  {
    "t": "2026-07-22T03:36:27.179660+00:00",
    "hash": "60c817be",
    "name": "zn-quarter-end-dealer-balance-sheet-withdrawal",
@@ -322,14 +338,6 @@
    "t": "2026-07-22T03:35:56.385016+00:00",
    "hash": "8012350b",
    "name": "mym-price-weight-earnings-dislocation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T03:35:50.155900+00:00",
-   "hash": "e8f8deba",
-   "name": "mes-eu-closed-momo",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.2104"
-  },
-  {
-   "t": "2026-07-22T03:18:14.361499+00:00",
-   "hash": "2d6605d2",
-   "name": "mgc-overnight-inventory-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.09"
   }
  ],
  "pipeline": {
@@ -413,14 +413,6 @@
     "agent": "tester-1",
     "market": "MYM",
     "task": "mym-price-weight-earnings-dislocation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:34:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-europe-closed-us-open-thin-book-momentum",
     "stage": "dev3yr",
     "started": "2026-07-22T03:34:26Z",
     "state": "running"
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 71
+    "trials": 72
    }
   ]
  },
@@ -523,8 +515,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 7,
+   "n_tested": 15,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
