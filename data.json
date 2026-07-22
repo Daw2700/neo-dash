@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:01:47Z",
+  "stamp": "2026-07-22T07:04:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 279,
-  "n_results": 380,
-  "n_trials": 30351,
+  "n_registered": 280,
+  "n_results": 381,
+  "n_trials": 30352,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -273,6 +273,18 @@
    }
   },
   {
+   "id": "mes-variance-risk-premium-carry",
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 208,
+   "wr": 0.524,
+   "usd_mo": 47,
+   "pf": 1.122,
+   "usd_trade": 8.1
+  },
+  {
    "id": "n9-cot-washout-buy",
    "name": "n9-cot-washout-buy",
    "market": "MNQ",
@@ -295,21 +307,17 @@
    "usd_mo": 2,
    "pf": 1.074,
    "usd_trade": 2.3
-  },
-  {
-   "id": "mcl-carry-regime",
-   "name": "mcl-carry-regime",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 37,
-   "wr": 0.4054,
-   "usd_mo": 9,
-   "pf": 1.043,
-   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:04:02.729327+00:00",
+   "hash": "a728d544",
+   "name": "mes-variance-risk-premium-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.122"
+  },
   {
    "t": "2026-07-22T07:00:08.808734+00:00",
    "hash": "aac561d0",
@@ -397,14 +405,6 @@
    "status": "result",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T06:39:09.450750+00:00",
-   "hash": "810832c5",
-   "name": "mym-split-divisor-rebalance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:57:11Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-variance-risk-premium-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:01:49Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mes-variance-risk-premium-carry",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "mcl-intraday-skew-lottery-demand-fade",
@@ -519,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 26,
    "dev3yr": 0,
    "robustness": 0,
@@ -582,7 +581,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 184
+    "trials": 185
    }
   ]
  },
@@ -606,7 +605,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 34,
+   "n_tested": 35,
    "n_killed": 21,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -1273,6 +1272,26 @@
     "apex_max": 5
    }
   },
+  "mes-variance-risk-premium-carry": {
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
+   "metrics": {
+    "n": 208,
+    "wr": 0.524,
+    "pf": 1.122,
+    "usd_mo": 47,
+    "usd_trade": 8.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:04:02.729327+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "n9-cot-washout-buy": {
    "name": "n9-cot-washout-buy",
    "market": "MNQ",
@@ -1320,26 +1339,6 @@
      "t": "2026-07-21T16:04:19.693873+00:00",
      "stage": "dev3yr",
      "verdict": "FAIL"
-    }
-   ]
-  },
-  "mcl-carry-regime": {
-   "name": "mcl-carry-regime",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Crude oil term structure prices the inventory / convenience-yield state: in backwardation inventories are tight and producers pay long speculators a positive risk premium to carry hedged exposure, while in contango that premium reverses and storage holders are paid instead. Signing MCL direction off the front-versus-deferred basis therefore harvests a producer-hedging risk premium rather than any event reaction, per Gorton and Rouwenhorst and Erb and Harvey.",
-   "metrics": {
-    "n": 37,
-    "wr": 0.4054,
-    "pf": 1.043,
-    "usd_mo": 9,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T01:43:38.994772+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
     }
    ]
   }
