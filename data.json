@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:52:35Z",
+  "stamp": "2026-07-22T16:53:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 525,
-  "n_results": 654,
-  "n_trials": 30642,
+  "n_results": 655,
+  "n_trials": 30643,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,20 +307,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:53:02.506334+00:00",
+   "hash": "66733061",
+   "name": "mgc-am-zerotick-staleness-pm-range-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.012"
+  },
+  {
    "t": "2026-07-22T16:52:11.334164+00:00",
    "hash": "33886ad2",
    "name": "mbt-london-brr-reference-window-impact",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.6107"
-  },
-  {
-   "t": "2026-07-22T16:51:48.121678+00:00",
-   "hash": "66733061",
-   "name": "mgc-am-zerotick-staleness-pm-range-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T16:51:25.666754+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-am-zerotick-staleness-pm-range-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:49:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-volume-clock-exit-horizon-normalization",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-crossmarket-vol-normalization-exit-clock",
     "stage": "dev3yr",
@@ -524,7 +516,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 74,
+   "registered": 73,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 475
+    "trials": 476
    }
   ]
  },
@@ -639,8 +631,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 31,
-   "n_killed": 24,
+   "n_tested": 32,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
