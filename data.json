@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:31:44Z",
+  "stamp": "2026-07-22T02:37:16Z",
   "stale_after_min": 30,
-  "status": "applying your question",
+  "status": "applying your approve",
   "engine_state": "ok",
   "n_registered": 151,
-  "n_results": 238,
-  "n_trials": 30209,
+  "n_results": 240,
+  "n_trials": 30211,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 4
+  "needs_attention_count": 3
  },
  "leaderboard": [
   {
@@ -273,30 +273,6 @@
    }
   },
   {
-   "id": "b3-lunch-compression-break",
-   "name": "b3-lunch-compression-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 684,
-   "wr": 0.493,
-   "usd_mo": 107,
-   "pf": 1.113,
-   "usd_trade": 5.7
-  },
-  {
-   "id": "b4-bigday-fade",
-   "name": "b4-bigday-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 202,
-   "wr": 0.48,
-   "usd_mo": 56,
-   "pf": 1.08,
-   "usd_trade": 10.1
-  },
-  {
    "id": "b6-prehol-m2k",
    "name": "b6-prehol-m2k",
    "market": "M2K",
@@ -307,9 +283,49 @@
    "usd_mo": 2,
    "pf": 1.074,
    "usd_trade": 2.3
+  },
+  {
+   "id": "mcl-carry-regime",
+   "name": "mcl-carry-regime",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 37,
+   "wr": 0.4054,
+   "usd_mo": 9,
+   "pf": 1.043,
+   "usd_trade": 9.1
+  },
+  {
+   "id": "silver-london-to-comex-handoff",
+   "name": "silver-london-to-comex-handoff",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 1548,
+   "wr": 0.4522,
+   "usd_mo": -435,
+   "pf": 0.88,
+   "usd_trade": -10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T02:33:37.112331+00:00",
+   "hash": "0feb6a78",
+   "name": "b4-bigday-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T02:33:37.110207+00:00",
+   "hash": "3e8e292d",
+   "name": "b3-lunch-compression-break",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T02:25:39.894186+00:00",
    "hash": "47ea5cce",
@@ -389,22 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:43:38.994772+00:00",
-   "hash": "f5c194b0",
-   "name": "mcl-carry-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.043"
-  },
-  {
-   "t": "2026-07-22T01:43:20.597059+00:00",
-   "hash": "35e00878",
-   "name": "mes-volcontrol-releverage-lag",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.383"
   }
  ],
  "pipeline": {
@@ -474,7 +474,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 42
+    "trials": 44
    }
   ]
  },
@@ -1165,66 +1165,6 @@
     "apex_max": 6
    }
   },
-  "b3-lunch-compression-break": {
-   "name": "b3-lunch-compression-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Lunch lull compresses range; afternoon institutional re-engagement breaks it with real flow",
-   "metrics": {
-    "n": 684,
-    "wr": 0.493,
-    "pf": 1.113,
-    "usd_mo": 107,
-    "usd_trade": 5.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.936667+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.914827+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.710078+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
-  "b4-bigday-fade": {
-   "name": "b4-bigday-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "A single-day move beyond 1.5% overshoots via forced flows and margin selling; next-open liquidity providers fade it",
-   "metrics": {
-    "n": 202,
-    "wr": 0.48,
-    "pf": 1.08,
-    "usd_mo": 56,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T14:44:57.606619+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.918482+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.714243+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b6-prehol-m2k": {
    "name": "b6-prehol-m2k",
    "market": "M2K",
@@ -1249,38 +1189,49 @@
      "verdict": "FAIL"
     }
    ]
+  },
+  "mcl-carry-regime": {
+   "name": "mcl-carry-regime",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Crude oil term structure prices the inventory / convenience-yield state: in backwardation inventories are tight and producers pay long speculators a positive risk premium to carry hedged exposure, while in contango that premium reverses and storage holders are paid instead. Signing MCL direction off the front-versus-deferred basis therefore harvests a producer-hedging risk premium rather than any event reaction, per Gorton and Rouwenhorst and Erb and Harvey.",
+   "metrics": {
+    "n": 37,
+    "wr": 0.4054,
+    "pf": 1.043,
+    "usd_mo": 9,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T01:43:38.994772+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "silver-london-to-comex-handoff": {
+   "name": "silver-london-to-comex-handoff",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Silver price discovery happens in London physical (LBMA) hours and that bid carries into the US pre-open; once COMEX paper hours open, industrial hedgers and dealers press supply back into the session where size actually trades. The payer is the London-hours inventory holder who must transfer inventory risk into the US session.",
+   "metrics": {
+    "n": 1548,
+    "wr": 0.4522,
+    "pf": 0.88,
+    "usd_mo": -435,
+    "usd_trade": -10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T23:49:09.458310+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
-  {
-   "id": "d-demotions-r753",
-   "kind": "demotion",
-   "needs_attention": true,
-   "title": "Sign off: demote lunch-break + bigday-fade (overlap claim retracted)",
-   "recommendation": "DEMOTE both \u2014 lunch on failed MES replication, not on overlap; your veto pending",
-   "evidence": "lunch-break MES replication FAILED (PF 0.926, net -$3,278, n=1,357) + morning-control drift + 2022 concentration; bigday-fade t=0.42 at n=202, MES PF 1.008, ex-2020 MES net -$4,060. Overlap-with-monday evidence RETRACTED: weekly r=0.028, 50% sign agreement, combined maxDD -$1,794 < either sleeve alone.",
-   "what_yes_means": "Both leave the candidate pool (reversible via ledger)",
-   "recap": "Moves lunch-break and bigday-fade out of the candidate pool. They stop being considered for bundles and future books. Nothing is deleted. The original overlap argument against lunch-break was tested and withdrawn \u2014 the demotion now rests only on its failed MES replication.",
-   "why": "Your question was right and it changed this card. I measured the overlap on dev-era data: lunch-break and monday-long share 137 weeks, but their weekly P&L correlation is 0.028, they agree in direction 50% of the time, and lunch made +$2,371 across the 60 weeks monday lost. Together their max drawdown is -$1,794 \u2014 smaller than lunch alone (-$3,048) or monday alone (-$2,354). That is diversification, not double-counting, so the overlap evidence is retracted. Overlap only ever matters as a book-risk argument \u2014 sleeves are sized off the book's drawdown, so sleeves that lose in the same weeks stack into one breach \u2014 and it does not apply here. What does still stand: lunch-break fails MES replication outright (PF 0.926, -$3,278 over 1,357 trades), its morning-window control kept a positive drift (so part of it is generic range-break momentum, not a lunch-specific mechanism), and $6,436 of its $10,603 came from 2022 with 2023 negative. Bigday-fade is untouched by the question: mean $10.05 on sd $337 at n=202 is t=0.42, MES PF 1.008, ex-2020 MES net -$4,060 \u2014 a 2020-crash artifact.",
-   "steps": [
-    "DEMOTED verdicts are appended to the ledger for both strategies (append-only \u2014 history stays intact)",
-    "The lunch-break verdict cites the failed MES replication, NOT overlap; the retracted overlap claim and its numbers (r=0.028, combined maxDD -$1,794) are recorded alongside it",
-    "Their leaderboard tier drops from candidate to demoted; rows dim",
-    "They are excluded from the bundle pool and every future sizing run",
-    "Trade logs and all past results are kept on disk untouched",
-    "If new evidence ever clears them \u2014 e.g. lunch-break replicating on a fresh instrument \u2014 a fresh ledger entry reinstates; nothing is irreversible",
-    "Dashboard republishes on the next cycle"
-   ],
-   "qa": [
-    {
-     "q": "Why does it matter if it overlaps if it's its own strategy?",
-     "a": "You were right to push back \u2014 I measured it and the overlap claim does not hold. On the dev era (2022-03-01..2025-02-28) lunch-break and monday-long share 137 active weeks, but their weekly P&L correlation is r=0.028 and they agree on direction in only 50% of those weeks \u2014 a coin flip. Lunch actually made +$2,371 across the 60 weeks monday LOST money (avg +$40/wk, versus +$15/wk in monday's winning weeks). Run together, the book's max drawdown is -$1,794 \u2014 smaller than either sleeve alone (lunch -$3,048, monday -$2,354). Calendar overlap is not the same thing as edge overlap, and I have retracted that evidence line.\n\nWhy overlap matters at all, when it is real: a sleeve is sized off the BOOK's drawdown, not its own. Two sleeves that lose in the same weeks stack their losses into a single breach while the blended backtest still looks smooth \u2014 that was the down-weeks lesson. It is always a book-risk argument, never an argument that the strategy is invalid on its own. Here the numbers say these two are genuinely uncorrelated, so the argument does not apply.\n\nLunch-break's demotion still stands, on the reason that actually survives: it FAILED MES replication \u2014 PF 0.926, net -$3,278 over n=1,357, i.e. it loses money on the second instrument. Add the morning-window control that kept a positive drift (so part of it is generic range-break momentum, not a lunch-specific mechanism) and the 2022 concentration ($6,436 of $10,603 from 2022, with 2023 negative). Three independent strikes on the mechanism.\n\nBigday-fade is unchanged by your question: n=202, mean $10.05/trade on sd $337 \u2014 t=0.42, indistinguishable from zero; MES PF 1.008 and ex-2020 MES net -$4,060, so its edge is substantially a 2020-crash artifact.",
-     "q_t": "2026-07-21T22:27:38.853Z",
-     "t": "2026-07-21T23:02:01Z"
-    }
-   ],
-   "staged": "2026-07-21T23:02:01Z"
-  },
   {
    "id": "d-apex-verify-numbers",
    "kind": "funding",
