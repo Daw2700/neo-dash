@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:32:45Z",
+  "stamp": "2026-07-22T08:33:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 320,
-  "n_results": 423,
-  "n_trials": 30394,
+  "n_results": 424,
+  "n_trials": 30395,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:32:58.502527+00:00",
+   "hash": "7a4fe978",
+   "name": "zn-treasury-buyback-operation-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.211"
+  },
+  {
    "t": "2026-07-22T08:32:26.910003+00:00",
    "hash": "9f825554",
    "name": "mgc-london-bank-holiday-discovery-transfer",
@@ -322,14 +330,6 @@
    "t": "2026-07-22T08:32:08.958440+00:00",
    "hash": "7582d1e8",
    "name": "mgc-london-bank-holiday-discovery-transfer-RECHECK",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T08:31:48.503234+00:00",
-   "hash": "7a4fe978",
-   "name": "zn-treasury-buyback-operation-window",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "ZN",
-    "task": "zn-treasury-buyback-operation-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:26:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
     "task": "zn-fomc-minutes-release-overreaction-fade",
     "stage": "dev3yr",
     "started": "2026-07-22T08:31:40Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-vix-etp-daily-roll-close-flow",
     "stage": "dev3yr",
@@ -492,7 +484,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 38,
+   "registered": 37,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -554,7 +546,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 227
+    "trials": 228
    }
   ]
  },
@@ -672,8 +664,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 17,
+   "n_tested": 21,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
