@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:21:04Z",
+  "stamp": "2026-07-22T07:22:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 287,
-  "n_results": 388,
-  "n_trials": 30359,
+  "n_results": 389,
+  "n_trials": 30360,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T07:21:12.864981+00:00",
+   "hash": "9f5ed978",
+   "name": "mcl-overnight-thin-book-impact-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.545"
+  },
+  {
    "t": "2026-07-22T07:20:42.815511+00:00",
    "hash": "9b680e24",
    "name": "m2k-return-autocorrelation-regime-adaptive-direction",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.908"
-  },
-  {
-   "t": "2026-07-22T07:20:40.219419+00:00",
-   "hash": "9f5ed978",
-   "name": "mcl-overnight-thin-book-impact-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T07:13:51.084299+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-volatility-signature-noise-regime-switch",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:18:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-overnight-thin-book-impact-reversion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-settlement-window-print-pressure-unwind",
     "stage": "dev3yr",
@@ -443,11 +435,20 @@
      "MES"
     ],
     "score": 0.3
+   },
+   {
+    "rank": 10,
+    "idea": "mes-volatility-signature-noise-regime-switch",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
    }
   ],
   "funnel": {
-   "idea": 1,
-   "registered": 28,
+   "idea": 2,
+   "registered": 27,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -509,7 +510,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 192
+    "trials": 193
    }
   ]
  },
@@ -580,8 +581,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 17,
-   "n_killed": 12,
+   "n_tested": 18,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
