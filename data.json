@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:17:49Z",
+  "stamp": "2026-07-22T17:20:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 534,
-  "n_results": 667,
-  "n_trials": 30655,
+  "n_registered": 535,
+  "n_results": 668,
+  "n_trials": 30656,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:19:33.698252+00:00",
+   "hash": "3c92598e",
+   "name": "mes-zn-extreme-ordering-lead-lag-residual",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 1.092"
+  },
+  {
+   "t": "2026-07-22T17:18:29.269706+00:00",
+   "hash": "c830c9b5",
+   "name": "rep-mes-zn-extreme-ordering-lead-lag-residual-mnq",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T17:16:31.556525+00:00",
    "hash": "c3d12b57",
    "name": "mym-overnight-carry-crowding-streak-decay",
@@ -385,22 +401,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T16:57:19.888702+00:00",
-   "hash": "d0862a09",
-   "name": "ROBUSTNESS-BATTERY mnq-volclock-exit-horizon (1bf9297c1c7c2e02)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T16:56:47.461451+00:00",
-   "hash": "199289c3",
-   "name": "mes-intraday-momentum-halfhour-anchor",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.657"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "mym-overnight-carry-crowding-streak-decay",
     "stage": "dev3yr",
     "started": "2026-07-22T17:14:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "replication: mes-zn-extreme-ordering-lead-lag-residual",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:17:51Z",
     "state": "running"
    }
   ],
@@ -462,7 +470,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 74,
+   "registered": 75,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -524,7 +532,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 488
+    "trials": 489
    }
   ]
  },
