@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:24:33Z",
+  "stamp": "2026-07-22T10:29:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 370,
-  "n_results": 474,
-  "n_trials": 30445,
+  "n_registered": 373,
+  "n_results": 477,
+  "n_trials": 30448,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -269,6 +269,18 @@
    "usd_trade": 5.3
   },
   {
+   "id": "mcl-session-disagreement-overnight-repair",
+   "name": "mcl-session-disagreement-overnight-repair",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 207,
+   "wr": 0.5652,
+   "usd_mo": 45,
+   "pf": 1.152,
+   "usd_trade": 7.9
+  },
+  {
    "id": "b6-vix-m2k",
    "name": "b6-vix-m2k",
    "market": "M2K",
@@ -295,21 +307,33 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  {
-   "id": "mes-variance-risk-premium-carry",
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 208,
-   "wr": 0.524,
-   "usd_mo": 47,
-   "pf": 1.122,
-   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T10:27:44.494050+00:00",
+   "hash": "838fa400",
+   "name": "met-capitulation-band-forced-deleveraging-rebound",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.95"
+  },
+  {
+   "t": "2026-07-22T10:27:09.157530+00:00",
+   "hash": "7664c229",
+   "name": "mcl-session-disagreement-overnight-repair",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.152"
+  },
+  {
+   "t": "2026-07-22T10:27:06.231179+00:00",
+   "hash": "e015ee80",
+   "name": "zn-m2k-info-diffusion-hourly",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.998"
+  },
   {
    "t": "2026-07-22T10:23:48.949787+00:00",
    "hash": "c051fc76",
@@ -381,52 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.054"
-  },
-  {
-   "t": "2026-07-22T10:08:39.261815+00:00",
-   "hash": "aec41266",
-   "name": "mcl-annual-high-hedge",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.779"
-  },
-  {
-   "t": "2026-07-22T10:05:14.794893+00:00",
-   "hash": "54cb9910",
-   "name": "mng-expiring-contract-implied-quote-settlement-fallback",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.412"
-  },
-  {
-   "t": "2026-07-22T09:59:02.071629+00:00",
-   "hash": "8c01ee09",
-   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-session-disagreement-overnight-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:24:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M2K",
-    "task": "zn-m2k-gradual-information-diffusion-hourly",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:24:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MET",
     "task": "met-capitulation-band-forced-deleveraging-rebound",
     "stage": "dev3yr",
@@ -545,7 +529,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 278
+    "trials": 281
    }
   ]
  },
@@ -589,8 +573,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 6,
+   "n_tested": 13,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -616,7 +600,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 23,
+   "n_tested": 24,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -645,8 +629,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 5,
+   "n_tested": 6,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1242,6 +1226,26 @@
     }
    ]
   },
+  "mcl-session-disagreement-overnight-repair": {
+   "name": "mcl-session-disagreement-overnight-repair",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "When MCL rallies overnight (prior RTH close to today RTH open) but sells off during today RTH (open to close), the overnight physical/offshore demand pool and the RTH US risk-transfer pool disagree, and the following overnight session repairs that RTH selloff, so buying at the RTH close reopen on these split days and holding to the next RTH open should be profitable.",
+   "metrics": {
+    "n": 207,
+    "wr": 0.5652,
+    "pf": 1.152,
+    "usd_mo": 45,
+    "usd_trade": 7.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:27:09.157530+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-vix-m2k": {
    "name": "b6-vix-m2k",
    "market": "M2K",
@@ -1285,31 +1289,6 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  "mes-variance-risk-premium-carry": {
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
-   "metrics": {
-    "n": 208,
-    "wr": 0.524,
-    "pf": 1.122,
-    "usd_mo": 47,
-    "usd_trade": 8.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:04:02.729327+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
