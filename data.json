@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:49:12Z",
+  "stamp": "2026-07-22T08:52:58Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 329,
   "n_results": 432,
@@ -410,15 +410,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T08:45:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "ZC",
     "task": "zc-post-close-macro-information-catchup",
     "stage": "dev3yr",
@@ -426,9 +418,127 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mnq-morning-shock-forced-liquidation-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mes-threshold-rebalancer-frontrun",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "m2k-overnight-duration-rally-refi-channel-continuation",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-recurring-slot-flow-saturation-reversal",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mes-nonews-overnight-gap-reversion",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 6,
+    "idea": "mes-fx-channel-open-overshoot-fade",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "zn-liquidity-mismatch-amplification-unwind",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "zn-energy-inflation-signal-open-overreaction",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "zn-gamma-hedging-intraday-momentum",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mes-europe-leg-anchor-on-session-disagreement",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "m6e-carry-crash-asymmetry-unwind-retrace",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "mbt-equity-crashrisk-spillover-premium",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "zc-index-roll-sunshine-liquidity-provision",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.32
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 39,
    "dev3yr": 0,
    "robustness": 0,
