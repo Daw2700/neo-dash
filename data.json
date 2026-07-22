@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:43:36Z",
+  "stamp": "2026-07-22T05:43:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:43:13Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-prerelease-liquidity-withdrawal-drift-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:43:38Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mes-prerelease-liquidity-withdrawal-drift-fade",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.6
-   },
    {
     "rank": 6,
     "idea": "mgc-shanghai-open-physical-premium-transmission",
@@ -519,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
