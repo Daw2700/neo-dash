@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:55:34Z",
+  "stamp": "2026-07-22T19:55:57Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 601,
   "n_results": 742,
@@ -406,14 +406,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T19:50:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-cot-release-window-crowding-repricing",
-    "stage": "dev3yr",
     "started": "2026-07-22T19:50:22Z",
     "state": "running"
    }
