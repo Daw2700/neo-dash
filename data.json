@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:23:26Z",
+  "stamp": "2026-07-22T22:26:11Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 653,
-  "n_results": 805,
-  "n_trials": 30793,
+  "n_registered": 656,
+  "n_results": 807,
+  "n_trials": 30795,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:26:03.305683+00:00",
+   "hash": "eef25341",
+   "name": "met-hour-stamp-referenced-flow-asymmetry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.003"
+  },
+  {
+   "t": "2026-07-22T22:25:54.757172+00:00",
+   "hash": "12ab5274",
+   "name": "mes-autocallable-observation-date-delta-step",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.879"
+  },
+  {
+   "t": "2026-07-22T22:25:45.339902+00:00",
+   "hash": "88d65102",
+   "name": "mes-quarterly-collar-gamma-release",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:09:28.183973+00:00",
    "hash": "2a1ced0b",
    "name": "mes-liquidity-oversupply-reversal-sibling",
@@ -373,30 +397,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.769"
-  },
-  {
-   "t": "2026-07-22T21:56:33.311516+00:00",
-   "hash": "1d3f7086",
-   "name": "mes-opt-session-open-delta-clear",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.84"
-  },
-  {
-   "t": "2026-07-22T21:55:24.474351+00:00",
-   "hash": "910828c3",
-   "name": "zc-post-fomc-liquidity-drain-impact-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.0517"
-  },
-  {
-   "t": "2026-07-22T21:53:34.233505+00:00",
-   "hash": "462f611d",
-   "name": "m6e-t1-usd-funding-witching-hour",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.2861"
   }
  ],
  "pipeline": {
@@ -413,14 +413,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-quarterly-collar-overlay-gamma-release",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:23:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-autocallable-observation-date-delta-step",
     "stage": "dev3yr",
     "started": "2026-07-22T22:23:26Z",
     "state": "running"
@@ -511,7 +503,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 88,
+   "registered": 89,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -573,7 +565,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 626
+    "trials": 628
    }
   ]
  },
@@ -597,8 +589,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 109,
-   "n_killed": 81,
+   "n_tested": 110,
+   "n_killed": 82,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -673,8 +665,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 10,
+   "n_tested": 12,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
