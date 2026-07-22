@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:21:02Z",
+  "stamp": "2026-07-22T07:21:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T07:18:38Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-settlement-window-print-pressure-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:21:04Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "mes-settlement-window-print-pressure-unwind",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 14,
     "idea": "mes-correlated-degross-day-continuation",
@@ -447,7 +446,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 28,
    "dev3yr": 0,
    "robustness": 0,
