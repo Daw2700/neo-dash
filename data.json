@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:44:29Z",
+  "stamp": "2026-07-22T18:44:32Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZS",
+    "task": "zs-holiday-compressed-week-hedge-budget",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:44:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZC",
+    "task": "zc-halted-window-cross-market-information-reopen",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:44:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-propfirm-loss-limit-dollar-distance-cascade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:44:32Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zs-holiday-compressed-week-hedge-budget",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "zc-halted-window-cross-market-information-reopen",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.58
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-propfirm-loss-limit-dollar-distance-cascade",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.58
-   },
    {
     "rank": 4,
     "idea": "xsec-annual-commodity-index-reweight-january",
@@ -525,7 +523,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
