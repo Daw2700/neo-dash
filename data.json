@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:16:01Z",
+  "stamp": "2026-07-22T15:16:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,14 @@
     "task": "met-maker-program-window-boundary-break",
     "stage": "dev3yr",
     "started": "2026-07-22T15:10:59Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "robustness: mcl-first-passage-grind-vs-airpocket",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:16:03Z",
     "state": "running"
    }
   ],
