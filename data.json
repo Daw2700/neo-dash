@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:59:18Z",
+  "stamp": "2026-07-22T09:03:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 331,
-  "n_results": 435,
-  "n_trials": 30406,
+  "n_registered": 333,
+  "n_results": 438,
+  "n_trials": 30409,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -141,16 +141,16 @@
    }
   },
   {
-   "id": "mnq-morning-shock-forced-liq-continuation",
-   "name": "mnq-morning-shock-forced-liq-continuation",
-   "market": "MNQ",
+   "id": "m2k-overnight-duration-rally-refi-channel-continuation",
+   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
+   "market": "M2K",
    "tier": "candidate",
    "pinned": false,
-   "n": 48,
-   "wr": 0.5208,
-   "usd_mo": 81,
-   "pf": 1.841,
-   "usd_trade": 60.6
+   "n": 41,
+   "wr": 0.5366,
+   "usd_mo": 22,
+   "pf": 1.461,
+   "usd_trade": 18.9
   },
   {
    "id": "rep-bondflight-mes",
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T09:01:56.042249+00:00",
+   "hash": "0d9bee74",
+   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.461"
+  },
+  {
+   "t": "2026-07-22T09:01:23.393804+00:00",
+   "hash": "56139108",
+   "name": "mnq-recurring-slot-flow-saturation-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.012"
+  },
+  {
+   "t": "2026-07-22T09:00:33.958349+00:00",
+   "hash": "a8ad15cc",
+   "name": "mnq-morning-shock-forced-liq-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T08:57:41.815207+00:00",
    "hash": "53286522",
    "name": "zc-post-close-macro-catchup",
@@ -381,44 +405,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T08:37:27.688519+00:00",
-   "hash": "fe99af66",
-   "name": "zn-fomc-minutes-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.233"
-  },
-  {
-   "t": "2026-07-22T08:37:20.695334+00:00",
-   "hash": "6150a478",
-   "name": "mes-vix-etp-daily-roll-close-flow",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.838"
-  },
-  {
-   "t": "2026-07-22T08:36:34.675766+00:00",
-   "hash": "ddb93fd2",
-   "name": "mes-bond-holiday-rate-void",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.217"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-morning-shock-forced-liq-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:58:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-overnight-duration-rally-refi-channel-continuation",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-recurring-slot-flow-saturation-reversal",
     "stage": "dev3yr",
@@ -581,7 +573,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 239
+    "trials": 242
    }
   ]
  },
@@ -590,8 +582,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 71,
-   "n_killed": 42,
+   "n_tested": 72,
+   "n_killed": 43,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -625,7 +617,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 11,
+   "n_tested": 12,
    "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
@@ -1038,21 +1030,21 @@
     "apex_max": 2
    }
   },
-  "mnq-morning-shock-forced-liq-continuation": {
-   "name": "mnq-morning-shock-forced-liq-continuation",
-   "market": "MNQ",
+  "m2k-overnight-duration-rally-refi-channel-continuation": {
+   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
+   "market": "M2K",
    "tier": "candidate",
-   "mechanism": "A large adverse morning move (09:30-11:30 log return) beyond -1.5 trailing-sigma forces leveraged retail/prop-eval MNQ traders into risk-engine flattening, so their selling arrives in the afternoon after the move rather than into it; we are paid to hold the afternoon continuation short. The up-shock mirror has no equivalent forced cohort and is the built-in control (expected no edge).",
+   "mechanism": "Small caps carry floating-rate and short-maturity debt, so a large overnight Treasury rally is a genuine earnings-channel repricing for Russell constituents rather than a discount-rate abstraction; overnight rates markets price it before US equity real-money can act, so the repricing continues through the RTH session, while the sell-off side has no symmetric refinancing urgency.",
    "metrics": {
-    "n": 48,
-    "wr": 0.5208,
-    "pf": 1.841,
-    "usd_mo": 81,
-    "usd_trade": 60.6
+    "n": 41,
+    "wr": 0.5366,
+    "pf": 1.461,
+    "usd_mo": 22,
+    "usd_trade": 18.9
    },
    "verdict_history": [
     {
-     "t": "2026-07-22T08:56:09.267381+00:00",
+     "t": "2026-07-22T09:01:56.042249+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
