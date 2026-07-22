@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:38:51Z",
+  "stamp": "2026-07-22T17:40:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 546,
-  "n_results": 678,
-  "n_trials": 30666,
+  "n_results": 679,
+  "n_trials": 30667,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:40:07.815031+00:00",
+   "hash": "0ffe2d63",
+   "name": "mym-oil-shock-sector-dispersion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.024"
+  },
+  {
    "t": "2026-07-22T17:38:45.891451+00:00",
    "hash": "2fb8d325",
    "name": "m2k-shortsale-constraint-overshoot",
@@ -321,14 +329,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4"
-  },
-  {
-   "t": "2026-07-22T17:37:36.678804+00:00",
-   "hash": "0ffe2d63",
-   "name": "mym-oil-shock-sector-dispersion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T17:36:57.586950+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-mnq-oil-shock-sector-weight-dispersion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:35:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-shortsale-constraint-futures-expression-overshoot",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-serial-option-expiry-delta-unwind",
     "stage": "dev3yr",
@@ -506,7 +498,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 78,
+   "registered": 77,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -568,7 +560,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 499
+    "trials": 500
    }
   ]
  },
@@ -603,8 +595,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 6,
+   "n_tested": 8,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
