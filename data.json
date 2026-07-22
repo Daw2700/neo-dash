@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:15:52Z",
+  "stamp": "2026-07-22T00:16:01Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 128,
   "n_results": 201,
@@ -432,62 +432,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "mnq-megacap-earnings-night-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T00:16:01Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "fomc-statement-to-presser-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T00:16:01Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-fomc-real-rate-repricing-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T00:16:01Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "vix-soq-wednesday-open-drag",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": null
-   },
-   {
-    "rank": 2,
-    "idea": "mgc-overnight-handoff-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": null
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-monthend-hedge-rebalance-fix",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": null
-   },
-   {
-    "rank": 4,
-    "idea": "mnq-megacap-earnings-night-premium",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
-   },
-   {
-    "rank": 5,
-    "idea": "fomc-statement-to-presser-reversal",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": null
-   },
-   {
-    "rank": 6,
-    "idea": "mgc-fomc-real-rate-repricing-drift",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": null
-   },
    {
     "rank": 7,
     "idea": "mes-friday-strike-pin-reversion",
@@ -526,7 +497,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 4,
    "registered": 3,
    "dev3yr": 0,
    "robustness": 0,
