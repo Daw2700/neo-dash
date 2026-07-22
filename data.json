@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:30:46Z",
+  "stamp": "2026-07-22T14:30:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,26 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "robustness: mcl-hedging-pressure-horizon-decomposition-v2",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:30:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-postrelease-price-impact-regime-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:30:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-rates-activity-lead-equity-session-range-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:30:47Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-postrelease-price-impact-regime-continuation",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 5,
-    "idea": "mes-rates-activity-lead-equity-session-range-gate",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.53
-   },
    {
     "rank": 6,
     "idea": "mes-dealer-absorption-conditioned-overnight-premium",
@@ -507,7 +514,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 9,
    "registered": 64,
    "dev3yr": 0,
    "robustness": 0,
