@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:15:22Z",
+  "stamp": "2026-07-22T02:15:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,20 +412,27 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 11,
-    "idea": "mes-macro-announcement-day-premium",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T02:15:24Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-macro-announcement-day-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T02:15:24Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
