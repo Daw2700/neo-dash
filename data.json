@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:40:43Z",
+  "stamp": "2026-07-22T04:40:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 213,
-  "n_results": 303,
-  "n_trials": 30274,
+  "n_results": 304,
+  "n_trials": 30275,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:40:44.482404+00:00",
+   "hash": "26db3d2d",
+   "name": "sil-lbma-auction-imbalance-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.127"
+  },
+  {
    "t": "2026-07-22T04:40:41.236973+00:00",
    "hash": "4c26a5ee",
    "name": "m6e-ny-cut-option-expiry-release",
@@ -321,14 +329,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.731"
-  },
-  {
-   "t": "2026-07-22T04:39:27.250902+00:00",
-   "hash": "26db3d2d",
-   "name": "sil-lbma-auction-imbalance-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:33:46.193435+00:00",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T04:38:39Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-am-settled-index-option-opening-print-distortion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:40:46Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-am-settled-index-option-opening-print-distortion",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 5,
     "idea": "zn-quarterly-refunding-issuance-composition-repricing",
@@ -488,8 +487,8 @@
    }
   ],
   "funnel": {
-   "idea": 7,
-   "registered": 15,
+   "idea": 6,
+   "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -551,7 +550,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 107
+    "trials": 108
    }
   ]
  },
@@ -611,8 +610,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 1,
+   "n_tested": 2,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
