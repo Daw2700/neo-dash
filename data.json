@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:37:54Z",
+  "stamp": "2026-07-22T21:39:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 639,
-  "n_results": 789,
-  "n_trials": 30777,
+  "n_registered": 641,
+  "n_results": 790,
+  "n_trials": 30778,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:39:24.473182+00:00",
+   "hash": "8b33b276",
+   "name": "sil-oi-concentration-margin-addon-trim",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.893"
+  },
+  {
+   "t": "2026-07-22T21:38:28.322675+00:00",
+   "hash": "686cb919",
+   "name": "mnq-derived-micro-settlement-anchor-divergence",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T21:37:47.510073+00:00",
    "hash": "e7d813c4",
    "name": "m6e-imm-date-forward-roll-concentration",
@@ -381,22 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.764"
-  },
-  {
-   "t": "2026-07-22T21:09:15.319063+00:00",
-   "hash": "aa82475e",
-   "name": "scout-45-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T21:04:33.948811+00:00",
-   "hash": "0719c7ad",
-   "name": "mes-bom-emptiness-reversion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -410,14 +410,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "SIL",
-    "task": "sil-oi-concentration-margin-addon-trim",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:37:08Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-cot-tuesday-snapshot-positioning",
     "stage": "dev3yr",
@@ -437,7 +429,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 87,
+   "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 610
+    "trials": 611
    }
   ]
  },
@@ -561,8 +553,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 7,
+   "n_tested": 11,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
