@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:31:45Z",
+  "stamp": "2026-07-22T04:32:07Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 208,
-  "n_results": 299,
-  "n_trials": 30270,
+  "n_registered": 209,
+  "n_results": 300,
+  "n_trials": 30271,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:31:55.826455+00:00",
+   "hash": "30cbe73d",
+   "name": "m2k-taxloss-turnofyear-reversal",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:31:48.053729+00:00",
+   "hash": "2b7398f3",
+   "name": "zs-south-american-weather-premium-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.975"
+  },
+  {
    "t": "2026-07-22T04:31:30.165816+00:00",
    "hash": "f3dcdd9d",
    "name": "mes-margin-hike-lag",
@@ -321,14 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.958"
-  },
-  {
-   "t": "2026-07-22T04:30:19.348214+00:00",
-   "hash": "2b7398f3",
-   "name": "zs-south-american-weather-premium-decay",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:27:40.961842+00:00",
@@ -393,28 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.812"
-  },
-  {
-   "t": "2026-07-22T04:15:08.075747+00:00",
-   "hash": "c7ffaa26",
-   "name": "zs-china-session-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.578"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-south-american-weather-premium-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:29:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-taxloss-turnofyear-reversal",
     "stage": "dev3yr",
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 103
+    "trials": 104
    }
   ]
  },
@@ -629,8 +621,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 1,
+   "n_tested": 2,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   }
