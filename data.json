@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:03:46Z",
+  "stamp": "2026-07-22T03:05:31Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 162,
-  "n_results": 252,
-  "n_trials": 30223,
+  "n_registered": 164,
+  "n_results": 253,
+  "n_trials": 30224,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:05:16.603973+00:00",
+   "hash": "f574f769",
+   "name": "mes-vanna-ivcrush-dealer-rebuy",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.531"
+  },
+  {
+   "t": "2026-07-22T03:04:26.750105+00:00",
+   "hash": "cd643130",
+   "name": "scout-15-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T03:03:32.572110+00:00",
    "hash": "25548a41",
    "name": "mng-bidweek-baseload",
@@ -385,34 +401,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.039"
-  },
-  {
-   "t": "2026-07-22T02:50:04.186910+00:00",
-   "hash": "7b3c2857",
-   "name": "zn-sunday-reopen-duration-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.481"
-  },
-  {
-   "t": "2026-07-22T02:49:57.125334+00:00",
-   "hash": "f0dacdd6",
-   "name": "mcl-api-tuesday-overnight-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.478"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-vanna-ivcrush-dealer-rebuy",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:02:39Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -425,7 +417,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 7,
+   "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 56
+    "trials": 57
    }
   ]
  },
@@ -511,8 +503,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 5,
+   "n_tested": 13,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
