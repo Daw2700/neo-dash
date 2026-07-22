@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:54:10Z",
+  "stamp": "2026-07-22T04:54:31Z",
   "stale_after_min": 30,
-  "status": "d-neo300-paper-creds-r4 DENIED \u2014 Neo-300 paper bot retired for good, slippage collector dormant at 0/100 samples, cost model stays modelled",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 223,
   "n_results": 316,
@@ -406,15 +406,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "decision",
-    "market": null,
-    "task": "your deny: Slippage collector \u2014 third empty approva",
-    "stage": "decision",
-    "started": "2026-07-22T04:51:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MES",
     "task": "mes-overnight-risk-premium-unconditional",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-export-inspections-monday-shipment-repricing",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-gold-overnight-macro-signal-open-continuation",
     "stage": "dev3yr",
