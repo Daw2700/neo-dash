@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:52:19Z",
+  "stamp": "2026-07-22T11:52:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,21 +408,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "recheck: mes-financing-drag-rate-regime-overnight-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:49:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-event-conditioned-weekend-risk-premium",
     "stage": "dev3yr",
     "started": "2026-07-22T11:49:30Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "robustness: m6e-policy-meeting-desync-window",
     "stage": "dev3yr",
