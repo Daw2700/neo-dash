@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:19:27Z",
+  "stamp": "2026-07-22T20:20:52Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 613,
-  "n_results": 759,
-  "n_trials": 30747,
+  "n_registered": 614,
+  "n_results": 760,
+  "n_trials": 30748,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:20:46.717900+00:00",
+   "hash": "d48e7d7c",
+   "name": "zc-ethanol-crush-margin-demand-transmission",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.736"
+  },
+  {
    "t": "2026-07-22T20:19:21.231177+00:00",
    "hash": "47b77745",
    "name": "zn-fomc-blackout-void-persistence",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1"
-  },
-  {
-   "t": "2026-07-22T20:06:15.498437+00:00",
-   "hash": "00692986",
-   "name": "rep-vixsoq-mes",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.606"
   }
  ],
  "pipeline": {
@@ -414,14 +414,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T20:18:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZC",
-    "task": "zc-ethanol-crush-margin-demand-transmission",
-    "stage": "dev3yr",
     "started": "2026-07-22T20:18:24Z",
     "state": "running"
    }
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 580
+    "trials": 581
    }
   ]
  },
@@ -618,8 +610,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 26,
+   "n_tested": 30,
+   "n_killed": 27,
    "book_sleeves": [],
    "agents_now": []
   },
