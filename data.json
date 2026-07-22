@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:53:02Z",
+  "stamp": "2026-07-22T08:58:51Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 329,
-  "n_results": 432,
-  "n_trials": 30403,
+  "n_registered": 331,
+  "n_results": 435,
+  "n_trials": 30406,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mnq-morning-shock-forced-liq-continuation",
+   "name": "mnq-morning-shock-forced-liq-continuation",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 48,
+   "wr": 0.5208,
+   "usd_mo": 81,
+   "pf": 1.841,
+   "usd_trade": 60.6
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,33 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T08:57:41.815207+00:00",
+   "hash": "53286522",
+   "name": "zc-post-close-macro-catchup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.28"
+  },
+  {
+   "t": "2026-07-22T08:56:41.531467+00:00",
+   "hash": "078e7cd7",
+   "name": "mes-threshold-rebalancer-frontrun",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.603"
+  },
+  {
+   "t": "2026-07-22T08:56:09.267381+00:00",
+   "hash": "a8ad15cc",
+   "name": "mnq-morning-shock-forced-liq-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.841"
+  },
   {
    "t": "2026-07-22T08:49:02.201031+00:00",
    "hash": "f27abe35",
@@ -317,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.673"
-  },
-  {
-   "t": "2026-07-22T08:48:27.576141+00:00",
-   "hash": "53286522",
-   "name": "zc-post-close-macro-catchup",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T08:48:02.172171+00:00",
@@ -389,22 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 2.217"
-  },
-  {
-   "t": "2026-07-22T08:32:58.502527+00:00",
-   "hash": "7a4fe978",
-   "name": "zn-treasury-buyback-operation-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.211"
-  },
-  {
-   "t": "2026-07-22T08:32:26.910003+00:00",
-   "hash": "9f825554",
-   "name": "mgc-london-bank-holiday-discovery-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.067"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-morning-shock-forced-liquidation-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:53:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-threshold-rebalancer-frontrun",
     "stage": "dev3yr",
@@ -537,7 +529,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 39,
+   "registered": 38,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -599,7 +591,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 236
+    "trials": 239
    }
   ]
  },
@@ -608,7 +600,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 70,
+   "n_tested": 71,
    "n_killed": 42,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -623,8 +615,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 46,
-   "n_killed": 30,
+   "n_tested": 47,
+   "n_killed": 31,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -726,8 +718,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 12,
+   "n_tested": 13,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1056,6 +1048,26 @@
     "apex_max": 2
    }
   },
+  "mnq-morning-shock-forced-liq-continuation": {
+   "name": "mnq-morning-shock-forced-liq-continuation",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "A large adverse morning move (09:30-11:30 log return) beyond -1.5 trailing-sigma forces leveraged retail/prop-eval MNQ traders into risk-engine flattening, so their selling arrives in the afternoon after the move rather than into it; we are paid to hold the afternoon continuation short. The up-shock mirror has no equivalent forced cohort and is the built-in control (expected no edge).",
+   "metrics": {
+    "n": 48,
+    "wr": 0.5208,
+    "pf": 1.841,
+    "usd_mo": 81,
+    "usd_trade": 60.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T08:56:09.267381+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1340,31 +1352,6 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
