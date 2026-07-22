@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:16:19Z",
+  "stamp": "2026-07-22T03:16:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,32 +408,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "replication: fomc-statement-presser-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:11:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-postclose-index-flow-bleed",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:11:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-euopen-dealer-inventory-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:14:08Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 3,
