@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:35:48Z",
+  "stamp": "2026-07-22T18:36:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 569,
-  "n_results": 706,
-  "n_trials": 30694,
+  "n_registered": 571,
+  "n_results": 707,
+  "n_trials": 30695,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:36:28.742452+00:00",
+   "hash": "210cb4ea",
+   "name": "scout-41-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:36:20.625654+00:00",
+   "hash": "5357b32f",
+   "name": "xsec-commodity-hedgepressure-rotation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.007"
+  },
+  {
+   "t": "2026-07-22T18:36:00.735810+00:00",
+   "hash": "f078efbe",
+   "name": "mes-annuity-monthstart-hedge",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T18:35:38.798660+00:00",
    "hash": "6c7bfff5",
    "name": "xmkt-hourly-systematic-share-divergence-conditioning",
@@ -321,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.927"
-  },
-  {
-   "t": "2026-07-22T18:34:11.387180+00:00",
-   "hash": "5357b32f",
-   "name": "xsec-commodity-hedgepressure-rotation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T18:31:13.836378+00:00",
@@ -385,36 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.159"
-  },
-  {
-   "t": "2026-07-22T18:14:48.455567+00:00",
-   "hash": "ae5e7176",
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.237"
-  },
-  {
-   "t": "2026-07-22T18:11:55.709212+00:00",
-   "hash": "e0bd284d",
-   "name": "mes-charm-delta-decay-preopex-overnight",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.98"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "xsec-commodity-month-of-year-hedger-calendar-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:26:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-index-annuity-option-reset-monthstart-hedge",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-funded-account-daily-reset-reentry-window",
     "stage": "dev3yr",
@@ -441,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 81,
+   "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 527
+    "trials": 528
    }
   ]
  },
@@ -512,8 +504,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 95,
-   "n_killed": 55,
+   "n_tested": 96,
+   "n_killed": 56,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
