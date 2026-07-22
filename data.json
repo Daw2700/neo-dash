@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:51:37Z",
+  "stamp": "2026-07-22T03:51:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T03:49:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-preopen-volume-range-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:51:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-us-eu-dst-desync-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:51:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-preopen-volume-range-fade",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 8,
-    "idea": "m6e-us-eu-dst-desync-window",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 9,
     "idea": "zn-post-cash-close-hedge-unwind",
@@ -457,7 +455,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 10,
    "dev3yr": 0,
    "robustness": 0,
