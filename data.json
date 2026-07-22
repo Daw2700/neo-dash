@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:03:58Z",
+  "stamp": "2026-07-22T19:07:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 580,
-  "n_results": 718,
-  "n_trials": 30706,
+  "n_registered": 581,
+  "n_results": 720,
+  "n_trials": 30708,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "sil-jan-bcom-gsci-reweight-short",
-   "name": "sil-jan-bcom-gsci-reweight-short",
-   "market": "SIL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 15,
-   "wr": 0.6667,
-   "usd_mo": 27,
-   "pf": 2.006,
-   "usd_trade": 66.0
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -303,9 +291,37 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  {
+   "id": "mes-depth-consumption-print-size-range-forecast",
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 124,
+   "wr": 0.4355,
+   "usd_mo": 31,
+   "pf": 1.168,
+   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T19:05:24.115932+00:00",
+   "hash": "a510b57e",
+   "name": "met-pre-halt-flatten",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0412"
+  },
+  {
+   "t": "2026-07-22T19:04:36.388136+00:00",
+   "hash": "1f2da39b",
+   "name": "sil-jan-bcom-gsci-reweight-short",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T19:03:45.595013+00:00",
    "hash": "6a1e5a22",
@@ -385,36 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.325"
-  },
-  {
-   "t": "2026-07-22T18:39:04.581016+00:00",
-   "hash": "405f954e",
-   "name": "mnq-funded-reset-reentry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.876"
-  },
-  {
-   "t": "2026-07-22T18:37:06.121140+00:00",
-   "hash": "f078efbe",
-   "name": "mes-annuity-monthstart-hedge",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.797"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "SIL",
-    "task": "robustness: sil-jan-bcom-gsci-reweight-short",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:59:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-when-issued-hedge-build-release-asymmetry",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MET",
     "task": "met-pre-maintenance-halt-inventory-flatten",
     "stage": "dev3yr",
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 539
+    "trials": 541
    }
   ]
  },
@@ -632,8 +624,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 9,
-   "n_killed": 8,
+   "n_tested": 10,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1009,26 +1001,6 @@
     }
    ]
   },
-  "sil-jan-bcom-gsci-reweight-short": {
-   "name": "sil-jan-bcom-gsci-reweight-short",
-   "market": "SIL",
-   "tier": "candidate",
-   "mechanism": "BCOM and GSCI reset their target commodity weights once a year over a pre-announced 5-business-day band in early January (roughly Jan 8-14) in proportion to the prior years relative performance, and JPMorgan estimated silver alone faces sell flow near 9% of futures open interest in that band, so passive index trackers are structural, price-insensitive sellers of SIL during this specific annual window, distinct from the monthly front-month roll already tested elsewhere.",
-   "metrics": {
-    "n": 15,
-    "wr": 0.6667,
-    "pf": 2.006,
-    "usd_mo": 27,
-    "usd_trade": 66.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T18:52:31.970393+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1298,6 +1270,36 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  "mes-depth-consumption-print-size-range-forecast": {
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
+   "metrics": {
+    "n": 124,
+    "wr": 0.4355,
+    "pf": 1.168,
+    "usd_mo": 31,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:40:13.765212+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T15:47:15.796894+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T15:52:13.200686+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
