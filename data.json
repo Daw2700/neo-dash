@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:31:34Z",
+  "stamp": "2026-07-22T18:35:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 566,
-  "n_results": 704,
-  "n_trials": 30692,
+  "n_registered": 569,
+  "n_results": 705,
+  "n_trials": 30693,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:35:01.969169+00:00",
+   "hash": "6f44a3b6",
+   "name": "m2k-open-hour-tilt",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.927"
+  },
+  {
+   "t": "2026-07-22T18:34:11.387180+00:00",
+   "hash": "5357b32f",
+   "name": "xsec-commodity-hedgepressure-rotation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:33:43.218344+00:00",
+   "hash": "6c7bfff5",
+   "name": "xmkt-hourly-systematic-share-divergence-conditioning",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T18:31:13.836378+00:00",
    "hash": "868dba3e",
    "name": "mes-hedging-gated-momentum",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.98"
-  },
-  {
-   "t": "2026-07-22T18:10:42.297696+00:00",
-   "hash": "84122ba3",
-   "name": "met-april-tax-liability-retail-liquidation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T18:10:13.540317+00:00",
-   "hash": "b3ad2407",
-   "name": "mng-crude-asia-diffusion-open-catchup",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.615"
-  },
-  {
-   "t": "2026-07-22T18:09:14.354115+00:00",
-   "hash": "84122ba3",
-   "name": "met-april-tax-liability-retail-liquidation",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 6.117"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
     "task": "xmkt-hourly-systematic-share-divergence-conditioning",
     "stage": "dev3yr",
     "started": "2026-07-22T18:29:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-mym-open-hour-size-tilt-auction-imbalance",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:31:34Z",
     "state": "running"
    }
   ],
@@ -452,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 80,
+   "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 525
+    "trials": 526
    }
   ]
  },
@@ -558,8 +550,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 9,
+   "n_tested": 20,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   },
