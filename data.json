@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:00:33Z",
+  "stamp": "2026-07-22T23:00:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,21 +416,27 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:58:27Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "mnq-propfirm-consistency-rule-post-win-withdrawal",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T23:00:35Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "mnq-propfirm-consistency-rule-post-win-withdrawal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:00:35Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 92,
    "dev3yr": 0,
    "robustness": 0,
