@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:53:21Z",
+  "stamp": "2026-07-22T20:56:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 626,
-  "n_results": 772,
-  "n_trials": 30760,
+  "n_registered": 627,
+  "n_results": 774,
+  "n_trials": 30762,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -225,18 +225,6 @@
    }
   },
   {
-   "id": "zc-livestock-cof-sunday-transfer",
-   "name": "zc-livestock-cof-sunday-transfer",
-   "market": "ZC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 15,
-   "wr": 0.6,
-   "usd_mo": 24,
-   "pf": 1.395,
-   "usd_trade": 57.5
-  },
-  {
    "id": "mnq-event-free-day-flow-persistence",
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -299,9 +287,37 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  {
+   "id": "mcl-eia-day-midsession-to-close-momentum",
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 153,
+   "wr": 0.5033,
+   "usd_mo": 30,
+   "pf": 1.237,
+   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T20:56:11.919273+00:00",
+   "hash": "1e854f70",
+   "name": "mes-pension-fundedstatus-glidepath-rotation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.146"
+  },
+  {
+   "t": "2026-07-22T20:54:18.321386+00:00",
+   "hash": "3b30a655",
+   "name": "zc-livestock-cof-sunday-transfer",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T20:52:31.900611+00:00",
    "hash": "19538d55",
@@ -381,36 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.895"
-  },
-  {
-   "t": "2026-07-22T20:34:59.116654+00:00",
-   "hash": "9756e792",
-   "name": "zc-farmer-round-dollar-sell-shelf",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.642"
-  },
-  {
-   "t": "2026-07-22T20:22:35.676958+00:00",
-   "hash": "70314138",
-   "name": "mcl-opec-premium-release",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.345"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "robustness: zc-livestock-cof-sunday-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:51:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-pension-fundedstatus-glidepath-rotation",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "recheck: m2k-rates-variance-import-gate",
     "stage": "dev3yr",
@@ -510,7 +502,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 593
+    "trials": 595
    }
   ]
  },
@@ -534,8 +526,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 101,
-   "n_killed": 75,
+   "n_tested": 102,
+   "n_killed": 76,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1129,26 +1121,6 @@
     "apex_max": 1
    }
   },
-  "zc-livestock-cof-sunday-transfer": {
-   "name": "zc-livestock-cof-sunday-transfer",
-   "market": "ZC",
-   "tier": "candidate",
-   "mechanism": "USDA Cattle-on-Feed is released Friday 15:00 ET, after the ZC grain day session closes (14:20 ET) and with no Friday-evening reopen, so the herd-size / feed-demand shock has zero venue to trade for the full weekend and must be absorbed at the Sunday 20:00 ET electronic reopen and carried into the following Monday day session; the initial reopen-impulse direction should continue (information-diffusion drift, not liquidity-overreaction fade) as the market takes two sessions to fully price the closed-window shock.",
-   "metrics": {
-    "n": 15,
-    "wr": 0.6,
-    "pf": 1.395,
-    "usd_mo": 24,
-    "usd_trade": 57.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T20:49:38.299479+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mnq-event-free-day-flow-persistence": {
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -1282,6 +1254,26 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  "mcl-eia-day-midsession-to-close-momentum": {
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
+   "metrics": {
+    "n": 153,
+    "wr": 0.5033,
+    "pf": 1.237,
+    "usd_mo": 30,
+    "usd_trade": 7.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T18:14:48.455567+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
