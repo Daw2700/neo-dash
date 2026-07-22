@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:13:32Z",
+  "stamp": "2026-07-22T08:18:32Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 309,
-  "n_results": 414,
-  "n_trials": 30385,
+  "n_registered": 312,
+  "n_results": 416,
+  "n_trials": 30387,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -245,6 +245,18 @@
    }
   },
   {
+   "id": "sil-dual-identity-beta-conflict",
+   "name": "sil-dual-identity-beta-conflict",
+   "market": "SIL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 340,
+   "wr": 0.5412,
+   "usd_mo": 177,
+   "pf": 1.19,
+   "usd_trade": 18.8
+  },
+  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -295,21 +307,33 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T08:16:02.712080+00:00",
+   "hash": "378ec9fb",
+   "name": "sil-dual-identity-beta-conflict",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.19"
+  },
+  {
+   "t": "2026-07-22T08:15:57.174620+00:00",
+   "hash": "2c7d1713",
+   "name": "zn-ctd-switch-duration-discontinuity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-22T08:13:40.382163+00:00",
+   "hash": "934c0bfc",
+   "name": "scout-25-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T08:12:59.581648+00:00",
    "hash": "7eb60176",
@@ -381,42 +405,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.5487"
-  },
-  {
-   "t": "2026-07-22T07:57:34.405611+00:00",
-   "hash": "f36145d3",
-   "name": "algo-clock-slice-impact",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.5487"
-  },
-  {
-   "t": "2026-07-22T07:57:14.623806+00:00",
-   "hash": "5596f651",
-   "name": "mcl-timeseries-momentum-risk-premium",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T07:56:20.340280+00:00",
-   "hash": "305fde18",
-   "name": "mes-weekend-crypto-information-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.072"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "SIL",
-    "task": "sil-dual-identity-beta-conflict",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:12:47Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -424,20 +416,12 @@
     "stage": "idea-scout",
     "started": "2026-07-22T08:13:10Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZN",
-    "task": "zn-ctd-switch-duration-discontinuity",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:13:10Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 34,
+   "registered": 35,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 218
+    "trials": 220
    }
   ]
  },
@@ -561,7 +545,7 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 2,
+   "n_tested": 3,
    "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
@@ -1156,6 +1140,26 @@
     "apex_max": 6
    }
   },
+  "sil-dual-identity-beta-conflict": {
+   "name": "sil-dual-identity-beta-conflict",
+   "market": "SIL",
+   "tier": "candidate",
+   "mechanism": "Silver is simultaneously a monetary metal and an industrial input, so it carries two loadings that normally point the same way; when the monetary signal (MGC) and the industrial/cyclical signal (MES) disagree on direction, silver has no consistent anchor, dealers widen, and the prior-day displacement in SIL is indeterminacy rather than information, so it should fade rather than continue.",
+   "metrics": {
+    "n": 340,
+    "wr": 0.5412,
+    "pf": 1.19,
+    "usd_mo": 177,
+    "usd_trade": 18.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T08:16:02.712080+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1240,31 +1244,6 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
