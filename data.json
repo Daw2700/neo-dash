@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:48:29Z",
+  "stamp": "2026-07-22T08:49:12Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 329,
-  "n_results": 431,
-  "n_trials": 30402,
+  "n_results": 432,
+  "n_trials": 30403,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:49:02.201031+00:00",
+   "hash": "f27abe35",
+   "name": "mes-earnings-season-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.673"
+  },
+  {
    "t": "2026-07-22T08:48:27.576141+00:00",
    "hash": "53286522",
    "name": "zc-post-close-macro-catchup",
@@ -330,14 +338,6 @@
    "t": "2026-07-22T08:46:58.929578+00:00",
    "hash": "8fb4ffb8",
    "name": "scout-26-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T08:46:56.013767+00:00",
-   "hash": "f27abe35",
-   "name": "mes-earnings-season-drift",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -410,14 +410,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-earnings-season-uncertainty-resolution-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:44:38Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-post-close-macro-information-catchup",
     "stage": "dev3yr",
@@ -437,7 +429,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 40,
+   "registered": 39,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 235
+    "trials": 236
    }
   ]
  },
@@ -523,8 +515,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 29,
+   "n_tested": 46,
+   "n_killed": 30,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
