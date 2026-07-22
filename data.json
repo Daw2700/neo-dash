@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:18:35Z",
+  "stamp": "2026-07-22T14:18:58Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 460,
   "n_results": 581,
@@ -404,19 +404,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T14:04:42Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mcl-information-arrival-quiescence-range-band-fade",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-hedging-pressure-horizon-decomposition",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-participation-surprise-vs-seasonal-volume-norm",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.56
+   },
+   {
+    "rank": 4,
+    "idea": "mes-postrelease-price-impact-regime-continuation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "mes-rates-activity-lead-equity-session-range-gate",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.53
+   },
+   {
+    "rank": 6,
+    "idea": "mes-dealer-absorption-conditioned-overnight-premium",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.51
+   },
+   {
+    "rank": 7,
+    "idea": "mgc-offshore-mark-ratification-at-ny-open",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 8,
+    "idea": "mes-quarterend-equity-financing-withdrawal",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 9,
+    "idea": "zc-natgas-fertilizer-costpush-diffusion-lag",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.47
+   },
+   {
+    "rank": 10,
+    "idea": "mng-vol-implied-margin-hike-anticipation-deleveraging",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 11,
+    "idea": "zn-implied-repo-term-repo-wedge-roll-financing-flow",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-speculator-capacity-impairment-hedger-concession",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 13,
+    "idea": "mes-autocallable-barrier-observation-hedge-discontinuity",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 14,
+    "idea": "zn-variable-annuity-guarantee-rho-hedge-rebalance",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.42
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 63,
    "dev3yr": 0,
    "robustness": 0,
