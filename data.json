@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:26:09Z",
+  "stamp": "2026-07-22T23:26:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T23:23:42Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-index-52wk-high-anchor-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:26:12Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-index-52wk-high-anchor-continuation",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 5,
     "idea": "m6e-london-open-impulse-continuation",
@@ -466,7 +465,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
