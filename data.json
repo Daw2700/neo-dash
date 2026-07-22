@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:30:05Z",
+  "stamp": "2026-07-22T11:30:07Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-overnight-discovery-venue-composition",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:30:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-drift-burst-volume-bifurcation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:30:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-release-collision-attention-split",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:30:07Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-overnight-discovery-venue-composition",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mes-drift-burst-volume-bifurcation",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-release-collision-attention-split",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.58
-   },
    {
     "rank": 4,
     "idea": "mes-holiday-inattention-gated-fomc-lag",
@@ -538,7 +536,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
