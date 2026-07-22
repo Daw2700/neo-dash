@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:06:16Z",
+  "stamp": "2026-07-22T16:08:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 503,
-  "n_results": 633,
-  "n_trials": 30621,
+  "n_registered": 505,
+  "n_results": 634,
+  "n_trials": 30622,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:08:10.420666+00:00",
+   "hash": "02785897",
+   "name": "zc-hedger-margin-call-short-lift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.351"
+  },
+  {
+   "t": "2026-07-22T16:07:14.814418+00:00",
+   "hash": "dcdc02c7",
+   "name": "scout-37-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T16:03:26.433194+00:00",
    "hash": "69cb3a6c",
    "name": "mcl-spr-solicitation-award-window",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.796"
-  },
-  {
-   "t": "2026-07-22T15:47:15.796894+00:00",
-   "hash": "d1effc5b",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T15:46:55.314642+00:00",
-   "hash": "b96a4450",
-   "name": "mgc-monthend-impact-reversion-rent",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.25"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "ZC",
-    "task": "zc-hedger-margin-call-short-lift-after-rally",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:06:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "ZS",
     "task": "zs-china-golden-week-origination-void",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 68,
+   "registered": 69,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -513,7 +505,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 454
+    "trials": 455
    }
   ]
  },
@@ -640,8 +632,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 22,
-   "n_killed": 19,
+   "n_tested": 23,
+   "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
   },
