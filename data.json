@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:12:33Z",
+  "stamp": "2026-07-22T17:12:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,18 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T17:12:08Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "recheck: mes-vix-return-sign-decoupling",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:12:34Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-bill-settlement-thursday-cash-drain",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:12:34Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "zn-bill-settlement-thursday-cash-drain",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 10,
     "idea": "mym-overnight-carry-crowding-streak-decay",
@@ -471,7 +478,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 73,
    "dev3yr": 0,
    "robustness": 0,
