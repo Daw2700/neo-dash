@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:42:57Z",
+  "stamp": "2026-07-22T04:44:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 216,
-  "n_results": 305,
-  "n_trials": 30276,
+  "n_registered": 217,
+  "n_results": 307,
+  "n_trials": 30278,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,28 +307,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:43:55.577025+00:00",
+   "hash": "4c72bf41",
+   "name": "zn-qra-issuance-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.041"
+  },
+  {
+   "t": "2026-07-22T04:43:50.466080+00:00",
+   "hash": "c9484230",
+   "name": "zc-european-daybreak-origination-hedge",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:43:48.267856+00:00",
+   "hash": "70099c54",
+   "name": "zs-nopa-crush-midmonth-demand-print",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.669"
+  },
+  {
    "t": "2026-07-22T04:42:32.482166+00:00",
    "hash": "8619b487",
    "name": "mes-am-settled-index-option-opening-print-distortion",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.595"
-  },
-  {
-   "t": "2026-07-22T04:42:19.825568+00:00",
-   "hash": "4c72bf41",
-   "name": "zn-qra-issuance-repricing",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:41:53.533733+00:00",
-   "hash": "70099c54",
-   "name": "zs-nopa-crush-midmonth-demand-print",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:40:44.482404+00:00",
@@ -393,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.958"
-  },
-  {
-   "t": "2026-07-22T04:27:40.961842+00:00",
-   "hash": "2227db11",
-   "name": "m6e-policy-differential-carry-roll-harvest",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.908"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-quarterly-refunding-issuance-composition-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:41:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZS",
-    "task": "zs-nopa-crush-midmonth-demand-print",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:41:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-zs-european-daybreak-origination-hedge",
     "stage": "dev3yr",
@@ -461,7 +445,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 16,
+   "registered": 15,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -523,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 109
+    "trials": 111
    }
   ]
  },
@@ -639,8 +623,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 15,
-   "n_killed": 12,
+   "n_tested": 16,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -657,8 +641,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 2,
+   "n_tested": 3,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   }
