@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:47:53Z",
+  "stamp": "2026-07-22T04:47:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -427,6 +427,14 @@
     "task": "recheck: n9-cot-washout-buy",
     "stage": "dev3yr",
     "started": "2026-07-22T04:45:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "recheck: mcl-producer-hedge-window-rth-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:47:55Z",
     "state": "running"
    }
   ],
