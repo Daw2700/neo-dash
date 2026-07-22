@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:34:56Z",
+  "stamp": "2026-07-22T06:35:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 269,
-  "n_results": 368,
-  "n_trials": 30339,
+  "n_registered": 270,
+  "n_results": 369,
+  "n_trials": 30340,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,20 +311,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:35:16.884237+00:00",
+   "hash": "cc0c5579",
+   "name": "mcl-pipeline-nomination-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.945"
+  },
+  {
+   "t": "2026-07-22T06:34:58.181873+00:00",
+   "hash": "7fe8960c",
+   "name": "mgc-etf-creation-hedge-1600-print",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T06:34:47.978869+00:00",
    "hash": "d3730f4d",
    "name": "zs-usda-daily-flash-sale-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T06:34:37.823749+00:00",
-   "hash": "cc0c5579",
-   "name": "mcl-pipeline-nomination-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T06:33:08.590911+00:00",
@@ -397,28 +405,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.16"
-  },
-  {
-   "t": "2026-07-22T06:18:21.697237+00:00",
-   "hash": "a2c0f5f9",
-   "name": "mcl-rig-count-friday-supply-print",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.851"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-pipeline-nomination-deadline-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:32:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-etf-creation-hedge-1600-print",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-first-notice-delivery-convergence-window",
     "stage": "dev3yr",
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 172
+    "trials": 173
    }
   ]
  },
@@ -580,8 +572,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 15,
-   "n_killed": 11,
+   "n_tested": 16,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
