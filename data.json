@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:13:09Z",
+  "stamp": "2026-07-22T14:15:52Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 459,
-  "n_results": 579,
-  "n_trials": 30567,
+  "n_registered": 460,
+  "n_results": 581,
+  "n_trials": 30569,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T14:15:41.271464+00:00",
+   "hash": "d806b114",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.143"
+  },
+  {
+   "t": "2026-07-22T14:14:32.843174+00:00",
+   "hash": "f6bfa13d",
+   "name": "rep-mcl-closure-length-dose-response-reopen-overshoot-mng",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T14:13:24.952332+00:00",
+   "hash": "d806b114",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T14:10:46.955462+00:00",
    "hash": "6dba1bf2",
    "name": "mym-thin-leg-hedge-residual-decay",
@@ -377,30 +401,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T13:53:00.392863+00:00",
-   "hash": "f77abb20",
-   "name": "zn-depth-normalized-impact-amplification-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1128"
-  },
-  {
-   "t": "2026-07-22T13:52:37.001177+00:00",
-   "hash": "983bad18",
-   "name": "zs-monthstart-cash-basis-pricing-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.016"
-  },
-  {
-   "t": "2026-07-22T13:52:09.508459+00:00",
-   "hash": "2df89562",
-   "name": "zn-path-efficiency-inventory-overnight-carry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.172"
   }
  ],
  "pipeline": {
@@ -420,12 +420,20 @@
     "stage": "dev3yr",
     "started": "2026-07-22T14:10:13Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "replication: mcl-closure-length-dose-response-reopen-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:13:31Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 62,
+   "registered": 63,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -487,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 400
+    "trials": 402
    }
   ]
  },
@@ -1103,6 +1111,16 @@
      "t": "2026-07-22T14:10:08.535860+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T14:13:24.952332+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T14:15:41.271464+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
