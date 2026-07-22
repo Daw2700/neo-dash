@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:40:21Z",
+  "stamp": "2026-07-22T21:40:44Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 642,
-  "n_results": 791,
-  "n_trials": 30779,
+  "n_results": 792,
+  "n_trials": 30780,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,20 +303,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:40:32.648679+00:00",
+   "hash": "fe1d48bb",
+   "name": "mes-cot-tue-snapshot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.691"
+  },
+  {
    "t": "2026-07-22T21:40:15.971006+00:00",
    "hash": "686cb919",
    "name": "mnq-derived-micro-settlement-anchor-divergence",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.787"
-  },
-  {
-   "t": "2026-07-22T21:39:58.234230+00:00",
-   "hash": "fe1d48bb",
-   "name": "mes-cot-tue-snapshot",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T21:39:24.473182+00:00",
@@ -408,20 +408,12 @@
     "stage": "idea-scout",
     "started": "2026-07-22T21:37:54Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-cot-tuesday-snapshot-positioning",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:37:54Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 88,
+   "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -483,7 +475,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 612
+    "trials": 613
    }
   ]
  },
@@ -507,8 +499,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 104,
-   "n_killed": 77,
+   "n_tested": 105,
+   "n_killed": 78,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
