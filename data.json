@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:12:56Z",
+  "stamp": "2026-07-22T11:16:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 393,
-  "n_results": 499,
-  "n_trials": 30470,
+  "n_registered": 394,
+  "n_results": 501,
+  "n_trials": 30472,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,6 +153,30 @@
    "usd_trade": 23.3
   },
   {
+   "id": "xasset-vol-origin-attribution",
+   "name": "xasset-vol-origin-attribution",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 46,
+   "wr": 0.6522,
+   "usd_mo": 45,
+   "pf": 1.575,
+   "usd_trade": 35.5
+  },
+  {
+   "id": "mes-corr-collapse-hedge",
+   "name": "mes-corr-collapse-hedge",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 176,
+   "wr": 0.5966,
+   "usd_mo": 99,
+   "pf": 1.554,
+   "usd_trade": 20.2
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -279,44 +303,24 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
-  },
-  {
-   "id": "b6-vix-m2k",
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 26,
-   "wr": null,
-   "usd_mo": 5,
-   "pf": 1.148,
-   "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T11:10:17.546670+00:00",
+   "t": "2026-07-22T11:15:29.935553+00:00",
+   "hash": "f6edd34e",
+   "name": "mes-corr-collapse-hedge",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.554"
+  },
+  {
+   "t": "2026-07-22T11:12:59.865538+00:00",
    "hash": "991d6fe7",
    "name": "xasset-vol-origin-attribution",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.575"
   },
   {
    "t": "2026-07-22T11:10:07.861471+00:00",
@@ -397,28 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.089"
-  },
-  {
-   "t": "2026-07-22T10:54:33.937455+00:00",
-   "hash": "765a8e88",
-   "name": "mes-poc-migration-acceptance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.901"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "xasset-vol-origin-attribution",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:09:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mng-unconfirmed-idiosyncratic-move-reversion",
     "stage": "dev3yr",
@@ -426,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-realized-correlation-collapse-hedging-demand",
     "stage": "dev3yr",
@@ -456,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 53,
+   "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -518,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 303
+    "trials": 305
    }
   ]
  },
@@ -527,7 +515,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 76,
+   "n_tested": 77,
    "n_killed": 45,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -542,7 +530,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 58,
+   "n_tested": 59,
    "n_killed": 40,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -995,6 +983,46 @@
     }
    ]
   },
+  "xasset-vol-origin-attribution": {
+   "name": "xasset-vol-origin-attribution",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Overnight the first market whose realized volatility expands identifies shock origin; when MES itself expands first it is flow-driven and the equity open should continue rather than fade, so we go long MES at 09:30 on MES-leads days",
+   "metrics": {
+    "n": 46,
+    "wr": 0.6522,
+    "pf": 1.575,
+    "usd_mo": 45,
+    "usd_trade": 35.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:12:59.865538+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "mes-corr-collapse-hedge": {
+   "name": "mes-corr-collapse-hedge",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "When MES realized volatility falls far below the volume-weighted mean realized volatility of its constituent-proxy complex (MNQ, M2K, MYM), index-level correlation has collapsed and standing index hedges stop hedging anything, so institutions let those hedges lapse instead of rolling them, removing a standing source of index-futures supply and biasing MES higher.",
+   "metrics": {
+    "n": 176,
+    "wr": 0.5966,
+    "pf": 1.554,
+    "usd_mo": 99,
+    "usd_trade": 20.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:15:29.935553+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1234,50 +1262,6 @@
      "verdict": "REPLICATES"
     }
    ]
-  },
-  "b6-vix-m2k": {
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
-   "metrics": {
-    "n": 26,
-    "wr": null,
-    "pf": 1.148,
-    "usd_mo": 5,
-    "usd_trade": 6.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
   }
  },
  "decisions": [
