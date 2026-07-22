@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:01:07Z",
+  "stamp": "2026-07-22T14:03:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 453,
-  "n_results": 573,
-  "n_trials": 30561,
+  "n_registered": 454,
+  "n_results": 574,
+  "n_trials": 30562,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,9 +307,17 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T13:58:33.399517+00:00",
+   "t": "2026-07-22T14:02:50.408653+00:00",
    "hash": "86e3d36f",
    "name": "mgc-option-expiry-underlying-desync",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.368"
+  },
+  {
+   "t": "2026-07-22T14:02:47.174679+00:00",
+   "hash": "372f96e1",
+   "name": "mng-untradeable-bar-density-pentup-flow",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -393,28 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T13:35:48.645990+00:00",
-   "hash": "858b343a",
-   "name": "mnq-maintenance-break-inventory-reversal",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.399"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-option-expiry-underlying-desync",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:55:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-untradeable-bar-density-pentup-flow",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-miner-fiat-cost-distribution-window",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 394
+    "trials": 395
    }
   ]
  },
@@ -576,8 +568,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 20,
+   "n_tested": 25,
+   "n_killed": 21,
    "book_sleeves": [],
    "agents_now": []
   },
