@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:56:31Z",
+  "stamp": "2026-07-22T17:58:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 554,
-  "n_results": 688,
-  "n_trials": 30676,
+  "n_registered": 557,
+  "n_results": 689,
+  "n_trials": 30677,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:58:07.453773+00:00",
+   "hash": "12ee5379",
+   "name": "mnq-13f-copycat-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.914"
+  },
+  {
+   "t": "2026-07-22T17:57:26.507405+00:00",
+   "hash": "87101752",
+   "name": "zc-freight-cost-export-competitiveness-transmission",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T17:57:02.322877+00:00",
+   "hash": "be114dea",
+   "name": "scout-40-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T17:56:15.922320+00:00",
    "hash": "68da5a58",
    "name": "zn-japan-fiscalyearend-repatriation",
@@ -377,30 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.3"
-  },
-  {
-   "t": "2026-07-22T17:42:00.907135+00:00",
-   "hash": "fa65dfa7",
-   "name": "zn-serial-option-expiry-delta-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.312"
-  },
-  {
-   "t": "2026-07-22T17:40:37.030109+00:00",
-   "hash": "2fb8d325",
-   "name": "m2k-shortsale-constraint-overshoot",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 6.246"
-  },
-  {
-   "t": "2026-07-22T17:40:07.815031+00:00",
-   "hash": "0ffe2d63",
-   "name": "mym-oil-shock-sector-dispersion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.024"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-13f-disclosure-copycat-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:56:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "MET",
     "task": "met-april-tax-liability-retail-liquidation",
     "stage": "dev3yr",
@@ -441,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 78,
+   "registered": 80,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 509
+    "trials": 510
    }
   ]
  },
@@ -512,8 +504,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 91,
-   "n_killed": 52,
+   "n_tested": 92,
+   "n_killed": 53,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
