@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:34:54Z",
+  "stamp": "2026-07-22T06:34:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:33:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-first-notice-delivery-convergence-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:34:56Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "zc-first-notice-delivery-convergence-window",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 14,
     "idea": "mym-component-split-divisor-rebalance",
@@ -447,7 +446,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 25,
    "dev3yr": 0,
    "robustness": 0,
