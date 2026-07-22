@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:14:14Z",
+  "stamp": "2026-07-22T06:14:37Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 258,
   "n_results": 357,
@@ -415,14 +415,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T06:08:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "recheck: mes-vix-term-structure-inversion-regrossing",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:10:42Z",
     "state": "running"
    }
   ],
