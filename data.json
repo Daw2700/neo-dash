@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:16:33Z",
+  "stamp": "2026-07-22T10:21:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 366,
-  "n_results": 470,
-  "n_trials": 30441,
+  "n_registered": 369,
+  "n_results": 473,
+  "n_trials": 30444,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -141,18 +141,6 @@
    }
   },
   {
-   "id": "mnq-session-early-exhaustion-fade",
-   "name": "mnq-session-early-exhaustion-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 130,
-   "wr": 0.6154,
-   "usd_mo": 149,
-   "pf": 2.558,
-   "usd_trade": 41.4
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -211,6 +199,18 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
+  },
+  {
+   "id": "mnq-cost-basis-overhang-underreaction",
+   "name": "mnq-cost-basis-overhang-underreaction",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 5,
+   "wr": 0.6,
+   "usd_mo": 8,
+   "pf": 1.283,
+   "usd_trade": 58.3
   },
   {
    "id": "mes-funding-basis-stress-cheapening",
@@ -311,6 +311,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:20:38.351408+00:00",
+   "hash": "e4fcea22",
+   "name": "mnq-offshore-participation-share-expansion-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.963"
+  },
+  {
+   "t": "2026-07-22T10:20:02.231812+00:00",
+   "hash": "46a38551",
+   "name": "mnq-cost-basis-overhang-underreaction",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.283"
+  },
+  {
+   "t": "2026-07-22T10:19:06.645980+00:00",
+   "hash": "09ec70d3",
+   "name": "mnq-session-early-exhaustion-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T10:17:38.638838+00:00",
+   "hash": "ac02b222",
+   "name": "ROBUSTNESS PROTOCOL for 09ec70d377f3e11e (mnq-session-early-exhaustion-fade)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T10:13:44.658358+00:00",
    "hash": "aec41266",
    "name": "mcl-annual-high-hedge",
@@ -373,38 +405,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T09:57:51.382056+00:00",
-   "hash": "686d1f26",
-   "name": "PROTOCOL robustness mcl-closing-hour-flow-concentration-next-session-decay (8c01ee0959516960)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T09:56:04.230905+00:00",
-   "hash": "0add33e7",
-   "name": "met-attention-share-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.15"
-  },
-  {
-   "t": "2026-07-22T09:55:56.329156+00:00",
-   "hash": "8e50d120",
-   "name": "mes-morning-range-exhaustion-overnight-carry",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T09:54:45.955946+00:00",
-   "hash": "8c01ee09",
-   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.894"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "robustness: mnq-session-early-exhaustion-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:16:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "mnq-cost-basis-overhang-underreaction",
     "stage": "dev3yr",
     "started": "2026-07-22T10:16:33Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-offshore-participation-share-expansion-gate",
     "stage": "dev3yr",
@@ -519,7 +511,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 46,
+   "registered": 47,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -581,7 +573,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 274
+    "trials": 277
    }
   ]
  },
@@ -590,8 +582,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 73,
-   "n_killed": 43,
+   "n_tested": 75,
+   "n_killed": 44,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -1038,26 +1030,6 @@
     "apex_max": 2
    }
   },
-  "mnq-session-early-exhaustion-fade": {
-   "name": "mnq-session-early-exhaustion-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When both the session high and the session low are already printed inside the first 40% of RTH, the day's directional risk-transfer demand is spent and the remaining flow is inventory unwind by the liquidity providers who absorbed it, so the balance of the session retraces rather than continues; fade the from-40%-mark direction into the close.",
-   "metrics": {
-    "n": 130,
-    "wr": 0.6154,
-    "pf": 2.558,
-    "usd_mo": 149,
-    "usd_trade": 41.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:10:59.702214+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1177,6 +1149,26 @@
      "t": "2026-07-22T07:46:52.300888+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "mnq-cost-basis-overhang-underreaction": {
+   "name": "mnq-cost-basis-overhang-underreaction",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Disposition-prone MNQ holders sell winners early and refuse to realise losers, so price underreacts until the volume-weighted (turnover-decayed) reference cost-basis price is crossed; constrained holders then capitulate, releasing the pent-up move, so trading the break of that reference price (gated by the size of the prior unrealised overhang) should show positive expectancy.",
+   "metrics": {
+    "n": 5,
+    "wr": 0.6,
+    "pf": 1.283,
+    "usd_mo": 8,
+    "usd_trade": 58.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:20:02.231812+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
     }
    ]
   },
