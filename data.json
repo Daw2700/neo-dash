@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:23:23Z",
+  "stamp": "2026-07-22T22:23:26Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MET",
+    "task": "met-hour-stamp-referenced-flow-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:23:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-quarterly-collar-overlay-gamma-release",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:23:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-autocallable-observation-date-delta-step",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:23:26Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "met-hour-stamp-referenced-flow-asymmetry",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mes-quarterly-collar-overlay-gamma-release",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "mes-autocallable-observation-date-delta-step",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mcl-sovereign-oil-hedge-program-window",
@@ -512,7 +510,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
