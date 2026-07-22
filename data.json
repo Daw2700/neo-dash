@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:43:23Z",
+  "stamp": "2026-07-22T17:45:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 548,
-  "n_results": 682,
-  "n_trials": 30670,
+  "n_registered": 549,
+  "n_results": 683,
+  "n_trials": 30671,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "m2k-shortsale-constraint-overshoot",
-   "name": "m2k-shortsale-constraint-overshoot",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.8333,
-   "usd_mo": 10,
-   "pf": 6.246,
-   "usd_trade": 57.9
   },
   {
    "id": "mbt-session-beta-channel-regime",
@@ -303,9 +291,37 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  {
+   "id": "mes-depth-consumption-print-size-range-forecast",
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 124,
+   "wr": 0.4355,
+   "usd_mo": 31,
+   "pf": 1.168,
+   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T17:45:28.789956+00:00",
+   "hash": "2fb8d325",
+   "name": "m2k-shortsale-constraint-overshoot",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T17:44:06.109419+00:00",
+   "hash": "c19781ab",
+   "name": "ROBUSTNESS BATTERY m2k-shortsale-constraint-overshoot (2fb8d325fbd66bea)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T17:43:20.699642+00:00",
    "hash": "22dc5916",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.063"
-  },
-  {
-   "t": "2026-07-22T17:27:43.545139+00:00",
-   "hash": "f8cdaf1b",
-   "name": "zn-round-yield-handle-magnet",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.118"
-  },
-  {
-   "t": "2026-07-22T17:27:07.870753+00:00",
-   "hash": "2d7480a3",
-   "name": "mgc-corrsign-dip-repair",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.8836"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "zs-argentina-export-incentive-window-supply-dump",
     "stage": "dev3yr",
     "started": "2026-07-22T17:40:16Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "robustness: m2k-shortsale-constraint-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:43:25Z",
     "state": "running"
    }
   ],
@@ -489,7 +497,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 76,
+   "registered": 77,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -551,7 +559,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 503
+    "trials": 504
    }
   ]
  },
@@ -1008,26 +1016,6 @@
     "apex_max": 2
    }
   },
-  "m2k-shortsale-constraint-overshoot": {
-   "name": "m2k-shortsale-constraint-overshoot",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Small-cap short-sale constraints push bearish views into the M2K future instead of cash Russell 2000, so on risk-off days M2K overshoots its own cash-index proxy to the downside; the constrained-arbitrage wedge should mean-revert (basis repair) the next session, favoring a long M2K entry.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.8333,
-    "pf": 6.246,
-    "usd_mo": 10,
-    "usd_trade": 57.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T17:40:37.030109+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -1317,6 +1305,36 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  "mes-depth-consumption-print-size-range-forecast": {
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
+   "metrics": {
+    "n": 124,
+    "wr": 0.4355,
+    "pf": 1.168,
+    "usd_mo": 31,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:40:13.765212+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T15:47:15.796894+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T15:52:13.200686+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
