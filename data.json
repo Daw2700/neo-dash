@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:39:37Z",
+  "stamp": "2026-07-22T07:39:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T07:39:16Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-micro-vs-fullsize-retail-basis",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:39:39Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-micro-vs-fullsize-retail-basis",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 5,
     "idea": "mcl-timeseries-momentum-risk-premium",
@@ -528,7 +527,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 10,
    "registered": 29,
    "dev3yr": 0,
    "robustness": 0,
