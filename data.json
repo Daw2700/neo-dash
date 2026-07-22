@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:30:09Z",
+  "stamp": "2026-07-22T12:30:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-binding-tick-reversal-rent",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:30:11Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZC",
+    "task": "zc-pollination-window-weather-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:30:11Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-national-cpi-mosaic-completion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:30:11Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mes-binding-tick-reversal-rent",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 9,
-    "idea": "zc-pollination-window-weather-premium",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 10,
-    "idea": "m6e-national-cpi-mosaic-completion",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 11,
     "idea": "m6e-energy-terms-of-trade-shock-lag",
@@ -466,7 +464,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 3,
    "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
