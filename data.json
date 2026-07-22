@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:51:54Z",
+  "stamp": "2026-07-22T20:51:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,18 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:49:03Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZC",
+    "task": "robustness: zc-livestock-cof-sunday-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:51:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-pension-fundedstatus-glidepath-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:51:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "mes-pension-fundedstatus-glidepath-rotation",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 13,
     "idea": "m2k-dollar-revenue-exposure-rotation",
@@ -440,7 +447,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
