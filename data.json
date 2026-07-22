@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:33:08Z",
+  "stamp": "2026-07-22T21:33:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T21:32:05Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-imm-date-forward-roll-concentration",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:33:10Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "m6e-imm-date-forward-roll-concentration",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 10,
     "idea": "mnq-derived-micro-settlement-anchor-divergence",
@@ -457,7 +456,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
