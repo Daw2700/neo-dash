@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:31:39Z",
+  "stamp": "2026-07-22T08:31:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:31:17Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-fomc-minutes-release-overreaction-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:31:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "zn-fomc-minutes-release-overreaction-fade",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 8,
     "idea": "mes-vix-etp-daily-roll-close-flow",
@@ -501,7 +500,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 36,
    "dev3yr": 0,
    "robustness": 0,
