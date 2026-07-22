@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:52:11Z",
+  "stamp": "2026-07-22T03:54:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 181,
-  "n_results": 275,
-  "n_trials": 30246,
+  "n_registered": 184,
+  "n_results": 276,
+  "n_trials": 30247,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:54:11.718217+00:00",
+   "hash": "6fd3d3ca",
+   "name": "m6e-dst-desync-fix-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1169"
+  },
+  {
+   "t": "2026-07-22T03:53:18.192835+00:00",
+   "hash": "d9eae2c2",
+   "name": "zn-cash-close-unwind",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T03:53:01.534869+00:00",
+   "hash": "4503ab21",
+   "name": "mes-preopen-volume-range-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T03:51:54.327562+00:00",
    "hash": "5c829325",
    "name": "zs-zc-newcrop-ratio-acreage-window",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.445"
-  },
-  {
-   "t": "2026-07-22T03:36:27.179660+00:00",
-   "hash": "60c817be",
-   "name": "zn-quarter-end-dealer-balance-sheet-withdrawal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.508"
-  },
-  {
-   "t": "2026-07-22T03:31:08.620946+00:00",
-   "hash": "43e185a4",
-   "name": "mnq-m2k-open-dispersion-continuation",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.973"
-  },
-  {
-   "t": "2026-07-22T03:28:06.294236+00:00",
-   "hash": "43e185a4",
-   "name": "mnq-m2k-open-dispersion-continuation",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-us-eu-dst-desync-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:51:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-post-cash-close-hedge-unwind",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 9,
+   "registered": 11,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 79
+    "trials": 80
    }
   ]
  },
@@ -616,8 +608,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 5,
+   "n_tested": 6,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
