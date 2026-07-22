@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:32:05Z",
+  "stamp": "2026-07-22T21:33:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 635,
-  "n_results": 784,
-  "n_trials": 30772,
+  "n_registered": 636,
+  "n_results": 785,
+  "n_trials": 30773,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:32:44.717405+00:00",
+   "hash": "4c3eba25",
+   "name": "mnq-fcm-residual-liq-nextsession",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.83"
+  },
+  {
    "t": "2026-07-22T21:31:52.372079+00:00",
    "hash": "0e695e38",
    "name": "m2k-mm-program-monthly-quota-liquidity-gradient",
@@ -389,28 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.04"
-  },
-  {
-   "t": "2026-07-22T20:56:11.919273+00:00",
-   "hash": "1e854f70",
-   "name": "mes-pension-fundedstatus-glidepath-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.146"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-fcm-residual-interest-nextsession-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:30:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-nav-cutoff-nextmorning-flow-execution-lag",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-mgc-settlement-stagger-five-minute-stale-mark",
     "stage": "dev3yr",
@@ -528,7 +520,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 605
+    "trials": 606
    }
   ]
  },
@@ -537,8 +529,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 104,
-   "n_killed": 61,
+   "n_tested": 105,
+   "n_killed": 62,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
