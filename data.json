@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:07:45Z",
+  "stamp": "2026-07-22T04:10:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 192,
-  "n_results": 284,
-  "n_trials": 30255,
+  "n_registered": 193,
+  "n_results": 285,
+  "n_trials": 30256,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -123,6 +123,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "m2k-russell-recon-window",
+   "name": "m2k-russell-recon-window",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 24,
+   "wr": 0.5417,
+   "usd_mo": 8,
+   "pf": 1.446,
+   "usd_trade": 12.5
   },
   {
    "id": "rep-bondflight-mes",
@@ -291,21 +303,25 @@
    "usd_mo": -74,
    "pf": 0.626,
    "usd_trade": -19.8
-  },
-  {
-   "id": "zn-sunday-reopen-duration-unwind",
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 151,
-   "wr": 0.3311,
-   "usd_mo": -133,
-   "pf": 0.481,
-   "usd_trade": -31.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T04:08:33.876188+00:00",
+   "hash": "80a196f3",
+   "name": "mes-cta-trigger-level-cross-flow",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:07:52.040206+00:00",
+   "hash": "117492ee",
+   "name": "m2k-russell-recon-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.446"
+  },
   {
    "t": "2026-07-22T04:07:43.626532+00:00",
    "hash": "e95679b2",
@@ -321,14 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4118"
-  },
-  {
-   "t": "2026-07-22T04:06:29.539143+00:00",
-   "hash": "117492ee",
-   "name": "m2k-russell-recon-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:05:51.991400+00:00",
@@ -393,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.1169"
-  },
-  {
-   "t": "2026-07-22T03:51:54.327562+00:00",
-   "hash": "5c829325",
-   "name": "zs-zc-newcrop-ratio-acreage-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.609"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-volume-timing-program-completion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:05:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-russell-recon-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:05:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-cta-trigger-level-cross-flow",
     "stage": "dev3yr",
@@ -523,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 88
+    "trials": 89
    }
   ]
  },
@@ -565,7 +549,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 5,
+   "n_tested": 6,
    "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
@@ -938,6 +922,26 @@
     "apex_max": 2
    }
   },
+  "m2k-russell-recon-window": {
+   "name": "m2k-russell-recon-window",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "The annual FTSE Russell reconstitution is the one pre-announced date when index-tracking demand for the entire small-cap universe must transact at a single close; funds pre-hedge and post-unwind that exposure in Russell futures, so liquidity providers are paid to warehouse a known, dated, one-directional risk transfer across the recon window.",
+   "metrics": {
+    "n": 24,
+    "wr": 0.5417,
+    "pf": 1.446,
+    "usd_mo": 8,
+    "usd_trade": 12.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:07:52.040206+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1236,26 +1240,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "zn-sunday-reopen-duration-unwind": {
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
-   "metrics": {
-    "n": 151,
-    "wr": 0.3311,
-    "pf": 0.481,
-    "usd_mo": -133,
-    "usd_trade": -31.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T02:50:04.186910+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
@@ -1510,19 +1494,18 @@
    "provisional": true,
    "assumed_rules": true,
    "members": {
-    "b2-vix-reversion": 3,
-    "b10-nagel-vix-reversal": 2,
-    "b2-opex-release": 1,
-    "b7-down-weeks-dip": 2
+    "b2-vix-reversion": 4,
+    "b3-preholiday-drift": 2,
+    "b2-opex-release": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.192,
-   "usd_mo": 296,
-   "usd_mo_5acct": 1480,
-   "pct_goal": 0.533,
+   "total_micros": 7,
+   "p_breach": 0.167,
+   "usd_mo": 245,
+   "usd_mo_5acct": 1225,
+   "pct_goal": 0.441,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 5328
+   "usd_mo_total": 4410
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1647,16 +1630,16 @@
     "b2-vix-reversion": 4,
     "b10-nagel-vix-reversal": 4,
     "b3-preholiday-drift": 4,
-    "b7-down-weeks-dip": 1
+    "b2-opex-release": 4
    },
-   "total_micros": 13,
-   "p_breach": 0.192,
-   "usd_mo": 261,
-   "usd_mo_5acct": 1305,
-   "pct_goal": 0.131,
+   "total_micros": 16,
+   "p_breach": 0.193,
+   "usd_mo": 308,
+   "usd_mo_5acct": 1540,
+   "pct_goal": 0.154,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 1305
+   "usd_mo_total": 1540
   }
  ],
  "sizing_meta": {
