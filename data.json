@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:12:10Z",
+  "stamp": "2026-07-22T20:12:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-bidweek-physical-fixing-hedge-concentration",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:06:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "recheck: zc-export-inspections-monday-demand-stamp",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "recheck: mng-bidweek-fixing-concentration",
     "stage": "dev3yr",
