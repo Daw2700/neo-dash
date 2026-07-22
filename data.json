@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:58:16Z",
+  "stamp": "2026-07-22T18:01:39Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 557,
-  "n_results": 689,
-  "n_trials": 30677,
+  "n_registered": 558,
+  "n_results": 691,
+  "n_trials": 30679,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "met-april-tax-liability-retail-liquidation",
+   "name": "met-april-tax-liability-retail-liquidation",
+   "market": "MET",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 3,
+   "wr": 0.6667,
+   "usd_mo": 1,
+   "pf": 2.543,
+   "usd_trade": 16.3
   },
   {
    "id": "mbt-session-beta-channel-regime",
@@ -291,21 +303,25 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
-  },
-  {
-   "id": "b6-monday-m2k",
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 133,
-   "wr": null,
-   "usd_mo": 19,
-   "pf": 1.154,
-   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T17:59:20.113835+00:00",
+   "hash": "84122ba3",
+   "name": "met-april-tax-liability-retail-liquidation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.543"
+  },
+  {
+   "t": "2026-07-22T17:59:07.806051+00:00",
+   "hash": "87101752",
+   "name": "zc-freight-cost-export-competitiveness-transmission",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.733"
+  },
   {
    "t": "2026-07-22T17:58:07.453773+00:00",
    "hash": "12ee5379",
@@ -313,14 +329,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.914"
-  },
-  {
-   "t": "2026-07-22T17:57:26.507405+00:00",
-   "hash": "87101752",
-   "name": "zc-freight-cost-export-competitiveness-transmission",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T17:57:02.322877+00:00",
@@ -393,26 +401,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T17:43:20.699642+00:00",
-   "hash": "22dc5916",
-   "name": "zs-argentina-export-incentive-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.3"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-freight-cost-export-competitiveness-transmission",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:55:22Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MET",
     "task": "met-april-tax-liability-retail-liquidation",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 80,
+   "registered": 79,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 510
+    "trials": 512
    }
   ]
  },
@@ -595,7 +587,7 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 8,
+   "n_tested": 9,
    "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
@@ -622,8 +614,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 21,
+   "n_tested": 25,
+   "n_killed": 22,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -952,6 +944,26 @@
     "apex_max": 2
    }
   },
+  "met-april-tax-liability-retail-liquidation": {
+   "name": "met-april-tax-liability-retail-liquidation",
+   "market": "MET",
+   "tier": "candidate",
+   "mechanism": "US retail crypto holders owe tax on prior-year realized gains by the mid-April IRS filing deadline and must sell spot to fund the bill, a price-insensitive calendar-certain seller concentrated April 1-15; CME ether futures absorb the hedging of that spot liquidation flow, implying a bearish drift in MET during the window.",
+   "metrics": {
+    "n": 3,
+    "wr": 0.6667,
+    "pf": 2.543,
+    "usd_mo": 1,
+    "usd_trade": 16.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T17:59:20.113835+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -1248,26 +1260,6 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-monday-m2k": {
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
-   "metrics": {
-    "n": 133,
-    "wr": null,
-    "pf": 1.154,
-    "usd_mo": 19,
-    "usd_trade": 5.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
