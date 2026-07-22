@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:51:14Z",
+  "stamp": "2026-07-22T10:51:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T10:48:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-overnight-intraday-component-tugofwar",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:51:16Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-poc-migration-acceptance",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:51:16Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-overnight-intraday-component-tugofwar",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mes-poc-migration-acceptance",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 3,
     "idea": "mnq-range-completion-timing-overnight-carry",
@@ -538,7 +536,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 11,
    "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
