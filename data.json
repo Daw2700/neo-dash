@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:12:17Z",
+  "stamp": "2026-07-22T13:15:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 439,
-  "n_results": 555,
-  "n_trials": 30526,
+  "n_registered": 441,
+  "n_results": 556,
+  "n_trials": 30527,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -201,18 +201,6 @@
    }
   },
   {
-   "id": "mgc-failed-auction-extreme-volume-fade",
-   "name": "mgc-failed-auction-extreme-volume-fade",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 96,
-   "wr": 0.5104,
-   "usd_mo": 36,
-   "pf": 1.387,
-   "usd_trade": 13.7
-  },
-  {
    "id": "mnq-event-free-day-flow-persistence",
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -303,9 +291,45 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T13:15:13.062641+00:00",
+   "hash": "357a99b5",
+   "name": "mes-event-cluster-bracket",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T13:14:31.460473+00:00",
+   "hash": "576813f6",
+   "name": "mng-associated-gas-supply-channel",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T13:12:44.447632+00:00",
+   "hash": "5e534943",
+   "name": "mgc-failed-auction-extreme-volume-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T13:12:11.726900+00:00",
    "hash": "146907f7",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.955"
-  },
-  {
-   "t": "2026-07-22T13:00:10.258402+00:00",
-   "hash": "dd38b58b",
-   "name": "mnq-vwap-time-pressure",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.023"
-  },
-  {
-   "t": "2026-07-22T12:52:42.960248+00:00",
-   "hash": "8ee8881e",
-   "name": "mnq-low-volume-node-traversal-acceleration",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.921"
-  },
-  {
-   "t": "2026-07-22T12:52:41.060455+00:00",
-   "hash": "a7f020a4",
-   "name": "mnq-orb-touch-count-liquidity-depletion",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.195"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mgc-failed-auction-extreme-volume-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:09:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-associated-gas-supply-channel",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-event-cluster-variance-bracket",
     "stage": "dev3yr",
@@ -452,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 59,
+   "registered": 61,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 359
+    "trials": 360
    }
   ]
  },
@@ -1083,26 +1075,6 @@
     "apex_max": 1
    }
   },
-  "mgc-failed-auction-extreme-volume-fade": {
-   "name": "mgc-failed-auction-extreme-volume-fade",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "Volume printed at the session extreme rather than its centre means initiative traders were filled by responsive counterparties exactly where the auction failed, leaving those initiative positions offside and fueling a reversal; fade the prior session direction when the share of RTH volume transacted in the top/bottom decile of that session range is abnormally high.",
-   "metrics": {
-    "n": 96,
-    "wr": 0.5104,
-    "pf": 1.387,
-    "usd_mo": 36,
-    "usd_trade": 13.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T13:07:08.141730+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mnq-event-free-day-flow-persistence": {
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -1266,6 +1238,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
