@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:25:25Z",
+  "stamp": "2026-07-22T03:25:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,26 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "robustness: mnq-m2k-open-dispersion-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:25:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-monthend-london-fix-equity-hedge",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:25:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-vix-soq-wednesday-open-distortion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:25:26Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "m6e-monthend-london-fix-equity-hedge",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.48
-   },
-   {
-    "rank": 7,
-    "idea": "mnq-vix-soq-wednesday-open-distortion",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 8,
     "idea": "mym-price-weight-earnings-dislocation",
@@ -453,7 +460,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 3,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
