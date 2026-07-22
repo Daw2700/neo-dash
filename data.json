@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:54:00Z",
+  "stamp": "2026-07-22T21:57:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 645,
-  "n_results": 795,
-  "n_trials": 30783,
+  "n_registered": 647,
+  "n_results": 798,
+  "n_trials": 30786,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -177,6 +177,18 @@
    "usd_trade": 48.9
   },
   {
+   "id": "mes-prior-cpi-reaction-unwind",
+   "name": "mes-prior-cpi-reaction-unwind",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 17,
+   "wr": 0.4118,
+   "usd_mo": 25,
+   "pf": 1.769,
+   "usd_trade": 53.6
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -287,21 +299,33 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mcl-eia-day-midsession-to-close-momentum",
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 153,
-   "wr": 0.5033,
-   "usd_mo": 30,
-   "pf": 1.237,
-   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T21:57:16.635106+00:00",
+   "hash": "a3944ef1",
+   "name": "mes-prior-cpi-reaction-unwind",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.769"
+  },
+  {
+   "t": "2026-07-22T21:56:33.311516+00:00",
+   "hash": "1d3f7086",
+   "name": "mes-opt-session-open-delta-clear",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.84"
+  },
+  {
+   "t": "2026-07-22T21:55:24.474351+00:00",
+   "hash": "910828c3",
+   "name": "zc-post-fomc-liquidity-drain-impact-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0517"
+  },
   {
    "t": "2026-07-22T21:53:34.233505+00:00",
    "hash": "462f611d",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1391"
-  },
-  {
-   "t": "2026-07-22T21:34:51.095524+00:00",
-   "hash": "bbd29853",
-   "name": "mes-nav-cutoff-nextmorning-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.876"
-  },
-  {
-   "t": "2026-07-22T21:32:44.717405+00:00",
-   "hash": "4c3eba25",
-   "name": "mnq-fcm-residual-liq-nextsession",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.83"
-  },
-  {
-   "t": "2026-07-22T21:31:52.372079+00:00",
-   "hash": "0e695e38",
-   "name": "m2k-mm-program-monthly-quota-liquidity-gradient",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.829"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "recheck: zc-post-fomc-liquidity-drain-impact-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:52:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-prior-instance-reaction-memory-positioning",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-option-session-open-deferred-delta-clearing",
     "stage": "dev3yr",
@@ -537,7 +529,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 616
+    "trials": 619
    }
   ]
  },
@@ -561,8 +553,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 105,
-   "n_killed": 78,
+   "n_tested": 107,
+   "n_killed": 79,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1064,6 +1056,26 @@
     }
    ]
   },
+  "mes-prior-cpi-reaction-unwind": {
+   "name": "mes-prior-cpi-reaction-unwind",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Participants size pre-positioning for a macro release by how violently the PRIOR instance of the same series (CPI) traded, not by current forecast dispersion; after a large-reaction prior CPI print, pre-positioning into the next CPI print is heavier, so the post-release unwind of that crowded position is bigger, favoring a fade of the release-day gap on MES.",
+   "metrics": {
+    "n": 17,
+    "wr": 0.4118,
+    "pf": 1.769,
+    "usd_mo": 25,
+    "usd_trade": 53.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T21:57:16.635106+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1289,26 +1301,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mcl-eia-day-midsession-to-close-momentum": {
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
-   "metrics": {
-    "n": 153,
-    "wr": 0.5033,
-    "pf": 1.237,
-    "usd_mo": 30,
-    "usd_trade": 7.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T18:14:48.455567+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
