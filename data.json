@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:23:30Z",
+  "stamp": "2026-07-22T11:26:16Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 396,
-  "n_results": 504,
-  "n_trials": 30475,
+  "n_registered": 397,
+  "n_results": 506,
+  "n_trials": 30477,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mes-corr-collapse-hedge",
-   "name": "mes-corr-collapse-hedge",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 176,
-   "wr": 0.5966,
-   "usd_mo": 99,
-   "pf": 1.554,
-   "usd_trade": 20.2
   },
   {
    "id": "rep-bondflight-mes",
@@ -302,10 +290,42 @@
    "wr": null,
    "usd_mo": 8,
    "pf": 1.138,
-   "usd_trade": 12.0
+   "usd_trade": 12.0,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
+  },
+  {
+   "id": "mes-variance-risk-premium-carry",
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 208,
+   "wr": 0.524,
+   "usd_mo": 47,
+   "pf": 1.122,
+   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:24:28.258644+00:00",
+   "hash": "3cf4b8a4",
+   "name": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.447"
+  },
+  {
+   "t": "2026-07-22T11:23:42.253809+00:00",
+   "hash": "f6edd34e",
+   "name": "mes-corr-collapse-hedge",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T11:23:00.445966+00:00",
    "hash": "f65b7ecf",
@@ -385,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.84"
-  },
-  {
-   "t": "2026-07-22T11:03:44.320374+00:00",
-   "hash": "e181e192",
-   "name": "mnq-stop-pool-recharge-duration",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T10:59:29.319783+00:00",
-   "hash": "c38dac7e",
-   "name": "mgc-inverted-leverage-effect-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.002"
   }
  ],
  "pipeline": {
@@ -415,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "robustness: mes-corr-collapse-hedge",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:21:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
     "stage": "dev3yr",
@@ -495,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 308
+    "trials": 310
    }
   ]
  },
@@ -519,8 +515,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 59,
-   "n_killed": 40,
+   "n_tested": 60,
+   "n_killed": 41,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -952,26 +948,6 @@
     "apex_max": 2
    }
   },
-  "mes-corr-collapse-hedge": {
-   "name": "mes-corr-collapse-hedge",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "When MES realized volatility falls far below the volume-weighted mean realized volatility of its constituent-proxy complex (MNQ, M2K, MYM), index-level correlation has collapsed and standing index hedges stop hedging anything, so institutions let those hedges lapse instead of rolling them, removing a standing source of index-futures supply and biasing MES higher.",
-   "metrics": {
-    "n": 176,
-    "wr": 0.5966,
-    "pf": 1.554,
-    "usd_mo": 99,
-    "usd_trade": 20.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T11:15:29.935553+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1249,6 +1225,35 @@
      "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
+    }
+   ],
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
+  },
+  "mes-variance-risk-premium-carry": {
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
+   "metrics": {
+    "n": 208,
+    "wr": 0.524,
+    "pf": 1.122,
+    "usd_mo": 47,
+    "usd_trade": 8.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:04:02.729327+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
     }
    ]
   }
