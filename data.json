@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:37:16Z",
+  "stamp": "2026-07-22T02:41:17Z",
   "stale_after_min": 30,
   "status": "applying your approve",
   "engine_state": "ok",
@@ -1233,33 +1233,6 @@
  },
  "decisions": [
   {
-   "id": "d-apex-verify-numbers",
-   "kind": "funding",
-   "needs_attention": true,
-   "title": "Apex verification APPROVED \u2014 paste the five numbers",
-   "recommendation": "Send the 5 verified Apex-150K values; the engine cannot read Apex (bot-blocked)",
-   "evidence": "Approved 2026-07-21. No numbers came with the approval, so the Apex-150K model is still ASSUMED: start 150,000 / target 159,000 / EOD trailing buffer 4,000 / floor freezes at 150,000 (114_apex_sim.py). Profit split, consistency % and max-accounts are not modelled at all \u2014 there is no apex150 plan in gauntlet/account.py.",
-   "what_yes_means": "Numbers land -> engine builds a VERIFIED apex150 plan and re-runs all Apex sizings",
-   "recap": "You said yes to verifying Apex. The engine cannot open Apex's site itself, so it is holding here until you paste the five values from your own login.",
-   "why": "Approving the check does not change any math on its own \u2014 every Apex number on this site is still the assumption set from 114_apex_sim.py, and the split / consistency / max-accounts rules were never modelled. 18 of the 23 accounts in the $10k route depend on those values. Rather than silently promote assumptions to 'verified', the engine keeps one open card until the real numbers arrive.",
-   "steps": [
-    "You read off Apex's site, for the 150K account: (1) trailing threshold amount in $, (2) whether trailing is intraday or end-of-day, (3) payout consistency % rule, (4) profit split %, (5) max accounts allowed per person",
-    "Paste those five values into the Approve box on this card",
-    "Engine adds a verified 'apex150' plan to gauntlet/account.py PLANS using exactly those rules",
-    "All Apex sizings, bundles and first-payout estimates re-run against the verified plan",
-    "ASSUMED chips are removed only for the fields you supply; anything skipped stays flagged ASSUMED"
-   ],
-   "qa": [
-    {
-     "q": "Approve: Apex account verification before any funding",
-     "a": "Approved by Daniel 2026-07-21. Approval recorded in ledger.jsonl; no rule values were included, so no Apex number was changed. Card replaced with this one, which holds until the five values arrive.",
-     "t": "2026-07-21T22:45:08Z",
-     "q_t": "2026-07-20T00:00:00Z"
-    }
-   ],
-   "staged": "2026-07-21T22:45:08Z"
-  },
-  {
    "id": "d-neo300-enable-paper",
    "kind": "cleanup",
    "needs_attention": true,
@@ -1314,6 +1287,39 @@
      "t": "2026-07-22T02:20:00Z"
     }
    ]
+  },
+  {
+   "id": "d-apex-verify-numbers-r2",
+   "kind": "funding",
+   "needs_attention": true,
+   "title": "Apex \u2014 the five numbers still haven't arrived (approve box was empty)",
+   "recommendation": "Type the five values INTO the Approve box; an empty Approve can't supply them",
+   "evidence": "Two approvals received with an empty note (d-apex-verify 2026-07-21T22:16Z, d-apex-verify-numbers 2026-07-22T02:19Z). Apex blocks bots, so the engine still has no verified value. Apex-150K remains ASSUMED exactly as in 114_apex_sim.py: start 150,000 / target 159,000 / EOD trailing buffer 4,000 / floor freezes at 150,000. Profit split, consistency %% and max-accounts are still not modelled at all \u2014 gauntlet/account.py PLANS contains only growth / select_flex / select_daily / lightning (all Tradeify), no apex150.",
+   "what_yes_means": "Numbers typed in the box -> engine builds a VERIFIED apex150 plan and re-runs all Apex sizings",
+   "recap": "You tapped Approve, but the note box was empty, so no Apex numbers reached the engine. Nothing changed. Paste the five values as text in the Approve box and this card clears.",
+   "why": "Approving is not the missing input \u2014 the values are. The engine cannot open Apex's site (bot-blocked), so every Apex figure on this dashboard is still the assumption set from 114_apex_sim.py, and split / consistency / max-accounts were never modelled. 18 of the 23 accounts in the $10k route depend on them. Promoting assumptions to 'verified' on a bare approval would be inventing numbers, so the card stays open instead.",
+   "steps": [
+    "Log in to Apex, open the 150K account rules",
+    "Type all five into the Approve box, e.g.: 1) trailing threshold $ = ____  2) trailing intraday or EOD = ____  3) consistency rule % = ____  4) profit split % = ____  5) max accounts = ____",
+    "Engine adds a verified 'apex150' plan to gauntlet/account.py PLANS using exactly those values",
+    "All Apex sizings, bundles and first-payout estimates re-run against the verified plan",
+    "ASSUMED chips are removed only for the fields you supply; anything skipped stays flagged ASSUMED"
+   ],
+   "qa": [
+    {
+     "q": "Approve: Apex account verification before any funding",
+     "a": "Approved by Daniel 2026-07-21. Approval recorded in ledger.jsonl; no rule values were included, so no Apex number was changed. Card replaced with this one, which holds until the five values arrive.",
+     "t": "2026-07-21T22:45:08Z",
+     "q_t": "2026-07-20T00:00:00Z"
+    },
+    {
+     "q": "Approve: Apex verification \u2014 paste the five numbers",
+     "a": "Approved 2026-07-22T02:19:04Z with an EMPTY note, so no value was supplied for the second time. No Apex parameter changed, no ASSUMED chip removed, no sizing re-run. Card re-staged with a copy-paste template.",
+     "t": "2026-07-22T02:38:32Z",
+     "q_t": "2026-07-21T22:45:08Z"
+    }
+   ],
+   "staged": "2026-07-22T02:38:32Z"
   }
  ],
  "roadmap": {
