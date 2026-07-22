@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:37:14Z",
+  "stamp": "2026-07-22T03:37:57Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 175,
-  "n_results": 268,
-  "n_trials": 30239,
+  "n_results": 269,
+  "n_trials": 30240,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:37:45.078459+00:00",
+   "hash": "8012350b",
+   "name": "mym-price-weight-earnings-dislocation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.195"
+  },
+  {
    "t": "2026-07-22T03:37:08.663740+00:00",
    "hash": "ddb339e5",
    "name": "scout-16-screen",
@@ -333,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.508"
-  },
-  {
-   "t": "2026-07-22T03:35:56.385016+00:00",
-   "hash": "8012350b",
-   "name": "mym-price-weight-earnings-dislocation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:31:08.620946+00:00",
@@ -410,14 +410,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-price-weight-earnings-dislocation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:34:26Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -429,7 +421,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 10,
+   "registered": 9,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 72
+    "trials": 73
    }
   ]
  },
@@ -524,8 +516,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 0,
+   "n_tested": 2,
+   "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
   },
