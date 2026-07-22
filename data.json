@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:08:20Z",
+  "stamp": "2026-07-22T12:08:22Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZS",
+    "task": "zs-zc-substitution-ratio-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:08:21Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-mbs-convexity-hedge-cascade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:08:21Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-crosssectional-momentum-micro-complex",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:08:21Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zs-zc-substitution-ratio-reversion",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.66
-   },
-   {
-    "rank": 2,
-    "idea": "zn-mbs-convexity-hedge-cascade",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 3,
-    "idea": "mes-crosssectional-momentum-micro-complex",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.56
-   },
    {
     "rank": 4,
     "idea": "mgc-late-participation-share-overnight-carry",
@@ -525,7 +523,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
