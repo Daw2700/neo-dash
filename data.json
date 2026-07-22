@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:55:53Z",
+  "stamp": "2026-07-22T22:55:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:54:09Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-roll-window-liquidity-void-dose-response",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:55:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mcl-roll-window-liquidity-void-dose-response",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": null
-   },
    {
     "rank": 10,
     "idea": "sil-registered-stock-coverage-delivery-premium",
@@ -466,7 +465,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
