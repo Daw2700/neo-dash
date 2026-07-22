@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:20:54Z",
+  "stamp": "2026-07-22T13:25:54Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 442,
-  "n_results": 559,
-  "n_trials": 30530,
+  "n_registered": 444,
+  "n_results": 561,
+  "n_trials": 30549,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "mes-event-cluster-bracket",
-   "name": "mes-event-cluster-bracket",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 23,
-   "wr": 0.3913,
-   "usd_mo": 27,
-   "pf": 1.626,
-   "usd_trade": 42.2
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -303,9 +291,45 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T13:23:51.204709+00:00",
+   "hash": "2b6e1173",
+   "name": "mnq-volume-clock-orb",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.123"
+  },
+  {
+   "t": "2026-07-22T13:23:24.987195+00:00",
+   "hash": "357a99b5",
+   "name": "mes-event-cluster-bracket",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T13:21:10.952499+00:00",
+   "hash": "ee4cd766",
+   "name": "scout-33-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T13:18:51.201705+00:00",
    "hash": "a1b83a2a",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.961"
-  },
-  {
-   "t": "2026-07-22T13:02:24.896942+00:00",
-   "hash": "dd38b58b",
-   "name": "mnq-vwap-time-pressure",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.03"
-  },
-  {
-   "t": "2026-07-22T13:01:58.424689+00:00",
-   "hash": "ff570c0f",
-   "name": "mes-first-extreme-ordering-inventory-carry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.934"
-  },
-  {
-   "t": "2026-07-22T13:01:26.758093+00:00",
-   "hash": "a7f020a4",
-   "name": "mnq-orb-touch-count-liquidity-depletion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "robustness: mes-event-cluster-bracket",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:20:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-volume-clock-opening-range",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 59,
+   "registered": 60,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 363
+    "trials": 382
    }
   ]
  },
@@ -504,8 +496,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 82,
-   "n_killed": 48,
+   "n_tested": 83,
+   "n_killed": 49,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -972,26 +964,6 @@
     }
    ]
   },
-  "mes-event-cluster-bracket": {
-   "name": "mes-event-cluster-bracket",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "FOMC days deliver several scheduled information releases on the same date (the 14:00 ET policy statement, the quarterly Summary of Economic Projections at 4 of 8 meetings, and the 14:30 ET press conference), mechanically raising the day conditional variance above unconditional variance per event-study literature (arxiv 2508.06788). The pre-event range (09:30-13:55 ET) is set before any of these releases print, so a two-sided OCO bracket at that range high/low is a bet on realized variance exceeding the range, independent of which way price ultimately breaks -- unlike every other event candidate in the ledger, which commits to a directional sign in advance.",
-   "metrics": {
-    "n": 23,
-    "wr": 0.3913,
-    "pf": 1.626,
-    "usd_mo": 27,
-    "usd_trade": 42.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T13:17:15.904502+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1247,6 +1219,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
