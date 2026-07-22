@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:50:03Z",
+  "stamp": "2026-07-22T21:52:08Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 642,
-  "n_results": 792,
-  "n_trials": 30780,
+  "n_registered": 645,
+  "n_results": 793,
+  "n_trials": 30781,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:51:46.694878+00:00",
+   "hash": "910828c3",
+   "name": "zc-post-fomc-liquidity-drain-impact-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.055"
+  },
+  {
+   "t": "2026-07-22T21:51:28.414181+00:00",
+   "hash": "462f611d",
+   "name": "m6e-t1-usd-funding-witching-hour",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T21:51:08.436717+00:00",
+   "hash": "ee357a34",
+   "name": "liquidity-oversupply-reversal",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T21:40:32.648679+00:00",
    "hash": "fe1d48bb",
    "name": "mes-cot-tue-snapshot",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.829"
-  },
-  {
-   "t": "2026-07-22T21:31:37.278321+00:00",
-   "hash": "fba10ca5",
-   "name": "sil-nonreviewable-range-sweep-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.626"
-  },
-  {
-   "t": "2026-07-22T21:30:41.570580+00:00",
-   "hash": "ae4a6a08",
-   "name": "mcl-cushing-tank-constraint-expiry-convexity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.95"
-  },
-  {
-   "t": "2026-07-22T21:28:38.782598+00:00",
-   "hash": "c2c600ed",
-   "name": "zn-japan-holiday-tokyo-absence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.386"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-post-fomc-liquidity-drain-impact-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:50:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-liquidity-oversupply-reversal",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-t1-usd-funding-witching-hour",
     "stage": "dev3yr",
@@ -493,7 +485,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 87,
+   "registered": 89,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -555,7 +547,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 613
+    "trials": 614
    }
   ]
  },
@@ -682,8 +674,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 32,
-   "n_killed": 28,
+   "n_tested": 33,
+   "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
   },
