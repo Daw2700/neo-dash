@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:32:54Z",
+  "stamp": "2026-07-22T20:32:56Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-covered-call-etf-roll-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:32:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-complex-dispersion-expansion-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:32:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-farmer-round-dollar-sell-shelf",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:32:56Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-covered-call-etf-roll-window",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-complex-dispersion-expansion-gate",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 3,
-    "idea": "zc-farmer-round-dollar-sell-shelf",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 4,
     "idea": "mcl-brent-orphan-benchmark-window",
@@ -530,7 +528,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
