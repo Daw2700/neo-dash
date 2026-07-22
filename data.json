@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:27:51Z",
+  "stamp": "2026-07-22T17:29:56Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 539,
-  "n_results": 672,
-  "n_trials": 30660,
+  "n_registered": 540,
+  "n_results": 673,
+  "n_trials": 30661,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:29:47.775282+00:00",
+   "hash": "987c8d88",
+   "name": "mcl-london-overlap-variance-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.063"
+  },
+  {
    "t": "2026-07-22T17:27:43.545139+00:00",
    "hash": "f8cdaf1b",
    "name": "zn-round-yield-handle-magnet",
@@ -393,14 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T17:14:13.558010+00:00",
-   "hash": "26ccf306",
-   "name": "mes-vix-return-sign-decoupling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1317"
   }
  ],
  "pipeline": {
@@ -410,14 +410,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T17:25:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-london-overlap-variance-share-idiosyncratic-fade",
-    "stage": "dev3yr",
     "started": "2026-07-22T17:25:23Z",
     "state": "running"
    }
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 493
+    "trials": 494
    }
   ]
  },
@@ -558,8 +550,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 32,
-   "n_killed": 18,
+   "n_tested": 33,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
