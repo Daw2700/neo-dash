@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:25:53Z",
+  "stamp": "2026-07-22T19:30:28Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 587,
-  "n_results": 727,
-  "n_trials": 30715,
+  "n_registered": 590,
+  "n_results": 730,
+  "n_trials": 30718,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "mes-wk10-derisk",
+   "name": "mes-wk10-derisk",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 52,
+   "wr": 0.5385,
+   "usd_mo": 71,
+   "pf": 2.106,
+   "usd_trade": 48.9
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -291,21 +303,33 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "mes-depth-consumption-print-size-range-forecast",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 124,
-   "wr": 0.4355,
-   "usd_mo": 31,
-   "pf": 1.168,
-   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T19:29:03.710526+00:00",
+   "hash": "babd2e02",
+   "name": "zc-crop-insurance-feb-discovery",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.54"
+  },
+  {
+   "t": "2026-07-22T19:28:00.718739+00:00",
+   "hash": "dc2bd904",
+   "name": "mes-wk10-derisk",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.106"
+  },
+  {
+   "t": "2026-07-22T19:27:58.292445+00:00",
+   "hash": "7c7da75f",
+   "name": "mnq-vwap-twap-participation-skew",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.208"
+  },
   {
    "t": "2026-07-22T19:19:47.523221+00:00",
    "hash": "141dcab5",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0412"
-  },
-  {
-   "t": "2026-07-22T19:04:36.388136+00:00",
-   "hash": "1f2da39b",
-   "name": "sil-jan-bcom-gsci-reweight-short",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T19:03:45.595013+00:00",
-   "hash": "6a1e5a22",
-   "name": "mes-asia-leg-accrual-giveback",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.688"
-  },
-  {
-   "t": "2026-07-22T18:56:28.490301+00:00",
-   "hash": "e4ddd6dc",
-   "name": "zs-holiday-compressed-week-hedge-budget",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 1.083"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "ZC",
     "task": "zc-crop-insurance-price-discovery-february",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:25:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-quarter-week10-preexpiry-derisk",
     "stage": "dev3yr",
     "started": "2026-07-22T19:25:53Z",
     "state": "running"
@@ -577,7 +569,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 548
+    "trials": 551
    }
   ]
  },
@@ -586,7 +578,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 100,
+   "n_tested": 101,
    "n_killed": 59,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -601,7 +593,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 97,
+   "n_tested": 98,
    "n_killed": 72,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -704,8 +696,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 23,
+   "n_tested": 27,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1054,6 +1046,26 @@
     }
    ]
   },
+  "mes-wk10-derisk": {
+   "name": "mes-wk10-derisk",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Week 10 of the calendar quarter, the week before quarterly index option/futures expiry, is when dealers and levered funds cut risk ahead of the largest delta-reset of the quarter, producing a synchronized cross-asset de-risk before re-establishing after expiry.",
+   "metrics": {
+    "n": 52,
+    "wr": 0.5385,
+    "pf": 2.106,
+    "usd_mo": 71,
+    "usd_trade": 48.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T19:28:00.718739+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1323,36 +1335,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "mes-depth-consumption-print-size-range-forecast": {
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
-   "metrics": {
-    "n": 124,
-    "wr": 0.4355,
-    "pf": 1.168,
-    "usd_mo": 31,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:40:13.765212+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T15:47:15.796894+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T15:52:13.200686+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
