@@ -14,14 +14,6 @@
     "max_micros": 7
    }
   },
-  "scan-mcl": {
-   "growth": {
-    "max_micros": 8
-   },
-   "apex150": {
-    "max_micros": 8
-   }
-  },
   "scan-mbt": {
    "growth": {
     "max_micros": 8
@@ -157,19 +149,18 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "scan-mcl": 1,
     "scan-mym": 2,
     "b3-nr7-breakout": 3,
-    "b10-nagel-vix-reversal": 2,
+    "b10-nagel-vix-reversal": 3,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
     "b2-vix-reversion": 2
    },
    "total_micros": 13,
-   "p_breach": 0.183,
-   "usd_mo": 707,
-   "usd_mo_5acct": 3535,
-   "pct_goal": 0.353
+   "p_breach": 0.188,
+   "usd_mo": 741,
+   "usd_mo_5acct": 3705,
+   "pct_goal": 0.37
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -240,18 +231,17 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 5,
-    "scan-mcl": 5,
+    "b2-vix-reversion": 4,
     "scan-mbt": 5,
-    "scan-mym": 3,
+    "scan-mym": 5,
     "b3-monday-long": 2,
-    "rep-bondflight-mes": 5
+    "rep-bondflight-mes": 3
    },
-   "total_micros": 25,
-   "p_breach": 0.194,
-   "usd_mo": 520,
-   "usd_mo_5acct": 2600,
-   "pct_goal": 0.26
+   "total_micros": 19,
+   "p_breach": 0.195,
+   "usd_mo": 482,
+   "usd_mo_5acct": 2410,
+   "pct_goal": 0.241
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -260,7 +250,6 @@
    "provisional": true,
    "assumed_rules": true,
    "members": {
-    "scan-mcl": 1,
     "scan-mbt": 1,
     "scan-mym": 2,
     "b3-nr7-breakout": 2,
@@ -268,11 +257,11 @@
     "b3-monday-long": 1,
     "b2-vix-reversion": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.199,
-   "usd_mo": 449,
-   "usd_mo_5acct": 2245,
-   "pct_goal": 0.225
+   "total_micros": 9,
+   "p_breach": 0.192,
+   "usd_mo": 432,
+   "usd_mo_5acct": 2160,
+   "pct_goal": 0.216
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -330,6 +319,25 @@
    "pct_goal": 0.167
   },
   {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 5,
+    "scan-mym": 3,
+    "b10-nagel-vix-reversal": 4,
+    "b3-preholiday-drift": 3,
+    "b2-opex-release": 5
+   },
+   "total_micros": 20,
+   "p_breach": 0.194,
+   "usd_mo": 331,
+   "usd_mo_5acct": 1655,
+   "pct_goal": 0.166
+  },
+  {
    "id": "Risk-premium core (rare, high WR)|apex150",
    "name": "Risk-premium core (rare, high WR)",
    "plan": "apex150 (assumed)",
@@ -337,35 +345,14 @@
    "assumed_rules": true,
    "members": {
     "b2-vix-reversion": 4,
-    "scan-mcl": 3,
-    "b10-nagel-vix-reversal": 1,
-    "b3-preholiday-drift": 2,
-    "b2-opex-release": 1
+    "scan-mym": 2,
+    "b3-preholiday-drift": 2
    },
-   "total_micros": 11,
-   "p_breach": 0.2,
-   "usd_mo": 329,
-   "usd_mo_5acct": 1645,
-   "pct_goal": 0.165
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "scan-mcl": 1,
-    "b10-nagel-vix-reversal": 5,
-    "b3-preholiday-drift": 3,
-    "b2-opex-release": 5
-   },
-   "total_micros": 18,
-   "p_breach": 0.193,
-   "usd_mo": 316,
-   "usd_mo_5acct": 1580,
-   "pct_goal": 0.158
+   "total_micros": 8,
+   "p_breach": 0.18,
+   "usd_mo": 251,
+   "usd_mo_5acct": 1255,
+   "pct_goal": 0.126
   }
  ]
 }
