@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:25:41Z",
+  "stamp": "2026-07-22T05:31:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 236,
-  "n_results": 333,
-  "n_trials": 30304,
+  "n_registered": 239,
+  "n_results": 336,
+  "n_trials": 30307,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -185,6 +185,18 @@
    "usd_trade": 11.5
   },
   {
+   "id": "mng-final-settlement-physical-exit-window",
+   "name": "mng-final-settlement-physical-exit-window",
+   "market": "MNG",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 10,
+   "wr": 0.5,
+   "usd_mo": 2,
+   "pf": 1.296,
+   "usd_trade": 6.3
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -291,21 +303,33 @@
    "usd_mo": 9,
    "pf": 1.043,
    "usd_trade": 9.1
-  },
-  {
-   "id": "mcl-refinery-turnaround-premium",
-   "name": "mcl-refinery-turnaround-premium",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 266,
-   "wr": 0.5263,
-   "usd_mo": -24,
-   "pf": 0.958,
-   "usd_trade": -3.2
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T05:28:32.263884+00:00",
+   "hash": "124fd8b1",
+   "name": "mng-final-settlement-physical-exit-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.296"
+  },
+  {
+   "t": "2026-07-22T05:28:07.640530+00:00",
+   "hash": "a7e43f08",
+   "name": "mnq-round-number-stop-cluster-repulsion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.882"
+  },
+  {
+   "t": "2026-07-22T05:28:05.538867+00:00",
+   "hash": "8a979a7c",
+   "name": "m2k-rateshock-rotation-overshoot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.648"
+  },
   {
    "t": "2026-07-22T05:25:20.837275+00:00",
    "hash": "75d7bcf8",
@@ -377,67 +401,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.695"
-  },
-  {
-   "t": "2026-07-22T05:13:24.505964+00:00",
-   "hash": "0f85c21c",
-   "name": "mnq-cme-halt-reopen-queue-clearing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.767"
-  },
-  {
-   "t": "2026-07-22T05:06:44.870691+00:00",
-   "hash": "cc36a778",
-   "name": "mes-gold-overnight-macro-signal-open-continuation",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.391"
-  },
-  {
-   "t": "2026-07-22T05:05:57.254066+00:00",
-   "hash": "67a185ab",
-   "name": "REPLICATION-PROTOCOL mes-gold-overnight-macro-signal-open-continuation (cc36a7782520b1be) on sibling MNQ",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-round-number-stop-cluster-repulsion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:24:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: First machine-discovered sleeve ready: g",
-    "stage": "decision",
-    "started": "2026-07-22T05:25:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-mym-rate-shock-duration-rotation-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:25:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MNG",
-    "task": "mng-final-settlement-physical-exit-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:25:41Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 13,
@@ -522,7 +489,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 137
+    "trials": 140
    }
   ]
  },
@@ -531,8 +498,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 61,
-   "n_killed": 36,
+   "n_tested": 62,
+   "n_killed": 37,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -564,8 +531,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 2,
+   "n_tested": 8,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -600,7 +567,7 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 3,
+   "n_tested": 4,
    "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
@@ -1059,6 +1026,26 @@
     }
    ]
   },
+  "mng-final-settlement-physical-exit-window": {
+   "name": "mng-final-settlement-physical-exit-window",
+   "market": "MNG",
+   "tier": "candidate",
+   "mechanism": "MNG (Micro Henry Hub NatGas) trading terminates 3 business days prior to the first day of the delivery month; physical settlement at Henry Hub. Nearly all speculative open interest lacks pipeline/delivery capacity and must be flat by the last trading date (LTD), so the sessions running into LTD carry a deadline-driven, direction-agnostic forced-liquidation flow unrelated to the gas balance itself. Given MNG's dominant mean-reverting microstructure (screen B: 15m variance ratios 0.30-0.66 across every segment), that forced flow should overshoot and revert -> we FADE the pre-LTD directional run-up on the LTD session itself (sign chosen per-event from the run, not pre-committed to one side, since the liquidation direction is direction-agnostic by construction).",
+   "metrics": {
+    "n": 10,
+    "wr": 0.5,
+    "pf": 1.296,
+    "usd_mo": 2,
+    "usd_trade": 6.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T05:28:32.263884+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1250,47 +1237,30 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "mcl-refinery-turnaround-premium": {
-   "name": "mcl-refinery-turnaround-premium",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Spring and autumn refinery maintenance turnarounds remove physical crude demand on an operator-published calendar, so refiners stop buying and crude inventories build predictably; length carried through those windows is compensated for absorbing the unwanted barrels, so a long held only inside the turnaround calendar should earn a positive risk premium.",
-   "metrics": {
-    "n": 266,
-    "wr": 0.5263,
-    "pf": 0.958,
-    "usd_mo": -24,
-    "usd_trade": -3.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T04:30:38.572710+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
   {
-   "id": "d-goldsignal-book-entry",
-   "kind": "book_entry",
+   "id": "d-goldsignal-mirror-sync",
+   "kind": "cleanup",
    "needs_attention": true,
-   "title": "First machine-discovered sleeve ready: gold-signal open continuation (PF 1.388)",
-   "recommendation": "ADMIT to the book \u2014 full formal funnel passed: dev3yr, robustness battery, sibling replication",
-   "evidence": "dev3yr: n=142, PF 1.388, $11.53/trade | robustness: SURVIVES (Opus battery) | replication: PF 1.391 on MNQ (bar 1.10) \u2014 the gate that killed both previous finalists",
-   "what_yes_means": "Book grows to 7 sleeves; sizing and every bundle recompute including it; it starts earning micro allocations",
-   "recap": "Overnight gold moves that signal S&P open continuation. Scouted from literature at 04:38, tested, hardened, and replicated by 05:06 \u2014 the first strategy to survive every formal gate since the engine took over.",
-   "why": "It cleared the exact gauntlet that killed ~60 ideas and demoted 20 candidates in the last 24 hours, including the sibling-replication bar that executed both earlier finalists at PF 0.97. A cross-asset signal (gold to equities) that carries to BOTH index siblings is behaving like a real macro mechanism, not a single-market artifact. Standing order requires your sign-off for book entry.",
+   "title": "Book entry is on the ledger, but the published book and all sizing still exclude it",
+   "recommendation": "Approve the mirror edits + a sizing re-run so the new sleeve actually counts",
+   "evidence": "Book membership is hard-coded in three places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 7 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set) and ~/neo-dashboard/sizing.py (VALIDATED set + the CSV id->file map + the RARE/XMKT bundle lists). The trade log data/trades_mes-gold-overnight-macro-signal-open-continuation.csv already exists (n=142, 2022-06-14..2025-02-06), so sizing can run as soon as the map entry is added. Pending: mes-gold-overnight-macro-signal-open-continuation (cc36a7782520b1be) \u2014 approved for ADMISSION 2026-07-22; needs adding, not removing",
+   "what_yes_means": "The site shows a 7-sleeve book, sizing computes max micros for the new sleeve under the same 20% breach cap, and every bundle + the $10k roadmap recompute including it",
+   "recap": "You approved the gold-signal sleeve into the book and the ledger says so. The dashboard hasn't caught up: its copy of the book list and the whole sizing map live in files the executor wasn't allowed to edit, so the site still shows 6 sleeves and the new one gets zero micros in every bundle.",
+   "why": "The ledger is the source of truth and it already records the admission, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are all driven by duplicated lists. Rather than silently edit a public repo the engine auto-pushes, the engine asks first. It is a hash, an id, a CSV-map line, and a sizing re-run.",
    "steps": [
-    "Approve: strategy joins the validated book (7 sleeves)",
-    "Sizing + all bundles + roadmap recompute with it included",
-    "It competes for micros under the same 20% breach cap as every sleeve",
-    "Deny or question: it stays a replicated candidate, fully preserved, nothing lost",
-    "Live/paper exposure still requires its own GO much later \u2014 this is book math only"
+    "Approve: add cc36a7782520b1be to ~/neo-dashboard/build_data.py VALID",
+    "Add 'mes-gold-overnight-macro-signal-open-continuation' to ~/neo-dashboard/sizing.py VALIDATED and to the CSV map (-> trades_mes-gold-overnight-macro-signal-open-continuation.csv)",
+    "Decide its bundle tags (rare-firing; cross-market MGC->MES) for the RARE / XMKT lists",
+    "Re-run sizing.py then build_data.py; engine pushes on its next publish",
+    "Deny: the ledger admission still stands, but the published book stays at 6 sleeves and the sleeve earns no allocation"
    ],
-   "staged": "2026-07-22T05:07:29Z"
+   "pending_mirrors": [
+    "mes-gold-overnight-macro-signal-open-continuation (cc36a7782520b1be) \u2014 approved for ADMISSION 2026-07-22; needs adding, not removing"
+   ],
+   "staged": "2026-07-22T05:27:19Z"
   }
  ],
  "roadmap": {
