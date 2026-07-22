@@ -29,7 +29,7 @@ BREACH_CAP = 0.20
 DEV0, DEV1 = "2022-03-01", "2025-02-28"
 CAL = pd.bdate_range(DEV0, DEV1)
 VALIDATED = {"b3-monday-long", "b3-preholiday-drift", "b3-nr7-breakout", "b4-open-drive",
-             "scan-mym", "scan-mbt", "b10-nagel-vix-reversal"}  # scan-mcl out 2026-07-22
+             "scan-mbt", "b10-nagel-vix-reversal"}  # scan-mcl + scan-mym out 2026-07-22
 
 CSV = {  # leaderboard id -> data/trades_<x>.csv
     "b2-vix-reversion": "b2_vix", "b3-monday-long": "b3_monday",

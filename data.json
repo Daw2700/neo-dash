@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:48:00Z",
+  "stamp": "2026-07-22T02:55:04Z",
   "stale_after_min": 30,
-  "status": "applying your approve",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 151,
-  "n_results": 240,
-  "n_trials": 30211,
+  "n_registered": 157,
+  "n_results": 247,
+  "n_trials": 30218,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -39,22 +39,6 @@
    "usd_mo": 38,
    "pf": 1.626,
    "usd_trade": 12.5,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  {
-   "id": "scan-mym",
-   "name": "mym-prehol (Dow)",
-   "market": "MYM",
-   "tier": "BOOK SLEEVE",
-   "pinned": false,
-   "n": 31,
-   "wr": 0.613,
-   "usd_mo": 16,
-   "pf": 1.619,
-   "usd_trade": 18.7,
    "sizing": {
     "growth_max": 8,
     "apex_max": 8
@@ -307,9 +291,77 @@
    "usd_mo": -435,
    "pf": 0.88,
    "usd_trade": -10.1
+  },
+  {
+   "id": "zn-sunday-reopen-duration-unwind",
+   "name": "zn-sunday-reopen-duration-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 151,
+   "wr": 0.3311,
+   "usd_mo": -133,
+   "pf": 0.481,
+   "usd_trade": -31.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T02:54:22.295158+00:00",
+   "hash": "fd41ba8f",
+   "name": "m6e-gotobi-tokyo-fix",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.168"
+  },
+  {
+   "t": "2026-07-22T02:54:18.646775+00:00",
+   "hash": "5eec7217",
+   "name": "mym-prehol (Dow)",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "PF 1.585"
+  },
+  {
+   "t": "2026-07-22T02:54:15.930926+00:00",
+   "hash": "ec1000b9",
+   "name": "zc-export-sales-thursday-pause-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.023"
+  },
+  {
+   "t": "2026-07-22T02:54:03.772128+00:00",
+   "hash": "5aca6803",
+   "name": "zn-claims-thursday-duration-reset",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.621"
+  },
+  {
+   "t": "2026-07-22T02:50:44.724867+00:00",
+   "hash": "8722398d",
+   "name": "zc-settlement-print-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.039"
+  },
+  {
+   "t": "2026-07-22T02:50:04.186910+00:00",
+   "hash": "7b3c2857",
+   "name": "zn-sunday-reopen-duration-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.481"
+  },
+  {
+   "t": "2026-07-22T02:49:57.125334+00:00",
+   "hash": "f0dacdd6",
+   "name": "mcl-api-tuesday-overnight-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.478"
+  },
   {
    "t": "2026-07-22T02:33:37.112331+00:00",
    "hash": "0feb6a78",
@@ -349,119 +401,44 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.415"
-  },
-  {
-   "t": "2026-07-22T02:05:01.779004+00:00",
-   "hash": "f2da395b",
-   "name": "mnq-european-cash-close-risk-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.15"
-  },
-  {
-   "t": "2026-07-22T02:04:44.820527+00:00",
-   "hash": "76ea745b",
-   "name": "mnq-roll-week-depth-fragmentation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.667"
-  },
-  {
-   "t": "2026-07-22T02:04:08.924568+00:00",
-   "hash": "f2721edc",
-   "name": "zc-cash-hedge-open-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.623"
-  },
-  {
-   "t": "2026-07-22T01:56:33.943560+00:00",
-   "hash": "8e75a0d3",
-   "name": "mes-cond-monthend-rebal-spread",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.62"
-  },
-  {
-   "t": "2026-07-22T01:54:54.614793+00:00",
-   "hash": "20460071",
-   "name": "zn-london-close-duration-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.309"
-  },
-  {
-   "t": "2026-07-22T01:54:48.832476+00:00",
-   "hash": "e51c9fe4",
-   "name": "mgc-lbma-am-auction-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.584"
-  },
-  {
-   "t": "2026-07-22T01:49:06.215269+00:00",
-   "hash": "35e00878",
-   "name": "mes-volcontrol-releverage-lag",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-sunday-reopen-duration-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:48:00Z",
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Book sleeve mym-prehol (scan-mym) failed",
+    "stage": "decision",
+    "started": "2026-07-22T02:51:57Z",
     "state": "running"
    },
    {
     "agent": "tester-2",
     "market": "ZC",
-    "task": "zc-settlement-print-continuation",
+    "task": "zc-export-sales-thursday-pause-window",
     "stage": "dev3yr",
-    "started": "2026-07-22T02:48:00Z",
+    "started": "2026-07-22T02:51:57Z",
     "state": "running"
    },
    {
     "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-api-tuesday-overnight-repricing",
+    "market": "M6E",
+    "task": "m6e-gotobi-tokyo-fix-dollar-demand",
     "stage": "dev3yr",
-    "started": "2026-07-22T02:48:00Z",
+    "started": "2026-07-22T02:51:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZN",
+    "task": "zn-claims-thursday-duration-reset",
+    "stage": "dev3yr",
+    "started": "2026-07-22T02:51:57Z",
     "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zc-export-sales-thursday-pause-window",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 5,
-    "idea": "m6e-gotobi-tokyo-fix-dollar-demand",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 6,
-    "idea": "zn-claims-thursday-duration-reset",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "mcl-pre-first-notice-day-retail-liquidation",
@@ -518,7 +495,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 6,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
@@ -581,7 +558,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 44
+    "trials": 51
    }
   ]
  },
@@ -616,9 +593,7 @@
    "status": "active",
    "n_tested": 1,
    "n_killed": 0,
-   "book_sleeves": [
-    "mym-prehol (Dow)"
-   ],
+   "book_sleeves": [],
    "agents_now": []
   },
   {
@@ -652,8 +627,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 4,
+   "n_tested": 7,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -690,8 +665,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 2,
+   "n_tested": 3,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -699,8 +674,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 8,
-   "n_killed": 6,
+   "n_tested": 10,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -708,8 +683,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 1,
+   "n_tested": 3,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -783,46 +758,6 @@
     },
     {
      "t": "2026-07-22T01:06:59.444347+00:00",
-     "stage": "robustness",
-     "verdict": "DEMOTED"
-    }
-   ],
-   "robustness": {
-    "plateau": "pass",
-    "mechanism_controls": "pass",
-    "ex_best_year": "pass",
-    "mes_replication": "pass"
-   },
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  "scan-mym": {
-   "name": "mym-prehol (Dow)",
-   "market": "MYM",
-   "tier": "BOOK SLEEVE",
-   "mechanism": "MARKET-EXPANSION SCAN of MYM (micro Dow): the five validated mechanism configs (monday, nr7, prehol, vix-rebound, open-drive) run natively; each market is judged on its own merits per Daniel's scope-opening order \u2014 no cross-market consistency required, and every config counted as a trial",
-   "metrics": {
-    "n": 31,
-    "wr": 0.613,
-    "pf": 1.619,
-    "usd_mo": 16,
-    "usd_trade": 18.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:47:46.011157+00:00",
-     "stage": "dev3yr",
-     "verdict": "SCAN MYM: 3 QUALIFY (monda"
-    },
-    {
-     "t": "2026-07-21T19:48:23.071279+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T01:06:22.062256+00:00",
      "stage": "robustness",
      "verdict": "DEMOTED"
     }
@@ -1336,37 +1271,29 @@
      "verdict": "KILLED"
     }
    ]
+  },
+  "zn-sunday-reopen-duration-unwind": {
+   "name": "zn-sunday-reopen-duration-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
+   "metrics": {
+    "n": 151,
+    "wr": 0.3311,
+    "pf": 0.481,
+    "usd_mo": -133,
+    "usd_trade": -31.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T02:50:04.186910+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
-  {
-   "id": "d-scanmym-demote-r222",
-   "kind": "demotion",
-   "needs_attention": true,
-   "title": "Book sleeve mym-prehol (scan-mym) failed the shuffled-date null \u2014 pull from the book?",
-   "recommendation": "REMOVE from the book \u2014 passes plateau, placebo and ex-best-year, but fails the random-date null (76.8th pctile vs bar 90)",
-   "evidence": "MYM prehol-long, dev 2022-03-01..2025-02-28: n=30, net +$546.29, PF 1.585, $18.21/trade. P1 plateau PASS; P2a wrong-date placebo PASS; P3 ex-best-year PASS (drop 2023 -> PF 1.153, +$117.92 left); P2b shuffled-date null FAIL at 76.8th pctile of 2000 draws (bar 90). Siblings already dead: monday-long (ex-best PF 0.904), nr7-orb (ex-best PF 0.975). Ledger hash 5eec72170531044e, stage=robustness, 2026-07-22.",
-   "what_yes_means": "Book drops from 7 sleeves to 6 (scan-mcl already left today); sizing and all bundles recompute without mym-prehol. MNQ pre-holiday (b3) is unaffected and stays.",
-   "recap": "Your MYM (micro Dow) pre-holiday long \u2014 buy 09:30 the day before a NASDAQ holiday, exit at the close \u2014 made +$546.29 on 30 trades at PF 1.585, which clears the bar. But the battery's random-date null says ~1 in 4 randomly chosen 30-day sets in the same window would have done as well just buying the open and holding. The date isn't adding anything over generic long drift. This card decides whether it stays in the book.",
-   "why": "The scan-* sleeves entered the book on lighter checks than b3/b4. Run through the full battery, MYM prehol passes three of four gates \u2014 the stop plateau holds, the wrong-date placebo does NOT reproduce the edge, and dropping the best year still leaves PF 1.153. It fails only the shuffled-date null (76.8 vs a bar of 90), the gate that separates 'this date is special' from 'this market went up and we were long 30 times'. On a rare-firing 30-trade sleeve that distinction is the entire edge, so its micros and breach budget would be spent on index beta rather than a mechanism. The MNQ version of the same idea passed its battery cleanly (post-holiday control flips to 0.779), so this is a MYM-specific verdict, not a repeal of pre-holiday drift.",
-   "steps": [
-    "Approve: DEMOTED stands; hash 5eec72170531044e leaves the VALID book set in dashboard/build_dashboard.py",
-    "gauntlet sizing + all bundles recompute on the 6 remaining sleeves \u2014 b3-monday-long, b3-preholiday-drift (MNQ), b3-nr7-breakout, b4-open-drive, b10-nagel-vix-reversal, scan-mbt \u2014 numbers drop honestly",
-    "The dashboard book/roadmap views update on the next publish; the ~/neo-dashboard mirrors still lag until d-book-mirror-sync runs (same caveat as the scan-mcl card)",
-    "Nothing is deleted: register, results and trade logs stay on the ledger; a future re-validation can reinstate it",
-    "Deny: sleeve stays in the book; the failing P2b result stays on the ledger either way"
-   ],
-   "staged": "2026-07-22T01:07:31Z",
-   "restaged": "2026-07-22T02:20:00Z",
-   "qa": [
-    {
-     "q": "Explain to me in better detail what is going to do",
-     "a": "What the sleeve is: MYM (micro Dow) pre-holiday long \u2014 buy 09:30 on the session immediately before a full-day NASDAQ holiday, exit at the close. On the dev window 2022-03-01..2025-02-28 it fired 30 times: net +$546.29, PF 1.585, $18.21/trade after costs. That clears the rare-firing bar (PF>=1.15, exp>=$5) comfortably \u2014 raw performance is NOT why it is being pulled.\n\nWhat the battery ran (4 gates) and how MYM scored:\n\u2022 P1 parameter plateau (stop 0.5/0.7/1.0xATR) \u2014 PASS.\n\u2022 P2a wrong-date placebo (same trade on shifted, non-holiday dates) \u2014 PASS. The edge does not show up on the wrong dates.\n\u2022 P3 ex-best-year (delete the best calendar year, 2023, re-score) \u2014 PASS: PF 1.153, +$117.92 still left. Not one-year concentration.\n\u2022 P2b shuffled-date null \u2014 FAIL, and this is the whole case. It draws 2000 random 30-session sets from the same window and runs the identical 09:30-to-close long on each. The real pre-holiday set lands at the 76.8th percentile of that distribution; the bar is 90. Plain English: roughly 1 in 4 randomly chosen sets of 30 MYM days would have made this much or more just by buying the open and holding to the close. The +$546 is not distinguishable from generic long-side drift on 30 days of a market that went up.\n\nSo the old card's phrase 'mechanism placebo failed' was imprecise and I am correcting it: the placebo (P2a) passed, the random-date null (P2b) failed. The sleeve is not a date artifact \u2014 the problem is that the date adds nothing over simply being long.\n\nOne data caveat, on the record: the baseline drifted from n=31/PF 1.619 (original scan) to n=30/PF 1.585 because pandas_market_calendars 4.4.2 stopped marking 2025-01-09 a NASDAQ holiday, so 2025-01-08 (+$32.30) left the set. The verdict does not hinge on that trade \u2014 P2b fails on either baseline.\n\nWhat approving mechanically does: removes hash 5eec72170531044e from the VALID book set in dashboard/build_dashboard.py, so gauntlet sizing and every bundle recompute without it. Correcting the old card's stale count: the book is already at 7, not 8 \u2014 you approved the scan-mcl demotion earlier today. This takes it 7 -> 6: b3-monday-long, b3-preholiday-drift (MNQ), b3-nr7-breakout, b4-open-drive, b10-nagel-vix-reversal, scan-mbt. The same two mirrors flagged on the mcl card (~/neo-dashboard/build_data.py and sizing.py) are outside this run's write scope, so the published dashboard stays stale until d-book-mirror-sync runs.\n\nWhat it does NOT do: it does not kill pre-holiday drift as a mechanism. The MNQ sleeve b3-preholiday-drift stays in the book \u2014 it passed its own battery 6/6 on plateau, ex-best-year PF 1.236, and its post-holiday control flipped negative (0.779) exactly as the mechanism predicts. This is a statement about MYM specifically, where the same idea rides existing index drift instead of adding to it. Nothing is deleted: register, results and trade logs stay on the ledger and a future re-validation can reinstate it. Denying keeps the sleeve in the book; the failing P2b result stays on the ledger either way.",
-     "q_t": "2026-07-22T02:16:28.457Z",
-     "t": "2026-07-22T02:20:00Z"
-    }
-   ]
-  },
   {
    "id": "d-apex-verify-numbers-r2",
    "kind": "funding",
@@ -1432,6 +1359,29 @@
     }
    ],
    "staged": "2026-07-22T02:43:51.754485Z"
+  },
+  {
+   "id": "d-book-mirror-sync",
+   "kind": "cleanup",
+   "needs_attention": true,
+   "title": "Two approved demotions are on the ledger but the published book still lists both sleeves",
+   "recommendation": "Approve a two-file edit to the dashboard mirrors so the site and sizing drop the demoted sleeves",
+   "evidence": "Book membership is hard-coded in three places: ~/mnq_lab/dashboard/build_dashboard.py (VALID - updated, now 6 hashes), ~/neo-dashboard/build_data.py (VALID) and ~/neo-dashboard/sizing.py (VALIDATED / RARE / XMKT). The executor's write scope is limited to ~/mnq_lab and ~/neo-engine/state, so the last two were not touched. Pending: scan-mcl (mcl-vix, crude) - approved for removal 2026-07-22, hash 6153da5cd4762a99; scan-mym (mym-prehol, Dow) - approved for removal 2026-07-22, hash 5eec72170531044e",
+   "what_yes_means": "The two dashboard files drop both demoted hashes/ids, sizing re-runs, and the published book, bundles and $10k roadmap finally recompute on 6 sleeves",
+   "recap": "You approved pulling two sleeves (crude vix-rebound and Dow pre-holiday) from the book and both are on the ledger as DEMOTED. The public dashboard hasn't caught up: its copy of the book list lives in files the executor isn't allowed to edit, so the site still shows 8 sleeves and still gives each demoted one a micro.",
+   "why": "The ledger is the source of truth and it already says DEMOTED, so the record is right - but the screen you actually read is driven by a duplicated list, which means the sizing, bundle and roadmap figures on the site are currently overstated by two sleeves. Rather than silently edit a public repo the engine auto-pushes, the engine asks first. It is a few-line change plus a sizing re-run.",
+   "steps": [
+    "Approve: remove 6153da5cd4762a99 and 5eec72170531044e from ~/neo-dashboard/build_data.py VALID",
+    "Remove scan-mcl and scan-mym from ~/neo-dashboard/sizing.py VALIDATED (and the RARE / XMKT lists)",
+    "Re-run sizing.py, then build_data.py; engine pushes on its next publish",
+    "Book, bundles and the $10k roadmap recompute on the 6 remaining sleeves - the totals go DOWN",
+    "Deny: both ledger demotions still stand, but the dashboard keeps displaying the sleeves as book slots"
+   ],
+   "pending_mirrors": [
+    "scan-mcl (mcl-vix, crude) - approved for removal 2026-07-22, hash 6153da5cd4762a99",
+    "scan-mym (mym-prehol, Dow) - approved for removal 2026-07-22, hash 5eec72170531044e"
+   ],
+   "staged": "2026-07-22T02:54:18Z"
   }
  ],
  "roadmap": {
