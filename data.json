@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:52:58Z",
+  "stamp": "2026-07-22T08:53:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:45:03Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-morning-shock-forced-liquidation-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:53:02Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-threshold-rebalancer-frontrun",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:53:02Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mnq-morning-shock-forced-liquidation-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mes-threshold-rebalancer-frontrun",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "m2k-overnight-duration-rally-refi-channel-continuation",
@@ -538,7 +536,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 11,
    "registered": 39,
    "dev3yr": 0,
    "robustness": 0,
