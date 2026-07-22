@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:50:26Z",
+  "stamp": "2026-07-22T14:52:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 472,
+  "n_registered": 473,
   "n_results": 597,
   "n_trials": 30585,
   "holdout_looks_spent": 0,
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T14:52:18.412309+00:00",
+   "hash": "9a6419e9",
+   "name": "zn-roll-financing-flow",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T14:49:33.903641+00:00",
    "hash": "e62a9100",
    "name": "zc-natgas-fertilizer-costpush-diffusion-lag",
@@ -393,14 +401,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T14:33:12.255812+00:00",
-   "hash": "792e61b8",
-   "name": "mes-postrelease-impact-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9769"
   }
  ],
  "pipeline": {
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T14:47:01Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-implied-repo-term-repo-wedge-roll-financing-flow",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:50:28Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "zn-implied-repo-term-repo-wedge-roll-financing-flow",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 12,
     "idea": "mcl-speculator-capacity-impairment-hedger-concession",
@@ -461,8 +460,8 @@
    }
   ],
   "funnel": {
-   "idea": 4,
-   "registered": 65,
+   "idea": 3,
+   "registered": 66,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
