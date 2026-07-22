@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:29:32Z",
+  "stamp": "2026-07-22T22:29:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-first-intention-day-forced-long-exit",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:27:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-btic-close-referenced-hedge-release",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-etf-creation-t1-settlement-unwind",
     "stage": "dev3yr",
