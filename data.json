@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:11:58Z",
+  "stamp": "2026-07-22T12:11:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T12:10:32Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-jump-hazard-self-excitation-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:11:59Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mnq-jump-hazard-self-excitation-window",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "m2k-duration-equity-valuation-band-reversion",
@@ -506,7 +505,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
