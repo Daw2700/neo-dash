@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:09:55Z",
+  "stamp": "2026-07-22T07:15:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 282,
-  "n_results": 384,
-  "n_trials": 30355,
+  "n_registered": 285,
+  "n_results": 387,
+  "n_trials": 30358,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -201,18 +201,6 @@
    "usd_trade": 15.4
   },
   {
-   "id": "mcl-intraday-skew-lottery-demand-fade",
-   "name": "mcl-intraday-skew-lottery-demand-fade",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 398,
-   "wr": 0.5276,
-   "usd_mo": 127,
-   "pf": 1.252,
-   "usd_trade": 11.5
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -307,9 +295,53 @@
    "usd_mo": 20,
    "pf": 1.088,
    "usd_trade": 10.1
+  },
+  {
+   "id": "b6-prehol-m2k",
+   "name": "b6-prehol-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 31,
+   "wr": null,
+   "usd_mo": 2,
+   "pf": 1.074,
+   "usd_trade": 2.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:13:51.084299+00:00",
+   "hash": "1384fbc0",
+   "name": "mcl-intraday-skew-lottery-demand-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T07:13:13.331701+00:00",
+   "hash": "8539391a",
+   "name": "mes-slow-moving-capital-lagged-shock-rebound",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.81"
+  },
+  {
+   "t": "2026-07-22T07:12:56.418285+00:00",
+   "hash": "b43a2c81",
+   "name": "mnq-volclock-exhaustion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.889"
+  },
+  {
+   "t": "2026-07-22T07:12:19.057639+00:00",
+   "hash": "508c095a",
+   "name": "ROBUSTNESS-PROTOCOL mcl-intraday-skew-lottery-demand-fade (1384fbc08f8255ed)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T07:08:10.211750+00:00",
    "hash": "596850f7",
@@ -373,38 +405,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T06:51:46.047323+00:00",
-   "hash": "011992fa",
-   "name": "mgc-prior-value-area-acceptance-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T06:49:16.850673+00:00",
-   "hash": "ef254a07",
-   "name": "ROBUSTNESS-PROTOCOL mgc-prior-value-area-acceptance-continuation (011992fab744a169)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T06:47:16.402493+00:00",
-   "hash": "aac561d0",
-   "name": "mnq-jump-share-decomposition-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.194"
-  },
-  {
-   "t": "2026-07-22T06:46:44.386465+00:00",
-   "hash": "3ae81008",
-   "name": "mnq-illiquidity-premium-nextday-drift",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.249"
   }
  ],
  "pipeline": {
@@ -415,22 +415,6 @@
     "task": "robustness: mcl-intraday-skew-lottery-demand-fade",
     "stage": "dev3yr",
     "started": "2026-07-22T07:09:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-slow-moving-capital-lagged-shock-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:09:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-volume-clock-acceleration-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:09:55Z",
     "state": "running"
    }
   ],
@@ -483,7 +467,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 26,
+   "registered": 27,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -545,7 +529,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 188
+    "trials": 191
    }
   ]
  },
@@ -554,8 +538,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 66,
-   "n_killed": 39,
+   "n_tested": 67,
+   "n_killed": 40,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -569,8 +553,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 35,
-   "n_killed": 21,
+   "n_tested": 36,
+   "n_killed": 22,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1114,26 +1098,6 @@
     }
    ]
   },
-  "mcl-intraday-skew-lottery-demand-fade": {
-   "name": "mcl-intraday-skew-lottery-demand-fade",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "A right-skewed intraday return distribution in crude means the day was built from upside spikes -- panic hedging and lottery-like speculative buying -- rather than steady accumulation; that demand is price-insensitive and unwinds once the headline ages, so positively-skewed days are followed by weakness the next session.",
-   "metrics": {
-    "n": 398,
-    "wr": 0.5276,
-    "pf": 1.252,
-    "usd_mo": 127,
-    "usd_trade": 11.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:06:28.791541+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1303,6 +1267,31 @@
      "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "b6-prehol-m2k": {
+   "name": "b6-prehol-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Pre-holiday drift comes from US equity market liquidity withdrawal and short-covering, which applies to small-caps as much as tech",
+   "metrics": {
+    "n": 31,
+    "wr": null,
+    "pf": 1.074,
+    "usd_mo": 2,
+    "usd_trade": 2.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.110553+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    },
+    {
+     "t": "2026-07-21T16:04:19.693873+00:00",
+     "stage": "dev3yr",
+     "verdict": "FAIL"
     }
    ]
   }
