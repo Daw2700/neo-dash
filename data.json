@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:00:39Z",
+  "stamp": "2026-07-22T22:00:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,27 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T21:57:59Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MYM",
+    "task": "mym-dividend-paydate-reinvestment-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:00:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-treasury-roll-week-capacity-drain",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:00:42Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mym-dividend-paydate-reinvestment-window",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 7,
-    "idea": "mes-treasury-roll-week-capacity-drain",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 8,
     "idea": "zn-soma-reinvestment-cap-overflow-window",
@@ -458,7 +456,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 3,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
