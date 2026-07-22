@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:20:31Z",
+  "stamp": "2026-07-22T13:20:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,21 +412,35 @@
     "stage": "dev3yr",
     "started": "2026-07-22T13:15:19Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "mnq-volume-clock-opening-range",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T13:20:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-event-cluster-bracket",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:20:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "mnq-volume-clock-opening-range",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:20:32Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
