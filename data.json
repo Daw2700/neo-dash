@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:10:59Z",
+  "stamp": "2026-07-22T15:16:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 481,
-  "n_results": 607,
-  "n_trials": 30595,
+  "n_registered": 484,
+  "n_results": 609,
+  "n_trials": 30597,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:14:57.087031+00:00",
+   "hash": "9b3f2351",
+   "name": "met-maker-program-window-boundary-break",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T15:14:38.585231+00:00",
+   "hash": "e5367c1d",
+   "name": "mes-globex-precancel-lockdown-reopen-divergence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2437"
+  },
+  {
+   "t": "2026-07-22T15:12:41.247672+00:00",
+   "hash": "468f6ef9",
+   "name": "mcl-first-passage-grind-vs-airpocket",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.113"
+  },
+  {
    "t": "2026-07-22T15:10:52.835847+00:00",
    "hash": "b9a53d45",
    "name": "mgc-tas-band-exhaustion-spillover-v2",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1215"
-  },
-  {
-   "t": "2026-07-22T14:56:01.003189+00:00",
-   "hash": "ed0b40a5",
-   "name": "mes-barrier-hedge-bounce",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.019"
-  },
-  {
-   "t": "2026-07-22T14:53:24.763300+00:00",
-   "hash": "9a6419e9",
-   "name": "zn-roll-financing-flow",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.122"
-  },
-  {
-   "t": "2026-07-22T14:49:33.903641+00:00",
-   "hash": "e62a9100",
-   "name": "zc-natgas-fertilizer-costpush-diffusion-lag",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-first-passage-grind-vs-airpocket",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:10:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MET",
     "task": "met-maker-program-window-boundary-break",
     "stage": "dev3yr",
@@ -497,7 +489,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 66,
+   "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +551,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 428
+    "trials": 430
    }
   ]
  },
@@ -583,8 +575,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 82,
-   "n_killed": 60,
+   "n_tested": 83,
+   "n_killed": 61,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -630,7 +622,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 30,
+   "n_tested": 31,
    "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
