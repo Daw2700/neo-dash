@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:46:15Z",
+  "stamp": "2026-07-22T22:46:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MET",
+    "task": "met-quarter-hour-boundary-flow-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:46:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-tokyo-cash-open-hedge-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:46:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-friday-european-session-weekend-derisk",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:46:17Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "met-quarter-hour-boundary-flow-continuation",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": null
-   },
-   {
-    "rank": 2,
-    "idea": "mes-tokyo-cash-open-hedge-transfer",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": null
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-friday-european-session-weekend-derisk",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": null
-   },
    {
     "rank": 4,
     "idea": "mnq-globex-reopen-halfhour-anchor",
@@ -521,7 +519,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
