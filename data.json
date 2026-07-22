@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:48:42Z",
+  "stamp": "2026-07-22T22:48:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:46:17Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-globex-reopen-halfhour-anchor",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:48:45Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-globex-reopen-halfhour-anchor",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
-   },
    {
     "rank": 5,
     "idea": "mes-cross-margin-offset-collapse-degross",
@@ -511,7 +510,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
