@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:04:40Z",
+  "stamp": "2026-07-22T07:09:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 280,
-  "n_results": 381,
-  "n_trials": 30352,
+  "n_registered": 282,
+  "n_results": 384,
+  "n_trials": 30355,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -201,6 +201,18 @@
    "usd_trade": 15.4
   },
   {
+   "id": "mcl-intraday-skew-lottery-demand-fade",
+   "name": "mcl-intraday-skew-lottery-demand-fade",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 398,
+   "wr": 0.5276,
+   "usd_mo": 127,
+   "pf": 1.252,
+   "usd_trade": 11.5
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -295,21 +307,33 @@
    "usd_mo": 20,
    "pf": 1.088,
    "usd_trade": 10.1
-  },
-  {
-   "id": "b6-prehol-m2k",
-   "name": "b6-prehol-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 31,
-   "wr": null,
-   "usd_mo": 2,
-   "pf": 1.074,
-   "usd_trade": 2.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:08:10.211750+00:00",
+   "hash": "596850f7",
+   "name": "mnq-metaorder-flow-persistence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.916"
+  },
+  {
+   "t": "2026-07-22T07:08:04.252202+00:00",
+   "hash": "a728d544",
+   "name": "mes-variance-risk-premium-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.919"
+  },
+  {
+   "t": "2026-07-22T07:06:28.791541+00:00",
+   "hash": "1384fbc0",
+   "name": "mcl-intraday-skew-lottery-demand-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.252"
+  },
   {
    "t": "2026-07-22T07:04:02.729327+00:00",
    "hash": "a728d544",
@@ -381,30 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.249"
-  },
-  {
-   "t": "2026-07-22T06:45:22.412629+00:00",
-   "hash": "011992fa",
-   "name": "mgc-prior-value-area-acceptance-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.138"
-  },
-  {
-   "t": "2026-07-22T06:44:09.024125+00:00",
-   "hash": "d6dbe2ca",
-   "name": "zc-first-notice-delivery-convergence-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.563"
-  },
-  {
-   "t": "2026-07-22T06:40:40.777302+00:00",
-   "hash": "45c0ee47",
-   "name": "scout-23-screen",
-   "status": "result",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-intraday-skew-lottery-demand-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:04:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-metaorder-splitting-flow-persistence",
     "stage": "dev3yr",
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 185
+    "trials": 188
    }
   ]
  },
@@ -634,7 +626,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 16,
+   "n_tested": 17,
    "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
@@ -663,8 +655,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 2,
+   "n_tested": 3,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1132,6 +1124,26 @@
     }
    ]
   },
+  "mcl-intraday-skew-lottery-demand-fade": {
+   "name": "mcl-intraday-skew-lottery-demand-fade",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "A right-skewed intraday return distribution in crude means the day was built from upside spikes -- panic hedging and lottery-like speculative buying -- rather than steady accumulation; that demand is price-insensitive and unwinds once the headline ages, so positively-skewed days are followed by weakness the next session.",
+   "metrics": {
+    "n": 398,
+    "wr": 0.5276,
+    "pf": 1.252,
+    "usd_mo": 127,
+    "usd_trade": 11.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:06:28.791541+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1271,6 +1283,11 @@
      "t": "2026-07-22T07:04:02.729327+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
     }
    ]
   },
@@ -1296,31 +1313,6 @@
      "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
-    }
-   ]
-  },
-  "b6-prehol-m2k": {
-   "name": "b6-prehol-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Pre-holiday drift comes from US equity market liquidity withdrawal and short-covering, which applies to small-caps as much as tech",
-   "metrics": {
-    "n": 31,
-    "wr": null,
-    "pf": 1.074,
-    "usd_mo": 2,
-    "usd_trade": 2.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.110553+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    },
-    {
-     "t": "2026-07-21T16:04:19.693873+00:00",
-     "stage": "dev3yr",
-     "verdict": "FAIL"
     }
    ]
   }
