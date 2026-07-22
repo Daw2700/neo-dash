@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:49:32Z",
+  "stamp": "2026-07-22T05:54:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 248,
-  "n_results": 345,
-  "n_trials": 30316,
+  "n_registered": 250,
+  "n_results": 347,
+  "n_trials": 30318,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:52:30.696038+00:00",
+   "hash": "e42caa34",
+   "name": "mes-post-rates-unhedged-hour",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.808"
+  },
+  {
+   "t": "2026-07-22T05:50:42.898670+00:00",
+   "hash": "8b1a121a",
+   "name": "zn-post-data-afternoon-vol-collapse-range-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.053"
+  },
+  {
+   "t": "2026-07-22T05:50:19.736876+00:00",
+   "hash": "20cf9990",
+   "name": "ROBUSTNESS-PROTOCOL mes-prerelease-liquidity-withdrawal-drift-fade (5650586a116c5fa5)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T05:48:34.495170+00:00",
    "hash": "621e6fa5",
    "name": "mgc-shanghai-open-physical-premium-transmission",
@@ -325,14 +349,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.3062"
-  },
-  {
-   "t": "2026-07-22T05:46:20.211331+00:00",
-   "hash": "8b1a121a",
-   "name": "zn-post-data-afternoon-vol-collapse-range-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T05:44:20.139130+00:00",
@@ -389,36 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.122"
-  },
-  {
-   "t": "2026-07-22T05:31:59.397614+00:00",
-   "hash": "8aa26b3b",
-   "name": "scout-21-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T05:28:32.263884+00:00",
-   "hash": "124fd8b1",
-   "name": "mng-final-settlement-physical-exit-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.296"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-post-data-afternoon-vol-collapse-range-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:43:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-prerelease-liquidity-withdrawal-drift-fade",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-post-rates-close-unhedged-final-hour",
     "stage": "dev3yr",
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 149
+    "trials": 151
    }
   ]
  },
@@ -587,8 +579,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 28,
-   "n_killed": 18,
+   "n_tested": 29,
+   "n_killed": 19,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -681,8 +673,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 15,
+   "n_tested": 19,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
