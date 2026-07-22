@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:22:48Z",
+  "stamp": "2026-07-22T03:25:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 169,
-  "n_results": 260,
-  "n_trials": 30231,
+  "n_results": 261,
+  "n_trials": 30232,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -257,18 +257,6 @@
    }
   },
   {
-   "id": "mgc-overnight-inventory-continuation",
-   "name": "mgc-overnight-inventory-continuation",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 380,
-   "wr": 0.5079,
-   "usd_mo": 27,
-   "pf": 1.09,
-   "usd_trade": 2.5
-  },
-  {
    "id": "b6-prehol-m2k",
    "name": "b6-prehol-m2k",
    "market": "M2K",
@@ -303,9 +291,29 @@
    "usd_mo": -435,
    "pf": 0.88,
    "usd_trade": -10.1
+  },
+  {
+   "id": "zn-sunday-reopen-duration-unwind",
+   "name": "zn-sunday-reopen-duration-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 151,
+   "wr": 0.3311,
+   "usd_mo": -133,
+   "pf": 0.481,
+   "usd_trade": -31.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T03:23:01.172547+00:00",
+   "hash": "2d6605d2",
+   "name": "mgc-overnight-inventory-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T03:19:30.789998+00:00",
    "hash": "43e185a4",
@@ -393,43 +401,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.206"
-  },
-  {
-   "t": "2026-07-22T03:02:28.962075+00:00",
-   "hash": "be21338c",
-   "name": "mes-coupon-settle-mid",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.706"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MET",
-    "task": "met-halt-reopen-inventory-recovery",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:16:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-m2k-open-dispersion-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:16:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "robustness: mgc-overnight-inventory-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:20:42Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 6,
@@ -541,7 +516,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 64
+    "trials": 65
    }
   ]
  },
@@ -1190,26 +1165,6 @@
     "apex_max": 6
    }
   },
-  "mgc-overnight-inventory-continuation": {
-   "name": "mgc-overnight-inventory-continuation",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "Gold is priced overnight in London and Asia OTC where CME futures follow rather than lead, so the US RTH open inherits an unfinished repricing and CME-hours participants complete it instead of fading it; the position of the overnight close inside the overnight range proxies how one-sided the inherited inventory is.",
-   "metrics": {
-    "n": 380,
-    "wr": 0.5079,
-    "pf": 1.09,
-    "usd_mo": 27,
-    "usd_trade": 2.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T03:18:14.361499+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b6-prehol-m2k": {
    "name": "b6-prehol-m2k",
    "market": "M2K",
@@ -1270,6 +1225,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T23:49:09.458310+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "zn-sunday-reopen-duration-unwind": {
+   "name": "zn-sunday-reopen-duration-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
+   "metrics": {
+    "n": 151,
+    "wr": 0.3311,
+    "pf": 0.481,
+    "usd_mo": -133,
+    "usd_trade": -31.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T02:50:04.186910+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
