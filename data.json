@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:43:40Z",
+  "stamp": "2026-07-22T23:49:58Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 688,
-  "n_results": 844,
-  "n_trials": 30832,
+  "n_results": 845,
+  "n_trials": 30833,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T23:47:36.774194+00:00",
+   "hash": "729dbe10",
+   "name": "mgc-830-scheduled-data-range-breakout",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T23:40:56.753279+00:00",
    "hash": "7907c86c",
    "name": "mnq-index-52wk-high-anchor-continuation",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4773"
-  },
-  {
-   "t": "2026-07-22T23:02:31.480949+00:00",
-   "hash": "71d7fc7f",
-   "name": "mnq-propfirm-consistency-rule-post-win-withdrawal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.834"
   }
  ],
  "pipeline": {
@@ -415,6 +415,14 @@
     "task": "robustness: mgc-830-scheduled-data-range-breakout",
     "stage": "dev3yr",
     "started": "2026-07-22T23:43:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "replication: mgc-830-scheduled-data-range-breakout",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:47:48Z",
     "state": "running"
    }
   ],
@@ -483,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 665
+    "trials": 666
    }
   ]
  },
