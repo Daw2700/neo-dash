@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:32:07Z",
+  "stamp": "2026-07-22T04:33:30Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 209,
-  "n_results": 300,
-  "n_trials": 30271,
+  "n_results": 301,
+  "n_trials": 30272,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,12 +307,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T04:31:55.826455+00:00",
+   "t": "2026-07-22T04:33:13.662495+00:00",
    "hash": "30cbe73d",
    "name": "m2k-taxloss-turnofyear-reversal",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.379"
   },
   {
    "t": "2026-07-22T04:31:48.053729+00:00",
@@ -406,14 +406,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-taxloss-turnofyear-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:31:00Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -425,7 +417,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 14,
+   "registered": 13,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 104
+    "trials": 105
    }
   ]
  },
@@ -529,8 +521,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 1,
+   "n_tested": 7,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
