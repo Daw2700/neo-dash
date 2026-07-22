@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:37:39Z",
+  "stamp": "2026-07-22T20:38:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -403,22 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-covered-call-etf-roll-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:32:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-complex-dispersion-expansion-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:32:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-brent-orphan-benchmark-window",
     "stage": "dev3yr",
