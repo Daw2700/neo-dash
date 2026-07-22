@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:26:13Z",
+  "stamp": "2026-07-22T00:33:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 132,
-  "n_results": 205,
+  "n_results": 207,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -253,22 +253,6 @@
    }
   },
   {
-   "id": "b2-vol-climax-fade",
-   "name": "b2-vol-climax-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 66,
-   "wr": 0.167,
-   "usd_mo": 25,
-   "pf": 1.382,
-   "usd_trade": 13.4,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 7
-   }
-  },
-  {
    "id": "b7-bond-flight-unwind",
    "name": "b7-bond-flight-unwind",
    "market": "ZN",
@@ -327,9 +311,37 @@
    "usd_mo": 11,
    "pf": 1.248,
    "usd_trade": 18.7
+  },
+  {
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T00:32:58.627499+00:00",
+   "hash": "c161359d",
+   "name": "b2-vol-climax-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T00:32:11.570376+00:00",
+   "hash": "f1f6307c",
+   "name": "6a-neo300-real-honest",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T00:24:03.073077+00:00",
    "hash": "c090841e",
@@ -409,48 +421,32 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.549"
-  },
-  {
-   "t": "2026-07-21T23:57:41.736663+00:00",
-   "hash": "7f4d3dd8",
-   "name": "wasde-overshoot-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.146"
-  },
-  {
-   "t": "2026-07-21T23:49:09.458310+00:00",
-   "hash": "f18c8fea",
-   "name": "silver-london-to-comex-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.88"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-megacap-earnings-night-premium",
+    "market": null,
+    "task": "robustness: 6a-neo300-real-honest",
     "stage": "dev3yr",
-    "started": "2026-07-22T00:16:01Z",
+    "started": "2026-07-22T00:28:51Z",
     "state": "running"
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "fomc-statement-to-presser-reversal",
+    "market": null,
+    "task": "robustness: 8b-biggap-follow",
     "stage": "dev3yr",
-    "started": "2026-07-22T00:16:01Z",
+    "started": "2026-07-22T00:28:51Z",
     "state": "running"
    },
    {
     "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-friday-strike-pin-reversion",
+    "market": null,
+    "task": "robustness: b2-vol-climax-fade",
     "stage": "dev3yr",
-    "started": "2026-07-22T00:22:14Z",
+    "started": "2026-07-22T00:28:51Z",
     "state": "running"
    }
   ],
@@ -547,7 +543,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 9
+    "trials": 11
    }
   ]
  },
@@ -1205,40 +1201,6 @@
     "apex_max": 1
    }
   },
-  "b2-vol-climax-fade": {
-   "name": "b2-vol-climax-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "A single afternoon 5-min bar with extreme volume and range is forced-flow exhaustion (stops, liquidations); the aggressor is done and price mean-reverts",
-   "metrics": {
-    "n": 66,
-    "wr": 0.167,
-    "pf": 1.382,
-    "usd_mo": 25,
-    "usd_trade": 13.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:02:40.561655+00:00",
-     "stage": "dev",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-21T15:31:04.905174+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.698740+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 7
-   }
-  },
   "b7-bond-flight-unwind": {
    "name": "b7-bond-flight-unwind",
    "market": "ZN",
@@ -1346,6 +1308,36 @@
    "verdict_history": [
     {
      "t": "2026-07-22T00:18:27.107468+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "metrics": {
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
