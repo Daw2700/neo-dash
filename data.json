@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:37:06Z",
+  "stamp": "2026-07-22T21:37:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T21:35:41Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "SIL",
+    "task": "sil-oi-concentration-margin-addon-trim",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:37:08Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "sil-oi-concentration-margin-addon-trim",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.28
-   },
    {
     "rank": 12,
     "idea": "mes-cot-tuesday-snapshot-positioning",
@@ -439,7 +438,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
