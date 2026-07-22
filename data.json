@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:34:00Z",
+  "stamp": "2026-07-22T12:34:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 425,
-  "n_results": 537,
-  "n_trials": 30508,
+  "n_results": 538,
+  "n_trials": 30509,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T12:33:35.205003+00:00",
+   "t": "2026-07-22T12:34:12.411019+00:00",
    "hash": "20cdcd3a",
    "name": "zc-pollination-window-weather-premium",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.437"
   },
   {
    "t": "2026-07-22T12:33:13.825551+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-pollination-window-weather-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:30:11Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-national-cpi-mosaic-completion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-energy-terms-of-trade-shock-lag",
     "stage": "dev3yr",
@@ -456,7 +448,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 59,
+   "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -518,7 +510,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 341
+    "trials": 342
    }
   ]
  },
@@ -645,8 +637,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 17,
-   "n_killed": 15,
+   "n_tested": 18,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
