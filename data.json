@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:36:48Z",
+  "stamp": "2026-07-22T12:39:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 426,
-  "n_results": 539,
-  "n_trials": 30510,
+  "n_registered": 428,
+  "n_results": 540,
+  "n_trials": 30511,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T12:38:17.529224+00:00",
+   "hash": "0810a0c5",
+   "name": "zc-prereport-position-squaring-hour",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T12:38:16.951474+00:00",
+   "hash": "12345711",
+   "name": "m6e-energy-terms-of-trade-shock-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.906"
+  },
+  {
    "t": "2026-07-22T12:36:39.112309+00:00",
    "hash": "72423a56",
    "name": "zs-sa-harvest-hedge-pressure",
@@ -389,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.092"
-  },
-  {
-   "t": "2026-07-22T12:14:40.104714+00:00",
-   "hash": "e402e77e",
-   "name": "mnq-jump-hazard-self-excitation-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.15"
-  },
-  {
-   "t": "2026-07-22T12:13:48.520040+00:00",
-   "hash": "b42dbad9",
-   "name": "mgc-late-participation-share-overnight-carry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.269"
   }
  ],
  "pipeline": {
@@ -424,22 +424,28 @@
     "stage": "dev3yr",
     "started": "2026-07-22T12:34:00Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "zc-prereport-position-squaring-hour",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.38
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T12:36:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZC",
+    "task": "zc-prereport-position-squaring-hour",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:36:50Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
-   "registered": 58,
+   "idea": 0,
+   "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -501,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 343
+    "trials": 344
    }
   ]
  },
@@ -610,8 +616,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 17,
-   "n_killed": 16,
+   "n_tested": 18,
+   "n_killed": 17,
    "book_sleeves": [],
    "agents_now": []
   },
