@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:34:24Z",
+  "stamp": "2026-07-22T10:36:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 375,
+  "n_registered": 376,
   "n_results": 480,
   "n_trials": 30451,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:36:05.564295+00:00",
+   "hash": "e06501d7",
+   "name": "m6e-transatlantic-clock-misalignment-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T10:33:37.014793+00:00",
    "hash": "6b9e74aa",
    "name": "mng-forced-flow-signature-slow-capital-reversal",
@@ -397,14 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T10:17:38.638838+00:00",
-   "hash": "ac02b222",
-   "name": "ROBUSTNESS PROTOCOL for 09ec70d377f3e11e (mnq-session-early-exhaustion-fade)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T10:30:00Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-transatlantic-clock-misalignment-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:34:25Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "m6e-transatlantic-clock-misalignment-window",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 12,
     "idea": "zn-cash-market-closed-futures-open-asymmetry",
@@ -465,8 +464,8 @@
    }
   ],
   "funnel": {
-   "idea": 4,
-   "registered": 48,
+   "idea": 3,
+   "registered": 49,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
