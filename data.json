@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:42:51Z",
+  "stamp": "2026-07-22T19:43:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 595,
-  "n_results": 736,
-  "n_trials": 30724,
+  "n_results": 737,
+  "n_trials": 30725,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:42:58.580830+00:00",
+   "hash": "fbec4f1c",
+   "name": "mcl-position-build-vs-liquidation-volume-signature",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.759"
+  },
+  {
    "t": "2026-07-22T19:42:46.654450+00:00",
    "hash": "74b0ed05",
    "name": "zc-drought-monitor-thursday-release-repricing",
@@ -321,14 +329,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.603"
-  },
-  {
-   "t": "2026-07-22T19:41:51.903943+00:00",
-   "hash": "fbec4f1c",
-   "name": "mcl-position-build-vs-liquidation-volume-signature",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T19:37:10.067445+00:00",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-daily-cash-window-index-hedge-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:40:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-position-build-vs-liquidation-volume-signature",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:40:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-trade-month-vs-calendar-month-offset-hedge-concentration",
     "stage": "dev3yr",
@@ -470,7 +454,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 85,
+   "registered": 84,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -532,7 +516,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 557
+    "trials": 558
    }
   ]
  },
@@ -603,8 +587,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 36,
-   "n_killed": 21,
+   "n_tested": 37,
+   "n_killed": 22,
    "book_sleeves": [],
    "agents_now": []
   },
