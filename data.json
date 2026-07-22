@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:00:35Z",
+  "stamp": "2026-07-22T23:01:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 679,
-  "n_results": 830,
-  "n_trials": 30818,
+  "n_results": 832,
+  "n_trials": 30820,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,28 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T23:01:20.799647+00:00",
+   "hash": "72933f71",
+   "name": "zs-biofuel-policy-volume-obligation-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.783"
+  },
+  {
+   "t": "2026-07-22T23:00:55.502893+00:00",
+   "hash": "ede0e22f",
+   "name": "mng-etf-roll-published-schedule-flow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.448"
+  },
+  {
    "t": "2026-07-22T23:00:14.967435+00:00",
    "hash": "16e9a2d1",
    "name": "sil-registered-stock-coverage-delivery-premium",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T23:00:05.205798+00:00",
-   "hash": "ede0e22f",
-   "name": "mng-etf-roll-published-schedule-flow",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:59:59.466231+00:00",
-   "hash": "72933f71",
-   "name": "zs-biofuel-policy-volume-obligation-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T22:58:06.902565+00:00",
@@ -402,22 +402,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-biofuel-policy-volume-obligation-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:57:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-etf-roll-published-schedule-flow",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:58:27Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -426,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-propfirm-consistency-rule-post-win-withdrawal",
     "stage": "dev3yr",
@@ -437,7 +421,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 92,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 651
+    "trials": 653
    }
   ]
  },
@@ -579,8 +563,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 22,
-   "n_killed": 18,
+   "n_tested": 23,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -635,8 +619,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 8,
+   "n_tested": 11,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   }
