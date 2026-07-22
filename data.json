@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:07:31Z",
+  "stamp": "2026-07-22T18:07:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -406,15 +406,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T17:56:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MET",
     "task": "replication: met-april-tax-liability-retail-liquidation",
     "stage": "dev3yr",
@@ -422,9 +414,118 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mes-charm-delta-decay-preopex-overnight",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mng-crude-asia-diffusion-open-catchup",
+    "source": "data-screen",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mcl-eia-day-midsession-to-close-momentum",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-prior-settlement-anchor-premarket-reversion",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "xmkt-volume-share-defensive-rotation-completion",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "xasset-wednesday-night-risk-reestablishment",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "xsec-commodity-month-of-year-hedger-calendar-rotation",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 8,
+    "idea": "xmkt-hourly-systematic-share-divergence-conditioning",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 9,
+    "idea": "mes-letf-hedging-demand-gated-intraday-momentum",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "m2k-mym-open-hour-size-tilt-auction-imbalance",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mes-index-annuity-option-reset-monthstart-hedge",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 12,
+    "idea": "mnq-funded-account-daily-reset-reentry-window",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 79,
    "dev3yr": 0,
    "robustness": 0,
