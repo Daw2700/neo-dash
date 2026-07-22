@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:37:09Z",
+  "stamp": "2026-07-22T21:37:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 639,
-  "n_results": 788,
-  "n_trials": 30776,
+  "n_results": 789,
+  "n_trials": 30777,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:37:47.510073+00:00",
+   "hash": "e7d813c4",
+   "name": "m6e-imm-date-forward-roll-concentration",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1391"
+  },
+  {
    "t": "2026-07-22T21:36:45.363879+00:00",
    "hash": "52371934",
    "name": "sil-mgc-settlement-stagger-five-minute-stale-mark",
@@ -389,14 +397,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T21:01:35.089867+00:00",
-   "hash": "b12423a2",
-   "name": "m2k-dollar-revenue-exposure-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.022"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M6E",
-    "task": "recheck: m6e-imm-date-forward-roll-concentration",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:35:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "SIL",
     "task": "sil-oi-concentration-margin-addon-trim",
     "stage": "dev3yr",
@@ -501,7 +493,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 609
+    "trials": 610
    }
   ]
  },
