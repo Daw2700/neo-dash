@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:42:07Z",
+  "stamp": "2026-07-22T09:42:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mgc-asia-hours-discovery-share-regime",
     "stage": "dev3yr",
     "started": "2026-07-22T09:39:09Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "robustness: zc-price-limit-expansion-regime-state",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:42:09Z",
     "state": "running"
    }
   ],
