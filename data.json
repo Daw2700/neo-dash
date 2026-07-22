@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:51:55Z",
+  "stamp": "2026-07-22T20:53:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 626,
-  "n_results": 771,
-  "n_trials": 30759,
+  "n_results": 772,
+  "n_trials": 30760,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T20:51:45.689675+00:00",
+   "t": "2026-07-22T20:52:31.900611+00:00",
    "hash": "19538d55",
    "name": "m2k-rates-variance-import-gate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.04"
   },
   {
    "t": "2026-07-22T20:49:38.299479+00:00",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-rates-variance-import-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:49:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "robustness: zc-livestock-cof-sunday-transfer",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-pension-fundedstatus-glidepath-rotation",
     "stage": "dev3yr",
@@ -448,7 +440,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 87,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -510,7 +502,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 592
+    "trials": 593
    }
   ]
  },
@@ -554,8 +546,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 10,
+   "n_tested": 21,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
