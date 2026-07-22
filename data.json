@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:18:23Z",
+  "stamp": "2026-07-22T11:21:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 394,
-  "n_results": 502,
-  "n_trials": 30473,
+  "n_results": 503,
+  "n_trials": 30474,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "xasset-vol-origin-attribution",
-   "name": "xasset-vol-origin-attribution",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 46,
-   "wr": 0.6522,
-   "usd_mo": 45,
-   "pf": 1.575,
-   "usd_trade": 35.5
   },
   {
    "id": "mes-corr-collapse-hedge",
@@ -303,9 +291,29 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:18:39.182216+00:00",
+   "hash": "991d6fe7",
+   "name": "xasset-vol-origin-attribution",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T11:16:57.541202+00:00",
    "hash": "4264182c",
@@ -393,43 +401,10 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.61"
-  },
-  {
-   "t": "2026-07-22T10:57:39.497803+00:00",
-   "hash": "c38dac7e",
-   "name": "mgc-inverted-leverage-effect-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.981"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mng-unconfirmed-idiosyncratic-move-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:12:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-realized-correlation-collapse-hedging-demand",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:12:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "robustness: xasset-vol-origin-attribution",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:16:04Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 12,
@@ -514,7 +489,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 306
+    "trials": 307
    }
   ]
  },
@@ -971,26 +946,6 @@
     "apex_max": 2
    }
   },
-  "xasset-vol-origin-attribution": {
-   "name": "xasset-vol-origin-attribution",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Overnight the first market whose realized volatility expands identifies shock origin; when MES itself expands first it is flow-driven and the equity open should continue rather than fade, so we go long MES at 09:30 on MES-leads days",
-   "metrics": {
-    "n": 46,
-    "wr": 0.6522,
-    "pf": 1.575,
-    "usd_mo": 45,
-    "usd_trade": 35.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T11:12:59.865538+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mes-corr-collapse-hedge": {
    "name": "mes-corr-collapse-hedge",
    "market": "MES",
@@ -1266,6 +1221,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
