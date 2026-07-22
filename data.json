@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:49:24Z",
+  "stamp": "2026-07-22T01:52:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,32 +412,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-backwardation-carry-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:40:36Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-volcontrol-releverage-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:40:36Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "robustness: mes-volcontrol-releverage-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:45:54Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 4,
