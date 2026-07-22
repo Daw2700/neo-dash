@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:53:19Z",
+  "stamp": "2026-07-22T16:55:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 525,
-  "n_results": 655,
-  "n_trials": 30643,
+  "n_registered": 527,
+  "n_results": 656,
+  "n_trials": 30644,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:54:41.797501+00:00",
+   "hash": "199289c3",
+   "name": "mes-intraday-momentum-halfhour-anchor",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T16:54:29.941947+00:00",
+   "hash": "8af28ad6",
+   "name": "m2k-crossmarket-vol-normalization-exit-clock",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T16:53:27.394402+00:00",
+   "hash": "1bf9297c",
+   "name": "mnq-volclock-exit-horizon",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.07"
+  },
+  {
    "t": "2026-07-22T16:53:02.506334+00:00",
    "hash": "66733061",
    "name": "mgc-am-zerotick-staleness-pm-range-fade",
@@ -321,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.6107"
-  },
-  {
-   "t": "2026-07-22T16:51:25.666754+00:00",
-   "hash": "1bf9297c",
-   "name": "mnq-volclock-exit-horizon",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T16:46:09.676265+00:00",
@@ -385,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.3746"
-  },
-  {
-   "t": "2026-07-22T16:40:02.638965+00:00",
-   "hash": "840512ac",
-   "name": "zc-neglect-catchup-attention-deficit",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.09"
-  },
-  {
-   "t": "2026-07-22T16:36:40.705912+00:00",
-   "hash": "cdf1cb5c",
-   "name": "mng-fuel-switching-band-elasticity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.959"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-volume-clock-exit-horizon-normalization",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:49:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-crossmarket-vol-normalization-exit-clock",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-intraday-momentum-halfhour-anchor",
     "stage": "dev3yr",
@@ -515,7 +507,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 73,
+   "registered": 74,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -577,7 +569,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 476
+    "trials": 477
    }
   ]
  },
@@ -586,7 +578,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 90,
+   "n_tested": 91,
    "n_killed": 52,
    "book_sleeves": [
     "b3-nr7-breakout",
