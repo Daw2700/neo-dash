@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:06:25Z",
+  "stamp": "2026-07-22T20:06:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:05:01Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-bidweek-physical-fixing-hedge-concentration",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:06:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mng-bidweek-physical-fixing-hedge-concentration",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 9,
     "idea": "m6e-monthend-turn-usd-funding-squeeze",
@@ -493,7 +492,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
