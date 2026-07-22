@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:54:41Z",
+  "stamp": "2026-07-22T03:57:50Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 184,
-  "n_results": 277,
-  "n_trials": 30248,
+  "n_registered": 186,
+  "n_results": 279,
+  "n_trials": 30250,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -281,6 +281,18 @@
    "usd_trade": -10.1
   },
   {
+   "id": "mes-preopen-volume-range-fade",
+   "name": "mes-preopen-volume-range-fade",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 134,
+   "wr": 0.4403,
+   "usd_mo": -74,
+   "pf": 0.626,
+   "usd_trade": -19.8
+  },
+  {
    "id": "zn-sunday-reopen-duration-unwind",
    "name": "zn-sunday-reopen-duration-unwind",
    "market": "ZN",
@@ -291,25 +303,33 @@
    "usd_mo": -133,
    "pf": 0.481,
    "usd_trade": -31.6
-  },
-  {
-   "id": "b7-down-weeks-dip",
-   "name": "b7-down-weeks-dip",
-   "market": "MNQ",
-   "tier": "demoted",
-   "pinned": false,
-   "n": 27,
-   "wr": 0.593,
-   "usd_mo": 61,
-   "pf": 1.945,
-   "usd_trade": 81.0,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 6
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T03:56:31.622682+00:00",
+   "hash": "1cba0fa5",
+   "name": "mcl-shorthorizon-trend-decay-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.556"
+  },
+  {
+   "t": "2026-07-22T03:56:13.200054+00:00",
+   "hash": "c2c584fa",
+   "name": "scout-17-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T03:55:04.627743+00:00",
+   "hash": "4503ab21",
+   "name": "mes-preopen-volume-range-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.626"
+  },
   {
    "t": "2026-07-22T03:54:37.909966+00:00",
    "hash": "d9eae2c2",
@@ -325,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.1169"
-  },
-  {
-   "t": "2026-07-22T03:53:01.534869+00:00",
-   "hash": "4503ab21",
-   "name": "mes-preopen-volume-range-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:51:54.327562+00:00",
@@ -389,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.195"
-  },
-  {
-   "t": "2026-07-22T03:37:08.663740+00:00",
-   "hash": "ddb339e5",
-   "name": "scout-16-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T03:36:52.417795+00:00",
-   "hash": "e8f8deba",
-   "name": "mes-eu-closed-momo",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.445"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-preopen-volume-range-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:51:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-shorthorizon-trend-decay-fade",
     "stage": "dev3yr",
@@ -499,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 81
+    "trials": 83
    }
   ]
  },
@@ -523,7 +511,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 15,
+   "n_tested": 16,
    "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
@@ -568,8 +556,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 9,
-   "n_killed": 7,
+   "n_tested": 10,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1193,6 +1181,26 @@
     }
    ]
   },
+  "mes-preopen-volume-range-fade": {
+   "name": "mes-preopen-volume-range-fade",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Overnight 18:00-09:30 ET contract volume is known before the RTH open and forecasts the RTH range monotonically; on the quietest pre-open days the day range is predictably small, so extension away from the opening range is liquidity demand for immediacy rather than information, and price reverts toward the opening range. We are paid for supplying that immediacy on a low-information day.",
+   "metrics": {
+    "n": 134,
+    "wr": 0.4403,
+    "pf": 0.626,
+    "usd_mo": -74,
+    "usd_trade": -19.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T03:55:04.627743+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "zn-sunday-reopen-duration-unwind": {
    "name": "zn-sunday-reopen-duration-unwind",
    "market": "ZN",
@@ -1212,35 +1220,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "b7-down-weeks-dip": {
-   "name": "b7-down-weeks-dip",
-   "market": "MNQ",
-   "tier": "demoted",
-   "mechanism": "Two consecutive down weeks trigger mechanical rebalancing inflows and exhaust retail capitulation, so the following Monday carries an amplified risk premium",
-   "metrics": {
-    "n": 27,
-    "wr": 0.593,
-    "pf": 1.945,
-    "usd_mo": 61,
-    "usd_trade": 81.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:12:29.404963+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T00:58:26.808888+00:00",
-     "stage": "robustness",
-     "verdict": "DEMOTED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 6
-   }
   }
  },
  "decisions": [
