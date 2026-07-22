@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:46:17Z",
+  "stamp": "2026-07-22T22:48:42Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 667,
-  "n_results": 819,
-  "n_trials": 30807,
+  "n_registered": 669,
+  "n_results": 820,
+  "n_trials": 30808,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 4
+  "needs_attention_count": 5
  },
  "leaderboard": [
   {
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:48:23.369818+00:00",
+   "hash": "45e5146e",
+   "name": "m6e-friday-european-session-weekend-derisk",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0273"
+  },
+  {
+   "t": "2026-07-22T22:48:14.965403+00:00",
+   "hash": "cd1ae7f7",
+   "name": "met-quarter-hour-boundary-flow-continuation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:43:27.810695+00:00",
    "hash": "14f51e73",
    "name": "zc-rma-volatility-factor-five-day-window",
@@ -381,22 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.186"
-  },
-  {
-   "t": "2026-07-22T22:29:28.065069+00:00",
-   "hash": "0a998b79",
-   "name": "zn-fid-forced-long-exit",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.284"
-  },
-  {
-   "t": "2026-07-22T22:29:24.033111+00:00",
-   "hash": "08013322",
-   "name": "mgc-option-assignment-delivery-flatten",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.576"
   }
  ],
  "pipeline": {
@@ -413,14 +413,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-tokyo-cash-open-hedge-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:46:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-friday-european-session-weekend-derisk",
     "stage": "dev3yr",
     "started": "2026-07-22T22:46:17Z",
     "state": "running"
@@ -520,7 +512,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 90,
+   "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -582,7 +574,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 640
+    "trials": 641
    }
   ]
  },
@@ -691,8 +683,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 27,
-   "n_killed": 26,
+   "n_tested": 28,
+   "n_killed": 27,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1367,6 +1359,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-rmawindow-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Borderline graduate: RMA crop-insurance window (PF 2.897, but n=15 both legs)",
+   "recommendation": "HOLD as candidate \u2014 every gate passed, but 15 trades per leg is the bare minimum and the engine won't vouch for book money on 30 total trades",
+   "evidence": "dev3yr: n=15, PF 2.897, $94/trade | robustness: SURVIVES | replication: PF 2.099 on ZS, n=15 \u2014 ratios are exceptional, samples are the floor",
+   "what_yes_means": "Approve anyway and it enters the book; hold and it stays a preserved candidate accruing evidence",
+   "recap": "USDA's RMA sets crop-insurance prices from 5-day discovery windows in Feb and Oct; hedging concentrates into those windows. The mechanism is real and documented \u2014 the question is purely whether 30 trades is enough proof.",
+   "why": "This is the exact profile the n>=15 floor was built to flag: gates all green, mechanism plausible, sample thin. Unlike the n=3 fluke this one is defensible either way \u2014 which is why it's your call, not the engine's. If held, next Feb/Oct windows add real out-of-sample evidence.",
+   "steps": [
+    "Approve: enters the book despite the thin sample (your risk tolerance, your call)",
+    "Deny/hold: stays a replicated candidate; future windows accrue evidence automatically",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-22T22:47:34Z"
+  },
   {
    "id": "d-wk10derisk-book-entry",
    "kind": "book_entry",
