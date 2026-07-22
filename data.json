@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:14:37Z",
+  "stamp": "2026-07-22T06:15:40Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 258,
   "n_results": 357,
@@ -408,19 +408,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T06:08:32Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zn-corporate-ratelock-issuance-hedge",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mes-dividend-exdate-cluster-carry",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mcl-rig-count-friday-supply-print",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mng-european-gas-open-lng-netback-transmission",
+    "source": "data-screen",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-ndx-annual-reconstitution-window",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "m6e-quarter-turn-fx-swap-basis-dislocation",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "zs-usda-daily-flash-sale-window",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mnq-pre-london-warmup-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-pboc-reserve-report-window",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "m2k-quarter-end-window-dressing-beta-topup",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "mcl-pipeline-nomination-deadline-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "mgc-etf-creation-hedge-1600-print",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "zc-first-notice-delivery-convergence-window",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 14,
+    "idea": "mym-component-split-divisor-rebalance",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
