@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:06:06Z",
+  "stamp": "2026-07-22T22:07:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 649,
-  "n_results": 801,
-  "n_trials": 30789,
+  "n_registered": 652,
+  "n_results": 802,
+  "n_trials": 30790,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:07:30.269072+00:00",
+   "hash": "dfa82f2b",
+   "name": "mes-treasury-roll-week-capacity-drain",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.103"
+  },
+  {
+   "t": "2026-07-22T22:07:20.926359+00:00",
+   "hash": "a78a2719",
+   "name": "zn-soma-reinvestment-cap-overflow-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:06:47.640893+00:00",
+   "hash": "5d81c244",
+   "name": "zc-fomc-surprise-liquidity-gradient-crossmarket",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:06:47.624676+00:00",
+   "hash": "e2b06890",
+   "name": "scout-46-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:05:57.810580+00:00",
    "hash": "dfa82f2b",
    "name": "mes-treasury-roll-week-capacity-drain",
@@ -365,38 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T21:51:46.694878+00:00",
-   "hash": "910828c3",
-   "name": "zc-post-fomc-liquidity-drain-impact-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.055"
-  },
-  {
-   "t": "2026-07-22T21:40:32.648679+00:00",
-   "hash": "fe1d48bb",
-   "name": "mes-cot-tue-snapshot",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.691"
-  },
-  {
-   "t": "2026-07-22T21:40:15.971006+00:00",
-   "hash": "686cb919",
-   "name": "mnq-derived-micro-settlement-anchor-divergence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.787"
-  },
-  {
-   "t": "2026-07-22T21:39:24.473182+00:00",
-   "hash": "8b33b276",
-   "name": "sil-oi-concentration-margin-addon-trim",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.893"
   }
  ],
  "pipeline": {
@@ -424,14 +424,6 @@
     "stage": "idea-scout",
     "started": "2026-07-22T22:06:06Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MNQ",
-    "task": "recheck: mes-treasury-roll-week-capacity-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:06:06Z",
-    "state": "running"
    }
   ],
   "backlog": [
@@ -447,7 +439,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 87,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 622
+    "trials": 623
    }
   ]
  },
