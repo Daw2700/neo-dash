@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:37:14Z",
+  "stamp": "2026-07-22T10:43:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 376,
-  "n_results": 481,
-  "n_trials": 30452,
+  "n_registered": 380,
+  "n_results": 484,
+  "n_trials": 30455,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "zn-cash-market-closed-futures-open-asymmetry",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 6,
+   "wr": 0.8333,
+   "usd_mo": 18,
+   "pf": 6.676,
+   "usd_trade": 105.1
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,41 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  {
-   "id": "mes-variance-risk-premium-carry",
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 208,
-   "wr": 0.524,
-   "usd_mo": 47,
-   "pf": 1.122,
-   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T10:42:59.398912+00:00",
+   "hash": "c785db7a",
+   "name": "mcl-commodity-index-category-beta-dislocation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.911"
+  },
+  {
+   "t": "2026-07-22T10:40:40.689274+00:00",
+   "hash": "032df17b",
+   "name": "mym-leverage-constraint-low-beta-tilt",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.036"
+  },
+  {
+   "t": "2026-07-22T10:40:09.435772+00:00",
+   "hash": "52440e70",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 6.676"
+  },
+  {
+   "t": "2026-07-22T10:39:05.949460+00:00",
+   "hash": "ed3a396f",
+   "name": "scout-29-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T10:37:02.309817+00:00",
    "hash": "e06501d7",
@@ -373,38 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.998"
-  },
-  {
-   "t": "2026-07-22T10:23:48.949787+00:00",
-   "hash": "c051fc76",
-   "name": "m6e-london-1600-fix-window-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.2524"
-  },
-  {
-   "t": "2026-07-22T10:20:38.351408+00:00",
-   "hash": "e4fcea22",
-   "name": "mnq-offshore-participation-share-expansion-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.963"
-  },
-  {
-   "t": "2026-07-22T10:20:02.231812+00:00",
-   "hash": "46a38551",
-   "name": "mnq-cost-basis-overhang-underreaction",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.283"
-  },
-  {
-   "t": "2026-07-22T10:19:06.645980+00:00",
-   "hash": "09ec70d3",
-   "name": "mnq-session-early-exhaustion-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-cash-market-closed-futures-open-asymmetry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:37:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-commodity-index-category-beta-dislocation",
     "stage": "dev3yr",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MYM",
     "task": "mym-leverage-constraint-low-beta-tilt",
     "stage": "dev3yr",
@@ -445,7 +437,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 48,
+   "registered": 49,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +499,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 285
+    "trials": 288
    }
   ]
  },
@@ -542,8 +534,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 2,
+   "n_tested": 4,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -578,8 +570,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 14,
+   "n_tested": 25,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -625,7 +617,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 27,
+   "n_tested": 28,
    "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
@@ -964,6 +956,26 @@
     "apex_max": 2
    }
   },
+  "zn-cash-market-closed-futures-open-asymmetry": {
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
+   "metrics": {
+    "n": 6,
+    "wr": 0.8333,
+    "pf": 6.676,
+    "usd_mo": 18,
+    "usd_trade": 105.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:40:09.435772+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1247,31 +1259,6 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  "mes-variance-risk-premium-carry": {
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
-   "metrics": {
-    "n": 208,
-    "wr": 0.524,
-    "pf": 1.122,
-    "usd_mo": 47,
-    "usd_trade": 8.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:04:02.729327+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
