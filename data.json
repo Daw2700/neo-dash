@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:48:42Z",
+  "stamp": "2026-07-22T03:49:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 178,
-  "n_results": 271,
-  "n_trials": 30242,
+  "n_registered": 179,
+  "n_results": 272,
+  "n_trials": 30243,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:48:59.313996+00:00",
+   "hash": "ad02659d",
+   "name": "mcl-opec-meeting-positioning-unwind",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T03:48:49.913388+00:00",
+   "hash": "160d63ff",
+   "name": "xsec-overnight-reversal-micro-complex",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.891"
+  },
+  {
    "t": "2026-07-22T03:48:32.983326+00:00",
    "hash": "314f0993",
    "name": "m6e-ecb-presser-reversal",
@@ -325,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.906"
-  },
-  {
-   "t": "2026-07-22T03:47:15.740308+00:00",
-   "hash": "160d63ff",
-   "name": "xsec-overnight-reversal-micro-complex",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:37:45.078459+00:00",
@@ -397,28 +405,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T03:27:19.075903+00:00",
-   "hash": "fe437e54",
-   "name": "m6e-monthend-london-fix-equity-hedge",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4456"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "xsec-overnight-reversal-micro-complex",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:46:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-opec-meeting-positioning-unwind",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-roll-window-front-contract-carry",
     "stage": "dev3yr",
@@ -545,7 +537,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 75
+    "trials": 76
    }
   ]
  },
@@ -554,8 +546,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 58,
-   "n_killed": 35,
+   "n_tested": 59,
+   "n_killed": 36,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
