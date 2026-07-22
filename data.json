@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:32:43Z",
+  "stamp": "2026-07-22T22:33:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 662,
-  "n_results": 812,
-  "n_trials": 30800,
+  "n_results": 814,
+  "n_trials": 30802,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,28 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:33:12.042392+00:00",
+   "hash": "f044ed39",
+   "name": "mgc-micro-delivery-month-retail-exit",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.451"
+  },
+  {
+   "t": "2026-07-22T22:33:07.070534+00:00",
+   "hash": "2817e3e9",
+   "name": "btic-close-hedge-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.567"
+  },
+  {
    "t": "2026-07-22T22:32:24.280760+00:00",
    "hash": "ed1eb41e",
    "name": "mbt-etf-creation-t1-settlement-unwind",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.186"
-  },
-  {
-   "t": "2026-07-22T22:31:51.963129+00:00",
-   "hash": "2817e3e9",
-   "name": "btic-close-hedge-release",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:31:45.747250+00:00",
-   "hash": "f044ed39",
-   "name": "mgc-micro-delivery-month-retail-exit",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T22:29:28.065069+00:00",
@@ -403,22 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-btic-close-referenced-hedge-release",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:29:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-micro-delivery-month-retail-exit",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:29:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-rma-volatility-factor-five-day-window",
     "stage": "dev3yr",
@@ -448,7 +432,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 90,
+   "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -510,7 +494,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 633
+    "trials": 635
    }
   ]
  },
@@ -519,8 +503,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 106,
-   "n_killed": 63,
+   "n_tested": 107,
+   "n_killed": 64,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -563,8 +547,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 38,
-   "n_killed": 31,
+   "n_tested": 39,
+   "n_killed": 32,
    "book_sleeves": [],
    "agents_now": []
   },
