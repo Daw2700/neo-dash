@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:49:05Z",
+  "stamp": "2026-07-22T07:51:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 300,
+  "n_registered": 301,
   "n_results": 401,
   "n_trials": 30372,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T07:50:18.693533+00:00",
+   "hash": "5596f651",
+   "name": "mcl-timeseries-momentum-risk-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T07:47:33.531349+00:00",
    "hash": "dfc869fe",
    "name": "mcl-upside-semivariance-exhaustion",
@@ -397,14 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.271"
-  },
-  {
-   "t": "2026-07-22T07:36:35.002815+00:00",
-   "hash": "27ca26e3",
-   "name": "mnq-event-free-day-flow-persistence",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.368"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T07:44:44Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-timeseries-momentum-risk-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:49:06Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mcl-timeseries-momentum-risk-premium",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 6,
     "idea": "mes-weekend-crypto-information-transfer",
@@ -519,8 +518,8 @@
    }
   ],
   "funnel": {
-   "idea": 10,
-   "registered": 33,
+   "idea": 9,
+   "registered": 34,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
