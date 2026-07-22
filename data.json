@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:15:42Z",
+  "stamp": "2026-07-22T06:21:59Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 258,
-  "n_results": 357,
-  "n_trials": 30328,
+  "n_registered": 261,
+  "n_results": 360,
+  "n_trials": 30331,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -233,6 +233,18 @@
    }
   },
   {
+   "id": "mes-divexdate-cluster",
+   "name": "mes-divexdate-cluster",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 120,
+   "wr": 0.5417,
+   "usd_mo": 35,
+   "pf": 1.16,
+   "usd_trade": 10.5
+  },
+  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -295,21 +307,33 @@
    "usd_mo": 2,
    "pf": 1.074,
    "usd_trade": 2.3
-  },
-  {
-   "id": "mcl-carry-regime",
-   "name": "mcl-carry-regime",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 37,
-   "wr": 0.4054,
-   "usd_mo": 9,
-   "pf": 1.043,
-   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T06:18:55.681468+00:00",
+   "hash": "b2fe77b9",
+   "name": "zn-corporate-ratelock-issuance-hedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.567"
+  },
+  {
+   "t": "2026-07-22T06:18:45.264308+00:00",
+   "hash": "dfbce2dc",
+   "name": "mes-divexdate-cluster",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.16"
+  },
+  {
+   "t": "2026-07-22T06:18:21.697237+00:00",
+   "hash": "a2c0f5f9",
+   "name": "mcl-rig-count-friday-supply-print",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.851"
+  },
   {
    "t": "2026-07-22T06:13:05.064001+00:00",
    "hash": "01d72293",
@@ -381,30 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T05:57:32.220572+00:00",
-   "hash": "fee2cfac",
-   "name": "mes-funding-basis-stress-cheapening",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.273"
-  },
-  {
-   "t": "2026-07-22T05:57:26.462564+00:00",
-   "hash": "6d2915b5",
-   "name": "mgc-late-session-inventory-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.63"
-  },
-  {
-   "t": "2026-07-22T05:52:30.696038+00:00",
-   "hash": "e42caa34",
-   "name": "mes-post-rates-unhedged-hour",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.808"
   }
  ],
  "pipeline": {
@@ -421,14 +421,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-dividend-exdate-cluster-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:15:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-rig-count-friday-supply-print",
     "stage": "dev3yr",
     "started": "2026-07-22T06:15:42Z",
     "state": "running"
@@ -599,7 +591,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 161
+    "trials": 164
    }
   ]
  },
@@ -623,7 +615,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 32,
+   "n_tested": 33,
    "n_killed": 20,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -670,8 +662,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 10,
+   "n_tested": 15,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -717,8 +709,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 16,
+   "n_tested": 20,
+   "n_killed": 17,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1226,6 +1218,26 @@
     "apex_max": 6
    }
   },
+  "mes-divexdate-cluster": {
+   "name": "mes-divexdate-cluster",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "S&P 500 constituent ex-dividend dates cluster in the first two weeks of Feb/May/Aug/Nov; the cash index drops mechanically by the dividend on those days while MES futures already embed the expected dividend strip in the basis, so realized-vs-embedded dividend timing risk is transferred via the carry component of the futures-cash basis rather than directional information, proxied here (no cash-index/dividend feed in data/) as a calendar-window long drift test in MES itself.",
+   "metrics": {
+    "n": 120,
+    "wr": 0.5417,
+    "pf": 1.16,
+    "usd_mo": 35,
+    "usd_trade": 10.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T06:18:45.264308+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1337,26 +1349,6 @@
      "t": "2026-07-21T16:04:19.693873+00:00",
      "stage": "dev3yr",
      "verdict": "FAIL"
-    }
-   ]
-  },
-  "mcl-carry-regime": {
-   "name": "mcl-carry-regime",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Crude oil term structure prices the inventory / convenience-yield state: in backwardation inventories are tight and producers pay long speculators a positive risk premium to carry hedged exposure, while in contango that premium reverses and storage holders are paid instead. Signing MCL direction off the front-versus-deferred basis therefore harvests a producer-hedging risk premium rather than any event reaction, per Gorton and Rouwenhorst and Erb and Harvey.",
-   "metrics": {
-    "n": 37,
-    "wr": 0.4054,
-    "pf": 1.043,
-    "usd_mo": 9,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T01:43:38.994772+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
     }
    ]
   }
