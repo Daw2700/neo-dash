@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:25:26Z",
+  "stamp": "2026-07-22T03:29:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 169,
-  "n_results": 261,
-  "n_trials": 30232,
+  "n_registered": 171,
+  "n_results": 265,
+  "n_trials": 30236,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:28:06.294236+00:00",
+   "hash": "43e185a4",
+   "name": "mnq-m2k-open-dispersion-continuation",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T03:27:52.433770+00:00",
+   "hash": "cf1eedfa",
+   "name": "mnq-vix-soq-wed-open-distortion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.459"
+  },
+  {
+   "t": "2026-07-22T03:27:23.410699+00:00",
+   "hash": "43e185a4",
+   "name": "mnq-m2k-open-dispersion-continuation",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T03:27:19.075903+00:00",
+   "hash": "fe437e54",
+   "name": "m6e-monthend-london-fix-equity-hedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.4456"
+  },
+  {
    "t": "2026-07-22T03:23:01.172547+00:00",
    "hash": "2d6605d2",
    "name": "mgc-overnight-inventory-continuation",
@@ -369,38 +401,6 @@
    "status": "replicates",
    "kind": "result",
    "detail": "PF 1.211"
-  },
-  {
-   "t": "2026-07-22T03:05:16.603973+00:00",
-   "hash": "f574f769",
-   "name": "mes-vanna-ivcrush-dealer-rebuy",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.531"
-  },
-  {
-   "t": "2026-07-22T03:04:26.750105+00:00",
-   "hash": "cd643130",
-   "name": "scout-15-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T03:03:32.572110+00:00",
-   "hash": "25548a41",
-   "name": "mng-bidweek-baseload",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.917"
-  },
-  {
-   "t": "2026-07-22T03:03:23.030843+00:00",
-   "hash": "284ae274",
-   "name": "mes-macro-annday-premium-exfomc",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.206"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-monthend-london-fix-equity-hedge",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:25:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-vix-soq-wednesday-open-distortion",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 65
+    "trials": 69
    }
   ]
  },
@@ -532,8 +524,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 57,
-   "n_killed": 34,
+   "n_tested": 58,
+   "n_killed": 35,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -630,8 +622,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 3,
+   "n_tested": 4,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1047,6 +1039,16 @@
      "t": "2026-07-22T03:19:30.789998+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T03:27:23.410699+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T03:28:06.294236+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
