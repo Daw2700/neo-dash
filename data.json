@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:47:17Z",
+  "stamp": "2026-07-22T20:49:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 623,
-  "n_results": 768,
-  "n_trials": 30756,
+  "n_registered": 625,
+  "n_results": 769,
+  "n_trials": 30757,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,9 +303,25 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T20:47:08.240593+00:00",
+   "t": "2026-07-22T20:48:45.560053+00:00",
+   "hash": "6398b5e7",
+   "name": "mbt-treasury-monday-disclosure-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T20:47:53.741679+00:00",
    "hash": "bc01a79f",
    "name": "mng-monthly-hedge-deadline-vol-ramp",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.722"
+  },
+  {
+   "t": "2026-07-22T20:47:37.575006+00:00",
+   "hash": "3b30a655",
+   "name": "zc-livestock-cof-sunday-transfer",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -381,22 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.736"
-  },
-  {
-   "t": "2026-07-22T20:19:21.231177+00:00",
-   "hash": "47b77745",
-   "name": "zn-fomc-blackout-void-persistence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.634"
-  },
-  {
-   "t": "2026-07-22T20:19:12.167805+00:00",
-   "hash": "e0a18764",
-   "name": "scout-44-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-monthly-hedge-deadline-vol-ramp",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:45:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MBT",
     "task": "mbt-treasury-company-monday-disclosure-window",
     "stage": "dev3yr",
@@ -466,7 +458,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 87,
+   "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -528,7 +520,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 589
+    "trials": 590
    }
   ]
  },
@@ -608,8 +600,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 17,
+   "n_tested": 22,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
