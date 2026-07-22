@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:31:18Z",
+  "stamp": "2026-07-22T05:37:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 239,
-  "n_results": 336,
-  "n_trials": 30307,
+  "n_registered": 242,
+  "n_results": 339,
+  "n_trials": 30310,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 1
+  "needs_attention_count": 0
  },
  "leaderboard": [
   {
@@ -93,6 +93,22 @@
    }
   },
   {
+   "id": "mes-gold-overnight-macro-signal-open-continuation",
+   "name": "mes-gold-overnight-macro-signal-open-continuation",
+   "market": "MES",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 142,
+   "wr": 0.5704,
+   "usd_mo": 45,
+   "pf": 1.388,
+   "usd_trade": 11.5,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
+  },
+  {
    "id": "b3-preholiday-drift",
    "name": "b3-preholiday-drift",
    "market": "MNQ",
@@ -171,30 +187,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mes-gold-overnight-macro-signal-open-continuation",
-   "name": "mes-gold-overnight-macro-signal-open-continuation",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 142,
-   "wr": 0.5704,
-   "usd_mo": 45,
-   "pf": 1.388,
-   "usd_trade": 11.5
-  },
-  {
-   "id": "mng-final-settlement-physical-exit-window",
-   "name": "mng-final-settlement-physical-exit-window",
-   "market": "MNG",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 10,
-   "wr": 0.5,
-   "usd_mo": 2,
-   "pf": 1.296,
-   "usd_trade": 6.3
   },
   {
    "id": "b3-prior-high-break",
@@ -303,9 +295,53 @@
    "usd_mo": 9,
    "pf": 1.043,
    "usd_trade": 9.1
+  },
+  {
+   "id": "mcl-refinery-turnaround-premium",
+   "name": "mcl-refinery-turnaround-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 266,
+   "wr": 0.5263,
+   "usd_mo": -24,
+   "pf": 0.958,
+   "usd_trade": -3.2
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T05:35:05.450913+00:00",
+   "hash": "a12d6eaa",
+   "name": "mes-opening-auction-imbalance-print-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.122"
+  },
+  {
+   "t": "2026-07-22T05:34:57.964263+00:00",
+   "hash": "124fd8b1",
+   "name": "mng-final-settlement-physical-exit-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T05:34:24.498144+00:00",
+   "hash": "6d2e6f18",
+   "name": "mgc-lny-restock-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.122"
+  },
+  {
+   "t": "2026-07-22T05:31:59.397614+00:00",
+   "hash": "8aa26b3b",
+   "name": "scout-21-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T05:28:32.263884+00:00",
    "hash": "124fd8b1",
@@ -369,38 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.256"
-  },
-  {
-   "t": "2026-07-22T05:18:16.839571+00:00",
-   "hash": "ac6fb831",
-   "name": "m6e-equity-drawdown-hedge-ratio-rebalance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1777"
-  },
-  {
-   "t": "2026-07-22T05:16:44.956650+00:00",
-   "hash": "9686704d",
-   "name": "mcl-monthly-agency-balance-report-cluster",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 5.241"
-  },
-  {
-   "t": "2026-07-22T05:14:03.224443+00:00",
-   "hash": "7f9e99fb",
-   "name": "mes-early-close-session-compression",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T05:14:01.994917+00:00",
-   "hash": "b7e7b003",
-   "name": "mes-macro-surprise-sign-flip-bond-confirmed",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.695"
   }
  ],
  "pipeline": {
@@ -428,20 +432,12 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:31:18Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MGC",
-    "task": "mgc-lunar-new-year-physical-restock-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:31:18Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 21,
+   "registered": 22,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +499,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 140
+    "trials": 143
    }
   ]
  },
@@ -527,9 +523,11 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 17,
-   "book_sleeves": [],
+   "n_tested": 27,
+   "n_killed": 18,
+   "book_sleeves": [
+    "mes-gold-overnight-macro-signal-open-continuation"
+   ],
    "agents_now": []
   },
   {
@@ -554,8 +552,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 9,
+   "n_tested": 11,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -838,6 +836,46 @@
     "apex_max": 1
    }
   },
+  "mes-gold-overnight-macro-signal-open-continuation": {
+   "name": "mes-gold-overnight-macro-signal-open-continuation",
+   "market": "MES",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Gold trades a deep London session while US equity cash is shut, so an overnight real-rate/risk repricing gets fully expressed in MGC but only partially in thin equity futures; the US equity open is the first moment that repricing meets real depth and index desks complete it, producing sign-matched MES continuation after the open.",
+   "metrics": {
+    "n": 142,
+    "wr": 0.5704,
+    "pf": 1.388,
+    "usd_mo": 45,
+    "usd_trade": 11.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:57:15.755183+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T05:02:42.644116+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T05:06:44.870691+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
+  },
   "b3-preholiday-drift": {
    "name": "b3-preholiday-drift",
    "market": "MNQ",
@@ -1009,56 +1047,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mes-gold-overnight-macro-signal-open-continuation": {
-   "name": "mes-gold-overnight-macro-signal-open-continuation",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Gold trades a deep London session while US equity cash is shut, so an overnight real-rate/risk repricing gets fully expressed in MGC but only partially in thin equity futures; the US equity open is the first moment that repricing meets real depth and index desks complete it, producing sign-matched MES continuation after the open.",
-   "metrics": {
-    "n": 142,
-    "wr": 0.5704,
-    "pf": 1.388,
-    "usd_mo": 45,
-    "usd_trade": 11.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T04:57:15.755183+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T05:02:42.644116+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T05:06:44.870691+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "mng-final-settlement-physical-exit-window": {
-   "name": "mng-final-settlement-physical-exit-window",
-   "market": "MNG",
-   "tier": "candidate",
-   "mechanism": "MNG (Micro Henry Hub NatGas) trading terminates 3 business days prior to the first day of the delivery month; physical settlement at Henry Hub. Nearly all speculative open interest lacks pipeline/delivery capacity and must be flat by the last trading date (LTD), so the sessions running into LTD carry a deadline-driven, direction-agnostic forced-liquidation flow unrelated to the gas balance itself. Given MNG's dominant mean-reverting microstructure (screen B: 15m variance ratios 0.30-0.66 across every segment), that forced flow should overshoot and revert -> we FADE the pre-LTD directional run-up on the LTD session itself (sign chosen per-event from the run, not pre-committed to one side, since the liquidation direction is direction-agnostic by construction).",
-   "metrics": {
-    "n": 10,
-    "wr": 0.5,
-    "pf": 1.296,
-    "usd_mo": 2,
-    "usd_trade": 6.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T05:28:32.263884+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
   },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
@@ -1251,32 +1239,29 @@
      "verdict": "KILLED"
     }
    ]
+  },
+  "mcl-refinery-turnaround-premium": {
+   "name": "mcl-refinery-turnaround-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Spring and autumn refinery maintenance turnarounds remove physical crude demand on an operator-published calendar, so refiners stop buying and crude inventories build predictably; length carried through those windows is compensated for absorbing the unwanted barrels, so a long held only inside the turnaround calendar should earn a positive risk premium.",
+   "metrics": {
+    "n": 266,
+    "wr": 0.5263,
+    "pf": 0.958,
+    "usd_mo": -24,
+    "usd_trade": -3.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:30:38.572710+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
- "decisions": [
-  {
-   "id": "d-goldsignal-mirror-sync",
-   "kind": "cleanup",
-   "needs_attention": true,
-   "title": "Book entry is on the ledger, but the published book and all sizing still exclude it",
-   "recommendation": "Approve the mirror edits + a sizing re-run so the new sleeve actually counts",
-   "evidence": "Book membership is hard-coded in three places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 7 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set) and ~/neo-dashboard/sizing.py (VALIDATED set + the CSV id->file map + the RARE/XMKT bundle lists). The trade log data/trades_mes-gold-overnight-macro-signal-open-continuation.csv already exists (n=142, 2022-06-14..2025-02-06), so sizing can run as soon as the map entry is added. Pending: mes-gold-overnight-macro-signal-open-continuation (cc36a7782520b1be) \u2014 approved for ADMISSION 2026-07-22; needs adding, not removing",
-   "what_yes_means": "The site shows a 7-sleeve book, sizing computes max micros for the new sleeve under the same 20% breach cap, and every bundle + the $10k roadmap recompute including it",
-   "recap": "You approved the gold-signal sleeve into the book and the ledger says so. The dashboard hasn't caught up: its copy of the book list and the whole sizing map live in files the executor wasn't allowed to edit, so the site still shows 6 sleeves and the new one gets zero micros in every bundle.",
-   "why": "The ledger is the source of truth and it already records the admission, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are all driven by duplicated lists. Rather than silently edit a public repo the engine auto-pushes, the engine asks first. It is a hash, an id, a CSV-map line, and a sizing re-run.",
-   "steps": [
-    "Approve: add cc36a7782520b1be to ~/neo-dashboard/build_data.py VALID",
-    "Add 'mes-gold-overnight-macro-signal-open-continuation' to ~/neo-dashboard/sizing.py VALIDATED and to the CSV map (-> trades_mes-gold-overnight-macro-signal-open-continuation.csv)",
-    "Decide its bundle tags (rare-firing; cross-market MGC->MES) for the RARE / XMKT lists",
-    "Re-run sizing.py then build_data.py; engine pushes on its next publish",
-    "Deny: the ledger admission still stands, but the published book stays at 6 sleeves and the sleeve earns no allocation"
-   ],
-   "pending_mirrors": [
-    "mes-gold-overnight-macro-signal-open-continuation (cc36a7782520b1be) \u2014 approved for ADMISSION 2026-07-22; needs adding, not removing"
-   ],
-   "staged": "2026-07-22T05:27:19Z"
-  }
- ],
+ "decisions": [],
  "roadmap": {
   "goal_usd_mo": 10000,
   "books": [
@@ -1344,18 +1329,63 @@
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
-    "rep-bondflight-mes": 1,
+    "b2-opex-release": 1,
     "b3-tom-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b3-prior-high-break": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.194,
-   "usd_mo": 495,
-   "usd_mo_5acct": 2475,
-   "pct_goal": 0.891,
+   "total_micros": 10,
+   "p_breach": 0.185,
+   "usd_mo": 552,
+   "usd_mo_5acct": 2760,
+   "pct_goal": 0.994,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 8910
+   "usd_mo_total": 9936
+  },
+  {
+   "id": "Validated 8 (the book)|apex150",
+   "name": "Validated 8 (the book)",
+   "plan": "apex150 (verified)",
+   "provisional": false,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.178,
+   "usd_mo": 372,
+   "usd_mo_5acct": 1860,
+   "pct_goal": 0.67,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 6696
+  },
+  {
+   "id": "Validated 8 + vix-reversion|apex150",
+   "name": "Validated 8 + vix-reversion",
+   "plan": "apex150 (verified)",
+   "provisional": false,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.178,
+   "usd_mo": 372,
+   "usd_mo_5acct": 1860,
+   "pct_goal": 0.67,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 6696
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1377,48 +1407,6 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6678
-  },
-  {
-   "id": "Validated 8 (the book)|apex150",
-   "name": "Validated 8 (the book)",
-   "plan": "apex150 (verified)",
-   "provisional": false,
-   "assumed_rules": false,
-   "members": {
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.174,
-   "usd_mo": 340,
-   "usd_mo_5acct": 1700,
-   "pct_goal": 0.612,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 6120
-  },
-  {
-   "id": "Validated 8 + vix-reversion|apex150",
-   "name": "Validated 8 + vix-reversion",
-   "plan": "apex150 (verified)",
-   "provisional": false,
-   "assumed_rules": false,
-   "members": {
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.174,
-   "usd_mo": 340,
-   "usd_mo_5acct": 1700,
-   "pct_goal": 0.612,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 6120
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1474,16 +1462,17 @@
     "b3-monday-long": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 11,
+   "total_micros": 12,
    "p_breach": 0.199,
-   "usd_mo": 796,
-   "usd_mo_5acct": 3980,
-   "pct_goal": 0.398,
+   "usd_mo": 849,
+   "usd_mo_5acct": 4245,
+   "pct_goal": 0.424,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3980
+   "usd_mo_total": 4245
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -1493,19 +1482,20 @@
    "assumed_rules": false,
    "members": {
     "b3-nr7-breakout": 3,
-    "b10-nagel-vix-reversal": 2,
+    "b10-nagel-vix-reversal": 3,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b2-vix-reversion": 2
    },
-   "total_micros": 10,
-   "p_breach": 0.168,
-   "usd_mo": 662,
-   "usd_mo_5acct": 3310,
-   "pct_goal": 0.331,
+   "total_micros": 12,
+   "p_breach": 0.193,
+   "usd_mo": 753,
+   "usd_mo_5acct": 3765,
+   "pct_goal": 0.377,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3310
+   "usd_mo_total": 3765
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -1514,20 +1504,20 @@
    "provisional": false,
    "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
-    "b4-open-drive": 2
+    "b4-open-drive": 2,
+    "mes-gold-overnight-macro-signal-open-continuation": 2
    },
-   "total_micros": 10,
-   "p_breach": 0.191,
-   "usd_mo": 628,
-   "usd_mo_5acct": 3140,
-   "pct_goal": 0.314,
+   "total_micros": 11,
+   "p_breach": 0.199,
+   "usd_mo": 666,
+   "usd_mo_5acct": 3330,
+   "pct_goal": 0.333,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3140
+   "usd_mo_total": 3330
   },
   {
    "id": "Frequent-firing engine|growth",

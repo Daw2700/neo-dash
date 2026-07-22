@@ -86,6 +86,14 @@
     "max_micros": 1
    }
   },
+  "mes-gold-overnight-macro-signal-open-continuation": {
+   "growth": {
+    "max_micros": 7
+   },
+   "apex150": {
+    "max_micros": 5
+   }
+  },
   "b3-prior-high-break": {
    "growth": {
     "max_micros": 2
@@ -126,13 +134,14 @@
     "b3-monday-long": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 11,
+   "total_micros": 12,
    "p_breach": 0.199,
-   "usd_mo": 796,
-   "usd_mo_5acct": 3980,
-   "pct_goal": 0.398
+   "usd_mo": 849,
+   "usd_mo_5acct": 4245,
+   "pct_goal": 0.424
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -142,16 +151,17 @@
    "assumed_rules": false,
    "members": {
     "b3-nr7-breakout": 3,
-    "b10-nagel-vix-reversal": 2,
+    "b10-nagel-vix-reversal": 3,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b2-vix-reversion": 2
    },
-   "total_micros": 10,
-   "p_breach": 0.168,
-   "usd_mo": 662,
-   "usd_mo_5acct": 3310,
-   "pct_goal": 0.331
+   "total_micros": 12,
+   "p_breach": 0.193,
+   "usd_mo": 753,
+   "usd_mo_5acct": 3765,
+   "pct_goal": 0.377
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -160,17 +170,17 @@
    "provisional": false,
    "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
-    "b4-open-drive": 2
+    "b4-open-drive": 2,
+    "mes-gold-overnight-macro-signal-open-continuation": 2
    },
-   "total_micros": 10,
-   "p_breach": 0.191,
-   "usd_mo": 628,
-   "usd_mo_5acct": 3140,
-   "pct_goal": 0.314
+   "total_micros": 11,
+   "p_breach": 0.199,
+   "usd_mo": 666,
+   "usd_mo_5acct": 3330,
+   "pct_goal": 0.333
   },
   {
    "id": "Frequent-firing engine|growth",
@@ -203,15 +213,16 @@
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
-    "rep-bondflight-mes": 1,
+    "b2-opex-release": 1,
     "b3-tom-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b3-prior-high-break": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.194,
-   "usd_mo": 495,
-   "usd_mo_5acct": 2475,
-   "pct_goal": 0.247
+   "total_micros": 10,
+   "p_breach": 0.185,
+   "usd_mo": 552,
+   "usd_mo_5acct": 2760,
+   "pct_goal": 0.276
   },
   {
    "id": "Cross-market spread|growth",
@@ -232,6 +243,44 @@
    "pct_goal": 0.217
   },
   {
+   "id": "Validated 8 (the book)|apex150",
+   "name": "Validated 8 (the book)",
+   "plan": "apex150 (verified)",
+   "provisional": false,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.178,
+   "usd_mo": 372,
+   "usd_mo_5acct": 1860,
+   "pct_goal": 0.186
+  },
+  {
+   "id": "Validated 8 + vix-reversion|apex150",
+   "name": "Validated 8 + vix-reversion",
+   "plan": "apex150 (verified)",
+   "provisional": false,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.178,
+   "usd_mo": 372,
+   "usd_mo_5acct": 1860,
+   "pct_goal": 0.186
+  },
+  {
    "id": "Cross-market spread|apex150",
    "name": "Cross-market spread",
    "plan": "apex150 (verified)",
@@ -248,42 +297,6 @@
    "usd_mo": 371,
    "usd_mo_5acct": 1855,
    "pct_goal": 0.185
-  },
-  {
-   "id": "Validated 8 (the book)|apex150",
-   "name": "Validated 8 (the book)",
-   "plan": "apex150 (verified)",
-   "provisional": false,
-   "assumed_rules": false,
-   "members": {
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.174,
-   "usd_mo": 340,
-   "usd_mo_5acct": 1700,
-   "pct_goal": 0.17
-  },
-  {
-   "id": "Validated 8 + vix-reversion|apex150",
-   "name": "Validated 8 + vix-reversion",
-   "plan": "apex150 (verified)",
-   "provisional": false,
-   "assumed_rules": false,
-   "members": {
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.174,
-   "usd_mo": 340,
-   "usd_mo_5acct": 1700,
-   "pct_goal": 0.17
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
