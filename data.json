@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:31:39Z",
+  "stamp": "2026-07-22T23:33:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 684,
-  "n_results": 837,
-  "n_trials": 30825,
+  "n_registered": 686,
+  "n_results": 839,
+  "n_trials": 30827,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -299,6 +299,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T23:33:25.614208+00:00",
+   "hash": "39a07683",
+   "name": "mes-post-opex-gamma-unclench-week",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.875"
+  },
+  {
+   "t": "2026-07-22T23:33:23.547849+00:00",
+   "hash": "ef7ae51d",
+   "name": "m6e-london-open-impulse-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.5327"
+  },
+  {
    "t": "2026-07-22T23:28:55.377537+00:00",
    "hash": "9e6981bd",
    "name": "mes-secondtier-attention-drift",
@@ -377,22 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.066"
-  },
-  {
-   "t": "2026-07-22T22:56:14.634452+00:00",
-   "hash": "03d7d0e0",
-   "name": "mes-short-horizon-trend-crowding-liquidity-provision",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.748"
-  },
-  {
-   "t": "2026-07-22T22:55:43.506211+00:00",
-   "hash": "7280bdfd",
-   "name": "mcl-factor-momentum-timing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.484"
   }
  ],
  "pipeline": {
@@ -403,22 +403,6 @@
     "task": "robustness: mnq-index-52wk-high-anchor-continuation",
     "stage": "dev3yr",
     "started": "2026-07-22T23:31:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-london-open-impulse-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:31:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-post-opex-gamma-unclench-week",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:31:38Z",
     "state": "running"
    }
   ],
@@ -506,7 +490,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 658
+    "trials": 660
    }
   ]
  },
@@ -530,8 +514,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 116,
-   "n_killed": 88,
+   "n_tested": 117,
+   "n_killed": 89,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -615,8 +599,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 28,
+   "n_tested": 30,
+   "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
   },
