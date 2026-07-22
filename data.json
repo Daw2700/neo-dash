@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:26:17Z",
+  "stamp": "2026-07-22T13:31:27Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 444,
   "n_results": 561,
@@ -404,19 +404,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T13:20:32Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-maintenance-break-inventory-reversal",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.72
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-crossindex-leadership-identity-rotation",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 3,
+    "idea": "mes-trading-day-count-flow-compression",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 4,
+    "idea": "zn-depth-normalized-impact-amplification-reversion",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.56
+   },
+   {
+    "rank": 5,
+    "idea": "zn-path-efficiency-inventory-overnight-carry",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 6,
+    "idea": "zs-monthstart-cash-basis-pricing-window",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 7,
+    "idea": "zc-ethanol-margin-demand-hedge-lag",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 8,
+    "idea": "mgc-option-expiry-underlying-desync",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 9,
+    "idea": "mng-untradeable-bar-density-pentup-flow",
+    "source": "data-screen",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "mbt-miner-fiat-cost-distribution-window",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 11,
+    "idea": "mym-thin-leg-hedge-residual-decay",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-closure-length-dose-response-reopen-overshoot",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 13,
+    "idea": "mes-tail-hour-quote-instability-rent",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 60,
    "dev3yr": 0,
    "robustness": 0,
