@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:39:38Z",
+  "stamp": "2026-07-22T21:40:21Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 641,
-  "n_results": 790,
-  "n_trials": 30778,
+  "n_registered": 642,
+  "n_results": 791,
+  "n_trials": 30779,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,20 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:40:15.971006+00:00",
+   "hash": "686cb919",
+   "name": "mnq-derived-micro-settlement-anchor-divergence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.787"
+  },
+  {
+   "t": "2026-07-22T21:39:58.234230+00:00",
+   "hash": "fe1d48bb",
+   "name": "mes-cot-tue-snapshot",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T21:39:24.473182+00:00",
    "hash": "8b33b276",
    "name": "sil-oi-concentration-margin-addon-trim",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.893"
-  },
-  {
-   "t": "2026-07-22T21:38:28.322675+00:00",
-   "hash": "686cb919",
-   "name": "mnq-derived-micro-settlement-anchor-divergence",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T21:37:47.510073+00:00",
@@ -389,26 +397,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.386"
-  },
-  {
-   "t": "2026-07-22T21:26:31.631576+00:00",
-   "hash": "5fb81f4e",
-   "name": "m2k-opening-basket-staleness-catchup",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.764"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-derived-micro-settlement-anchor-divergence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:35:17Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-cot-tuesday-snapshot-positioning",
     "stage": "dev3yr",
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 611
+    "trials": 612
    }
   ]
  },
@@ -500,8 +492,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 105,
-   "n_killed": 62,
+   "n_tested": 106,
+   "n_killed": 63,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
