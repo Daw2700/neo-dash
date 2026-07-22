@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:25:22Z",
+  "stamp": "2026-07-22T17:25:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,21 +412,35 @@
     "stage": "dev3yr",
     "started": "2026-07-22T17:22:54Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 14,
-    "idea": "mcl-london-overlap-variance-share-idiosyncratic-fade",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T17:25:23Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "recheck: mgc-corrsign-dip-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:25:23Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "mcl-london-overlap-variance-share-idiosyncratic-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:25:23Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 75,
    "dev3yr": 0,
    "robustness": 0,
