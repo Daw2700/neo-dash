@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:59:36Z",
+  "stamp": "2026-07-22T04:59:57Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 226,
   "n_results": 321,
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "recheck: zc-export-inspections-monday-shipment-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:56:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-gold-overnight-macro-signal-open-continuation",
     "stage": "dev3yr",
