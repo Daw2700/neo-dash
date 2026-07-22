@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:28:12Z",
+  "stamp": "2026-07-22T01:28:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,30 +420,27 @@
     "stage": "dev3yr",
     "started": "2026-07-22T01:19:04Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 9,
-    "idea": "zn-volshock-equity-degross-rebound",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
    },
    {
-    "rank": 10,
-    "idea": "mcl-producer-hedge-window-rth-drift",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": null
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "zn-volshock-equity-degross-rebound",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:28:15Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-producer-hedge-window-rth-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:28:15Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 6,
    "dev3yr": 0,
    "robustness": 0,
