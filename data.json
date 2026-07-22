@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:05:03Z",
+  "stamp": "2026-07-22T05:05:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -404,7 +404,16 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "replication: mes-gold-overnight-macro-signal-open-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:05:05Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
    {
     "rank": 3,
