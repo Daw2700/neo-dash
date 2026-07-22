@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:50:31Z",
+  "stamp": "2026-07-22T15:54:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 496,
-  "n_results": 625,
-  "n_trials": 30613,
+  "n_registered": 499,
+  "n_results": 627,
+  "n_trials": 30615,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 2
+  "needs_attention_count": 3
  },
  "leaderboard": [
   {
@@ -307,6 +307,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:52:48.358499+00:00",
+   "hash": "9e36913b",
+   "name": "xmkt-epps-quiet-day-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T15:52:35.671289+00:00",
+   "hash": "b7d793e7",
+   "name": "sil-crude-settle-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.288"
+  },
+  {
+   "t": "2026-07-22T15:52:13.200686+00:00",
+   "hash": "d1effc5b",
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.313"
+  },
+  {
+   "t": "2026-07-22T15:51:08.015062+00:00",
+   "hash": "8437d0a5",
+   "name": "rep-mes-depth-consumption-print-size-range-forecast-mnq",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T15:47:35.689403+00:00",
    "hash": "15abd9f0",
    "name": "mes-deseasonalized-vol-surprise-gate",
@@ -369,38 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.466"
-  },
-  {
-   "t": "2026-07-22T15:29:17.685763+00:00",
-   "hash": "2ee7287c",
-   "name": "scout-36-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T15:28:02.757234+00:00",
-   "hash": "0c95be71",
-   "name": "zn-thin-minute-variance-share-noninformation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.503"
-  },
-  {
-   "t": "2026-07-22T15:27:31.031420+00:00",
-   "hash": "c32ab3d9",
-   "name": "mgc-gap-sign-streak-offshore-accumulation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.171"
-  },
-  {
-   "t": "2026-07-22T15:26:44.453304+00:00",
-   "hash": "32382ed8",
-   "name": "zs-spot-month-speculative-limit-forced-exit",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.749"
   }
  ],
  "pipeline": {
@@ -408,21 +408,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "replication: mes-depth-consumption-print-size-range-forecast",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:50:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "xmkt-epps-integration-gap-quiet-day-fade",
     "stage": "dev3yr",
     "started": "2026-07-22T15:50:07Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "xmkt-settlement-cascade-spillover",
     "stage": "dev3yr",
@@ -497,7 +489,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 67,
+   "registered": 69,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +551,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 446
+    "trials": 448
    }
   ]
  },
@@ -621,8 +613,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 3,
+   "n_tested": 5,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1308,6 +1300,11 @@
      "t": "2026-07-22T15:47:15.796894+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T15:52:13.200686+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
@@ -1333,6 +1330,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-depthcons-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Fourth machine-discovered sleeve ready: depth-consumption range forecast (PF 1.168)",
+   "recommendation": "ADMIT to the book \u2014 full funnel passed with a strong replication (PF 1.313 on MNQ)",
+   "evidence": "dev3yr: n=124, PF 1.168, $9.1/trade | robustness: SURVIVES | replication: PF 1.313 on MNQ vs 1.10 bar \u2014 a solid carry, not a graze",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "When early-session prints consume unusually deep liquidity, the session's range expands predictably and the strategy positions for it. Discovered, hardened, and replicated by the engine this afternoon.",
+   "why": "Cleared every pre-registered gate with a replication margin (1.313 vs 1.10) comparable to gold-signal's \u2014 the strong-carry profile that distinguishes the two admitted graduates from the borderline ones. Microstructure mechanism with liquidity-consumption logic rather than calendar luck.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you ask for",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-22T15:53:11Z"
+  },
   {
    "id": "d-closurelen-book-entry",
    "kind": "book_entry",
