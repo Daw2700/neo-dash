@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:15:25Z",
+  "stamp": "2026-07-22T18:20:09Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 562,
-  "n_results": 697,
-  "n_trials": 30685,
+  "n_registered": 565,
+  "n_results": 700,
+  "n_trials": 30688,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:18:29.033015+00:00",
+   "hash": "f3e557d6",
+   "name": "mnq-prior-settlement-anchor-premarket-reversion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.071"
+  },
+  {
+   "t": "2026-07-22T18:18:22.071159+00:00",
+   "hash": "c48aebc5",
+   "name": "xmkt-volshare-defensive-rotation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.072"
+  },
+  {
+   "t": "2026-07-22T18:17:23.054371+00:00",
+   "hash": "23e444e5",
+   "name": "mes-wed-night-risk-reestablishment",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.159"
+  },
+  {
    "t": "2026-07-22T18:14:48.455567+00:00",
    "hash": "ae5e7176",
    "name": "mcl-eia-day-midsession-to-close-momentum",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.733"
-  },
-  {
-   "t": "2026-07-22T17:58:07.453773+00:00",
-   "hash": "12ee5379",
-   "name": "mnq-13f-copycat-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.914"
-  },
-  {
-   "t": "2026-07-22T17:57:02.322877+00:00",
-   "hash": "be114dea",
-   "name": "scout-40-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T17:56:15.922320+00:00",
-   "hash": "68da5a58",
-   "name": "zn-japan-fiscalyearend-repatriation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.386"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MGC",
     "task": "xmkt-volume-share-defensive-rotation-completion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:15:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "xasset-wednesday-night-risk-reestablishment",
     "stage": "dev3yr",
     "started": "2026-07-22T18:15:25Z",
     "state": "running"
@@ -550,7 +542,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 518
+    "trials": 521
    }
   ]
  },
@@ -559,8 +551,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 92,
-   "n_killed": 53,
+   "n_tested": 94,
+   "n_killed": 54,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -574,7 +566,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 93,
+   "n_tested": 94,
    "n_killed": 69,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
