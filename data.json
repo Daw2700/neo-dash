@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:57:46Z",
+  "stamp": "2026-07-22T19:59:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 601,
-  "n_results": 742,
-  "n_trials": 30730,
+  "n_registered": 603,
+  "n_results": 743,
+  "n_trials": 30731,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:59:05.140116+00:00",
+   "hash": "83758103",
+   "name": "zn-basis-trade-deleverage-cascade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.497"
+  },
+  {
+   "t": "2026-07-22T19:58:43.520828+00:00",
+   "hash": "f4544f8a",
+   "name": "mnq-overnight-origin-session-information",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T19:54:10.717963+00:00",
    "hash": "371ef9b8",
    "name": "mcl-cot-release-window-crowding-repricing",
@@ -381,36 +397,12 @@
    "status": "replicates",
    "kind": "result",
    "detail": "PF 1.607"
-  },
-  {
-   "t": "2026-07-22T19:36:11.094736+00:00",
-   "hash": "c76ba3a2",
-   "name": "rep-mes-wk10-derisk-mnq",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T19:33:50.183843+00:00",
-   "hash": "1f4cf956",
-   "name": "sil-micro-options-void-undamped-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-basis-trade-deleverage-cascade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:57:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-overnight-origin-session-information",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-auction-result-real-yield-transmission-lag",
     "stage": "dev3yr",
@@ -529,7 +521,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 85,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -591,7 +583,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 563
+    "trials": 564
    }
   ]
  },
@@ -709,8 +701,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 48,
-   "n_killed": 40,
+   "n_tested": 49,
+   "n_killed": 41,
    "book_sleeves": [],
    "agents_now": []
   },
