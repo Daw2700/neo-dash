@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:08:23Z",
+  "stamp": "2026-07-22T16:10:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 505,
-  "n_results": 634,
-  "n_trials": 30622,
+  "n_registered": 507,
+  "n_results": 636,
+  "n_trials": 30624,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:09:50.983652+00:00",
+   "hash": "e49e3289",
+   "name": "mes-fee-tier-month-end-volume-padding-liquidity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.353"
+  },
+  {
+   "t": "2026-07-22T16:09:49.871262+00:00",
+   "hash": "d4a11e88",
+   "name": "zs-china-golden-week-origination-void",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.342"
+  },
+  {
    "t": "2026-07-22T16:08:10.420666+00:00",
    "hash": "02785897",
    "name": "zc-hedger-margin-call-short-lift",
@@ -385,22 +401,6 @@
    "status": "replicates",
    "kind": "result",
    "detail": "PF 1.313"
-  },
-  {
-   "t": "2026-07-22T15:51:08.015062+00:00",
-   "hash": "8437d0a5",
-   "name": "rep-mes-depth-consumption-print-size-range-forecast-mnq",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T15:47:35.689403+00:00",
-   "hash": "15abd9f0",
-   "name": "mes-deseasonalized-vol-surprise-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.796"
   }
  ],
  "pipeline": {
@@ -419,22 +419,6 @@
     "task": "robustness: mng-friday-threeday-gasday-hedge-concentration",
     "stage": "dev3yr",
     "started": "2026-07-22T16:06:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "zs-china-golden-week-origination-void",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:06:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MES",
-    "task": "mes-fee-tier-month-end-volume-padding-liquidity",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:08:23Z",
     "state": "running"
    }
   ],
@@ -503,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 455
+    "trials": 457
    }
   ]
  },
@@ -527,8 +511,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 85,
-   "n_killed": 62,
+   "n_tested": 86,
+   "n_killed": 63,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -639,8 +623,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 6,
+   "n_tested": 7,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   }
