@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:01:14Z",
+  "stamp": "2026-07-22T03:02:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 160,
-  "n_results": 249,
-  "n_trials": 30220,
+  "n_registered": 162,
+  "n_results": 250,
+  "n_trials": 30221,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 3
+  "needs_attention_count": 2
  },
  "leaderboard": [
   {
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:02:28.962075+00:00",
+   "hash": "be21338c",
+   "name": "mes-coupon-settle-mid",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.706"
+  },
+  {
+   "t": "2026-07-22T03:02:08.403252+00:00",
+   "hash": "25548a41",
+   "name": "mng-bidweek-baseload",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T03:01:00.397440+00:00",
    "hash": "284ae274",
    "name": "mes-macro-annday-premium-exfomc",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.478"
-  },
-  {
-   "t": "2026-07-22T02:33:37.112331+00:00",
-   "hash": "0feb6a78",
-   "name": "b4-bigday-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T02:33:37.110207+00:00",
-   "hash": "3e8e292d",
-   "name": "b3-lunch-compression-break",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -414,14 +414,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-coupon-settlement-reserve-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:00:50Z",
-    "state": "running"
-   },
-   {
     "agent": "decision",
     "market": null,
     "task": "your approve: Slippage collector: fill Tradovate demo ",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MNG",
     "task": "mng-bidweek-baseload-procurement",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 8,
+   "registered": 9,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -513,7 +505,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 53
+    "trials": 54
    }
   ]
  },
@@ -537,8 +529,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 3,
+   "n_tested": 11,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1281,29 +1273,6 @@
     }
    ],
    "staged": "2026-07-22T02:43:51.754485Z"
-  },
-  {
-   "id": "d-book-mirror-sync",
-   "kind": "cleanup",
-   "needs_attention": true,
-   "title": "Two approved demotions are on the ledger but the published book still lists both sleeves",
-   "recommendation": "Approve a two-file edit to the dashboard mirrors so the site and sizing drop the demoted sleeves",
-   "evidence": "Book membership is hard-coded in three places: ~/mnq_lab/dashboard/build_dashboard.py (VALID - updated, now 6 hashes), ~/neo-dashboard/build_data.py (VALID) and ~/neo-dashboard/sizing.py (VALIDATED / RARE / XMKT). The executor's write scope is limited to ~/mnq_lab and ~/neo-engine/state, so the last two were not touched. Pending: scan-mcl (mcl-vix, crude) - approved for removal 2026-07-22, hash 6153da5cd4762a99; scan-mym (mym-prehol, Dow) - approved for removal 2026-07-22, hash 5eec72170531044e",
-   "what_yes_means": "The two dashboard files drop both demoted hashes/ids, sizing re-runs, and the published book, bundles and $10k roadmap finally recompute on 6 sleeves",
-   "recap": "You approved pulling two sleeves (crude vix-rebound and Dow pre-holiday) from the book and both are on the ledger as DEMOTED. The public dashboard hasn't caught up: its copy of the book list lives in files the executor isn't allowed to edit, so the site still shows 8 sleeves and still gives each demoted one a micro.",
-   "why": "The ledger is the source of truth and it already says DEMOTED, so the record is right - but the screen you actually read is driven by a duplicated list, which means the sizing, bundle and roadmap figures on the site are currently overstated by two sleeves. Rather than silently edit a public repo the engine auto-pushes, the engine asks first. It is a few-line change plus a sizing re-run.",
-   "steps": [
-    "Approve: remove 6153da5cd4762a99 and 5eec72170531044e from ~/neo-dashboard/build_data.py VALID",
-    "Remove scan-mcl and scan-mym from ~/neo-dashboard/sizing.py VALIDATED (and the RARE / XMKT lists)",
-    "Re-run sizing.py, then build_data.py; engine pushes on its next publish",
-    "Book, bundles and the $10k roadmap recompute on the 6 remaining sleeves - the totals go DOWN",
-    "Deny: both ledger demotions still stand, but the dashboard keeps displaying the sleeves as book slots"
-   ],
-   "pending_mirrors": [
-    "scan-mcl (mcl-vix, crude) - approved for removal 2026-07-22, hash 6153da5cd4762a99",
-    "scan-mym (mym-prehol, Dow) - approved for removal 2026-07-22, hash 5eec72170531044e"
-   ],
-   "staged": "2026-07-22T02:54:18Z"
   },
   {
    "id": "d-apex-verify-numbers-r3",
