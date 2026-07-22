@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:54:29Z",
+  "stamp": "2026-07-22T06:00:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 250,
-  "n_results": 347,
-  "n_trials": 30318,
+  "n_registered": 252,
+  "n_results": 350,
+  "n_trials": 30321,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -189,16 +189,16 @@
    }
   },
   {
-   "id": "mes-prerelease-liquidity-withdrawal-drift-fade",
-   "name": "mes-prerelease-liquidity-withdrawal-drift-fade",
+   "id": "mes-funding-basis-stress-cheapening",
+   "name": "mes-funding-basis-stress-cheapening",
    "market": "MES",
    "tier": "candidate",
    "pinned": false,
-   "n": 70,
-   "wr": 60.0,
-   "usd_mo": 37,
-   "pf": 1.306,
-   "usd_trade": 18.8
+   "n": 72,
+   "wr": 0.5278,
+   "usd_mo": 31,
+   "pf": 1.273,
+   "usd_trade": 15.4
   },
   {
    "id": "b3-prior-high-break",
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:58:28.029328+00:00",
+   "hash": "5650586a",
+   "name": "mes-prerelease-liquidity-withdrawal-drift-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T05:57:32.220572+00:00",
+   "hash": "fee2cfac",
+   "name": "mes-funding-basis-stress-cheapening",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.273"
+  },
+  {
+   "t": "2026-07-22T05:57:26.462564+00:00",
+   "hash": "6d2915b5",
+   "name": "mgc-late-session-inventory-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.63"
+  },
+  {
    "t": "2026-07-22T05:52:30.696038+00:00",
    "hash": "e42caa34",
    "name": "mes-post-rates-unhedged-hour",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1224"
-  },
-  {
-   "t": "2026-07-22T05:35:05.450913+00:00",
-   "hash": "a12d6eaa",
-   "name": "mes-opening-auction-imbalance-print-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.122"
-  },
-  {
-   "t": "2026-07-22T05:34:57.964263+00:00",
-   "hash": "124fd8b1",
-   "name": "mng-final-settlement-physical-exit-window",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T05:34:24.498144+00:00",
-   "hash": "6d2e6f18",
-   "name": "mgc-lny-restock-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.122"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
     "task": "mes-futures-funding-basis-stress-cheapening",
     "stage": "dev3yr",
     "started": "2026-07-22T05:54:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-late-session-inventory-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:54:29Z",
     "state": "running"
    }
   ],
@@ -545,7 +537,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 151
+    "trials": 154
    }
   ]
  },
@@ -569,7 +561,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 29,
+   "n_tested": 30,
    "n_killed": 19,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -598,8 +590,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 11,
+   "n_tested": 13,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1094,23 +1086,23 @@
     "apex_max": 1
    }
   },
-  "mes-prerelease-liquidity-withdrawal-drift-fade": {
-   "name": "mes-prerelease-liquidity-withdrawal-drift-fade",
+  "mes-funding-basis-stress-cheapening": {
+   "name": "mes-funding-basis-stress-cheapening",
    "market": "MES",
    "tier": "candidate",
-   "mechanism": "Market makers withdraw depth in the minutes before a scheduled 08:30 ET macro release (CPI, NFP), so price impact per unit of order flow spikes and small residual flow drags price away from fair value in the thin pre-release book; the dislocation reverts once depth returns after the print, paying whoever fades the pre-release drift for carrying announcement risk through the thinnest book of the day.",
+   "mechanism": "Index futures embed an implicit dealer financing/collateral leg (Baltussen, Terstegge & Whelan, \"The Derivative Payoff Bias\"); when dealer balance-sheet capacity is most constrained around calendar quarter-end regulatory reporting dates, repo/collateral funding is pulled from cash-futures basis arbitrageurs, transiently cheapening MES futures against fair value into the quarter-end and re-converging (richening back up) in the first sessions of the new quarter. The buyer of the cheapened future during the reversal leg is paid a balance-sheet-rental fee, not a directional forecast.",
    "metrics": {
-    "n": 70,
-    "wr": 60.0,
-    "pf": 1.306,
-    "usd_mo": 37,
-    "usd_trade": 18.8
+    "n": 72,
+    "wr": 0.5278,
+    "pf": 1.273,
+    "usd_mo": 31,
+    "usd_trade": 15.4
    },
    "verdict_history": [
     {
-     "t": "2026-07-22T05:46:35.228309+00:00",
+     "t": "2026-07-22T05:57:32.220572+00:00",
      "stage": "dev3yr",
-     "verdict": "PASSES"
+     "verdict": "KILLED"
     }
    ]
   },
