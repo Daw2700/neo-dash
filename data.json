@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:33:30Z",
+  "stamp": "2026-07-22T16:33:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,21 +408,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "mnq-volume-peak-clock-daytype",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:26:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "robustness: mnq-volume-peak-clock-daytype",
     "stage": "dev3yr",
     "started": "2026-07-22T16:33:30Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-fuel-switching-band-elasticity",
     "stage": "dev3yr",
