@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:49:06Z",
+  "stamp": "2026-07-22T03:51:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 179,
-  "n_results": 272,
-  "n_trials": 30243,
+  "n_registered": 181,
+  "n_results": 274,
+  "n_trials": 30245,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,9 +311,25 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T03:48:59.313996+00:00",
+   "t": "2026-07-22T03:51:25.981117+00:00",
+   "hash": "ef9c6cb7",
+   "name": "mgc-roll-window-front-contract-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.988"
+  },
+  {
+   "t": "2026-07-22T03:51:19.390477+00:00",
    "hash": "ad02659d",
    "name": "mcl-opec-meeting-positioning-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.979"
+  },
+  {
+   "t": "2026-07-22T03:50:25.560350+00:00",
+   "hash": "5c829325",
+   "name": "zs-zc-newcrop-ratio-acreage-window",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -389,44 +405,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T03:27:52.433770+00:00",
-   "hash": "cf1eedfa",
-   "name": "mnq-vix-soq-wed-open-distortion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.459"
-  },
-  {
-   "t": "2026-07-22T03:27:23.410699+00:00",
-   "hash": "43e185a4",
-   "name": "mnq-m2k-open-dispersion-continuation",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-opec-meeting-positioning-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:48:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-roll-window-front-contract-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:48:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZS",
     "task": "zs-zc-newcrop-ratio-acreage-window",
     "stage": "dev3yr",
@@ -536,7 +520,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 76
+    "trials": 78
    }
   ]
  },
@@ -587,8 +571,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 6,
+   "n_tested": 8,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -605,8 +589,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 8,
-   "n_killed": 6,
+   "n_tested": 9,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
