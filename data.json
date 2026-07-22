@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:29:56Z",
+  "stamp": "2026-07-22T17:33:03Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 540,
   "n_results": 673,
@@ -404,19 +404,146 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T17:25:23Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mng-evening-net-load-ramp-burn-clock",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 2,
+    "idea": "mgc-india-festival-import-hedge-window",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 3,
+    "idea": "m6e-cls-payin-deadline-liquidity-window",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 4,
+    "idea": "m2k-bank-earnings-kickoff-credit-repricing",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "mym-mnq-oil-shock-sector-weight-dispersion",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 6,
+    "idea": "m2k-shortsale-constraint-futures-expression-overshoot",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 7,
+    "idea": "zn-serial-option-expiry-delta-unwind",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 8,
+    "idea": "zs-argentina-export-incentive-window-supply-dump",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-postclose-index-ratification-jump-asymmetry",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.41
+   },
+   {
+    "rank": 10,
+    "idea": "mes-clock-minute-jump-asymmetry-liquidity-rent",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "m6e-t2-daily-close-onesided-euro-liquidity",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "zn-japan-fiscalyearend-repatriation-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "zc-freight-cost-export-competitiveness-transmission",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 15,
+    "idea": "mnq-13f-disclosure-copycat-window",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 14,
+    "idea": "met-april-tax-liability-retail-liquidation",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.28
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 15,
    "registered": 76,
    "dev3yr": 0,
    "robustness": 0,
