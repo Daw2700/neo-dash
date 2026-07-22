@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:29:37Z",
+  "stamp": "2026-07-22T10:29:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-capitulation-band-forced-deleveraging-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:24:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "recheck: zn-m2k-info-diffusion-hourly",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mcl-session-disagreement-overnight-repair",
     "stage": "dev3yr",
