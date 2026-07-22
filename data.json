@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:54:40Z",
+  "stamp": "2026-07-22T03:54:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mcl-shorthorizon-trend-decay-fade",
     "stage": "dev3yr",
     "started": "2026-07-22T03:54:18Z",
+    "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T03:54:41Z",
     "state": "running"
    }
   ],
