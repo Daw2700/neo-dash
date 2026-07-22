@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:14:15Z",
+  "stamp": "2026-07-22T18:14:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-charm-delta-decay-preopex-overnight",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:07:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-crude-asia-diffusion-open-catchup",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:07:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-eia-day-midsession-to-close-momentum",
     "stage": "dev3yr",
