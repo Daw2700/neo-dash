@@ -157,39 +157,9 @@
    "apex150": {
     "max_micros": 5
    }
-  },
-  "b3-prior-high-break": {
-   "growth": {
-    "max_micros": 2
-   },
-   "apex150": {
-    "max_micros": 1
-   }
   }
  },
  "bundles": [
-  {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "b3-tom-long": 2,
-    "8b-biggap-follow": 1,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 11,
-   "p_breach": 0.196,
-   "usd_mo": 811,
-   "usd_mo_5acct": 4055,
-   "pct_goal": 0.406
-  },
   {
    "id": "Validated 8 + vix-reversion|growth",
    "name": "Validated 8 + vix-reversion",
@@ -212,25 +182,24 @@
    "pct_goal": 0.353
   },
   {
-   "id": "Frequent-firing engine|growth",
-   "name": "Frequent-firing engine",
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
    "plan": "tradeify-growth",
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
+    "b2-vix-reversion": 1,
     "b3-nr7-breakout": 2,
-    "b3-monday-long": 1,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "b3-pm-trend-continuation": 1,
-    "b3-tom-long": 2,
-    "b3-prior-high-break": 1
+    "b3-tom-long": 2
    },
    "total_micros": 9,
-   "p_breach": 0.188,
-   "usd_mo": 668,
-   "usd_mo_5acct": 3340,
-   "pct_goal": 0.334
+   "p_breach": 0.196,
+   "usd_mo": 692,
+   "usd_mo_5acct": 3460,
+   "pct_goal": 0.346
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -253,6 +222,46 @@
    "pct_goal": 0.327
   },
   {
+   "id": "Frequent-firing engine|growth",
+   "name": "Frequent-firing engine",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 2,
+    "b3-monday-long": 2,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2
+   },
+   "total_micros": 7,
+   "p_breach": 0.184,
+   "usd_mo": 584,
+   "usd_mo_5acct": 2920,
+   "pct_goal": 0.292
+  },
+  {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "b2-vix-reversion": 2,
+    "scan-mbt": 2,
+    "scan-mym": 1,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b3-pm-trend-continuation": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 10,
+   "p_breach": 0.195,
+   "usd_mo": 567,
+   "usd_mo_5acct": 2835,
+   "pct_goal": 0.283
+  },
+  {
    "id": "Cross-market spread|growth",
    "name": "Cross-market spread",
    "plan": "tradeify-growth",
@@ -271,27 +280,6 @@
    "usd_mo": 520,
    "usd_mo_5acct": 2600,
    "pct_goal": 0.26
-  },
-  {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
-   "plan": "apex150 (assumed)",
-   "provisional": true,
-   "assumed_rules": true,
-   "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
-    "b3-pm-trend-continuation": 1,
-    "b3-tom-long": 1,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 8,
-   "p_breach": 0.189,
-   "usd_mo": 516,
-   "usd_mo_5acct": 2580,
-   "pct_goal": 0.258
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -315,6 +303,26 @@
    "pct_goal": 0.225
   },
   {
+   "id": "Frequent-firing engine|apex150",
+   "name": "Frequent-firing engine",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-pm-trend-continuation": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.181,
+   "usd_mo": 397,
+   "usd_mo_5acct": 1985,
+   "pct_goal": 0.199
+  },
+  {
    "id": "Validated 8 (the book)|apex150",
    "name": "Validated 8 (the book)",
    "plan": "apex150 (assumed)",
@@ -333,25 +341,6 @@
    "usd_mo": 378,
    "usd_mo_5acct": 1890,
    "pct_goal": 0.189
-  },
-  {
-   "id": "Frequent-firing engine|apex150",
-   "name": "Frequent-firing engine",
-   "plan": "apex150 (assumed)",
-   "provisional": true,
-   "assumed_rules": true,
-   "members": {
-    "scan-mbt": 2,
-    "b3-nr7-breakout": 1,
-    "b3-pm-trend-continuation": 1,
-    "b3-tom-long": 1,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 6,
-   "p_breach": 0.172,
-   "usd_mo": 348,
-   "usd_mo_5acct": 1740,
-   "pct_goal": 0.174
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
