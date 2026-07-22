@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:25:39Z",
+  "stamp": "2026-07-22T05:25:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:25:18Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNG",
+    "task": "mng-final-settlement-physical-exit-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:25:41Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "mng-final-settlement-physical-exit-window",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 13,
     "idea": "mes-opening-auction-imbalance-print-fade",
@@ -460,7 +459,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 21,
    "dev3yr": 0,
    "robustness": 0,
