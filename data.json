@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:50:11Z",
+  "stamp": "2026-07-22T22:50:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,27 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:48:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-cross-margin-offset-collapse-degross",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:50:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-effective-spread-rent-normalization",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:50:12Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mes-cross-margin-offset-collapse-degross",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": null
-   },
-   {
-    "rank": 6,
-    "idea": "mgc-effective-spread-rent-normalization",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": null
-   },
    {
     "rank": 7,
     "idea": "mcl-factor-momentum-timing",
@@ -494,7 +492,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
