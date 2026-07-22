@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:40:59Z",
+  "stamp": "2026-07-22T23:43:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -407,30 +407,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T23:33:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-830-scheduled-data-range-breakout",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:33:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-friday-data-inattention-monday-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:33:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MNQ",
-    "task": "replication: mnq-index-52wk-high-anchor-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:38:32Z",
     "state": "running"
    }
   ],
