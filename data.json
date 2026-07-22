@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:43:13Z",
+  "stamp": "2026-07-22T05:43:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-overnight-gap-overshoot-fade-us-open",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:40:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-post-data-afternoon-vol-collapse-range-fade",
     "stage": "dev3yr",
