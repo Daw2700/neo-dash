@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:11:22Z",
+  "stamp": "2026-07-22T09:11:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:11:00Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-energy-inflation-signal-open-overreaction",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:11:24Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "zn-energy-inflation-signal-open-overreaction",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 9,
     "idea": "zn-gamma-hedging-intraday-momentum",
@@ -483,7 +482,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 40,
    "dev3yr": 0,
    "robustness": 0,
