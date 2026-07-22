@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:23:01Z",
+  "stamp": "2026-07-22T15:24:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 485,
-  "n_results": 612,
-  "n_trials": 30600,
+  "n_registered": 487,
+  "n_results": 613,
+  "n_trials": 30601,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:24:22.820428+00:00",
+   "hash": "317d30b0",
+   "name": "zn-margin-cutoff-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.577"
+  },
+  {
+   "t": "2026-07-22T15:24:11.578788+00:00",
+   "hash": "cea36cba",
+   "name": "mgc-concealed-absorber-move-failure",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T15:21:17.824814+00:00",
    "hash": "7f57c9e6",
    "name": "mng-price-banding-staircase-overnight",
@@ -385,36 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T15:00:55.955503+00:00",
-   "hash": "e0567bd7",
-   "name": "zn-va-rho-hedge-rebalance",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.165"
-  },
-  {
-   "t": "2026-07-22T14:57:20.951085+00:00",
-   "hash": "570c5d90",
-   "name": "mcl-speculator-capacity-impairment-hedger-concession",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.885"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-intraday-variation-margin-cutoff-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:22:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-concealed-absorber-move-failure",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-spot-month-speculative-limit-forced-exit",
     "stage": "dev3yr",
@@ -461,7 +453,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 66,
+   "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 433
+    "trials": 434
    }
   ]
  },
@@ -641,8 +633,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 36,
-   "n_killed": 29,
+   "n_tested": 37,
+   "n_killed": 30,
    "book_sleeves": [],
    "agents_now": []
   },
