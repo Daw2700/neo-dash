@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:09:10Z",
+  "stamp": "2026-07-22T14:12:45Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 458,
-  "n_results": 577,
-  "n_trials": 30565,
+  "n_registered": 459,
+  "n_results": 579,
+  "n_trials": 30567,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -213,6 +213,18 @@
    "usd_trade": 30.0
   },
   {
+   "id": "mcl-closure-length-dose-response-reopen-overshoot",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 154,
+   "wr": 0.526,
+   "usd_mo": 61,
+   "pf": 1.325,
+   "usd_trade": 14.3
+  },
+  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -291,28 +303,24 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T14:09:10.104501+00:00",
+   "t": "2026-07-22T14:10:46.955462+00:00",
+   "hash": "6dba1bf2",
+   "name": "mym-thin-leg-hedge-residual-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.484"
+  },
+  {
+   "t": "2026-07-22T14:10:08.535860+00:00",
    "hash": "d806b114",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.325"
   },
   {
    "t": "2026-07-22T14:08:40.425512+00:00",
@@ -393,14 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.172"
-  },
-  {
-   "t": "2026-07-22T13:47:16.845598+00:00",
-   "hash": "858b343a",
-   "name": "mnq-maintenance-break-inventory-reversal",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.689"
   }
  ],
  "pipeline": {
@@ -428,12 +428,20 @@
     "stage": "idea-scout",
     "started": "2026-07-22T14:04:42Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "robustness: mcl-closure-length-dose-response-reopen-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:10:13Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 63,
+   "registered": 62,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +503,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 398
+    "trials": 400
    }
   ]
  },
@@ -530,8 +538,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 3,
+   "n_tested": 5,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -566,7 +574,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 26,
+   "n_tested": 27,
    "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
@@ -1094,6 +1102,26 @@
     }
    ]
   },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
+   "metrics": {
+    "n": 154,
+    "wr": 0.526,
+    "pf": 1.325,
+    "usd_mo": 61,
+    "usd_trade": 14.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:10:08.535860+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1227,26 +1255,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
