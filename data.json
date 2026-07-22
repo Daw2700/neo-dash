@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:31:27Z",
+  "stamp": "2026-07-22T13:31:29Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "mnq-maintenance-break-inventory-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:31:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-crossindex-leadership-identity-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:31:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-trading-day-count-flow-compression",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:31:29Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mnq-maintenance-break-inventory-reversal",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.72
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-crossindex-leadership-identity-rotation",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 3,
-    "idea": "mes-trading-day-count-flow-compression",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.6
-   },
    {
     "rank": 4,
     "idea": "zn-depth-normalized-impact-amplification-reversion",
@@ -525,7 +523,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 60,
    "dev3yr": 0,
    "robustness": 0,
