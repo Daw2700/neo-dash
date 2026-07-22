@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:30:28Z",
+  "stamp": "2026-07-22T19:30:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,14 @@
     "task": "zc-crop-insurance-price-discovery-february",
     "stage": "dev3yr",
     "started": "2026-07-22T19:25:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-vwap-twap-participation-skew",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:30:30Z",
     "state": "running"
    }
   ],
