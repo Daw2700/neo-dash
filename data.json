@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:33:30Z",
+  "stamp": "2026-07-22T04:38:38Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 209,
+  "n_registered": 210,
   "n_results": 301,
   "n_trials": 30272,
   "holdout_looks_spent": 0,
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:33:46.193435+00:00",
+   "hash": "7dbdc701",
+   "name": "scout-19-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:33:13.662495+00:00",
    "hash": "30cbe73d",
    "name": "m2k-taxloss-turnofyear-reversal",
@@ -393,31 +401,105 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.545"
-  },
-  {
-   "t": "2026-07-22T04:20:55.105374+00:00",
-   "hash": "97cde8b0",
-   "name": "mcl-overnight-vol-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.812"
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T04:31:45Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "sil-lbma-silver-auction-imbalance-window",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.68
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-platts-moc-assessment-window-pushback",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "m6e-ny-cut-option-expiry-release",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "mes-am-settled-index-option-opening-print-distortion",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 5,
+    "idea": "zn-quarterly-refunding-issuance-composition-repricing",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "zs-nopa-crush-midmonth-demand-print",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 7,
+    "idea": "zc-zs-european-daybreak-origination-hedge",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mgc-us-cash-bond-close-realrate-remark",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "mes-overnight-risk-premium-unconditional",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 10,
+    "idea": "mes-early-close-session-compression",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
-   "registered": 13,
+   "idea": 10,
+   "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
