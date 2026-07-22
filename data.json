@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:29:42Z",
+  "stamp": "2026-07-22T03:31:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 171,
-  "n_results": 265,
-  "n_trials": 30236,
+  "n_results": 266,
+  "n_trials": 30237,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -173,18 +173,6 @@
    }
   },
   {
-   "id": "mnq-m2k-open-dispersion-continuation",
-   "name": "mnq-m2k-open-dispersion-continuation",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 148,
-   "wr": 0.5135,
-   "usd_mo": 113,
-   "pf": 1.299,
-   "usd_trade": 27.4
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -303,9 +291,29 @@
    "usd_mo": -133,
    "pf": 0.481,
    "usd_trade": -31.6
+  },
+  {
+   "id": "b7-down-weeks-dip",
+   "name": "b7-down-weeks-dip",
+   "market": "MNQ",
+   "tier": "demoted",
+   "pinned": false,
+   "n": 27,
+   "wr": 0.593,
+   "usd_mo": 61,
+   "pf": 1.945,
+   "usd_trade": 81.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T03:31:08.620946+00:00",
+   "hash": "43e185a4",
+   "name": "mnq-m2k-open-dispersion-continuation",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.973"
+  },
   {
    "t": "2026-07-22T03:28:06.294236+00:00",
    "hash": "43e185a4",
@@ -393,14 +401,6 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 0.985"
-  },
-  {
-   "t": "2026-07-22T03:12:01.850541+00:00",
-   "hash": "94b9b65b",
-   "name": "b10-nagel-vix-reversal",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.211"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "mnq-vix-soq-wednesday-open-distortion",
     "stage": "dev3yr",
     "started": "2026-07-22T03:25:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "replication: mnq-m2k-open-dispersion-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:29:44Z",
     "state": "running"
    }
   ],
@@ -515,7 +523,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 69
+    "trials": 70
    }
   ]
  },
@@ -1022,36 +1030,6 @@
     "apex_max": 1
    }
   },
-  "mnq-m2k-open-dispersion-continuation": {
-   "name": "mnq-m2k-open-dispersion-continuation",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "A large megacap-vs-smallcap dislocation in the first 30 minutes of RTH is factor rotation being executed as multi-hour index program flow, not noise; the program is not finished at 10:00 ET, so the lagging index keeps lagging into the cash close. Structurally different from NQ/ES convergence, which trades two proxies of the same factor against each other. Source: 191_scout15_screen SCREEN 3 (dev, n=747): dispersion quintiles -> MNQ 10:00->16:00 mean bp = -16.6,+12.0,+10.6,+8.4,+2.1; one-sided (bottom quintile only), so the symmetric version is the mandatory mechanism control.",
-   "metrics": {
-    "n": 148,
-    "wr": 0.5135,
-    "pf": 1.299,
-    "usd_mo": 113,
-    "usd_trade": 27.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T03:19:30.789998+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T03:27:23.410699+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T03:28:06.294236+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1256,6 +1234,31 @@
      "t": "2026-07-22T02:50:04.186910+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "b7-down-weeks-dip": {
+   "name": "b7-down-weeks-dip",
+   "market": "MNQ",
+   "tier": "demoted",
+   "mechanism": "Two consecutive down weeks trigger mechanical rebalancing inflows and exhaust retail capitulation, so the following Monday carries an amplified risk premium",
+   "metrics": {
+    "n": 27,
+    "wr": 0.593,
+    "pf": 1.945,
+    "usd_mo": 61,
+    "usd_trade": 81.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:12:29.404963+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T00:58:26.808888+00:00",
+     "stage": "robustness",
+     "verdict": "DEMOTED"
     }
    ]
   }
