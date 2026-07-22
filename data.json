@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:33:28Z",
+  "stamp": "2026-07-22T16:33:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,18 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T16:26:25Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "robustness: mnq-volume-peak-clock-daytype",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:33:30Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-fuel-switching-band-elasticity",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:33:30Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mng-fuel-switching-band-elasticity",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "zc-neglect-catchup-attention-deficit",
@@ -480,7 +487,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 70,
    "dev3yr": 0,
    "robustness": 0,
