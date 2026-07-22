@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:10:03Z",
+  "stamp": "2026-07-22T04:10:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 193,
-  "n_results": 285,
-  "n_trials": 30256,
+  "n_results": 286,
+  "n_trials": 30257,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,12 +307,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T04:08:33.876188+00:00",
+   "t": "2026-07-22T04:10:04.811849+00:00",
    "hash": "80a196f3",
    "name": "mes-cta-trigger-level-cross-flow",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.099"
   },
   {
    "t": "2026-07-22T04:07:52.040206+00:00",
@@ -445,7 +445,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 11,
+   "registered": 10,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 89
+    "trials": 90
    }
   ]
  },
@@ -531,8 +531,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 8,
+   "n_tested": 17,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
