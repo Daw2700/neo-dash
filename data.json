@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:38:50Z",
+  "stamp": "2026-07-22T22:43:34Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 666,
-  "n_results": 817,
-  "n_trials": 30805,
+  "n_registered": 667,
+  "n_results": 819,
+  "n_trials": 30807,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:43:27.810695+00:00",
+   "hash": "14f51e73",
+   "name": "zc-rma-volatility-factor-five-day-window",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 2.099"
+  },
+  {
+   "t": "2026-07-22T22:42:40.616338+00:00",
+   "hash": "441734fb",
+   "name": "rep-zc-rma-volatility-factor-five-day-window-zs",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:41:15.430002+00:00",
+   "hash": "14f51e73",
+   "name": "zc-rma-volatility-factor-five-day-window",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T22:36:10.128491+00:00",
    "hash": "ac69559c",
    "name": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
@@ -373,30 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.576"
-  },
-  {
-   "t": "2026-07-22T22:28:59.001402+00:00",
-   "hash": "122beb61",
-   "name": "mcl-sovereign-oil-hedge-program-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.629"
-  },
-  {
-   "t": "2026-07-22T22:26:50.868093+00:00",
-   "hash": "88d65102",
-   "name": "mes-quarterly-collar-gamma-release",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T22:26:03.305683+00:00",
-   "hash": "eef25341",
-   "name": "met-hour-stamp-referenced-flow-asymmetry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.003"
   }
  ],
  "pipeline": {
@@ -416,12 +416,20 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:38:27Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "replication: zc-rma-volatility-factor-five-day-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:41:15Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 89,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -483,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 638
+    "trials": 640
    }
   ]
  },
@@ -957,6 +965,16 @@
      "t": "2026-07-22T22:36:03.056205+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T22:41:15.430002+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T22:43:27.810695+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
