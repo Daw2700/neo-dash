@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:07:43Z",
+  "stamp": "2026-07-22T02:11:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 148,
-  "n_results": 235,
+  "n_registered": 149,
+  "n_results": 236,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T02:09:44.717925+00:00",
+   "hash": "218956c2",
+   "name": "mgc-post-settlement-thin-hour-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.415"
+  },
+  {
    "t": "2026-07-22T02:05:01.779004+00:00",
    "hash": "f2da395b",
    "name": "mnq-european-cash-close-risk-transfer",
@@ -401,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:31:07.966170+00:00",
-   "hash": "117bdf18",
-   "name": "scout-13-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T02:02:18Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-post-settlement-thin-hour-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T02:07:45Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mgc-post-settlement-thin-hour-drift",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 11,
     "idea": "mes-macro-announcement-day-premium",
@@ -451,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
@@ -514,7 +513,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 39
+    "trials": 40
    }
   ]
  },
@@ -567,8 +566,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 4,
+   "n_tested": 5,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
