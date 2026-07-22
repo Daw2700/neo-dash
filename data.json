@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:52:45Z",
+  "stamp": "2026-07-22T09:53:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 356,
-  "n_results": 460,
-  "n_trials": 30431,
+  "n_results": 461,
+  "n_trials": 30432,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T09:52:46.704939+00:00",
+   "hash": "2a62c3c6",
+   "name": "mgc-velocity-reserve-truncation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.624"
+  },
+  {
    "t": "2026-07-22T09:51:16.944863+00:00",
    "hash": "c4c71e0f",
    "name": "zn-tick-constraint-quiet-day-queue-reversion",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.033"
-  },
-  {
-   "t": "2026-07-22T09:51:03.439218+00:00",
-   "hash": "2a62c3c6",
-   "name": "mgc-velocity-reserve-truncation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T09:50:02.076220+00:00",
@@ -411,22 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-tick-constraint-quiet-day-queue-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:46:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-velocity-logic-reserve-momentum-truncation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:46:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: mes-morning-range-exhaustion-overnight-carry",
     "stage": "dev3yr",
@@ -465,7 +449,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 43,
+   "registered": 42,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +511,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 264
+    "trials": 265
    }
   ]
  },
@@ -580,8 +564,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 17,
+   "n_tested": 20,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
