@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:56:28Z",
+  "stamp": "2026-07-22T17:56:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,30 +412,35 @@
     "stage": "dev3yr",
     "started": "2026-07-22T17:55:22Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 15,
-    "idea": "mnq-13f-disclosure-copycat-window",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.3
    },
    {
-    "rank": 14,
-    "idea": "met-april-tax-liability-retail-liquidation",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.28
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T17:56:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-13f-disclosure-copycat-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:56:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MET",
+    "task": "met-april-tax-liability-retail-liquidation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:56:31Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 78,
    "dev3yr": 0,
    "robustness": 0,
