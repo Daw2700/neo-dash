@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:28:50Z",
+  "stamp": "2026-07-22T04:29:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-policy-differential-carry-roll-harvest",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:23:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-margin-hike-lag-deleveraging",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-refinery-turnaround-crude-length-premium",
     "stage": "dev3yr",
