@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:49:30Z",
+  "stamp": "2026-07-22T11:52:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 407,
-  "n_results": 516,
-  "n_trials": 30487,
+  "n_registered": 408,
+  "n_results": 518,
+  "n_trials": 30489,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -269,6 +269,18 @@
    }
   },
   {
+   "id": "m6e-policy-meeting-desync-window",
+   "name": "m6e-policy-meeting-desync-window",
+   "market": "M6E",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 31,
+   "wr": 48.39,
+   "usd_mo": 9,
+   "pf": 1.164,
+   "usd_trade": 10.8
+  },
+  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -291,21 +303,33 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:51:44.523621+00:00",
+   "hash": "bb9e5fa3",
+   "name": "mes-event-conditioned-weekend-risk-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T11:51:40.279567+00:00",
+   "hash": "8b1f1e5a",
+   "name": "mes-financing-drag-rate-regime-overnight-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9699"
+  },
+  {
+   "t": "2026-07-22T11:49:37.926854+00:00",
+   "hash": "0cd58d6e",
+   "name": "m6e-policy-meeting-desync-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.1641"
+  },
   {
    "t": "2026-07-22T11:48:42.641131+00:00",
    "hash": "8b1f1e5a",
@@ -313,14 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.011"
-  },
-  {
-   "t": "2026-07-22T11:47:40.902792+00:00",
-   "hash": "0cd58d6e",
-   "name": "m6e-policy-meeting-desync-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T11:46:25.960441+00:00",
@@ -385,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.989"
-  },
-  {
-   "t": "2026-07-22T11:32:12.945405+00:00",
-   "hash": "e689c6ce",
-   "name": "mes-drift-burst-volume-bifurcation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.641"
-  },
-  {
-   "t": "2026-07-22T11:24:28.258644+00:00",
-   "hash": "3cf4b8a4",
-   "name": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.447"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-policy-meeting-desync-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:45:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "recheck: mes-financing-drag-rate-regime-overnight-carry",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-event-conditioned-weekend-risk-premium",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 320
+    "trials": 322
    }
   ]
  },
@@ -632,7 +624,7 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 16,
+   "n_tested": 17,
    "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
@@ -1220,6 +1212,26 @@
     "apex_max": 6
    }
   },
+  "m6e-policy-meeting-desync-window": {
+   "name": "m6e-policy-meeting-desync-window",
+   "market": "M6E",
+   "tier": "candidate",
+   "mechanism": "Fed and ECB meeting calendars are unsynchronized so there are multi-day windows where one central bank has just updated its reaction function via a decision and the other has not yet met, making the policy differential temporarily one-sided and unopposed rather than a level or event effect.",
+   "metrics": {
+    "n": 31,
+    "wr": 48.39,
+    "pf": 1.164,
+    "usd_mo": 9,
+    "usd_trade": 10.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:49:37.926854+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1255,26 +1267,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
