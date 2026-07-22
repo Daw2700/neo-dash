@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:52:43Z",
+  "stamp": "2026-07-22T09:52:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mgc-velocity-logic-reserve-momentum-truncation",
     "stage": "dev3yr",
     "started": "2026-07-22T09:46:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-morning-range-exhaustion-overnight-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:52:45Z",
     "state": "running"
    }
   ],
