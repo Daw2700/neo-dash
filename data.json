@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:26:11Z",
+  "stamp": "2026-07-22T22:26:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:23:26Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-sovereign-oil-hedge-program-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:26:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mcl-sovereign-oil-hedge-program-window",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 5,
     "idea": "mgc-option-assignment-delivery-flatten",
@@ -502,7 +501,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 89,
    "dev3yr": 0,
    "robustness": 0,
