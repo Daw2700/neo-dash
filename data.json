@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:22:50Z",
+  "stamp": "2026-07-22T09:22:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,29 +408,35 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 12,
-    "idea": "mbt-equity-crashrisk-spillover-premium",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.35
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T09:22:51Z",
+    "state": "running"
    },
    {
-    "rank": 13,
-    "idea": "zc-index-roll-sunshine-liquidity-provision",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.32
+    "agent": "tester-2",
+    "market": "MBT",
+    "task": "mbt-equity-crashrisk-spillover-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:22:51Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-index-roll-sunshine-liquidity-provision",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:22:51Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 40,
    "dev3yr": 0,
    "robustness": 0,
