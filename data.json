@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:14:04Z",
+  "stamp": "2026-07-22T20:14:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:13:42Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-perp-funding-settlement-leak",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:14:06Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "met-perp-funding-settlement-leak",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 13,
     "idea": "zn-fomc-blackout-information-void-persistence",
@@ -457,7 +456,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
