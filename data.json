@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:37:35Z",
+  "stamp": "2026-07-22T11:42:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 402,
-  "n_results": 511,
-  "n_trials": 30482,
+  "n_registered": 405,
+  "n_results": 514,
+  "n_trials": 30485,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -141,6 +141,18 @@
    }
   },
   {
+   "id": "mbt-session-beta-channel-regime",
+   "name": "mbt-session-beta-channel-regime",
+   "market": "MBT",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 37,
+   "wr": 0.5135,
+   "usd_mo": 38,
+   "pf": 2.345,
+   "usd_trade": 37.1
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -171,6 +183,18 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  {
+   "id": "mes-crossmarket-breadth-gate-continuation",
+   "name": "mes-crossmarket-breadth-gate-continuation",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 80,
+   "wr": 0.5,
+   "usd_mo": 50,
+   "pf": 1.4,
+   "usd_trade": 22.3
   },
   {
    "id": "b3-tom-long",
@@ -279,37 +303,33 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
-  },
-  {
-   "id": "mes-variance-risk-premium-carry",
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 208,
-   "wr": 0.524,
-   "usd_mo": 47,
-   "pf": 1.122,
-   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:41:29.504610+00:00",
+   "hash": "be7af1e3",
+   "name": "mbt-session-beta-channel-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.345"
+  },
+  {
+   "t": "2026-07-22T11:39:43.000552+00:00",
+   "hash": "aabe10d0",
+   "name": "zn-post-blackout-speaker-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.709"
+  },
+  {
+   "t": "2026-07-22T11:39:17.050844+00:00",
+   "hash": "3e1aa4a5",
+   "name": "mes-crossmarket-breadth-gate-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.4"
+  },
   {
    "t": "2026-07-22T11:37:17.935410+00:00",
    "hash": "3b494bfd",
@@ -381,30 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T11:18:39.182216+00:00",
-   "hash": "991d6fe7",
-   "name": "xasset-vol-origin-attribution",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T11:16:57.541202+00:00",
-   "hash": "4264182c",
-   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T11:15:29.935553+00:00",
-   "hash": "f6edd34e",
-   "name": "mes-corr-collapse-hedge",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.554"
   }
  ],
  "pipeline": {
@@ -419,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-post-blackout-speaker-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:37:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MBT",
     "task": "mbt-session-beta-channel-regime",
     "stage": "dev3yr",
@@ -554,7 +542,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 315
+    "trials": 318
    }
   ]
  },
@@ -578,7 +566,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 63,
+   "n_tested": 64,
    "n_killed": 44,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -643,7 +631,7 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 9,
+   "n_tested": 10,
    "n_killed": 6,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
@@ -672,8 +660,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 24,
+   "n_tested": 30,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1011,6 +999,26 @@
     "apex_max": 2
    }
   },
+  "mbt-session-beta-channel-regime": {
+   "name": "mbt-session-beta-channel-regime",
+   "market": "MBT",
+   "tier": "candidate",
+   "mechanism": "Bitcoin futures equity beta is carried by the US-hours institutional/ETF arbitrage channel and is near-absent while that channel is closed overnight in Asia, so a large MBT move built entirely inside the 20:00-02:59 ET Asia window is more likely flow noise than information and should partially revert once the equity channel reopens at the 09:30 ET US cash open; we are paid for fading that noise on the reopen rather than treating the overnight move as a persistent signal.",
+   "metrics": {
+    "n": 37,
+    "wr": 0.5135,
+    "pf": 2.345,
+    "usd_mo": 38,
+    "usd_trade": 37.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:41:29.504610+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1068,6 +1076,26 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  "mes-crossmarket-breadth-gate-continuation": {
+   "name": "mes-crossmarket-breadth-gate-continuation",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Breadth of same-direction 09:30-10:00 ET movement across a 14-market micro complex separates macro-factor days (one common shock, flows persist) from idiosyncratic single-market noise days (mean-reverting); participants size trend positions similarly on both day types so a high-breadth signal should predict MES continuation from 10:00 to close.",
+   "metrics": {
+    "n": 80,
+    "wr": 0.5,
+    "pf": 1.4,
+    "usd_mo": 50,
+    "usd_trade": 22.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:39:17.050844+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
   },
   "b3-tom-long": {
    "name": "b3-tom-long",
@@ -1268,55 +1296,6 @@
      "t": "2026-07-21T16:03:08.112070+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
-  },
-  "mes-variance-risk-premium-carry": {
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
-   "metrics": {
-    "n": 208,
-    "wr": 0.524,
-    "pf": 1.122,
-    "usd_mo": 47,
-    "usd_trade": 8.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:04:02.729327+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
     }
    ]
   }
