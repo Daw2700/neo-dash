@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:50:20Z",
+  "stamp": "2026-07-22T23:53:13Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 688,
-  "n_results": 845,
-  "n_trials": 30833,
+  "n_results": 846,
+  "n_trials": 30834,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T23:50:26.030376+00:00",
+   "hash": "729dbe10",
+   "name": "mgc-830-scheduled-data-range-breakout",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.775"
+  },
+  {
    "t": "2026-07-22T23:47:36.774194+00:00",
    "hash": "729dbe10",
    "name": "mgc-830-scheduled-data-range-breakout",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.555"
-  },
-  {
-   "t": "2026-07-22T23:25:52.502428+00:00",
-   "hash": "868d6d26",
-   "name": "m6e-us-rate-shock-transmission-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4773"
   }
  ],
  "pipeline": {
@@ -407,14 +407,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T23:33:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "replication: mgc-830-scheduled-data-range-breakout",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:47:48Z",
     "state": "running"
    }
   ],
@@ -483,7 +475,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 666
+    "trials": 667
    }
   ]
  },
