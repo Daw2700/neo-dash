@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:23:54Z",
+  "stamp": "2026-07-22T21:23:57Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "SIL",
+    "task": "sil-nonreviewable-range-sweep-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:23:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-japan-holiday-tokyo-participant-absence",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:23:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-opening-basket-staleness-catchup",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:23:56Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "sil-nonreviewable-range-sweep-reversion",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "zn-japan-holiday-tokyo-participant-absence",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 3,
-    "idea": "m2k-opening-basket-staleness-catchup",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 4,
     "idea": "mcl-cushing-tank-constraint-expiry-convexity",
@@ -512,7 +510,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
