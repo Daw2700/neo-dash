@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:11:27Z",
+  "stamp": "2026-07-22T10:13:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 365,
-  "n_results": 469,
-  "n_trials": 30440,
+  "n_registered": 366,
+  "n_results": 470,
+  "n_trials": 30441,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mcl-annual-high-hedge",
-   "name": "mcl-annual-high-hedge",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 20,
-   "wr": 0.7,
-   "usd_mo": 26,
-   "pf": 2.779,
-   "usd_trade": 47.1
   },
   {
    "id": "mnq-session-early-exhaustion-fade",
@@ -307,9 +295,37 @@
     "growth_max": 7,
     "apex_max": 5
    }
+  },
+  {
+   "id": "mes-variance-risk-premium-carry",
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 208,
+   "wr": 0.524,
+   "usd_mo": 47,
+   "pf": 1.122,
+   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T10:13:44.658358+00:00",
+   "hash": "aec41266",
+   "name": "mcl-annual-high-hedge",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T10:12:30.867912+00:00",
+   "hash": "27752033",
+   "name": "mcl-annual-high-hedge :: ROBUSTNESS PROTOCOL (probe 440)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T10:10:59.702214+00:00",
    "hash": "09ec70d3",
@@ -389,22 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 2.894"
-  },
-  {
-   "t": "2026-07-22T09:54:04.338293+00:00",
-   "hash": "bc442347",
-   "name": "PROTOCOL 432_robust_mes-morning-range-exhaustion-overnight-carry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T09:52:46.704939+00:00",
-   "hash": "2a62c3c6",
-   "name": "mgc-velocity-reserve-truncation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.624"
   }
  ],
  "pipeline": {
@@ -423,6 +423,14 @@
     "task": "mes-information-discreteness-frog-in-the-pan",
     "stage": "dev3yr",
     "started": "2026-07-22T10:06:21Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "robustness: mcl-annual-high-hedge",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:11:31Z",
     "state": "running"
    }
   ],
@@ -529,7 +537,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 45,
+   "registered": 46,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -591,7 +599,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 273
+    "trials": 274
    }
   ]
  },
@@ -1048,26 +1056,6 @@
     "apex_max": 2
    }
   },
-  "mcl-annual-high-hedge": {
-   "name": "mcl-annual-high-hedge",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "As MCL crude approaches its trailing 252-day high, producers front-load forward hedge selling into the salient annual reference level, supplying futures price-insensitively into the next session; short the next RTH session when nearness-to-252d-high sits in the top band.",
-   "metrics": {
-    "n": 20,
-    "wr": 0.7,
-    "pf": 2.779,
-    "usd_mo": 26,
-    "usd_trade": 47.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:08:39.261815+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mnq-session-early-exhaustion-fade": {
    "name": "mnq-session-early-exhaustion-fade",
    "market": "MNQ",
@@ -1351,6 +1339,31 @@
     "growth_max": 7,
     "apex_max": 5
    }
+  },
+  "mes-variance-risk-premium-carry": {
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
+   "metrics": {
+    "n": 208,
+    "wr": 0.524,
+    "pf": 1.122,
+    "usd_mo": 47,
+    "usd_trade": 8.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:04:02.729327+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
