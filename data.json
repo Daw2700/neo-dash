@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:59:46Z",
+  "stamp": "2026-07-22T18:59:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,26 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "SIL",
+    "task": "robustness: sil-jan-bcom-gsci-reweight-short",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:59:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-asia-leg-accrual-giveback-at-european-cash-open",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:59:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-when-issued-hedge-build-release-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:59:47Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-asia-leg-accrual-giveback-at-european-cash-open",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 8,
-    "idea": "zn-when-issued-hedge-build-release-asymmetry",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 9,
     "idea": "met-pre-maintenance-halt-inventory-flatten",
@@ -471,7 +478,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 5,
    "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
