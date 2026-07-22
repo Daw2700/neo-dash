@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:19:53Z",
+  "stamp": "2026-07-22T12:25:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 421,
-  "n_results": 531,
-  "n_trials": 30502,
+  "n_registered": 422,
+  "n_results": 533,
+  "n_trials": 30504,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "m2k-duration-equity-valuation-band-reversion",
+   "name": "m2k-duration-equity-valuation-band-reversion",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 30,
+   "wr": 0.5333,
+   "usd_mo": 48,
+   "pf": 1.448,
+   "usd_trade": 57.1
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -237,18 +249,6 @@
    "usd_trade": 15.4
   },
   {
-   "id": "mgc-late-participation-share-overnight-carry",
-   "name": "mgc-late-participation-share-overnight-carry",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 135,
-   "wr": 0.5333,
-   "usd_mo": 51,
-   "pf": 1.269,
-   "usd_trade": 13.7
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -306,6 +306,22 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T12:23:30.075599+00:00",
+   "hash": "b42dbad9",
+   "name": "mgc-late-participation-share-overnight-carry",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T12:22:16.241241+00:00",
+   "hash": "0c24f932",
+   "name": "m2k-duration-equity-valuation-band-reversion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.448"
+  },
   {
    "t": "2026-07-22T12:17:18.445446+00:00",
    "hash": "1f89e90c",
@@ -385,22 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T12:01:18.500191+00:00",
-   "hash": "e1d0dadc",
-   "name": "scout-31b-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T11:59:34.272759+00:00",
-   "hash": "658e075c",
-   "name": "m2k-fund-fiscalyearend-rebound",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.524"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-duration-equity-valuation-band-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:19:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-qra-supply-composition-repricing",
     "stage": "dev3yr",
@@ -550,7 +542,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 335
+    "trials": 337
    }
   ]
  },
@@ -594,7 +586,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 14,
+   "n_tested": 15,
    "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
@@ -1027,6 +1019,26 @@
     }
    ]
   },
+  "m2k-duration-equity-valuation-band-reversion": {
+   "name": "m2k-duration-equity-valuation-band-reversion",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Small caps carry the highest refinancing sensitivity in the equity complex, so the ZN-vs-M2K relative price is a slow-moving discount-rate valuation band rather than a shock response; multi-week dislocations of that band are pushed by rates-driven allocation flows and revert as the earnings-versus-discount-rate tradeoff is re-underwritten.",
+   "metrics": {
+    "n": 30,
+    "wr": 0.5333,
+    "pf": 1.448,
+    "usd_mo": 48,
+    "usd_trade": 57.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T12:22:16.241241+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1186,26 +1198,6 @@
      "t": "2026-07-22T05:57:32.220572+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
-    }
-   ]
-  },
-  "mgc-late-participation-share-overnight-carry": {
-   "name": "mgc-late-participation-share-overnight-carry",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "Gold's RTH volume distribution reveals who is transacting: a session whose volume is back-loaded into the final hour is dominated by benchmark/programme execution rather than discretionary flow, and that execution is typically the visible leg of a larger order that continues into Asian hours, producing positive close-to-next-RTH-open drift on high-skew days.",
-   "metrics": {
-    "n": 135,
-    "wr": 0.5333,
-    "pf": 1.269,
-    "usd_mo": 51,
-    "usd_trade": 13.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T12:13:48.520040+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
     }
    ]
   },
