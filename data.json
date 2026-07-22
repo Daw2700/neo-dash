@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:15:03Z",
+  "stamp": "2026-07-22T01:18:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 134,
-  "n_results": 218,
+  "n_results": 219,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 4
+  "needs_attention_count": 5
  },
  "leaderboard": [
   {
@@ -301,23 +301,27 @@
    "usd_trade": 5.7
   },
   {
-   "id": "b10-fomc-cycle-even",
-   "name": "b10-fomc-cycle-even",
+   "id": "b4-bigday-fade",
+   "name": "b4-bigday-fade",
    "market": "MNQ",
    "tier": "candidate",
    "pinned": false,
-   "n": 406,
-   "wr": 0.532,
-   "usd_mo": 132,
-   "pf": 1.095,
-   "usd_trade": 11.7,
-   "sizing": {
-    "growth_max": 1,
-    "apex_max": 0
-   }
+   "n": 202,
+   "wr": 0.48,
+   "usd_mo": 56,
+   "pf": 1.08,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T01:15:06.859095+00:00",
+   "hash": "67056ed5",
+   "name": "b10-fomc-cycle-even",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T01:12:29.623327+00:00",
    "hash": "ea6372c7",
@@ -405,43 +409,10 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:41:33.400074+00:00",
-   "hash": "1f64c499",
-   "name": "b2-fomc-predrift",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: scan-mcl",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:02:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MBT",
-    "task": "robustness: scan-mbt",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:02:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "robustness: b10-fomc-cycle-even",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:11:24Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 8,
@@ -535,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 22
+    "trials": 23
    }
   ]
  },
@@ -1288,32 +1259,57 @@
     }
    ]
   },
-  "b10-fomc-cycle-even": {
-   "name": "b10-fomc-cycle-even",
+  "b4-bigday-fade": {
+   "name": "b4-bigday-fade",
    "market": "MNQ",
    "tier": "candidate",
-   "mechanism": "The equity premium accrues almost entirely in even weeks of the FOMC cycle as Fed information/liquidity releases biweekly (Cieslak/Morse/Vissing-Jorgensen JF 2019)",
+   "mechanism": "A single-day move beyond 1.5% overshoots via forced flows and margin selling; next-open liquidity providers fade it",
    "metrics": {
-    "n": 406,
-    "wr": 0.532,
-    "pf": 1.095,
-    "usd_mo": 132,
-    "usd_trade": 11.7
+    "n": 202,
+    "wr": 0.48,
+    "pf": 1.08,
+    "usd_mo": 56,
+    "usd_trade": 10.1
    },
    "verdict_history": [
     {
-     "t": "2026-07-21T19:50:31.451921+00:00",
+     "t": "2026-07-21T14:44:57.606619+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.918482+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.714243+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 1,
-    "apex_max": 0
-   }
+   ]
   }
  },
  "decisions": [
+  {
+   "id": "d-scanmcl-demote",
+   "kind": "demotion",
+   "needs_attention": true,
+   "title": "Book sleeve mcl-vix (scan-mcl) failed robustness \u2014 pull from the book?",
+   "recommendation": "REMOVE from the book \u2014 plateau + wrong-date placebo failures on formal hardening",
+   "evidence": "Robustness battery on MCL scan family: vix-rebound-long fails parameter plateau and wrong-date placebo; monday/prehol variants also fail (ledger, stage=robustness, 2026-07-22)",
+   "what_yes_means": "Book drops another sleeve; sizing and all bundles recompute without mcl-vix",
+   "recap": "Same situation as mym-prehol: a scan-campaign sleeve that never faced the formal battery just did, and its edge doesn't separate from placebo. Decide whether it keeps its book slot.",
+   "why": "The crude VIX-rebound sleeve's profits move when its dates are displaced and its edge lives on a narrow parameter setting \u2014 the two classic signatures of a fitted artifact rather than a mechanism. It was carrying 1 micro in every current book; that allocation would go to sleeves that survived.",
+   "steps": [
+    "Approve: DEMOTED stands; scan-mcl leaves the validated book set",
+    "Sizing + bundles recompute on the remaining sleeves",
+    "Dashboard book/roadmap views update on next publish",
+    "History stays on the ledger; re-validation can reinstate later",
+    "Deny: sleeve keeps its slot; the robustness result remains recorded either way"
+   ],
+   "staged": "2026-07-22T01:15:59Z"
+  },
   {
    "id": "d-scanmym-demote",
    "kind": "demotion",
