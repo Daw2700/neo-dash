@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:03:22Z",
+  "stamp": "2026-07-22T04:05:26Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 186,
-  "n_results": 279,
-  "n_trials": 30250,
+  "n_registered": 189,
+  "n_results": 281,
+  "n_trials": 30252,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:05:11.119410+00:00",
+   "hash": "a157dc0b",
+   "name": "mbt-etf-nav-strike-hedge-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.336"
+  },
+  {
+   "t": "2026-07-22T04:05:09.393604+00:00",
+   "hash": "d34acc4e",
+   "name": "zn-mbs-convexity-cascade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.485"
+  },
+  {
+   "t": "2026-07-22T04:04:44.281581+00:00",
+   "hash": "5738f8e6",
+   "name": "zn-boj-tokyo-transmission",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T03:56:31.622682+00:00",
    "hash": "1cba0fa5",
    "name": "mcl-shorthorizon-trend-decay-fade",
@@ -377,52 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.891"
-  },
-  {
-   "t": "2026-07-22T03:48:32.983326+00:00",
-   "hash": "314f0993",
-   "name": "m6e-ecb-presser-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.6865"
-  },
-  {
-   "t": "2026-07-22T03:48:12.119657+00:00",
-   "hash": "fa6865bf",
-   "name": "mgc-zn-realrate-rv-convergence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.906"
-  },
-  {
-   "t": "2026-07-22T03:37:45.078459+00:00",
-   "hash": "8012350b",
-   "name": "mym-price-weight-earnings-dislocation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.195"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-etf-nav-strike-hedge-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:03:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-mbs-convexity-hedge-cascade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:03:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-boj-tokyo-policy-transmission",
     "stage": "dev3yr",
@@ -497,7 +481,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 10,
+   "registered": 11,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +543,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 83
+    "trials": 85
    }
   ]
  },
@@ -646,8 +630,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 1,
+   "n_tested": 3,
+   "n_killed": 2,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
@@ -675,8 +659,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 9,
+   "n_tested": 13,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   },
