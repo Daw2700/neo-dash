@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:30:59Z",
+  "stamp": "2026-07-22T04:31:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,21 +420,19 @@
     "stage": "dev3yr",
     "started": "2026-07-22T04:29:15Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 10,
-    "idea": "m2k-taxloss-turnofyear-reversal",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.35
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-taxloss-turnofyear-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:31:00Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 15,
    "dev3yr": 0,
    "robustness": 0,
