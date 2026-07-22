@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:10:33Z",
+  "stamp": "2026-07-22T12:11:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 418,
-  "n_results": 525,
-  "n_trials": 30496,
+  "n_registered": 419,
+  "n_results": 526,
+  "n_trials": 30497,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T12:11:36.706411+00:00",
+   "hash": "a332ce29",
+   "name": "mes-xsec-momentum-rank",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.047"
+  },
+  {
    "t": "2026-07-22T12:10:05.152570+00:00",
    "hash": "1f89e90c",
    "name": "zs-zc-substitution-ratio-reversion",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.651"
-  },
-  {
-   "t": "2026-07-22T11:54:03.326298+00:00",
-   "hash": "70f9638c",
-   "name": "ROBUSTNESS-PROTOCOL m6e-policy-meeting-desync-window (candidate 0cd58d6eaaa4b8de)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-crosssectional-momentum-micro-complex",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:08:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "mgc-late-participation-share-overnight-carry",
     "stage": "dev3yr",
@@ -577,7 +569,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 329
+    "trials": 330
    }
   ]
  },
@@ -601,8 +593,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 66,
-   "n_killed": 46,
+   "n_tested": 67,
+   "n_killed": 47,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
