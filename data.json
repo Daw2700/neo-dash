@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:23:54Z",
+  "stamp": "2026-07-22T08:26:39Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 313,
-  "n_results": 417,
-  "n_trials": 30388,
+  "n_registered": 316,
+  "n_results": 418,
+  "n_trials": 30389,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:26:38.471831+00:00",
+   "hash": "f5f47349",
+   "name": "mcl-option-expiry-gamma-pin",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T08:26:18.544016+00:00",
+   "hash": "3fa0d282",
+   "name": "mes-order-flow-toxicity-liquidity-withdrawal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
+   "t": "2026-07-22T08:26:09.065179+00:00",
+   "hash": "94a827b3",
+   "name": "mes-margin-call-preopen-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T08:21:27.795808+00:00",
    "hash": "378ec9fb",
    "name": "sil-dual-identity-beta-conflict",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.297"
-  },
-  {
-   "t": "2026-07-22T08:08:09.414470+00:00",
-   "hash": "4611b77f",
-   "name": "mbt-disposition-run-profit-taking",
-   "status": "overturned - pf 2.117 / ex",
-   "kind": "result",
-   "detail": "PF 2.117"
-  },
-  {
-   "t": "2026-07-22T08:06:51.265865+00:00",
-   "hash": "e6e265f3",
-   "name": "mes-macro-revision-underreaction-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T08:06:02.613804+00:00",
-   "hash": "305fde18",
-   "name": "mes-weekend-crypto-information-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.05"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-order-flow-toxicity-liquidity-withdrawal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:23:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-variation-margin-call-preopen-window",
     "stage": "dev3yr",
@@ -537,7 +529,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 36,
+   "registered": 38,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -599,7 +591,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 221
+    "trials": 222
    }
   ]
  },
@@ -623,8 +615,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 41,
-   "n_killed": 26,
+   "n_tested": 42,
+   "n_killed": 27,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
