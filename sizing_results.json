@@ -46,6 +46,14 @@
     "max_micros": 1
    }
   },
+  "mes-gold-overnight-macro-signal-open-continuation": {
+   "growth": {
+    "max_micros": 7
+   },
+   "apex150": {
+    "max_micros": 5
+   }
+  },
   "b3-preholiday-drift": {
    "growth": {
     "max_micros": 5
@@ -86,14 +94,6 @@
     "max_micros": 1
    }
   },
-  "mes-gold-overnight-macro-signal-open-continuation": {
-   "growth": {
-    "max_micros": 7
-   },
-   "apex150": {
-    "max_micros": 5
-   }
-  },
   "b3-prior-high-break": {
    "growth": {
     "max_micros": 2
@@ -132,9 +132,9 @@
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b3-prior-high-break": 1
    },
    "total_micros": 12,
@@ -153,8 +153,8 @@
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 3,
     "b3-monday-long": 2,
-    "b4-open-drive": 1,
     "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1,
     "b2-vix-reversion": 2
    },
    "total_micros": 12,
@@ -173,8 +173,8 @@
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
-    "b4-open-drive": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 2
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "b4-open-drive": 2
    },
    "total_micros": 11,
    "p_breach": 0.199,
@@ -213,9 +213,9 @@
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b2-opex-release": 1,
     "b3-tom-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b3-prior-high-break": 1
    },
    "total_micros": 10,
@@ -252,8 +252,8 @@
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1
    },
    "total_micros": 6,
    "p_breach": 0.178,
@@ -271,8 +271,8 @@
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1
    },
    "total_micros": 6,
    "p_breach": 0.178,

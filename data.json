@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:37:08Z",
+  "stamp": "2026-07-22T05:39:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 242,
-  "n_results": 339,
-  "n_trials": 30310,
+  "n_results": 340,
+  "n_trials": 30311,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:39:16.139880+00:00",
+   "hash": "6d2e6f18",
+   "name": "mgc-lny-restock-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1224"
+  },
+  {
    "t": "2026-07-22T05:35:05.450913+00:00",
    "hash": "a12d6eaa",
    "name": "mes-opening-auction-imbalance-print-fade",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.102"
-  },
-  {
-   "t": "2026-07-22T05:18:27.107874+00:00",
-   "hash": "ddce63f2",
-   "name": "zn-eu-sovereign-supply-spillover",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.256"
   }
  ],
  "pipeline": {
@@ -431,6 +431,14 @@
     "task": "mes-opening-auction-imbalance-print-fade",
     "stage": "dev3yr",
     "started": "2026-07-22T05:31:18Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MGC",
+    "task": "recheck: mgc-lny-restock-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:37:09Z",
     "state": "running"
    }
   ],
@@ -499,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 143
+    "trials": 144
    }
   ]
  },
@@ -1329,9 +1337,9 @@
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b2-opex-release": 1,
     "b3-tom-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b3-prior-high-break": 1
    },
    "total_micros": 10,
@@ -1353,8 +1361,8 @@
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1
    },
    "total_micros": 6,
    "p_breach": 0.178,
@@ -1375,8 +1383,8 @@
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1
    },
    "total_micros": 6,
    "p_breach": 0.178,
@@ -1460,9 +1468,9 @@
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b3-prior-high-break": 1
    },
    "total_micros": 12,
@@ -1484,8 +1492,8 @@
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 3,
     "b3-monday-long": 2,
-    "b4-open-drive": 1,
     "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1,
     "b2-vix-reversion": 2
    },
    "total_micros": 12,
@@ -1507,8 +1515,8 @@
     "b3-nr7-breakout": 3,
     "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
-    "b4-open-drive": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 2
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "b4-open-drive": 2
    },
    "total_micros": 11,
    "p_breach": 0.199,
