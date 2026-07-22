@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:54:08Z",
+  "stamp": "2026-07-22T04:54:10Z",
   "stale_after_min": 30,
   "status": "d-neo300-paper-creds-r4 DENIED \u2014 Neo-300 paper bot retired for good, slippage collector dormant at 0/100 samples, cost model stays modelled",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T04:53:46Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-gold-overnight-macro-signal-open-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:54:09Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 2,
-    "idea": "mes-gold-overnight-macro-signal-open-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 3,
     "idea": "mes-macro-surprise-sign-flip-bond-confirmed",
@@ -559,7 +558,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 13,
    "registered": 19,
    "dev3yr": 0,
    "robustness": 0,
