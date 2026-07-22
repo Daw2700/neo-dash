@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:21:04Z",
+  "stamp": "2026-07-22T11:21:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,29 +404,43 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 12,
-    "idea": "mng-withdrawal-season-weather-premium-decay",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.33
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T11:21:05Z",
+    "state": "running"
    },
    {
-    "rank": 13,
-    "idea": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "robustness: mes-corr-collapse-hedge",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:21:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-withdrawal-season-weather-premium-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:21:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:21:05Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
