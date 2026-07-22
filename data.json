@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:25:24Z",
+  "stamp": "2026-07-22T17:27:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 537,
-  "n_results": 670,
-  "n_trials": 30658,
+  "n_registered": 539,
+  "n_results": 671,
+  "n_trials": 30659,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:27:07.870753+00:00",
+   "hash": "2d7480a3",
+   "name": "mgc-corrsign-dip-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.8836"
+  },
+  {
+   "t": "2026-07-22T17:26:11.615515+00:00",
+   "hash": "f8cdaf1b",
+   "name": "zn-round-yield-handle-magnet",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T17:25:59.056753+00:00",
+   "hash": "f954e864",
+   "name": "scout-39-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T17:25:12.826075+00:00",
    "hash": "0217bacb",
    "name": "met-ethbtc-ratio-regime",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1317"
-  },
-  {
-   "t": "2026-07-22T17:10:29.796451+00:00",
-   "hash": "bd13d28f",
-   "name": "mes-week-position-reopen",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.041"
-  },
-  {
-   "t": "2026-07-22T17:09:43.282386+00:00",
-   "hash": "26ccf306",
-   "name": "mes-vix-return-sign-decoupling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.132"
-  },
-  {
-   "t": "2026-07-22T17:09:38.406848+00:00",
-   "hash": "3c92598e",
-   "name": "mes-zn-extreme-ordering-lead-lag-residual",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.102"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "MNQ",
-    "task": "recheck: mgc-corrsign-dip-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:25:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "MCL",
     "task": "mcl-london-overlap-variance-share-idiosyncratic-fade",
     "stage": "dev3yr",
@@ -441,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 75,
+   "registered": 77,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 491
+    "trials": 492
    }
   ]
  },
