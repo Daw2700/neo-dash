@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:23:23Z",
+  "stamp": "2026-07-22T02:24:18Z",
   "stale_after_min": 30,
   "status": "d-scanmcl-demote approve applied \u2014 scan-mcl demoted out of the book; dashboard mirrors pending (d-book-mirror-sync)",
   "engine_state": "ok",
   "n_registered": 151,
   "n_results": 237,
-  "n_trials": 30160,
+  "n_trials": 30208,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -408,7 +408,16 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T02:15:24Z",
+    "state": "running"
+   }
+  ],
   "backlog": [],
   "funnel": {
    "idea": 0,

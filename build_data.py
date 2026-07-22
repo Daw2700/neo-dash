@@ -126,8 +126,13 @@ feed = sorted(feed, key=lambda f: f["t"], reverse=True)[:12]
 def _trials(m):
     v = m.get("configs", m.get("cells", 1))
     return v if isinstance(v, (int, float)) else 1   # workers sometimes record rich objects here
-n_trials = max((r["metrics"].get("n_trials_now", 0) or 0 for r in results
-                if isinstance(r["metrics"].get("n_trials_now", 0), (int, float))), default=0) or \
+# official snapshot (last calibration entry) + every trial recorded after it
+_snap_t, _snap = "", 0
+for r in results:
+    v = r["metrics"].get("n_trials_now", 0)
+    if isinstance(v, (int, float)) and v > _snap:
+        _snap, _snap_t = v, r["t"]
+n_trials = (_snap + sum(_trials(r["metrics"]) for r in results if r["t"] > _snap_t)) or \
     sum(_trials(r["metrics"]) for r in results)
 per_day = defaultdict(int)
 for r in results:
