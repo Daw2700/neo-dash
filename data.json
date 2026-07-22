@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:48:16Z",
+  "stamp": "2026-07-22T03:48:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T03:46:12Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-opec-meeting-positioning-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:48:18Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mcl-opec-meeting-positioning-unwind",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 5,
     "idea": "mgc-roll-window-front-contract-carry",
@@ -492,7 +491,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 11,
    "dev3yr": 0,
    "robustness": 0,
