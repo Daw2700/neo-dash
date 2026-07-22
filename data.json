@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:28:39Z",
+  "stamp": "2026-07-22T01:33:29Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 136,
-  "n_results": 222,
+  "n_registered": 139,
+  "n_results": 224,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -301,19 +301,43 @@
    "usd_trade": 5.7
   },
   {
-   "id": "b4-bigday-fade",
-   "name": "b4-bigday-fade",
-   "market": "MNQ",
+   "id": "zn-volshock-equity-degross-rebound",
+   "name": "zn-volshock-equity-degross-rebound",
+   "market": "ZN",
    "tier": "candidate",
    "pinned": false,
-   "n": 202,
-   "wr": 0.48,
-   "usd_mo": 56,
-   "pf": 1.08,
-   "usd_trade": 10.1
+   "n": 83,
+   "wr": 0.5422,
+   "usd_mo": 26,
+   "pf": 1.081,
+   "usd_trade": 11.4
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T01:31:07.966170+00:00",
+   "hash": "117bdf18",
+   "name": "scout-13-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T01:30:04.283585+00:00",
+   "hash": "44ea882d",
+   "name": "zn-volshock-equity-degross-rebound",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.081"
+  },
+  {
+   "t": "2026-07-22T01:29:48.558737+00:00",
+   "hash": "190c0a12",
+   "name": "mcl-producer-hedge-window-rth-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.021"
+  },
   {
    "t": "2026-07-22T01:21:51.722585+00:00",
    "hash": "94b9b65b",
@@ -385,30 +409,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:58:26.808888+00:00",
-   "hash": "15910ca1",
-   "name": "b7-down-weeks-dip",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:54:26.606240+00:00",
-   "hash": "b12ada19",
-   "name": "b3-pm-trend-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:53:30.705719+00:00",
-   "hash": "f8c4990b",
-   "name": "b7-bond-flight-unwind",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-1",
     "market": "MNQ",
     "task": "zn-volshock-equity-degross-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:28:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-producer-hedge-window-rth-drift",
     "stage": "dev3yr",
     "started": "2026-07-22T01:28:15Z",
     "state": "running"
@@ -441,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 6,
+   "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 26
+    "trials": 28
    }
   ]
  },
@@ -574,8 +566,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 3,
+   "n_tested": 5,
+   "n_killed": 4,
    "book_sleeves": [
     "mcl-vix (crude)"
    ],
@@ -623,7 +615,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 6,
+   "n_tested": 7,
    "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
@@ -1266,33 +1258,23 @@
     }
    ]
   },
-  "b4-bigday-fade": {
-   "name": "b4-bigday-fade",
-   "market": "MNQ",
+  "zn-volshock-equity-degross-rebound": {
+   "name": "zn-volshock-equity-degross-rebound",
+   "market": "ZN",
    "tier": "candidate",
-   "mechanism": "A single-day move beyond 1.5% overshoots via forced flows and margin selling; next-open liquidity providers fade it",
+   "mechanism": "Risk-parity and vol-target funds size equity exposure off a portfolio vol estimate in which bond volatility is a large input, so a rates-vol shock forces mechanical equity de-grossing on the following session regardless of equity news; we are paid for absorbing that forced supply and holding while it exhausts.",
    "metrics": {
-    "n": 202,
-    "wr": 0.48,
-    "pf": 1.08,
-    "usd_mo": 56,
-    "usd_trade": 10.1
+    "n": 83,
+    "wr": 0.5422,
+    "pf": 1.081,
+    "usd_mo": 26,
+    "usd_trade": 11.4
    },
    "verdict_history": [
     {
-     "t": "2026-07-21T14:44:57.606619+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.918482+00:00",
+     "t": "2026-07-22T01:30:04.283585+00:00",
      "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.714243+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
+     "verdict": "KILLED"
     }
    ]
   }
