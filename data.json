@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:07:10Z",
+  "stamp": "2026-07-22T20:09:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 607,
-  "n_results": 750,
-  "n_trials": 30738,
+  "n_registered": 608,
+  "n_results": 752,
+  "n_trials": 30740,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -249,18 +249,6 @@
    "usd_trade": 14.3
   },
   {
-   "id": "mnq-overnight-origin-session-information",
-   "name": "mnq-overnight-origin-session-information",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 508,
-   "wr": 0.5472,
-   "usd_mo": 471,
-   "pf": 1.317,
-   "usd_trade": 33.4
-  },
-  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -299,9 +287,45 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  {
+   "id": "mcl-eia-day-midsession-to-close-momentum",
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 153,
+   "wr": 0.5033,
+   "usd_mo": 30,
+   "pf": 1.237,
+   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T20:08:34.339607+00:00",
+   "hash": "551ff7d3",
+   "name": "mng-bidweek-fixing-concentration",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T20:08:19.075115+00:00",
+   "hash": "f4544f8a",
+   "name": "mnq-overnight-origin-session-information",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 1.036"
+  },
+  {
+   "t": "2026-07-22T20:07:10.942971+00:00",
+   "hash": "f4544f8a",
+   "name": "mnq-overnight-origin-session-information",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T20:07:01.264504+00:00",
    "hash": "7622fb3a",
@@ -373,30 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.38"
-  },
-  {
-   "t": "2026-07-22T19:51:00.426657+00:00",
-   "hash": "72b8e167",
-   "name": "scout-43-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T19:48:22.516271+00:00",
-   "hash": "d43bc0aa",
-   "name": "mym-price-weighted-exdiv-mechanical-drop",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 2.775"
-  },
-  {
-   "t": "2026-07-22T19:48:12.245043+00:00",
-   "hash": "e4c1477b",
-   "name": "mgc-unmarked-window-length-dose-response",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.83"
   }
  ],
  "pipeline": {
@@ -415,6 +415,14 @@
     "task": "mng-bidweek-physical-fixing-hedge-concentration",
     "stage": "dev3yr",
     "started": "2026-07-22T20:06:27Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "replication: mnq-overnight-origin-session-information",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:07:12Z",
     "state": "running"
    }
   ],
@@ -485,7 +493,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 85,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -547,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 571
+    "trials": 573
    }
   ]
  },
@@ -1226,31 +1234,6 @@
     }
    ]
   },
-  "mnq-overnight-origin-session-information": {
-   "name": "mnq-overnight-origin-session-information",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Overnight moves made in the EU block (02:00-08:00 ET) reflect real deep-book risk transfer and get ratified by RTH flow (continuation), while same-size moves made in the thin Asia block (18:00-02:00 ET) are dealer-inventory drift with no counterparty behind it and get retraced by RTH flow (fade); paid for identifying WHICH block produced the overnight move, not how big it was.",
-   "metrics": {
-    "n": 508,
-    "wr": 0.5472,
-    "pf": 1.317,
-    "usd_mo": 471,
-    "usd_trade": 33.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T19:59:43.486232+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T19:59:59.288427+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1324,6 +1307,26 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  "mcl-eia-day-midsession-to-close-momentum": {
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
+   "metrics": {
+    "n": 153,
+    "wr": 0.5033,
+    "pf": 1.237,
+    "usd_mo": 30,
+    "usd_trade": 7.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T18:14:48.455567+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
