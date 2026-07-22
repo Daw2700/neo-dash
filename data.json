@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:44:43Z",
+  "stamp": "2026-07-22T07:44:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,6 +415,22 @@
     "task": "mnq-micro-vs-fullsize-retail-basis",
     "stage": "dev3yr",
     "started": "2026-07-22T07:39:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "replication: mnq-event-free-day-flow-persistence",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:44:44Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "replication: mcl-upside-semivariance-exhaustion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:44:44Z",
     "state": "running"
    }
   ],
