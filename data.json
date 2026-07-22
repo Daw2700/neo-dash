@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:35:39Z",
+  "stamp": "2026-07-22T06:35:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 270,
-  "n_results": 369,
-  "n_trials": 30340,
+  "n_results": 370,
+  "n_trials": 30341,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:35:40.285507+00:00",
+   "hash": "7fe8960c",
+   "name": "mgc-etf-creation-hedge-1600-print",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.481"
+  },
+  {
    "t": "2026-07-22T06:35:16.884237+00:00",
    "hash": "cc0c5579",
    "name": "mcl-pipeline-nomination-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.945"
-  },
-  {
-   "t": "2026-07-22T06:34:58.181873+00:00",
-   "hash": "7fe8960c",
-   "name": "mgc-etf-creation-hedge-1600-print",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T06:34:47.978869+00:00",
@@ -424,22 +424,28 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:34:56Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 14,
-    "idea": "mym-component-split-divisor-rebalance",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T06:35:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MYM",
+    "task": "mym-component-split-divisor-rebalance",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:35:40Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
-   "registered": 25,
+   "idea": 0,
+   "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -501,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 173
+    "trials": 174
    }
   ]
  },
@@ -554,8 +560,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 13,
+   "n_tested": 15,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
