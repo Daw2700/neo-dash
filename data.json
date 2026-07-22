@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:12:54Z",
+  "stamp": "2026-07-22T11:12:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T11:09:08Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "robustness: mng-unconfirmed-idiosyncratic-move-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:12:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-realized-correlation-collapse-hedging-demand",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:12:56Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mes-realized-correlation-collapse-hedging-demand",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 12,
     "idea": "mng-withdrawal-season-weather-premium-decay",
@@ -448,7 +455,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
