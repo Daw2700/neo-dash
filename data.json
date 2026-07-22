@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:44:01Z",
+  "stamp": "2026-07-22T04:45:04Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 217,
-  "n_results": 307,
-  "n_trials": 30278,
+  "n_results": 308,
+  "n_trials": 30279,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,20 +307,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:44:58.098953+00:00",
+   "hash": "c9484230",
+   "name": "zc-european-daybreak-origination-hedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.166"
+  },
+  {
    "t": "2026-07-22T04:43:55.577025+00:00",
    "hash": "4c72bf41",
    "name": "zn-qra-issuance-repricing",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.041"
-  },
-  {
-   "t": "2026-07-22T04:43:50.466080+00:00",
-   "hash": "c9484230",
-   "name": "zc-european-daybreak-origination-hedge",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:43:48.267856+00:00",
@@ -404,16 +404,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-zs-european-daybreak-origination-hedge",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:42:57Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 8,
@@ -445,7 +436,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 15,
+   "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +498,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 111
+    "trials": 112
    }
   ]
  },
@@ -632,8 +623,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 7,
+   "n_tested": 8,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
