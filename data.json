@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:20:01Z",
+  "stamp": "2026-07-22T19:25:51Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 587,
   "n_results": 727,
@@ -404,19 +404,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T19:12:17Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-vwap-twap-participation-skew",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "zc-crop-insurance-price-discovery-february",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mes-quarter-week10-preexpiry-derisk",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 4,
+    "idea": "sil-micro-options-void-undamped-continuation",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mng-daily-cash-window-index-hedge-clock",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 6,
+    "idea": "zc-drought-monitor-thursday-release-repricing",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-position-build-vs-liquidation-volume-signature",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mcl-trade-month-vs-calendar-month-offset-hedge-concentration",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-unmarked-window-length-dose-response",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 10,
+    "idea": "mym-price-weighted-exdiv-mechanical-drop",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "mnq-complex-wide-inside-day-coil",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-cot-release-window-crowding-repricing",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.34
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 83,
    "dev3yr": 0,
    "robustness": 0,
