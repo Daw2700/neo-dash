@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:01:42Z",
+  "stamp": "2026-07-22T18:02:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MET",
-    "task": "met-april-tax-liability-retail-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:56:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MET",
     "task": "robustness: met-april-tax-liability-retail-liquidation",
     "stage": "dev3yr",
