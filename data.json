@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:20:40Z",
+  "stamp": "2026-07-22T03:22:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,14 @@
     "task": "mnq-m2k-open-dispersion-continuation",
     "stage": "dev3yr",
     "started": "2026-07-22T03:16:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "robustness: mgc-overnight-inventory-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:20:42Z",
     "state": "running"
    }
   ],
@@ -1520,19 +1528,18 @@
    "provisional": true,
    "assumed_rules": true,
    "members": {
-    "b2-vix-reversion": 3,
-    "b10-nagel-vix-reversal": 2,
-    "b2-opex-release": 1,
-    "b7-down-weeks-dip": 2
+    "b2-vix-reversion": 4,
+    "b3-preholiday-drift": 2,
+    "b2-opex-release": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.192,
-   "usd_mo": 296,
-   "usd_mo_5acct": 1480,
-   "pct_goal": 0.533,
+   "total_micros": 7,
+   "p_breach": 0.167,
+   "usd_mo": 245,
+   "usd_mo_5acct": 1225,
+   "pct_goal": 0.441,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 5328
+   "usd_mo_total": 4410
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1657,16 +1664,16 @@
     "b2-vix-reversion": 4,
     "b10-nagel-vix-reversal": 4,
     "b3-preholiday-drift": 4,
-    "b7-down-weeks-dip": 1
+    "b2-opex-release": 4
    },
-   "total_micros": 13,
-   "p_breach": 0.192,
-   "usd_mo": 261,
-   "usd_mo_5acct": 1305,
-   "pct_goal": 0.131,
+   "total_micros": 16,
+   "p_breach": 0.193,
+   "usd_mo": 308,
+   "usd_mo_5acct": 1540,
+   "pct_goal": 0.154,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 1305
+   "usd_mo_total": 1540
   }
  ],
  "sizing_meta": {
