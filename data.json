@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:00:42Z",
+  "stamp": "2026-07-22T22:04:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 647,
-  "n_results": 798,
-  "n_trials": 30786,
+  "n_registered": 649,
+  "n_results": 800,
+  "n_trials": 30788,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -177,18 +177,6 @@
    "usd_trade": 48.9
   },
   {
-   "id": "mes-prior-cpi-reaction-unwind",
-   "name": "mes-prior-cpi-reaction-unwind",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 17,
-   "wr": 0.4118,
-   "usd_mo": 25,
-   "pf": 1.769,
-   "usd_trade": 53.6
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -299,9 +287,45 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  {
+   "id": "mcl-eia-day-midsession-to-close-momentum",
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 153,
+   "wr": 0.5033,
+   "usd_mo": 30,
+   "pf": 1.237,
+   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T22:04:27.474323+00:00",
+   "hash": "dfa82f2b",
+   "name": "mes-treasury-roll-week-capacity-drain",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:02:52.718915+00:00",
+   "hash": "83e56ad3",
+   "name": "mym-dividend-paydate-reinvestment-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.738"
+  },
+  {
+   "t": "2026-07-22T22:01:04.311391+00:00",
+   "hash": "a3944ef1",
+   "name": "mes-prior-cpi-reaction-unwind",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T21:57:16.635106+00:00",
    "hash": "a3944ef1",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.893"
-  },
-  {
-   "t": "2026-07-22T21:37:47.510073+00:00",
-   "hash": "e7d813c4",
-   "name": "m6e-imm-date-forward-roll-concentration",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1391"
-  },
-  {
-   "t": "2026-07-22T21:36:45.363879+00:00",
-   "hash": "52371934",
-   "name": "sil-mgc-settlement-stagger-five-minute-stale-mark",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.304"
-  },
-  {
-   "t": "2026-07-22T21:35:24.433783+00:00",
-   "hash": "e7d813c4",
-   "name": "m6e-imm-date-forward-roll-concentration",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1391"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-prior-cpi-reaction-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:57:59Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-dividend-paydate-reinvestment-window",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-treasury-roll-week-capacity-drain",
     "stage": "dev3yr",
@@ -457,7 +449,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 87,
+   "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -519,7 +511,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 619
+    "trials": 621
    }
   ]
  },
@@ -554,8 +546,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 8,
+   "n_tested": 11,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1046,26 +1038,6 @@
     }
    ]
   },
-  "mes-prior-cpi-reaction-unwind": {
-   "name": "mes-prior-cpi-reaction-unwind",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Participants size pre-positioning for a macro release by how violently the PRIOR instance of the same series (CPI) traded, not by current forecast dispersion; after a large-reaction prior CPI print, pre-positioning into the next CPI print is heavier, so the post-release unwind of that crowded position is bigger, favoring a fade of the release-day gap on MES.",
-   "metrics": {
-    "n": 17,
-    "wr": 0.4118,
-    "pf": 1.769,
-    "usd_mo": 25,
-    "usd_trade": 53.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T21:57:16.635106+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1291,6 +1263,26 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  "mcl-eia-day-midsession-to-close-momentum": {
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
+   "metrics": {
+    "n": 153,
+    "wr": 0.5033,
+    "pf": 1.237,
+    "usd_mo": 30,
+    "usd_trade": 7.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T18:14:48.455567+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
