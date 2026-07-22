@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:29:15Z",
+  "stamp": "2026-07-22T04:30:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 205,
-  "n_results": 297,
-  "n_trials": 30268,
+  "n_registered": 208,
+  "n_results": 298,
+  "n_trials": 30269,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -269,6 +269,18 @@
    "usd_trade": 9.1
   },
   {
+   "id": "mcl-refinery-turnaround-premium",
+   "name": "mcl-refinery-turnaround-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 266,
+   "wr": 0.5263,
+   "usd_mo": -24,
+   "pf": 0.958,
+   "usd_trade": -3.2
+  },
+  {
    "id": "silver-london-to-comex-handoff",
    "name": "silver-london-to-comex-handoff",
    "market": "MNQ",
@@ -291,21 +303,33 @@
    "usd_mo": -74,
    "pf": 0.626,
    "usd_trade": -19.8
-  },
-  {
-   "id": "zn-sunday-reopen-duration-unwind",
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 151,
-   "wr": 0.3311,
-   "usd_mo": -133,
-   "pf": 0.481,
-   "usd_trade": -31.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T04:30:38.572710+00:00",
+   "hash": "004775a3",
+   "name": "mcl-refinery-turnaround-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.958"
+  },
+  {
+   "t": "2026-07-22T04:30:19.348214+00:00",
+   "hash": "2b7398f3",
+   "name": "zs-south-american-weather-premium-decay",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:29:44.734714+00:00",
+   "hash": "f3dcdd9d",
+   "name": "mes-margin-hike-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T04:27:40.961842+00:00",
    "hash": "2227db11",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.578"
-  },
-  {
-   "t": "2026-07-22T04:13:41.369623+00:00",
-   "hash": "250fb5fc",
-   "name": "scout-18-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:13:35.559806+00:00",
-   "hash": "117492ee",
-   "name": "m2k-russell-recon-window",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T04:12:50.677657+00:00",
-   "hash": "90c8f192",
-   "name": "zc-harvest-storage-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.966"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-refinery-turnaround-crude-length-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:28:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZS",
     "task": "zs-south-american-weather-premium-decay",
     "stage": "dev3yr",
@@ -443,7 +435,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 13,
+   "registered": 15,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -505,7 +497,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 101
+    "trials": 102
    }
   ]
  },
@@ -574,7 +566,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 11,
+   "n_tested": 12,
    "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
@@ -1179,6 +1171,26 @@
     }
    ]
   },
+  "mcl-refinery-turnaround-premium": {
+   "name": "mcl-refinery-turnaround-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Spring and autumn refinery maintenance turnarounds remove physical crude demand on an operator-published calendar, so refiners stop buying and crude inventories build predictably; length carried through those windows is compensated for absorbing the unwanted barrels, so a long held only inside the turnaround calendar should earn a positive risk premium.",
+   "metrics": {
+    "n": 266,
+    "wr": 0.5263,
+    "pf": 0.958,
+    "usd_mo": -24,
+    "usd_trade": -3.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:30:38.572710+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "silver-london-to-comex-handoff": {
    "name": "silver-london-to-comex-handoff",
    "market": "MNQ",
@@ -1214,26 +1226,6 @@
    "verdict_history": [
     {
      "t": "2026-07-22T03:55:04.627743+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "zn-sunday-reopen-duration-unwind": {
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
-   "metrics": {
-    "n": 151,
-    "wr": 0.3311,
-    "pf": 0.481,
-    "usd_mo": -133,
-    "usd_trade": -31.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T02:50:04.186910+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
