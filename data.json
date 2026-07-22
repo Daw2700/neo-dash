@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:35:17Z",
+  "stamp": "2026-07-22T19:37:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 591,
-  "n_results": 733,
-  "n_trials": 30721,
+  "n_registered": 592,
+  "n_results": 734,
+  "n_trials": 30722,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:37:10.067445+00:00",
+   "hash": "dc2bd904",
+   "name": "mes-wk10-derisk",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.607"
+  },
+  {
+   "t": "2026-07-22T19:36:11.094736+00:00",
+   "hash": "c76ba3a2",
+   "name": "rep-mes-wk10-derisk-mnq",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T19:33:50.183843+00:00",
    "hash": "1f4cf956",
    "name": "sil-micro-options-void-undamped-continuation",
@@ -385,22 +401,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T19:13:28.862157+00:00",
-   "hash": "4c3419cc",
-   "name": "scout-42-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T19:10:09.725050+00:00",
-   "hash": "9c057b86",
-   "name": "zn-desk-operation-result-window-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.402"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "sil-micro-options-void-undamped-continuation",
     "stage": "dev3yr",
     "started": "2026-07-22T19:30:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "replication: mes-wk10-derisk",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:35:19Z",
     "state": "running"
    }
   ],
@@ -498,7 +506,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 83,
+   "registered": 84,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -560,7 +568,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 554
+    "trials": 555
    }
   ]
  },
@@ -1059,6 +1067,11 @@
      "t": "2026-07-22T19:32:46.841492+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T19:37:10.067445+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
