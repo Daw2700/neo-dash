@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:27:31Z",
+  "stamp": "2026-07-22T06:30:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 263,
-  "n_results": 363,
-  "n_trials": 30334,
+  "n_registered": 265,
+  "n_results": 364,
+  "n_trials": 30335,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:29:52.551026+00:00",
+   "hash": "3f9d15e2",
+   "name": "m6e-quarter-turn-fx-swap-basis-dislocation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.29"
+  },
+  {
+   "t": "2026-07-22T06:29:10.703622+00:00",
+   "hash": "c87f0dda",
+   "name": "mnq-pre-london-warmup-continuation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T06:25:52.587451+00:00",
    "hash": "5db7bf22",
    "name": "mnq-ndx-recon-window",
@@ -389,36 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.578"
-  },
-  {
-   "t": "2026-07-22T06:09:08.009265+00:00",
-   "hash": "c2ff7d9c",
-   "name": "scout-22-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T06:07:16.789702+00:00",
-   "hash": "f04ae10a",
-   "name": "m6e-us-holiday-orphan-session-europe-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.2819"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-quarter-turn-fx-swap-basis-dislocation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:27:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-usda-daily-flash-sale-window",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-pre-london-warmup-continuation",
     "stage": "dev3yr",
@@ -492,7 +484,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 24,
+   "registered": 25,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -554,7 +546,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 167
+    "trials": 168
    }
   ]
  },
@@ -663,8 +655,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 12,
+   "n_tested": 13,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
