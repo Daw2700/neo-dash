@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:00:05Z",
+  "stamp": "2026-07-22T12:02:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 413,
+  "n_registered": 414,
   "n_results": 523,
   "n_trials": 30494,
   "holdout_looks_spent": 0,
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T12:01:18.500191+00:00",
+   "hash": "e1d0dadc",
+   "name": "scout-31b-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T11:59:34.272759+00:00",
    "hash": "658e075c",
    "name": "m2k-fund-fiscalyearend-rebound",
@@ -393,34 +401,10 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T11:41:29.504610+00:00",
-   "hash": "be7af1e3",
-   "name": "mbt-session-beta-channel-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 2.345"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "M6E",
-    "task": "robustness: m6e-policy-meeting-desync-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:52:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-storage-season-turn-hedge-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:53:47Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -428,20 +412,12 @@
     "stage": "idea-scout",
     "started": "2026-07-22T11:57:32Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "M2K",
-    "task": "m2k-fund-fiscal-yearend-loser-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:57:32Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 55,
+   "registered": 56,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
