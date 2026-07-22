@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:09:24Z",
+  "stamp": "2026-07-22T05:13:29Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 228,
-  "n_results": 323,
-  "n_trials": 30294,
+  "n_registered": 231,
+  "n_results": 324,
+  "n_trials": 30295,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:13:24.505964+00:00",
+   "hash": "0f85c21c",
+   "name": "mnq-cme-halt-reopen-queue-clearing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.767"
+  },
+  {
+   "t": "2026-07-22T05:12:47.746615+00:00",
+   "hash": "b7e7b003",
+   "name": "mes-macro-surprise-sign-flip-bond-confirmed",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T05:12:24.404228+00:00",
+   "hash": "7f9e99fb",
+   "name": "mes-early-close-session-compression",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T05:06:44.870691+00:00",
    "hash": "cc36a778",
    "name": "mes-gold-overnight-macro-signal-open-continuation",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.047"
-  },
-  {
-   "t": "2026-07-22T04:53:39.506975+00:00",
-   "hash": "f3604733",
-   "name": "mgc-cash-close-realrate-remark",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.712"
-  },
-  {
-   "t": "2026-07-22T04:53:37.031604+00:00",
-   "hash": "ce4d9198",
-   "name": "mcl-pre-fnd-retail-liquidation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1067"
-  },
-  {
-   "t": "2026-07-22T04:53:07.878125+00:00",
-   "hash": "80a196f3",
-   "name": "mes-cta-trigger-level-cross-flow",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.099"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-early-close-session-compression",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:09:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-cme-daily-halt-reopen-queue-clearing",
     "stage": "dev3yr",
     "started": "2026-07-22T05:09:23Z",
     "state": "running"
@@ -524,7 +516,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 21,
+   "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 127
+    "trials": 128
    }
   ]
  },
@@ -595,8 +587,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 60,
-   "n_killed": 35,
+   "n_tested": 61,
+   "n_killed": 36,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
