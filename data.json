@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:57:30Z",
+  "stamp": "2026-07-22T12:00:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 411,
-  "n_results": 522,
-  "n_trials": 30493,
+  "n_registered": 413,
+  "n_results": 523,
+  "n_trials": 30494,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "m2k-fund-fiscalyearend-rebound",
+   "name": "m2k-fund-fiscalyearend-rebound",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 18,
+   "wr": 0.6111,
+   "usd_mo": 9,
+   "pf": 1.524,
+   "usd_trade": 18.4
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -291,21 +303,25 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:59:34.272759+00:00",
+   "hash": "658e075c",
+   "name": "m2k-fund-fiscalyearend-rebound",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.524"
+  },
+  {
+   "t": "2026-07-22T11:58:53.399010+00:00",
+   "hash": "05ba8447",
+   "name": "scout-31-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T11:56:02.101776+00:00",
    "hash": "0cd58d6e",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 2.345"
-  },
-  {
-   "t": "2026-07-22T11:39:43.000552+00:00",
-   "hash": "aabe10d0",
-   "name": "zn-post-blackout-speaker-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.709"
-  },
-  {
-   "t": "2026-07-22T11:39:17.050844+00:00",
-   "hash": "3e1aa4a5",
-   "name": "mes-crossmarket-breadth-gate-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.4"
   }
  ],
  "pipeline": {
@@ -420,22 +420,28 @@
     "stage": "dev3yr",
     "started": "2026-07-22T11:53:47Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 14,
-    "idea": "m2k-fund-fiscal-yearend-loser-rebound",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T11:57:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "M2K",
+    "task": "m2k-fund-fiscal-yearend-loser-rebound",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:57:32Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
-   "registered": 54,
+   "idea": 0,
+   "registered": 55,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -497,7 +503,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 326
+    "trials": 327
    }
   ]
  },
@@ -541,7 +547,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 13,
+   "n_tested": 14,
    "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
@@ -974,6 +980,26 @@
     }
    ]
   },
+  "m2k-fund-fiscalyearend-rebound": {
+   "name": "m2k-fund-fiscalyearend-rebound",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "US mutual funds fiscal year ends October 31, concentrating tax-loss realisation in the years small-cap losers through late October; once the deadline passes the selling pressure is mechanically removed and the same names rebound in early November, with fund ownership concentration and loss density highest in small caps.",
+   "metrics": {
+    "n": 18,
+    "wr": 0.6111,
+    "pf": 1.524,
+    "usd_mo": 9,
+    "usd_trade": 18.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:59:34.272759+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1229,26 +1255,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
