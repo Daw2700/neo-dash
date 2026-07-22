@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:01:40Z",
+  "stamp": "2026-07-22T23:02:43Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 679,
-  "n_results": 832,
-  "n_trials": 30820,
+  "n_registered": 680,
+  "n_results": 833,
+  "n_trials": 30821,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T23:02:31.480949+00:00",
+   "hash": "71d7fc7f",
+   "name": "mnq-propfirm-consistency-rule-post-win-withdrawal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.834"
+  },
+  {
    "t": "2026-07-22T23:01:20.799647+00:00",
    "hash": "72933f71",
    "name": "zs-biofuel-policy-volume-obligation-window",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.59"
-  },
-  {
-   "t": "2026-07-22T22:49:37.134739+00:00",
-   "hash": "cd1ae7f7",
-   "name": "met-quarter-hour-boundary-flow-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.367"
   }
  ],
  "pipeline": {
@@ -406,14 +406,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T23:00:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-propfirm-consistency-rule-post-win-withdrawal",
-    "stage": "dev3yr",
     "started": "2026-07-22T23:00:35Z",
     "state": "running"
    }
@@ -483,7 +475,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 653
+    "trials": 654
    }
   ]
  },
@@ -492,8 +484,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 108,
-   "n_killed": 65,
+   "n_tested": 109,
+   "n_killed": 66,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
