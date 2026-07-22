@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:51:12Z",
+  "stamp": "2026-07-22T04:51:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 222,
-  "n_results": 312,
-  "n_trials": 30283,
+  "n_results": 313,
+  "n_trials": 30284,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:51:29.011900+00:00",
+   "hash": "44ea882d",
+   "name": "zn-volshock-equity-degross-rebound",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.081"
+  },
+  {
    "t": "2026-07-22T04:50:32.128495+00:00",
    "hash": "7174c171",
    "name": "zn-volshock-equity-degross-rebound-RECHECK",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.041"
-  },
-  {
-   "t": "2026-07-22T04:43:48.267856+00:00",
-   "hash": "70099c54",
-   "name": "zs-nopa-crush-midmonth-demand-print",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.669"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "recheck: zn-volshock-equity-degross-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:48:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "recheck: mcl-pre-fnd-retail-liquidation",
     "stage": "dev3yr",
@@ -430,11 +422,19 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "recheck: mes-cta-trigger-level-cross-flow",
     "stage": "dev3yr",
     "started": "2026-07-22T04:51:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your deny: Slippage collector \u2014 third empty approva",
+    "stage": "decision",
+    "started": "2026-07-22T04:51:33Z",
     "state": "running"
    }
   ],
@@ -531,7 +531,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 116
+    "trials": 117
    }
   ]
  },
