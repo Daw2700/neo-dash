@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:46:14Z",
+  "stamp": "2026-07-22T16:49:02Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 522,
   "n_results": 653,
@@ -404,19 +404,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T16:41:38Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mgc-am-zerotick-staleness-pm-range-fade",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-volume-clock-exit-horizon-normalization",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mbt-london-brr-reference-window-impact",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "m2k-crossmarket-vol-normalization-exit-clock",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mes-intraday-momentum-halfhour-anchor",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mes-zn-extreme-ordering-lead-lag-residual",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-week-position-vs-weekday-reopen-premium",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mes-vix-return-sign-decoupling-hedge-demand",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "zn-bill-settlement-thursday-cash-drain",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "mym-overnight-carry-crowding-streak-decay",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 11,
+    "idea": "zn-round-yield-handle-magnet",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "mnq-equity-gold-correlation-sign-regime-gate",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "met-ethbtc-ratio-regime-risk-appetite",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 14,
+    "idea": "mcl-london-overlap-variance-share-idiosyncratic-fade",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 72,
    "dev3yr": 0,
    "robustness": 0,
