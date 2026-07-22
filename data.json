@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:02:30Z",
+  "stamp": "2026-07-22T10:02:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,21 +416,19 @@
     "stage": "idea-scout",
     "started": "2026-07-22T09:57:13Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "mng-expiring-contract-implied-quote-settlement-fallback",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.35
+    "agent": "tester-2",
+    "market": "MNG",
+    "task": "mng-expiring-contract-implied-quote-settlement-fallback",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:02:31Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 45,
    "dev3yr": 0,
    "robustness": 0,
