@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:16:01Z",
+  "stamp": "2026-07-22T00:22:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 128,
-  "n_results": 201,
+  "n_registered": 131,
+  "n_results": 204,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -317,23 +317,43 @@
    }
   },
   {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
+   "id": "fomc-statement-presser-reversal",
+   "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
    "tier": "candidate",
    "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
+   "n": 22,
+   "wr": 0.4545,
+   "usd_mo": 11,
+   "pf": 1.248,
+   "usd_trade": 18.7
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T00:18:27.107468+00:00",
+   "hash": "529bc2f2",
+   "name": "fomc-statement-presser-reversal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.248"
+  },
+  {
+   "t": "2026-07-22T00:18:21.512894+00:00",
+   "hash": "ee678b88",
+   "name": "mnq-megacap-earnings-night-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.409"
+  },
+  {
+   "t": "2026-07-22T00:17:45.314642+00:00",
+   "hash": "0ea70086",
+   "name": "mgc-fomc-real-rate-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.65"
+  },
   {
    "t": "2026-07-22T00:10:42.449219+00:00",
    "hash": "f89113b7",
@@ -405,30 +425,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.65"
-  },
-  {
-   "t": "2026-07-21T23:37:24.053178+00:00",
-   "hash": "5b0a2153",
-   "name": "funding-clock-impulse",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.776"
-  },
-  {
-   "t": "2026-07-21T23:31:20.012785+00:00",
-   "hash": "2745df64",
-   "name": "mcl-weekend-insurance-roundtrip",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.451"
-  },
-  {
-   "t": "2026-07-21T23:24:05.564420+00:00",
-   "hash": "04a0bea6",
-   "name": "crypto-european-hours-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.051"
   }
  ],
  "pipeline": {
@@ -445,14 +441,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "fomc-statement-to-presser-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T00:16:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-fomc-real-rate-repricing-drift",
     "stage": "dev3yr",
     "started": "2026-07-22T00:16:01Z",
     "state": "running"
@@ -560,7 +548,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 5
+    "trials": 8
    }
   ]
  },
@@ -569,8 +557,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 52,
-   "n_killed": 30,
+   "n_tested": 54,
+   "n_killed": 31,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -613,8 +601,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 1,
+   "n_tested": 2,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1344,39 +1332,25 @@
     "apex_max": 5
    }
   },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
+  "fomc-statement-presser-reversal": {
+   "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
    "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "mechanism": "FOMC releases information in two stages: the 14:00 ET statement, then the 14:30 ET press conference. The 14:00-14:30 move is priced off statement text alone by fast algorithmic readers with no chair commentary, and the presser routinely revises that reading, so the first-stage move is systematically over-extended relative to the full information set. We are paid by whoever had to take the first-stage risk.",
    "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
+    "n": 22,
+    "wr": 0.4545,
+    "pf": 1.248,
+    "usd_mo": 11,
+    "usd_trade": 18.7
    },
    "verdict_history": [
     {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
+     "t": "2026-07-22T00:18:27.107468+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
+   ]
   }
  },
  "decisions": [
