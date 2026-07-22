@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:16:03Z",
+  "stamp": "2026-07-22T15:16:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 484,
-  "n_results": 609,
-  "n_trials": 30597,
+  "n_results": 610,
+  "n_trials": 30598,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,12 +307,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T15:14:57.087031+00:00",
+   "t": "2026-07-22T15:16:23.524882+00:00",
    "hash": "9b3f2351",
    "name": "met-maker-program-window-boundary-break",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 4.546"
   },
   {
    "t": "2026-07-22T15:14:38.585231+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-globex-precancel-lockdown-reopen-divergence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:09:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-maker-program-window-boundary-break",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mcl-first-passage-grind-vs-airpocket",
     "stage": "dev3yr",
@@ -497,7 +489,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 67,
+   "registered": 66,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +551,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 430
+    "trials": 431
    }
   ]
  },
@@ -659,8 +651,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 6,
+   "n_tested": 7,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
