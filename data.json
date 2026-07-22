@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:02:04Z",
+  "stamp": "2026-07-22T18:07:28Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 558,
-  "n_results": 691,
-  "n_trials": 30679,
+  "n_results": 692,
+  "n_trials": 30680,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:04:57.103856+00:00",
+   "hash": "84122ba3",
+   "name": "met-april-tax-liability-retail-liquidation",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T17:59:20.113835+00:00",
    "hash": "84122ba3",
    "name": "met-april-tax-liability-retail-liquidation",
@@ -393,14 +401,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T17:44:06.109419+00:00",
-   "hash": "c19781ab",
-   "name": "ROBUSTNESS BATTERY m2k-shortsale-constraint-overshoot (2fb8d325fbd66bea)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T17:56:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MET",
-    "task": "robustness: met-april-tax-liability-retail-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:01:41Z",
     "state": "running"
    }
   ],
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 512
+    "trials": 513
    }
   ]
  },
@@ -961,6 +953,11 @@
      "t": "2026-07-22T17:59:20.113835+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T18:04:57.103856+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
