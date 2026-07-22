@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:57:04Z",
+  "stamp": "2026-07-22T20:57:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,21 +416,27 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:56:42Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 14,
-    "idea": "mes-backofmonth-calendar-emptiness-reversion",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.26
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T20:57:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-backofmonth-calendar-emptiness-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:57:06Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
