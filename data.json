@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:58:31Z",
+  "stamp": "2026-07-22T16:01:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 502,
-  "n_results": 629,
-  "n_trials": 30617,
+  "n_registered": 503,
+  "n_results": 632,
+  "n_trials": 30620,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -141,6 +141,18 @@
    }
   },
   {
+   "id": "mcl-spr-solicitation-award-window",
+   "name": "mcl-spr-solicitation-award-window",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 8,
+   "wr": 0.625,
+   "usd_mo": 7,
+   "pf": 2.369,
+   "usd_trade": 29.8
+  },
+  {
    "id": "mbt-session-beta-channel-regime",
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -151,6 +163,18 @@
    "usd_mo": 38,
    "pf": 2.345,
    "usd_trade": 37.1
+  },
+  {
+   "id": "mng-friday-threeday-gasday-hedge-concentration",
+   "name": "mng-friday-threeday-gasday-hedge-concentration",
+   "market": "MNG",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 67,
+   "wr": 0.5522,
+   "usd_mo": 74,
+   "pf": 1.981,
+   "usd_trade": 40.0
   },
   {
    "id": "rep-bondflight-mes",
@@ -279,33 +303,33 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "mes-depth-consumption-print-size-range-forecast",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 124,
-   "wr": 0.4355,
-   "usd_mo": 31,
-   "pf": 1.168,
-   "usd_trade": 9.1
-  },
-  {
-   "id": "b6-monday-m2k",
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 133,
-   "wr": null,
-   "usd_mo": 19,
-   "pf": 1.154,
-   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T16:00:17.343524+00:00",
+   "hash": "8cbdd607",
+   "name": "mng-friday-threeday-gasday-hedge-concentration",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.981"
+  },
+  {
+   "t": "2026-07-22T15:58:49.474022+00:00",
+   "hash": "69cb3a6c",
+   "name": "mcl-spr-solicitation-award-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.369"
+  },
+  {
+   "t": "2026-07-22T15:58:49.464466+00:00",
+   "hash": "b2314a24",
+   "name": "zn-reserve-maintenance-cycle",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.506"
+  },
   {
    "t": "2026-07-22T15:58:22.155532+00:00",
    "hash": "682a4c3a",
@@ -313,22 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.1"
-  },
-  {
-   "t": "2026-07-22T15:57:58.930558+00:00",
-   "hash": "69cb3a6c",
-   "name": "mcl-spr-solicitation-award-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T15:57:42.271171+00:00",
-   "hash": "b2314a24",
-   "name": "zn-reserve-maintenance-cycle",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T15:55:26.134585+00:00",
@@ -393,28 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.168"
-  },
-  {
-   "t": "2026-07-22T15:38:23.189651+00:00",
-   "hash": "a465aa28",
-   "name": "zn-muni-reinvestment-cashflow-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.022"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-spr-solicitation-award-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:55:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-reserve-maintenance-period-funding-cycle",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-friday-threeday-gasday-hedge-concentration",
     "stage": "dev3yr",
@@ -461,7 +453,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 70,
+   "registered": 68,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 450
+    "trials": 453
    }
   ]
  },
@@ -594,7 +586,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 31,
+   "n_tested": 32,
    "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
@@ -603,7 +595,7 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 15,
+   "n_tested": 16,
    "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
@@ -641,8 +633,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 40,
-   "n_killed": 32,
+   "n_tested": 41,
+   "n_killed": 33,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -980,6 +972,26 @@
     "apex_max": 2
    }
   },
+  "mcl-spr-solicitation-award-window": {
+   "name": "mcl-spr-solicitation-award-window",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "DOE SPR refill solicitations and emergency repurchases are announced with fixed, publicly posted bid-submission deadlines for named delivery months; suppliers bidding to fill the award must pre-hedge their forward physical commitment on the futures curve into that deadline, creating a scheduled, price-insensitive supply of hedging flow that carries no demand information and should decay/reverse once the deadline passes.",
+   "metrics": {
+    "n": 8,
+    "wr": 0.625,
+    "pf": 2.369,
+    "usd_mo": 7,
+    "usd_trade": 29.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:58:49.474022+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -997,6 +1009,26 @@
      "t": "2026-07-22T11:41:29.504610+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "mng-friday-threeday-gasday-hedge-concentration": {
+   "name": "mng-friday-threeday-gasday-hedge-concentration",
+   "market": "MNG",
+   "tier": "candidate",
+   "mechanism": "Physical natural gas delivered under a Friday transaction covers the full Sat/Sun/Mon gas-day period, concentrating three days worth of hedge-flow notional into a single Friday settlement; that non-informational concentration of dated hedge flow displaces the Friday close and should decay by the next session open, so we fade Friday intraday direction into a weekend hold.",
+   "metrics": {
+    "n": 67,
+    "wr": 0.5522,
+    "pf": 1.981,
+    "usd_mo": 74,
+    "usd_trade": 40.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T16:00:17.343524+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
    ]
   },
@@ -1249,56 +1281,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "mes-depth-consumption-print-size-range-forecast": {
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
-   "metrics": {
-    "n": 124,
-    "wr": 0.4355,
-    "pf": 1.168,
-    "usd_mo": 31,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:40:13.765212+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T15:47:15.796894+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T15:52:13.200686+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-monday-m2k": {
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
-   "metrics": {
-    "n": 133,
-    "wr": null,
-    "pf": 1.154,
-    "usd_mo": 19,
-    "usd_trade": 5.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
