@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:29:12Z",
+  "stamp": "2026-07-22T18:29:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "recheck: xmkt-volshare-defensive-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:22:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "robustness: mnq-prior-settlement-anchor-premarket-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:22:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "xsec-commodity-month-of-year-hedger-calendar-rotation",
     "stage": "dev3yr",
