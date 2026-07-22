@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:57:06Z",
+  "stamp": "2026-07-22T20:58:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 627,
-  "n_results": 774,
-  "n_trials": 30762,
+  "n_registered": 628,
+  "n_results": 776,
+  "n_trials": 30764,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:58:46.655272+00:00",
+   "hash": "19538d55",
+   "name": "m2k-rates-variance-import-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.833"
+  },
+  {
+   "t": "2026-07-22T20:58:23.938444+00:00",
+   "hash": "0719c7ad",
+   "name": "mes-bom-emptiness-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T20:58:16.339406+00:00",
+   "hash": "19538d55",
+   "name": "m2k-rates-variance-import-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.04"
+  },
+  {
    "t": "2026-07-22T20:56:11.919273+00:00",
    "hash": "1e854f70",
    "name": "mes-pension-fundedstatus-glidepath-rotation",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.892"
-  },
-  {
-   "t": "2026-07-22T20:41:42.412805+00:00",
-   "hash": "f1b71a36",
-   "name": "zs-palmoil-mpob-substitution-overnight",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T20:36:13.794088+00:00",
-   "hash": "25142140",
-   "name": "mes-covered-call-etf-roll-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.439"
-  },
-  {
-   "t": "2026-07-22T20:36:08.987074+00:00",
-   "hash": "95bb6446",
-   "name": "mnq-complex-dispersion-expansion-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.895"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "recheck: m2k-rates-variance-import-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:53:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-dollar-revenue-exposure-rotation",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-backofmonth-calendar-emptiness-reversion",
     "stage": "dev3yr",
@@ -437,7 +429,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 86,
+   "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 595
+    "trials": 597
    }
   ]
  },
