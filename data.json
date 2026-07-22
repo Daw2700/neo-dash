@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:39:12Z",
+  "stamp": "2026-07-22T08:39:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,22 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-fomc-minutes-release-overreaction-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:31:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-vix-etp-daily-roll-close-flow",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:32:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: mes-bond-holiday-rate-void",
     "stage": "dev3yr",
