@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:15:29Z",
+  "stamp": "2026-07-22T00:15:52Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 128,
   "n_results": 201,
@@ -432,19 +432,101 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T00:08:14Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "vix-soq-wednesday-open-drag",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 2,
+    "idea": "mgc-overnight-handoff-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": null
+   },
+   {
+    "rank": 3,
+    "idea": "m6e-monthend-hedge-rebalance-fix",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": null
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-megacap-earnings-night-premium",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": null
+   },
+   {
+    "rank": 5,
+    "idea": "fomc-statement-to-presser-reversal",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 6,
+    "idea": "mgc-fomc-real-rate-repricing-drift",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": null
+   },
+   {
+    "rank": 7,
+    "idea": "mes-friday-strike-pin-reversion",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 8,
+    "idea": "mng-weather-model-release-clock",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": null
+   },
+   {
+    "rank": 9,
+    "idea": "zn-volshock-equity-degross-rebound",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": null
+   },
+   {
+    "rank": 10,
+    "idea": "mcl-producer-hedge-window-rth-drift",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": null
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 10,
    "registered": 3,
    "dev3yr": 0,
    "robustness": 0,
