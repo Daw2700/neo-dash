@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:33:54Z",
+  "stamp": "2026-07-22T16:38:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 513,
-  "n_results": 643,
-  "n_trials": 30631,
+  "n_registered": 516,
+  "n_results": 646,
+  "n_trials": 30634,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "mnq-volume-peak-clock-daytype",
-   "name": "mnq-volume-peak-clock-daytype",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 13,
-   "wr": 0.6154,
-   "usd_mo": 17,
-   "pf": 2.075,
-   "usd_trade": 46.1
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -303,9 +291,53 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T16:36:40.705912+00:00",
+   "hash": "cdf1cb5c",
+   "name": "mng-fuel-switching-band-elasticity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.959"
+  },
+  {
+   "t": "2026-07-22T16:36:36.626550+00:00",
+   "hash": "840512ac",
+   "name": "zc-neglect-catchup-attention-deficit",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.09"
+  },
+  {
+   "t": "2026-07-22T16:35:43.596801+00:00",
+   "hash": "5c58eca4",
+   "name": "mnq-volume-peak-clock-daytype",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T16:34:01.876597+00:00",
+   "hash": "31adecf6",
+   "name": "robustness-battery/mnq-volume-peak-clock-daytype",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T16:29:58.276000+00:00",
    "hash": "5c58eca4",
@@ -369,52 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T16:09:50.983652+00:00",
-   "hash": "e49e3289",
-   "name": "mes-fee-tier-month-end-volume-padding-liquidity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.353"
-  },
-  {
-   "t": "2026-07-22T16:09:49.871262+00:00",
-   "hash": "d4a11e88",
-   "name": "zs-china-golden-week-origination-void",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.342"
-  },
-  {
-   "t": "2026-07-22T16:08:10.420666+00:00",
-   "hash": "02785897",
-   "name": "zc-hedger-margin-call-short-lift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.351"
-  },
-  {
-   "t": "2026-07-22T16:07:14.814418+00:00",
-   "hash": "dcdc02c7",
-   "name": "scout-37-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-volume-peak-clock-daytype",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:33:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-fuel-switching-band-elasticity",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-neglect-catchup-attention-deficit",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 70,
+   "registered": 71,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 464
+    "trials": 467
    }
   ]
  },
@@ -621,8 +613,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 12,
+   "n_tested": 17,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -668,8 +660,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 20,
+   "n_tested": 24,
+   "n_killed": 21,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1018,26 +1010,6 @@
     }
    ]
   },
-  "mnq-volume-peak-clock-daytype": {
-   "name": "mnq-volume-peak-clock-daytype",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "The clock-minute at which the morning volume peaks by midday classifies which cohort dominates: an early peak means the open-auction/overnight-inventory cohort already cleared and left (quiet afternoon), a late peak means macro/institutional flow is still working, so late-peak days should show continuation of the morning direction into the close, available causally by the 12:00 decision time.",
-   "metrics": {
-    "n": 13,
-    "wr": 0.6154,
-    "pf": 2.075,
-    "usd_mo": 17,
-    "usd_trade": 46.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T16:29:58.276000+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1314,6 +1286,26 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
