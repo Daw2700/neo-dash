@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:55:59Z",
+  "stamp": "2026-07-22T16:56:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,14 @@
     "task": "mes-intraday-momentum-halfhour-anchor",
     "stage": "dev3yr",
     "started": "2026-07-22T16:53:19Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-volclock-exit-horizon",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:56:01Z",
     "state": "running"
    }
   ],
