@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:46:32Z",
+  "stamp": "2026-07-22T09:46:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,22 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "robustness: zc-price-limit-expansion-regime-state",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:42:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-post-shock-book-replenishment-classifier",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:42:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-morning-range-exhaustion-overnight-carry",
     "stage": "dev3yr",
