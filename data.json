@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:13:00Z",
+  "stamp": "2026-07-22T04:15:55Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 196,
-  "n_results": 288,
-  "n_trials": 30259,
+  "n_registered": 198,
+  "n_results": 290,
+  "n_trials": 30261,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -123,18 +123,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "m2k-russell-recon-window",
-   "name": "m2k-russell-recon-window",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 24,
-   "wr": 0.5417,
-   "usd_mo": 8,
-   "pf": 1.446,
-   "usd_trade": 12.5
   },
   {
    "id": "rep-bondflight-mes",
@@ -303,9 +291,45 @@
    "usd_mo": -74,
    "pf": 0.626,
    "usd_trade": -19.8
+  },
+  {
+   "id": "zn-sunday-reopen-duration-unwind",
+   "name": "zn-sunday-reopen-duration-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 151,
+   "wr": 0.3311,
+   "usd_mo": -133,
+   "pf": 0.481,
+   "usd_trade": -31.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T04:15:08.075747+00:00",
+   "hash": "c7ffaa26",
+   "name": "zs-china-session-handoff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.578"
+  },
+  {
+   "t": "2026-07-22T04:13:41.369623+00:00",
+   "hash": "250fb5fc",
+   "name": "scout-18-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:13:35.559806+00:00",
+   "hash": "117492ee",
+   "name": "m2k-russell-recon-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T04:12:50.677657+00:00",
    "hash": "90c8f192",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.336"
-  },
-  {
-   "t": "2026-07-22T04:05:09.393604+00:00",
-   "hash": "d34acc4e",
-   "name": "zn-mbs-convexity-cascade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.485"
-  },
-  {
-   "t": "2026-07-22T03:56:31.622682+00:00",
-   "hash": "1cba0fa5",
-   "name": "mcl-shorthorizon-trend-decay-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.556"
-  },
-  {
-   "t": "2026-07-22T03:56:13.200054+00:00",
-   "hash": "c2c584fa",
-   "name": "scout-17-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "robustness: m2k-russell-recon-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:10:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-china-session-handoff",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 11,
+   "registered": 12,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 92
+    "trials": 94
    }
   ]
  },
@@ -628,9 +620,9 @@
   {
    "ticker": "ZS",
    "display": "Soybeans",
-   "status": "idle",
-   "n_tested": 0,
-   "n_killed": 0,
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
   }
@@ -909,26 +901,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  "m2k-russell-recon-window": {
-   "name": "m2k-russell-recon-window",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "The annual FTSE Russell reconstitution is the one pre-announced date when index-tracking demand for the entire small-cap universe must transact at a single close; funds pre-hedge and post-unwind that exposure in Russell futures, so liquidity providers are paid to warehouse a known, dated, one-directional risk transfer across the recon window.",
-   "metrics": {
-    "n": 24,
-    "wr": 0.5417,
-    "pf": 1.446,
-    "usd_mo": 8,
-    "usd_trade": 12.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T04:07:52.040206+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
   },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
@@ -1224,6 +1196,26 @@
    "verdict_history": [
     {
      "t": "2026-07-22T03:55:04.627743+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "zn-sunday-reopen-duration-unwind": {
+   "name": "zn-sunday-reopen-duration-unwind",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
+   "metrics": {
+    "n": 151,
+    "wr": 0.3311,
+    "pf": 0.481,
+    "usd_mo": -133,
+    "usd_trade": -31.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T02:50:04.186910+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
