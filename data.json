@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:02:39Z",
+  "stamp": "2026-07-22T03:03:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 162,
-  "n_results": 250,
-  "n_trials": 30221,
+  "n_results": 252,
+  "n_trials": 30223,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,28 +307,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:03:32.572110+00:00",
+   "hash": "25548a41",
+   "name": "mng-bidweek-baseload",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.917"
+  },
+  {
+   "t": "2026-07-22T03:03:23.030843+00:00",
+   "hash": "284ae274",
+   "name": "mes-macro-annday-premium-exfomc",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.206"
+  },
+  {
    "t": "2026-07-22T03:02:28.962075+00:00",
    "hash": "be21338c",
    "name": "mes-coupon-settle-mid",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.706"
-  },
-  {
-   "t": "2026-07-22T03:02:08.403252+00:00",
-   "hash": "25548a41",
-   "name": "mng-bidweek-baseload",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T03:01:00.397440+00:00",
-   "hash": "284ae274",
-   "name": "mes-macro-annday-premium-exfomc",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:00:58.502531+00:00",
@@ -408,30 +408,6 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "mes-macro-announcement-premium-exfomc",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:57:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Slippage collector: fill Tradovate demo ",
-    "stage": "decision",
-    "started": "2026-07-22T03:01:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNG",
-    "task": "mng-bidweek-baseload-procurement",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:01:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MES",
     "task": "mes-vanna-ivcrush-dealer-rebuy",
     "stage": "dev3yr",
     "started": "2026-07-22T03:02:39Z",
@@ -441,7 +417,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 9,
+   "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 54
+    "trials": 56
    }
   ]
  },
@@ -527,8 +503,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 4,
+   "n_tested": 12,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -581,8 +557,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 2,
+   "n_tested": 3,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1240,39 +1216,6 @@
  },
  "decisions": [
   {
-   "id": "d-neo300-paper-creds-r3",
-   "kind": "cleanup",
-   "needs_attention": true,
-   "title": "Slippage collector: fill Tradovate demo creds in the local .env, then approve",
-   "recommendation": "Fill ~/mnq_lab/scheduler/.env yourself, then Approve with note 'creds in place'",
-   "evidence": "Second consecutive empty approval on this card. Verified at apply time: scheduler/.env has TRADOVATE_USER=, TRADOVATE_PASS=, TRADOVATE_CID=, TRADOVATE_SEC= all blank; TRADOVATE_DEMO=1; MNQ_LIVE=0. Step 2 of the approved sequence was run for real - scheduler/orb.sh test-connection exited rc=1 with TradovateError 'Tradovate creds not set'. No auth, no account lookup, no orders. scheduler/slippage.jsonl does not exist: 0 of the 100 target samples collected. The collector machinery itself is unchanged and still hand-verified. Second blocker also unchanged: the 09:30-09:45 OR levels are not wired (Tradovate market data is a WebSocket feed), so ORB_OR_HI/ORB_OR_LO must be set by hand each arm.",
-   "what_yes_means": "The four values land in scheduler/.env, --test-connection is re-run, and only if it passes does MNQ_LIVE flip to 1",
-   "recap": "Paper routing is approved and the collector is built. The last blocker is four empty Tradovate demo values in a private file on your Mac. Never type credentials into this website \u2014 fill the file locally, then approve.",
-   "why": "Credentials in the website note would travel through a third-party relay in plain text. The .env file is chmod-600 on your machine and every bot launcher already reads it \u2014 same place your other bot secrets live.",
-   "steps": [
-    "On your Mac: open -e ~/mnq_lab/scheduler/.env",
-    "Fill TRADOVATE_USER / TRADOVATE_PASS (demo login) and TRADOVATE_CID / TRADOVATE_SEC (API access page); save",
-    "Tap Approve on this card with note: creds in place",
-    "Engine re-runs the connection test; if it passes, paper orders start routing and slippage samples begin counting",
-    "Samples appear on the dashboard; ~100 samples retires the bot for good"
-   ],
-   "qa": [
-    {
-     "q": "Approve: Neo-300 paper bot \u2014 retire or repurpose as slippage collector",
-     "a": "Approved by Daniel 2026-07-21. Repurpose executed: the bot's strategy is flagged dead and its signals are no longer to be acted on; slippage_collector.py is built, hand-verified and wired into arm/flatten. Blocker found on execution: MNQ_LIVE=0 and no Tradovate credentials, so 0 fills can be observed. This card holds for the GO to route paper orders.",
-     "t": "2026-07-21T22:54:16Z",
-     "q_t": "2026-07-20T00:00:00Z"
-    },
-    {
-     "q": "Approve: enable paper routing so the slippage collector has fills to measure",
-     "a": "Approved by Daniel 2026-07-22T02:19:12Z, note EMPTY. Step 1 of the approved sequence was not satisfied: scheduler/.env still has TRADOVATE_USER/PASS/CID/SEC blank (verified at apply time). Step 2 was executed anyway to get a hard result: scheduler/orb.sh test-connection exited rc=1 with TradovateError 'Tradovate creds not set: TRADOVATE_USER, TRADOVATE_PASS, TRADOVATE_CID, TRADOVATE_SEC'. Because step 3 is gated on step 2 passing, MNQ_LIVE was left at 0 and no order routing was enabled. Slippage samples collected: 0 (scheduler/slippage.jsonl does not exist). Nothing proceeds until the four values arrive.",
-     "t": "2026-07-22T02:43:51.754485Z",
-     "q_t": "2026-07-21T22:54:16Z"
-    }
-   ],
-   "staged": "2026-07-22T02:43:51.754485Z"
-  },
-  {
    "id": "d-apex-verify-numbers-r3",
    "kind": "funding",
    "needs_attention": true,
@@ -1311,6 +1254,44 @@
     }
    ],
    "staged": "2026-07-22T03:00:16Z"
+  },
+  {
+   "id": "d-neo300-paper-creds-r4",
+   "kind": "cleanup",
+   "needs_attention": true,
+   "title": "Slippage collector \u2014 third empty approval; fill the four creds, or Deny to retire the bot now",
+   "recommendation": "Either fill ~/mnq_lab/scheduler/.env and approve with note 'creds in place', or Deny \u2014 Deny retires the Neo-300 paper bot outright and drops slippage collection. Three approvals have produced 0 samples; Deny is a legitimate answer.",
+   "evidence": "Third consecutive empty approval on this card. Verified at apply time (2026-07-22T03:03:04.099780+00:00): scheduler/.env has TRADOVATE_USER=, TRADOVATE_PASS=, TRADOVATE_CID=, TRADOVATE_SEC= all blank; TRADOVATE_DEMO=1; MNQ_LIVE=0. Step 2 of the approved sequence was run for real: the connection test raised TradovateError 'Tradovate creds not set' at scheduler/tradovate.py:37 before any HTTP call. No auth, no account lookup, no orders. scheduler/slippage.jsonl does not exist: 0 of the 100 target samples collected across three approvals. The collector machinery itself is unchanged and still hand-verified. Second blocker also unchanged: the 09:30-09:45 OR levels are not wired (Tradovate market data is a WebSocket feed), so ORB_OR_HI/ORB_OR_LO must be set by hand each arm \u2014 neither key is in .env. Nothing here blocks the research funnel; the slippage number is a nice-to-have calibration input.",
+   "what_yes_means": "The four values land in scheduler/.env, --test-connection is re-run, and only if it passes does MNQ_LIVE flip to 1. What NO means: the Neo-300 paper bot is retired for good, the collector is left dormant, and slippage stays at the modelled cost assumption already used in the gauntlet.",
+   "recap": "Three approvals, zero samples \u2014 each one needs four Tradovate demo values that only exist on your Mac. Never type credentials into this website. Either fill the file locally and approve, or Deny and this bot retires now with no further asks.",
+   "why": "Credentials in the website note would travel through a third-party relay in plain text, so the engine cannot obtain them itself \u2014 it can only re-verify the file. After three rounds the honest framing is that Deny is a real option: the slippage measurement calibrates cost assumptions, it does not gate any strategy decision, and the card is consuming attention the funnel needs elsewhere.",
+   "steps": [
+    "EITHER \u2014 on your Mac: open -e ~/mnq_lab/scheduler/.env",
+    "Fill TRADOVATE_USER / TRADOVATE_PASS (demo login) and TRADOVATE_CID / TRADOVATE_SEC (API access page); save",
+    "Tap Approve with note: creds in place \u2014 engine re-runs the connection test, and only on a pass does MNQ_LIVE flip to 1",
+    "OR \u2014 tap Deny: the Neo-300 paper bot is retired for good, the collector goes dormant, and this card never returns"
+   ],
+   "qa": [
+    {
+     "q": "Approve: Neo-300 paper bot \u2014 retire or repurpose as slippage collector",
+     "a": "Approved by Daniel 2026-07-21. Repurpose executed: the bot's strategy is flagged dead and its signals are no longer to be acted on; slippage_collector.py is built, hand-verified and wired into arm/flatten. Blocker found on execution: MNQ_LIVE=0 and no Tradovate credentials, so 0 fills can be observed. This card holds for the GO to route paper orders.",
+     "t": "2026-07-21T22:54:16Z",
+     "q_t": "2026-07-20T00:00:00Z"
+    },
+    {
+     "q": "Approve: enable paper routing so the slippage collector has fills to measure",
+     "a": "Approved by Daniel 2026-07-22T02:19:12Z, note EMPTY. Step 1 of the approved sequence was not satisfied: scheduler/.env still has TRADOVATE_USER/PASS/CID/SEC blank (verified at apply time). Step 2 was executed anyway to get a hard result: scheduler/orb.sh test-connection exited rc=1 with TradovateError 'Tradovate creds not set: TRADOVATE_USER, TRADOVATE_PASS, TRADOVATE_CID, TRADOVATE_SEC'. Because step 3 is gated on step 2 passing, MNQ_LIVE was left at 0 and no order routing was enabled. Slippage samples collected: 0 (scheduler/slippage.jsonl does not exist). Nothing proceeds until the four values arrive.",
+     "t": "2026-07-22T02:43:51.754485Z",
+     "q_t": "2026-07-21T22:54:16Z"
+    },
+    {
+     "q": "Approve: fill Tradovate demo creds in the local .env, then approve",
+     "a": "Approved by Daniel, applied 2026-07-22T03:03:04.099780+00:00. THIRD consecutive approval with the four values still missing. Verified at apply time: scheduler/.env has TRADOVATE_USER/PASS/CID/SEC all empty. Step 2 was executed anyway for a hard result: the connection test raised TradovateError 'Tradovate creds not set: TRADOVATE_USER, TRADOVATE_PASS, TRADOVATE_CID, TRADOVATE_SEC' at tradovate.py:37, before any network call. Step 3 is gated on step 2 passing, so MNQ_LIVE stayed 0 and no paper orders were routed. Slippage samples collected: 0 of 100 (scheduler/slippage.jsonl does not exist). Nothing proceeds until the four values land in the file.",
+     "t": "2026-07-22T03:03:04.099780+00:00",
+     "q_t": "2026-07-22T02:43:51.754485Z"
+    }
+   ],
+   "staged": "2026-07-22T03:03:04.099780+00:00"
   }
  ],
  "roadmap": {
