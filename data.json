@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:44:32Z",
+  "stamp": "2026-07-22T18:49:13Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 572,
-  "n_results": 709,
-  "n_trials": 30697,
+  "n_registered": 575,
+  "n_results": 711,
+  "n_trials": 30699,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -225,6 +225,18 @@
    "usd_trade": 14.3
   },
   {
+   "id": "zs-holiday-compressed-week-hedge-budget",
+   "name": "zs-holiday-compressed-week-hedge-budget",
+   "market": "ZS",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 120,
+   "wr": 0.5583,
+   "usd_mo": 236,
+   "pf": 1.325,
+   "usd_trade": 70.7
+  },
+  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -291,21 +303,33 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "mes-depth-consumption-print-size-range-forecast",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 124,
-   "wr": 0.4355,
-   "usd_mo": 31,
-   "pf": 1.168,
-   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T18:47:55.261624+00:00",
+   "hash": "e6f710fb",
+   "name": "zc-halt-window-crossmarket-reopen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:47:07.981226+00:00",
+   "hash": "847e9bee",
+   "name": "mnq-propfirm-loss-limit-cascade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T18:46:33.204090+00:00",
+   "hash": "e4ddd6dc",
+   "name": "zs-holiday-compressed-week-hedge-budget",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.325"
+  },
   {
    "t": "2026-07-22T18:39:04.581016+00:00",
    "hash": "405f954e",
@@ -377,44 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T18:24:07.306367+00:00",
-   "hash": "23e444e5",
-   "name": "mes-wed-night-risk-reestablishment",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T18:18:29.033015+00:00",
-   "hash": "f3e557d6",
-   "name": "mnq-prior-settlement-anchor-premarket-reversion",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.071"
-  },
-  {
-   "t": "2026-07-22T18:18:22.071159+00:00",
-   "hash": "c48aebc5",
-   "name": "xmkt-volshare-defensive-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.072"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-holiday-compressed-week-hedge-budget",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:44:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-halted-window-cross-market-information-reopen",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-propfirm-loss-limit-dollar-distance-cascade",
     "stage": "dev3yr",
@@ -524,7 +516,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 81,
+   "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 530
+    "trials": 532
    }
   ]
  },
@@ -722,7 +714,7 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 8,
+   "n_tested": 9,
    "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
@@ -1215,6 +1207,26 @@
     }
    ]
   },
+  "zs-holiday-compressed-week-hedge-budget": {
+   "name": "zs-holiday-compressed-week-hedge-budget",
+   "market": "ZS",
+   "tier": "candidate",
+   "mechanism": "A US holiday week gives commercial grain hedgers and index programs only four sessions to clear a weeks worth of scheduled hedging and roll flow, so per session impact from the hedger side rises and is paid by whoever supplies liquidity; the unit tested is the whole compressed week, every session in it, not just the single day adjacent to the holiday.",
+   "metrics": {
+    "n": 120,
+    "wr": 0.5583,
+    "pf": 1.325,
+    "usd_mo": 236,
+    "usd_trade": 70.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T18:46:33.204090+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1332,36 +1344,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "mes-depth-consumption-print-size-range-forecast": {
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
-   "metrics": {
-    "n": 124,
-    "wr": 0.4355,
-    "pf": 1.168,
-    "usd_mo": 31,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:40:13.765212+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T15:47:15.796894+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T15:52:13.200686+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
