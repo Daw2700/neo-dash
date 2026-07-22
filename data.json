@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:03:35Z",
+  "stamp": "2026-07-22T20:04:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 605,
-  "n_results": 747,
-  "n_trials": 30735,
+  "n_results": 748,
+  "n_trials": 30736,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:04:38.521467+00:00",
+   "hash": "8de2d377",
+   "name": "mgc-auction-yield-transmission-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.03"
+  },
+  {
    "t": "2026-07-22T20:03:13.263676+00:00",
    "hash": "b8633c34",
    "name": "mcl-convenience-yield-voltermgate",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.773"
-  },
-  {
-   "t": "2026-07-22T19:42:58.580830+00:00",
-   "hash": "fbec4f1c",
-   "name": "mcl-position-build-vs-liquidation-volume-signature",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.759"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "recheck: mgc-auction-yield-transmission-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:03:11Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-vix-settlement-spx-rotation-impulse",
     "stage": "dev3yr",
@@ -573,7 +565,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 568
+    "trials": 569
    }
   ]
  },
