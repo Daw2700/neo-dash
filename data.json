@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:26:16Z",
+  "stamp": "2026-07-22T11:26:38Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 397,
   "n_results": 506,
@@ -414,14 +414,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T11:21:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
-    "stage": "dev3yr",
     "started": "2026-07-22T11:21:05Z",
     "state": "running"
    }
