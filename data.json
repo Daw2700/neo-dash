@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:43:47Z",
+  "stamp": "2026-07-22T16:44:09Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 522,
-  "n_results": 651,
-  "n_trials": 30639,
+  "n_results": 652,
+  "n_trials": 30640,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:43:48.022500+00:00",
+   "hash": "73931a1a",
+   "name": "mgc-margin-hike-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.24"
+  },
+  {
    "t": "2026-07-22T16:43:31.551977+00:00",
    "hash": "729b2943",
    "name": "zn-latehour-hedging-demand-pressure-reversal",
@@ -326,14 +334,6 @@
    "t": "2026-07-22T16:43:16.159724+00:00",
    "hash": "f40a0f04",
    "name": "scout-38-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T16:42:40.326109+00:00",
-   "hash": "73931a1a",
-   "name": "mgc-margin-hike-lag",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-exchange-margin-hike-forced-deleveraging",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:41:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MYM",
     "task": "recheck: mym-constituent-halt-stale-leg-catchup",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 73,
+   "registered": 72,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 472
+    "trials": 473
    }
   ]
  },
@@ -548,7 +540,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 30,
+   "n_tested": 31,
    "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
