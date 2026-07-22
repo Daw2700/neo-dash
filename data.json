@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:45:03Z",
+  "stamp": "2026-07-22T19:50:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 596,
-  "n_results": 738,
-  "n_trials": 30726,
+  "n_registered": 599,
+  "n_results": 741,
+  "n_trials": 30729,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mym-price-weighted-exdiv-mechanical-drop",
+   "name": "mym-price-weighted-exdiv-mechanical-drop",
+   "market": "MYM",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 23,
+   "wr": 0.6957,
+   "usd_mo": 31,
+   "pf": 2.775,
+   "usd_trade": 49.0
   },
   {
    "id": "mbt-session-beta-channel-regime",
@@ -287,25 +299,33 @@
    "usd_mo": 30,
    "pf": 1.237,
    "usd_trade": 7.1
-  },
-  {
-   "id": "rep-nagel-mes",
-   "name": "rep-nagel-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 62,
-   "wr": null,
-   "usd_mo": 16,
-   "pf": 1.211,
-   "usd_trade": 9.3,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 6
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T19:48:22.516271+00:00",
+   "hash": "d43bc0aa",
+   "name": "mym-price-weighted-exdiv-mechanical-drop",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.775"
+  },
+  {
+   "t": "2026-07-22T19:48:12.245043+00:00",
+   "hash": "e4c1477b",
+   "name": "mgc-unmarked-window-length-dose-response",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.83"
+  },
+  {
+   "t": "2026-07-22T19:47:46.141107+00:00",
+   "hash": "af69f84e",
+   "name": "mnq-complex-wide-inside-day-coil",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.589"
+  },
   {
    "t": "2026-07-22T19:44:41.983489+00:00",
    "hash": "50240541",
@@ -377,30 +397,6 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T19:29:03.710526+00:00",
-   "hash": "babd2e02",
-   "name": "zc-crop-insurance-feb-discovery",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.54"
-  },
-  {
-   "t": "2026-07-22T19:28:00.718739+00:00",
-   "hash": "dc2bd904",
-   "name": "mes-wk10-derisk",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.106"
-  },
-  {
-   "t": "2026-07-22T19:27:58.292445+00:00",
-   "hash": "7c7da75f",
-   "name": "mnq-vwap-twap-participation-skew",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.208"
   }
  ],
  "pipeline": {
@@ -419,14 +415,6 @@
     "task": "mym-price-weighted-exdiv-mechanical-drop",
     "stage": "dev3yr",
     "started": "2026-07-22T19:43:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-complex-wide-inside-day-coil",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:45:03Z",
     "state": "running"
    }
   ],
@@ -505,7 +493,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 559
+    "trials": 562
    }
   ]
  },
@@ -514,8 +502,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 101,
-   "n_killed": 59,
+   "n_tested": 102,
+   "n_killed": 60,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -540,7 +528,7 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 8,
+   "n_tested": 9,
    "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
@@ -558,8 +546,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 34,
-   "n_killed": 27,
+   "n_tested": 35,
+   "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -962,6 +950,26 @@
     "apex_max": 2
    }
   },
+  "mym-price-weighted-exdiv-mechanical-drop": {
+   "name": "mym-price-weighted-exdiv-mechanical-drop",
+   "market": "MYM",
+   "tier": "candidate",
+   "mechanism": "The Dow is price-weighted and its divisor is not adjusted for ordinary dividends, so on ex-dividend dates of high-dollar-dividend DJIA components (GS, UNH) the index mechanically falls by dollar-dividend-over-divisor, an accounting drop rather than information; this drop hits the CASH index, so MYM futures should be relatively undragged or firm on these sessions versus an ordinary day, distinct from the diluted cap-weighted MES analogue already tested.",
+   "metrics": {
+    "n": 23,
+    "wr": 0.6957,
+    "pf": 2.775,
+    "usd_mo": 31,
+    "usd_trade": 49.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T19:48:22.516271+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -1257,30 +1265,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "rep-nagel-mes": {
-   "name": "rep-nagel-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Liquidity-provision reversal premium is market-wide and must appear on MES when VIX is elevated",
-   "metrics": {
-    "n": 62,
-    "wr": null,
-    "pf": 1.211,
-    "usd_mo": 16,
-    "usd_trade": 9.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T19:58:19.174504+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 6
-   }
   }
  },
  "decisions": [
