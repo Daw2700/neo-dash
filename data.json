@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:58:40Z",
+  "stamp": "2026-07-22T17:01:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 528,
-  "n_results": 658,
-  "n_trials": 30646,
+  "n_results": 659,
+  "n_trials": 30647,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:59:13.556446+00:00",
+   "hash": "1bf9297c",
+   "name": "mnq-volclock-exit-horizon",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T16:57:19.888702+00:00",
    "hash": "d0862a09",
    "name": "ROBUSTNESS-BATTERY mnq-volclock-exit-horizon (1bf9297c1c7c2e02)",
@@ -393,14 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T16:41:20.589158+00:00",
-   "hash": "9b1d00ce",
-   "name": "mes-maker-risk-budget-crowdout",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.404"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "robustness: mnq-volclock-exit-horizon",
     "stage": "dev3yr",
     "started": "2026-07-22T16:56:01Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "robustness: m2k-crossmarket-vol-normalization-exit-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:58:42Z",
     "state": "running"
    }
   ],
@@ -569,7 +577,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 479
+    "trials": 480
    }
   ]
  },
