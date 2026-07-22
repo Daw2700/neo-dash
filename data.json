@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:53:12Z",
+  "stamp": "2026-07-22T14:53:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T14:50:28Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-speculator-capacity-impairment-hedger-concession",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:53:13Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-autocallable-barrier-observation-hedge-discontinuity",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:53:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "mcl-speculator-capacity-impairment-hedger-concession",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.44
-   },
-   {
-    "rank": 13,
-    "idea": "mes-autocallable-barrier-observation-hedge-discontinuity",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 14,
     "idea": "zn-variable-annuity-guarantee-rho-hedge-rebalance",
@@ -444,7 +442,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 1,
    "registered": 66,
    "dev3yr": 0,
    "robustness": 0,
