@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:45:02Z",
+  "stamp": "2026-07-22T11:49:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 405,
-  "n_results": 514,
-  "n_trials": 30485,
+  "n_registered": 407,
+  "n_results": 516,
+  "n_trials": 30487,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -185,18 +185,6 @@
    }
   },
   {
-   "id": "mes-crossmarket-breadth-gate-continuation",
-   "name": "mes-crossmarket-breadth-gate-continuation",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 80,
-   "wr": 0.5,
-   "usd_mo": 50,
-   "pf": 1.4,
-   "usd_trade": 22.3
-  },
-  {
    "id": "b3-tom-long",
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -303,9 +291,45 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:48:42.641131+00:00",
+   "hash": "8b1f1e5a",
+   "name": "mes-financing-drag-rate-regime-overnight-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.011"
+  },
+  {
+   "t": "2026-07-22T11:47:40.902792+00:00",
+   "hash": "0cd58d6e",
+   "name": "m6e-policy-meeting-desync-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T11:46:25.960441+00:00",
+   "hash": "3e1aa4a5",
+   "name": "mes-crossmarket-breadth-gate-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T11:41:29.504610+00:00",
    "hash": "be7af1e3",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.447"
-  },
-  {
-   "t": "2026-07-22T11:23:42.253809+00:00",
-   "hash": "f6edd34e",
-   "name": "mes-corr-collapse-hedge",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T11:23:00.445966+00:00",
-   "hash": "f65b7ecf",
-   "name": "mng-withdrawal-season-weather-premium-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.561"
-  },
-  {
-   "t": "2026-07-22T11:21:43.032525+00:00",
-   "hash": "2e1746f8",
-   "name": "scout-30-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mes-crossmarket-breadth-gate-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:42:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-policy-meeting-desync-window",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-financing-drag-rate-regime-overnight-carry",
     "stage": "dev3yr",
@@ -470,7 +462,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 53,
+   "registered": 54,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 318
+    "trials": 320
    }
   ]
  },
@@ -556,8 +548,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 64,
-   "n_killed": 44,
+   "n_tested": 65,
+   "n_killed": 45,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1067,26 +1059,6 @@
     "apex_max": 8
    }
   },
-  "mes-crossmarket-breadth-gate-continuation": {
-   "name": "mes-crossmarket-breadth-gate-continuation",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Breadth of same-direction 09:30-10:00 ET movement across a 14-market micro complex separates macro-factor days (one common shock, flows persist) from idiosyncratic single-market noise days (mean-reverting); participants size trend positions similarly on both day types so a high-breadth signal should predict MES continuation from 10:00 to close.",
-   "metrics": {
-    "n": 80,
-    "wr": 0.5,
-    "pf": 1.4,
-    "usd_mo": 50,
-    "usd_trade": 22.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T11:39:17.050844+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b3-tom-long": {
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -1284,6 +1256,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
