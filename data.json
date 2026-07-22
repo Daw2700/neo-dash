@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:53:03Z",
+  "stamp": "2026-07-22T01:53:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-london-close-duration-handoff",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:53:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-lbma-am-auction-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:53:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-conditional-monthend-rebalance-spread",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:53:04Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zn-london-close-duration-handoff",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 5,
-    "idea": "mgc-lbma-am-auction-window",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 6,
-    "idea": "mes-conditional-monthend-rebalance-spread",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "mnq-european-cash-close-risk-transfer",
@@ -488,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 5,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
