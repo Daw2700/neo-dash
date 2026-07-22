@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:10:15Z",
+  "stamp": "2026-07-22T15:10:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 481,
-  "n_results": 606,
-  "n_trials": 30594,
+  "n_results": 607,
+  "n_trials": 30595,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,12 +307,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T15:09:55.214963+00:00",
+   "t": "2026-07-22T15:10:52.835847+00:00",
    "hash": "b9a53d45",
    "name": "mgc-tas-band-exhaustion-spillover-v2",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.865"
   },
   {
    "t": "2026-07-22T15:09:38.673591+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-tas-band-exhaustion-spillover",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:06:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-globex-precancel-lockdown-reopen-divergence",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-first-passage-grind-vs-airpocket",
     "stage": "dev3yr",
@@ -506,7 +498,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 67,
+   "registered": 66,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -568,7 +560,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 427
+    "trials": 428
    }
   ]
  },
@@ -621,8 +613,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 21,
+   "n_tested": 27,
+   "n_killed": 22,
    "book_sleeves": [],
    "agents_now": []
   },
