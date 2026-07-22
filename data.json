@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:57:23Z",
+  "stamp": "2026-07-22T22:58:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 676,
-  "n_results": 828,
-  "n_trials": 30816,
+  "n_results": 829,
+  "n_trials": 30817,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T22:57:22.486937+00:00",
+   "t": "2026-07-22T22:58:06.902565+00:00",
    "hash": "1a28965c",
    "name": "mcl-roll-window-liquidity-void-dose-response",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.613"
   },
   {
    "t": "2026-07-22T22:57:03.858387+00:00",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-roll-window-liquidity-void-dose-response",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:55:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-registered-stock-coverage-delivery-premium",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-biofuel-policy-volume-obligation-window",
     "stage": "dev3yr",
@@ -448,7 +440,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 91,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -510,7 +502,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 649
+    "trials": 650
    }
   ]
  },
@@ -581,8 +573,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 30,
+   "n_tested": 46,
+   "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
   },
