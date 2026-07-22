@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:17:19Z",
+  "stamp": "2026-07-22T09:20:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 339,
-  "n_results": 444,
-  "n_trials": 30415,
+  "n_registered": 341,
+  "n_results": 446,
+  "n_trials": 30417,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -201,18 +201,6 @@
    "usd_trade": 30.0
   },
   {
-   "id": "mes-fx-channel-open-overshoot-fade",
-   "name": "mes-fx-channel-open-overshoot-fade",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 106,
-   "wr": 0.5566,
-   "usd_mo": 57,
-   "pf": 1.333,
-   "usd_trade": 19.2
-  },
-  {
    "id": "mes-funding-basis-stress-cheapening",
    "name": "mes-funding-basis-stress-cheapening",
    "market": "MES",
@@ -307,9 +295,53 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T09:19:16.462465+00:00",
+   "hash": "d3b49d2a",
+   "name": "mes-europe-leg-anchor",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:18:36.382738+00:00",
+   "hash": "46262f1a",
+   "name": "mes-fx-channel-open-overshoot-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T09:17:26.682911+00:00",
+   "hash": "fc51ee48",
+   "name": "zn-gamma-hedging-intraday-momentum",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.185"
+  },
+  {
+   "t": "2026-07-22T09:17:24.805546+00:00",
+   "hash": "adbf6493",
+   "name": "robust-mes-fx-channel-open-overshoot-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T09:17:05.918726+00:00",
    "hash": "1d8c5484",
@@ -317,14 +349,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.455"
-  },
-  {
-   "t": "2026-07-22T09:16:28.162429+00:00",
-   "hash": "fc51ee48",
-   "name": "zn-gamma-hedging-intraday-momentum",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T09:13:09.896902+00:00",
@@ -381,30 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.461"
-  },
-  {
-   "t": "2026-07-22T09:01:23.393804+00:00",
-   "hash": "56139108",
-   "name": "mnq-recurring-slot-flow-saturation-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.012"
-  },
-  {
-   "t": "2026-07-22T09:00:33.958349+00:00",
-   "hash": "a8ad15cc",
-   "name": "mnq-morning-shock-forced-liq-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T08:57:41.815207+00:00",
-   "hash": "53286522",
-   "name": "zc-post-close-macro-catchup",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.28"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-gamma-hedging-intraday-momentum",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:14:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-europe-leg-anchor-on-session-disagreement",
     "stage": "dev3yr",
@@ -465,7 +457,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 40,
+   "registered": 41,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +519,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 248
+    "trials": 250
    }
   ]
  },
@@ -645,8 +637,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 21,
+   "n_tested": 25,
+   "n_killed": 22,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1106,26 +1098,6 @@
     }
    ]
   },
-  "mes-fx-channel-open-overshoot-fade": {
-   "name": "mes-fx-channel-open-overshoot-fade",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "A large overnight EUR/USD (M6E) move is traded at the US cash open as a dollar-liquidity/macro signal for equities, but the FX-equity link is far looser than that reflex implies, so the opening 30 minutes extrapolate the FX signal and the rest of the session gives it back, paying us for supplying liquidity against a reflexive cross-asset mapping.",
-   "metrics": {
-    "n": 106,
-    "wr": 0.5566,
-    "pf": 1.333,
-    "usd_mo": 57,
-    "usd_trade": 19.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T09:11:56.182889+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mes-funding-basis-stress-cheapening": {
    "name": "mes-funding-basis-stress-cheapening",
    "market": "MES",
@@ -1288,6 +1260,31 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
