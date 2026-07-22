@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:44:09Z",
+  "stamp": "2026-07-22T16:46:14Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 522,
-  "n_results": 652,
-  "n_trials": 30640,
+  "n_results": 653,
+  "n_trials": 30641,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:46:09.676265+00:00",
+   "hash": "dd939f8a",
+   "name": "mym-constituent-halt-stale-leg-catchup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0643"
+  },
+  {
    "t": "2026-07-22T16:43:48.022500+00:00",
    "hash": "73931a1a",
    "name": "mgc-margin-hike-lag",
@@ -393,14 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T16:29:58.276000+00:00",
-   "hash": "5c58eca4",
-   "name": "mnq-volume-peak-clock-daytype",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.075"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T16:41:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MYM",
-    "task": "recheck: mym-constituent-halt-stale-leg-catchup",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:43:47Z",
     "state": "running"
    }
   ],
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 473
+    "trials": 474
    }
   ]
  },
