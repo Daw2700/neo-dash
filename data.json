@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:00:18Z",
+  "stamp": "2026-07-22T06:03:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 252,
+  "n_registered": 253,
   "n_results": 350,
   "n_trials": 30321,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:01:24.194928+00:00",
+   "hash": "60165e2b",
+   "name": "met-mbt-open-rotation-dispersion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T05:58:28.029328+00:00",
    "hash": "5650586a",
    "name": "mes-prerelease-liquidity-withdrawal-drift-fade",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.8251"
-  },
-  {
-   "t": "2026-07-22T05:39:16.139880+00:00",
-   "hash": "6d2e6f18",
-   "name": "mgc-lny-restock-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1224"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:54:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-mbt-open-rotation-dispersion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:00:21Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "met-mbt-open-rotation-dispersion",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 11,
     "idea": "mes-vix-term-structure-inversion-regrossing",
@@ -474,8 +473,8 @@
    }
   ],
   "funnel": {
-   "idea": 5,
-   "registered": 23,
+   "idea": 4,
+   "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
