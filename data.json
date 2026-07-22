@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:40:31Z",
+  "stamp": "2026-07-22T01:40:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -413,9 +413,109 @@
  ],
  "pipeline": {
   "workers": [],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mgc-overnight-false-breakout-supply",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-backwardation-carry-regime",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mes-volcontrol-releverage-lag",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "zn-london-close-duration-handoff",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-lbma-am-auction-window",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mes-conditional-monthend-rebalance-spread",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mnq-european-cash-close-risk-transfer",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 8,
+    "idea": "zc-cash-hedge-open-reversion",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "mnq-roll-week-depth-fragmentation",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 10,
+    "idea": "mgc-post-settlement-thin-hour-drift",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mes-macro-announcement-day-premium",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 11,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
