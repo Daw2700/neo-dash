@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:40:36Z",
+  "stamp": "2026-07-22T01:45:52Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 139,
-  "n_results": 225,
+  "n_registered": 142,
+  "n_results": 228,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -205,6 +205,18 @@
    }
   },
   {
+   "id": "mes-volcontrol-releverage-lag",
+   "name": "mes-volcontrol-releverage-lag",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 50,
+   "wr": 0.56,
+   "usd_mo": 32,
+   "pf": 1.383,
+   "usd_trade": 22.9
+  },
+  {
    "id": "fomc-statement-presser-reversal",
    "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
@@ -299,21 +311,33 @@
    "usd_mo": 107,
    "pf": 1.113,
    "usd_trade": 5.7
-  },
-  {
-   "id": "b4-bigday-fade",
-   "name": "b4-bigday-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 202,
-   "wr": 0.48,
-   "usd_mo": 56,
-   "pf": 1.08,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T01:43:38.994772+00:00",
+   "hash": "f5c194b0",
+   "name": "mcl-carry-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.043"
+  },
+  {
+   "t": "2026-07-22T01:43:20.597059+00:00",
+   "hash": "35e00878",
+   "name": "mes-volcontrol-releverage-lag",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.383"
+  },
+  {
+   "t": "2026-07-22T01:42:34.047848+00:00",
+   "hash": "6419c4be",
+   "name": "mgc-overnight-false-breakout-supply",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.368"
+  },
   {
    "t": "2026-07-22T01:35:53.812028+00:00",
    "hash": "44ea882d",
@@ -385,44 +409,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:12:29.623327+00:00",
-   "hash": "ea6372c7",
-   "name": "b10-fomc-cycle-even ROBUSTNESS BATTERY (194)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T01:08:11.680323+00:00",
-   "hash": "6153da5c",
-   "name": "mcl-vix (crude)",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:06:59.444347+00:00",
-   "hash": "0190bb99",
-   "name": "mbt-nr7 (bitcoin)",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-overnight-false-breakout-supply",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:40:36Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-backwardation-carry-regime",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-volcontrol-releverage-lag",
     "stage": "dev3yr",
@@ -576,7 +568,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 29
+    "trials": 32
    }
   ]
  },
@@ -600,7 +592,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 7,
+   "n_tested": 8,
    "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
@@ -629,8 +621,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 2,
+   "n_tested": 3,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -647,7 +639,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 5,
+   "n_tested": 6,
    "n_killed": 4,
    "book_sleeves": [
     "mcl-vix (crude)"
@@ -1162,6 +1154,26 @@
     "apex_max": 1
    }
   },
+  "mes-volcontrol-releverage-lag": {
+   "name": "mes-volcontrol-releverage-lag",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Vol-target and risk-parity mandates mechanically cut equity notional as trailing realized vol rises and rebuild it only as the spike rolls out of the trailing window, producing a slow non-discretionary buy program that runs for days after the catalyst is gone; we trade the re-leveraging leg long once 20-day realized vol crosses back down through its pre-spike level.",
+   "metrics": {
+    "n": 50,
+    "wr": 0.56,
+    "pf": 1.383,
+    "usd_mo": 32,
+    "usd_trade": 22.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T01:43:20.597059+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "fomc-statement-presser-reversal": {
    "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
@@ -1334,36 +1346,6 @@
     },
     {
      "t": "2026-07-21T15:49:52.710078+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
-  "b4-bigday-fade": {
-   "name": "b4-bigday-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "A single-day move beyond 1.5% overshoots via forced flows and margin selling; next-open liquidity providers fade it",
-   "metrics": {
-    "n": 202,
-    "wr": 0.48,
-    "pf": 1.08,
-    "usd_mo": 56,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T14:44:57.606619+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.918482+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.714243+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
