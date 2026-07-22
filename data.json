@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:37:37Z",
+  "stamp": "2026-07-22T20:37:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:32:56Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-brent-orphan-benchmark-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:37:39Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mcl-brent-orphan-benchmark-window",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 5,
     "idea": "zs-palmoil-mpob-vegoil-substitution-overnight",
@@ -520,7 +519,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 10,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
