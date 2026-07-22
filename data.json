@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:48:49Z",
+  "stamp": "2026-07-22T12:48:51Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "mnq-opening-range-touch-count-liquidity-depletion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:48:51Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-scheduled-event-nonreaction-absorption",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:48:51Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-low-volume-node-traversal-acceleration",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:48:51Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mnq-opening-range-touch-count-liquidity-depletion",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
-   },
-   {
-    "rank": 2,
-    "idea": "mes-scheduled-event-nonreaction-absorption",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": null
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-low-volume-node-traversal-acceleration",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": null
-   },
    {
     "rank": 4,
     "idea": "mes-first-extreme-ordering-inventory-carry",
@@ -529,7 +527,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
