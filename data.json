@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:38:25Z",
+  "stamp": "2026-07-22T22:38:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -415,6 +415,14 @@
     "task": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
     "stage": "dev3yr",
     "started": "2026-07-22T22:33:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "robustness: zc-rma-volatility-factor-five-day-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:38:27Z",
     "state": "running"
    }
   ],
