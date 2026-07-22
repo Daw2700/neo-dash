@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:22:24Z",
+  "stamp": "2026-07-22T05:24:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 235,
-  "n_results": 330,
-  "n_trials": 30301,
+  "n_registered": 236,
+  "n_results": 332,
+  "n_trials": 30303,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -123,18 +123,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mcl-monthly-agency-balance-report-cluster",
-   "name": "mcl-monthly-agency-balance-report-cluster",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 27,
-   "wr": 0.7037,
-   "usd_mo": 41,
-   "pf": 5.241,
-   "usd_trade": 54.6
   },
   {
    "id": "rep-bondflight-mes",
@@ -303,9 +291,45 @@
    "usd_mo": 9,
    "pf": 1.043,
    "usd_trade": 9.1
+  },
+  {
+   "id": "mcl-refinery-turnaround-premium",
+   "name": "mcl-refinery-turnaround-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 266,
+   "wr": 0.5263,
+   "usd_mo": -24,
+   "pf": 0.958,
+   "usd_trade": -3.2
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T05:24:16.002241+00:00",
+   "hash": "c21268d8",
+   "name": "mes-crypto-overnight-riskappetite-overshoot-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0249"
+  },
+  {
+   "t": "2026-07-22T05:23:35.517929+00:00",
+   "hash": "75d7bcf8",
+   "name": "zn-fomc-blackout-carry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T05:22:28.370881+00:00",
+   "hash": "9686704d",
+   "name": "mcl-monthly-agency-balance-report-cluster",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T05:22:19.258404+00:00",
    "hash": "c21268d8",
@@ -377,44 +401,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T05:02:42.644116+00:00",
-   "hash": "cc36a778",
-   "name": "mes-gold-overnight-macro-signal-open-continuation",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T05:00:40.645349+00:00",
-   "hash": "c1a6a487",
-   "name": "ROBUSTNESS-PROTOCOL mes-gold-overnight-macro-signal-open-continuation (cc36a7782520b1be)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:58:04.818349+00:00",
-   "hash": "8f07daa6",
-   "name": "zc-export-inspections-monday-shipment-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mcl-monthly-agency-balance-report-cluster",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:19:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-fomc-blackout-communication-vacuum-carry",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "recheck: mes-crypto-overnight-riskappetite-overshoot-fade",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 21,
+   "registered": 22,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 134
+    "trials": 136
    }
   ]
  },
@@ -956,26 +948,6 @@
     "apex_max": 2
    }
   },
-  "mcl-monthly-agency-balance-report-cluster": {
-   "name": "mcl-monthly-agency-balance-report-cluster",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "OPEC MOMR, IEA OMR and EIA STEO all publish supply/demand balance revisions inside a three-day window each month; three independent forecasters revising the same balance sheet at once forces every curve-marked crude book to re-mark against a materially changed consensus, a scheduled information shock with no discretionary timing.",
-   "metrics": {
-    "n": 27,
-    "wr": 0.7037,
-    "pf": 5.241,
-    "usd_mo": 41,
-    "usd_trade": 54.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T05:16:44.956650+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1285,6 +1257,26 @@
    "verdict_history": [
     {
      "t": "2026-07-22T01:43:38.994772+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "mcl-refinery-turnaround-premium": {
+   "name": "mcl-refinery-turnaround-premium",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Spring and autumn refinery maintenance turnarounds remove physical crude demand on an operator-published calendar, so refiners stop buying and crude inventories build predictably; length carried through those windows is compensated for absorbing the unwanted barrels, so a long held only inside the turnaround calendar should earn a positive risk premium.",
+   "metrics": {
+    "n": 266,
+    "wr": 0.5263,
+    "pf": 0.958,
+    "usd_mo": -24,
+    "usd_trade": -3.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:30:38.572710+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
