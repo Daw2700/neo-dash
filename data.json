@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:20:23Z",
+  "stamp": "2026-07-22T16:20:30Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "SIL",
+    "task": "sil-side-impact-asymmetry-inventory-pressure",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:20:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-micro-share-at-capitulation-low",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:20:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-day-margin-expiry-forced-flatten",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:20:29Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "sil-side-impact-asymmetry-inventory-pressure",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-micro-share-at-capitulation-low",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-day-margin-expiry-forced-flatten",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "sil-comex-london-efp-delivery-squeeze",
@@ -516,7 +514,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 69,
    "dev3yr": 0,
    "robustness": 0,
