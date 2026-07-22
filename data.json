@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:43:08Z",
+  "stamp": "2026-07-22T05:43:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 245,
-  "n_results": 341,
-  "n_trials": 30312,
+  "n_results": 342,
+  "n_trials": 30313,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:43:11.972415+00:00",
+   "hash": "ecae60c7",
+   "name": "met-overnight-gap-overshoot-fade-us-open",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.234"
+  },
+  {
    "t": "2026-07-22T05:43:08.757569+00:00",
    "hash": "6d37b075",
    "name": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
@@ -325,14 +333,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.8251"
-  },
-  {
-   "t": "2026-07-22T05:41:33.961238+00:00",
-   "hash": "ecae60c7",
-   "name": "met-overnight-gap-overshoot-fade-us-open",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T05:39:16.139880+00:00",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:40:24Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-post-data-afternoon-vol-collapse-range-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:43:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zn-post-data-afternoon-vol-collapse-range-fade",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.62
-   },
    {
     "rank": 5,
     "idea": "mes-prerelease-liquidity-withdrawal-drift-fade",
@@ -528,8 +527,8 @@
    }
   ],
   "funnel": {
-   "idea": 11,
-   "registered": 24,
+   "idea": 10,
+   "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -591,7 +590,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 145
+    "trials": 146
    }
   ]
  },
@@ -691,8 +690,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 1,
+   "n_tested": 2,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
