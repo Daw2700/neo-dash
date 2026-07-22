@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:38:03Z",
+  "stamp": "2026-07-22T20:38:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,27 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:37:39Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "zs-palmoil-mpob-vegoil-substitution-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:38:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-livestock-report-feeddemand-sunday-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:38:04Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "zs-palmoil-mpob-vegoil-substitution-overnight",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 6,
-    "idea": "zc-livestock-report-feeddemand-sunday-transfer",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.37
-   },
    {
     "rank": 7,
     "idea": "mym-complex-replication-residual-reversion",
@@ -503,7 +501,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 8,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
