@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:29:56Z",
+  "stamp": "2026-07-22T22:32:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 659,
-  "n_results": 811,
-  "n_trials": 30799,
+  "n_registered": 662,
+  "n_results": 812,
+  "n_trials": 30800,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:32:24.280760+00:00",
+   "hash": "ed1eb41e",
+   "name": "mbt-etf-creation-t1-settlement-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.186"
+  },
+  {
+   "t": "2026-07-22T22:31:51.963129+00:00",
+   "hash": "2817e3e9",
+   "name": "btic-close-hedge-release",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:31:45.747250+00:00",
+   "hash": "f044ed39",
+   "name": "mgc-micro-delivery-month-retail-exit",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:29:28.065069+00:00",
    "hash": "0a998b79",
    "name": "zn-fid-forced-long-exit",
@@ -373,30 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.667"
-  },
-  {
-   "t": "2026-07-22T22:07:30.269072+00:00",
-   "hash": "dfa82f2b",
-   "name": "mes-treasury-roll-week-capacity-drain",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.103"
-  },
-  {
-   "t": "2026-07-22T22:06:47.624676+00:00",
-   "hash": "e2b06890",
-   "name": "scout-46-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:05:57.810580+00:00",
-   "hash": "dfa82f2b",
-   "name": "mes-treasury-roll-week-capacity-drain",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.103"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MBT",
-    "task": "mbt-etf-creation-t1-settlement-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:29:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "mgc-micro-delivery-month-retail-exit",
     "stage": "dev3yr",
@@ -457,7 +449,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 88,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -519,7 +511,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 632
+    "trials": 633
    }
   ]
  },
@@ -608,7 +600,7 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 13,
+   "n_tested": 14,
    "n_killed": 9,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
