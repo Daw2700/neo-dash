@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:49:58Z",
+  "stamp": "2026-07-22T23:50:20Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 688,
   "n_results": 845,
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "robustness: mgc-830-scheduled-data-range-breakout",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:43:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "replication: mgc-830-scheduled-data-range-breakout",
     "stage": "dev3yr",
