@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:52:09Z",
+  "stamp": "2026-07-22T18:54:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 577,
-  "n_results": 713,
-  "n_trials": 30701,
+  "n_registered": 578,
+  "n_results": 715,
+  "n_trials": 30703,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "sil-jan-bcom-gsci-reweight-short",
+   "name": "sil-jan-bcom-gsci-reweight-short",
+   "market": "SIL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 15,
+   "wr": 0.6667,
+   "usd_mo": 27,
+   "pf": 2.006,
+   "usd_trade": 66.0
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -287,25 +299,33 @@
    "usd_mo": 30,
    "pf": 1.237,
    "usd_trade": 7.1
-  },
-  {
-   "id": "rep-nagel-mes",
-   "name": "rep-nagel-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 62,
-   "wr": null,
-   "usd_mo": 16,
-   "pf": 1.211,
-   "usd_trade": 9.3,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 6
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T18:54:19.805883+00:00",
+   "hash": "554bd3b2",
+   "name": "mcl-jump-intensity-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:52:31.970393+00:00",
+   "hash": "1f2da39b",
+   "name": "sil-jan-bcom-gsci-reweight-short",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.006"
+  },
+  {
+   "t": "2026-07-22T18:52:15.073417+00:00",
+   "hash": "e4ddd6dc",
+   "name": "zs-holiday-compressed-week-hedge-budget",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T18:51:56.674461+00:00",
    "hash": "c7f08a0c",
@@ -313,14 +333,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.55"
-  },
-  {
-   "t": "2026-07-22T18:51:25.203896+00:00",
-   "hash": "1f2da39b",
-   "name": "sil-jan-bcom-gsci-reweight-short",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T18:49:26.827928+00:00",
@@ -385,36 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.674"
-  },
-  {
-   "t": "2026-07-22T18:35:01.969169+00:00",
-   "hash": "6f44a3b6",
-   "name": "m2k-open-hour-tilt",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.927"
-  },
-  {
-   "t": "2026-07-22T18:31:13.836378+00:00",
-   "hash": "868dba3e",
-   "name": "mes-hedging-gated-momentum",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.049"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "robustness: zs-holiday-compressed-week-hedge-budget",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:49:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "SIL",
     "task": "xsec-annual-commodity-index-reweight-january",
     "stage": "dev3yr",
@@ -422,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "xsec-commodity-jump-risk-premium-rank",
     "stage": "dev3yr",
@@ -559,7 +547,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 534
+    "trials": 536
    }
   ]
  },
@@ -621,7 +609,7 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 7,
+   "n_tested": 8,
    "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
@@ -1036,6 +1024,26 @@
     }
    ]
   },
+  "sil-jan-bcom-gsci-reweight-short": {
+   "name": "sil-jan-bcom-gsci-reweight-short",
+   "market": "SIL",
+   "tier": "candidate",
+   "mechanism": "BCOM and GSCI reset their target commodity weights once a year over a pre-announced 5-business-day band in early January (roughly Jan 8-14) in proportion to the prior years relative performance, and JPMorgan estimated silver alone faces sell flow near 9% of futures open interest in that band, so passive index trackers are structural, price-insensitive sellers of SIL during this specific annual window, distinct from the monthly front-month roll already tested elsewhere.",
+   "metrics": {
+    "n": 15,
+    "wr": 0.6667,
+    "pf": 2.006,
+    "usd_mo": 27,
+    "usd_trade": 66.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T18:52:31.970393+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1205,6 +1213,11 @@
      "t": "2026-07-22T18:46:33.204090+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T18:52:15.073417+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
@@ -1301,30 +1314,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "rep-nagel-mes": {
-   "name": "rep-nagel-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Liquidity-provision reversal premium is market-wide and must appear on MES when VIX is elevated",
-   "metrics": {
-    "n": 62,
-    "wr": null,
-    "pf": 1.211,
-    "usd_mo": 16,
-    "usd_trade": 9.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T19:58:19.174504+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 6
-   }
   }
  },
  "decisions": [
