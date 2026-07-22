@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:16:46Z",
+  "stamp": "2026-07-22T03:20:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 166,
-  "n_results": 257,
-  "n_trials": 30228,
+  "n_registered": 169,
+  "n_results": 260,
+  "n_trials": 30231,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -173,6 +173,18 @@
    }
   },
   {
+   "id": "mnq-m2k-open-dispersion-continuation",
+   "name": "mnq-m2k-open-dispersion-continuation",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 148,
+   "wr": 0.5135,
+   "usd_mo": 113,
+   "pf": 1.299,
+   "usd_trade": 27.4
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -245,6 +257,18 @@
    }
   },
   {
+   "id": "mgc-overnight-inventory-continuation",
+   "name": "mgc-overnight-inventory-continuation",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 380,
+   "wr": 0.5079,
+   "usd_mo": 27,
+   "pf": 1.09,
+   "usd_trade": 2.5
+  },
+  {
    "id": "b6-prehol-m2k",
    "name": "b6-prehol-m2k",
    "market": "M2K",
@@ -279,37 +303,33 @@
    "usd_mo": -435,
    "pf": 0.88,
    "usd_trade": -10.1
-  },
-  {
-   "id": "zn-sunday-reopen-duration-unwind",
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 151,
-   "wr": 0.3311,
-   "usd_mo": -133,
-   "pf": 0.481,
-   "usd_trade": -31.6
-  },
-  {
-   "id": "b7-down-weeks-dip",
-   "name": "b7-down-weeks-dip",
-   "market": "MNQ",
-   "tier": "demoted",
-   "pinned": false,
-   "n": 27,
-   "wr": 0.593,
-   "usd_mo": 61,
-   "pf": 1.945,
-   "usd_trade": 81.0,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 6
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T03:19:30.789998+00:00",
+   "hash": "43e185a4",
+   "name": "mnq-m2k-open-dispersion-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.299"
+  },
+  {
+   "t": "2026-07-22T03:18:55.942563+00:00",
+   "hash": "b7354639",
+   "name": "met-halt-reopen-inventory-recovery",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2104"
+  },
+  {
+   "t": "2026-07-22T03:18:14.361499+00:00",
+   "hash": "2d6605d2",
+   "name": "mgc-overnight-inventory-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.09"
+  },
   {
    "t": "2026-07-22T03:16:15.830614+00:00",
    "hash": "bc95b325",
@@ -381,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.706"
-  },
-  {
-   "t": "2026-07-22T03:00:58.502531+00:00",
-   "hash": "ce4d9198",
-   "name": "mcl-pre-fnd-retail-liquidation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.107"
-  },
-  {
-   "t": "2026-07-22T03:00:26.557190+00:00",
-   "hash": "32c13526",
-   "name": "zc-crop-progress-reopen-gap",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.208"
-  },
-  {
-   "t": "2026-07-22T02:54:22.295158+00:00",
-   "hash": "fd41ba8f",
-   "name": "m6e-gotobi-tokyo-fix",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.168"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-overnight-inventory-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:16:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-halt-reopen-inventory-recovery",
     "stage": "dev3yr",
@@ -426,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-m2k-open-dispersion-continuation",
     "stage": "dev3yr",
@@ -545,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 61
+    "trials": 64
    }
   ]
  },
@@ -587,7 +575,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 4,
+   "n_tested": 5,
    "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
@@ -596,7 +584,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 5,
+   "n_tested": 6,
    "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
@@ -642,9 +630,9 @@
   {
    "ticker": "MET",
    "display": "Ether",
-   "status": "idle",
-   "n_tested": 0,
-   "n_killed": 0,
+   "status": "active",
+   "n_tested": 1,
+   "n_killed": 1,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1052,6 +1040,26 @@
     "apex_max": 1
    }
   },
+  "mnq-m2k-open-dispersion-continuation": {
+   "name": "mnq-m2k-open-dispersion-continuation",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "A large megacap-vs-smallcap dislocation in the first 30 minutes of RTH is factor rotation being executed as multi-hour index program flow, not noise; the program is not finished at 10:00 ET, so the lagging index keeps lagging into the cash close. Structurally different from NQ/ES convergence, which trades two proxies of the same factor against each other. Source: 191_scout15_screen SCREEN 3 (dev, n=747): dispersion quintiles -> MNQ 10:00->16:00 mean bp = -16.6,+12.0,+10.6,+8.4,+2.1; one-sided (bottom quintile only), so the symmetric version is the mandatory mechanism control.",
+   "metrics": {
+    "n": 148,
+    "wr": 0.5135,
+    "pf": 1.299,
+    "usd_mo": 113,
+    "usd_trade": 27.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T03:19:30.789998+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1174,6 +1182,26 @@
     "apex_max": 6
    }
   },
+  "mgc-overnight-inventory-continuation": {
+   "name": "mgc-overnight-inventory-continuation",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "Gold is priced overnight in London and Asia OTC where CME futures follow rather than lead, so the US RTH open inherits an unfinished repricing and CME-hours participants complete it instead of fading it; the position of the overnight close inside the overnight range proxies how one-sided the inherited inventory is.",
+   "metrics": {
+    "n": 380,
+    "wr": 0.5079,
+    "pf": 1.09,
+    "usd_mo": 27,
+    "usd_trade": 2.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T03:18:14.361499+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-prehol-m2k": {
    "name": "b6-prehol-m2k",
    "market": "M2K",
@@ -1238,55 +1266,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "zn-sunday-reopen-duration-unwind": {
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
-   "metrics": {
-    "n": 151,
-    "wr": 0.3311,
-    "pf": 0.481,
-    "usd_mo": -133,
-    "usd_trade": -31.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T02:50:04.186910+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "b7-down-weeks-dip": {
-   "name": "b7-down-weeks-dip",
-   "market": "MNQ",
-   "tier": "demoted",
-   "mechanism": "Two consecutive down weeks trigger mechanical rebalancing inflows and exhaust retail capitulation, so the following Monday carries an amplified risk premium",
-   "metrics": {
-    "n": 27,
-    "wr": 0.593,
-    "pf": 1.945,
-    "usd_mo": 61,
-    "usd_trade": 81.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:12:29.404963+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T00:58:26.808888+00:00",
-     "stage": "robustness",
-     "verdict": "DEMOTED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 6
-   }
   }
  },
  "decisions": [
