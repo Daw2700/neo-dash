@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:53:37Z",
+  "stamp": "2026-07-22T14:58:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 473,
-  "n_results": 598,
-  "n_trials": 30586,
+  "n_registered": 476,
+  "n_results": 602,
+  "n_trials": 30590,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T14:57:20.951085+00:00",
+   "hash": "570c5d90",
+   "name": "mcl-speculator-capacity-impairment-hedger-concession",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.885"
+  },
+  {
+   "t": "2026-07-22T14:56:50.062258+00:00",
+   "hash": "5146b53e",
+   "name": "scout-35-screen",
+   "status": "screen complete - 5 axes x",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T14:56:31.052535+00:00",
+   "hash": "9a6419e9",
+   "name": "zn-roll-financing-flow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1215"
+  },
+  {
+   "t": "2026-07-22T14:56:01.003189+00:00",
+   "hash": "ed0b40a5",
+   "name": "mes-barrier-hedge-bounce",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.019"
+  },
+  {
    "t": "2026-07-22T14:53:24.763300+00:00",
    "hash": "9a6419e9",
    "name": "zn-roll-financing-flow",
@@ -369,38 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.577"
-  },
-  {
-   "t": "2026-07-22T14:38:44.756089+00:00",
-   "hash": "5653f081",
-   "name": "mes-dealer-absorption-conditioned-overnight-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.217"
-  },
-  {
-   "t": "2026-07-22T14:38:14.501689+00:00",
-   "hash": "6f5b8beb",
-   "name": "mgc-offshore-mark-ratification-at-ny-open",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.138"
-  },
-  {
-   "t": "2026-07-22T14:34:51.147941+00:00",
-   "hash": "a555532d",
-   "name": "mes-zn-activity-range-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.161"
-  },
-  {
-   "t": "2026-07-22T14:33:22.103017+00:00",
-   "hash": "c044425e",
-   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -414,14 +414,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-autocallable-barrier-observation-hedge-discontinuity",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:53:13Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "recheck: zn-roll-financing-flow",
     "stage": "dev3yr",
@@ -513,7 +505,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 419
+    "trials": 423
    }
   ]
  },
@@ -537,8 +529,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 80,
-   "n_killed": 58,
+   "n_tested": 81,
+   "n_killed": 59,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -584,8 +576,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 17,
+   "n_tested": 30,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
