@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:29:40Z",
+  "stamp": "2026-07-22T18:31:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 565,
-  "n_results": 703,
-  "n_trials": 30691,
+  "n_registered": 566,
+  "n_results": 704,
+  "n_trials": 30692,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:31:13.836378+00:00",
+   "hash": "868dba3e",
+   "name": "mes-hedging-gated-momentum",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.049"
+  },
+  {
    "t": "2026-07-22T18:26:12.718899+00:00",
    "hash": "c48aebc5",
    "name": "xmkt-volshare-defensive-rotation",
@@ -393,14 +401,6 @@
    "status": "replicates",
    "kind": "result",
    "detail": "PF 6.117"
-  },
-  {
-   "t": "2026-07-22T18:08:24.209157+00:00",
-   "hash": "0822caf1",
-   "name": "rep-met-april-tax-liability-retail-liquidation-mbt",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "xmkt-hourly-systematic-share-divergence-conditioning",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:29:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-letf-hedging-demand-gated-intraday-momentum",
     "stage": "dev3yr",
     "started": "2026-07-22T18:29:40Z",
     "state": "running"
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 524
+    "trials": 525
    }
   ]
  },
@@ -547,8 +539,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 94,
-   "n_killed": 69,
+   "n_tested": 95,
+   "n_killed": 70,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
