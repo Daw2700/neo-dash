@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:38:39Z",
+  "stamp": "2026-07-22T04:40:43Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 210,
-  "n_results": 301,
-  "n_trials": 30272,
+  "n_registered": 213,
+  "n_results": 303,
+  "n_trials": 30274,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:40:41.236973+00:00",
+   "hash": "4c26a5ee",
+   "name": "m6e-ny-cut-option-expiry-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.4168"
+  },
+  {
+   "t": "2026-07-22T04:40:20.608326+00:00",
+   "hash": "ea41364f",
+   "name": "mcl-platts-moc-pushback",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.731"
+  },
+  {
+   "t": "2026-07-22T04:39:27.250902+00:00",
+   "hash": "26db3d2d",
+   "name": "sil-lbma-auction-imbalance-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:33:46.193435+00:00",
    "hash": "7dbdc701",
    "name": "scout-19-screen",
@@ -377,30 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:23:26.508763+00:00",
-   "hash": "a06291c3",
-   "name": "mnq-posbondcorr-discountrate-dip-repair",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.313"
-  },
-  {
-   "t": "2026-07-22T04:21:48.098013+00:00",
-   "hash": "519ac5c1",
-   "name": "mes-0dte-afternoon-gamma-amp",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.944"
-  },
-  {
-   "t": "2026-07-22T04:21:46.057734+00:00",
-   "hash": "731e28c9",
-   "name": "mnq-close-on-lows-liquidation-overnight-repair",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.545"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-platts-moc-assessment-window-pushback",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:38:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-ny-cut-option-expiry-release",
     "stage": "dev3yr",
@@ -497,7 +489,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 14,
+   "registered": 15,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +551,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 105
+    "trials": 107
    }
   ]
  },
@@ -628,8 +620,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 9,
+   "n_tested": 13,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -666,8 +658,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 8,
-   "n_killed": 8,
+   "n_tested": 9,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
