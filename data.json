@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:24:57Z",
+  "stamp": "2026-07-22T07:25:40Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 290,
   "n_results": 390,
@@ -412,14 +412,6 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "mes-settlement-window-print-pressure-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:21:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-correlated-degross-day-continuation",
     "stage": "dev3yr",
     "started": "2026-07-22T07:22:09Z",
@@ -434,9 +426,19 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 13,
+    "idea": "mes-settlement-window-print-pressure-unwind",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 1,
    "registered": 29,
    "dev3yr": 0,
    "robustness": 0,
