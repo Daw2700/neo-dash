@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:03:10Z",
+  "stamp": "2026-07-22T06:03:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 253,
-  "n_results": 350,
-  "n_trials": 30321,
+  "n_results": 351,
+  "n_trials": 30322,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T06:01:24.194928+00:00",
+   "t": "2026-07-22T06:03:25.562868+00:00",
    "hash": "60165e2b",
    "name": "met-mbt-open-rotation-dispersion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.179"
   },
   {
    "t": "2026-07-22T05:58:28.029328+00:00",
@@ -408,32 +408,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-prerelease-liquidity-withdrawal-drift-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:49:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-futures-funding-basis-stress-cheapening",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:54:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MET",
-    "task": "met-mbt-open-rotation-dispersion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:00:21Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 11,
@@ -474,7 +449,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 24,
+   "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -536,7 +511,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 154
+    "trials": 155
    }
   ]
  },
@@ -625,8 +600,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 2,
+   "n_tested": 5,
+   "n_killed": 3,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
