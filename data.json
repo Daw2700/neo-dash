@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:19:24Z",
+  "stamp": "2026-07-22T04:19:27Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "mnq-close-on-lows-liquidation-overnight-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:19:27Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-overnight-vol-handoff-completion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:19:27Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-0dte-afternoon-dealer-gamma-amplification",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:19:27Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mnq-close-on-lows-liquidation-overnight-repair",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mcl-overnight-vol-handoff-completion",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 4,
-    "idea": "mes-0dte-afternoon-dealer-gamma-amplification",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "mnq-posbondcorr-discountrate-dip-repair",
@@ -498,7 +496,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 7,
    "registered": 12,
    "dev3yr": 0,
    "robustness": 0,
