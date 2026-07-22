@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:16:45Z",
+  "stamp": "2026-07-22T03:16:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "mgc-overnight-inventory-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:16:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MET",
+    "task": "met-halt-reopen-inventory-recovery",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:16:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-m2k-open-dispersion-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:16:46Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "mgc-overnight-inventory-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 4,
-    "idea": "met-halt-reopen-inventory-recovery",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 5,
-    "idea": "mnq-m2k-open-dispersion-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "m6e-monthend-london-fix-equity-hedge",
@@ -484,7 +482,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 5,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
