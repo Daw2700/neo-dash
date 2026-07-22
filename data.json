@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:12:58Z",
+  "stamp": "2026-07-22T04:13:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,14 @@
     "task": "zs-china-session-handoff",
     "stage": "dev3yr",
     "started": "2026-07-22T04:12:36Z",
+    "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T04:13:00Z",
     "state": "running"
    }
   ],
