@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:44:44Z",
+  "stamp": "2026-07-22T07:49:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 297,
-  "n_results": 398,
-  "n_trials": 30369,
+  "n_registered": 300,
+  "n_results": 401,
+  "n_trials": 30372,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 0
+  "needs_attention_count": 1
  },
  "leaderboard": [
   {
@@ -213,18 +213,6 @@
    "usd_trade": 15.4
   },
   {
-   "id": "mcl-upside-semivariance-exhaustion",
-   "name": "mcl-upside-semivariance-exhaustion",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 318,
-   "wr": 0.522,
-   "usd_mo": 99,
-   "pf": 1.271,
-   "usd_trade": 11.2
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -307,9 +295,61 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:47:33.531349+00:00",
+   "hash": "dfc869fe",
+   "name": "mcl-upside-semivariance-exhaustion",
+   "status": "fail",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T07:46:52.300888+00:00",
+   "hash": "27ca26e3",
+   "name": "mnq-event-free-day-flow-persistence",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.122"
+  },
+  {
+   "t": "2026-07-22T07:46:37.064543+00:00",
+   "hash": "6d14a51d",
+   "name": "mnq-micro-vs-fullsize-basis",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 9.065"
+  },
+  {
+   "t": "2026-07-22T07:46:22.662780+00:00",
+   "hash": "213bf652",
+   "name": "REPLICATION-PROTOCOL mcl-upside-semivariance-exhaustion (dfc869fe181d9a55) on sibling MNG",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T07:45:46.779931+00:00",
+   "hash": "3e92d55f",
+   "name": "REPLICATION-PROTOCOL mnq-event-free-day-flow-persistence on MES (371)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T07:42:14.432674+00:00",
    "hash": "27ca26e3",
@@ -365,46 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.368"
-  },
-  {
-   "t": "2026-07-22T07:28:59.884243+00:00",
-   "hash": "3d2376b9",
-   "name": "mes-degross-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T07:28:10.354533+00:00",
-   "hash": "8dd564af",
-   "name": "mes-settlement-window-print-pressure-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.899"
-  },
-  {
-   "t": "2026-07-22T07:27:14.331283+00:00",
-   "hash": "b8afb6be",
-   "name": "mes-degross-continuation ROBUSTNESS PROTOCOL",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:25:40.594738+00:00",
-   "hash": "3d2376b9",
-   "name": "mes-degross-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.402"
-  },
-  {
-   "t": "2026-07-22T07:24:51.780515+00:00",
-   "hash": "174f4d70",
-   "name": "scout-24-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "mnq-micro-vs-fullsize-retail-basis",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:39:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "replication: mnq-event-free-day-flow-persistence",
     "stage": "dev3yr",
     "started": "2026-07-22T07:44:44Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "replication: mcl-upside-semivariance-exhaustion",
     "stage": "dev3yr",
@@ -528,7 +520,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 31,
+   "registered": 33,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -590,7 +582,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 202
+    "trials": 205
    }
   ]
  },
@@ -599,8 +591,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 68,
-   "n_killed": 40,
+   "n_tested": 69,
+   "n_killed": 41,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -1161,6 +1153,11 @@
      "t": "2026-07-22T07:42:14.432674+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
@@ -1181,31 +1178,6 @@
      "t": "2026-07-22T05:57:32.220572+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
-    }
-   ]
-  },
-  "mcl-upside-semivariance-exhaustion": {
-   "name": "mcl-upside-semivariance-exhaustion",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Crude upside intraday volatility comes mostly from supply-disruption headlines and short-covering that do not change the physical barrel balance and decay quickly, while downside volatility reflects persistent demand revisions, so a session whose realized variance is dominated by the upside half is mostly transient risk-premium repricing that should give back the next session.",
-   "metrics": {
-    "n": 318,
-    "wr": 0.522,
-    "pf": 1.271,
-    "usd_mo": 99,
-    "usd_trade": 11.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:36:46.839311+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T07:42:10.120260+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
     }
    ]
   },
@@ -1355,9 +1327,53 @@
      "verdict": "KILLED"
     }
    ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
- "decisions": [],
+ "decisions": [
+  {
+   "id": "d-eventfree-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Second machine-discovered sleeve ready: event-free-day flow persistence (PF 1.368)",
+   "recommendation": "ADMIT to the book \u2014 full funnel passed; note the replication margin is narrower than gold-signal's",
+   "evidence": "dev3yr: n=675, PF 1.368, $30.01/trade | robustness: SURVIVES | replication: PF 1.122 on MES vs 1.10 bar \u2014 clears, but with less room than gold-signal's 1.391",
+   "what_yes_means": "Book grows to 8 sleeves; sizing and all bundles recompute including it",
+   "recap": "On days with no scheduled macro events, intraday flow direction persists into the close on MNQ. Scouted, Sonnet-tested, Opus-hardened, and replicated overnight while you slept.",
+   "why": "It cleared every formal gate, including the replication bar that killed three other finalists tonight. Honest caveat: its sibling margin (1.122 vs bar 1.10) is thin \u2014 real mechanisms usually carry robustly, and this one carried adequately rather than emphatically. Admitting it is defensible; so is holding it as a candidate until it accrues live-paper evidence. The engine recommends admission because every pre-registered gate was met \u2014 but the margin is why this card exists rather than an auto-entry.",
+   "steps": [
+    "Approve: strategy joins the validated book (8 sleeves); sizing/bundles/roadmap recompute",
+    "Deny: it remains a replicated candidate \u2014 fully preserved, revisitable anytime",
+    "Question: ask anything (e.g. its overlap with existing MNQ sleeves) and the card returns with the analysis",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-22T07:47:26Z"
+  }
+ ],
  "roadmap": {
   "goal_usd_mo": 10000,
   "books": [
