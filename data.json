@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:22:56Z",
+  "stamp": "2026-07-22T20:32:54Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 615,
   "n_results": 761,
@@ -400,19 +400,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T20:18:24Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-covered-call-etf-roll-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-complex-dispersion-expansion-gate",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "zc-farmer-round-dollar-sell-shelf",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 4,
+    "idea": "mcl-brent-orphan-benchmark-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "zs-palmoil-mpob-vegoil-substitution-overnight",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 6,
+    "idea": "zc-livestock-report-feeddemand-sunday-transfer",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.37
+   },
+   {
+    "rank": 7,
+    "idea": "mym-complex-replication-residual-reversion",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 8,
+    "idea": "mes-macro-factor-coherence-open-ratification",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 9,
+    "idea": "mng-monthly-hedge-deadline-vol-ramp",
+    "source": "data-screen",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 10,
+    "idea": "mbt-treasury-company-monday-disclosure-window",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 11,
+    "idea": "m2k-rates-variance-import-gate",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 12,
+    "idea": "mes-pension-fundedstatus-glidepath-rotation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 13,
+    "idea": "m2k-dollar-revenue-exposure-rotation",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 14,
+    "idea": "mes-backofmonth-calendar-emptiness-reversion",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.26
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
