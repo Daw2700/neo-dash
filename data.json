@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:43:56Z",
+  "stamp": "2026-07-22T15:50:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 494,
-  "n_results": 622,
-  "n_trials": 30610,
+  "n_registered": 496,
+  "n_results": 625,
+  "n_trials": 30613,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:47:35.689403+00:00",
+   "hash": "15abd9f0",
+   "name": "mes-deseasonalized-vol-surprise-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.796"
+  },
+  {
+   "t": "2026-07-22T15:47:15.796894+00:00",
+   "hash": "d1effc5b",
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T15:46:55.314642+00:00",
+   "hash": "b96a4450",
+   "name": "mgc-monthend-impact-reversion-rent",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.25"
+  },
+  {
    "t": "2026-07-22T15:40:13.765212+00:00",
    "hash": "d1effc5b",
    "name": "mes-depth-consumption-print-size-range-forecast",
@@ -377,52 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.749"
-  },
-  {
-   "t": "2026-07-22T15:25:11.810360+00:00",
-   "hash": "cea36cba",
-   "name": "mgc-concealed-absorber-move-failure",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.587"
-  },
-  {
-   "t": "2026-07-22T15:24:22.820428+00:00",
-   "hash": "317d30b0",
-   "name": "zn-margin-cutoff-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.577"
-  },
-  {
-   "t": "2026-07-22T15:21:17.824814+00:00",
-   "hash": "7f57c9e6",
-   "name": "mng-price-banding-staircase-overnight",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.079"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-depth-consumption-print-size-range-forecast",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:43:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-monthend-impact-inflation-reversion-rent",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:43:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-deseasonalized-vol-surprise-information-gate",
     "stage": "dev3yr",
@@ -577,7 +561,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 443
+    "trials": 446
    }
   ]
  },
@@ -601,8 +585,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 84,
-   "n_killed": 61,
+   "n_tested": 85,
+   "n_killed": 62,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -630,8 +614,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 23,
+   "n_tested": 30,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1321,6 +1305,11 @@
      "t": "2026-07-22T15:40:13.765212+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T15:47:15.796894+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
