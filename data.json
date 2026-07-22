@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:12:47Z",
+  "stamp": "2026-07-22T08:13:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 309,
-  "n_results": 413,
-  "n_trials": 30384,
+  "n_results": 414,
+  "n_trials": 30385,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T08:11:02.291554+00:00",
+   "t": "2026-07-22T08:12:59.581648+00:00",
    "hash": "7eb60176",
    "name": "zc-short-horizon-hedger-liquidity-rebate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.757"
   },
   {
    "t": "2026-07-22T08:10:44.449042+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-crypto-internal-risk-gradient",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:07:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-short-horizon-hedger-liquidity-rebate",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-dual-identity-beta-conflict",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 35,
+   "registered": 34,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 217
+    "trials": 218
    }
   ]
  },
@@ -636,8 +628,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 10,
+   "n_tested": 11,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
