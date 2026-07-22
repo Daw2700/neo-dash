@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:07:18Z",
+  "stamp": "2026-07-22T19:07:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T19:03:58Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-desk-operation-result-window-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:07:20Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "zn-desk-operation-result-window-repricing",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 11,
     "idea": "micro-complex-monthstart-retail-deposit-inflow-cohort",
@@ -461,7 +460,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
