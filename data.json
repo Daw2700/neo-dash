@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:33:29Z",
+  "stamp": "2026-07-22T22:35:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 662,
-  "n_results": 814,
-  "n_trials": 30802,
+  "n_registered": 666,
+  "n_results": 815,
+  "n_trials": 30803,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:35:38.217463+00:00",
+   "hash": "5ab88670",
+   "name": "met-validator-queue-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-22T22:35:14.896691+00:00",
+   "hash": "ac69559c",
+   "name": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:34:20.813065+00:00",
+   "hash": "61cfd248",
+   "name": "scout-47-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:34:17.252045+00:00",
+   "hash": "14f51e73",
+   "name": "zc-rma-volatility-factor-five-day-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:33:12.042392+00:00",
    "hash": "f044ed39",
    "name": "mgc-micro-delivery-month-retail-exit",
@@ -365,38 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.003"
-  },
-  {
-   "t": "2026-07-22T22:25:54.757172+00:00",
-   "hash": "12ab5274",
-   "name": "mes-autocallable-observation-date-delta-step",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.879"
-  },
-  {
-   "t": "2026-07-22T22:09:28.183973+00:00",
-   "hash": "2a1ced0b",
-   "name": "mes-liquidity-oversupply-reversal-sibling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.336"
-  },
-  {
-   "t": "2026-07-22T22:08:18.280763+00:00",
-   "hash": "5d81c244",
-   "name": "zc-fomc-surprise-liquidity-gradient-crossmarket",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.252"
-  },
-  {
-   "t": "2026-07-22T22:08:09.108911+00:00",
-   "hash": "a78a2719",
-   "name": "zn-soma-reinvestment-cap-overflow-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.667"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "MET",
-    "task": "met-validator-queue-metered-supply-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:33:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "ZN",
     "task": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
     "stage": "dev3yr",
@@ -437,7 +429,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 88,
+   "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 635
+    "trials": 636
    }
   ]
  },
