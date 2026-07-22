@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:39:49Z",
+  "stamp": "2026-07-22T13:39:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,6 +411,22 @@
     "task": "robustness: mnq-crossindex-leadership-rotation",
     "stage": "dev3yr",
     "started": "2026-07-22T13:37:02Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "robustness: mes-tom-daycount-compression",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:39:51Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-maintenance-break-inventory-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T13:39:51Z",
     "state": "running"
    }
   ],
