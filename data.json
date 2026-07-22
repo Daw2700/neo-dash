@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:40:24Z",
+  "stamp": "2026-07-22T19:42:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 592,
-  "n_results": 734,
-  "n_trials": 30722,
+  "n_registered": 595,
+  "n_results": 736,
+  "n_trials": 30724,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 3
+  "needs_attention_count": 4
  },
  "leaderboard": [
   {
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:42:46.654450+00:00",
+   "hash": "74b0ed05",
+   "name": "zc-drought-monitor-thursday-release-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.407"
+  },
+  {
+   "t": "2026-07-22T19:42:40.351183+00:00",
+   "hash": "63eb2e45",
+   "name": "mng-daily-cash-window-index-hedge-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.603"
+  },
+  {
+   "t": "2026-07-22T19:41:51.903943+00:00",
+   "hash": "fbec4f1c",
+   "name": "mcl-position-build-vs-liquidation-volume-signature",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T19:37:10.067445+00:00",
    "hash": "dc2bd904",
    "name": "mes-wk10-derisk",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.014"
-  },
-  {
-   "t": "2026-07-22T19:17:50.453302+00:00",
-   "hash": "141dcab5",
-   "name": "mnq-dst-desync-clock-shift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.014"
-  },
-  {
-   "t": "2026-07-22T19:14:06.405564+00:00",
-   "hash": "46e58e86",
-   "name": "mcl-energy-desk-open-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.583"
-  },
-  {
-   "t": "2026-07-22T19:13:46.393788+00:00",
-   "hash": "c4ed8311",
-   "name": "mnq-monthstart-retail-inflow-cohort",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-drought-monitor-thursday-release-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:40:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-position-build-vs-liquidation-volume-signature",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 84,
+   "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 555
+    "trials": 557
    }
   ]
  },
@@ -621,8 +613,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 15,
+   "n_tested": 20,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -668,8 +660,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 27,
-   "n_killed": 24,
+   "n_tested": 28,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1320,6 +1312,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-wk10derisk-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Fifth machine-discovered sleeve ready: quarterly week-10 pre-expiry derisk (PF 2.106)",
+   "recommendation": "ADMIT to the book \u2014 strongest dual-leg showing yet (dev PF 2.106, replication PF 1.607)",
+   "evidence": "dev3yr: n=52, PF 2.106, $48.93/trade | robustness: SURVIVES | replication: PF 1.607 on MNQ vs 1.10 bar \u2014 both legs emphatic, and the fat-$/trade profile matches your preferred family",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "In week 10 of each quarterly expiry cycle, institutions de-risk ahead of expiry and the strategy rides that flow on MES. Passed every gate today with the n>=15 rule enforced.",
+   "why": "Rare-firing, high expectancy, works on both index siblings \u2014 the exact risk-premium-harvesting profile of your pinned vix-reversion. One consideration: it is calendar-cycle-flavored; the book currently has no quarterly-cycle sleeve so direct overlap looks low, but if you want a formal overlap report vs the monday/TOM/prehol family before deciding, tap Question and the engine will run it.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Question: ask for the calendar-overlap report (recommended if unsure) \u2014 card returns with the analysis",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-22T19:41:17Z"
+  },
   {
    "id": "d-depthcons-book-entry",
    "kind": "book_entry",
