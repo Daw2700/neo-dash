@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:16:32Z",
+  "stamp": "2026-07-22T10:16:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,26 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "robustness: mnq-session-early-exhaustion-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:16:33Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-cost-basis-overhang-underreaction",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:16:33Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-offshore-participation-share-expansion-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:16:33Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-cost-basis-overhang-underreaction",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.58
-   },
-   {
-    "rank": 5,
-    "idea": "mnq-offshore-participation-share-expansion-gate",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "m6e-london-1600-benchmark-fix-window-reversal",
@@ -511,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 9,
    "registered": 46,
    "dev3yr": 0,
    "robustness": 0,
