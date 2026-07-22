@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:28:05Z",
+  "stamp": "2026-07-22T07:30:47Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 292,
-  "n_results": 391,
-  "n_trials": 30362,
+  "n_results": 393,
+  "n_trials": 30364,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -173,18 +173,6 @@
    }
   },
   {
-   "id": "mes-degross-continuation",
-   "name": "mes-degross-continuation",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 21,
-   "wr": 0.5238,
-   "usd_mo": 13,
-   "pf": 1.402,
-   "usd_trade": 21.9
-  },
-  {
    "id": "b3-tom-long",
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -307,16 +295,36 @@
    "usd_mo": 20,
    "pf": 1.088,
    "usd_trade": 10.1
+  },
+  {
+   "id": "b6-prehol-m2k",
+   "name": "b6-prehol-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 31,
+   "wr": null,
+   "usd_mo": 2,
+   "pf": 1.074,
+   "usd_trade": 2.3
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T07:27:15.993235+00:00",
+   "t": "2026-07-22T07:28:59.884243+00:00",
+   "hash": "3d2376b9",
+   "name": "mes-degross-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T07:28:10.354533+00:00",
    "hash": "8dd564af",
    "name": "mes-settlement-window-print-pressure-unwind",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.899"
   },
   {
    "t": "2026-07-22T07:27:14.331283+00:00",
@@ -397,26 +405,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:08:10.211750+00:00",
-   "hash": "596850f7",
-   "name": "mnq-metaorder-flow-persistence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.916"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-correlated-degross-day-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:22:09Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -426,17 +418,9 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-degross-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:25:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MES",
-    "task": "mes-settlement-window-print-pressure-unwind",
     "stage": "dev3yr",
     "started": "2026-07-22T07:25:42Z",
     "state": "running"
@@ -445,7 +429,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 30,
+   "registered": 29,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 195
+    "trials": 197
    }
   ]
  },
@@ -531,8 +515,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 38,
-   "n_killed": 23,
+   "n_tested": 39,
+   "n_killed": 24,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1022,26 +1006,6 @@
     "apex_max": 8
    }
   },
-  "mes-degross-continuation": {
-   "name": "mes-degross-continuation",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Days on which equity, bond, and gold all fall together indicate a levered multi-asset book being liquidated indiscriminately, not a normal risk-off rotation into safe havens; a screen (189 SCREEN 5) found this deleveraging is multi-day, so the next session should CONTINUE lower rather than rebound, the inverse of the standard fire-sale-rebound prior.",
-   "metrics": {
-    "n": 21,
-    "wr": 0.5238,
-    "pf": 1.402,
-    "usd_mo": 13,
-    "usd_trade": 21.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:25:40.594738+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b3-tom-long": {
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -1265,6 +1229,31 @@
      "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "b6-prehol-m2k": {
+   "name": "b6-prehol-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Pre-holiday drift comes from US equity market liquidity withdrawal and short-covering, which applies to small-caps as much as tech",
+   "metrics": {
+    "n": 31,
+    "wr": null,
+    "pf": 1.074,
+    "usd_mo": 2,
+    "usd_trade": 2.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.110553+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    },
+    {
+     "t": "2026-07-21T16:04:19.693873+00:00",
+     "stage": "dev3yr",
+     "verdict": "FAIL"
     }
    ]
   }
