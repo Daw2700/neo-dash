@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:16:56Z",
+  "stamp": "2026-07-22T20:16:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:15:12Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-opec-meeting-uncertainty-premium-release",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:16:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 14,
-    "idea": "mcl-opec-meeting-uncertainty-premium-release",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 15,
     "idea": "zc-ethanol-crush-margin-demand-transmission",
@@ -439,7 +438,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
