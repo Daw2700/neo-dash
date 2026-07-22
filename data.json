@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:15:02Z",
+  "stamp": "2026-07-22T18:15:25Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 562,
   "n_results": 697,
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "mnq-prior-settlement-anchor-premarket-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:15:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "xmkt-volume-share-defensive-rotation-completion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:15:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "xasset-wednesday-night-risk-reestablishment",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:15:25Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-prior-settlement-anchor-premarket-reversion",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 5,
-    "idea": "xmkt-volume-share-defensive-rotation-completion",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 6,
-    "idea": "xasset-wednesday-night-risk-reestablishment",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 7,
     "idea": "xsec-commodity-month-of-year-hedger-calendar-rotation",
@@ -489,7 +487,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 6,
    "registered": 80,
    "dev3yr": 0,
    "robustness": 0,
