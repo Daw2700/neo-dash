@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:31:15Z",
+  "stamp": "2026-07-22T08:31:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 318,
-  "n_results": 421,
-  "n_trials": 30392,
+  "n_results": 422,
+  "n_trials": 30393,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:31:16.457620+00:00",
+   "hash": "99a09482",
+   "name": "mbt-monthly-expiry-basis-convergence-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.658"
+  },
+  {
    "t": "2026-07-22T08:30:59.764274+00:00",
    "hash": "9f825554",
    "name": "mgc-london-bank-holiday-discovery-transfer",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.067"
-  },
-  {
-   "t": "2026-07-22T08:30:29.923211+00:00",
-   "hash": "99a09482",
-   "name": "mbt-monthly-expiry-basis-convergence-unwind",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T08:28:20.243797+00:00",
@@ -424,6 +424,14 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:28:29Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "recheck: mgc-london-bank-holiday-discovery-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:31:17Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -502,7 +510,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 37,
+   "registered": 36,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -564,7 +572,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 225
+    "trials": 226
    }
   ]
  },
@@ -653,8 +661,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 3,
+   "n_tested": 7,
+   "n_killed": 4,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
