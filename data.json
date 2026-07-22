@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:33:03Z",
+  "stamp": "2026-07-22T17:33:06Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNG",
+    "task": "mng-evening-net-load-ramp-burn-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:33:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-india-festival-import-hedge-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:33:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-cls-payin-deadline-liquidity-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:33:06Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mng-evening-net-load-ramp-burn-clock",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 2,
-    "idea": "mgc-india-festival-import-hedge-window",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.48
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-cls-payin-deadline-liquidity-window",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.46
-   },
    {
     "rank": 4,
     "idea": "m2k-bank-earnings-kickoff-credit-repricing",
@@ -543,7 +541,7 @@
    }
   ],
   "funnel": {
-   "idea": 15,
+   "idea": 12,
    "registered": 76,
    "dev3yr": 0,
    "robustness": 0,
