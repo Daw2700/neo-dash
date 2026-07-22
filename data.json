@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:40:22Z",
+  "stamp": "2026-07-22T05:40:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MBT",
+    "task": "mbt-halt-gap-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:40:24Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MET",
+    "task": "met-overnight-gap-overshoot-fade-us-open",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:40:24Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:40:24Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mbt-halt-gap-reversion",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.72
-   },
-   {
-    "rank": 2,
-    "idea": "met-overnight-gap-overshoot-fade-us-open",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.7
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.66
-   },
    {
     "rank": 4,
     "idea": "zn-post-data-afternoon-vol-collapse-range-fade",
@@ -538,7 +536,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 22,
    "dev3yr": 0,
    "robustness": 0,
