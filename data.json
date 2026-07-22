@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:59:16Z",
+  "stamp": "2026-07-22T08:59:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:58:53Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M2K",
+    "task": "m2k-overnight-duration-rally-refi-channel-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:59:18Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-recurring-slot-flow-saturation-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:59:18Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "m2k-overnight-duration-rally-refi-channel-continuation",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 4,
-    "idea": "mnq-recurring-slot-flow-saturation-reversal",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 5,
     "idea": "mes-nonews-overnight-gap-reversion",
@@ -520,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 9,
    "registered": 38,
    "dev3yr": 0,
    "robustness": 0,
