@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:29:38Z",
+  "stamp": "2026-07-22T18:29:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T18:26:57Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "xmkt-hourly-systematic-share-divergence-conditioning",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:29:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-letf-hedging-demand-gated-intraday-momentum",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:29:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "xmkt-hourly-systematic-share-divergence-conditioning",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
-   {
-    "rank": 9,
-    "idea": "mes-letf-hedging-demand-gated-intraday-momentum",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 10,
     "idea": "m2k-mym-open-hour-size-tilt-auction-imbalance",
@@ -462,7 +460,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 3,
    "registered": 80,
    "dev3yr": 0,
    "robustness": 0,
