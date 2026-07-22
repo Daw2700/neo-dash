@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:27:42Z",
+  "stamp": "2026-07-22T22:29:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 656,
-  "n_results": 808,
-  "n_trials": 30796,
+  "n_registered": 659,
+  "n_results": 809,
+  "n_trials": 30797,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:28:59.001402+00:00",
+   "hash": "122beb61",
+   "name": "mcl-sovereign-oil-hedge-program-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.629"
+  },
+  {
+   "t": "2026-07-22T22:28:40.190419+00:00",
+   "hash": "0a998b79",
+   "name": "zn-fid-forced-long-exit",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:28:05.530880+00:00",
+   "hash": "08013322",
+   "name": "mgc-option-assignment-delivery-flatten",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T22:26:50.868093+00:00",
    "hash": "88d65102",
    "name": "mes-quarterly-collar-gamma-release",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.103"
-  },
-  {
-   "t": "2026-07-22T22:02:52.718915+00:00",
-   "hash": "83e56ad3",
-   "name": "mym-dividend-paydate-reinvestment-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.738"
-  },
-  {
-   "t": "2026-07-22T22:01:04.311391+00:00",
-   "hash": "a3944ef1",
-   "name": "mes-prior-cpi-reaction-unwind",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T21:57:16.635106+00:00",
-   "hash": "a3944ef1",
-   "name": "mes-prior-cpi-reaction-unwind",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.769"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-sovereign-oil-hedge-program-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:26:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-option-assignment-delivery-flatten",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-first-intention-day-forced-long-exit",
     "stage": "dev3yr",
@@ -484,7 +476,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 88,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -546,7 +538,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 629
+    "trials": 630
    }
   ]
  },
@@ -617,8 +609,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 43,
-   "n_killed": 28,
+   "n_tested": 44,
+   "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
   },
