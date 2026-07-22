@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:19:51Z",
+  "stamp": "2026-07-22T12:19:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,26 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "robustness: mgc-late-participation-share-overnight-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:19:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M2K",
+    "task": "m2k-duration-equity-valuation-band-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:19:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-qra-supply-composition-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:19:53Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "m2k-duration-equity-valuation-band-reversion",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 7,
-    "idea": "zn-qra-supply-composition-repricing",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.48
-   },
    {
     "rank": 8,
     "idea": "mes-binding-tick-reversal-rent",
@@ -480,7 +487,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 6,
    "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
