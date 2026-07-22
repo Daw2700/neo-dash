@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:55:55Z",
+  "stamp": "2026-07-22T22:57:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 675,
-  "n_results": 826,
-  "n_trials": 30814,
+  "n_results": 828,
+  "n_trials": 30816,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,20 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:57:03.858387+00:00",
+   "hash": "4ca613c0",
+   "name": "mgc-effective-spread-rent-normalization",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.066"
+  },
+  {
+   "t": "2026-07-22T22:56:14.634452+00:00",
+   "hash": "03d7d0e0",
+   "name": "mes-short-horizon-trend-crowding-liquidity-provision",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.748"
+  },
+  {
    "t": "2026-07-22T22:55:43.506211+00:00",
    "hash": "7280bdfd",
    "name": "mcl-factor-momentum-timing",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.484"
-  },
-  {
-   "t": "2026-07-22T22:55:25.027839+00:00",
-   "hash": "03d7d0e0",
-   "name": "mes-short-horizon-trend-crowding-liquidity-provision",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T22:53:44.864041+00:00",
@@ -389,36 +397,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T22:36:10.128491+00:00",
-   "hash": "ac69559c",
-   "name": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.004"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "recheck: mgc-effective-spread-rent-normalization",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:53:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-short-horizon-trend-crowding-liquidity-provision",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:54:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-roll-window-liquidity-void-dose-response",
     "stage": "dev3yr",
@@ -466,7 +450,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 91,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -528,7 +512,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 647
+    "trials": 649
    }
   ]
  },
@@ -552,8 +536,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 114,
-   "n_killed": 86,
+   "n_tested": 115,
+   "n_killed": 87,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
