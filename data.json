@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:26:25Z",
+  "stamp": "2026-07-22T16:31:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 510,
-  "n_results": 640,
-  "n_trials": 30628,
+  "n_registered": 513,
+  "n_results": 643,
+  "n_trials": 30631,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "mnq-volume-peak-clock-daytype",
+   "name": "mnq-volume-peak-clock-daytype",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 13,
+   "wr": 0.6154,
+   "usd_mo": 17,
+   "pf": 2.075,
+   "usd_trade": 46.1
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -291,21 +303,41 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
-  },
-  {
-   "id": "b6-monday-m2k",
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 133,
-   "wr": null,
-   "usd_mo": 19,
-   "pf": 1.154,
-   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T16:29:58.276000+00:00",
+   "hash": "5c58eca4",
+   "name": "mnq-volume-peak-clock-daytype",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.075"
+  },
+  {
+   "t": "2026-07-22T16:28:30.650145+00:00",
+   "hash": "59e60edb",
+   "name": "sil-comex-london-efp-delivery-squeeze",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.44"
+  },
+  {
+   "t": "2026-07-22T16:28:28.714950+00:00",
+   "hash": "640b45ff",
+   "name": "sil-side-impact-asymmetry-inventory-pressure",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T16:27:00.513266+00:00",
+   "hash": "b6d3e98b",
+   "name": "ROBUSTNESS-BATTERY sil-side-impact-asymmetry-inventory-pressure",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T16:25:11.672106+00:00",
    "hash": "cfc1f37c",
@@ -369,60 +401,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T16:03:26.433194+00:00",
-   "hash": "69cb3a6c",
-   "name": "mcl-spr-solicitation-award-window",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T16:00:17.343524+00:00",
-   "hash": "8cbdd607",
-   "name": "mng-friday-threeday-gasday-hedge-concentration",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.981"
-  },
-  {
-   "t": "2026-07-22T15:58:49.474022+00:00",
-   "hash": "69cb3a6c",
-   "name": "mcl-spr-solicitation-award-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.369"
-  },
-  {
-   "t": "2026-07-22T15:58:49.464466+00:00",
-   "hash": "b2314a24",
-   "name": "zn-reserve-maintenance-cycle",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.506"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "SIL",
-    "task": "robustness: sil-side-impact-asymmetry-inventory-pressure",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:25:59Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "SIL",
-    "task": "sil-comex-london-efp-delivery-squeeze",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:26:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-volume-peak-clock-daytype",
     "stage": "dev3yr",
@@ -497,7 +481,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 69,
+   "registered": 70,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +543,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 461
+    "trials": 464
    }
   ]
  },
@@ -568,7 +552,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 89,
+   "n_tested": 90,
    "n_killed": 52,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -621,8 +605,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 4,
+   "n_tested": 7,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1036,6 +1020,26 @@
     }
    ]
   },
+  "mnq-volume-peak-clock-daytype": {
+   "name": "mnq-volume-peak-clock-daytype",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "The clock-minute at which the morning volume peaks by midday classifies which cohort dominates: an early peak means the open-auction/overnight-inventory cohort already cleared and left (quiet afternoon), a late peak means macro/institutional flow is still working, so late-peak days should show continuation of the morning direction into the close, available causally by the 12:00 decision time.",
+   "metrics": {
+    "n": 13,
+    "wr": 0.6154,
+    "pf": 2.075,
+    "usd_mo": 17,
+    "usd_trade": 46.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T16:29:58.276000+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1312,26 +1316,6 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-monday-m2k": {
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
-   "metrics": {
-    "n": 133,
-    "wr": null,
-    "pf": 1.154,
-    "usd_mo": 19,
-    "usd_trade": 5.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
