@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:53:13Z",
+  "stamp": "2026-07-22T23:56:39Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 688,
   "n_results": 846,
@@ -400,19 +400,83 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T23:33:46Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "levetf-eod-convex-rebalance-amp",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "m6e-euro-session-segmentation-drift",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 3,
+    "idea": "zn-weekend-safehaven-monday-unwind",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 4,
+    "idea": "gsr-extreme-metal-substitution-reversion",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 5,
+    "idea": "mcl-preweekend-overnight-riskpremium-buildup",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 6,
+    "idea": "mcl-atlantic-hurricane-supplyrisk-premium-decay",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.22
+   },
+   {
+    "rank": 7,
+    "idea": "mes-buyback-window-reopen-postearnings-bid",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.22
+   },
+   {
+    "rank": 8,
+    "idea": "mes-ira-april-deadline-inflow",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.2
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 8,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
