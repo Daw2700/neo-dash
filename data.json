@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:26:44Z",
+  "stamp": "2026-07-22T21:28:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 631,
-  "n_results": 780,
-  "n_trials": 30768,
+  "n_registered": 633,
+  "n_results": 781,
+  "n_trials": 30769,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:28:38.782598+00:00",
+   "hash": "c2c600ed",
+   "name": "zn-japan-holiday-tokyo-absence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.386"
+  },
+  {
+   "t": "2026-07-22T21:28:09.182220+00:00",
+   "hash": "fba10ca5",
+   "name": "sil-nonreviewable-range-sweep-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T21:26:31.631576+00:00",
    "hash": "5fb81f4e",
    "name": "m2k-opening-basket-staleness-catchup",
@@ -381,22 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.04"
-  },
-  {
-   "t": "2026-07-22T20:49:38.299479+00:00",
-   "hash": "3b30a655",
-   "name": "zc-livestock-cof-sunday-transfer",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.395"
-  },
-  {
-   "t": "2026-07-22T20:49:26.116849+00:00",
-   "hash": "6398b5e7",
-   "name": "mbt-treasury-monday-disclosure-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.895"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-japan-holiday-tokyo-participant-absence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:23:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-cushing-tank-constraint-expiry-convexity",
     "stage": "dev3yr",
@@ -502,7 +494,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 87,
+   "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -564,7 +556,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 601
+    "trials": 602
    }
   ]
  },
@@ -682,8 +674,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 50,
-   "n_killed": 42,
+   "n_tested": 51,
+   "n_killed": 43,
    "book_sleeves": [],
    "agents_now": []
   },
