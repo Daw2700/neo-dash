@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:37:14Z",
+  "stamp": "2026-07-22T18:39:19Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 571,
-  "n_results": 708,
-  "n_trials": 30696,
+  "n_registered": 572,
+  "n_results": 709,
+  "n_trials": 30697,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:39:04.581016+00:00",
+   "hash": "405f954e",
+   "name": "mnq-funded-reset-reentry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.876"
+  },
+  {
    "t": "2026-07-22T18:37:06.121140+00:00",
    "hash": "f078efbe",
    "name": "mes-annuity-monthstart-hedge",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.072"
-  },
-  {
-   "t": "2026-07-22T18:17:23.054371+00:00",
-   "hash": "23e444e5",
-   "name": "mes-wed-night-risk-reestablishment",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.159"
   }
  ],
  "pipeline": {
@@ -410,14 +410,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T18:35:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-funded-account-daily-reset-reentry-window",
-    "stage": "dev3yr",
     "started": "2026-07-22T18:35:48Z",
     "state": "running"
    }
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 529
+    "trials": 530
    }
   ]
  },
@@ -496,8 +488,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 96,
-   "n_killed": 56,
+   "n_tested": 97,
+   "n_killed": 57,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
