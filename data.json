@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:40:44Z",
+  "stamp": "2026-07-22T21:50:01Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 642,
   "n_results": 792,
@@ -400,19 +400,101 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T21:37:54Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zc-post-fomc-liquidity-drain-impact-reversion",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-liquidity-oversupply-reversal",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "m6e-t1-usd-funding-witching-hour",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mes-prior-instance-reaction-memory-positioning",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 5,
+    "idea": "mes-option-session-open-deferred-delta-clearing",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mym-dividend-paydate-reinvestment-window",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-treasury-roll-week-capacity-drain",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "zn-soma-reinvestment-cap-overflow-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 9,
+    "idea": "zc-fomc-surprise-liquidity-gradient-crossmarket",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "mnq-liquidity-oversupply-reversal-sibling-mes",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 10,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
