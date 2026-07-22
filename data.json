@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:09:54Z",
+  "stamp": "2026-07-22T07:09:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T07:09:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-slow-moving-capital-lagged-shock-rebound",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:09:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-volume-clock-acceleration-exhaustion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:09:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mes-slow-moving-capital-lagged-shock-rebound",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 9,
-    "idea": "mnq-volume-clock-acceleration-exhaustion",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mes-volatility-signature-noise-regime-switch",
@@ -484,7 +482,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 5,
    "registered": 26,
    "dev3yr": 0,
    "robustness": 0,
