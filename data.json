@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:05:59Z",
+  "stamp": "2026-07-22T04:07:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 189,
-  "n_results": 282,
-  "n_trials": 30253,
+  "n_registered": 192,
+  "n_results": 284,
+  "n_trials": 30255,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:07:43.626532+00:00",
+   "hash": "e95679b2",
+   "name": "mgc-volume-timing-program-completion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.898"
+  },
+  {
+   "t": "2026-07-22T04:07:35.877378+00:00",
+   "hash": "738bb6da",
+   "name": "m6e-pre0830-liq-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.4118"
+  },
+  {
+   "t": "2026-07-22T04:06:29.539143+00:00",
+   "hash": "117492ee",
+   "name": "m2k-russell-recon-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:05:51.991400+00:00",
    "hash": "5738f8e6",
    "name": "zn-boj-tokyo-transmission",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.609"
-  },
-  {
-   "t": "2026-07-22T03:51:25.981117+00:00",
-   "hash": "ef9c6cb7",
-   "name": "mgc-roll-window-front-contract-carry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.988"
-  },
-  {
-   "t": "2026-07-22T03:51:19.390477+00:00",
-   "hash": "ad02659d",
-   "name": "mcl-opec-meeting-positioning-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.979"
-  },
-  {
-   "t": "2026-07-22T03:48:49.913388+00:00",
-   "hash": "160d63ff",
-   "name": "xsec-overnight-reversal-micro-complex",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.891"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
     "task": "m2k-russell-recon-window",
     "stage": "dev3yr",
     "started": "2026-07-22T04:05:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-pre-0830-liquidity-withdrawal-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:05:59Z",
     "state": "running"
    }
   ],
@@ -470,7 +462,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 10,
+   "registered": 11,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 86
+    "trials": 88
    }
   ]
  },
@@ -583,8 +575,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 8,
-   "n_killed": 7,
+   "n_tested": 9,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -639,8 +631,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 6,
+   "n_tested": 7,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
