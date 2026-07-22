@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:04:34Z",
+  "stamp": "2026-07-22T22:04:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:00:42Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-soma-reinvestment-cap-overflow-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:04:36Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "zn-soma-reinvestment-cap-overflow-window",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 9,
     "idea": "zc-fomc-surprise-liquidity-gradient-crossmarket",
@@ -448,7 +447,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
