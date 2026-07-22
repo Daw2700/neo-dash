@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:52:08Z",
+  "stamp": "2026-07-22T21:52:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,6 +415,14 @@
     "task": "m6e-t1-usd-funding-witching-hour",
     "stage": "dev3yr",
     "started": "2026-07-22T21:50:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "recheck: zc-post-fomc-liquidity-drain-impact-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:52:10Z",
     "state": "running"
    }
   ],
