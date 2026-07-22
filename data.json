@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:22:24Z",
+  "stamp": "2026-07-22T09:22:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 342,
-  "n_results": 447,
-  "n_trials": 30418,
+  "n_results": 448,
+  "n_trials": 30419,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T09:21:33.666350+00:00",
+   "t": "2026-07-22T09:22:40.758804+00:00",
    "hash": "31aa5ffa",
    "name": "m6e-carry-crash-asymmetry-unwind-retrace",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.682"
   },
   {
    "t": "2026-07-22T09:20:17.781047+00:00",
@@ -408,32 +408,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-fx-channel-open-overshoot-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:14:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-europe-leg-anchor-on-session-disagreement",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:17:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-carry-crash-asymmetry-unwind-retrace",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:20:06Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 12,
@@ -456,7 +431,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 41,
+   "registered": 40,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -518,7 +493,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 251
+    "trials": 252
    }
   ]
  },
@@ -627,8 +602,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 13,
+   "n_tested": 14,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
