@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:55:41Z",
+  "stamp": "2026-07-22T14:00:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 451,
-  "n_results": 571,
-  "n_trials": 30559,
+  "n_registered": 453,
+  "n_results": 573,
+  "n_trials": 30561,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -269,18 +269,6 @@
    }
   },
   {
-   "id": "zn-path-efficiency-inventory-overnight-carry",
-   "name": "zn-path-efficiency-inventory-overnight-carry",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 112,
-   "wr": 0.5089,
-   "usd_mo": 77,
-   "pf": 1.172,
-   "usd_trade": 24.7
-  },
-  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -303,9 +291,45 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T13:58:33.399517+00:00",
+   "hash": "86e3d36f",
+   "name": "mgc-option-expiry-underlying-desync",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T13:58:26.589769+00:00",
+   "hash": "58608f22",
+   "name": "zc-ethanol-margin-demand-hedge-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.705"
+  },
+  {
+   "t": "2026-07-22T13:58:01.976830+00:00",
+   "hash": "2df89562",
+   "name": "zn-path-efficiency-inventory-overnight-carry",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T13:53:00.392863+00:00",
    "hash": "f77abb20",
@@ -377,44 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.399"
-  },
-  {
-   "t": "2026-07-22T13:34:57.126482+00:00",
-   "hash": "53850c28",
-   "name": "mes-tom-daycount-compression",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.551"
-  },
-  {
-   "t": "2026-07-22T13:34:13.107513+00:00",
-   "hash": "f811c4f6",
-   "name": "mnq-crossindex-leadership-rotation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.259"
-  },
-  {
-   "t": "2026-07-22T13:23:51.204709+00:00",
-   "hash": "2b6e1173",
-   "name": "mnq-volume-clock-orb",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.123"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "robustness: zn-path-efficiency-inventory-overnight-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:55:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-ethanol-margin-demand-hedge-lag",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-option-expiry-underlying-desync",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 61,
+   "registered": 62,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 392
+    "trials": 394
    }
   ]
  },
@@ -668,8 +660,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 18,
+   "n_tested": 21,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1238,26 +1230,6 @@
     "apex_max": 6
    }
   },
-  "zn-path-efficiency-inventory-overnight-carry": {
-   "name": "zn-path-efficiency-inventory-overnight-carry",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "ZN RTH path efficiency (|close-open| / sum|1-min close changes|) measures whether a single-direction metaorder consumed liquidity all session, leaving dealers with an inventory imbalance they must be compensated for overnight; a 60-session z-score of path efficiency > +1 flags the trendy/one-sided regime, entered LONG at RTH close and exited at next session's 09:30 open.",
-   "metrics": {
-    "n": 112,
-    "wr": 0.5089,
-    "pf": 1.172,
-    "usd_mo": 77,
-    "usd_trade": 24.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T13:52:09.508459+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1293,6 +1265,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
