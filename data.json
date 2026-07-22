@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:00:37Z",
+  "stamp": "2026-07-22T08:03:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 304,
-  "n_results": 406,
-  "n_trials": 30377,
+  "n_registered": 305,
+  "n_results": 407,
+  "n_trials": 30378,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T08:03:31.847087+00:00",
+   "hash": "4611b77f",
+   "name": "mbt-disposition-run-profit-taking",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9585"
+  },
+  {
    "t": "2026-07-22T07:57:57.327554+00:00",
    "hash": "f36145d3",
    "name": "algo-clock-slice-impact",
@@ -397,14 +405,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:42:14.432674+00:00",
-   "hash": "27ca26e3",
-   "name": "mnq-event-free-day-flow-persistence",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
     "task": "mes-macro-revision-underreaction-drift",
     "stage": "dev3yr",
     "started": "2026-07-22T08:00:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MBT",
-    "task": "mbt-disposition-run-profit-taking",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:00:37Z",
     "state": "running"
    }
   ],
@@ -545,7 +537,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 210
+    "trials": 211
    }
   ]
  },
@@ -634,8 +626,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 3,
+   "n_tested": 6,
+   "n_killed": 4,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
