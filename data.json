@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:05:31Z",
+  "stamp": "2026-07-22T03:10:39Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 164,
   "n_results": 253,
@@ -404,19 +404,101 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T03:03:46Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-postclose-index-flow-bleed",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mes-euopen-dealer-inventory-unwind",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 3,
+    "idea": "mgc-overnight-inventory-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "met-halt-reopen-inventory-recovery",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-m2k-open-dispersion-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "m6e-monthend-london-fix-equity-hedge",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 7,
+    "idea": "mnq-vix-soq-wednesday-open-distortion",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mym-price-weight-earnings-dislocation",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "zn-quarter-end-dealer-balance-sheet-withdrawal",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 10,
+    "idea": "mes-europe-closed-us-open-thin-book-momentum",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 10,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
