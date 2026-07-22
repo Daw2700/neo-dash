@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:06:21Z",
+  "stamp": "2026-07-22T10:11:27Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 362,
-  "n_results": 466,
-  "n_trials": 30437,
+  "n_registered": 365,
+  "n_results": 469,
+  "n_trials": 30440,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,30 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mcl-annual-high-hedge",
+   "name": "mcl-annual-high-hedge",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 20,
+   "wr": 0.7,
+   "usd_mo": 26,
+   "pf": 2.779,
+   "usd_trade": 47.1
+  },
+  {
+   "id": "mnq-session-early-exhaustion-fade",
+   "name": "mnq-session-early-exhaustion-fade",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 130,
+   "wr": 0.6154,
+   "usd_mo": 149,
+   "pf": 2.558,
+   "usd_trade": 41.4
   },
   {
    "id": "rep-bondflight-mes",
@@ -283,33 +307,33 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  {
-   "id": "mes-variance-risk-premium-carry",
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 208,
-   "wr": 0.524,
-   "usd_mo": 47,
-   "pf": 1.122,
-   "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T10:10:59.702214+00:00",
+   "hash": "09ec70d3",
+   "name": "mnq-session-early-exhaustion-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.558"
+  },
+  {
+   "t": "2026-07-22T10:09:06.125268+00:00",
+   "hash": "fe39e761",
+   "name": "mes-information-discreteness-frog-in-the-pan",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.054"
+  },
+  {
+   "t": "2026-07-22T10:08:39.261815+00:00",
+   "hash": "aec41266",
+   "name": "mcl-annual-high-hedge",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.779"
+  },
   {
    "t": "2026-07-22T10:05:14.794893+00:00",
    "hash": "54cb9910",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.624"
-  },
-  {
-   "t": "2026-07-22T09:51:16.944863+00:00",
-   "hash": "c4c71e0f",
-   "name": "zn-tick-constraint-quiet-day-queue-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.033"
-  },
-  {
-   "t": "2026-07-22T09:50:02.076220+00:00",
-   "hash": "8e50d120",
-   "name": "mes-morning-range-exhaustion-overnight-carry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.715"
-  },
-  {
-   "t": "2026-07-22T09:45:35.689966+00:00",
-   "hash": "9e452038",
-   "name": "mes-shock-replenish",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.777"
   }
  ],
  "pipeline": {
@@ -421,14 +421,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-information-discreteness-frog-in-the-pan",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:06:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-annual-high-producer-hedge-supply",
     "stage": "dev3yr",
     "started": "2026-07-22T10:06:21Z",
     "state": "running"
@@ -599,7 +591,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 270
+    "trials": 273
    }
   ]
  },
@@ -608,7 +600,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 72,
+   "n_tested": 73,
    "n_killed": 43,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -623,8 +615,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 36,
+   "n_tested": 55,
+   "n_killed": 37,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -670,7 +662,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 22,
+   "n_tested": 23,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -1056,6 +1048,46 @@
     "apex_max": 2
    }
   },
+  "mcl-annual-high-hedge": {
+   "name": "mcl-annual-high-hedge",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "As MCL crude approaches its trailing 252-day high, producers front-load forward hedge selling into the salient annual reference level, supplying futures price-insensitively into the next session; short the next RTH session when nearness-to-252d-high sits in the top band.",
+   "metrics": {
+    "n": 20,
+    "wr": 0.7,
+    "pf": 2.779,
+    "usd_mo": 26,
+    "usd_trade": 47.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:08:39.261815+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
+  "mnq-session-early-exhaustion-fade": {
+   "name": "mnq-session-early-exhaustion-fade",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When both the session high and the session low are already printed inside the first 40% of RTH, the day's directional risk-transfer demand is spent and the remaining flow is inventory unwind by the liquidity providers who absorbed it, so the balance of the session retraces rather than continues; fade the from-40%-mark direction into the close.",
+   "metrics": {
+    "n": 130,
+    "wr": 0.6154,
+    "pf": 2.558,
+    "usd_mo": 149,
+    "usd_trade": 41.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:10:59.702214+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1319,56 +1351,6 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  "mes-variance-risk-premium-carry": {
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
-   "metrics": {
-    "n": 208,
-    "wr": 0.524,
-    "pf": 1.122,
-    "usd_mo": 47,
-    "usd_trade": 8.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:04:02.729327+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
