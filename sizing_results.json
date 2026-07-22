@@ -125,17 +125,31 @@
    "apex150": {
     "max_micros": 6
    }
-  },
-  "b10-fomc-cycle-even": {
-   "growth": {
-    "max_micros": 1
-   },
-   "apex150": {
-    "max_micros": 0
-   }
   }
  },
  "bundles": [
+  {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 11,
+   "p_breach": 0.199,
+   "usd_mo": 796,
+   "usd_mo_5acct": 3980,
+   "pct_goal": 0.398
+  },
   {
    "id": "Validated 8 + vix-reversion|growth",
    "name": "Validated 8 + vix-reversion",
@@ -178,6 +192,26 @@
    "pct_goal": 0.327
   },
   {
+   "id": "Frequent-firing engine|growth",
+   "name": "Frequent-firing engine",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 8,
+   "p_breach": 0.185,
+   "usd_mo": 619,
+   "usd_mo_5acct": 3095,
+   "pct_goal": 0.309
+  },
+  {
    "id": "Everything (full pool)|apex150",
    "name": "Everything (full pool)",
    "plan": "apex150 (assumed)",
@@ -218,28 +252,6 @@
    "usd_mo": 520,
    "usd_mo_5acct": 2600,
    "pct_goal": 0.26
-  },
-  {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 1,
-    "scan-mbt": 2,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 2,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "b2-opex-release": 2,
-    "b10-fomc-cycle-even": 1
-   },
-   "total_micros": 11,
-   "p_breach": 0.194,
-   "usd_mo": 466,
-   "usd_mo_5acct": 2330,
-   "pct_goal": 0.233
   },
   {
    "id": "Validated 8 + vix-reversion|apex150",
@@ -354,25 +366,6 @@
    "usd_mo": 316,
    "usd_mo_5acct": 1580,
    "pct_goal": 0.158
-  },
-  {
-   "id": "Frequent-firing engine|growth",
-   "name": "Frequent-firing engine",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "scan-mbt": 3,
-    "b3-nr7-breakout": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "b10-fomc-cycle-even": 1
-   },
-   "total_micros": 7,
-   "p_breach": 0.185,
-   "usd_mo": 304,
-   "usd_mo_5acct": 1520,
-   "pct_goal": 0.152
   }
  ]
 }

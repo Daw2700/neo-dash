@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:19:04Z",
+  "stamp": "2026-07-22T01:24:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 134,
-  "n_results": 219,
+  "n_registered": 136,
+  "n_results": 222,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -315,6 +315,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T01:21:51.722585+00:00",
+   "hash": "94b9b65b",
+   "name": "b10-nagel-vix-reversal",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T01:21:39.537048+00:00",
+   "hash": "a2d14820",
+   "name": "mng-weather-model-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.495"
+  },
+  {
+   "t": "2026-07-22T01:21:38.079497+00:00",
+   "hash": "529bc2f2",
+   "name": "fomc-statement-presser-reversal",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T01:20:08.544324+00:00",
+   "hash": "47aede5d",
+   "name": "robust-fomc-stmt-presser-rev",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T01:15:06.859095+00:00",
    "hash": "67056ed5",
    "name": "b10-fomc-cycle-even",
@@ -377,38 +409,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:51:42.388814+00:00",
-   "hash": "e86e3c59",
-   "name": "b3-3down-reversion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:50:35.114255+00:00",
-   "hash": "52fdedf8",
-   "name": "robust189-bondflight-unwind",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T00:42:28.623132+00:00",
-   "hash": "f763c50b",
-   "name": "b2-orb-lowvol-gate",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:41:34.423189+00:00",
-   "hash": "f3417e68",
-   "name": "b2-cpi-follow",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -417,22 +417,6 @@
     "agent": "tester-1",
     "market": "MNQ",
     "task": "robustness: b10-nagel-vix-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:19:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "robustness: fomc-statement-presser-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:19:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNG",
-    "task": "mng-weather-model-release-clock",
     "stage": "dev3yr",
     "started": "2026-07-22T01:19:04Z",
     "state": "running"
@@ -460,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 5,
+   "registered": 6,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -522,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 23
+    "trials": 26
    }
   ]
  },
@@ -604,8 +588,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 1,
-   "n_killed": 1,
+   "n_tested": 2,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -878,6 +862,11 @@
      "t": "2026-07-21T19:50:31.454788+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T01:21:51.722585+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ],
    "robustness": {
@@ -1120,6 +1109,11 @@
      "t": "2026-07-22T00:18:27.107468+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T01:21:38.079497+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
@@ -1622,6 +1616,31 @@
    "usd_mo_total": 5922
   },
   {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 11,
+   "p_breach": 0.199,
+   "usd_mo": 796,
+   "usd_mo_5acct": 3980,
+   "pct_goal": 0.398,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 3980
+  },
+  {
    "id": "Validated 8 + vix-reversion|growth",
    "name": "Validated 8 + vix-reversion",
    "plan": "tradeify-growth",
@@ -1669,6 +1688,29 @@
    "usd_mo_total": 3265
   },
   {
+   "id": "Frequent-firing engine|growth",
+   "name": "Frequent-firing engine",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2,
+    "b3-prior-high-break": 1
+   },
+   "total_micros": 8,
+   "p_breach": 0.185,
+   "usd_mo": 619,
+   "usd_mo_5acct": 3095,
+   "pct_goal": 0.309,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 3095
+  },
+  {
    "id": "Cross-market spread|growth",
    "name": "Cross-market spread",
    "plan": "tradeify-growth",
@@ -1692,31 +1734,6 @@
    "usd_mo_total": 2600
   },
   {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 1,
-    "scan-mbt": 2,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 2,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "b2-opex-release": 2,
-    "b10-fomc-cycle-even": 1
-   },
-   "total_micros": 11,
-   "p_breach": 0.194,
-   "usd_mo": 466,
-   "usd_mo_5acct": 2330,
-   "pct_goal": 0.233,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 2330
-  },
-  {
    "id": "Risk-premium core (rare, high WR)|growth",
    "name": "Risk-premium core (rare, high WR)",
    "plan": "tradeify-growth",
@@ -1737,28 +1754,6 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 1580
-  },
-  {
-   "id": "Frequent-firing engine|growth",
-   "name": "Frequent-firing engine",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "scan-mbt": 3,
-    "b3-nr7-breakout": 1,
-    "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "b10-fomc-cycle-even": 1
-   },
-   "total_micros": 7,
-   "p_breach": 0.185,
-   "usd_mo": 304,
-   "usd_mo_5acct": 1520,
-   "pct_goal": 0.152,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 1520
   }
  ],
  "sizing_meta": {
