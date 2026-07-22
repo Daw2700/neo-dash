@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:16:18Z",
+  "stamp": "2026-07-22T04:19:24Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 198,
   "n_results": 290,
@@ -404,19 +404,101 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T04:13:00Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-close-on-lows-liquidation-overnight-repair",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-overnight-vol-handoff-completion",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "mes-0dte-afternoon-dealer-gamma-amplification",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-posbondcorr-discountrate-dip-repair",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 5,
+    "idea": "m6e-policy-differential-carry-roll-harvest",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 6,
+    "idea": "zc-commercial-hedging-pressure-premium",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-margin-hike-lag-deleveraging",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 8,
+    "idea": "mcl-refinery-turnaround-crude-length-premium",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "zs-south-american-weather-premium-decay",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "m2k-taxloss-turnofyear-reversal",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 10,
    "registered": 12,
    "dev3yr": 0,
    "robustness": 0,
