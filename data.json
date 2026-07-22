@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:05:33Z",
+  "stamp": "2026-07-22T04:05:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 189,
-  "n_results": 281,
-  "n_trials": 30252,
+  "n_results": 282,
+  "n_trials": 30253,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:05:51.991400+00:00",
+   "hash": "5738f8e6",
+   "name": "zn-boj-tokyo-transmission",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.695"
+  },
+  {
    "t": "2026-07-22T04:05:11.119410+00:00",
    "hash": "a157dc0b",
    "name": "mbt-etf-nav-strike-hedge-window",
@@ -321,14 +329,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.485"
-  },
-  {
-   "t": "2026-07-22T04:04:44.281581+00:00",
-   "hash": "5738f8e6",
-   "name": "zn-boj-tokyo-transmission",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:56:31.622682+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-boj-tokyo-policy-transmission",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:03:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-volume-timing-program-completion",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-russell-recon-window",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 11,
+   "registered": 10,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 85
+    "trials": 86
    }
   ]
  },
@@ -657,8 +649,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 10,
+   "n_tested": 14,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
