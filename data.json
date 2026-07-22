@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:53:22Z",
+  "stamp": "2026-07-22T04:53:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 223,
-  "n_results": 314,
-  "n_trials": 30285,
+  "n_results": 316,
+  "n_trials": 30287,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,20 +307,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:53:39.506975+00:00",
+   "hash": "f3604733",
+   "name": "mgc-cash-close-realrate-remark",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.712"
+  },
+  {
+   "t": "2026-07-22T04:53:37.031604+00:00",
+   "hash": "ce4d9198",
+   "name": "mcl-pre-fnd-retail-liquidation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1067"
+  },
+  {
    "t": "2026-07-22T04:53:07.878125+00:00",
    "hash": "80a196f3",
    "name": "mes-cta-trigger-level-cross-flow",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.099"
-  },
-  {
-   "t": "2026-07-22T04:52:56.401290+00:00",
-   "hash": "f3604733",
-   "name": "mgc-cash-close-realrate-remark",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:51:29.011900+00:00",
@@ -393,34 +401,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:46:14.196108+00:00",
-   "hash": "855f1a80",
-   "name": "scout-20-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T04:45:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "recheck: mcl-pre-fnd-retail-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:51:12Z",
-    "state": "running"
-   },
    {
     "agent": "decision",
     "market": null,
@@ -430,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-us-cash-bond-close-realrate-remark",
     "stage": "dev3yr",
@@ -438,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-overnight-risk-premium-unconditional",
     "stage": "dev3yr",
@@ -448,6 +432,33 @@
   ],
   "backlog": [
    {
+    "rank": 1,
+    "idea": "zc-export-inspections-monday-shipment-repricing",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "mes-gold-overnight-macro-signal-open-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "mes-macro-surprise-sign-flip-bond-confirmed",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.44
+   },
+   {
     "rank": 10,
     "idea": "mes-early-close-session-compression",
     "source": "literature",
@@ -455,11 +466,110 @@
      "MES"
     ],
     "score": 0.4
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-cme-daily-halt-reopen-queue-clearing",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "zn-european-sovereign-supply-spillover",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "mcl-monthly-agency-balance-report-cluster",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 7,
+    "idea": "m6e-equity-drawdown-hedge-ratio-rebalance",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 8,
+    "idea": "mes-crypto-overnight-riskappetite-overshoot-fade",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 9,
+    "idea": "zn-fomc-blackout-communication-vacuum-carry",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "mnq-round-number-stop-cluster-repulsion",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 11,
+    "idea": "m2k-mym-rate-shock-duration-rotation-overshoot",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 12,
+    "idea": "mng-final-settlement-physical-exit-window",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 13,
+    "idea": "mes-opening-auction-imbalance-print-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 14,
+    "idea": "mgc-lunar-new-year-physical-restock-window",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.28
    }
   ],
   "funnel": {
-   "idea": 1,
-   "registered": 20,
+   "idea": 15,
+   "registered": 19,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -521,7 +631,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 118
+    "trials": 120
    }
   ]
  },
@@ -572,8 +682,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 9,
-   "n_killed": 8,
+   "n_tested": 10,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
