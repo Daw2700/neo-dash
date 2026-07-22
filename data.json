@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:58:48Z",
+  "stamp": "2026-07-22T14:59:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -406,14 +406,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-speculator-capacity-impairment-hedger-concession",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:53:13Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -422,15 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "recheck: zn-roll-financing-flow",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:53:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-variable-annuity-guarantee-rho-hedge-rebalance",
     "stage": "dev3yr",
