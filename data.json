@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:58:53Z",
+  "stamp": "2026-07-22T08:59:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,22 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-post-close-macro-information-catchup",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:45:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-threshold-rebalancer-frontrun",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:53:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: mnq-morning-shock-forced-liq-continuation",
     "stage": "dev3yr",
