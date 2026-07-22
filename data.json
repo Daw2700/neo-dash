@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:48:51Z",
+  "stamp": "2026-07-22T12:54:28Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 430,
-  "n_results": 542,
-  "n_trials": 30513,
+  "n_registered": 433,
+  "n_results": 545,
+  "n_trials": 30516,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -269,6 +269,18 @@
    }
   },
   {
+   "id": "mnq-orb-touch-count-liquidity-depletion",
+   "name": "mnq-orb-touch-count-liquidity-depletion",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 205,
+   "wr": 0.5024,
+   "usd_mo": 103,
+   "pf": 1.195,
+   "usd_trade": 18.0
+  },
+  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -291,25 +303,33 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T12:52:42.960248+00:00",
+   "hash": "8ee8881e",
+   "name": "mnq-low-volume-node-traversal-acceleration",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.921"
+  },
+  {
+   "t": "2026-07-22T12:52:41.060455+00:00",
+   "hash": "a7f020a4",
+   "name": "mnq-orb-touch-count-liquidity-depletion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.195"
+  },
+  {
+   "t": "2026-07-22T12:51:44.937751+00:00",
+   "hash": "c9d651be",
+   "name": "mes-scheduled-event-nonreaction-absorption",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.4399"
+  },
   {
    "t": "2026-07-22T12:42:56.908330+00:00",
    "hash": "9cf84e6a",
@@ -381,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.866"
-  },
-  {
-   "t": "2026-07-22T12:27:18.616690+00:00",
-   "hash": "0c24f932",
-   "name": "m2k-duration-equity-valuation-band-reversion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T12:23:30.075599+00:00",
-   "hash": "b42dbad9",
-   "name": "mgc-late-participation-share-overnight-carry",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T12:22:16.241241+00:00",
-   "hash": "0c24f932",
-   "name": "m2k-duration-equity-valuation-band-reversion",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.448"
   }
  ],
  "pipeline": {
@@ -419,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-scheduled-event-nonreaction-absorption",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:48:51Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-low-volume-node-traversal-acceleration",
     "stage": "dev3yr",
@@ -590,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 346
+    "trials": 349
    }
   ]
  },
@@ -599,8 +587,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 79,
-   "n_killed": 46,
+   "n_tested": 81,
+   "n_killed": 47,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -614,8 +602,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 68,
-   "n_killed": 48,
+   "n_tested": 69,
+   "n_killed": 49,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1287,6 +1275,26 @@
     "apex_max": 6
    }
   },
+  "mnq-orb-touch-count-liquidity-depletion": {
+   "name": "mnq-orb-touch-count-liquidity-depletion",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Each rejected test of an opening-range boundary consumes the resting limit size defending it, so the boundary weakens structurally with every touch; count touches (bar high/low reaches the OR level then closes back inside = one rejected test) instead of price or elapsed time, and take the eventual breakout only once N prior rejected touches have depleted that side, on the theory that money comes from defenders who ran out of size.",
+   "metrics": {
+    "n": 205,
+    "wr": 0.5024,
+    "pf": 1.195,
+    "usd_mo": 103,
+    "usd_trade": 18.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T12:52:41.060455+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1326,30 +1334,6 @@
      "verdict": "REPLICATES"
     }
    ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
   }
  },
  "decisions": [
