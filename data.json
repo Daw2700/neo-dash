@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:38:42Z",
+  "stamp": "2026-07-22T14:39:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 470,
-  "n_results": 589,
-  "n_trials": 30577,
+  "n_results": 591,
+  "n_trials": 30579,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,28 +307,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T14:39:01.096985+00:00",
+   "hash": "3a30275a",
+   "name": "mes-quarterend-equity-financing-withdrawal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.577"
+  },
+  {
+   "t": "2026-07-22T14:38:44.756089+00:00",
+   "hash": "5653f081",
+   "name": "mes-dealer-absorption-conditioned-overnight-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.217"
+  },
+  {
    "t": "2026-07-22T14:38:14.501689+00:00",
    "hash": "6f5b8beb",
    "name": "mgc-offshore-mark-ratification-at-ny-open",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.138"
-  },
-  {
-   "t": "2026-07-22T14:38:04.948625+00:00",
-   "hash": "3a30275a",
-   "name": "mes-quarterend-equity-financing-withdrawal",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T14:37:21.709353+00:00",
-   "hash": "5653f081",
-   "name": "mes-dealer-absorption-conditioned-overnight-premium",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T14:34:51.147941+00:00",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-dealer-absorption-conditioned-overnight-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:35:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-quarterend-equity-financing-withdrawal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:36:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "recheck: mgc-offshore-mark-ratification-at-ny-open",
     "stage": "dev3yr",
@@ -488,7 +472,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 67,
+   "registered": 65,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -550,7 +534,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 410
+    "trials": 412
    }
   ]
  },
@@ -574,8 +558,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 78,
-   "n_killed": 56,
+   "n_tested": 80,
+   "n_killed": 58,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
