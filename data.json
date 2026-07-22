@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:27:29Z",
+  "stamp": "2026-07-22T06:27:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:27:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "zs-usda-daily-flash-sale-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:27:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-pre-london-warmup-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:27:31Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "zs-usda-daily-flash-sale-window",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 8,
-    "idea": "mnq-pre-london-warmup-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 9,
     "idea": "mgc-pboc-reserve-report-window",
@@ -493,7 +491,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 6,
    "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
