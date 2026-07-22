@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:46:57Z",
+  "stamp": "2026-07-22T09:52:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 353,
-  "n_results": 458,
-  "n_trials": 30429,
+  "n_registered": 356,
+  "n_results": 460,
+  "n_trials": 30431,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mes-morning-range-exhaustion-overnight-carry",
+   "name": "mes-morning-range-exhaustion-overnight-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 95,
+   "wr": 0.5579,
+   "usd_mo": 80,
+   "pf": 1.715,
+   "usd_trade": 30.4
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,33 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
-  },
-  {
-   "id": "n9-cot-washout-buy",
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 70,
-   "wr": null,
-   "usd_mo": 20,
-   "pf": 1.088,
-   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T09:51:16.944863+00:00",
+   "hash": "c4c71e0f",
+   "name": "zn-tick-constraint-quiet-day-queue-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.033"
+  },
+  {
+   "t": "2026-07-22T09:51:03.439218+00:00",
+   "hash": "2a62c3c6",
+   "name": "mgc-velocity-reserve-truncation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:50:02.076220+00:00",
+   "hash": "8e50d120",
+   "name": "mes-morning-range-exhaustion-overnight-carry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.715"
+  },
   {
    "t": "2026-07-22T09:45:35.689966+00:00",
    "hash": "9e452038",
@@ -381,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.015"
-  },
-  {
-   "t": "2026-07-22T09:26:59.057634+00:00",
-   "hash": "f09bc5a9",
-   "name": "mbt-equity-crashrisk-spillover-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.777"
-  },
-  {
-   "t": "2026-07-22T09:25:29.526975+00:00",
-   "hash": "624a93ae",
-   "name": "zc-index-roll-sunshine-liquidity-provision",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.562"
-  },
-  {
-   "t": "2026-07-22T09:24:53.534883+00:00",
-   "hash": "b51d6ed5",
-   "name": "scout-27-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-morning-range-exhaustion-overnight-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:46:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-tick-constraint-quiet-day-queue-reversion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-velocity-logic-reserve-momentum-truncation",
     "stage": "dev3yr",
@@ -465,7 +457,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 42,
+   "registered": 43,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +519,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 262
+    "trials": 264
    }
   ]
  },
@@ -551,7 +543,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 53,
+   "n_tested": 54,
    "n_killed": 36,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -645,8 +637,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 23,
+   "n_tested": 27,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -984,6 +976,26 @@
     "apex_max": 2
    }
   },
+  "mes-morning-range-exhaustion-overnight-carry": {
+   "name": "mes-morning-range-exhaustion-overnight-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Sessions that print both the RTH session high and the RTH session low before midday complete their risk transfer early; the afternoon offers no fresh book to lean on, so positions built into the morning range are carried unhedged into a thin overnight session where dealer hedging flow marks them down, producing a systematic negative overnight drift that we harvest by shorting the close and covering at the next open.",
+   "metrics": {
+    "n": 95,
+    "wr": 0.5579,
+    "pf": 1.715,
+    "usd_mo": 80,
+    "usd_trade": 30.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T09:50:02.076220+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1268,31 +1280,6 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "n9-cot-washout-buy": {
-   "name": "n9-cot-washout-buy",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
-   "metrics": {
-    "n": 70,
-    "wr": null,
-    "pf": 1.088,
-    "usd_mo": 20,
-    "usd_trade": 10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T18:37:00.368959+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
