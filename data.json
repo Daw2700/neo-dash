@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:48:17Z",
+  "stamp": "2026-07-22T04:50:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 220,
-  "n_results": 310,
-  "n_trials": 30281,
+  "n_registered": 222,
+  "n_results": 312,
+  "n_trials": 30283,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 2
+  "needs_attention_count": 1
  },
  "leaderboard": [
   {
@@ -25,7 +25,7 @@
    "usd_trade": 137.1,
    "sizing": {
     "growth_max": 8,
-    "apex_max": 7
+    "apex_max": 6
    }
   },
   {
@@ -41,7 +41,7 @@
    "usd_trade": 12.5,
    "sizing": {
     "growth_max": 8,
-    "apex_max": 8
+    "apex_max": 7
    }
   },
   {
@@ -73,7 +73,7 @@
    "usd_trade": 36.9,
    "sizing": {
     "growth_max": 5,
-    "apex_max": 4
+    "apex_max": 3
    }
   },
   {
@@ -105,7 +105,7 @@
    "usd_trade": 33.8,
    "sizing": {
     "growth_max": 5,
-    "apex_max": 4
+    "apex_max": 3
    }
   },
   {
@@ -241,8 +241,20 @@
    "usd_trade": 12.0,
    "sizing": {
     "growth_max": 7,
-    "apex_max": 6
+    "apex_max": 5
    }
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   },
   {
    "id": "b6-prehol-m2k",
@@ -291,21 +303,41 @@
    "usd_mo": -435,
    "pf": 0.88,
    "usd_trade": -10.1
-  },
-  {
-   "id": "mes-preopen-volume-range-fade",
-   "name": "mes-preopen-volume-range-fade",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 134,
-   "wr": 0.4403,
-   "usd_mo": -74,
-   "pf": 0.626,
-   "usd_trade": -19.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T04:50:32.128495+00:00",
+   "hash": "7174c171",
+   "name": "zn-volshock-equity-degross-rebound-RECHECK",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:49:38.468474+00:00",
+   "hash": "727c180e",
+   "name": "n9-cot-washout-buy",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.088"
+  },
+  {
+   "t": "2026-07-22T04:49:25.278856+00:00",
+   "hash": "190c0a12",
+   "name": "mcl-producer-hedge-window-rth-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.021"
+  },
+  {
+   "t": "2026-07-22T04:48:36.925108+00:00",
+   "hash": "70ea1df0",
+   "name": "recheck-mcl-producer-hedge-window-rth-drift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T04:48:01.656417+00:00",
    "hash": "17d662d7",
@@ -369,38 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.669"
-  },
-  {
-   "t": "2026-07-22T04:42:32.482166+00:00",
-   "hash": "8619b487",
-   "name": "mes-am-settled-index-option-opening-print-distortion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.595"
-  },
-  {
-   "t": "2026-07-22T04:40:44.482404+00:00",
-   "hash": "26db3d2d",
-   "name": "sil-lbma-auction-imbalance-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.127"
-  },
-  {
-   "t": "2026-07-22T04:40:41.236973+00:00",
-   "hash": "4c26a5ee",
-   "name": "m6e-ny-cut-option-expiry-release",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4168"
-  },
-  {
-   "t": "2026-07-22T04:40:20.608326+00:00",
-   "hash": "ea41364f",
-   "name": "mcl-platts-moc-pushback",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.731"
   }
  ],
  "pipeline": {
@@ -427,6 +427,14 @@
     "task": "recheck: mcl-producer-hedge-window-rth-drift",
     "stage": "dev3yr",
     "started": "2026-07-22T04:47:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "recheck: zn-volshock-equity-degross-rebound",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:48:18Z",
     "state": "running"
    }
   ],
@@ -461,7 +469,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 17,
+   "registered": 19,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -523,7 +531,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 114
+    "trials": 116
    }
   ]
  },
@@ -533,7 +541,7 @@
    "display": "Nasdaq-100",
    "status": "active",
    "n_tested": 60,
-   "n_killed": 36,
+   "n_killed": 35,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -695,7 +703,7 @@
    ],
    "sizing": {
     "growth_max": 8,
-    "apex_max": 7
+    "apex_max": 6
    }
   },
   "scan-mbt": {
@@ -735,7 +743,7 @@
    },
    "sizing": {
     "growth_max": 8,
-    "apex_max": 8
+    "apex_max": 7
    }
   },
   "b3-nr7-breakout": {
@@ -815,7 +823,7 @@
    },
    "sizing": {
     "growth_max": 5,
-    "apex_max": 4
+    "apex_max": 3
    }
   },
   "b3-monday-long": {
@@ -895,7 +903,7 @@
    },
    "sizing": {
     "growth_max": 5,
-    "apex_max": 4
+    "apex_max": 3
    }
   },
   "b4-open-drive": {
@@ -1149,8 +1157,33 @@
    ],
    "sizing": {
     "growth_max": 7,
-    "apex_max": 6
+    "apex_max": 5
    }
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
   },
   "b6-prehol-m2k": {
    "name": "b6-prehol-m2k",
@@ -1236,69 +1269,9 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "mes-preopen-volume-range-fade": {
-   "name": "mes-preopen-volume-range-fade",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Overnight 18:00-09:30 ET contract volume is known before the RTH open and forecasts the RTH range monotonically; on the quietest pre-open days the day range is predictably small, so extension away from the opening range is liquidity demand for immediacy rather than information, and price reverts toward the opening range. We are paid for supplying that immediacy on a low-information day.",
-   "metrics": {
-    "n": 134,
-    "wr": 0.4403,
-    "pf": 0.626,
-    "usd_mo": -74,
-    "usd_trade": -19.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T03:55:04.627743+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
-  {
-   "id": "d-apex-verify-numbers-r3",
-   "kind": "funding",
-   "needs_attention": true,
-   "title": "Apex \u2014 third empty approval; type the numbers, or Deny to drop Apex entirely",
-   "recommendation": "Either type the five values in the box BEFORE tapping 'Send approval', or Deny to re-plan without Apex",
-   "evidence": "Three approvals now received with an empty note (d-apex-verify 2026-07-21T22:16Z, d-apex-verify-numbers 2026-07-22T02:19Z, d-apex-verify-numbers-r2 2026-07-22T02:55Z). The command path was audited this run and is working: the page sends the textarea text, the inbox forwards it, the executor prompt shows no instructions clause \u2014 so the box was genuinely empty, the note was not lost. Apex blocks bots, so the engine still has no verified value. Apex-150K remains ASSUMED exactly as in 114_apex_sim.py: start 150,000 / target 159,000 / EOD trailing buffer 4,000 / floor freezes at 150,000. Profit split, consistency %% and max-accounts are still not modelled at all \u2014 gauntlet/account.py PLANS contains only growth / select_flex / select_daily / lightning (all Tradeify), no apex150 (re-verified at apply time).",
-   "what_yes_means": "Numbers typed in the box -> engine builds a VERIFIED apex150 plan and re-runs all Apex sizings",
-   "recap": "You tapped Approve a third time with the note box empty, so no Apex numbers reached the engine and nothing changed. Two ways to clear this card: type the five values into the box and send, or tap Deny \u2014 Deny drops Apex from the $10k route and re-plans on the Tradeify plans that are already verified.",
-   "why": "Approving is not the missing input \u2014 the values are, and three bare approvals have now supplied none. The engine cannot open Apex's site (bot-blocked), so every Apex figure on this dashboard is still the assumption set from 114_apex_sim.py, and split / consistency / max-accounts were never modelled. Promoting assumptions to 'verified' on a bare approval would be inventing numbers. Rather than re-staging the same ask a fourth time, this card now carries a one-tap exit: if chasing Apex's rules isn't worth it, Deny and the route gets re-planned on verified plans only.",
-   "steps": [
-    "APPROVE path: log in to Apex, open the 150K account rules",
-    "Type all five INTO the box that opens under 'Approve\u2026', then tap 'Send approval', e.g.: 1) trailing threshold $ = ____  2) trailing intraday or EOD = ____  3) consistency rule %% = ____  4) profit split %% = ____  5) max accounts = ____",
-    "Engine adds a verified 'apex150' plan to gauntlet/account.py PLANS using exactly those values",
-    "All Apex sizings, bundles and first-payout estimates re-run against the verified plan",
-    "ASSUMED chips are removed only for the fields you supply; anything skipped stays flagged ASSUMED",
-    "DENY path (no typing): engine removes Apex from the $10k account route and re-plans using only the verified Tradeify plans, and this card retires for good"
-   ],
-   "qa": [
-    {
-     "q": "Approve: Apex account verification before any funding",
-     "a": "Approved by Daniel 2026-07-21. Approval recorded in ledger.jsonl; no rule values were included, so no Apex number was changed. Card replaced with this one, which holds until the five values arrive.",
-     "t": "2026-07-21T22:45:08Z",
-     "q_t": "2026-07-20T00:00:00Z"
-    },
-    {
-     "q": "Approve: Apex verification \u2014 paste the five numbers",
-     "a": "Approved 2026-07-22T02:19:04Z with an EMPTY note, so no value was supplied for the second time. No Apex parameter changed, no ASSUMED chip removed, no sizing re-run. Card re-staged with a copy-paste template.",
-     "t": "2026-07-22T02:38:32Z",
-     "q_t": "2026-07-21T22:45:08Z"
-    },
-    {
-     "q": "Approve: Apex verification \u2014 paste the five numbers (r2)",
-     "a": "Approved 2026-07-22T02:55:26Z with an EMPTY note \u2014 third consecutive bare approval. Audited the command path this time (dashboard sendDecision -> ntfy -> inbox.py -> decision_prompt): it forwards the note correctly, so the box was empty rather than the text being lost. No Apex parameter changed, no ASSUMED chip removed, no sizing re-run. Card re-staged as r3 with a Deny escape hatch so it can be closed without typing.",
-     "t": "2026-07-22T03:00:16Z",
-     "q_t": "2026-07-22T02:38:32Z"
-    }
-   ],
-   "staged": "2026-07-22T03:00:16Z"
-  },
   {
    "id": "d-neo300-paper-creds-r4",
    "kind": "cleanup",
@@ -1397,125 +1370,123 @@
   {
    "id": "Everything (full pool)|apex150",
    "name": "Everything (full pool)",
-   "plan": "apex150 (assumed)",
+   "plan": "apex150 (verified)",
    "provisional": true,
-   "assumed_rules": true,
+   "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "scan-mbt": 2,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 1,
+    "rep-bondflight-mes": 1,
     "b3-tom-long": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 9,
-   "p_breach": 0.195,
-   "usd_mo": 512,
-   "usd_mo_5acct": 2560,
-   "pct_goal": 0.922,
+   "total_micros": 8,
+   "p_breach": 0.194,
+   "usd_mo": 495,
+   "usd_mo_5acct": 2475,
+   "pct_goal": 0.891,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9216
+   "usd_mo_total": 8910
   },
   {
-   "id": "Validated 8 + vix-reversion|apex150",
-   "name": "Validated 8 + vix-reversion",
-   "plan": "apex150 (assumed)",
+   "id": "Cross-market spread|apex150",
+   "name": "Cross-market spread",
+   "plan": "apex150 (verified)",
    "provisional": true,
-   "assumed_rules": true,
+   "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 3,
+    "scan-mbt": 4,
     "b3-monday-long": 1,
-    "b2-vix-reversion": 1
+    "rep-bondflight-mes": 1
    },
-   "total_micros": 7,
-   "p_breach": 0.188,
-   "usd_mo": 406,
-   "usd_mo_5acct": 2030,
-   "pct_goal": 0.731,
+   "total_micros": 9,
+   "p_breach": 0.184,
+   "usd_mo": 371,
+   "usd_mo_5acct": 1855,
+   "pct_goal": 0.668,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 7308
+   "usd_mo_total": 6678
   },
   {
    "id": "Validated 8 (the book)|apex150",
    "name": "Validated 8 (the book)",
-   "plan": "apex150 (assumed)",
+   "plan": "apex150 (verified)",
    "provisional": false,
-   "assumed_rules": true,
+   "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
     "b4-open-drive": 1
    },
-   "total_micros": 6,
-   "p_breach": 0.181,
-   "usd_mo": 368,
-   "usd_mo_5acct": 1840,
-   "pct_goal": 0.662,
+   "total_micros": 5,
+   "p_breach": 0.174,
+   "usd_mo": 340,
+   "usd_mo_5acct": 1700,
+   "pct_goal": 0.612,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6624
+   "usd_mo_total": 6120
   },
   {
-   "id": "Cross-market spread|apex150",
-   "name": "Cross-market spread",
-   "plan": "apex150 (assumed)",
-   "provisional": true,
-   "assumed_rules": true,
+   "id": "Validated 8 + vix-reversion|apex150",
+   "name": "Validated 8 + vix-reversion",
+   "plan": "apex150 (verified)",
+   "provisional": false,
+   "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 4,
-    "scan-mbt": 2,
-    "b3-monday-long": 1
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1
    },
-   "total_micros": 7,
-   "p_breach": 0.187,
-   "usd_mo": 346,
-   "usd_mo_5acct": 1730,
-   "pct_goal": 0.623,
+   "total_micros": 5,
+   "p_breach": 0.174,
+   "usd_mo": 340,
+   "usd_mo_5acct": 1700,
+   "pct_goal": 0.612,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6228
+   "usd_mo_total": 6120
   },
   {
    "id": "Frequent-firing engine|apex150",
    "name": "Frequent-firing engine",
-   "plan": "apex150 (assumed)",
+   "plan": "apex150 (verified)",
    "provisional": true,
-   "assumed_rules": true,
+   "assumed_rules": false,
    "members": {
-    "scan-mbt": 3,
+    "scan-mbt": 2,
     "b3-nr7-breakout": 1,
     "b3-tom-long": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 6,
-   "p_breach": 0.19,
-   "usd_mo": 334,
-   "usd_mo_5acct": 1670,
-   "pct_goal": 0.601,
+   "total_micros": 5,
+   "p_breach": 0.162,
+   "usd_mo": 306,
+   "usd_mo_5acct": 1530,
+   "pct_goal": 0.551,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6012
+   "usd_mo_total": 5508
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
    "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (assumed)",
+   "plan": "apex150 (verified)",
    "provisional": true,
-   "assumed_rules": true,
+   "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 4,
-    "b3-preholiday-drift": 2,
-    "b2-opex-release": 1
+    "b10-nagel-vix-reversal": 2
    },
-   "total_micros": 7,
-   "p_breach": 0.167,
+   "total_micros": 6,
+   "p_breach": 0.175,
    "usd_mo": 245,
    "usd_mo_5acct": 1225,
    "pct_goal": 0.441,

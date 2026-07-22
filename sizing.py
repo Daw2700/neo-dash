@@ -21,8 +21,12 @@ sys.path.insert(0, str(MNQ))
 from gauntlet.account import simulate_account, PLANS
 
 # Apex 150K — ASSUMED (verification pending, decision d-apex-verify)
-PLANS["apex150"] = dict(buffer=5000, dll=None, consistency=None, gate="cycle5",
-                        min_bal_profit=0, caps=None, cap_frac=0.5, cap_abs=5000,
+# Apex 150K — VERIFIED by Daniel 2026-07-22 (apextraderfunding.com screenshot):
+# $4,000 EOD trailing drawdown, 50% consistency, payouts each 5 trading days,
+# max 20 accounts, 100 micros. Split kept at the global conservative 90%.
+# PA daily-loss limit exists but amount unverified -> not modeled as a cushion.
+PLANS["apex150"] = dict(buffer=4000, dll=None, consistency=[0.50], gate="cycle5",
+                        min_bal_profit=0, caps=[5000, 5000, 5000, 5000],
                         min_payout=500)
 
 BREACH_CAP = 0.20
@@ -151,14 +155,14 @@ def greedy(members, plan, cap_per=5):
 
 bundles = []
 for name, members in BUNDLES:
-    for plan, label in (("growth", "tradeify-growth"), ("apex150", "apex150 (assumed)")):
+    for plan, label in (("growth", "tradeify-growth"), ("apex150", "apex150 (verified)")):
         r = greedy(members, plan)
         if r is None:
             continue
         bundles.append({
             "id": f"{name}|{plan}", "name": name, "plan": label,
             "provisional": any(m not in VALIDATED for m in r["micros"]),
-            "assumed_rules": plan == "apex150",
+            "assumed_rules": False,
             "members": r["micros"], "total_micros": sum(r["micros"].values()),
             "p_breach": r["p_breach"], "usd_mo": r["usd_mo"],
             "usd_mo_5acct": r["usd_mo"] * 5,
