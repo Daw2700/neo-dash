@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:53:43Z",
+  "stamp": "2026-07-22T22:53:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 673,
-  "n_results": 824,
-  "n_trials": 30812,
+  "n_results": 825,
+  "n_trials": 30813,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,20 +303,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:53:44.864041+00:00",
+   "hash": "4ca613c0",
+   "name": "mgc-effective-spread-rent-normalization",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.103"
+  },
+  {
    "t": "2026-07-22T22:53:31.010919+00:00",
    "hash": "67867d19",
    "name": "mes-crossmargin-degross-fade",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.616"
-  },
-  {
-   "t": "2026-07-22T22:52:05.838073+00:00",
-   "hash": "4ca613c0",
-   "name": "mgc-effective-spread-rent-normalization",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T22:50:30.691639+00:00",
@@ -416,6 +416,14 @@
     "stage": "dev3yr",
     "started": "2026-07-22T22:52:19Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "recheck: mgc-effective-spread-rent-normalization",
+    "stage": "dev3yr",
+    "started": "2026-07-22T22:53:45Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -476,7 +484,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 91,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -538,7 +546,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 645
+    "trials": 646
    }
   ]
  },
@@ -591,8 +599,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 39,
-   "n_killed": 32,
+   "n_tested": 40,
+   "n_killed": 33,
    "book_sleeves": [],
    "agents_now": []
   },
