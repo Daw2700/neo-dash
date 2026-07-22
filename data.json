@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:50:50Z",
+  "stamp": "2026-07-22T10:51:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -410,23 +410,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T10:37:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "robustness: zn-cash-market-closed-futures-open-asymmetry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:43:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
+    "agent": "tester-1",
     "market": "ZN",
     "task": "replication: zn-cash-market-closed-futures-open-asymmetry",
     "stage": "dev3yr",
@@ -434,9 +418,127 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mes-overnight-intraday-component-tugofwar",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mes-poc-migration-acceptance",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-range-completion-timing-overnight-carry",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-stop-pool-recharge-duration",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-inverted-leverage-effect-regime",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 6,
+    "idea": "mes-har-vol-forecast-error-underreaction",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-eia-release-shift-stranded-positioning",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mng-unconfirmed-idiosyncratic-move-reversion",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 9,
+    "idea": "sil-gold-volratio-leverage-proxy-unwind",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 10,
+    "idea": "xasset-vol-origin-attribution",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mes-realized-correlation-collapse-hedging-demand",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "mng-withdrawal-season-weather-premium-decay",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 13,
+    "idea": "mes-beige-book-1400-lowinfo-knee-jerk-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
