@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:33:45Z",
+  "stamp": "2026-07-22T23:33:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,30 +404,35 @@
     "stage": "dev3yr",
     "started": "2026-07-22T23:31:13Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 7,
-    "idea": "mgc-830-scheduled-data-range-breakout",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.33
    },
    {
-    "rank": 8,
-    "idea": "mes-friday-data-inattention-monday-drift",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T23:33:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-830-scheduled-data-range-breakout",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:33:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-friday-data-inattention-monday-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:33:46Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
