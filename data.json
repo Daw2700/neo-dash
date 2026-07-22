@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:59:12Z",
+  "stamp": "2026-07-22T15:03:15Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 476,
-  "n_results": 602,
-  "n_trials": 30590,
+  "n_registered": 477,
+  "n_results": 603,
+  "n_trials": 30591,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -281,6 +281,18 @@
    }
   },
   {
+   "id": "zn-va-rho-hedge-rebalance",
+   "name": "zn-va-rho-hedge-rebalance",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 8,
+   "wr": 0.625,
+   "usd_mo": 3,
+   "pf": 1.165,
+   "usd_trade": 11.5
+  },
+  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -291,21 +303,17 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
-  },
-  {
-   "id": "b6-vix-m2k",
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 26,
-   "wr": null,
-   "usd_mo": 5,
-   "pf": 1.148,
-   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T15:00:55.955503+00:00",
+   "hash": "e0567bd7",
+   "name": "zn-va-rho-hedge-rebalance",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.165"
+  },
   {
    "t": "2026-07-22T14:57:20.951085+00:00",
    "hash": "570c5d90",
@@ -393,14 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 3.668"
-  },
-  {
-   "t": "2026-07-22T14:39:01.096985+00:00",
-   "hash": "3a30275a",
-   "name": "mes-quarterend-equity-financing-withdrawal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.577"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "zn-variable-annuity-guarantee-rho-hedge-rebalance",
     "stage": "dev3yr",
     "started": "2026-07-22T14:58:48Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "robustness: zn-va-rho-hedge-rebalance",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:00:57Z",
     "state": "running"
    }
   ],
@@ -487,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 423
+    "trials": 424
    }
   ]
  },
@@ -605,7 +613,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 35,
+   "n_tested": 36,
    "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
@@ -1214,6 +1222,26 @@
     "apex_max": 6
    }
   },
+  "zn-va-rho-hedge-rebalance": {
+   "name": "zn-va-rho-hedge-rebalance",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Insurers with GMxB variable-annuity guarantees run dynamic rho hedges in Treasury futures under actuarial and regulatory rules that prescribe rebalancing frequency, so duration buying into rate rallies is mandated on a rulebook month-end clock the market can anticipate rather than discretionary hedging.",
+   "metrics": {
+    "n": 8,
+    "wr": 0.625,
+    "pf": 1.165,
+    "usd_mo": 3,
+    "usd_trade": 11.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:00:55.955503+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1229,26 +1257,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-vix-m2k": {
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
-   "metrics": {
-    "n": 26,
-    "wr": null,
-    "pf": 1.148,
-    "usd_mo": 5,
-    "usd_trade": 6.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.112070+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
