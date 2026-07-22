@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:49:48Z",
+  "stamp": "2026-07-22T00:55:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 132,
-  "n_results": 211,
+  "n_registered": 133,
+  "n_results": 214,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -173,22 +173,6 @@
    }
   },
   {
-   "id": "b3-pm-trend-continuation",
-   "name": "b3-pm-trend-continuation",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 80,
-   "wr": 0.588,
-   "usd_mo": 58,
-   "pf": 1.468,
-   "usd_trade": 26.3,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 4
-   }
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -237,22 +221,6 @@
    }
   },
   {
-   "id": "b7-bond-flight-unwind",
-   "name": "b7-bond-flight-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 53,
-   "wr": 0.528,
-   "usd_mo": 54,
-   "pf": 1.365,
-   "usd_trade": 36.7,
-   "sizing": {
-    "growth_max": 3,
-    "apex_max": 3
-   }
-  },
-  {
    "id": "fomc-statement-presser-reversal",
    "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
@@ -278,22 +246,6 @@
    "sizing": {
     "growth_max": 2,
     "apex_max": 1
-   }
-  },
-  {
-   "id": "b3-3down-reversion",
-   "name": "b3-3down-reversion",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 73,
-   "wr": 0.534,
-   "usd_mo": 58,
-   "pf": 1.22,
-   "usd_trade": 28.4,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 2
    }
   },
   {
@@ -323,9 +275,77 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
+  },
+  {
+   "id": "b6-vix-m2k",
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 26,
+   "wr": null,
+   "usd_mo": 5,
+   "pf": 1.148,
+   "usd_trade": 6.8
+  },
+  {
+   "id": "rep3-vix-mes",
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 25,
+   "wr": null,
+   "usd_mo": 8,
+   "pf": 1.138,
+   "usd_trade": 12.0
+  },
+  {
+   "id": "b3-lunch-compression-break",
+   "name": "b3-lunch-compression-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 684,
+   "wr": 0.493,
+   "usd_mo": 107,
+   "pf": 1.113,
+   "usd_trade": 5.7
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T00:54:26.606240+00:00",
+   "hash": "b12ada19",
+   "name": "b3-pm-trend-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T00:53:30.705719+00:00",
+   "hash": "f8c4990b",
+   "name": "b7-bond-flight-unwind",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T00:51:42.388814+00:00",
+   "hash": "e86e3c59",
+   "name": "b3-3down-reversion",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T00:50:35.114255+00:00",
+   "hash": "52fdedf8",
+   "name": "robust189-bondflight-unwind",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T00:42:28.623132+00:00",
    "hash": "f763c50b",
@@ -389,38 +409,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.248"
-  },
-  {
-   "t": "2026-07-22T00:18:21.512894+00:00",
-   "hash": "ee678b88",
-   "name": "mnq-megacap-earnings-night-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.409"
-  },
-  {
-   "t": "2026-07-22T00:17:45.314642+00:00",
-   "hash": "0ea70086",
-   "name": "mgc-fomc-real-rate-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.65"
-  },
-  {
-   "t": "2026-07-22T00:10:42.449219+00:00",
-   "hash": "f89113b7",
-   "name": "buyback-blackout-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.97"
-  },
-  {
-   "t": "2026-07-22T00:10:12.463288+00:00",
-   "hash": "083cd63b",
-   "name": "scout-12-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -435,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": null,
-    "task": "robustness: b3-3down-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T00:49:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: b7-bond-flight-unwind",
     "stage": "dev3yr",
@@ -481,7 +461,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 3,
+   "registered": 4,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -543,7 +523,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 15
+    "trials": 18
    }
   ]
  },
@@ -1041,40 +1021,6 @@
     "apex_max": 6
    }
   },
-  "b3-pm-trend-continuation": {
-   "name": "b3-pm-trend-continuation",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "VWAP-pegged institutional orders split across the whole day create intraday momentum: a strong morning continues in the afternoon",
-   "metrics": {
-    "n": 80,
-    "wr": 0.588,
-    "pf": 1.468,
-    "usd_mo": 58,
-    "usd_trade": 26.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.936955+00:00",
-     "stage": "dev",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-21T15:31:04.915304+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.710625+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 4
-   }
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1167,30 +1113,6 @@
     "apex_max": 1
    }
   },
-  "b7-bond-flight-unwind": {
-   "name": "b7-bond-flight-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "Flight-to-quality overshoots: when treasuries rally hard while equities fall, the fear bid unwinds and equities rebound next session \u2014 same risk-premium family as VIX, measured through the bond market's own fear gauge",
-   "metrics": {
-    "n": 53,
-    "wr": 0.528,
-    "pf": 1.365,
-    "usd_mo": 54,
-    "usd_trade": 36.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:12:29.403504+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 3,
-    "apex_max": 3
-   }
-  },
   "fomc-statement-presser-reversal": {
    "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
@@ -1245,40 +1167,6 @@
     "apex_max": 1
    }
   },
-  "b3-3down-reversion": {
-   "name": "b3-3down-reversion",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Three consecutive down days overshoot; liquidity providers get paid for catching the knife at the open",
-   "metrics": {
-    "n": 73,
-    "wr": 0.534,
-    "pf": 1.22,
-    "usd_mo": 58,
-    "usd_trade": 28.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:22:09.485981+00:00",
-     "stage": "dev",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-21T15:31:04.911477+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.706298+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 2
-   }
-  },
   "rep-nagel-mes": {
    "name": "rep-nagel-mes",
    "market": "MES",
@@ -1320,6 +1208,76 @@
      "t": "2026-07-21T16:04:19.694798+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-vix-m2k": {
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
+   "metrics": {
+    "n": 26,
+    "wr": null,
+    "pf": 1.148,
+    "usd_mo": 5,
+    "usd_trade": 6.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "rep3-vix-mes": {
+   "name": "rep3-vix-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
+   "metrics": {
+    "n": 25,
+    "wr": null,
+    "pf": 1.138,
+    "usd_mo": 8,
+    "usd_trade": 12.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T15:47:32.242638+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b3-lunch-compression-break": {
+   "name": "b3-lunch-compression-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Lunch lull compresses range; afternoon institutional re-engagement breaks it with real flow",
+   "metrics": {
+    "n": 684,
+    "wr": 0.493,
+    "pf": 1.113,
+    "usd_mo": 107,
+    "usd_trade": 5.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.936667+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.914827+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.710078+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
    ]
   }
