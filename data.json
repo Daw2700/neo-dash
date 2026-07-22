@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:57:41Z",
+  "stamp": "2026-07-22T03:00:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 157,
-  "n_results": 247,
-  "n_trials": 30218,
+  "n_registered": 159,
+  "n_results": 248,
+  "n_trials": 30219,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:00:26.557190+00:00",
+   "hash": "32c13526",
+   "name": "zc-crop-progress-reopen-gap",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.208"
+  },
+  {
+   "t": "2026-07-22T02:59:15.380694+00:00",
+   "hash": "ce4d9198",
+   "name": "mcl-pre-fnd-retail-liquidation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T02:54:22.295158+00:00",
    "hash": "fd41ba8f",
    "name": "m6e-gotobi-tokyo-fix",
@@ -385,22 +401,6 @@
    "status": "screen complete (no costs,",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T02:21:14.944446+00:00",
-   "hash": "ddb699dd",
-   "name": "mes-macro-annday-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.897"
-  },
-  {
-   "t": "2026-07-22T02:09:44.717925+00:00",
-   "hash": "218956c2",
-   "name": "mgc-post-settlement-thin-hour-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.415"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-crop-progress-reopen-gap",
-    "stage": "dev3yr",
-    "started": "2026-07-22T02:57:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-macro-announcement-premium-exfomc",
     "stage": "dev3yr",
@@ -461,7 +453,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 7,
+   "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 51
+    "trials": 52
    }
   ]
  },
@@ -648,8 +640,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 3,
+   "n_tested": 4,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1260,39 +1252,6 @@
  },
  "decisions": [
   {
-   "id": "d-apex-verify-numbers-r2",
-   "kind": "funding",
-   "needs_attention": true,
-   "title": "Apex \u2014 the five numbers still haven't arrived (approve box was empty)",
-   "recommendation": "Type the five values INTO the Approve box; an empty Approve can't supply them",
-   "evidence": "Two approvals received with an empty note (d-apex-verify 2026-07-21T22:16Z, d-apex-verify-numbers 2026-07-22T02:19Z). Apex blocks bots, so the engine still has no verified value. Apex-150K remains ASSUMED exactly as in 114_apex_sim.py: start 150,000 / target 159,000 / EOD trailing buffer 4,000 / floor freezes at 150,000. Profit split, consistency %% and max-accounts are still not modelled at all \u2014 gauntlet/account.py PLANS contains only growth / select_flex / select_daily / lightning (all Tradeify), no apex150.",
-   "what_yes_means": "Numbers typed in the box -> engine builds a VERIFIED apex150 plan and re-runs all Apex sizings",
-   "recap": "You tapped Approve, but the note box was empty, so no Apex numbers reached the engine. Nothing changed. Paste the five values as text in the Approve box and this card clears.",
-   "why": "Approving is not the missing input \u2014 the values are. The engine cannot open Apex's site (bot-blocked), so every Apex figure on this dashboard is still the assumption set from 114_apex_sim.py, and split / consistency / max-accounts were never modelled. 18 of the 23 accounts in the $10k route depend on them. Promoting assumptions to 'verified' on a bare approval would be inventing numbers, so the card stays open instead.",
-   "steps": [
-    "Log in to Apex, open the 150K account rules",
-    "Type all five into the Approve box, e.g.: 1) trailing threshold $ = ____  2) trailing intraday or EOD = ____  3) consistency rule % = ____  4) profit split % = ____  5) max accounts = ____",
-    "Engine adds a verified 'apex150' plan to gauntlet/account.py PLANS using exactly those values",
-    "All Apex sizings, bundles and first-payout estimates re-run against the verified plan",
-    "ASSUMED chips are removed only for the fields you supply; anything skipped stays flagged ASSUMED"
-   ],
-   "qa": [
-    {
-     "q": "Approve: Apex account verification before any funding",
-     "a": "Approved by Daniel 2026-07-21. Approval recorded in ledger.jsonl; no rule values were included, so no Apex number was changed. Card replaced with this one, which holds until the five values arrive.",
-     "t": "2026-07-21T22:45:08Z",
-     "q_t": "2026-07-20T00:00:00Z"
-    },
-    {
-     "q": "Approve: Apex verification \u2014 paste the five numbers",
-     "a": "Approved 2026-07-22T02:19:04Z with an EMPTY note, so no value was supplied for the second time. No Apex parameter changed, no ASSUMED chip removed, no sizing re-run. Card re-staged with a copy-paste template.",
-     "t": "2026-07-22T02:38:32Z",
-     "q_t": "2026-07-21T22:45:08Z"
-    }
-   ],
-   "staged": "2026-07-22T02:38:32Z"
-  },
-  {
    "id": "d-neo300-paper-creds-r3",
    "kind": "cleanup",
    "needs_attention": true,
@@ -1347,6 +1306,46 @@
     "scan-mym (mym-prehol, Dow) - approved for removal 2026-07-22, hash 5eec72170531044e"
    ],
    "staged": "2026-07-22T02:54:18Z"
+  },
+  {
+   "id": "d-apex-verify-numbers-r3",
+   "kind": "funding",
+   "needs_attention": true,
+   "title": "Apex \u2014 third empty approval; type the numbers, or Deny to drop Apex entirely",
+   "recommendation": "Either type the five values in the box BEFORE tapping 'Send approval', or Deny to re-plan without Apex",
+   "evidence": "Three approvals now received with an empty note (d-apex-verify 2026-07-21T22:16Z, d-apex-verify-numbers 2026-07-22T02:19Z, d-apex-verify-numbers-r2 2026-07-22T02:55Z). The command path was audited this run and is working: the page sends the textarea text, the inbox forwards it, the executor prompt shows no instructions clause \u2014 so the box was genuinely empty, the note was not lost. Apex blocks bots, so the engine still has no verified value. Apex-150K remains ASSUMED exactly as in 114_apex_sim.py: start 150,000 / target 159,000 / EOD trailing buffer 4,000 / floor freezes at 150,000. Profit split, consistency %% and max-accounts are still not modelled at all \u2014 gauntlet/account.py PLANS contains only growth / select_flex / select_daily / lightning (all Tradeify), no apex150 (re-verified at apply time).",
+   "what_yes_means": "Numbers typed in the box -> engine builds a VERIFIED apex150 plan and re-runs all Apex sizings",
+   "recap": "You tapped Approve a third time with the note box empty, so no Apex numbers reached the engine and nothing changed. Two ways to clear this card: type the five values into the box and send, or tap Deny \u2014 Deny drops Apex from the $10k route and re-plans on the Tradeify plans that are already verified.",
+   "why": "Approving is not the missing input \u2014 the values are, and three bare approvals have now supplied none. The engine cannot open Apex's site (bot-blocked), so every Apex figure on this dashboard is still the assumption set from 114_apex_sim.py, and split / consistency / max-accounts were never modelled. Promoting assumptions to 'verified' on a bare approval would be inventing numbers. Rather than re-staging the same ask a fourth time, this card now carries a one-tap exit: if chasing Apex's rules isn't worth it, Deny and the route gets re-planned on verified plans only.",
+   "steps": [
+    "APPROVE path: log in to Apex, open the 150K account rules",
+    "Type all five INTO the box that opens under 'Approve\u2026', then tap 'Send approval', e.g.: 1) trailing threshold $ = ____  2) trailing intraday or EOD = ____  3) consistency rule %% = ____  4) profit split %% = ____  5) max accounts = ____",
+    "Engine adds a verified 'apex150' plan to gauntlet/account.py PLANS using exactly those values",
+    "All Apex sizings, bundles and first-payout estimates re-run against the verified plan",
+    "ASSUMED chips are removed only for the fields you supply; anything skipped stays flagged ASSUMED",
+    "DENY path (no typing): engine removes Apex from the $10k account route and re-plans using only the verified Tradeify plans, and this card retires for good"
+   ],
+   "qa": [
+    {
+     "q": "Approve: Apex account verification before any funding",
+     "a": "Approved by Daniel 2026-07-21. Approval recorded in ledger.jsonl; no rule values were included, so no Apex number was changed. Card replaced with this one, which holds until the five values arrive.",
+     "t": "2026-07-21T22:45:08Z",
+     "q_t": "2026-07-20T00:00:00Z"
+    },
+    {
+     "q": "Approve: Apex verification \u2014 paste the five numbers",
+     "a": "Approved 2026-07-22T02:19:04Z with an EMPTY note, so no value was supplied for the second time. No Apex parameter changed, no ASSUMED chip removed, no sizing re-run. Card re-staged with a copy-paste template.",
+     "t": "2026-07-22T02:38:32Z",
+     "q_t": "2026-07-21T22:45:08Z"
+    },
+    {
+     "q": "Approve: Apex verification \u2014 paste the five numbers (r2)",
+     "a": "Approved 2026-07-22T02:55:26Z with an EMPTY note \u2014 third consecutive bare approval. Audited the command path this time (dashboard sendDecision -> ntfy -> inbox.py -> decision_prompt): it forwards the note correctly, so the box was empty rather than the text being lost. No Apex parameter changed, no ASSUMED chip removed, no sizing re-run. Card re-staged as r3 with a Deny escape hatch so it can be closed without typing.",
+     "t": "2026-07-22T03:00:16Z",
+     "q_t": "2026-07-22T02:38:32Z"
+    }
+   ],
+   "staged": "2026-07-22T03:00:16Z"
   }
  ],
  "roadmap": {
