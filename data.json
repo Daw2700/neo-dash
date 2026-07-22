@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:46:56Z",
+  "stamp": "2026-07-22T09:46:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:46:32Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-tick-constraint-quiet-day-queue-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:46:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-velocity-logic-reserve-momentum-truncation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:46:57Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "zn-tick-constraint-quiet-day-queue-reversion",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 10,
-    "idea": "mgc-velocity-logic-reserve-momentum-truncation",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 11,
     "idea": "met-attention-share-concentration-unwind",
@@ -466,7 +464,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 3,
    "registered": 42,
    "dev3yr": 0,
    "robustness": 0,
