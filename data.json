@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:25:54Z",
+  "stamp": "2026-07-22T13:26:17Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 444,
   "n_results": 561,
@@ -410,14 +410,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T13:20:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-volume-clock-opening-range",
-    "stage": "dev3yr",
     "started": "2026-07-22T13:20:32Z",
     "state": "running"
    }
