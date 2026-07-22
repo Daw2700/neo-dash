@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:03:38Z",
+  "stamp": "2026-07-22T06:08:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 253,
-  "n_results": 351,
-  "n_trials": 30322,
+  "n_registered": 256,
+  "n_results": 353,
+  "n_trials": 30324,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mes-payroll-15th-window",
+   "name": "mes-payroll-15th-window",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.6,
+   "usd_mo": 22,
+   "pf": 1.465,
+   "usd_trade": 22.9
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,33 @@
    "usd_mo": 2,
    "pf": 1.074,
    "usd_trade": 2.3
-  },
-  {
-   "id": "mcl-carry-regime",
-   "name": "mcl-carry-regime",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 37,
-   "wr": 0.4054,
-   "usd_mo": 9,
-   "pf": 1.043,
-   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T06:08:06.400925+00:00",
+   "hash": "01d72293",
+   "name": "mes-vix-term-structure-inversion-regrossing",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T06:07:16.789702+00:00",
+   "hash": "f04ae10a",
+   "name": "m6e-us-holiday-orphan-session-europe-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2819"
+  },
+  {
+   "t": "2026-07-22T06:05:34.191060+00:00",
+   "hash": "edd20964",
+   "name": "mes-payroll-15th-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.465"
+  },
   {
    "t": "2026-07-22T06:03:25.562868+00:00",
    "hash": "60165e2b",
@@ -381,30 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.3062"
-  },
-  {
-   "t": "2026-07-22T05:44:20.139130+00:00",
-   "hash": "6d37b075",
-   "name": "m6e-us-overnight-equity-risk-repricing-at-ny-open",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.3437"
-  },
-  {
-   "t": "2026-07-22T05:43:11.972415+00:00",
-   "hash": "ecae60c7",
-   "name": "met-overnight-gap-overshoot-fade-us-open",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.234"
-  },
-  {
-   "t": "2026-07-22T05:42:40.826448+00:00",
-   "hash": "dd6707ab",
-   "name": "mbt-halt-gap-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.8251"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-semimonthly-payroll-inflow-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:03:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-us-holiday-orphan-session-europe-drift",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 23,
+   "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 155
+    "trials": 157
    }
   ]
  },
@@ -533,7 +525,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 30,
+   "n_tested": 31,
    "n_killed": 19,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -618,8 +610,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 11,
+   "n_tested": 12,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -966,6 +958,26 @@
     "apex_max": 2
    }
   },
+  "mes-payroll-15th-window": {
+   "name": "mes-payroll-15th-window",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "US payroll runs and 401k/retirement-plan contributions are processed on a semimonthly clock anchored to the 1st and the 15th of each month, so index funds receive mechanical, price-insensitive buy flow around the 15th independent of the turn-of-month anchor already tested as b3-tom-long.",
+   "metrics": {
+    "n": 35,
+    "wr": 0.6,
+    "pf": 1.465,
+    "usd_mo": 22,
+    "usd_trade": 22.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T06:05:34.191060+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1247,26 +1259,6 @@
      "t": "2026-07-21T16:04:19.693873+00:00",
      "stage": "dev3yr",
      "verdict": "FAIL"
-    }
-   ]
-  },
-  "mcl-carry-regime": {
-   "name": "mcl-carry-regime",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Crude oil term structure prices the inventory / convenience-yield state: in backwardation inventories are tight and producers pay long speculators a positive risk premium to carry hedged exposure, while in contango that premium reverses and storage holders are paid instead. Signing MCL direction off the front-versus-deferred basis therefore harvests a producer-hedging risk premium rather than any event reaction, per Gorton and Rouwenhorst and Erb and Harvey.",
-   "metrics": {
-    "n": 37,
-    "wr": 0.4054,
-    "pf": 1.043,
-    "usd_mo": 9,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T01:43:38.994772+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
     }
    ]
   }
