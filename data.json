@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:53:58Z",
+  "stamp": "2026-07-22T21:54:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T21:52:55Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-option-session-open-deferred-delta-clearing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:54:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mes-option-session-open-deferred-delta-clearing",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 6,
     "idea": "mym-dividend-paydate-reinvestment-window",
@@ -475,7 +474,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
