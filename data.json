@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:43:17Z",
+  "stamp": "2026-07-22T19:45:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 595,
-  "n_results": 737,
-  "n_trials": 30725,
+  "n_registered": 596,
+  "n_results": 738,
+  "n_trials": 30726,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:44:41.983489+00:00",
+   "hash": "50240541",
+   "name": "mcl-trade-month-vs-calendar-month-offset-hedge-concentration",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.773"
+  },
+  {
    "t": "2026-07-22T19:42:58.580830+00:00",
    "hash": "fbec4f1c",
    "name": "mcl-position-build-vs-liquidation-volume-signature",
@@ -393,28 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.208"
-  },
-  {
-   "t": "2026-07-22T19:19:47.523221+00:00",
-   "hash": "141dcab5",
-   "name": "mnq-dst-desync-clock-shift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-trade-month-vs-calendar-month-offset-hedge-concentration",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:42:51Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-unmarked-window-length-dose-response",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-price-weighted-exdiv-mechanical-drop",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 558
+    "trials": 559
    }
   ]
  },
@@ -585,8 +577,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 37,
-   "n_killed": 22,
+   "n_tested": 38,
+   "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
   },
