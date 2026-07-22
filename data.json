@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:12:16Z",
+  "stamp": "2026-07-22T19:12:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,30 +412,35 @@
     "stage": "dev3yr",
     "started": "2026-07-22T19:11:51Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 12,
-    "idea": "mnq-dst-transatlantic-overlap-shift-weeks",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
    },
    {
-    "rank": 13,
-    "idea": "mcl-energy-desk-open-0900-overnight-inventory-handoff",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.38
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T19:12:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-dst-transatlantic-overlap-shift-weeks",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:12:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "mcl-energy-desk-open-0900-overnight-inventory-handoff",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:12:17Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
