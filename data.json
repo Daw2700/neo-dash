@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:14:40Z",
+  "stamp": "2026-07-22T18:15:02Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 562,
-  "n_results": 696,
-  "n_trials": 30684,
+  "n_results": 697,
+  "n_trials": 30685,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -265,6 +265,18 @@
    }
   },
   {
+   "id": "mcl-eia-day-midsession-to-close-momentum",
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 153,
+   "wr": 0.5033,
+   "usd_mo": 30,
+   "pf": 1.237,
+   "usd_trade": 7.1
+  },
+  {
    "id": "rep-nagel-mes",
    "name": "rep-nagel-mes",
    "market": "MES",
@@ -291,28 +303,16 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
-  },
-  {
-   "id": "b6-monday-m2k",
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 133,
-   "wr": null,
-   "usd_mo": 19,
-   "pf": 1.154,
-   "usd_trade": 5.3
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T18:13:29.616469+00:00",
+   "t": "2026-07-22T18:14:48.455567+00:00",
    "hash": "ae5e7176",
    "name": "mcl-eia-day-midsession-to-close-momentum",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.237"
   },
   {
    "t": "2026-07-22T18:11:55.709212+00:00",
@@ -404,16 +404,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-eia-day-midsession-to-close-momentum",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:11:52Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 4,
@@ -499,7 +490,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 81,
+   "registered": 80,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -561,7 +552,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 517
+    "trials": 518
    }
   ]
  },
@@ -632,7 +623,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 33,
+   "n_tested": 34,
    "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
@@ -1264,6 +1255,26 @@
     "apex_max": 1
    }
   },
+  "mcl-eia-day-midsession-to-close-momentum": {
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
+   "metrics": {
+    "n": 153,
+    "wr": 0.5033,
+    "pf": 1.237,
+    "usd_mo": 30,
+    "usd_trade": 7.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T18:14:48.455567+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "rep-nagel-mes": {
    "name": "rep-nagel-mes",
    "market": "MES",
@@ -1314,26 +1325,6 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-monday-m2k": {
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
-   "metrics": {
-    "n": 133,
-    "wr": null,
-    "pf": 1.154,
-    "usd_mo": 19,
-    "usd_trade": 5.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
