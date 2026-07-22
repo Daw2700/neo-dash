@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:43:31Z",
+  "stamp": "2026-07-22T15:43:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,21 +408,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "mes-depth-consumption-print-size-range-forecast",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:36:44Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "robustness: mes-depth-consumption-print-size-range-forecast",
     "stage": "dev3yr",
     "started": "2026-07-22T15:43:31Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-monthend-impact-inflation-reversion-rent",
     "stage": "dev3yr",
