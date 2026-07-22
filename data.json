@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:22:56Z",
+  "stamp": "2026-07-22T18:22:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,6 +411,22 @@
     "task": "robustness: mes-wed-night-risk-reestablishment",
     "stage": "dev3yr",
     "started": "2026-07-22T18:20:11Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "recheck: xmkt-volshare-defensive-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:22:58Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-prior-settlement-anchor-premarket-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:22:58Z",
     "state": "running"
    }
   ],
