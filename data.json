@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:39:31Z",
+  "stamp": "2026-07-22T12:39:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 428,
-  "n_results": 540,
-  "n_trials": 30511,
+  "n_registered": 429,
+  "n_results": 541,
+  "n_trials": 30512,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,20 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T12:38:17.529224+00:00",
-   "hash": "0810a0c5",
-   "name": "zc-prereport-position-squaring-hour",
+   "t": "2026-07-22T12:39:49.394220+00:00",
+   "hash": "ac40602b",
+   "name": "m6e-national-cpi-mosaic-completion",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T12:39:42.845046+00:00",
+   "hash": "0810a0c5",
+   "name": "zc-prereport-position-squaring-hour",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.055"
   },
   {
    "t": "2026-07-22T12:38:16.951474+00:00",
@@ -397,14 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T12:15:27.773956+00:00",
-   "hash": "e402e77e",
-   "name": "mnq-jump-hazard-self-excitation-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.092"
   }
  ],
  "pipeline": {
@@ -418,26 +418,10 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-energy-terms-of-trade-shock-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:34:00Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T12:36:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZC",
-    "task": "zc-prereport-position-squaring-hour",
-    "stage": "dev3yr",
     "started": "2026-07-22T12:36:50Z",
     "state": "running"
    }
@@ -507,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 344
+    "trials": 345
    }
   ]
  },
@@ -634,8 +618,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 16,
+   "n_tested": 19,
+   "n_killed": 17,
    "book_sleeves": [],
    "agents_now": []
   },
