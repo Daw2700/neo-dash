@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:39:39Z",
+  "stamp": "2026-07-22T07:44:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 295,
-  "n_results": 396,
-  "n_trials": 30367,
+  "n_registered": 297,
+  "n_results": 398,
+  "n_trials": 30369,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T07:42:14.432674+00:00",
+   "hash": "27ca26e3",
+   "name": "mnq-event-free-day-flow-persistence",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T07:42:10.120260+00:00",
+   "hash": "dfc869fe",
+   "name": "mcl-upside-semivariance-exhaustion",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T07:40:18.842054+00:00",
+   "hash": "ff28ad14",
+   "name": "ROBUSTNESS-PROTOCOL mnq-event-free-day-flow-persistence (368)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T07:40:09.786239+00:00",
+   "hash": "1c86504c",
+   "name": "ROBUSTNESS-PROTOCOL mcl-upside-semivariance-exhaustion (dfc869fe181d9a55)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T07:37:35.884696+00:00",
    "hash": "40b25312",
    "name": "mgc-usd-mechanical-repricing-lag",
@@ -373,60 +405,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:24:48.169131+00:00",
-   "hash": "bc0dc435",
-   "name": "mes-vol-signature-regime-switch",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.886"
-  },
-  {
-   "t": "2026-07-22T07:21:12.864981+00:00",
-   "hash": "9f5ed978",
-   "name": "mcl-overnight-thin-book-impact-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.545"
-  },
-  {
-   "t": "2026-07-22T07:20:42.815511+00:00",
-   "hash": "9b680e24",
-   "name": "m2k-return-autocorrelation-regime-adaptive-direction",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.908"
-  },
-  {
-   "t": "2026-07-22T07:13:51.084299+00:00",
-   "hash": "1384fbc0",
-   "name": "mcl-intraday-skew-lottery-demand-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-event-free-day-flow-persistence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:39:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "robustness: mcl-upside-semivariance-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:39:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-micro-vs-fullsize-retail-basis",
     "stage": "dev3yr",
@@ -528,7 +512,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 29,
+   "registered": 31,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -590,7 +574,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 200
+    "trials": 202
    }
   ]
  },
@@ -1156,6 +1140,11 @@
      "t": "2026-07-22T07:36:35.002815+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T07:42:14.432674+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
@@ -1196,6 +1185,11 @@
      "t": "2026-07-22T07:36:46.839311+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T07:42:10.120260+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
