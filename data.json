@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:54:55Z",
+  "stamp": "2026-07-22T10:57:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 385,
-  "n_results": 489,
-  "n_trials": 30460,
+  "n_registered": 388,
+  "n_results": 491,
+  "n_trials": 30462,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:57:39.497803+00:00",
+   "hash": "c38dac7e",
+   "name": "mgc-inverted-leverage-effect-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.981"
+  },
+  {
+   "t": "2026-07-22T10:57:27.637429+00:00",
+   "hash": "e181e192",
+   "name": "mnq-stop-pool-recharge-duration",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T10:57:14.906432+00:00",
+   "hash": "7ea978bb",
+   "name": "mnq-range-completion-timing-overnight-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.089"
+  },
+  {
    "t": "2026-07-22T10:54:33.937455+00:00",
    "hash": "765a8e88",
    "name": "mes-poc-migration-acceptance",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.911"
-  },
-  {
-   "t": "2026-07-22T10:40:40.689274+00:00",
-   "hash": "032df17b",
-   "name": "mym-leverage-constraint-low-beta-tilt",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.036"
-  },
-  {
-   "t": "2026-07-22T10:40:09.435772+00:00",
-   "hash": "52440e70",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 6.676"
-  },
-  {
-   "t": "2026-07-22T10:39:05.949460+00:00",
-   "hash": "ed3a396f",
-   "name": "scout-29-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "mnq-range-completion-timing-overnight-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:54:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "mnq-stop-pool-recharge-duration",
     "stage": "dev3yr",
     "started": "2026-07-22T10:54:31Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-inverted-leverage-effect-regime",
     "stage": "dev3yr",
@@ -510,7 +502,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 52,
+   "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -572,7 +564,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 293
+    "trials": 295
    }
   ]
  },
@@ -581,8 +573,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 75,
-   "n_killed": 44,
+   "n_tested": 76,
+   "n_killed": 45,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -625,8 +617,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 18,
+   "n_tested": 21,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
