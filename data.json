@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:31:01Z",
+  "stamp": "2026-07-22T04:31:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 208,
-  "n_results": 298,
-  "n_trials": 30269,
+  "n_results": 299,
+  "n_trials": 30270,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:31:30.165816+00:00",
+   "hash": "f3dcdd9d",
+   "name": "mes-margin-hike-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.995"
+  },
+  {
    "t": "2026-07-22T04:30:38.572710+00:00",
    "hash": "004775a3",
    "name": "mcl-refinery-turnaround-premium",
@@ -318,14 +326,6 @@
    "t": "2026-07-22T04:30:19.348214+00:00",
    "hash": "2b7398f3",
    "name": "zs-south-american-weather-premium-decay",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:29:44.734714+00:00",
-   "hash": "f3dcdd9d",
-   "name": "mes-margin-hike-lag",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-margin-hike-lag-deleveraging",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:28:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-south-american-weather-premium-decay",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-taxloss-turnofyear-reversal",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 15,
+   "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 102
+    "trials": 103
    }
   ]
  },
@@ -519,8 +511,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 11,
+   "n_tested": 20,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
