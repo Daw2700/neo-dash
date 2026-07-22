@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:26:55Z",
+  "stamp": "2026-07-22T18:29:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T18:22:58Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "xsec-commodity-month-of-year-hedger-calendar-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:26:57Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "xsec-commodity-month-of-year-hedger-calendar-rotation",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 8,
     "idea": "xmkt-hourly-systematic-share-divergence-conditioning",
@@ -479,7 +478,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 80,
    "dev3yr": 0,
    "robustness": 0,
