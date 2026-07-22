@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:53:35Z",
+  "stamp": "2026-07-22T14:53:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,22 @@
     "task": "mes-autocallable-barrier-observation-hedge-discontinuity",
     "stage": "dev3yr",
     "started": "2026-07-22T14:53:13Z",
+    "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T14:53:37Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "recheck: zn-roll-financing-flow",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:53:37Z",
     "state": "running"
    }
   ],
