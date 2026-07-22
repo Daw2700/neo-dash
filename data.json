@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-21T23:53:24Z",
+  "stamp": "2026-07-22T00:07:09Z",
   "stale_after_min": 30,
-  "status": "testing silver-london-to-comex-handoff",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 121,
-  "n_results": 195,
+  "n_registered": 126,
+  "n_results": 200,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,46 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T00:03:11.450951+00:00",
+   "hash": "fce2289d",
+   "name": "crypto-expiry-twap-unwind-v2",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.328"
+  },
+  {
+   "t": "2026-07-22T00:01:59.315195+00:00",
+   "hash": "d6e04d2a",
+   "name": "crypto-expiry-twap-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-22T00:00:56.906878+00:00",
+   "hash": "377ea3c3",
+   "name": "grain-halt-risk-transfer",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.61"
+  },
+  {
+   "t": "2026-07-22T00:00:16.091210+00:00",
+   "hash": "76ec7051",
+   "name": "zn-voltarget-unwind-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.549"
+  },
+  {
+   "t": "2026-07-21T23:57:41.736663+00:00",
+   "hash": "7f4d3dd8",
+   "name": "wasde-overshoot-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.146"
+  },
+  {
    "t": "2026-07-21T23:49:09.458310+00:00",
    "hash": "f18c8fea",
    "name": "silver-london-to-comex-handoff",
@@ -389,87 +429,11 @@
    "status": "fail",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-21T20:03:03.321427+00:00",
-   "hash": "f00f783b",
-   "name": "sweep-2-grammar10k",
-   "status": "grammar sweep complete",
-   "kind": "sweep",
-   "detail": "9,160 configs"
-  },
-  {
-   "t": "2026-07-21T19:58:19.175408+00:00",
-   "hash": "92b75f64",
-   "name": "rep-fomccycle-mes",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "PF 1.061"
-  },
-  {
-   "t": "2026-07-21T19:58:19.174504+00:00",
-   "hash": "0f57f763",
-   "name": "rep-nagel-mes",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.211"
-  },
-  {
-   "t": "2026-07-21T19:54:27.438566+00:00",
-   "hash": "ecd00a61",
-   "name": "robust-fomccycle",
-   "status": "passes",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-21T19:54:27.435290+00:00",
-   "hash": "09dc747b",
-   "name": "robust-nagel",
-   "status": "passes",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "wasde-overshoot-fade",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.2
-   },
-   {
-    "rank": 7,
-    "idea": "grain-halt-risk-transfer",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.18
-   },
-   {
-    "rank": 8,
-    "idea": "vol-target-unwind-continuation",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.15
-   },
-   {
-    "rank": 9,
-    "idea": "crypto-expiry-twap-unwind",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.12
-   },
    {
     "rank": 10,
     "idea": "buyback-blackout-regime",
@@ -481,7 +445,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 1,
    "registered": 2,
    "dev3yr": 0,
    "robustness": 0,
@@ -490,10 +454,6 @@
    "golden_staged": 0
   },
   "throughput": [
-   {
-    "date": "2026-07-08",
-    "trials": 0
-   },
    {
     "date": "2026-07-09",
     "trials": 0
@@ -544,7 +504,11 @@
    },
    {
     "date": "2026-07-21",
-    "trials": 11351
+    "trials": 11352
+   },
+   {
+    "date": "2026-07-22",
+    "trials": 4
    }
   ]
  },
@@ -553,8 +517,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 48,
-   "n_killed": 26,
+   "n_tested": 51,
+   "n_killed": 29,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -664,8 +628,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 4,
+   "n_tested": 6,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },

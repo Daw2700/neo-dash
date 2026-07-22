@@ -64,6 +64,8 @@ for h, rs in hist.items():
     if not d3:
         continue
     m = d3[-1]["metrics"]
+    if m.get("pf") is None or m.get("net") is None:
+        continue   # infeasible/aborted results carry no metrics — feed shows them, board can't rank them
     raw = regs[h]["name"] if h in regs else h[:8]
     rows.append({"id": raw, "name": DISPLAY.get(raw, raw), "market": market_of(raw),
                  "tier": tier_of(h), "pinned": h == PINNED_HASH, "n": m["n"],
