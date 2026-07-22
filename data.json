@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:15:09Z",
+  "stamp": "2026-07-22T20:15:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:14:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-fomc-blackout-information-void-persistence",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:15:12Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "zn-fomc-blackout-information-void-persistence",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 14,
     "idea": "mcl-opec-meeting-uncertainty-premium-release",
@@ -448,7 +447,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
