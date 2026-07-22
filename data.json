@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:25:16Z",
+  "stamp": "2026-07-22T05:25:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "decision",
     "started": "2026-07-22T05:25:16Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "M2K",
+    "task": "m2k-mym-rate-shock-duration-rotation-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:25:18Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "m2k-mym-rate-shock-duration-rotation-overshoot",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 12,
     "idea": "mng-final-settlement-physical-exit-window",
@@ -469,7 +468,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 22,
    "dev3yr": 0,
    "robustness": 0,
