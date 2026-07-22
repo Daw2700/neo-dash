@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:17:07Z",
+  "stamp": "2026-07-22T12:19:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 421,
-  "n_results": 530,
-  "n_trials": 30501,
+  "n_results": 531,
+  "n_trials": 30502,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "zs-zc-substitution-ratio-reversion",
-   "name": "zs-zc-substitution-ratio-reversion",
-   "market": "ZC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 165,
-   "wr": 0.497,
-   "usd_mo": 386,
-   "pf": 1.453,
-   "usd_trade": 84.1
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -303,9 +291,29 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
+  },
+  {
+   "id": "b6-vix-m2k",
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 26,
+   "wr": null,
+   "usd_mo": 5,
+   "pf": 1.148,
+   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T12:17:18.445446+00:00",
+   "hash": "1f89e90c",
+   "name": "zs-zc-substitution-ratio-reversion",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T12:15:27.773956+00:00",
    "hash": "e402e77e",
@@ -393,43 +401,10 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.524"
-  },
-  {
-   "t": "2026-07-22T11:58:53.399010+00:00",
-   "hash": "05ba8447",
-   "name": "scout-31-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-late-participation-share-overnight-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:10:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-jump-hazard-self-excitation-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:11:59Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZC",
-    "task": "robustness: zs-zc-substitution-ratio-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:14:46Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 6,
@@ -568,7 +543,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 334
+    "trials": 335
    }
   ]
  },
@@ -1045,26 +1020,6 @@
     }
    ]
   },
-  "zs-zc-substitution-ratio-reversion": {
-   "name": "zs-zc-substitution-ratio-reversion",
-   "market": "ZC",
-   "tier": "candidate",
-   "mechanism": "Corn and soybeans compete for the same acres, so the ZS/ZC price ratio is tethered to a planting-economics anchor that farmers and commercial crushers arbitrage through acreage and substitution decisions; when speculative flow pushes the ratio away from that anchor, commercial hedgers take the other side and are paid as the ratio reverts.",
-   "metrics": {
-    "n": 165,
-    "wr": 0.497,
-    "pf": 1.453,
-    "usd_mo": 386,
-    "usd_trade": 84.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T12:12:02.586017+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1320,6 +1275,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-vix-m2k": {
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
+   "metrics": {
+    "n": 26,
+    "wr": null,
+    "pf": 1.148,
+    "usd_mo": 5,
+    "usd_trade": 6.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.112070+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
