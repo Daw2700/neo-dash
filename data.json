@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:05:02Z",
+  "stamp": "2026-07-22T20:06:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 605,
-  "n_results": 748,
-  "n_trials": 30736,
+  "n_registered": 607,
+  "n_results": 749,
+  "n_trials": 30737,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:06:15.498437+00:00",
+   "hash": "00692986",
+   "name": "rep-vixsoq-mes",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.606"
+  },
+  {
+   "t": "2026-07-22T20:05:59.126003+00:00",
+   "hash": "7622fb3a",
+   "name": "zc-export-inspections-monday-demand-stamp",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T20:04:38.521467+00:00",
    "hash": "8de2d377",
    "name": "mgc-auction-yield-transmission-lag",
@@ -381,22 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.83"
-  },
-  {
-   "t": "2026-07-22T19:47:46.141107+00:00",
-   "hash": "af69f84e",
-   "name": "mnq-complex-wide-inside-day-coil",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.589"
-  },
-  {
-   "t": "2026-07-22T19:44:41.983489+00:00",
-   "hash": "50240541",
-   "name": "mcl-trade-month-vs-calendar-month-offset-hedge-concentration",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.773"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-vix-settlement-spx-rotation-impulse",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:03:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-export-inspections-monday-demand-stamp",
     "stage": "dev3yr",
@@ -502,7 +494,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 85,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -564,7 +556,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 569
+    "trials": 570
    }
   ]
  },
@@ -588,8 +580,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 98,
-   "n_killed": 72,
+   "n_tested": 99,
+   "n_killed": 73,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
