@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:54:17Z",
+  "stamp": "2026-07-22T17:55:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 552,
-  "n_results": 685,
-  "n_trials": 30673,
+  "n_registered": 553,
+  "n_results": 686,
+  "n_trials": 30674,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,12 +307,20 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T17:53:45.862436+00:00",
-   "hash": "600fb33b",
-   "name": "mes-1500et-median-rent-fade",
+   "t": "2026-07-22T17:55:11.387623+00:00",
+   "hash": "cee59095",
+   "name": "m6e-t2-daily-close-onesided-euro-liquidity",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T17:54:32.798538+00:00",
+   "hash": "600fb33b",
+   "name": "mes-1500et-median-rent-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.185"
   },
   {
    "t": "2026-07-22T17:52:19.195135+00:00",
@@ -393,28 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4"
-  },
-  {
-   "t": "2026-07-22T17:36:57.586950+00:00",
-   "hash": "1538f93d",
-   "name": "mgc-india-festival-import-hedge-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.0771"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-clock-minute-jump-asymmetry-liquidity-rent",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:48:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-t2-daily-close-onesided-euro-liquidity",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-japan-fiscalyearend-repatriation-window",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 506
+    "trials": 507
    }
   ]
  },
@@ -547,8 +539,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 91,
-   "n_killed": 67,
+   "n_tested": 92,
+   "n_killed": 68,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
