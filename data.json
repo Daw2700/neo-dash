@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:38:38Z",
+  "stamp": "2026-07-22T04:38:39Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "SIL",
+    "task": "sil-lbma-silver-auction-imbalance-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:38:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-platts-moc-assessment-window-pushback",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:38:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-ny-cut-option-expiry-release",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:38:39Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "sil-lbma-silver-auction-imbalance-window",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.68
-   },
-   {
-    "rank": 2,
-    "idea": "mcl-platts-moc-assessment-window-pushback",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-ny-cut-option-expiry-release",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 4,
     "idea": "mes-am-settled-index-option-opening-print-distortion",
@@ -498,7 +496,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 7,
    "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
