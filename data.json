@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:35:39Z",
+  "stamp": "2026-07-22T17:37:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 543,
-  "n_results": 676,
-  "n_trials": 30664,
+  "n_results": 677,
+  "n_trials": 30665,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:36:57.586950+00:00",
+   "hash": "1538f93d",
+   "name": "mgc-india-festival-import-hedge-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0771"
+  },
+  {
    "t": "2026-07-22T17:35:17.592922+00:00",
    "hash": "3838ecd5",
    "name": "m6e-cls-payin-deadline-liquidity-window",
@@ -393,28 +401,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T17:16:31.556525+00:00",
-   "hash": "c3d12b57",
-   "name": "mym-overnight-carry-crowding-streak-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.83"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "recheck: mgc-india-festival-import-hedge-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:35:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-bank-earnings-kickoff-credit-repricing",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-mnq-oil-shock-sector-weight-dispersion",
     "stage": "dev3yr",
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 497
+    "trials": 498
    }
   ]
  },
