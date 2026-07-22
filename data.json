@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:32:48Z",
+  "stamp": "2026-07-22T06:33:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 267,
-  "n_results": 366,
-  "n_trials": 30337,
+  "n_results": 367,
+  "n_trials": 30338,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:33:08.590911+00:00",
+   "hash": "7ab96a59",
+   "name": "mgc-pboc-reserve-report-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.549"
+  },
+  {
    "t": "2026-07-22T06:32:33.960794+00:00",
    "hash": "6be94a25",
    "name": "m2k-quarter-end-window-dressing-beta-topup",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.945"
-  },
-  {
-   "t": "2026-07-22T06:31:34.201383+00:00",
-   "hash": "7ab96a59",
-   "name": "mgc-pboc-reserve-report-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T06:30:43.899028+00:00",
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-pboc-reserve-report-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:30:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-pipeline-nomination-deadline-window",
     "stage": "dev3yr",
@@ -465,7 +457,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 25,
+   "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +519,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 170
+    "trials": 171
    }
   ]
  },
@@ -580,8 +572,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 12,
+   "n_tested": 14,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
