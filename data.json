@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:54:53Z",
+  "stamp": "2026-07-22T15:54:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T15:50:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-target2-settlement-holiday-unanchored-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:54:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "m6e-target2-settlement-holiday-unanchored-drift",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 8,
     "idea": "mcl-spr-solicitation-award-window",
@@ -488,7 +487,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 69,
    "dev3yr": 0,
    "robustness": 0,
