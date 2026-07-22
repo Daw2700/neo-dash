@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:39:29Z",
+  "stamp": "2026-07-22T06:42:55Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 272,
-  "n_results": 371,
-  "n_trials": 30342,
+  "n_registered": 273,
+  "n_results": 372,
+  "n_trials": 30343,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,20 +311,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:42:22.356204+00:00",
+   "hash": "d6dbe2ca",
+   "name": "zc-first-notice-delivery-convergence-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T06:40:40.777302+00:00",
+   "hash": "45c0ee47",
+   "name": "scout-23-screen",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T06:39:09.450750+00:00",
    "hash": "810832c5",
    "name": "mym-split-divisor-rebalance",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T06:37:52.943314+00:00",
-   "hash": "45c0ee47",
-   "name": "scout-23-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T06:35:40.285507+00:00",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.851"
-  },
-  {
-   "t": "2026-07-22T06:24:07.270702+00:00",
-   "hash": "dfbce2dc",
-   "name": "mes-divexdate-cluster",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -416,19 +416,138 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:34:56Z",
     "state": "running"
-   },
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T06:35:40Z",
-    "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mgc-prior-value-area-acceptance-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-jump-share-decomposition-fade",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-illiquidity-premium-nextday-drift",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mes-volume-conditioned-daily-autocorrelation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mes-variance-risk-premium-carry",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "mcl-intraday-skew-lottery-demand-fade",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mnq-metaorder-splitting-flow-persistence",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mes-slow-moving-capital-lagged-shock-rebound",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "mnq-volume-clock-acceleration-exhaustion",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mes-volatility-signature-noise-regime-switch",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "m2k-return-autocorrelation-regime-adaptive-direction",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-overnight-thin-book-impact-reversion",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "mes-settlement-window-print-pressure-unwind",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 14,
+    "idea": "mes-correlated-degross-day-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 25,
    "dev3yr": 0,
    "robustness": 0,
@@ -491,7 +610,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 175
+    "trials": 176
    }
   ]
  },
