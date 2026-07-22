@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:20:05Z",
+  "stamp": "2026-07-22T09:22:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 341,
-  "n_results": 446,
-  "n_trials": 30417,
+  "n_registered": 342,
+  "n_results": 447,
+  "n_trials": 30418,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,20 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T09:19:16.462465+00:00",
-   "hash": "d3b49d2a",
-   "name": "mes-europe-leg-anchor",
+   "t": "2026-07-22T09:21:33.666350+00:00",
+   "hash": "31aa5ffa",
+   "name": "m6e-carry-crash-asymmetry-unwind-retrace",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:20:17.781047+00:00",
+   "hash": "d3b49d2a",
+   "name": "mes-europe-leg-anchor",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.991"
   },
   {
    "t": "2026-07-22T09:18:36.382738+00:00",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.9057"
-  },
-  {
-   "t": "2026-07-22T09:01:56.042249+00:00",
-   "hash": "0d9bee74",
-   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.461"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:17:19Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-carry-crash-asymmetry-unwind-retrace",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:20:06Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "m6e-carry-crash-asymmetry-unwind-retrace",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 12,
     "idea": "mbt-equity-crashrisk-spillover-premium",
@@ -456,7 +455,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 41,
    "dev3yr": 0,
    "robustness": 0,
@@ -519,7 +518,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 250
+    "trials": 251
    }
   ]
  },
@@ -543,8 +542,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 49,
-   "n_killed": 32,
+   "n_tested": 50,
+   "n_killed": 33,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
