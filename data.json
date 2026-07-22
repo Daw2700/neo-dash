@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:59:12Z",
+  "stamp": "2026-07-22T20:02:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 603,
-  "n_results": 743,
-  "n_trials": 30731,
+  "n_registered": 605,
+  "n_results": 746,
+  "n_trials": 30734,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -249,6 +249,18 @@
    "usd_trade": 14.3
   },
   {
+   "id": "mnq-overnight-origin-session-information",
+   "name": "mnq-overnight-origin-session-information",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 508,
+   "wr": 0.5472,
+   "usd_mo": 471,
+   "pf": 1.317,
+   "usd_trade": 33.4
+  },
+  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -287,21 +299,41 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mcl-eia-day-midsession-to-close-momentum",
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 153,
-   "wr": 0.5033,
-   "usd_mo": 30,
-   "pf": 1.237,
-   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T20:02:32.062937+00:00",
+   "hash": "b8633c34",
+   "name": "mcl-convenience-yield-voltermgate",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T20:01:25.769361+00:00",
+   "hash": "8de2d377",
+   "name": "mgc-auction-yield-transmission-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.093"
+  },
+  {
+   "t": "2026-07-22T19:59:59.288427+00:00",
+   "hash": "f4544f8a",
+   "name": "mnq-overnight-origin-session-information",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.317"
+  },
+  {
+   "t": "2026-07-22T19:59:43.486232+00:00",
+   "hash": "f4544f8a",
+   "name": "mnq-overnight-origin-session-information",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF nan"
+  },
   {
    "t": "2026-07-22T19:59:05.140116+00:00",
    "hash": "83758103",
@@ -309,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.497"
-  },
-  {
-   "t": "2026-07-22T19:58:43.520828+00:00",
-   "hash": "f4544f8a",
-   "name": "mnq-overnight-origin-session-information",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T19:54:10.717963+00:00",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.759"
-  },
-  {
-   "t": "2026-07-22T19:42:46.654450+00:00",
-   "hash": "74b0ed05",
-   "name": "zc-drought-monitor-thursday-release-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.407"
-  },
-  {
-   "t": "2026-07-22T19:42:40.351183+00:00",
-   "hash": "63eb2e45",
-   "name": "mng-daily-cash-window-index-hedge-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.603"
-  },
-  {
-   "t": "2026-07-22T19:37:10.067445+00:00",
-   "hash": "dc2bd904",
-   "name": "mes-wk10-derisk",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.607"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-overnight-origin-session-information",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:57:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-auction-result-real-yield-transmission-lag",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-convenience-yield-vol-term-structure-gate",
     "stage": "dev3yr",
@@ -582,7 +574,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 564
+    "trials": 567
    }
   ]
  },
@@ -591,7 +583,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 102,
+   "n_tested": 103,
    "n_killed": 60,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -635,8 +627,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 35,
-   "n_killed": 28,
+   "n_tested": 36,
+   "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1261,6 +1253,31 @@
     }
    ]
   },
+  "mnq-overnight-origin-session-information": {
+   "name": "mnq-overnight-origin-session-information",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Overnight moves made in the EU block (02:00-08:00 ET) reflect real deep-book risk transfer and get ratified by RTH flow (continuation), while same-size moves made in the thin Asia block (18:00-02:00 ET) are dealer-inventory drift with no counterparty behind it and get retraced by RTH flow (fade); paid for identifying WHICH block produced the overnight move, not how big it was.",
+   "metrics": {
+    "n": 508,
+    "wr": 0.5472,
+    "pf": 1.317,
+    "usd_mo": 471,
+    "usd_trade": 33.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T19:59:43.486232+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T19:59:59.288427+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1334,26 +1351,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mcl-eia-day-midsession-to-close-momentum": {
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
-   "metrics": {
-    "n": 153,
-    "wr": 0.5033,
-    "pf": 1.237,
-    "usd_mo": 30,
-    "usd_trade": 7.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T18:14:48.455567+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
