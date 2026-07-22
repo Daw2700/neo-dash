@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:33:59Z",
+  "stamp": "2026-07-22T11:34:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T11:32:56Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-staggered-settlement-information-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:34:01Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mgc-staggered-settlement-information-lag",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "mes-crossmarket-breadth-gate-continuation",
@@ -519,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
