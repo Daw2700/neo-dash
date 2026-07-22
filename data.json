@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:47:55Z",
+  "stamp": "2026-07-22T04:48:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 220,
-  "n_results": 309,
-  "n_trials": 30280,
+  "n_results": 310,
+  "n_trials": 30281,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:48:01.656417+00:00",
+   "hash": "17d662d7",
+   "name": "n8-mcl-eia-wed",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.051"
+  },
+  {
    "t": "2026-07-22T04:47:29.821530+00:00",
    "hash": "f89113b7",
    "name": "buyback-blackout-regime",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.731"
-  },
-  {
-   "t": "2026-07-22T04:33:46.193435+00:00",
-   "hash": "7dbdc701",
-   "name": "scout-19-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "recheck: n8-mcl-eia-wed",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:45:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "recheck: n9-cot-washout-buy",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MCL",
     "task": "recheck: mcl-producer-hedge-window-rth-drift",
     "stage": "dev3yr",
@@ -531,7 +523,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 113
+    "trials": 114
    }
   ]
  },
