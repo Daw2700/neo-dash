@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:50:12Z",
+  "stamp": "2026-07-22T22:52:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 671,
-  "n_results": 822,
-  "n_trials": 30810,
+  "n_registered": 673,
+  "n_results": 823,
+  "n_trials": 30811,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,12 +303,28 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T22:49:51.831869+00:00",
-   "hash": "69e8a2e0",
-   "name": "mnq-globex-reopen-halfhour-anchor",
+   "t": "2026-07-22T22:52:13.615953+00:00",
+   "hash": "67867d19",
+   "name": "mes-crossmargin-degross-fade",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:52:05.838073+00:00",
+   "hash": "4ca613c0",
+   "name": "mgc-effective-spread-rent-normalization",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T22:50:30.691639+00:00",
+   "hash": "69e8a2e0",
+   "name": "mnq-globex-reopen-halfhour-anchor",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.934"
   },
   {
    "t": "2026-07-22T22:49:50.017108+00:00",
@@ -381,36 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T22:34:20.813065+00:00",
-   "hash": "61cfd248",
-   "name": "scout-47-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:33:12.042392+00:00",
-   "hash": "f044ed39",
-   "name": "mgc-micro-delivery-month-retail-exit",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.451"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-globex-reopen-halfhour-anchor",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:48:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-cross-margin-offset-collapse-degross",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-effective-spread-rent-normalization",
     "stage": "dev3yr",
@@ -493,7 +485,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 91,
+   "registered": 92,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -555,7 +547,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 643
+    "trials": 644
    }
   ]
  },
@@ -564,8 +556,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 107,
-   "n_killed": 64,
+   "n_tested": 108,
+   "n_killed": 65,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
