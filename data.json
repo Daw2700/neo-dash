@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:14:25Z",
+  "stamp": "2026-07-22T17:17:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 532,
-  "n_results": 664,
-  "n_trials": 30652,
+  "n_registered": 534,
+  "n_results": 667,
+  "n_trials": 30655,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,9 +307,33 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T17:14:22.251808+00:00",
+   "t": "2026-07-22T17:16:31.556525+00:00",
+   "hash": "c3d12b57",
+   "name": "mym-overnight-carry-crowding-streak-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.83"
+  },
+  {
+   "t": "2026-07-22T17:16:16.770602+00:00",
+   "hash": "3c92598e",
+   "name": "mes-zn-extreme-ordering-lead-lag-residual",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T17:15:13.937346+00:00",
    "hash": "c78d3ee8",
    "name": "zn-bill-settlement-thursday-cash-drain",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.442"
+  },
+  {
+   "t": "2026-07-22T17:14:41.726887+00:00",
+   "hash": "897d9077",
+   "name": "ROBUSTNESS-BATTERY mes-zn-extreme-ordering-lead-lag-residual (strategy 3c92598ef9e748b0)",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.657"
-  },
-  {
-   "t": "2026-07-22T16:56:18.586363+00:00",
-   "hash": "8af28ad6",
-   "name": "m2k-crossmarket-vol-normalization-exit-clock",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.678"
-  },
-  {
-   "t": "2026-07-22T16:53:27.394402+00:00",
-   "hash": "1bf9297c",
-   "name": "mnq-volclock-exit-horizon",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.07"
-  },
-  {
-   "t": "2026-07-22T16:53:02.506334+00:00",
-   "hash": "66733061",
-   "name": "mgc-am-zerotick-staleness-pm-range-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.012"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-bill-settlement-thursday-cash-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:12:34Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MYM",
     "task": "mym-overnight-carry-crowding-streak-decay",
     "stage": "dev3yr",
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 485
+    "trials": 488
    }
   ]
  },
@@ -567,8 +559,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 5,
+   "n_tested": 7,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -650,8 +642,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 42,
-   "n_killed": 34,
+   "n_tested": 43,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
