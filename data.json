@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:49:04Z",
+  "stamp": "2026-07-22T16:52:31Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 522,
-  "n_results": 653,
-  "n_trials": 30641,
+  "n_registered": 525,
+  "n_results": 654,
+  "n_trials": 30642,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:52:11.334164+00:00",
+   "hash": "33886ad2",
+   "name": "mbt-london-brr-reference-window-impact",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.6107"
+  },
+  {
+   "t": "2026-07-22T16:51:48.121678+00:00",
+   "hash": "66733061",
+   "name": "mgc-am-zerotick-staleness-pm-range-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T16:51:25.666754+00:00",
+   "hash": "1bf9297c",
+   "name": "mnq-volclock-exit-horizon",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T16:46:09.676265+00:00",
    "hash": "dd939f8a",
    "name": "mym-constituent-halt-stale-leg-catchup",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.959"
-  },
-  {
-   "t": "2026-07-22T16:36:36.626550+00:00",
-   "hash": "840512ac",
-   "name": "zc-neglect-catchup-attention-deficit",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.09"
-  },
-  {
-   "t": "2026-07-22T16:35:43.596801+00:00",
-   "hash": "5c58eca4",
-   "name": "mnq-volume-peak-clock-daytype",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T16:34:01.876597+00:00",
-   "hash": "31adecf6",
-   "name": "robustness-battery/mnq-volume-peak-clock-daytype",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-volume-clock-exit-horizon-normalization",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:49:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MBT",
-    "task": "mbt-london-brr-reference-window-impact",
     "stage": "dev3yr",
     "started": "2026-07-22T16:49:04Z",
     "state": "running"
@@ -533,7 +525,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 72,
+   "registered": 74,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -595,7 +587,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 474
+    "trials": 475
    }
   ]
  },
@@ -684,8 +676,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 7,
+   "n_tested": 12,
+   "n_killed": 8,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
