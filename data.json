@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:41:18Z",
+  "stamp": "2026-07-22T12:48:49Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 429,
+  "n_registered": 430,
   "n_results": 542,
   "n_trials": 30513,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T12:42:56.908330+00:00",
+   "hash": "9cf84e6a",
+   "name": "scout-32-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T12:41:00.375950+00:00",
    "hash": "ac40602b",
    "name": "m6e-national-cpi-mosaic-completion",
@@ -397,31 +405,132 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.448"
-  },
-  {
-   "t": "2026-07-22T12:17:18.445446+00:00",
-   "hash": "1f89e90c",
-   "name": "zs-zc-substitution-ratio-reversion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T12:36:50Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-opening-range-touch-count-liquidity-depletion",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": null
+   },
+   {
+    "rank": 2,
+    "idea": "mes-scheduled-event-nonreaction-absorption",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-low-volume-node-traversal-acceleration",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": null
+   },
+   {
+    "rank": 4,
+    "idea": "mes-first-extreme-ordering-inventory-carry",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-time-above-vwap-shortfall-pressure",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": null
+   },
+   {
+    "rank": 6,
+    "idea": "mgc-failed-auction-extreme-volume-fade",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": null
+   },
+   {
+    "rank": 7,
+    "idea": "mes-volofvol-hedging-instability-regime",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 8,
+    "idea": "zc-dollar-competitiveness-repricing-lag",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": null
+   },
+   {
+    "rank": 9,
+    "idea": "mes-xsec-realized-skew-rank",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 10,
+    "idea": "mng-associated-gas-supply-channel",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": null
+   },
+   {
+    "rank": 11,
+    "idea": "mes-event-cluster-variance-bracket",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 12,
+    "idea": "mes-micro-complex-retail-mix-contrarian",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": null
+   },
+   {
+    "rank": 13,
+    "idea": "mnq-volume-clock-opening-range",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": null
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
-   "registered": 58,
+   "idea": 13,
+   "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
