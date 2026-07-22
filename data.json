@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:22:54Z",
+  "stamp": "2026-07-22T17:25:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 535,
-  "n_results": 668,
-  "n_trials": 30656,
+  "n_registered": 537,
+  "n_results": 670,
+  "n_trials": 30658,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:25:12.826075+00:00",
+   "hash": "0217bacb",
+   "name": "met-ethbtc-ratio-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.38"
+  },
+  {
+   "t": "2026-07-22T17:25:10.437299+00:00",
+   "hash": "2d7480a3",
+   "name": "mgc-corrsign-dip-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.075"
+  },
+  {
    "t": "2026-07-22T17:19:33.698252+00:00",
    "hash": "3c92598e",
    "name": "mes-zn-extreme-ordering-lead-lag-residual",
@@ -385,22 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.102"
-  },
-  {
-   "t": "2026-07-22T17:02:32.443893+00:00",
-   "hash": "8af28ad6",
-   "name": "m2k-crossmarket-vol-normalization-exit-clock",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T16:59:13.556446+00:00",
-   "hash": "1bf9297c",
-   "name": "mnq-volclock-exit-horizon",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -409,22 +409,6 @@
     "agent": "tester-1",
     "market": "ZN",
     "task": "zn-round-yield-handle-magnet",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:22:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-equity-gold-correlation-sign-regime-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:22:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MET",
-    "task": "met-ethbtc-ratio-regime-risk-appetite",
     "stage": "dev3yr",
     "started": "2026-07-22T17:22:54Z",
     "state": "running"
@@ -505,7 +489,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 489
+    "trials": 491
    }
   ]
  },
@@ -558,8 +542,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 32,
-   "n_killed": 25,
+   "n_tested": 33,
+   "n_killed": 26,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -605,8 +589,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 7,
+   "n_tested": 8,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
