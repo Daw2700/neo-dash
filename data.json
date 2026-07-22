@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:56:39Z",
+  "stamp": "2026-07-22T07:56:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mnq-algo-clock-slice-impact",
     "stage": "dev3yr",
     "started": "2026-07-22T07:54:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "recheck: mes-weekend-crypto-information-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:56:40Z",
     "state": "running"
    }
   ],
