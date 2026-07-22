@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:28:15Z",
+  "stamp": "2026-07-22T01:28:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,21 +416,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "robustness: b10-nagel-vix-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:19:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "zn-volshock-equity-degross-rebound",
     "stage": "dev3yr",
     "started": "2026-07-22T01:28:15Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-producer-hedge-window-rth-drift",
     "stage": "dev3yr",
