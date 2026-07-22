@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:38:30Z",
+  "stamp": "2026-07-22T00:38:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -439,6 +439,14 @@
     "task": "robustness: b2-fomc-predrift",
     "stage": "dev3yr",
     "started": "2026-07-22T00:38:08Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": null,
+    "task": "robustness: b2-cpi-follow",
+    "stage": "dev3yr",
+    "started": "2026-07-22T00:38:31Z",
     "state": "running"
    }
   ],
