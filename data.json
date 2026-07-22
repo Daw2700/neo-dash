@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:40:09Z",
+  "stamp": "2026-07-22T16:40:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 517,
-  "n_results": 647,
-  "n_trials": 30635,
+  "n_registered": 518,
+  "n_results": 648,
+  "n_trials": 30636,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,20 +307,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:40:15.510862+00:00",
+   "hash": "9b1d00ce",
+   "name": "mes-maker-risk-budget-crowdout",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T16:40:12.842871+00:00",
+   "hash": "29742849",
+   "name": "m6e-ecb-concertation-fix-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.3746"
+  },
+  {
    "t": "2026-07-22T16:40:02.638965+00:00",
    "hash": "840512ac",
    "name": "zc-neglect-catchup-attention-deficit",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.09"
-  },
-  {
-   "t": "2026-07-22T16:39:29.389634+00:00",
-   "hash": "29742849",
-   "name": "m6e-ecb-concertation-fix-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T16:36:40.705912+00:00",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.629"
-  },
-  {
-   "t": "2026-07-22T16:24:23.996292+00:00",
-   "hash": "35189441",
-   "name": "mnq-day-margin-expiry-forced-flatten",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.906"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-ecb-concertation-fix-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:38:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MYM",
     "task": "mym-constituent-halt-stale-leg-catchup",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 468
+    "trials": 469
    }
   ]
  },
@@ -623,8 +615,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 20,
+   "n_tested": 22,
+   "n_killed": 21,
    "book_sleeves": [],
    "agents_now": []
   },
