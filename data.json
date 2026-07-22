@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:06:39Z",
+  "stamp": "2026-07-22T15:06:42Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-participation-diffusion-metaorder-residual",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:06:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-block-report-lag-hedge-leak",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:06:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-tas-band-exhaustion-spillover",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:06:42Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-participation-diffusion-metaorder-residual",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "m6e-block-report-lag-hedge-leak",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 3,
-    "idea": "mgc-tas-band-exhaustion-spillover",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mes-globex-precancel-lockdown-reopen-divergence",
@@ -525,7 +523,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 65,
    "dev3yr": 0,
    "robustness": 0,
