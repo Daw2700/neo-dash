@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:09:28Z",
+  "stamp": "2026-07-22T20:12:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 608,
-  "n_results": 752,
-  "n_trials": 30740,
+  "n_results": 753,
+  "n_trials": 30741,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T20:08:34.339607+00:00",
+   "t": "2026-07-22T20:10:09.444332+00:00",
    "hash": "551ff7d3",
    "name": "mng-bidweek-fixing-concentration",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.131"
   },
   {
    "t": "2026-07-22T20:08:19.075115+00:00",
@@ -403,26 +403,10 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-overnight-origin-session-information",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:02:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-bidweek-physical-fixing-hedge-concentration",
     "stage": "dev3yr",
     "started": "2026-07-22T20:06:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "replication: mnq-overnight-origin-session-information",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:07:12Z",
     "state": "running"
    }
   ],
@@ -493,7 +477,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 86,
+   "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -555,7 +539,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 573
+    "trials": 574
    }
   ]
  },
@@ -635,8 +619,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 16,
+   "n_tested": 21,
+   "n_killed": 17,
    "book_sleeves": [],
    "agents_now": []
   },
