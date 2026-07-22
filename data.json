@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:02:10Z",
+  "stamp": "2026-07-22T11:02:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T11:01:46Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-har-vol-forecast-error-underreaction",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:02:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-eia-release-shift-stranded-positioning",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:02:12Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-har-vol-forecast-error-underreaction",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 7,
-    "idea": "mcl-eia-release-shift-stranded-positioning",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 8,
     "idea": "mng-unconfirmed-idiosyncratic-move-reversion",
@@ -493,7 +491,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 6,
    "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
