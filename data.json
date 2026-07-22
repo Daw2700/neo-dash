@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:27:55Z",
+  "stamp": "2026-07-22T14:30:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,32 +404,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-information-arrival-quiescence-range-band-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:19:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-hedging-pressure-horizon-decomposition",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:19:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "robustness: mnq-participation-surprise-orb",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:25:28Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 4,
