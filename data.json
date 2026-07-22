@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:07:43Z",
+  "stamp": "2026-07-22T11:09:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 390,
-  "n_results": 496,
-  "n_trials": 30467,
+  "n_registered": 391,
+  "n_results": 497,
+  "n_trials": 30468,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,9 +311,17 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T11:07:37.354518+00:00",
+   "t": "2026-07-22T11:08:57.880246+00:00",
    "hash": "31074db3",
    "name": "mcl-eia-release-shift-stranded-positioning",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.475"
+  },
+  {
+   "t": "2026-07-22T11:08:08.324075+00:00",
+   "hash": "4264182c",
+   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -397,28 +405,12 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 0.682"
-  },
-  {
-   "t": "2026-07-22T10:49:58.764677+00:00",
-   "hash": "1618f750",
-   "name": "rep-zn-cash-market-closed-futures-open-asymmetry-m2k",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-eia-release-shift-stranded-positioning",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:02:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-unconfirmed-idiosyncratic-move-reversion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-gold-volratio-leverage-proxy-unwind",
     "stage": "dev3yr",
@@ -536,7 +528,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 300
+    "trials": 301
    }
   ]
  },
@@ -607,8 +599,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 25,
-   "n_killed": 15,
+   "n_tested": 26,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
