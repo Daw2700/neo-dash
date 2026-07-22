@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:23:55Z",
+  "stamp": "2026-07-22T04:24:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,21 +408,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "mnq-posbondcorr-discountrate-dip-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:21:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "robustness: mnq-close-on-lows-liquidation-overnight-repair",
     "stage": "dev3yr",
     "started": "2026-07-22T04:23:55Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-policy-differential-carry-roll-harvest",
     "stage": "dev3yr",
