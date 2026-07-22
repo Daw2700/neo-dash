@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:42:55Z",
+  "stamp": "2026-07-22T06:42:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:34:56Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-prior-value-area-acceptance-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:42:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-jump-share-decomposition-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:42:57Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mgc-prior-value-area-acceptance-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-jump-share-decomposition-fade",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "mnq-illiquidity-premium-nextday-drift",
@@ -547,7 +545,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 12,
    "registered": 25,
    "dev3yr": 0,
    "robustness": 0,
