@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:18:35Z",
+  "stamp": "2026-07-22T08:23:51Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 312,
-  "n_results": 416,
-  "n_trials": 30387,
+  "n_registered": 313,
+  "n_results": 417,
+  "n_trials": 30388,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -245,18 +245,6 @@
    }
   },
   {
-   "id": "sil-dual-identity-beta-conflict",
-   "name": "sil-dual-identity-beta-conflict",
-   "market": "SIL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 340,
-   "wr": 0.5412,
-   "usd_mo": 177,
-   "pf": 1.19,
-   "usd_trade": 18.8
-  },
-  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -307,9 +295,37 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T08:21:27.795808+00:00",
+   "hash": "378ec9fb",
+   "name": "sil-dual-identity-beta-conflict",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T08:20:05.687403+00:00",
+   "hash": "f209cc15",
+   "name": "ROBUSTNESS-PROTOCOL sil-dual-identity-beta-conflict (378ec9fb357c4c88)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T08:16:02.712080+00:00",
    "hash": "378ec9fb",
@@ -389,47 +405,141 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.05"
-  },
-  {
-   "t": "2026-07-22T08:03:31.847087+00:00",
-   "hash": "4611b77f",
-   "name": "mbt-disposition-run-profit-taking",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9585"
-  },
-  {
-   "t": "2026-07-22T07:57:57.327554+00:00",
-   "hash": "f36145d3",
-   "name": "algo-clock-slice-impact",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.5487"
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T08:13:10Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mcl-option-expiry-gamma-pin-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.5
    },
    {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "robustness: sil-dual-identity-beta-conflict",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:18:35Z",
-    "state": "running"
+    "rank": 2,
+    "idea": "mes-order-flow-toxicity-liquidity-withdrawal",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mes-variation-margin-call-preopen-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "zn-treasury-buyback-operation-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-london-bank-holiday-discovery-transfer",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "mbt-monthly-expiry-basis-convergence-unwind",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "zn-fomc-minutes-release-overreaction-fade",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mes-vix-etp-daily-roll-close-flow",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "mes-bond-market-holiday-rate-discovery-void",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "mbt-mgc-debasement-hedge-substitution-reversion",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "zc-overnight-session-flow-persistence",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "mes-earnings-season-uncertainty-resolution-drift",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "met-us-morning-risk-transfer-drift",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 14,
+    "idea": "zc-post-close-macro-information-catchup",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
-   "registered": 35,
+   "idea": 14,
+   "registered": 36,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -491,7 +601,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 220
+    "trials": 221
    }
   ]
  },
@@ -1148,26 +1258,6 @@
     "apex_max": 6
    }
   },
-  "sil-dual-identity-beta-conflict": {
-   "name": "sil-dual-identity-beta-conflict",
-   "market": "SIL",
-   "tier": "candidate",
-   "mechanism": "Silver is simultaneously a monetary metal and an industrial input, so it carries two loadings that normally point the same way; when the monetary signal (MGC) and the industrial/cyclical signal (MES) disagree on direction, silver has no consistent anchor, dealers widen, and the prior-day displacement in SIL is indeterminacy rather than information, so it should fade rather than continue.",
-   "metrics": {
-    "n": 340,
-    "wr": 0.5412,
-    "pf": 1.19,
-    "usd_mo": 177,
-    "usd_trade": 18.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T08:16:02.712080+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1252,6 +1342,31 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
