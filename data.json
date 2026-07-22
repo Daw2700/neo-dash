@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:23:39Z",
+  "stamp": "2026-07-22T23:23:42Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-steepness-gated-carry-rolldown-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:23:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-us-rate-shock-transmission-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:23:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-secondtier-release-attention-graded-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:23:42Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zn-steepness-gated-carry-rolldown-overnight",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 2,
-    "idea": "m6e-us-rate-shock-transmission-lag",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 3,
-    "idea": "mes-secondtier-release-attention-graded-drift",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 4,
     "idea": "mnq-index-52wk-high-anchor-continuation",
@@ -476,7 +474,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 5,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
