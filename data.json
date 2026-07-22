@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:06:42Z",
+  "stamp": "2026-07-22T15:09:48Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 477,
-  "n_results": 604,
-  "n_trials": 30592,
+  "n_registered": 480,
+  "n_results": 606,
+  "n_trials": 30594,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:09:38.673591+00:00",
+   "hash": "4d6af5e1",
+   "name": "m6e-block-report-lag-hedge-leak",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.72"
+  },
+  {
+   "t": "2026-07-22T15:09:34.584090+00:00",
+   "hash": "e74a0c4d",
+   "name": "mes-vol-hhi-orb",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.972"
+  },
+  {
+   "t": "2026-07-22T15:08:45.733828+00:00",
+   "hash": "bc99cbf0",
+   "name": "mgc-tas-band-exhaustion-spillover",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T15:03:43.320389+00:00",
    "hash": "e0567bd7",
    "name": "zn-va-rho-hedge-rebalance",
@@ -377,44 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T14:47:40.313591+00:00",
-   "hash": "6f5b8beb",
-   "name": "mgc-offshore-mark-ratification-at-ny-open",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T14:43:24.204005+00:00",
-   "hash": "6f5b8beb",
-   "name": "mgc-offshore-mark-ratification-at-ny-open",
-   "status": "overturned",
-   "kind": "result",
-   "detail": "PF 1.176"
-  },
-  {
-   "t": "2026-07-22T14:42:01.552666+00:00",
-   "hash": "e62a9100",
-   "name": "zc-natgas-fertilizer-costpush-diffusion-lag",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.406"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-participation-diffusion-metaorder-residual",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:06:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-block-report-lag-hedge-leak",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-tas-band-exhaustion-spillover",
     "stage": "dev3yr",
@@ -524,7 +516,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 65,
+   "registered": 66,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 425
+    "trials": 427
    }
   ]
  },
@@ -610,8 +602,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 81,
-   "n_killed": 59,
+   "n_tested": 82,
+   "n_killed": 60,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -695,8 +687,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 18,
+   "n_tested": 20,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
