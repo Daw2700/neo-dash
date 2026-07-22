@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:54:47Z",
+  "stamp": "2026-07-22T18:57:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 578,
-  "n_results": 715,
-  "n_trials": 30703,
+  "n_registered": 579,
+  "n_results": 717,
+  "n_trials": 30705,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -237,18 +237,6 @@
    "usd_trade": 14.3
   },
   {
-   "id": "zs-holiday-compressed-week-hedge-budget",
-   "name": "zs-holiday-compressed-week-hedge-budget",
-   "market": "ZS",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 120,
-   "wr": 0.5583,
-   "usd_mo": 236,
-   "pf": 1.325,
-   "usd_trade": 70.7
-  },
-  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -299,16 +287,44 @@
    "usd_mo": 30,
    "pf": 1.237,
    "usd_trade": 7.1
+  },
+  {
+   "id": "rep-nagel-mes",
+   "name": "rep-nagel-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 62,
+   "wr": null,
+   "usd_mo": 16,
+   "pf": 1.211,
+   "usd_trade": 9.3
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T18:54:19.805883+00:00",
-   "hash": "554bd3b2",
-   "name": "mcl-jump-intensity-premium",
+   "t": "2026-07-22T18:56:28.490301+00:00",
+   "hash": "e4ddd6dc",
+   "name": "zs-holiday-compressed-week-hedge-budget",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 1.083"
+  },
+  {
+   "t": "2026-07-22T18:55:43.470094+00:00",
+   "hash": "9af60eae",
+   "name": "rep-zs-holiday-compressed-week-hedge-budget-zc",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:55:11.883966+00:00",
+   "hash": "554bd3b2",
+   "name": "mcl-jump-intensity-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.804"
   },
   {
    "t": "2026-07-22T18:52:31.970393+00:00",
@@ -381,22 +397,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T18:36:20.625654+00:00",
-   "hash": "5357b32f",
-   "name": "xsec-commodity-hedgepressure-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.007"
-  },
-  {
-   "t": "2026-07-22T18:35:38.798660+00:00",
-   "hash": "6c7bfff5",
-   "name": "xmkt-hourly-systematic-share-divergence-conditioning",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.674"
   }
  ],
  "pipeline": {
@@ -415,6 +415,14 @@
     "task": "xsec-commodity-jump-risk-premium-rank",
     "stage": "dev3yr",
     "started": "2026-07-22T18:52:09Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "replication: zs-holiday-compressed-week-hedge-budget",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:54:49Z",
     "state": "running"
    }
   ],
@@ -547,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 536
+    "trials": 538
    }
   ]
  },
@@ -618,8 +626,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 34,
-   "n_killed": 19,
+   "n_tested": 35,
+   "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1196,31 +1204,6 @@
     }
    ]
   },
-  "zs-holiday-compressed-week-hedge-budget": {
-   "name": "zs-holiday-compressed-week-hedge-budget",
-   "market": "ZS",
-   "tier": "candidate",
-   "mechanism": "A US holiday week gives commercial grain hedgers and index programs only four sessions to clear a weeks worth of scheduled hedging and roll flow, so per session impact from the hedger side rises and is paid by whoever supplies liquidity; the unit tested is the whole compressed week, every session in it, not just the single day adjacent to the holiday.",
-   "metrics": {
-    "n": 120,
-    "wr": 0.5583,
-    "pf": 1.325,
-    "usd_mo": 236,
-    "usd_trade": 70.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T18:46:33.204090+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T18:52:15.073417+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1312,6 +1295,26 @@
      "t": "2026-07-22T18:14:48.455567+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
+    }
+   ]
+  },
+  "rep-nagel-mes": {
+   "name": "rep-nagel-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Liquidity-provision reversal premium is market-wide and must appear on MES when VIX is elevated",
+   "metrics": {
+    "n": 62,
+    "wr": null,
+    "pf": 1.211,
+    "usd_mo": 16,
+    "usd_trade": 9.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T19:58:19.174504+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
     }
    ]
   }
