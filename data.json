@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:56:19Z",
+  "stamp": "2026-07-22T04:59:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 226,
-  "n_results": 318,
-  "n_trials": 30289,
+  "n_results": 321,
+  "n_trials": 30292,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -173,6 +173,18 @@
    }
   },
   {
+   "id": "mes-gold-overnight-macro-signal-open-continuation",
+   "name": "mes-gold-overnight-macro-signal-open-continuation",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 142,
+   "wr": 0.5704,
+   "usd_mo": 45,
+   "pf": 1.388,
+   "usd_trade": 11.5
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -291,28 +303,32 @@
    "usd_mo": -24,
    "pf": 0.958,
    "usd_trade": -3.2
-  },
-  {
-   "id": "silver-london-to-comex-handoff",
-   "name": "silver-london-to-comex-handoff",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 1548,
-   "wr": 0.4522,
-   "usd_mo": -435,
-   "pf": 0.88,
-   "usd_trade": -10.1
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T04:56:14.033396+00:00",
+   "t": "2026-07-22T04:58:04.818349+00:00",
+   "hash": "8f07daa6",
+   "name": "zc-export-inspections-monday-shipment-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1"
+  },
+  {
+   "t": "2026-07-22T04:57:15.755183+00:00",
    "hash": "cc36a778",
    "name": "mes-gold-overnight-macro-signal-open-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.388"
+  },
+  {
+   "t": "2026-07-22T04:57:08.802242+00:00",
+   "hash": "746e1301",
+   "name": "mes-overnight-risk-premium-unconditional",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0472"
   },
   {
    "t": "2026-07-22T04:56:02.191054+00:00",
@@ -385,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.021"
-  },
-  {
-   "t": "2026-07-22T04:48:36.925108+00:00",
-   "hash": "70ea1df0",
-   "name": "recheck-mcl-producer-hedge-window-rth-drift",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:48:01.656417+00:00",
-   "hash": "17d662d7",
-   "name": "n8-mcl-eia-wed",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.051"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-gold-overnight-macro-signal-open-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:54:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "recheck: mes-overnight-risk-premium-unconditional",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:55:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "recheck: zc-export-inspections-monday-shipment-repricing",
     "stage": "dev3yr",
@@ -551,7 +535,7 @@
   ],
   "funnel": {
    "idea": 13,
-   "registered": 20,
+   "registered": 19,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -613,7 +597,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 122
+    "trials": 125
    }
   ]
  },
@@ -637,7 +621,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 22,
+   "n_tested": 23,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -1120,6 +1104,26 @@
     "apex_max": 1
    }
   },
+  "mes-gold-overnight-macro-signal-open-continuation": {
+   "name": "mes-gold-overnight-macro-signal-open-continuation",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Gold trades a deep London session while US equity cash is shut, so an overnight real-rate/risk repricing gets fully expressed in MGC but only partially in thin equity futures; the US equity open is the first moment that repricing meets real depth and index desks complete it, producing sign-matched MES continuation after the open.",
+   "metrics": {
+    "n": 142,
+    "wr": 0.5704,
+    "pf": 1.388,
+    "usd_mo": 45,
+    "usd_trade": 11.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:57:15.755183+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1327,26 +1331,6 @@
    "verdict_history": [
     {
      "t": "2026-07-22T04:30:38.572710+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "silver-london-to-comex-handoff": {
-   "name": "silver-london-to-comex-handoff",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Silver price discovery happens in London physical (LBMA) hours and that bid carries into the US pre-open; once COMEX paper hours open, industrial hedgers and dealers press supply back into the session where size actually trades. The payer is the London-hours inventory holder who must transfer inventory risk into the US session.",
-   "metrics": {
-    "n": 1548,
-    "wr": 0.4522,
-    "pf": 0.88,
-    "usd_mo": -435,
-    "usd_trade": -10.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T23:49:09.458310+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
