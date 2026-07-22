@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:35:53Z",
+  "stamp": "2026-07-22T22:38:25Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 666,
-  "n_results": 815,
-  "n_trials": 30803,
+  "n_results": 817,
+  "n_trials": 30805,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "zc-rma-volatility-factor-five-day-window",
+   "name": "zc-rma-volatility-factor-five-day-window",
+   "market": "ZC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 15,
+   "wr": 0.7333,
+   "usd_mo": 39,
+   "pf": 2.897,
+   "usd_trade": 94.1
   },
   {
    "id": "mym-price-weighted-exdiv-mechanical-drop",
@@ -287,21 +299,25 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mcl-eia-day-midsession-to-close-momentum",
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 153,
-   "wr": 0.5033,
-   "usd_mo": 30,
-   "pf": 1.237,
-   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T22:36:10.128491+00:00",
+   "hash": "ac69559c",
+   "name": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.004"
+  },
+  {
+   "t": "2026-07-22T22:36:03.056205+00:00",
+   "hash": "14f51e73",
+   "name": "zc-rma-volatility-factor-five-day-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.897"
+  },
   {
    "t": "2026-07-22T22:35:38.217463+00:00",
    "hash": "5ab88670",
@@ -311,25 +327,9 @@
    "detail": "PF None"
   },
   {
-   "t": "2026-07-22T22:35:14.896691+00:00",
-   "hash": "ac69559c",
-   "name": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
    "t": "2026-07-22T22:34:20.813065+00:00",
    "hash": "61cfd248",
    "name": "scout-47-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:34:17.252045+00:00",
-   "hash": "14f51e73",
-   "name": "zc-rma-volatility-factor-five-day-window",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -402,14 +402,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-rma-volatility-factor-five-day-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:32:43Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
     "stage": "dev3yr",
@@ -429,7 +421,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 91,
+   "registered": 89,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 636
+    "trials": 638
    }
   ]
  },
@@ -515,8 +507,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 111,
-   "n_killed": 83,
+   "n_tested": 112,
+   "n_killed": 84,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -618,7 +610,7 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 34,
+   "n_tested": 35,
    "n_killed": 30,
    "book_sleeves": [],
    "agents_now": []
@@ -948,6 +940,26 @@
     "apex_max": 2
    }
   },
+  "zc-rma-volatility-factor-five-day-window": {
+   "name": "zc-rma-volatility-factor-five-day-window",
+   "market": "ZC",
+   "tier": "candidate",
+   "mechanism": "USDA RMA sets the corn crop-insurance volatility factor from implied vols averaged over only the final five trading days of February, fixing premium economics for roughly $100bn of revenue-protection coverage; insurers, reinsurers, and approved providers therefore have vol exposure marked in a precisely dated five-session slot and transact (vol-hedge / delta-hedge) around it, which should show up as elevated realized-range / breakout behavior in ZC futures on those specific five sessions, distinct from the whole-February MTD price-average mean-reversion mechanism already tested (zc-crop-insurance-feb-discovery, hash babd2e0218808469).",
+   "metrics": {
+    "n": 15,
+    "wr": 0.7333,
+    "pf": 2.897,
+    "usd_mo": 39,
+    "usd_trade": 94.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T22:36:03.056205+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mym-price-weighted-exdiv-mechanical-drop": {
    "name": "mym-price-weighted-exdiv-mechanical-drop",
    "market": "MYM",
@@ -1243,26 +1255,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mcl-eia-day-midsession-to-close-momentum": {
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
-   "metrics": {
-    "n": 153,
-    "wr": 0.5033,
-    "pf": 1.237,
-    "usd_mo": 30,
-    "usd_trade": 7.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T18:14:48.455567+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
