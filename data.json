@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:54:31Z",
+  "stamp": "2026-07-22T04:55:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 223,
-  "n_results": 316,
-  "n_trials": 30287,
+  "n_registered": 225,
+  "n_results": 317,
+  "n_trials": 30288,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:55:49.512996+00:00",
+   "hash": "746e1301",
+   "name": "mes-overnight-risk-premium-unconditional",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.047"
+  },
+  {
+   "t": "2026-07-22T04:55:16.428059+00:00",
+   "hash": "8f07daa6",
+   "name": "zc-export-inspections-monday-shipment-repricing",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:53:39.506975+00:00",
    "hash": "f3604733",
    "name": "mgc-cash-close-realrate-remark",
@@ -385,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.97"
-  },
-  {
-   "t": "2026-07-22T04:46:50.091159+00:00",
-   "hash": "e88c9134",
-   "name": "buyback-blackout-regime-RECHECK",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:46:19.007405+00:00",
-   "hash": "50f8d6a7",
-   "name": "n8-mcl-eia-wed-RECHECK",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-overnight-risk-premium-unconditional",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:53:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-export-inspections-monday-shipment-repricing",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-gold-overnight-macro-signal-open-continuation",
     "stage": "dev3yr",
@@ -551,7 +543,7 @@
   ],
   "funnel": {
    "idea": 13,
-   "registered": 19,
+   "registered": 20,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -613,7 +605,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 120
+    "trials": 121
    }
   ]
  },
@@ -637,8 +629,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 13,
+   "n_tested": 22,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
