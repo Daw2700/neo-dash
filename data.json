@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:45:07Z",
+  "stamp": "2026-07-22T20:45:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T20:43:23Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-monthly-hedge-deadline-vol-ramp",
+    "stage": "dev3yr",
+    "started": "2026-07-22T20:45:09Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mng-monthly-hedge-deadline-vol-ramp",
-    "source": "data-screen",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.34
-   },
    {
     "rank": 10,
     "idea": "mbt-treasury-company-monday-disclosure-window",
@@ -475,7 +474,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
