@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:25:51Z",
+  "stamp": "2026-07-22T19:25:53Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "mnq-vwap-twap-participation-skew",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:25:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZC",
+    "task": "zc-crop-insurance-price-discovery-february",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:25:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-quarter-week10-preexpiry-derisk",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:25:53Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mnq-vwap-twap-participation-skew",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "zc-crop-insurance-price-discovery-february",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "mes-quarter-week10-preexpiry-derisk",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 4,
     "idea": "sil-micro-options-void-undamped-continuation",
@@ -516,7 +514,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 83,
    "dev3yr": 0,
    "robustness": 0,
