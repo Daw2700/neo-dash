@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:34:24Z",
+  "stamp": "2026-07-22T03:34:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,38 +408,35 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 8,
-    "idea": "mym-price-weight-earnings-dislocation",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.42
+    "agent": "tester-1",
+    "market": "MYM",
+    "task": "mym-price-weight-earnings-dislocation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:34:26Z",
+    "state": "running"
    },
    {
-    "rank": 9,
-    "idea": "zn-quarter-end-dealer-balance-sheet-withdrawal",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.38
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-quarter-end-dealer-balance-sheet-withdrawal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:34:26Z",
+    "state": "running"
    },
    {
-    "rank": 10,
-    "idea": "mes-europe-closed-us-open-thin-book-momentum",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-europe-closed-us-open-thin-book-momentum",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:34:26Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 3,
+   "idea": 0,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
