@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:55:43Z",
+  "stamp": "2026-07-22T15:58:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 499,
-  "n_results": 628,
-  "n_trials": 30616,
+  "n_registered": 502,
+  "n_results": 629,
+  "n_trials": 30617,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:58:22.155532+00:00",
+   "hash": "682a4c3a",
+   "name": "m6e-target2-holiday-unanchored-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1"
+  },
+  {
+   "t": "2026-07-22T15:57:58.930558+00:00",
+   "hash": "69cb3a6c",
+   "name": "mcl-spr-solicitation-award-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T15:57:42.271171+00:00",
+   "hash": "b2314a24",
+   "name": "zn-reserve-maintenance-cycle",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T15:55:26.134585+00:00",
    "hash": "9e36913b",
    "name": "xmkt-epps-quiet-day-fade",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.022"
-  },
-  {
-   "t": "2026-07-22T15:38:13.533510+00:00",
-   "hash": "f7e7e096",
-   "name": "mnq-two-sided-auction-balance-expansion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T15:32:53.526367+00:00",
-   "hash": "c32ab3d9",
-   "name": "mgc-gap-sign-streak-offshore-accumulation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T15:30:00.603168+00:00",
-   "hash": "f7e7e096",
-   "name": "mnq-two-sided-auction-balance-expansion",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.466"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-target2-settlement-holiday-unanchored-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:54:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-spr-solicitation-award-window",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-reserve-maintenance-period-funding-cycle",
     "stage": "dev3yr",
@@ -470,7 +462,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 68,
+   "registered": 70,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 449
+    "trials": 450
    }
   ]
  },
@@ -641,8 +633,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 19,
+   "n_tested": 21,
+   "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
   },
