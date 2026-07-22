@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:21:13Z",
+  "stamp": "2026-07-22T04:23:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 201,
-  "n_results": 291,
-  "n_trials": 30262,
+  "n_registered": 202,
+  "n_results": 294,
+  "n_trials": 30265,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -123,6 +123,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mnq-close-on-lows-liquidation-overnight-repair",
+   "name": "mnq-close-on-lows-liquidation-overnight-repair",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 121,
+   "wr": 0.5702,
+   "usd_mo": 152,
+   "pf": 1.545,
+   "usd_trade": 45.2
   },
   {
    "id": "rep-bondflight-mes",
@@ -291,21 +303,33 @@
    "usd_mo": -74,
    "pf": 0.626,
    "usd_trade": -19.8
-  },
-  {
-   "id": "zn-sunday-reopen-duration-unwind",
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 151,
-   "wr": 0.3311,
-   "usd_mo": -133,
-   "pf": 0.481,
-   "usd_trade": -31.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T04:23:26.508763+00:00",
+   "hash": "a06291c3",
+   "name": "mnq-posbondcorr-discountrate-dip-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.313"
+  },
+  {
+   "t": "2026-07-22T04:21:48.098013+00:00",
+   "hash": "519ac5c1",
+   "name": "mes-0dte-afternoon-gamma-amp",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.944"
+  },
+  {
+   "t": "2026-07-22T04:21:46.057734+00:00",
+   "hash": "731e28c9",
+   "name": "mnq-close-on-lows-liquidation-overnight-repair",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.545"
+  },
   {
    "t": "2026-07-22T04:20:55.105374+00:00",
    "hash": "97cde8b0",
@@ -313,22 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.812"
-  },
-  {
-   "t": "2026-07-22T04:20:24.840733+00:00",
-   "hash": "731e28c9",
-   "name": "mnq-close-on-lows-liquidation-overnight-repair",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T04:20:08.542858+00:00",
-   "hash": "519ac5c1",
-   "name": "mes-0dte-afternoon-gamma-amp",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T04:15:08.075747+00:00",
@@ -393,36 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.446"
-  },
-  {
-   "t": "2026-07-22T04:07:43.626532+00:00",
-   "hash": "e95679b2",
-   "name": "mgc-volume-timing-program-completion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.898"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-close-on-lows-liquidation-overnight-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:19:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-0dte-afternoon-dealer-gamma-amplification",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:19:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-posbondcorr-discountrate-dip-repair",
     "stage": "dev3yr",
@@ -488,7 +472,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 14,
+   "registered": 12,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -550,7 +534,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 95
+    "trials": 98
    }
   ]
  },
@@ -559,7 +543,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 59,
+   "n_tested": 60,
    "n_killed": 36,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -574,8 +558,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 10,
+   "n_tested": 19,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -666,8 +650,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 11,
+   "n_tested": 15,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -965,6 +949,26 @@
     "apex_max": 2
    }
   },
+  "mnq-close-on-lows-liquidation-overnight-repair": {
+   "name": "mnq-close-on-lows-liquidation-overnight-repair",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "A US settlement printed at the very bottom of the day range is the signature of price-insensitive end-of-day liquidation (MOC / risk-limit unwinds) that must finish by the bell regardless of price; the overnight book, where those forced sellers are absent, is paid an inventory premium to carry the position back toward fair value.",
+   "metrics": {
+    "n": 121,
+    "wr": 0.5702,
+    "pf": 1.545,
+    "usd_mo": 152,
+    "usd_trade": 45.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T04:21:46.057734+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1259,26 +1263,6 @@
    "verdict_history": [
     {
      "t": "2026-07-22T03:55:04.627743+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "zn-sunday-reopen-duration-unwind": {
-   "name": "zn-sunday-reopen-duration-unwind",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "Duration hedges accumulated over the weekend close-out into the first liquidity of the trading week: the Sunday 18:00 ET Globex reopen is the only scheduled moment when a global rates book can be adjusted before Tokyo cash is fully staffed, so sellers of protection meet almost no depth and pay a concession to get out, pushing ZN down in the first two hours. Known neighbour and primary kill hypothesis: the dead mcl-weekend-insurance-roundtrip shares the weekend-hedge logic in a different asset class.",
-   "metrics": {
-    "n": 151,
-    "wr": 0.3311,
-    "pf": 0.481,
-    "usd_mo": -133,
-    "usd_trade": -31.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T02:50:04.186910+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
