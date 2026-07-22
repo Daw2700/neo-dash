@@ -101,6 +101,14 @@
    "apex150": {
     "max_micros": 1
    }
+  },
+  "rep-nagel-mes": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 6
+   }
   }
  },
  "bundles": [
