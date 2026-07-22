@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:36:42Z",
+  "stamp": "2026-07-22T15:36:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T15:35:17Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-depth-consumption-print-size-range-forecast",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:36:44Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-muni-reinvestment-cashflow-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:36:44Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-depth-consumption-print-size-range-forecast",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "zn-muni-reinvestment-cashflow-window",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 3,
     "idea": "mgc-monthend-impact-inflation-reversion-rent",
@@ -534,7 +532,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 11,
    "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
