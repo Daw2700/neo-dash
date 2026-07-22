@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:01:09Z",
+  "stamp": "2026-07-22T16:03:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 503,
-  "n_results": 632,
-  "n_trials": 30620,
+  "n_results": 633,
+  "n_trials": 30621,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mcl-spr-solicitation-award-window",
-   "name": "mcl-spr-solicitation-award-window",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 8,
-   "wr": 0.625,
-   "usd_mo": 7,
-   "pf": 2.369,
-   "usd_trade": 29.8
   },
   {
    "id": "mbt-session-beta-channel-regime",
@@ -303,9 +291,29 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  {
+   "id": "mes-depth-consumption-print-size-range-forecast",
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 124,
+   "wr": 0.4355,
+   "usd_mo": 31,
+   "pf": 1.168,
+   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T16:03:26.433194+00:00",
+   "hash": "69cb3a6c",
+   "name": "mcl-spr-solicitation-award-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T16:00:17.343524+00:00",
    "hash": "8cbdd607",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.25"
-  },
-  {
-   "t": "2026-07-22T15:40:13.765212+00:00",
-   "hash": "d1effc5b",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.168"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "mng-friday-threeday-gasday-hedge-concentration",
     "stage": "dev3yr",
     "started": "2026-07-22T15:58:30Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "robustness: mcl-spr-solicitation-award-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T16:01:11Z",
     "state": "running"
    }
   ],
@@ -515,7 +523,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 453
+    "trials": 454
    }
   ]
  },
@@ -972,26 +980,6 @@
     "apex_max": 2
    }
   },
-  "mcl-spr-solicitation-award-window": {
-   "name": "mcl-spr-solicitation-award-window",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "DOE SPR refill solicitations and emergency repurchases are announced with fixed, publicly posted bid-submission deadlines for named delivery months; suppliers bidding to fill the award must pre-hedge their forward physical commitment on the futures curve into that deadline, creating a scheduled, price-insensitive supply of hedging flow that carries no demand information and should decay/reverse once the deadline passes.",
-   "metrics": {
-    "n": 8,
-    "wr": 0.625,
-    "pf": 2.369,
-    "usd_mo": 7,
-    "usd_trade": 29.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:58:49.474022+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -1281,6 +1269,36 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  "mes-depth-consumption-print-size-range-forecast": {
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
+   "metrics": {
+    "n": 124,
+    "wr": 0.4355,
+    "pf": 1.168,
+    "usd_mo": 31,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:40:13.765212+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T15:47:15.796894+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T15:52:13.200686+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
