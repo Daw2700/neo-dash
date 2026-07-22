@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:38:43Z",
+  "stamp": "2026-07-22T16:40:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 516,
-  "n_results": 646,
-  "n_trials": 30634,
+  "n_registered": 517,
+  "n_results": 647,
+  "n_trials": 30635,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:40:02.638965+00:00",
+   "hash": "840512ac",
+   "name": "zc-neglect-catchup-attention-deficit",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.09"
+  },
+  {
+   "t": "2026-07-22T16:39:29.389634+00:00",
+   "hash": "29742849",
+   "name": "m6e-ecb-concertation-fix-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T16:36:40.705912+00:00",
    "hash": "cdf1cb5c",
    "name": "mng-fuel-switching-band-elasticity",
@@ -385,36 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.906"
-  },
-  {
-   "t": "2026-07-22T16:23:31.020287+00:00",
-   "hash": "640b45ff",
-   "name": "sil-side-impact-asymmetry-inventory-pressure",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.084"
-  },
-  {
-   "t": "2026-07-22T16:10:36.691330+00:00",
-   "hash": "8cbdd607",
-   "name": "mng-friday-threeday-gasday-hedge-concentration",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "recheck: zc-neglect-catchup-attention-deficit",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:38:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-maker-risk-budget-crowdout",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-ecb-concertation-fix-window",
     "stage": "dev3yr",
@@ -461,7 +453,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 71,
+   "registered": 72,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 467
+    "trials": 468
    }
   ]
  },
