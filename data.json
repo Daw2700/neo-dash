@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:29:08Z",
+  "stamp": "2026-07-22T22:29:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 659,
-  "n_results": 809,
-  "n_trials": 30797,
+  "n_results": 811,
+  "n_trials": 30799,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,28 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T22:29:28.065069+00:00",
+   "hash": "0a998b79",
+   "name": "zn-fid-forced-long-exit",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.284"
+  },
+  {
+   "t": "2026-07-22T22:29:24.033111+00:00",
+   "hash": "08013322",
+   "name": "mgc-option-assignment-delivery-flatten",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.576"
+  },
+  {
    "t": "2026-07-22T22:28:59.001402+00:00",
    "hash": "122beb61",
    "name": "mcl-sovereign-oil-hedge-program-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.629"
-  },
-  {
-   "t": "2026-07-22T22:28:40.190419+00:00",
-   "hash": "0a998b79",
-   "name": "zn-fid-forced-long-exit",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T22:28:05.530880+00:00",
-   "hash": "08013322",
-   "name": "mgc-option-assignment-delivery-flatten",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T22:26:50.868093+00:00",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-option-assignment-delivery-flatten",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:26:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-first-intention-day-forced-long-exit",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-btic-close-referenced-hedge-release",
     "stage": "dev3yr",
@@ -475,7 +467,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 90,
+   "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -537,7 +529,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 630
+    "trials": 632
    }
   ]
  },
@@ -590,8 +582,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 37,
-   "n_killed": 30,
+   "n_tested": 38,
+   "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -655,7 +647,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 52,
+   "n_tested": 53,
    "n_killed": 44,
    "book_sleeves": [],
    "agents_now": []
