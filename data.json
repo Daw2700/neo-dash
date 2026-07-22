@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:42:09Z",
+  "stamp": "2026-07-22T09:42:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-tas-settlement-offset-obligation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:37:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-asia-hours-discovery-share-regime",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "robustness: zc-price-limit-expansion-regime-state",
     "stage": "dev3yr",
