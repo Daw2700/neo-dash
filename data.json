@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:07:57Z",
+  "stamp": "2026-07-22T12:08:20Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 416,
   "n_results": 524,
@@ -404,19 +404,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T11:57:32Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zs-zc-substitution-ratio-reversion",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.66
+   },
+   {
+    "rank": 2,
+    "idea": "zn-mbs-convexity-hedge-cascade",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 3,
+    "idea": "mes-crosssectional-momentum-micro-complex",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.56
+   },
+   {
+    "rank": 4,
+    "idea": "mgc-late-participation-share-overnight-carry",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-jump-hazard-self-excitation-window",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "m2k-duration-equity-valuation-band-reversion",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "zn-qra-supply-composition-repricing",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 8,
+    "idea": "mes-binding-tick-reversal-rent",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "zc-pollination-window-weather-premium",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "m6e-national-cpi-mosaic-completion",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 11,
+    "idea": "m6e-energy-terms-of-trade-shock-lag",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 12,
+    "idea": "zs-south-american-harvest-hedge-pressure",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "zc-prereport-position-squaring-hour",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.38
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
