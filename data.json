@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:43:24Z",
+  "stamp": "2026-07-22T20:45:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 621,
-  "n_results": 766,
-  "n_trials": 30754,
+  "n_results": 767,
+  "n_trials": 30755,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T20:43:14.293406+00:00",
+   "t": "2026-07-22T20:44:52.168107+00:00",
    "hash": "82f8ef79",
    "name": "mym-complex-replication-residual-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.875"
   },
   {
    "t": "2026-07-22T20:42:21.874706+00:00",
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-complex-replication-residual-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:41:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-macro-factor-coherence-open-ratification",
     "stage": "dev3yr",
@@ -484,7 +476,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 87,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -546,7 +538,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 587
+    "trials": 588
    }
   ]
  },
@@ -581,8 +573,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 9,
-   "n_killed": 7,
+   "n_tested": 10,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
