@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:56:42Z",
+  "stamp": "2026-07-22T20:57:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-pension-fundedstatus-glidepath-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:51:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "recheck: m2k-rates-variance-import-gate",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-dollar-revenue-exposure-rotation",
     "stage": "dev3yr",
