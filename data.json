@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:53:04Z",
+  "stamp": "2026-07-22T01:58:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 142,
-  "n_results": 229,
+  "n_registered": 145,
+  "n_results": 232,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T01:56:33.943560+00:00",
+   "hash": "8e75a0d3",
+   "name": "mes-cond-monthend-rebal-spread",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.62"
+  },
+  {
+   "t": "2026-07-22T01:54:54.614793+00:00",
+   "hash": "20460071",
+   "name": "zn-london-close-duration-handoff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.309"
+  },
+  {
+   "t": "2026-07-22T01:54:48.832476+00:00",
+   "hash": "e51c9fe4",
+   "name": "mgc-lbma-am-auction-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.584"
+  },
+  {
    "t": "2026-07-22T01:49:06.215269+00:00",
    "hash": "35e00878",
    "name": "mes-volcontrol-releverage-lag",
@@ -385,52 +409,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:21:39.537048+00:00",
-   "hash": "a2d14820",
-   "name": "mng-weather-model-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.495"
-  },
-  {
-   "t": "2026-07-22T01:21:38.079497+00:00",
-   "hash": "529bc2f2",
-   "name": "fomc-statement-presser-reversal",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:20:08.544324+00:00",
-   "hash": "47aede5d",
-   "name": "robust-fomc-stmt-presser-rev",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-london-close-duration-handoff",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:53:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-lbma-am-auction-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:53:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-conditional-monthend-rebalance-spread",
     "stage": "dev3yr",
@@ -549,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 33
+    "trials": 36
    }
   ]
  },
@@ -573,8 +557,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 8,
-   "n_killed": 1,
+   "n_tested": 9,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -602,8 +586,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 3,
+   "n_tested": 4,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -669,8 +653,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 7,
-   "n_killed": 5,
+   "n_tested": 8,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
