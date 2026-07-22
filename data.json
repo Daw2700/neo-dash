@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:26:39Z",
+  "stamp": "2026-07-22T02:31:44Z",
   "stale_after_min": 30,
-  "status": "d-scanmcl-demote approve applied \u2014 scan-mcl demoted out of the book; dashboard mirrors pending (d-book-mirror-sync)",
+  "status": "applying your question",
   "engine_state": "ok",
   "n_registered": 151,
   "n_results": 238,
@@ -408,16 +408,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T02:15:24Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [],
   "funnel": {
    "idea": 0,
@@ -1262,25 +1253,6 @@
  },
  "decisions": [
   {
-   "id": "d-scanmym-demote",
-   "kind": "demotion",
-   "needs_attention": true,
-   "title": "Book sleeve mym-prehol (scan-mym) failed robustness \u2014 pull from the book?",
-   "recommendation": "REMOVE from the book \u2014 mechanism placebo failed on formal hardening",
-   "evidence": "Robustness battery on MYM scan family: prehol-long fails mechanism controls; monday-long fails mechanism + ex-best-year; nr7-orb fails ex-best-year (ledger, stage=robustness, 2026-07-22)",
-   "what_yes_means": "Book drops from 8 sleeves to 7; sizing and all bundles recompute without mym-prehol",
-   "recap": "Your book's MYM pre-holiday sleeve was validated in the original scan campaign but had never been through the formal robustness battery. Tonight it was \u2014 and its mechanism didn't survive placebo testing. This card decides whether it stays in the book.",
-   "why": "The scan-* sleeves entered the book from the market-native scan campaign with lighter checks than the b3/b4 sleeves. The battery that just demoted ten pretenders applied the same standard here and the pre-holiday edge on MYM looks indistinguishable from placebo dates. Keeping a placebo-grade sleeve means its micros and breach budget are spent on noise.",
-   "steps": [
-    "Approve: DEMOTED verdict stands; scan-mym leaves the validated book set",
-    "gauntlet sizing + all bundles recompute on the 7 remaining sleeves (numbers drop honestly)",
-    "The dashboard book/roadmap views update on the next publish",
-    "Trade logs and history stay on disk; a future re-validation can reinstate it",
-    "Deny: sleeve stays in the book; the robustness result stays on the ledger either way"
-   ],
-   "staged": "2026-07-22T01:07:31Z"
-  },
-  {
    "id": "d-demotions-r753",
    "kind": "demotion",
    "needs_attention": true,
@@ -1363,6 +1335,34 @@
     }
    ],
    "staged": "2026-07-21T22:54:16Z"
+  },
+  {
+   "id": "d-scanmym-demote-r222",
+   "kind": "demotion",
+   "needs_attention": true,
+   "title": "Book sleeve mym-prehol (scan-mym) failed the shuffled-date null \u2014 pull from the book?",
+   "recommendation": "REMOVE from the book \u2014 passes plateau, placebo and ex-best-year, but fails the random-date null (76.8th pctile vs bar 90)",
+   "evidence": "MYM prehol-long, dev 2022-03-01..2025-02-28: n=30, net +$546.29, PF 1.585, $18.21/trade. P1 plateau PASS; P2a wrong-date placebo PASS; P3 ex-best-year PASS (drop 2023 -> PF 1.153, +$117.92 left); P2b shuffled-date null FAIL at 76.8th pctile of 2000 draws (bar 90). Siblings already dead: monday-long (ex-best PF 0.904), nr7-orb (ex-best PF 0.975). Ledger hash 5eec72170531044e, stage=robustness, 2026-07-22.",
+   "what_yes_means": "Book drops from 7 sleeves to 6 (scan-mcl already left today); sizing and all bundles recompute without mym-prehol. MNQ pre-holiday (b3) is unaffected and stays.",
+   "recap": "Your MYM (micro Dow) pre-holiday long \u2014 buy 09:30 the day before a NASDAQ holiday, exit at the close \u2014 made +$546.29 on 30 trades at PF 1.585, which clears the bar. But the battery's random-date null says ~1 in 4 randomly chosen 30-day sets in the same window would have done as well just buying the open and holding. The date isn't adding anything over generic long drift. This card decides whether it stays in the book.",
+   "why": "The scan-* sleeves entered the book on lighter checks than b3/b4. Run through the full battery, MYM prehol passes three of four gates \u2014 the stop plateau holds, the wrong-date placebo does NOT reproduce the edge, and dropping the best year still leaves PF 1.153. It fails only the shuffled-date null (76.8 vs a bar of 90), the gate that separates 'this date is special' from 'this market went up and we were long 30 times'. On a rare-firing 30-trade sleeve that distinction is the entire edge, so its micros and breach budget would be spent on index beta rather than a mechanism. The MNQ version of the same idea passed its battery cleanly (post-holiday control flips to 0.779), so this is a MYM-specific verdict, not a repeal of pre-holiday drift.",
+   "steps": [
+    "Approve: DEMOTED stands; hash 5eec72170531044e leaves the VALID book set in dashboard/build_dashboard.py",
+    "gauntlet sizing + all bundles recompute on the 6 remaining sleeves \u2014 b3-monday-long, b3-preholiday-drift (MNQ), b3-nr7-breakout, b4-open-drive, b10-nagel-vix-reversal, scan-mbt \u2014 numbers drop honestly",
+    "The dashboard book/roadmap views update on the next publish; the ~/neo-dashboard mirrors still lag until d-book-mirror-sync runs (same caveat as the scan-mcl card)",
+    "Nothing is deleted: register, results and trade logs stay on the ledger; a future re-validation can reinstate it",
+    "Deny: sleeve stays in the book; the failing P2b result stays on the ledger either way"
+   ],
+   "staged": "2026-07-22T01:07:31Z",
+   "restaged": "2026-07-22T02:20:00Z",
+   "qa": [
+    {
+     "q": "Explain to me in better detail what is going to do",
+     "a": "What the sleeve is: MYM (micro Dow) pre-holiday long \u2014 buy 09:30 on the session immediately before a full-day NASDAQ holiday, exit at the close. On the dev window 2022-03-01..2025-02-28 it fired 30 times: net +$546.29, PF 1.585, $18.21/trade after costs. That clears the rare-firing bar (PF>=1.15, exp>=$5) comfortably \u2014 raw performance is NOT why it is being pulled.\n\nWhat the battery ran (4 gates) and how MYM scored:\n\u2022 P1 parameter plateau (stop 0.5/0.7/1.0xATR) \u2014 PASS.\n\u2022 P2a wrong-date placebo (same trade on shifted, non-holiday dates) \u2014 PASS. The edge does not show up on the wrong dates.\n\u2022 P3 ex-best-year (delete the best calendar year, 2023, re-score) \u2014 PASS: PF 1.153, +$117.92 still left. Not one-year concentration.\n\u2022 P2b shuffled-date null \u2014 FAIL, and this is the whole case. It draws 2000 random 30-session sets from the same window and runs the identical 09:30-to-close long on each. The real pre-holiday set lands at the 76.8th percentile of that distribution; the bar is 90. Plain English: roughly 1 in 4 randomly chosen sets of 30 MYM days would have made this much or more just by buying the open and holding to the close. The +$546 is not distinguishable from generic long-side drift on 30 days of a market that went up.\n\nSo the old card's phrase 'mechanism placebo failed' was imprecise and I am correcting it: the placebo (P2a) passed, the random-date null (P2b) failed. The sleeve is not a date artifact \u2014 the problem is that the date adds nothing over simply being long.\n\nOne data caveat, on the record: the baseline drifted from n=31/PF 1.619 (original scan) to n=30/PF 1.585 because pandas_market_calendars 4.4.2 stopped marking 2025-01-09 a NASDAQ holiday, so 2025-01-08 (+$32.30) left the set. The verdict does not hinge on that trade \u2014 P2b fails on either baseline.\n\nWhat approving mechanically does: removes hash 5eec72170531044e from the VALID book set in dashboard/build_dashboard.py, so gauntlet sizing and every bundle recompute without it. Correcting the old card's stale count: the book is already at 7, not 8 \u2014 you approved the scan-mcl demotion earlier today. This takes it 7 -> 6: b3-monday-long, b3-preholiday-drift (MNQ), b3-nr7-breakout, b4-open-drive, b10-nagel-vix-reversal, scan-mbt. The same two mirrors flagged on the mcl card (~/neo-dashboard/build_data.py and sizing.py) are outside this run's write scope, so the published dashboard stays stale until d-book-mirror-sync runs.\n\nWhat it does NOT do: it does not kill pre-holiday drift as a mechanism. The MNQ sleeve b3-preholiday-drift stays in the book \u2014 it passed its own battery 6/6 on plateau, ex-best-year PF 1.236, and its post-holiday control flipped negative (0.779) exactly as the mechanism predicts. This is a statement about MYM specifically, where the same idea rides existing index drift instead of adding to it. Nothing is deleted: register, results and trade logs stay on the ledger and a future re-validation can reinstate it. Denying keeps the sleeve in the book; the failing P2b result stays on the ledger either way.",
+     "q_t": "2026-07-22T02:16:28.457Z",
+     "t": "2026-07-22T02:20:00Z"
+    }
+   ]
   }
  ],
  "roadmap": {
