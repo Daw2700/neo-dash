@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:19:27Z",
+  "stamp": "2026-07-22T04:21:11Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 198,
-  "n_results": 290,
-  "n_trials": 30261,
+  "n_registered": 201,
+  "n_results": 291,
+  "n_trials": 30262,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:20:55.105374+00:00",
+   "hash": "97cde8b0",
+   "name": "mcl-overnight-vol-handoff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.812"
+  },
+  {
+   "t": "2026-07-22T04:20:24.840733+00:00",
+   "hash": "731e28c9",
+   "name": "mnq-close-on-lows-liquidation-overnight-repair",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:20:08.542858+00:00",
+   "hash": "519ac5c1",
+   "name": "mes-0dte-afternoon-gamma-amp",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:15:08.075747+00:00",
    "hash": "c7ffaa26",
    "name": "zs-china-session-handoff",
@@ -377,30 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.898"
-  },
-  {
-   "t": "2026-07-22T04:07:35.877378+00:00",
-   "hash": "738bb6da",
-   "name": "m6e-pre0830-liq-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4118"
-  },
-  {
-   "t": "2026-07-22T04:05:51.991400+00:00",
-   "hash": "5738f8e6",
-   "name": "zn-boj-tokyo-transmission",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.695"
-  },
-  {
-   "t": "2026-07-22T04:05:11.119410+00:00",
-   "hash": "a157dc0b",
-   "name": "mbt-etf-nav-strike-hedge-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.336"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-overnight-vol-handoff-completion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:19:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-0dte-afternoon-dealer-gamma-amplification",
     "stage": "dev3yr",
@@ -497,7 +489,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 12,
+   "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -559,7 +551,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 94
+    "trials": 95
    }
   ]
  },
@@ -628,8 +620,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 10,
-   "n_killed": 8,
+   "n_tested": 11,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
