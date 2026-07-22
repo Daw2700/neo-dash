@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:09:04Z",
+  "stamp": "2026-07-22T08:12:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 308,
-  "n_results": 411,
-  "n_trials": 30382,
+  "n_registered": 309,
+  "n_results": 413,
+  "n_trials": 30384,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,28 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T08:09:02.472310+00:00",
-   "hash": "9262a29f",
-   "name": "mnq-crypto-internal-risk-gradient",
+   "t": "2026-07-22T08:11:02.291554+00:00",
+   "hash": "7eb60176",
+   "name": "zc-short-horizon-hedger-liquidity-rebate",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T08:10:44.449042+00:00",
+   "hash": "9262a29f",
+   "name": "mnq-crypto-internal-risk-gradient",
+   "status": "killed",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T08:10:01.799214+00:00",
+   "hash": "4611b77f",
+   "name": "mbt-disposition-run-profit-taking",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
   },
   {
    "t": "2026-07-22T08:08:40.807199+00:00",
@@ -389,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.072"
-  },
-  {
-   "t": "2026-07-22T07:55:20.378734+00:00",
-   "hash": "331e4bed",
-   "name": "ROBUSTNESS-PROTOCOL mcl-timeseries-momentum-risk-premium (5596f651c2f8cae0)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:51:35.102359+00:00",
-   "hash": "5596f651",
-   "name": "mcl-timeseries-momentum-risk-premium",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.454"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MBT",
-    "task": "robustness: mbt-disposition-run-profit-taking",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:08:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-short-horizon-hedger-liquidity-rebate",
     "stage": "dev3yr",
@@ -518,7 +510,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 215
+    "trials": 217
    }
   ]
  },
@@ -608,7 +600,7 @@
    "display": "Bitcoin",
    "status": "active",
    "n_tested": 6,
-   "n_killed": 4,
+   "n_killed": 3,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
