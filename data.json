@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:06:15Z",
+  "stamp": "2026-07-22T09:10:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 333,
-  "n_results": 439,
-  "n_trials": 30410,
+  "n_registered": 336,
+  "n_results": 441,
+  "n_trials": 30412,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "m2k-overnight-duration-rally-refi-channel-continuation",
-   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 41,
-   "wr": 0.5366,
-   "usd_mo": 22,
-   "pf": 1.461,
-   "usd_trade": 18.9
   },
   {
    "id": "rep-bondflight-mes",
@@ -307,9 +295,53 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T09:09:47.126509+00:00",
+   "hash": "46262f1a",
+   "name": "mes-fx-channel-open-overshoot-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:08:48.921964+00:00",
+   "hash": "4e4e731e",
+   "name": "mes-nonews-overnight-gap-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.936"
+  },
+  {
+   "t": "2026-07-22T09:08:30.011145+00:00",
+   "hash": "0d9bee74",
+   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T09:07:21.437539+00:00",
+   "hash": "35f65efe",
+   "name": "ROBUSTNESS-PROTOCOL m2k-overnight-duration-rally-refi-channel-continuation (0d9bee74f0c1f082)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T09:04:58.705073+00:00",
    "hash": "56139108",
@@ -373,52 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.673"
-  },
-  {
-   "t": "2026-07-22T08:48:02.172171+00:00",
-   "hash": "f93e06cb",
-   "name": "met-us-morning-risk-transfer-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.353"
-  },
-  {
-   "t": "2026-07-22T08:46:58.929578+00:00",
-   "hash": "8fb4ffb8",
-   "name": "scout-26-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T08:44:41.902553+00:00",
-   "hash": "e4888532",
-   "name": "mbt-mgc-debasement-hedge-substitution-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.974"
-  },
-  {
-   "t": "2026-07-22T08:44:02.672407+00:00",
-   "hash": "69b9e8ba",
-   "name": "zc-overnight-session-flow-persistence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.413"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "robustness: m2k-overnight-duration-rally-refi-channel-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:06:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-nonews-overnight-gap-reversion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-fx-channel-open-overshoot-fade",
     "stage": "dev3yr",
@@ -501,7 +493,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 38,
+   "registered": 40,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 243
+    "trials": 245
    }
   ]
  },
@@ -587,8 +579,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 47,
-   "n_killed": 31,
+   "n_tested": 48,
+   "n_killed": 32,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1020,26 +1012,6 @@
     "apex_max": 2
    }
   },
-  "m2k-overnight-duration-rally-refi-channel-continuation": {
-   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Small caps carry floating-rate and short-maturity debt, so a large overnight Treasury rally is a genuine earnings-channel repricing for Russell constituents rather than a discount-rate abstraction; overnight rates markets price it before US equity real-money can act, so the repricing continues through the RTH session, while the sell-off side has no symmetric refinancing urgency.",
-   "metrics": {
-    "n": 41,
-    "wr": 0.5366,
-    "pf": 1.461,
-    "usd_mo": 22,
-    "usd_trade": 18.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T09:01:56.042249+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1324,6 +1296,31 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
