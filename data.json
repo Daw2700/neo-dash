@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:22:51Z",
+  "stamp": "2026-07-22T09:25:36Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 342,
-  "n_results": 448,
-  "n_trials": 30419,
+  "n_registered": 345,
+  "n_results": 449,
+  "n_trials": 30420,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T09:25:30.487059+00:00",
+   "hash": "f09bc5a9",
+   "name": "mbt-equity-crashrisk-spillover-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:25:29.526975+00:00",
+   "hash": "624a93ae",
+   "name": "zc-index-roll-sunshine-liquidity-provision",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.562"
+  },
+  {
+   "t": "2026-07-22T09:24:53.534883+00:00",
+   "hash": "b51d6ed5",
+   "name": "scout-27-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T09:22:40.758804+00:00",
    "hash": "31aa5ffa",
    "name": "m6e-carry-crash-asymmetry-unwind-retrace",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.936"
-  },
-  {
-   "t": "2026-07-22T09:08:30.011145+00:00",
-   "hash": "0d9bee74",
-   "name": "m2k-overnight-duration-rally-refi-channel-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T09:07:21.437539+00:00",
-   "hash": "35f65efe",
-   "name": "ROBUSTNESS-PROTOCOL m2k-overnight-duration-rally-refi-channel-continuation (0d9bee74f0c1f082)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T09:04:58.705073+00:00",
-   "hash": "56139108",
-   "name": "mnq-recurring-slot-flow-saturation-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9057"
   }
  ],
  "pipeline": {
@@ -424,20 +424,12 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:22:51Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZC",
-    "task": "zc-index-roll-sunshine-liquidity-provision",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:22:51Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 40,
+   "registered": 42,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 252
+    "trials": 253
    }
   ]
  },
@@ -626,8 +618,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 13,
+   "n_tested": 14,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
