@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:32:46Z",
+  "stamp": "2026-07-22T06:32:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:30:18Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-pipeline-nomination-deadline-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:32:47Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mcl-pipeline-nomination-deadline-window",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "mgc-etf-creation-hedge-1600-print",
@@ -465,7 +464,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 25,
    "dev3yr": 0,
    "robustness": 0,
