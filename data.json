@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:40:34Z",
+  "stamp": "2026-07-22T16:41:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 518,
-  "n_results": 648,
-  "n_trials": 30636,
+  "n_results": 649,
+  "n_trials": 30637,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,12 +307,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T16:40:15.510862+00:00",
+   "t": "2026-07-22T16:41:20.589158+00:00",
    "hash": "9b1d00ce",
    "name": "mes-maker-risk-budget-crowdout",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.404"
   },
   {
    "t": "2026-07-22T16:40:12.842871+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-maker-risk-budget-crowdout",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:38:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-constituent-halt-stale-leg-catchup",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-latehour-hedging-demand-pressure-reversal",
     "stage": "dev3yr",
@@ -443,7 +435,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 72,
+   "registered": 71,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -505,7 +497,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 469
+    "trials": 470
    }
   ]
  },
@@ -529,8 +521,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 86,
-   "n_killed": 63,
+   "n_tested": 87,
+   "n_killed": 64,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
