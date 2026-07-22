@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:03:45Z",
+  "stamp": "2026-07-22T03:03:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,6 +411,14 @@
     "task": "mes-vanna-ivcrush-dealer-rebuy",
     "stage": "dev3yr",
     "started": "2026-07-22T03:02:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T03:03:46Z",
     "state": "running"
    }
   ],
