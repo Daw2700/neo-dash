@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:09:50Z",
+  "stamp": "2026-07-22T15:10:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 480,
+  "n_registered": 481,
   "n_results": 606,
   "n_trials": 30594,
   "holdout_looks_spent": 0,
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:09:55.214963+00:00",
+   "hash": "b9a53d45",
+   "name": "mgc-tas-band-exhaustion-spillover-v2",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T15:09:38.673591+00:00",
    "hash": "4d6af5e1",
    "name": "m6e-block-report-lag-hedge-leak",
@@ -393,28 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T14:49:08.444279+00:00",
-   "hash": "1c72a637",
-   "name": "mng-vol-implied-margin-hike-anticipation-deleveraging",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-block-report-lag-hedge-leak",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:06:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-tas-band-exhaustion-spillover",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-globex-precancel-lockdown-reopen-divergence",
     "stage": "dev3yr",
@@ -515,7 +507,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 66,
+   "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
