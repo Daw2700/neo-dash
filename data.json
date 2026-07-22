@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:39:51Z",
+  "stamp": "2026-07-22T13:44:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 447,
-  "n_results": 564,
-  "n_trials": 30552,
+  "n_results": 567,
+  "n_trials": 30555,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "mes-tom-daycount-compression",
-   "name": "mes-tom-daycount-compression",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 56,
-   "wr": 0.6071,
-   "usd_mo": 45,
-   "pf": 1.551,
-   "usd_trade": 28.6
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -261,18 +249,6 @@
    "usd_trade": 15.4
   },
   {
-   "id": "mnq-crossindex-leadership-rotation",
-   "name": "mnq-crossindex-leadership-rotation",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 109,
-   "wr": 0.6239,
-   "usd_mo": 82,
-   "pf": 1.259,
-   "usd_trade": 27.1
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -303,9 +279,57 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
+  },
+  {
+   "id": "b6-vix-m2k",
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 26,
+   "wr": null,
+   "usd_mo": 5,
+   "pf": 1.148,
+   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T13:43:18.841315+00:00",
+   "hash": "858b343a",
+   "name": "mnq-maintenance-break-inventory-reversal",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T13:43:01.118946+00:00",
+   "hash": "53850c28",
+   "name": "mes-tom-daycount-compression",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T13:41:06.522737+00:00",
+   "hash": "f811c4f6",
+   "name": "mnq-crossindex-leadership-rotation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T13:35:48.645990+00:00",
    "hash": "858b343a",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.026"
-  },
-  {
-   "t": "2026-07-22T13:12:44.447632+00:00",
-   "hash": "5e534943",
-   "name": "mgc-failed-auction-extreme-volume-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T13:12:11.726900+00:00",
-   "hash": "146907f7",
-   "name": "mes-xsec-realized-skew-rank",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.889"
-  },
-  {
-   "t": "2026-07-22T13:11:33.038993+00:00",
-   "hash": "93220002",
-   "name": "mes-volofvol-hedging-instability-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.985"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-crossindex-leadership-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:37:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-tom-daycount-compression",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "robustness: mnq-maintenance-break-inventory-reversal",
     "stage": "dev3yr",
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 385
+    "trials": 388
    }
   ]
  },
@@ -1063,26 +1055,6 @@
     }
    ]
   },
-  "mes-tom-daycount-compression": {
-   "name": "mes-tom-daycount-compression",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Calendar-mandated flows (pension/401k inflows, target-date rebalances, index cash reinvestment) are sized by the month, not by the number of sessions available to execute them; months with fewer NASDAQ trading sessions force the same mandated notional through fewer sessions, raising per-session flow intensity, so the existing turn-of-month long (b3-tom-long) should be stronger specifically in short-session-count months.",
-   "metrics": {
-    "n": 56,
-    "wr": 0.6071,
-    "pf": 1.551,
-    "usd_mo": 45,
-    "usd_trade": 28.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T13:34:57.126482+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1192,6 +1164,11 @@
      "t": "2026-07-22T13:35:48.645990+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T13:43:18.841315+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
@@ -1265,26 +1242,6 @@
     }
    ]
   },
-  "mnq-crossindex-leadership-rotation": {
-   "name": "mnq-crossindex-leadership-rotation",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "On a given session either the broad-market leg MES or the tech leg MNQ is the one setting price and the other follows; which leg leads is a state variable for where the marginal risk-taker is positioned, and when MES leads the hedging demand has not yet been transmitted into the tech leg, completing over the following session as MNQ catches up.",
-   "metrics": {
-    "n": 109,
-    "wr": 0.6239,
-    "pf": 1.259,
-    "usd_mo": 82,
-    "usd_trade": 27.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T13:34:13.107513+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1342,6 +1299,46 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-vix-m2k": {
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
+   "metrics": {
+    "n": 26,
+    "wr": null,
+    "pf": 1.148,
+    "usd_mo": 5,
+    "usd_trade": 6.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.112070+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
