@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:39:07Z",
+  "stamp": "2026-07-22T14:44:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 470,
-  "n_results": 591,
-  "n_trials": 30579,
+  "n_registered": 472,
+  "n_results": 594,
+  "n_trials": 30582,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -141,6 +141,18 @@
    }
   },
   {
+   "id": "mng-vol-implied-margin-hike-anticipation-deleveraging",
+   "name": "mng-vol-implied-margin-hike-anticipation-deleveraging",
+   "market": "MNG",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 20,
+   "wr": 0.65,
+   "usd_mo": 13,
+   "pf": 3.668,
+   "usd_trade": 22.8
+  },
+  {
    "id": "mbt-session-beta-channel-regime",
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -183,6 +195,18 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  {
+   "id": "zc-natgas-fertilizer-costpush-diffusion-lag",
+   "name": "zc-natgas-fertilizer-costpush-diffusion-lag",
+   "market": "ZC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 14,
+   "wr": 0.6429,
+   "usd_mo": 28,
+   "pf": 1.406,
+   "usd_trade": 72.4
   },
   {
    "id": "b3-tom-long",
@@ -279,33 +303,33 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "b6-monday-m2k",
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 133,
-   "wr": null,
-   "usd_mo": 19,
-   "pf": 1.154,
-   "usd_trade": 5.3
-  },
-  {
-   "id": "b6-vix-m2k",
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 26,
-   "wr": null,
-   "usd_mo": 5,
-   "pf": 1.148,
-   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T14:43:24.204005+00:00",
+   "hash": "6f5b8beb",
+   "name": "mgc-offshore-mark-ratification-at-ny-open",
+   "status": "overturned",
+   "kind": "result",
+   "detail": "PF 1.176"
+  },
+  {
+   "t": "2026-07-22T14:42:01.552666+00:00",
+   "hash": "e62a9100",
+   "name": "zc-natgas-fertilizer-costpush-diffusion-lag",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.406"
+  },
+  {
+   "t": "2026-07-22T14:41:36.372909+00:00",
+   "hash": "1c72a637",
+   "name": "mng-vol-implied-margin-hike-anticipation-deleveraging",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 3.668"
+  },
   {
    "t": "2026-07-22T14:39:01.096985+00:00",
    "hash": "3a30275a",
@@ -377,30 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.263"
-  },
-  {
-   "t": "2026-07-22T14:23:15.462741+00:00",
-   "hash": "5fb0f1ef",
-   "name": "mcl-quiescence-range-band-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.872"
-  },
-  {
-   "t": "2026-07-22T14:22:52.765608+00:00",
-   "hash": "fa5acf93",
-   "name": "mnq-participation-surprise-orb",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.419"
-  },
-  {
-   "t": "2026-07-22T14:22:03.601299+00:00",
-   "hash": "30cdd035",
-   "name": "mcl-hedging-pressure-horizon-decomposition",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "ZC",
     "task": "zc-natgas-fertilizer-costpush-diffusion-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:39:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNG",
-    "task": "mng-vol-implied-margin-hike-anticipation-deleveraging",
     "stage": "dev3yr",
     "started": "2026-07-22T14:39:07Z",
     "state": "running"
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 412
+    "trials": 415
    }
   ]
  },
@@ -612,7 +604,7 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 13,
+   "n_tested": 14,
    "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
@@ -659,7 +651,7 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 21,
+   "n_tested": 22,
    "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
@@ -989,6 +981,26 @@
     "apex_max": 2
    }
   },
+  "mng-vol-implied-margin-hike-anticipation-deleveraging": {
+   "name": "mng-vol-implied-margin-hike-anticipation-deleveraging",
+   "market": "MNG",
+   "tier": "candidate",
+   "mechanism": "Exchange SPAN margins are set near-mechanically from trailing realised volatility, so a sharp one-day volatility spike in MNG makes a margin hike likely within days; leveraged holders forced to pre-emptively post more margin or reduce risk deleverage in the same direction as the shock that caused it, so price should continue rather than mean-revert in the next session before any hike notice is even published.",
+   "metrics": {
+    "n": 20,
+    "wr": 0.65,
+    "pf": 3.668,
+    "usd_mo": 13,
+    "usd_trade": 22.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:41:36.372909+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -1066,6 +1078,26 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  "zc-natgas-fertilizer-costpush-diffusion-lag": {
+   "name": "zc-natgas-fertilizer-costpush-diffusion-lag",
+   "market": "ZC",
+   "tier": "candidate",
+   "mechanism": "Natural gas is the direct feedstock for nitrogen fertiliser and the fuel for grain drying and rail freight, so a sustained natgas cost shock propagates into corn's marginal cost of production with a diffusion lag while the agricultural desks that must reprice it trade a different clock than the energy desks that saw the shock first, producing a slow long-corn drift after a natgas cost spike.",
+   "metrics": {
+    "n": 14,
+    "wr": 0.6429,
+    "pf": 1.406,
+    "usd_mo": 28,
+    "usd_trade": 72.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:42:01.552666+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
   },
   "b3-tom-long": {
    "name": "b3-tom-long",
@@ -1258,46 +1290,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "b6-monday-m2k": {
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
-   "metrics": {
-    "n": 133,
-    "wr": null,
-    "pf": 1.154,
-    "usd_mo": 19,
-    "usd_trade": 5.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-vix-m2k": {
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
-   "metrics": {
-    "n": 26,
-    "wr": null,
-    "pf": 1.148,
-    "usd_mo": 5,
-    "usd_trade": 6.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
