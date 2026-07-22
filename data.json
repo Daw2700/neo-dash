@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:11:50Z",
+  "stamp": "2026-07-22T18:14:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 561,
-  "n_results": 695,
-  "n_trials": 30683,
+  "n_registered": 562,
+  "n_results": 696,
+  "n_trials": 30684,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:13:29.616469+00:00",
+   "hash": "ae5e7176",
+   "name": "mcl-eia-day-midsession-to-close-momentum",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:11:55.709212+00:00",
+   "hash": "e0bd284d",
+   "name": "mes-charm-delta-decay-preopex-overnight",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.98"
+  },
+  {
    "t": "2026-07-22T18:10:42.297696+00:00",
    "hash": "84122ba3",
    "name": "met-april-tax-liability-retail-liquidation",
@@ -321,14 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.615"
-  },
-  {
-   "t": "2026-07-22T18:10:08.403428+00:00",
-   "hash": "e0bd284d",
-   "name": "mes-charm-delta-decay-preopex-overnight",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T18:09:14.354115+00:00",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.386"
-  },
-  {
-   "t": "2026-07-22T17:56:03.282106+00:00",
-   "hash": "cee59095",
-   "name": "m6e-t2-daily-close-onesided-euro-liquidity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.5952"
   }
  ],
  "pipeline": {
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T18:07:55Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-eia-day-midsession-to-close-momentum",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:11:52Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "mcl-eia-day-midsession-to-close-momentum",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 4,
     "idea": "mnq-prior-settlement-anchor-premarket-reversion",
@@ -515,7 +514,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
@@ -578,7 +577,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 516
+    "trials": 517
    }
   ]
  },
@@ -602,8 +601,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 92,
-   "n_killed": 68,
+   "n_tested": 93,
+   "n_killed": 69,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
