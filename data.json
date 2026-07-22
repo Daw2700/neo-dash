@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:41:58Z",
+  "stamp": "2026-07-22T20:43:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 620,
-  "n_results": 765,
-  "n_trials": 30753,
+  "n_registered": 621,
+  "n_results": 766,
+  "n_trials": 30754,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,20 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:43:14.293406+00:00",
+   "hash": "82f8ef79",
+   "name": "mym-complex-replication-residual-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T20:42:21.874706+00:00",
+   "hash": "a771c0e1",
+   "name": "mcl-brent-orphan-benchmark-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.892"
+  },
+  {
    "t": "2026-07-22T20:41:42.412805+00:00",
    "hash": "f1b71a36",
    "name": "zs-palmoil-mpob-substitution-overnight",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T20:41:28.642792+00:00",
-   "hash": "a771c0e1",
-   "name": "mcl-brent-orphan-benchmark-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T20:36:13.794088+00:00",
@@ -389,28 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.771"
-  },
-  {
-   "t": "2026-07-22T20:13:51.714837+00:00",
-   "hash": "63b83aad",
-   "name": "m6e-monthend-turn-usd-funding-squeeze",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1253"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-brent-orphan-benchmark-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:37:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-livestock-report-feeddemand-sunday-transfer",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-complex-replication-residual-reversion",
     "stage": "dev3yr",
@@ -555,7 +547,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 586
+    "trials": 587
    }
   ]
  },
@@ -626,8 +618,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 41,
-   "n_killed": 26,
+   "n_tested": 42,
+   "n_killed": 27,
    "book_sleeves": [],
    "agents_now": []
   },
