@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:51:41Z",
+  "stamp": "2026-07-22T03:52:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 181,
-  "n_results": 274,
-  "n_trials": 30245,
+  "n_results": 275,
+  "n_trials": 30246,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:51:54.327562+00:00",
+   "hash": "5c829325",
+   "name": "zs-zc-newcrop-ratio-acreage-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.609"
+  },
+  {
    "t": "2026-07-22T03:51:25.981117+00:00",
    "hash": "ef9c6cb7",
    "name": "mgc-roll-window-front-contract-carry",
@@ -325,14 +333,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.979"
-  },
-  {
-   "t": "2026-07-22T03:50:25.560350+00:00",
-   "hash": "5c829325",
-   "name": "zs-zc-newcrop-ratio-acreage-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:48:49.913388+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-zc-newcrop-ratio-acreage-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:49:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-preopen-volume-range-fade",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-us-eu-dst-desync-window",
     "stage": "dev3yr",
@@ -456,7 +448,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 10,
+   "registered": 9,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -518,7 +510,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 78
+    "trials": 79
    }
   ]
  },
@@ -643,8 +635,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 4,
+   "n_tested": 5,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
