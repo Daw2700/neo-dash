@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:58:05Z",
+  "stamp": "2026-07-22T11:01:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 388,
-  "n_results": 491,
-  "n_trials": 30462,
+  "n_results": 494,
+  "n_trials": 30465,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mnq-stop-pool-recharge-duration",
+   "name": "mnq-stop-pool-recharge-duration",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 24,
+   "wr": 0.5417,
+   "usd_mo": 24,
+   "pf": 1.61,
+   "usd_trade": 36.6
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,33 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  {
-   "id": "mes-variance-risk-premium-carry",
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 208,
-   "wr": 0.524,
-   "usd_mo": 47,
-   "pf": 1.122,
-   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T10:59:29.319783+00:00",
+   "hash": "c38dac7e",
+   "name": "mgc-inverted-leverage-effect-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.002"
+  },
+  {
+   "t": "2026-07-22T10:59:29.218066+00:00",
+   "hash": "7ea978bb",
+   "name": "mnq-range-completion-timing-overnight-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0895"
+  },
+  {
+   "t": "2026-07-22T10:59:20.932315+00:00",
+   "hash": "e181e192",
+   "name": "mnq-stop-pool-recharge-duration",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.61"
+  },
   {
    "t": "2026-07-22T10:57:39.497803+00:00",
    "hash": "c38dac7e",
@@ -317,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.981"
-  },
-  {
-   "t": "2026-07-22T10:57:27.637429+00:00",
-   "hash": "e181e192",
-   "name": "mnq-stop-pool-recharge-duration",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T10:57:14.906432+00:00",
@@ -389,22 +405,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T10:44:05.764168+00:00",
-   "hash": "a1d3f32c",
-   "name": "zn-cash-market-closed-futures-open-asymmetry ROBUSTNESS BATTERY",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T10:42:59.398912+00:00",
-   "hash": "c785db7a",
-   "name": "mcl-commodity-index-category-beta-dislocation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.911"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "mnq-stop-pool-recharge-duration",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:54:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "recheck: mnq-range-completion-timing-overnight-carry",
     "stage": "dev3yr",
     "started": "2026-07-22T10:57:41Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "recheck: mgc-inverted-leverage-effect-regime",
     "stage": "dev3yr",
@@ -510,7 +502,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 53,
+   "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -572,7 +564,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 295
+    "trials": 298
    }
   ]
  },
@@ -690,7 +682,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 28,
+   "n_tested": 29,
    "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
@@ -1029,6 +1021,26 @@
     "apex_max": 2
    }
   },
+  "mnq-stop-pool-recharge-duration": {
+   "name": "mnq-stop-pool-recharge-duration",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Resting stop orders above or below a stale, long-untouched rolling extreme accumulate at a roughly constant rate while price stays away from it, and cascade violently when the level is finally triggered; a recently-touched extreme has already had its stop pool consumed and should produce little to no follow-through, so continuation after a breakout is conditioned on time-since-last-touch (pool recharge duration), not on the level itself.",
+   "metrics": {
+    "n": 24,
+    "wr": 0.5417,
+    "pf": 1.61,
+    "usd_mo": 24,
+    "usd_trade": 36.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:59:20.932315+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1312,31 +1324,6 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  "mes-variance-risk-premium-carry": {
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
-   "metrics": {
-    "n": 208,
-    "wr": 0.524,
-    "pf": 1.122,
-    "usd_mo": 47,
-    "usd_trade": 8.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:04:02.729327+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
