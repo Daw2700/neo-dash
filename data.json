@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:20:30Z",
+  "stamp": "2026-07-22T16:25:57Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 507,
-  "n_results": 637,
-  "n_trials": 30625,
+  "n_registered": 510,
+  "n_results": 640,
+  "n_trials": 30628,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:25:11.672106+00:00",
+   "hash": "cfc1f37c",
+   "name": "mnq-micro-share-capitulation-low",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.629"
+  },
+  {
+   "t": "2026-07-22T16:24:23.996292+00:00",
+   "hash": "35189441",
+   "name": "mnq-day-margin-expiry-forced-flatten",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.906"
+  },
+  {
+   "t": "2026-07-22T16:23:31.020287+00:00",
+   "hash": "640b45ff",
+   "name": "sil-side-impact-asymmetry-inventory-pressure",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.084"
+  },
+  {
    "t": "2026-07-22T16:10:36.691330+00:00",
    "hash": "8cbdd607",
    "name": "mng-friday-threeday-gasday-hedge-concentration",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.506"
-  },
-  {
-   "t": "2026-07-22T15:58:22.155532+00:00",
-   "hash": "682a4c3a",
-   "name": "m6e-target2-holiday-unanchored-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1"
-  },
-  {
-   "t": "2026-07-22T15:55:26.134585+00:00",
-   "hash": "9e36913b",
-   "name": "xmkt-epps-quiet-day-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.866"
-  },
-  {
-   "t": "2026-07-22T15:52:35.671289+00:00",
-   "hash": "b7d793e7",
-   "name": "sil-crude-settle-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.288"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "SIL",
-    "task": "sil-side-impact-asymmetry-inventory-pressure",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:20:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-micro-share-at-capitulation-low",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-day-margin-expiry-forced-flatten",
     "stage": "dev3yr",
@@ -577,7 +569,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 458
+    "trials": 461
    }
   ]
  },
@@ -586,8 +578,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 87,
-   "n_killed": 50,
+   "n_tested": 89,
+   "n_killed": 52,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -639,7 +631,7 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 5,
+   "n_tested": 6,
    "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
