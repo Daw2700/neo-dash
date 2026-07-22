@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:03:11Z",
+  "stamp": "2026-07-22T20:03:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 605,
-  "n_results": 746,
-  "n_trials": 30734,
+  "n_results": 747,
+  "n_trials": 30735,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T20:02:32.062937+00:00",
+   "t": "2026-07-22T20:03:13.263676+00:00",
    "hash": "b8633c34",
    "name": "mcl-convenience-yield-voltermgate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.82"
   },
   {
    "t": "2026-07-22T20:01:25.769361+00:00",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-convenience-yield-vol-term-structure-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:59:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "robustness: mnq-overnight-origin-session-information",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "recheck: mgc-auction-yield-transmission-lag",
     "stage": "dev3yr",
@@ -520,7 +512,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 86,
+   "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -582,7 +574,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 567
+    "trials": 568
    }
   ]
  },
@@ -653,8 +645,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 39,
-   "n_killed": 24,
+   "n_tested": 40,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
