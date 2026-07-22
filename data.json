@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:25:40Z",
+  "stamp": "2026-07-22T07:28:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 290,
-  "n_results": 390,
-  "n_trials": 30361,
+  "n_registered": 292,
+  "n_results": 391,
+  "n_trials": 30362,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -173,6 +173,18 @@
    }
   },
   {
+   "id": "mes-degross-continuation",
+   "name": "mes-degross-continuation",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 21,
+   "wr": 0.5238,
+   "usd_mo": 13,
+   "pf": 1.402,
+   "usd_trade": 21.9
+  },
+  {
    "id": "b3-tom-long",
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -295,21 +307,33 @@
    "usd_mo": 20,
    "pf": 1.088,
    "usd_trade": 10.1
-  },
-  {
-   "id": "b6-prehol-m2k",
-   "name": "b6-prehol-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 31,
-   "wr": null,
-   "usd_mo": 2,
-   "pf": 1.074,
-   "usd_trade": 2.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:27:15.993235+00:00",
+   "hash": "8dd564af",
+   "name": "mes-settlement-window-print-pressure-unwind",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T07:27:14.331283+00:00",
+   "hash": "b8afb6be",
+   "name": "mes-degross-continuation ROBUSTNESS PROTOCOL",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T07:25:40.594738+00:00",
+   "hash": "3d2376b9",
+   "name": "mes-degross-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.402"
+  },
   {
    "t": "2026-07-22T07:24:51.780515+00:00",
    "hash": "174f4d70",
@@ -325,14 +349,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.886"
-  },
-  {
-   "t": "2026-07-22T07:23:53.599310+00:00",
-   "hash": "3d2376b9",
-   "name": "mes-degross-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T07:21:12.864981+00:00",
@@ -389,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.916"
-  },
-  {
-   "t": "2026-07-22T07:08:04.252202+00:00",
-   "hash": "a728d544",
-   "name": "mes-variance-risk-premium-carry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.919"
-  },
-  {
-   "t": "2026-07-22T07:06:28.791541+00:00",
-   "hash": "1384fbc0",
-   "name": "mcl-intraday-skew-lottery-demand-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.252"
   }
  ],
  "pipeline": {
@@ -424,22 +424,28 @@
     "stage": "idea-scout",
     "started": "2026-07-22T07:22:33Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "mes-settlement-window-print-pressure-unwind",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-degross-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:25:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-settlement-window-print-pressure-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-22T07:25:42Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
-   "registered": 29,
+   "idea": 0,
+   "registered": 30,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -501,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 194
+    "trials": 195
    }
   ]
  },
@@ -525,7 +531,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 37,
+   "n_tested": 38,
    "n_killed": 23,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -1016,6 +1022,26 @@
     "apex_max": 8
    }
   },
+  "mes-degross-continuation": {
+   "name": "mes-degross-continuation",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Days on which equity, bond, and gold all fall together indicate a levered multi-asset book being liquidated indiscriminately, not a normal risk-off rotation into safe havens; a screen (189 SCREEN 5) found this deleveraging is multi-day, so the next session should CONTINUE lower rather than rebound, the inverse of the standard fire-sale-rebound prior.",
+   "metrics": {
+    "n": 21,
+    "wr": 0.5238,
+    "pf": 1.402,
+    "usd_mo": 13,
+    "usd_trade": 21.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:25:40.594738+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-tom-long": {
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -1239,31 +1265,6 @@
      "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
-    }
-   ]
-  },
-  "b6-prehol-m2k": {
-   "name": "b6-prehol-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Pre-holiday drift comes from US equity market liquidity withdrawal and short-covering, which applies to small-caps as much as tech",
-   "metrics": {
-    "n": 31,
-    "wr": null,
-    "pf": 1.074,
-    "usd_mo": 2,
-    "usd_trade": 2.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.110553+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    },
-    {
-     "t": "2026-07-21T16:04:19.693873+00:00",
-     "stage": "dev3yr",
-     "verdict": "FAIL"
     }
    ]
   }
