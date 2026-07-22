@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:34:24Z",
+  "stamp": "2026-07-22T12:36:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 425,
-  "n_results": 538,
-  "n_trials": 30509,
+  "n_registered": 426,
+  "n_results": 539,
+  "n_trials": 30510,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T12:36:39.112309+00:00",
+   "hash": "72423a56",
+   "name": "zs-sa-harvest-hedge-pressure",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.732"
+  },
+  {
    "t": "2026-07-22T12:34:12.411019+00:00",
    "hash": "20cdcd3a",
    "name": "zc-pollination-window-weather-premium",
@@ -397,14 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.269"
-  },
-  {
-   "t": "2026-07-22T12:12:02.586017+00:00",
-   "hash": "1f89e90c",
-   "name": "zs-zc-substitution-ratio-reversion",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.453"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
     "task": "m6e-energy-terms-of-trade-shock-lag",
     "stage": "dev3yr",
     "started": "2026-07-22T12:34:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "zs-south-american-harvest-hedge-pressure",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:34:24Z",
     "state": "running"
    }
   ],
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 342
+    "trials": 343
    }
   ]
  },
@@ -645,8 +637,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 3,
+   "n_tested": 4,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   }
