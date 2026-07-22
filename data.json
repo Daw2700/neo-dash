@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:58:12Z",
+  "stamp": "2026-07-22T04:03:20Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 186,
   "n_results": 279,
@@ -404,19 +404,101 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T03:54:41Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mbt-etf-nav-strike-hedge-window",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.72
+   },
+   {
+    "rank": 2,
+    "idea": "zn-mbs-convexity-hedge-cascade",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 3,
+    "idea": "zn-boj-tokyo-policy-transmission",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "mgc-volume-timing-program-completion",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-russell-recon-window",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 6,
+    "idea": "m6e-pre-0830-liquidity-withdrawal-reversal",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 7,
+    "idea": "mes-cta-trigger-level-cross-flow",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mes-corporate-tax-date-reserve-drain",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "zc-harvest-storage-handoff",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "zs-china-session-handoff",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 10,
    "registered": 10,
    "dev3yr": 0,
    "robustness": 0,
