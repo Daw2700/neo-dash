@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:49:40Z",
+  "stamp": "2026-07-22T18:49:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T18:49:15Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "SIL",
+    "task": "xsec-annual-commodity-index-reweight-january",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:49:41Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-covered-call-etf-monthly-roll-supply-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:49:41Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "xsec-annual-commodity-index-reweight-january",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 5,
-    "idea": "mnq-covered-call-etf-monthly-roll-supply-window",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 6,
     "idea": "xsec-commodity-jump-risk-premium-rank",
@@ -507,7 +505,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 8,
    "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
