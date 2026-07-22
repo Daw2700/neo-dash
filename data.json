@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:30:47Z",
+  "stamp": "2026-07-22T14:35:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 464,
-  "n_results": 585,
-  "n_trials": 30573,
+  "n_registered": 467,
+  "n_results": 588,
+  "n_trials": 30576,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -249,18 +249,6 @@
    "usd_trade": 15.4
   },
   {
-   "id": "mcl-hedging-pressure-horizon-decomposition-v2",
-   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 89,
-   "wr": 0.5169,
-   "usd_mo": 89,
-   "pf": 1.263,
-   "usd_trade": 35.8
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -303,9 +291,53 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
+  },
+  {
+   "id": "b6-vix-m2k",
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 26,
+   "wr": null,
+   "usd_mo": 5,
+   "pf": 1.148,
+   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T14:34:51.147941+00:00",
+   "hash": "a555532d",
+   "name": "mes-zn-activity-range-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.161"
+  },
+  {
+   "t": "2026-07-22T14:33:22.103017+00:00",
+   "hash": "c044425e",
+   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T14:33:12.255812+00:00",
+   "hash": "792e61b8",
+   "name": "mes-postrelease-impact-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9769"
+  },
+  {
+   "t": "2026-07-22T14:32:09.973514+00:00",
+   "hash": "c3119d3c",
+   "name": "PROTOCOL robustness mcl-hedging-pressure-horizon-decomposition-v2 (probe 554, target c044425e63bf4e2a)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T14:27:45.779499+00:00",
    "hash": "fa5acf93",
@@ -369,60 +401,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T14:10:46.955462+00:00",
-   "hash": "6dba1bf2",
-   "name": "mym-thin-leg-hedge-residual-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.484"
-  },
-  {
-   "t": "2026-07-22T14:10:08.535860+00:00",
-   "hash": "d806b114",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.325"
-  },
-  {
-   "t": "2026-07-22T14:08:40.425512+00:00",
-   "hash": "06e093b3",
-   "name": "mes-tail-hour-quote-instability-rent",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.345"
-  },
-  {
-   "t": "2026-07-22T14:05:43.078887+00:00",
-   "hash": "ad8c123b",
-   "name": "scout-34-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mcl-hedging-pressure-horizon-decomposition-v2",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:30:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-postrelease-price-impact-regime-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:30:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-rates-activity-lead-equity-session-range-gate",
     "stage": "dev3yr",
@@ -515,7 +499,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 64,
+   "registered": 65,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -577,7 +561,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 406
+    "trials": 409
    }
   ]
  },
@@ -601,8 +585,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 76,
-   "n_killed": 54,
+   "n_tested": 78,
+   "n_killed": 56,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1246,26 +1230,6 @@
     }
    ]
   },
-  "mcl-hedging-pressure-horizon-decomposition-v2": {
-   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Kang, Rouwenhorst and Tang (A Tale of Two Premiums) show weekly net-position changes decompose into a SHORT-horizon component driven by non-commercial liquidity demand and a LONG-horizon component driven by commercial hedging demand, and the two forecast futures returns with OPPOSITE signs; every prior COT crowding test in this lab (n9-cot-crowded-fade, n9-cot-washout-buy) traded the raw undecomposed net level, which nets the two effects to roughly zero, so decomposing should recover signal the raw level test could not see. Supersedes hash 30cdd035a7c5b391 which used a COT market string (CRUDE OIL, LIGHT SWEET - NEW YORK MERCANTILE EXCHANGE) that stops reporting after 2022-02-01; corrected to the continuously-reporting WTI FINANCIAL CRUDE OIL series before any result was recorded.",
-   "metrics": {
-    "n": 89,
-    "wr": 0.5169,
-    "pf": 1.263,
-    "usd_mo": 89,
-    "usd_trade": 35.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:24:36.767126+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1339,6 +1303,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-vix-m2k": {
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
+   "metrics": {
+    "n": 26,
+    "wr": null,
+    "pf": 1.148,
+    "usd_mo": 5,
+    "usd_trade": 6.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.112070+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
