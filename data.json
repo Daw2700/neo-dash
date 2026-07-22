@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:17:46Z",
+  "stamp": "2026-07-22T13:20:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 441,
-  "n_results": 558,
-  "n_trials": 30529,
+  "n_registered": 442,
+  "n_results": 559,
+  "n_trials": 30530,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T13:18:51.201705+00:00",
+   "hash": "a1b83a2a",
+   "name": "mes-micro-complex-retail-mix-contrarian",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.948"
+  },
+  {
    "t": "2026-07-22T13:17:15.904502+00:00",
    "hash": "357a99b5",
    "name": "mes-event-cluster-bracket",
@@ -393,36 +401,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T13:00:10.663078+00:00",
-   "hash": "ff570c0f",
-   "name": "mes-first-extreme-ordering-inventory-carry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.955"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-associated-gas-supply-channel",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:11:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-event-cluster-variance-bracket",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:12:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-micro-complex-retail-mix-contrarian",
     "stage": "dev3yr",
@@ -505,7 +489,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 362
+    "trials": 363
    }
   ]
  },
@@ -529,8 +513,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 73,
-   "n_killed": 52,
+   "n_tested": 74,
+   "n_killed": 53,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
