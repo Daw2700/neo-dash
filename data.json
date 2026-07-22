@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:57:11Z",
+  "stamp": "2026-07-22T07:01:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 277,
-  "n_results": 377,
-  "n_trials": 30348,
+  "n_registered": 279,
+  "n_results": 380,
+  "n_trials": 30351,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -201,18 +201,6 @@
    "usd_trade": 15.4
   },
   {
-   "id": "mnq-illiquidity-premium-nextday-drift",
-   "name": "mnq-illiquidity-premium-nextday-drift",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 120,
-   "wr": 0.5833,
-   "usd_mo": 79,
-   "pf": 1.249,
-   "usd_trade": 23.7
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -243,18 +231,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "mnq-jump-share-decomposition-fade",
-   "name": "mnq-jump-share-decomposition-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 360,
-   "wr": 0.4917,
-   "usd_mo": 217,
-   "pf": 1.194,
-   "usd_trade": 21.7
   },
   {
    "id": "b6-monday-m2k",
@@ -307,9 +283,65 @@
    "usd_mo": 20,
    "pf": 1.088,
    "usd_trade": 10.1
+  },
+  {
+   "id": "b6-prehol-m2k",
+   "name": "b6-prehol-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 31,
+   "wr": null,
+   "usd_mo": 2,
+   "pf": 1.074,
+   "usd_trade": 2.3
+  },
+  {
+   "id": "mcl-carry-regime",
+   "name": "mcl-carry-regime",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 37,
+   "wr": 0.4054,
+   "usd_mo": 9,
+   "pf": 1.043,
+   "usd_trade": 9.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:00:08.808734+00:00",
+   "hash": "aac561d0",
+   "name": "mnq-jump-share-decomposition-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T06:59:56.881365+00:00",
+   "hash": "e9bb59f1",
+   "name": "mes-volume-conditioned-daily-autocorrelation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.895"
+  },
+  {
+   "t": "2026-07-22T06:59:01.590616+00:00",
+   "hash": "3ae81008",
+   "name": "mnq-illiquidity-premium-nextday-drift",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T06:58:04.915308+00:00",
+   "hash": "32914a35",
+   "name": "ROBUSTNESS-PROTOCOL mnq-jump-share-decomposition-fade (aac561d033f15f53)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T06:51:46.047323+00:00",
    "hash": "011992fa",
@@ -373,38 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T06:35:40.285507+00:00",
-   "hash": "7fe8960c",
-   "name": "mgc-etf-creation-hedge-1600-print",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.481"
-  },
-  {
-   "t": "2026-07-22T06:35:16.884237+00:00",
-   "hash": "cc0c5579",
-   "name": "mcl-pipeline-nomination-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.945"
-  },
-  {
-   "t": "2026-07-22T06:34:47.978869+00:00",
-   "hash": "d3730f4d",
-   "name": "zs-usda-daily-flash-sale-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T06:33:08.590911+00:00",
-   "hash": "7ab96a59",
-   "name": "mgc-pboc-reserve-report-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.549"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MNQ",
-    "task": "robustness: mnq-illiquidity-premium-nextday-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:56:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
     "task": "robustness: mnq-jump-share-decomposition-fade",
     "stage": "dev3yr",
     "started": "2026-07-22T06:56:47Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-volume-conditioned-daily-autocorrelation",
     "stage": "dev3yr",
@@ -528,7 +520,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 25,
+   "registered": 26,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -590,7 +582,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 181
+    "trials": 184
    }
   ]
  },
@@ -614,8 +606,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 33,
-   "n_killed": 20,
+   "n_tested": 34,
+   "n_killed": 21,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1159,26 +1151,6 @@
     }
    ]
   },
-  "mnq-illiquidity-premium-nextday-drift": {
-   "name": "mnq-illiquidity-premium-nextday-drift",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Amihud illiquidity ratio (abs RTH open-close log move divided by volume relative to its trailing 60-day median) measures how much price moved per unit of liquidity provided; on days market makers absorb large moves on thin relative volume they end the session with unwanted inventory and demand compensation for holding it overnight, paid out as unconditional (sign-independent) next-session drift rather than a same-direction continuation or reversal.",
-   "metrics": {
-    "n": 120,
-    "wr": 0.5833,
-    "pf": 1.249,
-    "usd_mo": 79,
-    "usd_trade": 23.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T06:46:44.386465+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1236,26 +1208,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "mnq-jump-share-decomposition-fade": {
-   "name": "mnq-jump-share-decomposition-fade",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Splitting a days realized variance into a jump component via bipower variation and a continuous component separates one-off repricing from sustained order flow; jump-dominated moves are non-persistent and over-extend, while diffusive days reflect steady demand that carries into the next session, so trade the following session with the sign implied by the signal.",
-   "metrics": {
-    "n": 360,
-    "wr": 0.4917,
-    "pf": 1.194,
-    "usd_mo": 217,
-    "usd_trade": 21.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T06:47:16.402493+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
   },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
@@ -1342,6 +1294,51 @@
     {
      "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "b6-prehol-m2k": {
+   "name": "b6-prehol-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Pre-holiday drift comes from US equity market liquidity withdrawal and short-covering, which applies to small-caps as much as tech",
+   "metrics": {
+    "n": 31,
+    "wr": null,
+    "pf": 1.074,
+    "usd_mo": 2,
+    "usd_trade": 2.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.110553+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    },
+    {
+     "t": "2026-07-21T16:04:19.693873+00:00",
+     "stage": "dev3yr",
+     "verdict": "FAIL"
+    }
+   ]
+  },
+  "mcl-carry-regime": {
+   "name": "mcl-carry-regime",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Crude oil term structure prices the inventory / convenience-yield state: in backwardation inventories are tight and producers pay long speculators a positive risk premium to carry hedged exposure, while in contango that premium reverses and storage holders are paid instead. Signing MCL direction off the front-versus-deferred basis therefore harvests a producer-hedging risk premium rather than any event reaction, per Gorton and Rouwenhorst and Erb and Harvey.",
+   "metrics": {
+    "n": 37,
+    "wr": 0.4054,
+    "pf": 1.043,
+    "usd_mo": 9,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T01:43:38.994772+00:00",
+     "stage": "dev3yr",
      "verdict": "KILLED"
     }
    ]
