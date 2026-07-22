@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:34:01Z",
+  "stamp": "2026-07-22T11:36:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 399,
-  "n_results": 508,
-  "n_trials": 30479,
+  "n_registered": 402,
+  "n_results": 509,
+  "n_trials": 30480,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T11:35:57.151297+00:00",
+   "hash": "3b494bfd",
+   "name": "mgc-staggered-settlement-info-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T11:35:56.782174+00:00",
+   "hash": "4c2a465f",
+   "name": "mes-overnight-discovery-venue-composition",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.641"
+  },
+  {
+   "t": "2026-07-22T11:35:11.975080+00:00",
+   "hash": "254d7668",
+   "name": "mes-holiday-inattention-gated-fomc-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T11:33:12.421346+00:00",
    "hash": "34f88c68",
    "name": "mnq-release-collision-attention-split",
@@ -381,30 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.554"
-  },
-  {
-   "t": "2026-07-22T11:12:59.865538+00:00",
-   "hash": "991d6fe7",
-   "name": "xasset-vol-origin-attribution",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.575"
-  },
-  {
-   "t": "2026-07-22T11:10:07.861471+00:00",
-   "hash": "bc6c15dc",
-   "name": "sil-gold-volratio-leverage-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.002"
-  },
-  {
-   "t": "2026-07-22T11:09:41.444972+00:00",
-   "hash": "4264182c",
-   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.047"
   }
  ],
  "pipeline": {
@@ -412,21 +412,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "mes-overnight-discovery-venue-composition",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:30:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-holiday-inattention-gated-fomc-lag",
     "stage": "dev3yr",
     "started": "2026-07-22T11:32:56Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-staggered-settlement-information-lag",
     "stage": "dev3yr",
@@ -519,7 +511,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 53,
+   "registered": 55,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -581,7 +573,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 312
+    "trials": 313
    }
   ]
  },
@@ -605,8 +597,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 61,
-   "n_killed": 42,
+   "n_tested": 62,
+   "n_killed": 43,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
