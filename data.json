@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:36:57Z",
+  "stamp": "2026-07-22T01:40:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -412,32 +412,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "zn-volshock-equity-degross-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:28:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T01:28:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "robustness: zn-volshock-equity-degross-rebound",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:33:30Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [],
   "funnel": {
    "idea": 0,
