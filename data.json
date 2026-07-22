@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:18:17Z",
+  "stamp": "2026-07-22T19:20:01Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 587,
-  "n_results": 726,
-  "n_trials": 30714,
+  "n_results": 727,
+  "n_trials": 30715,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:19:47.523221+00:00",
+   "hash": "141dcab5",
+   "name": "mnq-dst-desync-clock-shift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.014"
+  },
+  {
    "t": "2026-07-22T19:17:50.453302+00:00",
    "hash": "141dcab5",
    "name": "mnq-dst-desync-clock-shift",
@@ -393,14 +401,6 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 1.083"
-  },
-  {
-   "t": "2026-07-22T18:55:43.470094+00:00",
-   "hash": "9af60eae",
-   "name": "rep-zs-holiday-compressed-week-hedge-budget-zc",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T19:12:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "recheck: mnq-dst-desync-clock-shift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:17:54Z",
     "state": "running"
    }
   ],
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 547
+    "trials": 548
    }
   ]
  },
