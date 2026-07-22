@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:10:39Z",
+  "stamp": "2026-07-22T03:11:02Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -404,17 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 1,
-    "idea": "mnq-postclose-index-flow-bleed",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.62
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "replication: b10-nagel-vix-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:11:02Z",
+    "state": "running"
    },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "replication: fomc-statement-presser-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:11:02Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-postclose-index-flow-bleed",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:11:02Z",
+    "state": "running"
+   }
+  ],
+  "backlog": [
    {
     "rank": 2,
     "idea": "mes-euopen-dealer-inventory-unwind",
@@ -498,7 +514,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
