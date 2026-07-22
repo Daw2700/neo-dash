@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:01:12Z",
+  "stamp": "2026-07-22T03:01:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "decision",
     "started": "2026-07-22T03:01:12Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNG",
+    "task": "mng-bidweek-baseload-procurement",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:01:14Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mng-bidweek-baseload-procurement",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 12,
     "idea": "mes-vanna-ivcrush-dealer-rebuy",
@@ -451,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
