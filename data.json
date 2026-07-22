@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:29:59Z",
+  "stamp": "2026-07-22T15:32:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 492,
-  "n_results": 617,
-  "n_trials": 30605,
+  "n_results": 619,
+  "n_trials": 30607,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "mnq-two-sided-auction-balance-expansion",
+   "name": "mnq-two-sided-auction-balance-expansion",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 341,
+   "wr": 0.4692,
+   "usd_mo": 374,
+   "pf": 1.466,
+   "usd_trade": 39.5
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -281,18 +293,6 @@
    }
   },
   {
-   "id": "mgc-gap-sign-streak-offshore-accumulation",
-   "name": "mgc-gap-sign-streak-offshore-accumulation",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 193,
-   "wr": 0.5233,
-   "usd_mo": 37,
-   "pf": 1.171,
-   "usd_trade": 6.9
-  },
-  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -307,17 +307,25 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:32:53.526367+00:00",
+   "hash": "c32ab3d9",
+   "name": "mgc-gap-sign-streak-offshore-accumulation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T15:30:00.603168+00:00",
+   "hash": "f7e7e096",
+   "name": "mnq-two-sided-auction-balance-expansion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.466"
+  },
+  {
    "t": "2026-07-22T15:29:17.685763+00:00",
    "hash": "2ee7287c",
    "name": "scout-36-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T15:28:36.760846+00:00",
-   "hash": "f7e7e096",
-   "name": "mnq-two-sided-auction-balance-expansion",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -393,26 +401,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.2437"
-  },
-  {
-   "t": "2026-07-22T15:12:41.247672+00:00",
-   "hash": "468f6ef9",
-   "name": "mcl-first-passage-grind-vs-airpocket",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.113"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-thin-minute-variance-share-noninformation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:25:31Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -422,15 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-two-sided-auction-balance-expansion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:26:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "robustness: mgc-gap-sign-streak-offshore-accumulation",
     "stage": "dev3yr",
@@ -441,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 68,
+   "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 438
+    "trials": 440
    }
   ]
  },
@@ -621,7 +605,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 38,
+   "n_tested": 39,
    "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
@@ -980,6 +964,26 @@
     }
    ]
   },
+  "mnq-two-sided-auction-balance-expansion": {
+   "name": "mnq-two-sided-auction-balance-expansion",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Balanced two-sided auction days, measured by many sign-change crossings of the session close vs the RTH session open, mean no net inventory imbalance was resolved intraday; that unresolved imbalance must clear the following session, producing range expansion. The effect is magnitude-only (directional content is null per the screen), so the trade takes an opening-range breakout in whichever direction fires first rather than a fixed side, betting on expansion not direction.",
+   "metrics": {
+    "n": 341,
+    "wr": 0.4692,
+    "pf": 1.466,
+    "usd_mo": 374,
+    "usd_trade": 39.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:30:00.603168+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1229,26 +1233,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "mgc-gap-sign-streak-offshore-accumulation": {
-   "name": "mgc-gap-sign-streak-offshore-accumulation",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "A run of consecutive same-sign opening gaps on MGC marks persistent offshore physical or official-sector accumulation repricing gold while the US is closed; the streak length, not any single gap size, signals a standing buyer or seller that the US RTH session then ratifies (continues) rather than fades.",
-   "metrics": {
-    "n": 193,
-    "wr": 0.5233,
-    "pf": 1.171,
-    "usd_mo": 37,
-    "usd_trade": 6.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:27:31.031420+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
   },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
