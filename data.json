@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:33:30Z",
+  "stamp": "2026-07-22T09:33:33Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-delivery-wildcard-option-pre-settle-pressure",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:33:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZC",
+    "task": "zc-price-limit-expansion-regime-state",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:33:33Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-close-vwap-dislocation-two-sided-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:33:33Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zn-delivery-wildcard-option-pre-settle-pressure",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "zc-price-limit-expansion-regime-state",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 3,
-    "idea": "mes-close-vwap-dislocation-two-sided-repair",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 4,
     "idea": "mes-closing-imbalance-dissemination-1550-absorption",
@@ -529,7 +527,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 41,
    "dev3yr": 0,
    "robustness": 0,
