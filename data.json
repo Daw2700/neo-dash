@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:25:29Z",
+  "stamp": "2026-07-22T15:25:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 487,
+  "n_registered": 488,
   "n_results": 614,
   "n_trials": 30602,
   "holdout_looks_spent": 0,
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T15:25:31.347333+00:00",
+   "hash": "32382ed8",
+   "name": "zs-spot-month-speculative-limit-forced-exit",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T15:25:11.810360+00:00",
    "hash": "cea36cba",
    "name": "mgc-concealed-absorber-move-failure",
@@ -393,14 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T15:03:43.320389+00:00",
-   "hash": "e0567bd7",
-   "name": "zn-va-rho-hedge-rebalance",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T15:24:47Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-thin-minute-variance-share-noninformation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T15:25:31Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "zn-thin-minute-variance-share-noninformation",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 8,
     "idea": "mnq-two-sided-auction-balance-expansion",
@@ -443,8 +442,8 @@
    }
   ],
   "funnel": {
-   "idea": 2,
-   "registered": 66,
+   "idea": 1,
+   "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
