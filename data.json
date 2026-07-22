@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:18:24Z",
+  "stamp": "2026-07-22T20:19:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 612,
-  "n_results": 758,
-  "n_trials": 30746,
+  "n_registered": 613,
+  "n_results": 759,
+  "n_trials": 30747,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,20 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:19:21.231177+00:00",
+   "hash": "47b77745",
+   "name": "zn-fomc-blackout-void-persistence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.634"
+  },
+  {
+   "t": "2026-07-22T20:19:12.167805+00:00",
+   "hash": "e0a18764",
+   "name": "scout-44-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T20:17:50.865797+00:00",
    "hash": "fa1e0c7f",
    "name": "met-perp-funding-settlement-leak",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.058"
-  },
-  {
-   "t": "2026-07-22T20:17:46.896778+00:00",
-   "hash": "47b77745",
-   "name": "zn-fomc-blackout-void-persistence",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T20:16:53.018834+00:00",
@@ -389,28 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.606"
-  },
-  {
-   "t": "2026-07-22T20:04:38.521467+00:00",
-   "hash": "8de2d377",
-   "name": "mgc-auction-yield-transmission-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.03"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-fomc-blackout-information-void-persistence",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:15:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-opec-meeting-uncertainty-premium-release",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-ethanol-crush-margin-demand-transmission",
     "stage": "dev3yr",
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 579
+    "trials": 580
    }
   ]
  },
@@ -617,8 +609,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 49,
-   "n_killed": 41,
+   "n_tested": 50,
+   "n_killed": 42,
    "book_sleeves": [],
    "agents_now": []
   },
