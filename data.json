@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:52:44Z",
+  "stamp": "2026-07-22T19:55:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 600,
-  "n_results": 741,
-  "n_trials": 30729,
+  "n_registered": 601,
+  "n_results": 742,
+  "n_trials": 30730,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:54:10.717963+00:00",
+   "hash": "371ef9b8",
+   "name": "mcl-cot-release-window-crowding-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.38"
+  },
+  {
    "t": "2026-07-22T19:51:00.426657+00:00",
    "hash": "72b8e167",
    "name": "scout-43-screen",
@@ -389,34 +397,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-22T19:33:07.932230+00:00",
-   "hash": "7c7da75f",
-   "name": "mnq-vwap-twap-participation-skew",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-unmarked-window-length-dose-response",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:43:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-price-weighted-exdiv-mechanical-drop",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:43:17Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -426,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-cot-release-window-crowding-repricing",
     "stage": "dev3yr",
@@ -499,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 562
+    "trials": 563
    }
   ]
  },
@@ -570,8 +554,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 38,
-   "n_killed": 23,
+   "n_tested": 39,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
