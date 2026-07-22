@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:15:40Z",
+  "stamp": "2026-07-22T06:15:42Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-corporate-ratelock-issuance-hedge",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:15:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-dividend-exdate-cluster-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:15:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-rig-count-friday-supply-print",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:15:42Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zn-corporate-ratelock-issuance-hedge",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mes-dividend-exdate-cluster-carry",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "mcl-rig-count-friday-supply-print",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mng-european-gas-open-lng-netback-transmission",
@@ -538,7 +536,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
