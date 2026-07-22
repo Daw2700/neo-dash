@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:23:53Z",
+  "stamp": "2026-07-22T08:23:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "mcl-option-expiry-gamma-pin-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:23:54Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-order-flow-toxicity-liquidity-withdrawal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:23:54Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-variation-margin-call-preopen-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:23:54Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mcl-option-expiry-gamma-pin-window",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "mes-order-flow-toxicity-liquidity-withdrawal",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "mes-variation-margin-call-preopen-window",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 4,
     "idea": "zn-treasury-buyback-operation-window",
@@ -538,7 +536,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 36,
    "dev3yr": 0,
    "robustness": 0,
