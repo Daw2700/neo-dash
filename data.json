@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:45:02Z",
+  "stamp": "2026-07-22T08:45:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,30 +416,35 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:44:38Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 13,
-    "idea": "met-us-morning-risk-transfer-drift",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.3
    },
    {
-    "rank": 14,
-    "idea": "zc-post-close-macro-information-catchup",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T08:45:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-us-morning-risk-transfer-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:45:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZC",
+    "task": "zc-post-close-macro-information-catchup",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:45:03Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 37,
    "dev3yr": 0,
    "robustness": 0,
