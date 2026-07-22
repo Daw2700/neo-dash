@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:16:51Z",
+  "stamp": "2026-07-22T19:17:54Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 586,
-  "n_results": 725,
-  "n_trials": 30713,
+  "n_registered": 587,
+  "n_results": 726,
+  "n_trials": 30714,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:17:50.453302+00:00",
+   "hash": "141dcab5",
+   "name": "mnq-dst-desync-clock-shift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.014"
+  },
+  {
    "t": "2026-07-22T19:14:06.405564+00:00",
    "hash": "46e58e86",
    "name": "mcl-energy-desk-open-handoff",
@@ -393,14 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T18:55:11.883966+00:00",
-   "hash": "554bd3b2",
-   "name": "mcl-jump-intensity-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.804"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "mnq-dst-transatlantic-overlap-shift-weeks",
     "stage": "dev3yr",
     "started": "2026-07-22T19:12:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "recheck: mnq-dst-desync-clock-shift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:17:54Z",
     "state": "running"
    }
   ],
@@ -487,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 546
+    "trials": 547
    }
   ]
  },
@@ -496,8 +504,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 99,
-   "n_killed": 58,
+   "n_tested": 100,
+   "n_killed": 59,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
