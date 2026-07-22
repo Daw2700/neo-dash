@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:33:57Z",
+  "stamp": "2026-07-22T12:34:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T12:30:11Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-energy-terms-of-trade-shock-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-22T12:34:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "m6e-energy-terms-of-trade-shock-lag",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 12,
     "idea": "zs-south-american-harvest-hedge-pressure",
@@ -456,7 +455,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
