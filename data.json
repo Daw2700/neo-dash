@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:02:31Z",
+  "stamp": "2026-07-22T10:05:36Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 361,
-  "n_results": 465,
-  "n_trials": 30436,
+  "n_registered": 362,
+  "n_results": 466,
+  "n_trials": 30437,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:05:14.794893+00:00",
+   "hash": "54cb9910",
+   "name": "mng-expiring-contract-implied-quote-settlement-fallback",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.412"
+  },
+  {
    "t": "2026-07-22T09:59:02.071629+00:00",
    "hash": "8c01ee09",
    "name": "mcl-closing-hour-flow-concentration-next-session-decay",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.777"
-  },
-  {
-   "t": "2026-07-22T09:44:15.163153+00:00",
-   "hash": "8bb8f16b",
-   "name": "zc-price-limit-expansion-regime-state",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -415,14 +415,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T09:57:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-expiring-contract-implied-quote-settlement-fallback",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:02:31Z",
     "state": "running"
    }
   ],
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 269
+    "trials": 270
    }
   ]
  },
@@ -571,8 +563,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 6,
-   "n_killed": 5,
+   "n_tested": 7,
+   "n_killed": 6,
    "book_sleeves": [],
    "agents_now": []
   },
