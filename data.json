@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:05:00Z",
+  "stamp": "2026-07-22T22:06:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 649,
-  "n_results": 800,
-  "n_trials": 30788,
+  "n_results": 801,
+  "n_trials": 30789,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T22:04:27.474323+00:00",
+   "t": "2026-07-22T22:05:57.810580+00:00",
    "hash": "dfa82f2b",
    "name": "mes-treasury-roll-week-capacity-drain",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.103"
   },
   {
    "t": "2026-07-22T22:02:52.718915+00:00",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-treasury-roll-week-capacity-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:00:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-soma-reinvestment-cap-overflow-window",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-fomc-surprise-liquidity-gradient-crossmarket",
     "stage": "dev3yr",
@@ -439,7 +431,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 88,
+   "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -501,7 +493,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 621
+    "trials": 622
    }
   ]
  },
@@ -525,8 +517,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 107,
-   "n_killed": 79,
+   "n_tested": 108,
+   "n_killed": 80,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
