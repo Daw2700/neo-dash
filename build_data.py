@@ -21,7 +21,7 @@ for r in results:
 
 # --- constants mirrored from dashboard/build_dashboard.py (mnq_lab) ---
 VALID = {"ef8945553228bfcc", "fd5789814bc7637e", "f3c0baed3995f06f", "00903600149f54ac",
-         "5eec72170531044e", "6153da5cd4762a99", "0190bb9911f375cc", "94b9b65b2d08955b"}
+         "5eec72170531044e", "0190bb9911f375cc", "94b9b65b2d08955b"}  # scan-mcl removed 2026-07-22 (Daniel approved d-scanmcl-demote)
 DISPLAY = {"scan-mym": "mym-prehol (Dow)", "scan-mcl": "mcl-vix (crude)", "scan-mbt": "mbt-nr7 (bitcoin)"}
 PINNED_HASH = "6829f454b50d4422"
 DEV3YR_MONTHS = 36
