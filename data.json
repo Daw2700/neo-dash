@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:32:56Z",
+  "stamp": "2026-07-22T20:37:37Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 615,
-  "n_results": 761,
-  "n_trials": 30749,
+  "n_registered": 618,
+  "n_results": 764,
+  "n_trials": 30752,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:36:13.794088+00:00",
+   "hash": "25142140",
+   "name": "mes-covered-call-etf-roll-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.439"
+  },
+  {
+   "t": "2026-07-22T20:36:08.987074+00:00",
+   "hash": "95bb6446",
+   "name": "mnq-complex-dispersion-expansion-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.895"
+  },
+  {
+   "t": "2026-07-22T20:34:59.116654+00:00",
+   "hash": "9756e792",
+   "name": "zc-farmer-round-dollar-sell-shelf",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.642"
+  },
+  {
    "t": "2026-07-22T20:22:35.676958+00:00",
    "hash": "70314138",
    "name": "mcl-opec-premium-release",
@@ -373,30 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1003"
-  },
-  {
-   "t": "2026-07-22T20:10:09.444332+00:00",
-   "hash": "551ff7d3",
-   "name": "mng-bidweek-fixing-concentration",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.131"
-  },
-  {
-   "t": "2026-07-22T20:08:19.075115+00:00",
-   "hash": "f4544f8a",
-   "name": "mnq-overnight-origin-session-information",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 1.036"
-  },
-  {
-   "t": "2026-07-22T20:07:10.942971+00:00",
-   "hash": "f4544f8a",
-   "name": "mnq-overnight-origin-session-information",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -413,14 +413,6 @@
     "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-complex-dispersion-expansion-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:32:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZC",
-    "task": "zc-farmer-round-dollar-sell-shelf",
     "stage": "dev3yr",
     "started": "2026-07-22T20:32:56Z",
     "state": "running"
@@ -591,7 +583,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 582
+    "trials": 585
    }
   ]
  },
@@ -600,8 +592,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 103,
-   "n_killed": 60,
+   "n_tested": 104,
+   "n_killed": 61,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -615,8 +607,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 99,
-   "n_killed": 73,
+   "n_tested": 100,
+   "n_killed": 74,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -718,8 +710,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 30,
-   "n_killed": 27,
+   "n_tested": 31,
+   "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
   },
