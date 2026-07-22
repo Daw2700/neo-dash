@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:37:04Z",
+  "stamp": "2026-07-22T17:38:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 543,
-  "n_results": 677,
-  "n_trials": 30665,
+  "n_registered": 546,
+  "n_results": 678,
+  "n_trials": 30666,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T17:38:45.891451+00:00",
+   "hash": "2fb8d325",
+   "name": "m2k-shortsale-constraint-overshoot",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T17:38:36.981205+00:00",
+   "hash": "36288519",
+   "name": "m2k-bank-earnings-kickoff-credit-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.4"
+  },
+  {
+   "t": "2026-07-22T17:37:36.678804+00:00",
+   "hash": "0ffe2d63",
+   "name": "mym-oil-shock-sector-dispersion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T17:36:57.586950+00:00",
    "hash": "1538f93d",
    "name": "mgc-india-festival-import-hedge-window",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.38"
-  },
-  {
-   "t": "2026-07-22T17:25:10.437299+00:00",
-   "hash": "2d7480a3",
-   "name": "mgc-corrsign-dip-repair",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.075"
-  },
-  {
-   "t": "2026-07-22T17:19:33.698252+00:00",
-   "hash": "3c92598e",
-   "name": "mes-zn-extreme-ordering-lead-lag-residual",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 1.092"
-  },
-  {
-   "t": "2026-07-22T17:18:29.269706+00:00",
-   "hash": "c830c9b5",
-   "name": "rep-mes-zn-extreme-ordering-lead-lag-residual-mnq",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-bank-earnings-kickoff-credit-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:35:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-mnq-oil-shock-sector-weight-dispersion",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-shortsale-constraint-futures-expression-overshoot",
     "stage": "dev3yr",
@@ -515,7 +507,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 76,
+   "registered": 78,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -577,7 +569,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 498
+    "trials": 499
    }
   ]
  },
@@ -621,8 +613,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 7,
+   "n_tested": 17,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   },
