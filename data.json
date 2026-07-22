@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:41:12Z",
+  "stamp": "2026-07-22T04:42:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 213,
-  "n_results": 304,
-  "n_trials": 30275,
+  "n_registered": 216,
+  "n_results": 305,
+  "n_trials": 30276,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -307,6 +307,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T04:42:32.482166+00:00",
+   "hash": "8619b487",
+   "name": "mes-am-settled-index-option-opening-print-distortion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.595"
+  },
+  {
+   "t": "2026-07-22T04:42:19.825568+00:00",
+   "hash": "4c72bf41",
+   "name": "zn-qra-issuance-repricing",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T04:41:53.533733+00:00",
+   "hash": "70099c54",
+   "name": "zs-nopa-crush-midmonth-demand-print",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T04:40:44.482404+00:00",
    "hash": "26db3d2d",
    "name": "sil-lbma-auction-imbalance-window",
@@ -377,44 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.908"
-  },
-  {
-   "t": "2026-07-22T04:26:27.845923+00:00",
-   "hash": "17fca105",
-   "name": "zc-commercial-hedging-pressure-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.615"
-  },
-  {
-   "t": "2026-07-22T04:26:22.996115+00:00",
-   "hash": "731e28c9",
-   "name": "mnq-close-on-lows-liquidation-overnight-repair",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T04:24:41.254592+00:00",
-   "hash": "1fe826e6",
-   "name": "ROBUSTNESS-PROTOCOL mnq-close-on-lows-liquidation-overnight-repair (731e28c9104c7223)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-am-settled-index-option-opening-print-distortion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T04:40:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-quarterly-refunding-issuance-composition-repricing",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-nopa-crush-midmonth-demand-print",
     "stage": "dev3yr",
@@ -470,7 +462,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 14,
+   "registered": 16,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 108
+    "trials": 109
    }
   ]
  },
@@ -556,8 +548,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 12,
+   "n_tested": 21,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
