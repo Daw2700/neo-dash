@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:37:02Z",
+  "stamp": "2026-07-22T17:37:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T17:35:38Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-shortsale-constraint-futures-expression-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-22T17:37:04Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "m2k-shortsale-constraint-futures-expression-overshoot",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 7,
     "idea": "zn-serial-option-expiry-delta-unwind",
@@ -515,7 +514,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 76,
    "dev3yr": 0,
    "robustness": 0,
