@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:03:36Z",
+  "stamp": "2026-07-22T06:03:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-vix-term-structure-inversion-regrossing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:03:38Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-semimonthly-payroll-inflow-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:03:38Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-us-holiday-orphan-session-europe-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:03:38Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mes-vix-term-structure-inversion-regrossing",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.48
-   },
-   {
-    "rank": 12,
-    "idea": "mes-semimonthly-payroll-inflow-window",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 13,
-    "idea": "m6e-us-holiday-orphan-session-europe-drift",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 14,
     "idea": "m2k-post-holiday-reopen-position-rebuild",
@@ -448,7 +446,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 1,
    "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
