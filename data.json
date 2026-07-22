@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:49:30Z",
+  "stamp": "2026-07-22T05:49:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:49:09Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-post-rates-close-unhedged-final-hour",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:49:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-post-rates-close-unhedged-final-hour",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.56
-   },
    {
     "rank": 8,
     "idea": "mes-futures-funding-basis-stress-cheapening",
@@ -501,7 +500,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
