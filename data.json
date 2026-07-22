@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:33:33Z",
+  "stamp": "2026-07-22T09:36:58Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 345,
-  "n_results": 450,
-  "n_trials": 30421,
+  "n_registered": 348,
+  "n_results": 451,
+  "n_trials": 30422,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T09:36:44.540946+00:00",
+   "hash": "75d17427",
+   "name": "mes-close-vwap-dislocation-two-sided-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.015"
+  },
+  {
+   "t": "2026-07-22T09:36:12.860679+00:00",
+   "hash": "c6ee9593",
+   "name": "zn-delivery-wildcard-presettle-pressure",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:35:32.505351+00:00",
+   "hash": "8bb8f16b",
+   "name": "zc-price-limit-expansion-regime-state",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T09:26:59.057634+00:00",
    "hash": "f09bc5a9",
    "name": "mbt-equity-crashrisk-spillover-premium",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.455"
-  },
-  {
-   "t": "2026-07-22T09:13:09.896902+00:00",
-   "hash": "62515ee4",
-   "name": "zn-liquidity-mismatch-amplification-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.429"
-  },
-  {
-   "t": "2026-07-22T09:11:56.182889+00:00",
-   "hash": "46262f1a",
-   "name": "mes-fx-channel-open-overshoot-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.333"
-  },
-  {
-   "t": "2026-07-22T09:08:48.921964+00:00",
-   "hash": "4e4e731e",
-   "name": "mes-nonews-overnight-gap-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.936"
   }
  ],
  "pipeline": {
@@ -421,14 +421,6 @@
     "agent": "tester-2",
     "market": "ZC",
     "task": "zc-price-limit-expansion-regime-state",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:33:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-close-vwap-dislocation-two-sided-repair",
     "stage": "dev3yr",
     "started": "2026-07-22T09:33:33Z",
     "state": "running"
@@ -528,7 +520,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 41,
+   "registered": 43,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -590,7 +582,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 254
+    "trials": 255
    }
   ]
  },
@@ -614,8 +606,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 50,
-   "n_killed": 33,
+   "n_tested": 51,
+   "n_killed": 34,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
