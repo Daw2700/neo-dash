@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:06:17Z",
+  "stamp": "2026-07-22T15:06:39Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 477,
   "n_results": 604,
@@ -404,19 +404,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T14:53:37Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-participation-diffusion-metaorder-residual",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "m6e-block-report-lag-hedge-leak",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 3,
+    "idea": "mgc-tas-band-exhaustion-spillover",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mes-globex-precancel-lockdown-reopen-divergence",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mcl-first-passage-grind-vs-airpocket",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "met-maker-program-window-boundary-break",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mng-price-banding-staircase-overnight",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 8,
+    "idea": "mnq-two-sided-auction-balance-expansion",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "zn-intraday-variation-margin-cutoff-clock",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 10,
+    "idea": "mgc-concealed-absorber-move-failure",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "zs-spot-month-speculative-limit-forced-exit",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "mgc-gap-sign-streak-offshore-accumulation-ratification",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "zn-thin-minute-variance-share-noninformation",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 65,
    "dev3yr": 0,
    "robustness": 0,
