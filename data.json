@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:54:53Z",
+  "stamp": "2026-07-22T10:54:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T10:54:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-inverted-leverage-effect-regime",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:54:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mgc-inverted-leverage-effect-regime",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 6,
     "idea": "mes-har-vol-forecast-error-underreaction",
@@ -510,7 +509,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
