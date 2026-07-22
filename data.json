@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:07:53Z",
+  "stamp": "2026-07-22T18:07:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T18:07:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-charm-delta-decay-preopex-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:07:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-crude-asia-diffusion-open-catchup",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:07:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-charm-delta-decay-preopex-overnight",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mng-crude-asia-diffusion-open-catchup",
-    "source": "data-screen",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "mcl-eia-day-midsession-to-close-momentum",
@@ -525,7 +523,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 10,
    "registered": 79,
    "dev3yr": 0,
    "robustness": 0,
