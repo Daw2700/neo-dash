@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:51:16Z",
+  "stamp": "2026-07-22T10:54:06Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 383,
-  "n_results": 486,
-  "n_trials": 30457,
+  "n_registered": 385,
+  "n_results": 488,
+  "n_trials": 30459,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "zn-cash-market-closed-futures-open-asymmetry",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.8333,
-   "usd_mo": 18,
-   "pf": 6.676,
-   "usd_trade": 105.1
   },
   {
    "id": "rep-bondflight-mes",
@@ -307,9 +295,45 @@
     "growth_max": 7,
     "apex_max": 5
    }
+  },
+  {
+   "id": "mes-variance-risk-premium-carry",
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 208,
+   "wr": 0.524,
+   "usd_mo": 47,
+   "pf": 1.122,
+   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T10:53:58.643065+00:00",
+   "hash": "bb29dc56",
+   "name": "mes-overnight-intraday-tugofwar",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.863"
+  },
+  {
+   "t": "2026-07-22T10:53:16.764620+00:00",
+   "hash": "765a8e88",
+   "name": "mes-poc-migration-acceptance",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T10:51:30.720138+00:00",
+   "hash": "52440e70",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.682"
+  },
   {
    "t": "2026-07-22T10:49:58.764677+00:00",
    "hash": "1618f750",
@@ -381,44 +405,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T10:37:02.309817+00:00",
-   "hash": "e06501d7",
-   "name": "m6e-transatlantic-clock-misalignment-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.5728"
-  },
-  {
-   "t": "2026-07-22T10:33:37.014793+00:00",
-   "hash": "6b9e74aa",
-   "name": "mng-forced-flow-signature-slow-capital-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.624"
-  },
-  {
-   "t": "2026-07-22T10:32:13.670449+00:00",
-   "hash": "7664c229",
-   "name": "mcl-session-disagreement-overnight-repair",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "replication: zn-cash-market-closed-futures-open-asymmetry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:48:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-overnight-intraday-component-tugofwar",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-poc-migration-acceptance",
     "stage": "dev3yr",
@@ -537,7 +529,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 52,
+   "registered": 53,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -599,7 +591,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 290
+    "trials": 292
    }
   ]
  },
@@ -623,8 +615,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 55,
-   "n_killed": 37,
+   "n_tested": 56,
+   "n_killed": 38,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1056,31 +1048,6 @@
     "apex_max": 2
    }
   },
-  "zn-cash-market-closed-futures-open-asymmetry": {
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.8333,
-    "pf": 6.676,
-    "usd_mo": 18,
-    "usd_trade": 105.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:40:09.435772+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T10:46:10.359530+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1364,6 +1331,31 @@
     "growth_max": 7,
     "apex_max": 5
    }
+  },
+  "mes-variance-risk-premium-carry": {
+   "name": "mes-variance-risk-premium-carry",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
+   "metrics": {
+    "n": 208,
+    "wr": 0.524,
+    "pf": 1.122,
+    "usd_mo": 47,
+    "usd_trade": 8.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:04:02.729327+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
