@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:57:12Z",
+  "stamp": "2026-07-22T09:59:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 359,
-  "n_results": 464,
-  "n_trials": 30435,
+  "n_registered": 361,
+  "n_results": 465,
+  "n_trials": 30436,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mcl-closing-hour-flow-concentration-next-session-decay",
-   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 47,
-   "wr": 0.7021,
-   "usd_mo": 59,
-   "pf": 2.894,
-   "usd_trade": 45.3
   },
   {
    "id": "rep-bondflight-mes",
@@ -307,9 +295,45 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T09:59:02.071629+00:00",
+   "hash": "8c01ee09",
+   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T09:58:58.186100+00:00",
+   "hash": "b300dfe8",
+   "name": "scout-28-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T09:57:51.382056+00:00",
+   "hash": "686d1f26",
+   "name": "PROTOCOL robustness mcl-closing-hour-flow-concentration-next-session-decay (8c01ee0959516960)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T09:56:04.230905+00:00",
    "hash": "0add33e7",
@@ -381,30 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T09:44:07.181123+00:00",
-   "hash": "bdc7be24",
-   "name": "mgc-asia-hours-discovery-share-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.79"
-  },
-  {
-   "t": "2026-07-22T09:43:06.138512+00:00",
-   "hash": "f972acbf",
-   "name": "PROTOCOL robustness zc-price-limit-expansion-regime-state (8bb8f16b8a1bb513)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T09:41:21.144364+00:00",
-   "hash": "d1c99065",
-   "name": "mng-tas-settlement-offset-obligation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.107"
   }
  ],
  "pipeline": {
@@ -424,6 +424,22 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:53:10Z",
     "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T09:57:13Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "robustness: mcl-closing-hour-flow-concentration-next-session-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-22T09:57:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -439,7 +455,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 43,
+   "registered": 45,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -501,7 +517,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 268
+    "trials": 269
    }
   ]
  },
@@ -958,26 +974,6 @@
     "apex_max": 2
    }
   },
-  "mcl-closing-hour-flow-concentration-next-session-decay": {
-   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "An abnormally large share of the days RTH volume printing in the final hour (15:00-15:59 ET) means a program completed against the clock rather than against a price; that impact reflects transient execution pressure, not new information, so it should decay over the following session rather than persist. Screen D (scout-27, ledger b51d6ed57ce24197) found MCL days with final-hour volume share z>1.5 (60-day rolling) were followed by -$49.2 next RTH vs a -$7.2 base (n=47), suggesting SHORT MCL at next session RTH open, flat at next session RTH close, captures the decay.",
-   "metrics": {
-    "n": 47,
-    "wr": 0.7021,
-    "pf": 2.894,
-    "usd_mo": 59,
-    "usd_trade": 45.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T09:54:45.955946+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1262,6 +1258,31 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
