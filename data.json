@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:16:02Z",
+  "stamp": "2026-07-22T11:18:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 394,
-  "n_results": 501,
-  "n_trials": 30472,
+  "n_results": 502,
+  "n_trials": 30473,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mng-unconfirmed-idiosyncratic-move-reversion",
-   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
-   "market": "MNG",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 17,
-   "wr": 0.7059,
-   "usd_mo": 11,
-   "pf": 2.047,
-   "usd_trade": 23.3
   },
   {
    "id": "xasset-vol-origin-attribution",
@@ -303,9 +291,29 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
+  },
+  {
+   "id": "b6-vix-m2k",
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 26,
+   "wr": null,
+   "usd_mo": 5,
+   "pf": 1.148,
+   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:16:57.541202+00:00",
+   "hash": "4264182c",
+   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T11:15:29.935553+00:00",
    "hash": "f6edd34e",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.981"
-  },
-  {
-   "t": "2026-07-22T10:57:14.906432+00:00",
-   "hash": "7ea978bb",
-   "name": "mnq-range-completion-timing-overnight-carry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.089"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "mes-realized-correlation-collapse-hedging-demand",
     "stage": "dev3yr",
     "started": "2026-07-22T11:12:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: xasset-vol-origin-attribution",
+    "stage": "dev3yr",
+    "started": "2026-07-22T11:16:04Z",
     "state": "running"
    }
   ],
@@ -506,7 +514,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 305
+    "trials": 306
    }
   ]
  },
@@ -963,26 +971,6 @@
     "apex_max": 2
    }
   },
-  "mng-unconfirmed-idiosyncratic-move-reversion": {
-   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
-   "market": "MNG",
-   "tier": "candidate",
-   "mechanism": "Volatility and risk appetite transmit from crude oil to natural gas but not the reverse, per realized-volatility spillover asymmetry within the energy complex; a large MNG daily move that MCL does not confirm is therefore idiosyncratic weather or storage flow rather than energy-complex repricing, and idiosyncratic flow is a transient inventory shock supplied by a small set of local participants who need it back, so fading the unconfirmed move into the next session should be paid.",
-   "metrics": {
-    "n": 17,
-    "wr": 0.7059,
-    "pf": 2.047,
-    "usd_mo": 11,
-    "usd_trade": 23.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T11:09:41.444972+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "xasset-vol-origin-attribution": {
    "name": "xasset-vol-origin-attribution",
    "market": "MNQ",
@@ -1258,6 +1246,26 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-vix-m2k": {
+   "name": "b6-vix-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
+   "metrics": {
+    "n": 26,
+    "wr": null,
+    "pf": 1.148,
+    "usd_mo": 5,
+    "usd_trade": 6.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:03:08.112070+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }

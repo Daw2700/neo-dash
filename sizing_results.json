@@ -109,14 +109,6 @@
    "apex150": {
     "max_micros": 6
    }
-  },
-  "rep3-vix-mes": {
-   "growth": {
-    "max_micros": 7
-   },
-   "apex150": {
-    "max_micros": 5
-   }
   }
  },
  "bundles": [
