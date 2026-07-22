@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:41:11Z",
+  "stamp": "2026-07-22T04:41:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T04:40:46Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-quarterly-refunding-issuance-composition-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:41:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-nopa-crush-midmonth-demand-print",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:41:12Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "zn-quarterly-refunding-issuance-composition-repricing",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 6,
-    "idea": "zs-nopa-crush-midmonth-demand-print",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.48
-   },
    {
     "rank": 7,
     "idea": "zc-zs-european-daybreak-origination-hedge",
@@ -471,7 +469,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 4,
    "registered": 14,
    "dev3yr": 0,
    "robustness": 0,
