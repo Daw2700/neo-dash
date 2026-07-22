@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:58:51Z",
+  "stamp": "2026-07-22T21:02:27Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 628,
-  "n_results": 776,
-  "n_trials": 30764,
+  "n_registered": 629,
+  "n_results": 778,
+  "n_trials": 30766,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -177,6 +177,18 @@
    "usd_trade": 48.9
   },
   {
+   "id": "mes-bom-emptiness-reversion",
+   "name": "mes-bom-emptiness-reversion",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 28,
+   "wr": 0.5,
+   "usd_mo": 24,
+   "pf": 1.584,
+   "usd_trade": 31.2
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -287,21 +299,25 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mcl-eia-day-midsession-to-close-momentum",
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 153,
-   "wr": 0.5033,
-   "usd_mo": 30,
-   "pf": 1.237,
-   "usd_trade": 7.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T21:01:35.089867+00:00",
+   "hash": "b12423a2",
+   "name": "m2k-dollar-revenue-exposure-rotation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.022"
+  },
+  {
+   "t": "2026-07-22T20:59:54.426176+00:00",
+   "hash": "0719c7ad",
+   "name": "mes-bom-emptiness-reversion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.584"
+  },
   {
    "t": "2026-07-22T20:58:46.655272+00:00",
    "hash": "19538d55",
@@ -309,14 +325,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.833"
-  },
-  {
-   "t": "2026-07-22T20:58:23.938444+00:00",
-   "hash": "0719c7ad",
-   "name": "mes-bom-emptiness-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T20:58:16.339406+00:00",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.875"
-  },
-  {
-   "t": "2026-07-22T20:42:21.874706+00:00",
-   "hash": "a771c0e1",
-   "name": "mcl-brent-orphan-benchmark-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.892"
   }
  ],
  "pipeline": {
@@ -416,20 +416,12 @@
     "stage": "idea-scout",
     "started": "2026-07-22T20:57:06Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-backofmonth-calendar-emptiness-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:57:06Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 87,
+   "registered": 86,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 597
+    "trials": 599
    }
   ]
  },
@@ -515,7 +507,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 102,
+   "n_tested": 103,
    "n_killed": 76,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -535,8 +527,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 11,
+   "n_tested": 22,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1018,6 +1010,26 @@
     }
    ]
   },
+  "mes-bom-emptiness-reversion": {
+   "name": "mes-bom-emptiness-reversion",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "The US macro release calendar is front-loaded (ISM, payrolls, CPI, PPI, retail sales, FOMC land in the first two-thirds of the month) and empties in the back-of-month third; with trading activity roughly flat but information arrival falling, late-month intraday range extension is more likely inventory pressure than repricing and should mean-revert rather than continue.",
+   "metrics": {
+    "n": 28,
+    "wr": 0.5,
+    "pf": 1.584,
+    "usd_mo": 24,
+    "usd_trade": 31.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T20:59:54.426176+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1243,26 +1255,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mcl-eia-day-midsession-to-close-momentum": {
-   "name": "mcl-eia-day-midsession-to-close-momentum",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "On EIA weekly petroleum status report days the 10:30 ET release draws informed traders in while liquidity providers withdraw, so the move that develops between the release and mid-session is under-absorbed and continues into the settlement window; on non-announcement days that informational channel is absent, and the payers are the liquidity providers who stepped away plus late-informed participants who only rebalance at the close.",
-   "metrics": {
-    "n": 153,
-    "wr": 0.5033,
-    "pf": 1.237,
-    "usd_mo": 30,
-    "usd_trade": 7.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T18:14:48.455567+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
