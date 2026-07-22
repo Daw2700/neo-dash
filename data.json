@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:09:01Z",
+  "stamp": "2026-07-22T05:09:24Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 228,
   "n_results": 323,
@@ -404,35 +404,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-macro-surprise-sign-flip-bond-confirmed",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:09:23Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-early-close-session-compression",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:09:23Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-cme-daily-halt-reopen-queue-clearing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:09:23Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "mes-macro-surprise-sign-flip-bond-confirmed",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.44
-   },
-   {
-    "rank": 10,
-    "idea": "mes-early-close-session-compression",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 4,
-    "idea": "mnq-cme-daily-halt-reopen-queue-clearing",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 5,
     "idea": "zn-european-sovereign-supply-spillover",
@@ -525,7 +523,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 21,
    "dev3yr": 0,
    "robustness": 0,
