@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:10:09Z",
+  "stamp": "2026-07-22T16:13:11Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 507,
-  "n_results": 636,
-  "n_trials": 30624,
+  "n_results": 637,
+  "n_trials": 30625,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "mng-friday-threeday-gasday-hedge-concentration",
-   "name": "mng-friday-threeday-gasday-hedge-concentration",
-   "market": "MNG",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 67,
-   "wr": 0.5522,
-   "usd_mo": 74,
-   "pf": 1.981,
-   "usd_trade": 40.0
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -303,9 +291,29 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T16:10:36.691330+00:00",
+   "hash": "8cbdd607",
+   "name": "mng-friday-threeday-gasday-hedge-concentration",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T16:09:50.983652+00:00",
    "hash": "e49e3289",
@@ -393,14 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.288"
-  },
-  {
-   "t": "2026-07-22T15:52:13.200686+00:00",
-   "hash": "d1effc5b",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.313"
   }
  ],
  "pipeline": {
@@ -410,14 +410,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-22T16:06:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "robustness: mng-friday-threeday-gasday-hedge-concentration",
-    "stage": "dev3yr",
     "started": "2026-07-22T16:06:16Z",
     "state": "running"
    }
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 457
+    "trials": 458
    }
   ]
  },
@@ -964,26 +956,6 @@
     }
    ]
   },
-  "mng-friday-threeday-gasday-hedge-concentration": {
-   "name": "mng-friday-threeday-gasday-hedge-concentration",
-   "market": "MNG",
-   "tier": "candidate",
-   "mechanism": "Physical natural gas delivered under a Friday transaction covers the full Sat/Sun/Mon gas-day period, concentrating three days worth of hedge-flow notional into a single Friday settlement; that non-informational concentration of dated hedge flow displaces the Friday close and should decay by the next session open, so we fade Friday intraday direction into a weekend hold.",
-   "metrics": {
-    "n": 67,
-    "wr": 0.5522,
-    "pf": 1.981,
-    "usd_mo": 74,
-    "usd_trade": 40.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T16:00:17.343524+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1260,6 +1232,26 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
