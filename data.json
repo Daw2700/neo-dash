@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:12:45Z",
+  "stamp": "2026-07-22T14:13:07Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 459,
   "n_results": 579,
@@ -406,22 +406,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-thin-leg-hedge-residual-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:03:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-closure-length-dose-response-reopen-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:04:18Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -430,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mcl-closure-length-dose-response-reopen-overshoot",
     "stage": "dev3yr",
