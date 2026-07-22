@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:35:39Z",
+  "stamp": "2026-07-22T15:36:42Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 492,
   "n_results": 619,
@@ -406,15 +406,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T15:26:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MNQ",
     "task": "robustness: mnq-two-sided-auction-balance-expansion",
     "stage": "dev3yr",
@@ -422,9 +414,127 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mes-depth-consumption-print-size-range-forecast",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "zn-muni-reinvestment-cashflow-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "mgc-monthend-impact-inflation-reversion-rent",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mes-deseasonalized-vol-surprise-information-gate",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "xmkt-epps-integration-gap-quiet-day-fade",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 6,
+    "idea": "xmkt-settlement-cascade-spillover",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "m6e-target2-settlement-holiday-unanchored-drift",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mcl-spr-solicitation-award-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "zn-reserve-maintenance-period-funding-cycle",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 10,
+    "idea": "mng-friday-threeday-gasday-hedge-concentration",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 11,
+    "idea": "zc-hedger-margin-call-short-lift-after-rally",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "zs-china-golden-week-origination-void",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "mes-fee-tier-month-end-volume-padding-liquidity",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 67,
    "dev3yr": 0,
    "robustness": 0,
