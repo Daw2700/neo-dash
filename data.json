@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T09:53:10Z",
+  "stamp": "2026-07-22T09:57:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 356,
-  "n_results": 461,
-  "n_trials": 30432,
+  "n_registered": 359,
+  "n_results": 464,
+  "n_trials": 30435,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -141,16 +141,16 @@
    }
   },
   {
-   "id": "mes-morning-range-exhaustion-overnight-carry",
-   "name": "mes-morning-range-exhaustion-overnight-carry",
-   "market": "MES",
+   "id": "mcl-closing-hour-flow-concentration-next-session-decay",
+   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
+   "market": "MCL",
    "tier": "candidate",
    "pinned": false,
-   "n": 95,
-   "wr": 0.5579,
-   "usd_mo": 80,
-   "pf": 1.715,
-   "usd_trade": 30.4
+   "n": 47,
+   "wr": 0.7021,
+   "usd_mo": 59,
+   "pf": 2.894,
+   "usd_trade": 45.3
   },
   {
    "id": "rep-bondflight-mes",
@@ -311,6 +311,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T09:56:04.230905+00:00",
+   "hash": "0add33e7",
+   "name": "met-attention-share-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.15"
+  },
+  {
+   "t": "2026-07-22T09:55:56.329156+00:00",
+   "hash": "8e50d120",
+   "name": "mes-morning-range-exhaustion-overnight-carry",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T09:54:45.955946+00:00",
+   "hash": "8c01ee09",
+   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.894"
+  },
+  {
+   "t": "2026-07-22T09:54:04.338293+00:00",
+   "hash": "bc442347",
+   "name": "PROTOCOL 432_robust_mes-morning-range-exhaustion-overnight-carry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T09:52:46.704939+00:00",
    "hash": "2a62c3c6",
    "name": "mgc-velocity-reserve-truncation",
@@ -373,38 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.107"
-  },
-  {
-   "t": "2026-07-22T09:39:40.789695+00:00",
-   "hash": "8bb8f16b",
-   "name": "zc-price-limit-expansion-regime-state",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 3.843"
-  },
-  {
-   "t": "2026-07-22T09:38:57.679647+00:00",
-   "hash": "a1370407",
-   "name": "mes-closing-imbalance-dissemination-absorption",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.733"
-  },
-  {
-   "t": "2026-07-22T09:37:35.541718+00:00",
-   "hash": "c6ee9593",
-   "name": "zn-delivery-wildcard-presettle-pressure",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.469"
-  },
-  {
-   "t": "2026-07-22T09:36:44.540946+00:00",
-   "hash": "75d17427",
-   "name": "mes-close-vwap-dislocation-two-sided-repair",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.015"
   }
  ],
  "pipeline": {
@@ -424,14 +424,6 @@
     "stage": "dev3yr",
     "started": "2026-07-22T09:53:10Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-closing-hour-flow-concentration-next-session-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-22T09:53:10Z",
-    "state": "running"
    }
   ],
   "backlog": [
@@ -447,7 +439,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 42,
+   "registered": 43,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -509,7 +501,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 265
+    "trials": 268
    }
   ]
  },
@@ -580,7 +572,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 21,
+   "n_tested": 22,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -609,8 +601,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 4,
-   "n_killed": 4,
+   "n_tested": 5,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -966,21 +958,21 @@
     "apex_max": 2
    }
   },
-  "mes-morning-range-exhaustion-overnight-carry": {
-   "name": "mes-morning-range-exhaustion-overnight-carry",
-   "market": "MES",
+  "mcl-closing-hour-flow-concentration-next-session-decay": {
+   "name": "mcl-closing-hour-flow-concentration-next-session-decay",
+   "market": "MCL",
    "tier": "candidate",
-   "mechanism": "Sessions that print both the RTH session high and the RTH session low before midday complete their risk transfer early; the afternoon offers no fresh book to lean on, so positions built into the morning range are carried unhedged into a thin overnight session where dealer hedging flow marks them down, producing a systematic negative overnight drift that we harvest by shorting the close and covering at the next open.",
+   "mechanism": "An abnormally large share of the days RTH volume printing in the final hour (15:00-15:59 ET) means a program completed against the clock rather than against a price; that impact reflects transient execution pressure, not new information, so it should decay over the following session rather than persist. Screen D (scout-27, ledger b51d6ed57ce24197) found MCL days with final-hour volume share z>1.5 (60-day rolling) were followed by -$49.2 next RTH vs a -$7.2 base (n=47), suggesting SHORT MCL at next session RTH open, flat at next session RTH close, captures the decay.",
    "metrics": {
-    "n": 95,
-    "wr": 0.5579,
-    "pf": 1.715,
-    "usd_mo": 80,
-    "usd_trade": 30.4
+    "n": 47,
+    "wr": 0.7021,
+    "pf": 2.894,
+    "usd_mo": 59,
+    "usd_trade": 45.3
    },
    "verdict_history": [
     {
-     "t": "2026-07-22T09:50:02.076220+00:00",
+     "t": "2026-07-22T09:54:45.955946+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
