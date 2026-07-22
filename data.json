@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:50:20Z",
+  "stamp": "2026-07-22T19:52:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 599,
+  "n_registered": 600,
   "n_results": 741,
   "n_trials": 30729,
   "holdout_looks_spent": 0,
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T19:51:00.426657+00:00",
+   "hash": "72b8e167",
+   "name": "scout-43-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T19:48:22.516271+00:00",
    "hash": "d43bc0aa",
    "name": "mym-price-weighted-exdiv-mechanical-drop",
@@ -389,14 +397,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T19:32:46.841492+00:00",
-   "hash": "dc2bd904",
-   "name": "mes-wk10-derisk",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -416,22 +416,28 @@
     "stage": "dev3yr",
     "started": "2026-07-22T19:43:17Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 12,
-    "idea": "mcl-cot-release-window-crowding-repricing",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.34
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T19:50:22Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "mcl-cot-release-window-crowding-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:50:22Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
-   "registered": 84,
+   "idea": 0,
+   "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
