@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:28:51Z",
+  "stamp": "2026-07-22T21:30:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 633,
-  "n_results": 781,
-  "n_trials": 30769,
+  "n_registered": 635,
+  "n_results": 782,
+  "n_trials": 30770,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:30:41.570580+00:00",
+   "hash": "ae4a6a08",
+   "name": "mcl-cushing-tank-constraint-expiry-convexity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.95"
+  },
+  {
+   "t": "2026-07-22T21:30:19.027076+00:00",
+   "hash": "0e695e38",
+   "name": "m2k-mm-program-monthly-quota-liquidity-gradient",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T21:28:38.782598+00:00",
    "hash": "c2c600ed",
    "name": "zn-japan-holiday-tokyo-absence",
@@ -381,22 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.146"
-  },
-  {
-   "t": "2026-07-22T20:54:18.321386+00:00",
-   "hash": "3b30a655",
-   "name": "zc-livestock-cof-sunday-transfer",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T20:52:31.900611+00:00",
-   "hash": "19538d55",
-   "name": "m2k-rates-variance-import-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.04"
   }
  ],
  "pipeline": {
@@ -411,14 +411,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-cushing-tank-constraint-expiry-convexity",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:26:44Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-mm-program-monthly-quota-liquidity-gradient",
     "stage": "dev3yr",
@@ -493,7 +485,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 88,
+   "registered": 89,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -555,7 +547,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 602
+    "trials": 603
    }
   ]
  },
@@ -626,8 +618,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 42,
-   "n_killed": 27,
+   "n_tested": 43,
+   "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
   },
