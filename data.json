@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T07:56:40Z",
+  "stamp": "2026-07-22T08:00:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 303,
-  "n_results": 403,
-  "n_trials": 30374,
+  "n_registered": 304,
+  "n_results": 406,
+  "n_trials": 30377,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "mcl-timeseries-momentum-risk-premium",
-   "name": "mcl-timeseries-momentum-risk-premium",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 24,
-   "wr": 0.5417,
-   "usd_mo": 52,
-   "pf": 1.454,
-   "usd_trade": 77.7
   },
   {
    "id": "rep-bondflight-mes",
@@ -307,9 +295,45 @@
    "usd_mo": 47,
    "pf": 1.122,
    "usd_trade": 8.1
+  },
+  {
+   "id": "n9-cot-washout-buy",
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 70,
+   "wr": null,
+   "usd_mo": 20,
+   "pf": 1.088,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T07:57:57.327554+00:00",
+   "hash": "f36145d3",
+   "name": "algo-clock-slice-impact",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.5487"
+  },
+  {
+   "t": "2026-07-22T07:57:34.405611+00:00",
+   "hash": "f36145d3",
+   "name": "algo-clock-slice-impact",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.5487"
+  },
+  {
+   "t": "2026-07-22T07:57:14.623806+00:00",
+   "hash": "5596f651",
+   "name": "mcl-timeseries-momentum-risk-premium",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T07:56:20.340280+00:00",
    "hash": "305fde18",
@@ -381,44 +405,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T07:42:10.120260+00:00",
-   "hash": "dfc869fe",
-   "name": "mcl-upside-semivariance-exhaustion",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T07:40:18.842054+00:00",
-   "hash": "ff28ad14",
-   "name": "ROBUSTNESS-PROTOCOL mnq-event-free-day-flow-persistence (368)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T07:40:09.786239+00:00",
-   "hash": "1c86504c",
-   "name": "ROBUSTNESS-PROTOCOL mcl-upside-semivariance-exhaustion (dfc869fe181d9a55)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mcl-timeseries-momentum-risk-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-22T07:54:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-algo-clock-slice-impact",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "recheck: mes-weekend-crypto-information-transfer",
     "stage": "dev3yr",
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 207
+    "trials": 210
    }
   ]
  },
@@ -572,8 +564,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 69,
-   "n_killed": 41,
+   "n_tested": 70,
+   "n_killed": 42,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -1020,26 +1012,6 @@
     "apex_max": 2
    }
   },
-  "mcl-timeseries-momentum-risk-premium": {
-   "name": "mcl-timeseries-momentum-risk-premium",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Trend followers are paid because they take the other side of commercial hedgers who must transfer price risk regardless of level, and because information about physical balances diffuses slowly through a fragmented supply chain, so the compensation is a risk premium for holding the hedgers exposure, not an arbitrage that could be competed away.",
-   "metrics": {
-    "n": 24,
-    "wr": 0.5417,
-    "pf": 1.454,
-    "usd_mo": 52,
-    "usd_trade": 77.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:51:35.102359+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1324,6 +1296,31 @@
     },
     {
      "t": "2026-07-22T07:08:04.252202+00:00",
+     "stage": "dev3yr_recheck",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "n9-cot-washout-buy": {
+   "name": "n9-cot-washout-buy",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When speculators' Nasdaq net positioning hits washed-out lows the weak hands have already sold, and buying their capitulation is paid risk-premium \u2014 the pinned profile from a positioning gauge",
+   "metrics": {
+    "n": 70,
+    "wr": null,
+    "pf": 1.088,
+    "usd_mo": 20,
+    "usd_trade": 10.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T18:37:00.368959+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    },
+    {
+     "t": "2026-07-22T04:49:38.468474+00:00",
      "stage": "dev3yr_recheck",
      "verdict": "KILLED"
     }
