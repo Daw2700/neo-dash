@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:58:46Z",
+  "stamp": "2026-07-22T14:58:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,21 +428,19 @@
     "stage": "dev3yr",
     "started": "2026-07-22T14:53:37Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 14,
-    "idea": "zn-variable-annuity-guarantee-rho-hedge-rebalance",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.42
+    "agent": "tester-4",
+    "market": "ZN",
+    "task": "zn-variable-annuity-guarantee-rho-hedge-rebalance",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:58:48Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 65,
    "dev3yr": 0,
    "robustness": 0,
