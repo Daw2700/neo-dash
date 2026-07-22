@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:35:49Z",
+  "stamp": "2026-07-22T14:35:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T14:30:47Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-dealer-absorption-conditioned-overnight-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:35:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-offshore-mark-ratification-at-ny-open",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:35:50Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-dealer-absorption-conditioned-overnight-premium",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.51
-   },
-   {
-    "rank": 7,
-    "idea": "mgc-offshore-mark-ratification-at-ny-open",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 8,
     "idea": "mes-quarterend-equity-financing-withdrawal",
@@ -498,7 +496,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 65,
    "dev3yr": 0,
    "robustness": 0,
