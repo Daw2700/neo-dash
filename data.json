@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:54:18Z",
+  "stamp": "2026-07-22T03:54:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 184,
-  "n_results": 276,
-  "n_trials": 30247,
+  "n_results": 277,
+  "n_trials": 30248,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T03:54:37.909966+00:00",
+   "hash": "d9eae2c2",
+   "name": "zn-cash-close-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.164"
+  },
+  {
    "t": "2026-07-22T03:54:11.718217+00:00",
    "hash": "6fd3d3ca",
    "name": "m6e-dst-desync-fix-fade",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.1169"
-  },
-  {
-   "t": "2026-07-22T03:53:18.192835+00:00",
-   "hash": "d9eae2c2",
-   "name": "zn-cash-close-unwind",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T03:53:01.534869+00:00",
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-post-cash-close-hedge-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:52:11Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-shorthorizon-trend-decay-fade",
     "stage": "dev3yr",
@@ -437,7 +429,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 11,
+   "registered": 10,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 80
+    "trials": 81
    }
   ]
  },
@@ -615,8 +607,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 8,
+   "n_tested": 12,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
