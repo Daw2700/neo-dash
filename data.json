@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:01:55Z",
+  "stamp": "2026-07-22T02:02:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-conditional-monthend-rebalance-spread",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:53:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-european-cash-close-risk-transfer",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-cash-hedge-open-reversion",
     "stage": "dev3yr",
