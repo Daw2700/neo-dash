@@ -123,11 +123,15 @@ for x in sorted((r for h, r in regs.items() if h not in tested), key=lambda r: r
 feed = sorted(feed, key=lambda f: f["t"], reverse=True)[:12]
 
 # --- pipeline (engine not launched yet — honest zeros) ---
-n_trials = max((r["metrics"].get("n_trials_now", 0) for r in results), default=0) or \
-    sum(r["metrics"].get("configs", r["metrics"].get("cells", 1)) for r in results)
+def _trials(m):
+    v = m.get("configs", m.get("cells", 1))
+    return v if isinstance(v, (int, float)) else 1   # workers sometimes record rich objects here
+n_trials = max((r["metrics"].get("n_trials_now", 0) or 0 for r in results
+                if isinstance(r["metrics"].get("n_trials_now", 0), (int, float))), default=0) or \
+    sum(_trials(r["metrics"]) for r in results)
 per_day = defaultdict(int)
 for r in results:
-    per_day[r["t"][:10]] += r["metrics"].get("configs", r["metrics"].get("cells", 1))
+    per_day[r["t"][:10]] += _trials(r["metrics"])
 today = dt.datetime.now(dt.timezone.utc).date()
 throughput = [{"date": str(today - dt.timedelta(days=i)), "trials": per_day.get(str(today - dt.timedelta(days=i)), 0)}
               for i in range(13, -1, -1)]

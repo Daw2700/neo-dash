@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:02:56Z",
+  "stamp": "2026-07-22T01:11:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 133,
-  "n_results": 215,
+  "n_results": 218,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 3
+  "needs_attention_count": 4
  },
  "leaderboard": [
   {
@@ -319,6 +319,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T01:08:11.680323+00:00",
+   "hash": "6153da5c",
+   "name": "mcl-vix (crude)",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T01:06:59.444347+00:00",
+   "hash": "0190bb99",
+   "name": "mbt-nr7 (bitcoin)",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T01:06:22.062256+00:00",
+   "hash": "5eec7217",
+   "name": "mym-prehol (Dow)",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-22T00:58:26.808888+00:00",
    "hash": "15910ca1",
    "name": "b7-down-weeks-dip",
@@ -389,44 +413,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:32:58.627499+00:00",
-   "hash": "c161359d",
-   "name": "b2-vol-climax-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:32:11.570376+00:00",
-   "hash": "f1f6307c",
-   "name": "6a-neo300-real-honest",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T00:24:03.073077+00:00",
-   "hash": "c090841e",
-   "name": "mes-friday-strike-pin-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.654"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MYM",
-    "task": "robustness: scan-mym",
-    "stage": "dev3yr",
-    "started": "2026-07-22T01:02:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: scan-mcl",
     "stage": "dev3yr",
@@ -434,11 +426,19 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "robustness: scan-mbt",
     "stage": "dev3yr",
     "started": "2026-07-22T01:02:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: b10-fomc-cycle-even",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:11:24Z",
     "state": "running"
    }
   ],
@@ -535,7 +535,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 19
+    "trials": 22
    }
   ]
  },
@@ -736,6 +736,11 @@
      "t": "2026-07-21T19:48:23.072978+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T01:08:11.680323+00:00",
+     "stage": "robustness",
+     "verdict": "DEMOTED"
     }
    ],
    "robustness": {
@@ -771,6 +776,11 @@
      "t": "2026-07-21T19:48:23.074078+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T01:06:59.444347+00:00",
+     "stage": "robustness",
+     "verdict": "DEMOTED"
     }
    ],
    "robustness": {
@@ -806,6 +816,11 @@
      "t": "2026-07-21T19:48:23.071279+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T01:06:22.062256+00:00",
+     "stage": "robustness",
+     "verdict": "DEMOTED"
     }
    ],
    "robustness": {
@@ -1299,6 +1314,25 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-scanmym-demote",
+   "kind": "demotion",
+   "needs_attention": true,
+   "title": "Book sleeve mym-prehol (scan-mym) failed robustness \u2014 pull from the book?",
+   "recommendation": "REMOVE from the book \u2014 mechanism placebo failed on formal hardening",
+   "evidence": "Robustness battery on MYM scan family: prehol-long fails mechanism controls; monday-long fails mechanism + ex-best-year; nr7-orb fails ex-best-year (ledger, stage=robustness, 2026-07-22)",
+   "what_yes_means": "Book drops from 8 sleeves to 7; sizing and all bundles recompute without mym-prehol",
+   "recap": "Your book's MYM pre-holiday sleeve was validated in the original scan campaign but had never been through the formal robustness battery. Tonight it was \u2014 and its mechanism didn't survive placebo testing. This card decides whether it stays in the book.",
+   "why": "The scan-* sleeves entered the book from the market-native scan campaign with lighter checks than the b3/b4 sleeves. The battery that just demoted ten pretenders applied the same standard here and the pre-holiday edge on MYM looks indistinguishable from placebo dates. Keeping a placebo-grade sleeve means its micros and breach budget are spent on noise.",
+   "steps": [
+    "Approve: DEMOTED verdict stands; scan-mym leaves the validated book set",
+    "gauntlet sizing + all bundles recompute on the 7 remaining sleeves (numbers drop honestly)",
+    "The dashboard book/roadmap views update on the next publish",
+    "Trade logs and history stay on disk; a future re-validation can reinstate it",
+    "Deny: sleeve stays in the book; the robustness result stays on the ledger either way"
+   ],
+   "staged": "2026-07-22T01:07:31Z"
+  },
   {
    "id": "d-demotions-r753",
    "kind": "demotion",
