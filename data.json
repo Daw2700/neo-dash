@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:14:06Z",
+  "stamp": "2026-07-22T03:16:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 165,
-  "n_results": 256,
-  "n_trials": 30227,
+  "n_registered": 166,
+  "n_results": 257,
+  "n_trials": 30228,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -302,10 +302,22 @@
    "wr": 0.593,
    "usd_mo": 61,
    "pf": 1.945,
-   "usd_trade": 81.0
+   "usd_trade": 81.0,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 6
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T03:16:15.830614+00:00",
+   "hash": "bc95b325",
+   "name": "mes-euopen-dealer-inventory-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.711"
+  },
   {
    "t": "2026-07-22T03:13:36.093901+00:00",
    "hash": "b3bae809",
@@ -393,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.168"
-  },
-  {
-   "t": "2026-07-22T02:54:18.646775+00:00",
-   "hash": "5eec7217",
-   "name": "mym-prehol (Dow)",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "PF 1.585"
   }
  ],
  "pipeline": {
@@ -420,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T03:11:02Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-euopen-dealer-inventory-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-22T03:14:08Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 2,
-    "idea": "mes-euopen-dealer-inventory-unwind",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.6
-   },
    {
     "rank": 3,
     "idea": "mgc-overnight-inventory-continuation",
@@ -506,7 +509,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 8,
    "dev3yr": 0,
    "robustness": 0,
@@ -569,7 +572,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 60
+    "trials": 61
    }
   ]
  },
@@ -593,8 +596,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 6,
+   "n_tested": 14,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1306,7 +1309,11 @@
      "stage": "robustness",
      "verdict": "DEMOTED"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 6
+   }
   }
  },
  "decisions": [
@@ -1561,18 +1568,19 @@
    "provisional": true,
    "assumed_rules": true,
    "members": {
-    "b2-vix-reversion": 4,
-    "b3-preholiday-drift": 2,
-    "b2-opex-release": 1
+    "b2-vix-reversion": 3,
+    "b10-nagel-vix-reversal": 2,
+    "b2-opex-release": 1,
+    "b7-down-weeks-dip": 2
    },
-   "total_micros": 7,
-   "p_breach": 0.167,
-   "usd_mo": 245,
-   "usd_mo_5acct": 1225,
-   "pct_goal": 0.441,
+   "total_micros": 8,
+   "p_breach": 0.192,
+   "usd_mo": 296,
+   "usd_mo_5acct": 1480,
+   "pct_goal": 0.533,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 4410
+   "usd_mo_total": 5328
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1697,16 +1705,16 @@
     "b2-vix-reversion": 4,
     "b10-nagel-vix-reversal": 4,
     "b3-preholiday-drift": 4,
-    "b2-opex-release": 4
+    "b7-down-weeks-dip": 1
    },
-   "total_micros": 16,
-   "p_breach": 0.193,
-   "usd_mo": 308,
-   "usd_mo_5acct": 1540,
-   "pct_goal": 0.154,
+   "total_micros": 13,
+   "p_breach": 0.192,
+   "usd_mo": 261,
+   "usd_mo_5acct": 1305,
+   "pct_goal": 0.131,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 1540
+   "usd_mo_total": 1305
   }
  ],
  "sizing_meta": {
