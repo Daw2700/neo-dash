@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T02:47:56Z",
+  "stamp": "2026-07-22T02:47:59Z",
   "stale_after_min": 30,
   "status": "applying your approve",
   "engine_state": "ok",
@@ -409,9 +409,118 @@
  ],
  "pipeline": {
   "workers": [],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "zn-sunday-reopen-duration-unwind",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.68
+   },
+   {
+    "rank": 2,
+    "idea": "zc-settlement-print-continuation",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 3,
+    "idea": "mcl-api-tuesday-overnight-repricing",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "zc-export-sales-thursday-pause-window",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 5,
+    "idea": "m6e-gotobi-tokyo-fix-dollar-demand",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "zn-claims-thursday-duration-reset",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-pre-first-notice-day-retail-liquidation",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 8,
+    "idea": "zc-crop-progress-reopen-gap",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "mes-macro-announcement-premium-exfomc",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mes-coupon-settlement-reserve-drain",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mng-bidweek-baseload-procurement",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 12,
+    "idea": "mes-vanna-ivcrush-dealer-rebuy",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
