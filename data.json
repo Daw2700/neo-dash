@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:09:18Z",
+  "stamp": "2026-07-22T00:15:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 126,
-  "n_results": 200,
+  "n_registered": 128,
+  "n_results": 201,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -335,6 +335,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T00:10:42.449219+00:00",
+   "hash": "f89113b7",
+   "name": "buyback-blackout-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.97"
+  },
+  {
+   "t": "2026-07-22T00:10:12.463288+00:00",
+   "hash": "083cd63b",
+   "name": "scout-12-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T00:03:11.450951+00:00",
    "hash": "fce2289d",
    "name": "crypto-expiry-twap-unwind-v2",
@@ -413,22 +429,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.051"
-  },
-  {
-   "t": "2026-07-21T23:07:44.462198+00:00",
-   "hash": "b06a8ddd",
-   "name": "scout-11-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-21T23:01:07.165441+00:00",
-   "hash": "33a11ddf",
-   "name": "qa-lunch-monday-overlap",
-   "status": "fail",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -440,20 +440,12 @@
     "stage": "idea-scout",
     "started": "2026-07-22T00:08:14Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "buyback-blackout-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-22T00:08:14Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 2,
+   "registered": 3,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -515,7 +507,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 4
+    "trials": 5
    }
   ]
  },
@@ -524,8 +516,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 51,
-   "n_killed": 29,
+   "n_tested": 52,
+   "n_killed": 30,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
