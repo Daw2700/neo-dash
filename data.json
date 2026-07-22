@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:02:29Z",
+  "stamp": "2026-07-22T21:02:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -402,14 +402,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-dollar-revenue-exposure-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:56:42Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-bom-emptiness-reversion",
     "stage": "dev3yr",
