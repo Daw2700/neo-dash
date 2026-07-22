@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:08:55Z",
+  "stamp": "2026-07-22T06:10:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 256,
-  "n_results": 353,
-  "n_trials": 30324,
+  "n_registered": 258,
+  "n_results": 355,
+  "n_trials": 30326,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,9 +311,25 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T06:08:06.400925+00:00",
+   "t": "2026-07-22T06:10:29.544177+00:00",
    "hash": "01d72293",
    "name": "mes-vix-term-structure-inversion-regrossing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.039"
+  },
+  {
+   "t": "2026-07-22T06:10:28.231501+00:00",
+   "hash": "ffd0cb43",
+   "name": "m2k-post-holiday-reopen-position-rebuild",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.578"
+  },
+  {
+   "t": "2026-07-22T06:09:08.009265+00:00",
+   "hash": "c2ff7d9c",
+   "name": "scout-22-screen",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -389,34 +405,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T05:48:34.495170+00:00",
-   "hash": "621e6fa5",
-   "name": "mgc-shanghai-open-physical-premium-transmission",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.609"
-  },
-  {
-   "t": "2026-07-22T05:46:35.228309+00:00",
-   "hash": "5650586a",
-   "name": "mes-prerelease-liquidity-withdrawal-drift-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.3062"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-vix-term-structure-inversion-regrossing",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:03:38Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -426,19 +418,11 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-payroll-15th-window",
     "stage": "dev3yr",
     "started": "2026-07-22T06:08:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "M2K",
-    "task": "m2k-post-holiday-reopen-position-rebuild",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:08:55Z",
     "state": "running"
    }
   ],
@@ -507,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 157
+    "trials": 159
    }
   ]
  },
@@ -531,8 +515,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 31,
-   "n_killed": 19,
+   "n_tested": 32,
+   "n_killed": 20,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -551,8 +535,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 8,
-   "n_killed": 3,
+   "n_tested": 9,
+   "n_killed": 4,
    "book_sleeves": [],
    "agents_now": []
   },
