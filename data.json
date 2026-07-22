@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:49:41Z",
+  "stamp": "2026-07-22T18:52:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 575,
-  "n_results": 712,
-  "n_trials": 30700,
+  "n_registered": 577,
+  "n_results": 713,
+  "n_trials": 30701,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T18:51:56.674461+00:00",
+   "hash": "c7f08a0c",
+   "name": "callroll-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.55"
+  },
+  {
+   "t": "2026-07-22T18:51:25.203896+00:00",
+   "hash": "1f2da39b",
+   "name": "sil-jan-bcom-gsci-reweight-short",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T18:49:26.827928+00:00",
    "hash": "e6f710fb",
    "name": "zc-halt-window-crossmarket-reopen",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.049"
-  },
-  {
-   "t": "2026-07-22T18:26:12.718899+00:00",
-   "hash": "c48aebc5",
-   "name": "xmkt-volshare-defensive-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9885"
-  },
-  {
-   "t": "2026-07-22T18:25:56.600614+00:00",
-   "hash": "f3e557d6",
-   "name": "mnq-prior-settlement-anchor-premarket-reversion",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "SIL",
     "task": "xsec-annual-commodity-index-reweight-january",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:49:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-covered-call-etf-monthly-roll-supply-window",
     "stage": "dev3yr",
     "started": "2026-07-22T18:49:41Z",
     "state": "running"
@@ -506,7 +498,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 81,
+   "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -568,7 +560,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 533
+    "trials": 534
    }
   ]
  },
@@ -577,8 +569,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 97,
-   "n_killed": 57,
+   "n_tested": 98,
+   "n_killed": 58,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
