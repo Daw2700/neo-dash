@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:39:19Z",
+  "stamp": "2026-07-22T18:44:29Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 572,
   "n_results": 709,
@@ -404,19 +404,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T18:35:48Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zs-holiday-compressed-week-hedge-budget",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "zc-halted-window-cross-market-information-reopen",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-propfirm-loss-limit-dollar-distance-cascade",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 4,
+    "idea": "xsec-annual-commodity-index-reweight-january",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-covered-call-etf-monthly-roll-supply-window",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 6,
+    "idea": "xsec-commodity-jump-risk-premium-rank",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "mes-asia-leg-accrual-giveback-at-european-cash-open",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 8,
+    "idea": "zn-when-issued-hedge-build-release-asymmetry",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "met-pre-maintenance-halt-inventory-flatten",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "zn-desk-operation-result-window-repricing",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 11,
+    "idea": "micro-complex-monthstart-retail-deposit-inflow-cohort",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 12,
+    "idea": "mnq-dst-transatlantic-overlap-shift-weeks",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "mcl-energy-desk-open-0900-overnight-inventory-handoff",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.38
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
