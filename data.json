@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:30:11Z",
+  "stamp": "2026-07-22T12:33:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 423,
-  "n_results": 535,
-  "n_trials": 30506,
+  "n_registered": 425,
+  "n_results": 537,
+  "n_trials": 30508,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T12:33:35.205003+00:00",
+   "hash": "20cdcd3a",
+   "name": "zc-pollination-window-weather-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T12:33:13.825551+00:00",
+   "hash": "5325fba2",
+   "name": "mes-binding-tick-reversal-rent",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
+   "t": "2026-07-22T12:32:39.888379+00:00",
+   "hash": "5325fba2",
+   "name": "mes-binding-tick-reversal-rent",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
    "t": "2026-07-22T12:27:38.209037+00:00",
    "hash": "4fa7804a",
    "name": "zn-qra-supply-composition-repricing",
@@ -381,44 +405,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.453"
-  },
-  {
-   "t": "2026-07-22T12:11:36.706411+00:00",
-   "hash": "a332ce29",
-   "name": "mes-xsec-momentum-rank",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.047"
-  },
-  {
-   "t": "2026-07-22T12:10:04.845880+00:00",
-   "hash": "bf60999c",
-   "name": "zn-mbs-convexity-hedge-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.831"
-  },
-  {
-   "t": "2026-07-22T12:05:29.170488+00:00",
-   "hash": "658e075c",
-   "name": "m2k-fund-fiscalyearend-rebound",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-binding-tick-reversal-rent",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:30:11Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-pollination-window-weather-premium",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-national-cpi-mosaic-completion",
     "stage": "dev3yr",
@@ -465,7 +457,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 58,
+   "registered": 59,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +519,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 339
+    "trials": 341
    }
   ]
  },
@@ -551,8 +543,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 67,
-   "n_killed": 47,
+   "n_tested": 68,
+   "n_killed": 48,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
