@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:25:26Z",
+  "stamp": "2026-07-22T14:27:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 464,
-  "n_results": 584,
-  "n_trials": 30572,
+  "n_results": 585,
+  "n_trials": 30573,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -153,18 +153,6 @@
    "usd_trade": 37.1
   },
   {
-   "id": "mnq-participation-surprise-orb",
-   "name": "mnq-participation-surprise-orb",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 176,
-   "wr": 0.4886,
-   "usd_mo": 193,
-   "pf": 1.419,
-   "usd_trade": 39.6
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -303,9 +291,29 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T14:27:45.779499+00:00",
+   "hash": "fa5acf93",
+   "name": "mnq-participation-surprise-orb",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T14:24:36.767126+00:00",
    "hash": "c044425e",
@@ -393,14 +401,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T14:04:29.891155+00:00",
-   "hash": "04d9623a",
-   "name": "mbt-miner-fiat-cost-distribution-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.917"
   }
  ],
  "pipeline": {
@@ -419,6 +419,14 @@
     "task": "mcl-hedging-pressure-horizon-decomposition",
     "stage": "dev3yr",
     "started": "2026-07-22T14:19:00Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-participation-surprise-orb",
+    "stage": "dev3yr",
+    "started": "2026-07-22T14:25:28Z",
     "state": "running"
    }
   ],
@@ -587,7 +595,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 405
+    "trials": 406
    }
   ]
  },
@@ -1064,26 +1072,6 @@
     }
    ]
   },
-  "mnq-participation-surprise-orb": {
-   "name": "mnq-participation-surprise-orb",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Open-30m volume measured against its own trailing time-of-day median isolates genuine participation surprise (inventory arriving faster than dealers can lay it off) net of the U-shaped intraday seasonal that already refuted raw open volume as a gate; that unabsorbed imbalance should resolve as range extension later in the same session, so gating a 09:30-10:00 opening-range breakout (OCO entries at the OR high/low, stop at the opposite OR edge, no target, flat 15:55) on trailing-causal top-quintile participation surprise should outperform taking every ORB day.",
-   "metrics": {
-    "n": 176,
-    "wr": 0.4886,
-    "pf": 1.419,
-    "usd_mo": 193,
-    "usd_trade": 39.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:22:52.765608+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1353,6 +1341,26 @@
     "growth_max": 8,
     "apex_max": 6
    }
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
