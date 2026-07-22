@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T12:39:55Z",
+  "stamp": "2026-07-22T12:41:18Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 429,
-  "n_results": 541,
-  "n_trials": 30512,
+  "n_results": 542,
+  "n_trials": 30513,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T12:39:49.394220+00:00",
+   "t": "2026-07-22T12:41:00.375950+00:00",
    "hash": "ac40602b",
    "name": "m6e-national-cpi-mosaic-completion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1635"
   },
   {
    "t": "2026-07-22T12:39:42.845046+00:00",
@@ -410,14 +410,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-national-cpi-mosaic-completion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T12:30:11Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -429,7 +421,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 59,
+   "registered": 58,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -491,7 +483,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 345
+    "trials": 346
    }
   ]
  },
@@ -600,8 +592,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 17,
+   "n_tested": 19,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
