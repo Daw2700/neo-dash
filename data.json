@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:38:31Z",
+  "stamp": "2026-07-22T00:45:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 132,
-  "n_results": 208,
+  "n_results": 211,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -189,22 +189,6 @@
    }
   },
   {
-   "id": "b2-fomc-predrift",
-   "name": "b2-fomc-predrift",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 24,
-   "wr": 0.375,
-   "usd_mo": 8,
-   "pf": 1.448,
-   "usd_trade": 12.7,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -269,22 +253,6 @@
    }
   },
   {
-   "id": "b2-cpi-follow",
-   "name": "b2-cpi-follow",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 21,
-   "wr": 0.524,
-   "usd_mo": 18,
-   "pf": 1.264,
-   "usd_trade": 30.6,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 5
-   }
-  },
-  {
    "id": "fomc-statement-presser-reversal",
    "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
@@ -322,10 +290,62 @@
    "wr": 0.534,
    "usd_mo": 58,
    "pf": 1.22,
-   "usd_trade": 28.4
+   "usd_trade": 28.4,
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 2
+   }
+  },
+  {
+   "id": "rep-nagel-mes",
+   "name": "rep-nagel-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 62,
+   "wr": null,
+   "usd_mo": 16,
+   "pf": 1.211,
+   "usd_trade": 9.3
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T00:42:28.623132+00:00",
+   "hash": "f763c50b",
+   "name": "b2-orb-lowvol-gate",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T00:41:34.423189+00:00",
+   "hash": "f3417e68",
+   "name": "b2-cpi-follow",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T00:41:33.400074+00:00",
+   "hash": "1f64c499",
+   "name": "b2-fomc-predrift",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T00:34:08.352924+00:00",
    "hash": "dc55f839",
@@ -397,30 +417,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T00:03:11.450951+00:00",
-   "hash": "fce2289d",
-   "name": "crypto-expiry-twap-unwind-v2",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.328"
-  },
-  {
-   "t": "2026-07-22T00:01:59.315195+00:00",
-   "hash": "d6e04d2a",
-   "name": "crypto-expiry-twap-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-22T00:00:56.906878+00:00",
-   "hash": "377ea3c3",
-   "name": "grain-halt-risk-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.61"
   }
  ],
  "pipeline": {
@@ -431,22 +427,6 @@
     "task": "robustness: b2-orb-lowvol-gate",
     "stage": "dev3yr",
     "started": "2026-07-22T00:38:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": null,
-    "task": "robustness: b2-fomc-predrift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T00:38:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": null,
-    "task": "robustness: b2-cpi-follow",
-    "stage": "dev3yr",
-    "started": "2026-07-22T00:38:31Z",
     "state": "running"
    }
   ],
@@ -543,7 +523,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 12
+    "trials": 15
    }
   ]
  },
@@ -1075,40 +1055,6 @@
     "apex_max": 4
    }
   },
-  "b2-fomc-predrift": {
-   "name": "b2-fomc-predrift",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Documented pre-FOMC announcement drift: hedgers pay a de-risking premium into 2pm decisions and equities drift up while they wait",
-   "metrics": {
-    "n": 24,
-    "wr": 0.375,
-    "pf": 1.448,
-    "usd_mo": 8,
-    "usd_trade": 12.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:05:17.884442+00:00",
-     "stage": "dev",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-21T15:31:04.906640+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.700599+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1225,40 +1171,6 @@
     "apex_max": 3
    }
   },
-  "b2-cpi-follow": {
-   "name": "b2-cpi-follow",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "8:30 CPI prints reprice rates expectations; when the overnight reaction gaps more than half an ATR the cash session underreacts and continues it",
-   "metrics": {
-    "n": 21,
-    "wr": 0.524,
-    "pf": 1.264,
-    "usd_mo": 18,
-    "usd_trade": 30.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:05:17.885072+00:00",
-     "stage": "dev",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-21T15:31:04.907524+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.701627+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 5
-   }
-  },
   "fomc-statement-presser-reversal": {
    "name": "fomc-statement-presser-reversal",
    "market": "MNQ",
@@ -1340,6 +1252,50 @@
      "t": "2026-07-21T15:49:52.706298+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    }
+   ],
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 2
+   }
+  },
+  "rep-nagel-mes": {
+   "name": "rep-nagel-mes",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Liquidity-provision reversal premium is market-wide and must appear on MES when VIX is elevated",
+   "metrics": {
+    "n": 62,
+    "wr": null,
+    "pf": 1.211,
+    "usd_mo": 16,
+    "usd_trade": 9.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T19:58:19.174504+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
+     "verdict": "REPLICATES"
     }
    ]
   }
@@ -1630,22 +1586,23 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
-    "8b-biggap-follow": 1,
+    "b2-cpi-follow": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 11,
-   "p_breach": 0.196,
-   "usd_mo": 811,
-   "usd_mo_5acct": 4055,
+   "total_micros": 12,
+   "p_breach": 0.195,
+   "usd_mo": 813,
+   "usd_mo_5acct": 4065,
    "pct_goal": 0.406,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4055
+   "usd_mo_total": 4065
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
