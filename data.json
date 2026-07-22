@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:08:32Z",
+  "stamp": "2026-07-22T06:08:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -418,14 +418,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-us-holiday-orphan-session-europe-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:03:38Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: mes-payroll-15th-window",
     "stage": "dev3yr",
