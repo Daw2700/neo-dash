@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T15:26:56Z",
+  "stamp": "2026-07-22T15:29:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 489,
-  "n_results": 615,
-  "n_trials": 30603,
+  "n_registered": 492,
+  "n_results": 617,
+  "n_trials": 30605,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 2
@@ -281,6 +281,18 @@
    }
   },
   {
+   "id": "mgc-gap-sign-streak-offshore-accumulation",
+   "name": "mgc-gap-sign-streak-offshore-accumulation",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 193,
+   "wr": 0.5233,
+   "usd_mo": 37,
+   "pf": 1.171,
+   "usd_trade": 6.9
+  },
+  {
    "id": "b6-monday-m2k",
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -291,21 +303,41 @@
    "usd_mo": 19,
    "pf": 1.154,
    "usd_trade": 5.3
-  },
-  {
-   "id": "b6-vix-m2k",
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 26,
-   "wr": null,
-   "usd_mo": 5,
-   "pf": 1.148,
-   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T15:29:17.685763+00:00",
+   "hash": "2ee7287c",
+   "name": "scout-36-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T15:28:36.760846+00:00",
+   "hash": "f7e7e096",
+   "name": "mnq-two-sided-auction-balance-expansion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T15:28:02.757234+00:00",
+   "hash": "0c95be71",
+   "name": "zn-thin-minute-variance-share-noninformation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.503"
+  },
+  {
+   "t": "2026-07-22T15:27:31.031420+00:00",
+   "hash": "c32ab3d9",
+   "name": "mgc-gap-sign-streak-offshore-accumulation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.171"
+  },
   {
    "t": "2026-07-22T15:26:44.453304+00:00",
    "hash": "32382ed8",
@@ -313,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.749"
-  },
-  {
-   "t": "2026-07-22T15:25:50.795281+00:00",
-   "hash": "c32ab3d9",
-   "name": "mgc-gap-sign-streak-offshore-accumulation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T15:25:11.810360+00:00",
@@ -377,44 +401,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.113"
-  },
-  {
-   "t": "2026-07-22T15:10:52.835847+00:00",
-   "hash": "b9a53d45",
-   "name": "mgc-tas-band-exhaustion-spillover-v2",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.865"
-  },
-  {
-   "t": "2026-07-22T15:09:38.673591+00:00",
-   "hash": "4d6af5e1",
-   "name": "m6e-block-report-lag-hedge-leak",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.72"
-  },
-  {
-   "t": "2026-07-22T15:09:34.584090+00:00",
-   "hash": "e74a0c4d",
-   "name": "mes-vol-hhi-orb",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.972"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-gap-sign-streak-offshore-accumulation-ratification",
-    "stage": "dev3yr",
-    "started": "2026-07-22T15:24:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-thin-minute-variance-share-noninformation",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-two-sided-auction-balance-expansion",
     "stage": "dev3yr",
@@ -441,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 67,
+   "registered": 68,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 436
+    "trials": 438
    }
   ]
  },
@@ -556,7 +548,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 28,
+   "n_tested": 29,
    "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
@@ -621,8 +613,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 37,
-   "n_killed": 30,
+   "n_tested": 38,
+   "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1230,6 +1222,26 @@
     "apex_max": 6
    }
   },
+  "mgc-gap-sign-streak-offshore-accumulation": {
+   "name": "mgc-gap-sign-streak-offshore-accumulation",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "A run of consecutive same-sign opening gaps on MGC marks persistent offshore physical or official-sector accumulation repricing gold while the US is closed; the streak length, not any single gap size, signals a standing buyer or seller that the US RTH session then ratifies (continues) rather than fades.",
+   "metrics": {
+    "n": 193,
+    "wr": 0.5233,
+    "pf": 1.171,
+    "usd_mo": 37,
+    "usd_trade": 6.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:27:31.031420+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
    "market": "M2K",
@@ -1245,26 +1257,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-vix-m2k": {
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
-   "metrics": {
-    "n": 26,
-    "wr": null,
-    "pf": 1.148,
-    "usd_mo": 5,
-    "usd_trade": 6.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.112070+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
