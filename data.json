@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:07:04Z",
+  "stamp": "2026-07-22T21:22:09Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 629,
+  "n_registered": 630,
   "n_results": 779,
   "n_trials": 30767,
   "holdout_looks_spent": 0,
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:09:15.319063+00:00",
+   "hash": "aa82475e",
+   "name": "scout-45-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T21:04:33.948811+00:00",
    "hash": "0719c7ad",
    "name": "mes-bom-emptiness-reversion",
@@ -389,14 +397,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.722"
-  },
-  {
-   "t": "2026-07-22T20:46:58.407622+00:00",
-   "hash": "5c5cffa5",
-   "name": "mes-macro-factor-coherence-open-ratification",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.676"
   }
  ],
  "pipeline": {
@@ -413,7 +413,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 86,
+   "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
