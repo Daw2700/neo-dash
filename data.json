@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:09:43Z",
+  "stamp": "2026-07-22T22:23:23Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 653,
   "n_results": 805,
@@ -400,19 +400,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T22:06:06Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "met-hour-stamp-referenced-flow-asymmetry",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mes-quarterly-collar-overlay-gamma-release",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mes-autocallable-observation-date-delta-step",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mcl-sovereign-oil-hedge-program-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-option-assignment-delivery-flatten",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 6,
+    "idea": "zn-first-intention-day-forced-long-exit",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-btic-close-referenced-hedge-release",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 8,
+    "idea": "mbt-etf-creation-t1-settlement-unwind",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-micro-delivery-month-retail-exit",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 10,
+    "idea": "zc-rma-volatility-factor-five-day-window",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "met-validator-queue-metered-supply-clock",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 12,
+    "idea": "zn-mes-hour-stamp-inventory-boundary-asymmetry",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 88,
    "dev3yr": 0,
    "robustness": 0,
