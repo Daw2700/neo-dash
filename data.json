@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:07:55Z",
+  "stamp": "2026-07-22T18:11:50Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 558,
-  "n_results": 692,
-  "n_trials": 30680,
+  "n_registered": 561,
+  "n_results": 695,
+  "n_trials": 30683,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -139,18 +139,6 @@
     "growth_max": 3,
     "apex_max": 2
    }
-  },
-  {
-   "id": "met-april-tax-liability-retail-liquidation",
-   "name": "met-april-tax-liability-retail-liquidation",
-   "market": "MET",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 3,
-   "wr": 0.6667,
-   "usd_mo": 1,
-   "pf": 2.543,
-   "usd_trade": 16.3
   },
   {
    "id": "mbt-session-beta-channel-regime",
@@ -303,9 +291,61 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T18:10:42.297696+00:00",
+   "hash": "84122ba3",
+   "name": "met-april-tax-liability-retail-liquidation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T18:10:13.540317+00:00",
+   "hash": "b3ad2407",
+   "name": "mng-crude-asia-diffusion-open-catchup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.615"
+  },
+  {
+   "t": "2026-07-22T18:10:08.403428+00:00",
+   "hash": "e0bd284d",
+   "name": "mes-charm-delta-decay-preopex-overnight",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T18:09:14.354115+00:00",
+   "hash": "84122ba3",
+   "name": "met-april-tax-liability-retail-liquidation",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 6.117"
+  },
+  {
+   "t": "2026-07-22T18:08:24.209157+00:00",
+   "hash": "0822caf1",
+   "name": "rep-met-april-tax-liability-retail-liquidation-mbt",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T18:04:57.103856+00:00",
    "hash": "84122ba3",
@@ -361,60 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.5952"
-  },
-  {
-   "t": "2026-07-22T17:54:32.798538+00:00",
-   "hash": "600fb33b",
-   "name": "mes-1500et-median-rent-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.185"
-  },
-  {
-   "t": "2026-07-22T17:52:19.195135+00:00",
-   "hash": "943eadd6",
-   "name": "m2k-postclose-ratify-jump-asymmetry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.015"
-  },
-  {
-   "t": "2026-07-22T17:51:03.279299+00:00",
-   "hash": "22dc5916",
-   "name": "zs-argentina-export-incentive-window",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T17:49:43.154463+00:00",
-   "hash": "e9ead1b5",
-   "name": "ROBUSTNESS-BATTERY zs-argentina-export-incentive-window (22dc591628ec9237)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T17:45:28.789956+00:00",
-   "hash": "2fb8d325",
-   "name": "m2k-shortsale-constraint-overshoot",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "replication: met-april-tax-liability-retail-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:07:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-charm-delta-decay-preopex-overnight",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-crude-asia-diffusion-open-catchup",
     "stage": "dev3yr",
@@ -524,7 +516,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 79,
+   "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -586,7 +578,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 513
+    "trials": 516
    }
   ]
  },
@@ -666,8 +658,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 14,
+   "n_tested": 19,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1043,31 +1035,6 @@
     "apex_max": 2
    }
   },
-  "met-april-tax-liability-retail-liquidation": {
-   "name": "met-april-tax-liability-retail-liquidation",
-   "market": "MET",
-   "tier": "candidate",
-   "mechanism": "US retail crypto holders owe tax on prior-year realized gains by the mid-April IRS filing deadline and must sell spot to fund the bill, a price-insensitive calendar-certain seller concentrated April 1-15; CME ether futures absorb the hedging of that spot liquidation flow, implying a bearish drift in MET during the window.",
-   "metrics": {
-    "n": 3,
-    "wr": 0.6667,
-    "pf": 2.543,
-    "usd_mo": 1,
-    "usd_trade": 16.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T17:59:20.113835+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T18:04:57.103856+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "mbt-session-beta-channel-regime": {
    "name": "mbt-session-beta-channel-regime",
    "market": "MBT",
@@ -1364,6 +1331,26 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
