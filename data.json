@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:52:19Z",
+  "stamp": "2026-07-22T22:53:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 673,
-  "n_results": 823,
-  "n_trials": 30811,
+  "n_results": 824,
+  "n_trials": 30812,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,12 +303,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T22:52:13.615953+00:00",
+   "t": "2026-07-22T22:53:31.010919+00:00",
    "hash": "67867d19",
    "name": "mes-crossmargin-degross-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.616"
   },
   {
    "t": "2026-07-22T22:52:05.838073+00:00",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-cross-margin-offset-collapse-degross",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:50:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-effective-spread-rent-normalization",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-factor-momentum-timing",
     "stage": "dev3yr",
@@ -484,7 +476,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 92,
+   "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -546,7 +538,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 644
+    "trials": 645
    }
   ]
  },
@@ -570,8 +562,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 113,
-   "n_killed": 85,
+   "n_tested": 114,
+   "n_killed": 86,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
