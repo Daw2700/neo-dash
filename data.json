@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:26:12Z",
+  "stamp": "2026-07-22T23:31:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 681,
-  "n_results": 834,
-  "n_trials": 30822,
+  "n_registered": 684,
+  "n_results": 837,
+  "n_trials": 30825,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -261,6 +261,18 @@
    "usd_trade": 14.3
   },
   {
+   "id": "mnq-index-52wk-high-anchor-continuation",
+   "name": "mnq-index-52wk-high-anchor-continuation",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 75,
+   "wr": 0.4933,
+   "usd_mo": 50,
+   "pf": 1.3,
+   "usd_trade": 24.0
+  },
+  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -283,25 +295,33 @@
    "usd_mo": 31,
    "pf": 1.273,
    "usd_trade": 15.4
-  },
-  {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T23:28:55.377537+00:00",
+   "hash": "9e6981bd",
+   "name": "mes-secondtier-attention-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.586"
+  },
+  {
+   "t": "2026-07-22T23:28:52.996313+00:00",
+   "hash": "7907c86c",
+   "name": "mnq-index-52wk-high-anchor-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.3"
+  },
+  {
+   "t": "2026-07-22T23:28:41.884627+00:00",
+   "hash": "9ececc6f",
+   "name": "zn-steepness-gated-carry-rolldown-overnight",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.555"
+  },
   {
    "t": "2026-07-22T23:25:52.502428+00:00",
    "hash": "868d6d26",
@@ -373,30 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.484"
-  },
-  {
-   "t": "2026-07-22T22:53:44.864041+00:00",
-   "hash": "4ca613c0",
-   "name": "mgc-effective-spread-rent-normalization",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.103"
-  },
-  {
-   "t": "2026-07-22T22:53:31.010919+00:00",
-   "hash": "67867d19",
-   "name": "mes-crossmargin-degross-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.616"
-  },
-  {
-   "t": "2026-07-22T22:50:30.691639+00:00",
-   "hash": "69e8a2e0",
-   "name": "mnq-globex-reopen-halfhour-anchor",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.934"
   }
  ],
  "pipeline": {
@@ -415,14 +411,6 @@
     "task": "mes-secondtier-release-attention-graded-drift",
     "stage": "dev3yr",
     "started": "2026-07-22T23:23:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-index-52wk-high-anchor-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:26:12Z",
     "state": "running"
    }
   ],
@@ -528,7 +516,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 655
+    "trials": 658
    }
   ]
  },
@@ -537,7 +525,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 109,
+   "n_tested": 110,
    "n_killed": 66,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -552,8 +540,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 115,
-   "n_killed": 87,
+   "n_tested": 116,
+   "n_killed": 88,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -646,8 +634,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 53,
-   "n_killed": 44,
+   "n_tested": 54,
+   "n_killed": 45,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1237,6 +1225,26 @@
     }
    ]
   },
+  "mnq-index-52wk-high-anchor-continuation": {
+   "name": "mnq-index-52wk-high-anchor-continuation",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "When the Nasdaq index prints a fresh 52-week (trailing 252-session) closing high, the prior salient high becomes a broken price anchor; the disposition effect makes holders reluctant to sell winners while breakout demand adds fresh buying, producing a next-session upward drift that we harvest by going long MNQ at the next session open. Distinct from mnq-cost-basis-overhang (aggregate unrealized P&L) and from intraday prior-high breaks (this is a level-anchoring, close-to-close signal).",
+   "metrics": {
+    "n": 75,
+    "wr": 0.4933,
+    "pf": 1.3,
+    "usd_mo": 50,
+    "usd_trade": 24.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T23:28:52.996313+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1276,40 +1284,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
-   "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  },
  "decisions": [
