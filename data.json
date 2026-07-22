@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T11:09:08Z",
+  "stamp": "2026-07-22T11:12:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 391,
-  "n_results": 497,
-  "n_trials": 30468,
+  "n_registered": 393,
+  "n_results": 499,
+  "n_trials": 30470,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mng-unconfirmed-idiosyncratic-move-reversion",
+   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
+   "market": "MNG",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 17,
+   "wr": 0.7059,
+   "usd_mo": 11,
+   "pf": 2.047,
+   "usd_trade": 23.3
   },
   {
    "id": "rep-bondflight-mes",
@@ -295,21 +307,33 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  {
-   "id": "mes-variance-risk-premium-carry",
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 208,
-   "wr": 0.524,
-   "usd_mo": 47,
-   "pf": 1.122,
-   "usd_trade": 8.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T11:10:17.546670+00:00",
+   "hash": "991d6fe7",
+   "name": "xasset-vol-origin-attribution",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T11:10:07.861471+00:00",
+   "hash": "bc6c15dc",
+   "name": "sil-gold-volratio-leverage-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.002"
+  },
+  {
+   "t": "2026-07-22T11:09:41.444972+00:00",
+   "hash": "4264182c",
+   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.047"
+  },
   {
    "t": "2026-07-22T11:08:57.880246+00:00",
    "hash": "31074db3",
@@ -317,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.475"
-  },
-  {
-   "t": "2026-07-22T11:08:08.324075+00:00",
-   "hash": "4264182c",
-   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T11:07:33.930258+00:00",
@@ -389,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.901"
-  },
-  {
-   "t": "2026-07-22T10:53:58.643065+00:00",
-   "hash": "bb29dc56",
-   "name": "mes-overnight-intraday-tugofwar",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.863"
-  },
-  {
-   "t": "2026-07-22T10:51:30.720138+00:00",
-   "hash": "52440e70",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.682"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-unconfirmed-idiosyncratic-move-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:06:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "SIL",
-    "task": "sil-gold-volratio-leverage-proxy-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T11:07:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "xasset-vol-origin-attribution",
     "stage": "dev3yr",
@@ -527,7 +511,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 301
+    "trials": 303
    }
   ]
  },
@@ -589,8 +573,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 3,
-   "n_killed": 2,
+   "n_tested": 4,
+   "n_killed": 3,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -607,7 +591,7 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 8,
+   "n_tested": 9,
    "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
@@ -984,6 +968,26 @@
     "apex_max": 2
    }
   },
+  "mng-unconfirmed-idiosyncratic-move-reversion": {
+   "name": "mng-unconfirmed-idiosyncratic-move-reversion",
+   "market": "MNG",
+   "tier": "candidate",
+   "mechanism": "Volatility and risk appetite transmit from crude oil to natural gas but not the reverse, per realized-volatility spillover asymmetry within the energy complex; a large MNG daily move that MCL does not confirm is therefore idiosyncratic weather or storage flow rather than energy-complex repricing, and idiosyncratic flow is a transient inventory shock supplied by a small set of local participants who need it back, so fading the unconfirmed move into the next session should be paid.",
+   "metrics": {
+    "n": 17,
+    "wr": 0.7059,
+    "pf": 2.047,
+    "usd_mo": 11,
+    "usd_trade": 23.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T11:09:41.444972+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1267,31 +1271,6 @@
     "growth_max": 7,
     "apex_max": 5
    }
-  },
-  "mes-variance-risk-premium-carry": {
-   "name": "mes-variance-risk-premium-carry",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "The gap between implied variance (VIX squared) and trailing realized variance is the price insurers charge for selling crash protection; when that spread is wide, sellers of equity risk are over-paid and the index earns a forward premium as the compensation gets harvested (Bollerslev Tauchen Zhou RFS 2009).",
-   "metrics": {
-    "n": 208,
-    "wr": 0.524,
-    "pf": 1.122,
-    "usd_mo": 47,
-    "usd_trade": 8.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:04:02.729327+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    },
-    {
-     "t": "2026-07-22T07:08:04.252202+00:00",
-     "stage": "dev3yr_recheck",
-     "verdict": "KILLED"
-    }
-   ]
   }
  },
  "decisions": [
