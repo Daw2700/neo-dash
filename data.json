@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:32:03Z",
+  "stamp": "2026-07-22T21:32:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,27 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T21:30:57Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-nav-cutoff-nextmorning-flow-execution-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:32:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "SIL",
+    "task": "sil-mgc-settlement-stagger-five-minute-stale-mark",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:32:05Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-nav-cutoff-nextmorning-flow-execution-lag",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
-   {
-    "rank": 8,
-    "idea": "sil-mgc-settlement-stagger-five-minute-stale-mark",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.33
-   },
    {
     "rank": 9,
     "idea": "m6e-imm-date-forward-roll-concentration",
@@ -467,7 +465,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 4,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
