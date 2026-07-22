@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:49:15Z",
+  "stamp": "2026-07-22T18:49:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 575,
-  "n_results": 711,
-  "n_trials": 30699,
+  "n_results": 712,
+  "n_trials": 30700,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,12 +307,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T18:47:55.261624+00:00",
+   "t": "2026-07-22T18:49:26.827928+00:00",
    "hash": "e6f710fb",
    "name": "zc-halt-window-crossmarket-reopen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.207"
   },
   {
    "t": "2026-07-22T18:47:07.981226+00:00",
@@ -407,22 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-halted-window-cross-market-information-reopen",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:44:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-propfirm-loss-limit-dollar-distance-cascade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T18:44:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZS",
     "task": "robustness: zs-holiday-compressed-week-hedge-budget",
     "stage": "dev3yr",
@@ -524,7 +508,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 82,
+   "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -586,7 +570,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 532
+    "trials": 533
    }
   ]
  },
@@ -713,8 +697,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 25,
-   "n_killed": 22,
+   "n_tested": 26,
+   "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
   },
