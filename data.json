@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:35:39Z",
+  "stamp": "2026-07-22T21:35:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,6 +415,14 @@
     "task": "mnq-derived-micro-settlement-anchor-divergence",
     "stage": "dev3yr",
     "started": "2026-07-22T21:35:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "recheck: m6e-imm-date-forward-roll-concentration",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:35:41Z",
     "state": "running"
    }
   ],
