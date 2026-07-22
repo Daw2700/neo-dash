@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:21:36Z",
+  "stamp": "2026-07-22T10:24:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 369,
-  "n_results": 473,
-  "n_trials": 30444,
+  "n_registered": 370,
+  "n_results": 474,
+  "n_trials": 30445,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:23:48.949787+00:00",
+   "hash": "c051fc76",
+   "name": "m6e-london-1600-fix-window-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2524"
+  },
+  {
    "t": "2026-07-22T10:20:38.351408+00:00",
    "hash": "e4fcea22",
    "name": "mnq-offshore-participation-share-expansion-gate",
@@ -397,14 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T09:58:58.186100+00:00",
-   "hash": "b300dfe8",
-   "name": "scout-28-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T10:16:33Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-london-1600-benchmark-fix-window-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:21:38Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "m6e-london-1600-benchmark-fix-window-reversal",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 7,
     "idea": "mcl-session-disagreement-overnight-repair",
@@ -510,7 +509,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 47,
    "dev3yr": 0,
    "robustness": 0,
@@ -573,7 +572,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 277
+    "trials": 278
    }
   ]
  },
@@ -682,8 +681,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 14,
+   "n_tested": 15,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
