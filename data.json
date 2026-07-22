@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:20:52Z",
+  "stamp": "2026-07-22T20:22:56Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 614,
-  "n_results": 760,
-  "n_trials": 30748,
+  "n_registered": 615,
+  "n_results": 761,
+  "n_trials": 30749,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:22:35.676958+00:00",
+   "hash": "70314138",
+   "name": "mcl-opec-premium-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.345"
+  },
+  {
    "t": "2026-07-22T20:20:46.717900+00:00",
    "hash": "d48e7d7c",
    "name": "zc-ethanol-crush-margin-demand-transmission",
@@ -389,26 +397,10 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T20:07:01.264504+00:00",
-   "hash": "7622fb3a",
-   "name": "zc-export-inspections-monday-demand-stamp",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-opec-meeting-uncertainty-premium-release",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:16:58Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -483,7 +475,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 581
+    "trials": 582
    }
   ]
  },
@@ -554,8 +546,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 40,
-   "n_killed": 25,
+   "n_tested": 41,
+   "n_killed": 26,
    "book_sleeves": [],
    "agents_now": []
   },
