@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T00:45:56Z",
+  "stamp": "2026-07-22T00:49:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -306,7 +306,11 @@
    "wr": null,
    "usd_mo": 16,
    "pf": 1.211,
-   "usd_trade": 9.3
+   "usd_trade": 9.3,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 6
+   }
   },
   {
    "id": "b6-monday-m2k",
@@ -1277,7 +1281,11 @@
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 6
+   }
   },
   "b6-monday-m2k": {
    "name": "b6-monday-m2k",
@@ -1592,17 +1600,16 @@
     "b3-monday-long": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
-    "b2-cpi-follow": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 12,
-   "p_breach": 0.195,
-   "usd_mo": 813,
-   "usd_mo_5acct": 4065,
-   "pct_goal": 0.406,
+   "total_micros": 11,
+   "p_breach": 0.199,
+   "usd_mo": 796,
+   "usd_mo_5acct": 3980,
+   "pct_goal": 0.398,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4065
+   "usd_mo_total": 3980
   },
   {
    "id": "Validated 8 + vix-reversion|growth",

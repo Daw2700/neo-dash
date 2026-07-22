@@ -94,14 +94,6 @@
     "max_micros": 4
    }
   },
-  "b2-fomc-predrift": {
-   "growth": {
-    "max_micros": 8
-   },
-   "apex150": {
-    "max_micros": 8
-   }
-  },
   "rep-bondflight-mes": {
    "growth": {
     "max_micros": 6
@@ -134,14 +126,6 @@
     "max_micros": 3
    }
   },
-  "b2-cpi-follow": {
-   "growth": {
-    "max_micros": 5
-   },
-   "apex150": {
-    "max_micros": 5
-   }
-  },
   "b3-prior-high-break": {
    "growth": {
     "max_micros": 2
@@ -156,6 +140,14 @@
    },
    "apex150": {
     "max_micros": 2
+   }
+  },
+  "rep-nagel-mes": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 6
    }
   }
  },
@@ -174,14 +166,13 @@
     "b3-monday-long": 1,
     "b4-open-drive": 1,
     "b3-tom-long": 2,
-    "b2-cpi-follow": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 12,
-   "p_breach": 0.195,
-   "usd_mo": 813,
-   "usd_mo_5acct": 4065,
-   "pct_goal": 0.406
+   "total_micros": 11,
+   "p_breach": 0.199,
+   "usd_mo": 796,
+   "usd_mo_5acct": 3980,
+   "pct_goal": 0.398
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
