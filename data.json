@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:04:29Z",
+  "stamp": "2026-07-22T13:09:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 435,
-  "n_results": 550,
-  "n_trials": 30521,
+  "n_registered": 438,
+  "n_results": 553,
+  "n_trials": 30524,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -201,6 +201,18 @@
    }
   },
   {
+   "id": "mgc-failed-auction-extreme-volume-fade",
+   "name": "mgc-failed-auction-extreme-volume-fade",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 96,
+   "wr": 0.5104,
+   "usd_mo": 36,
+   "pf": 1.387,
+   "usd_trade": 13.7
+  },
+  {
    "id": "mnq-event-free-day-flow-persistence",
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -291,21 +303,33 @@
    "usd_mo": 5,
    "pf": 1.148,
    "usd_trade": 6.8
-  },
-  {
-   "id": "rep3-vix-mes",
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": null,
-   "usd_mo": 8,
-   "pf": 1.138,
-   "usd_trade": 12.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T13:09:15.952514+00:00",
+   "hash": "31eb7523",
+   "name": "zc-dollar-competitiveness-repricing-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.651"
+  },
+  {
+   "t": "2026-07-22T13:07:08.141730+00:00",
+   "hash": "5e534943",
+   "name": "mgc-failed-auction-extreme-volume-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.387"
+  },
+  {
+   "t": "2026-07-22T13:06:53.256503+00:00",
+   "hash": "93220002",
+   "name": "mes-volofvol-hedging-instability-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.961"
+  },
   {
    "t": "2026-07-22T13:02:24.896942+00:00",
    "hash": "dd38b58b",
@@ -377,52 +401,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T12:41:00.375950+00:00",
-   "hash": "ac40602b",
-   "name": "m6e-national-cpi-mosaic-completion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1635"
-  },
-  {
-   "t": "2026-07-22T12:39:42.845046+00:00",
-   "hash": "0810a0c5",
-   "name": "zc-prereport-position-squaring-hour",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.055"
-  },
-  {
-   "t": "2026-07-22T12:38:16.951474+00:00",
-   "hash": "12345711",
-   "name": "m6e-energy-terms-of-trade-shock-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.906"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-failed-auction-extreme-volume-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:04:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-volofvol-hedging-instability-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:04:28Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-dollar-competitiveness-repricing-lag",
     "stage": "dev3yr",
@@ -541,7 +525,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 354
+    "trials": 357
    }
   ]
  },
@@ -565,8 +549,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 70,
-   "n_killed": 50,
+   "n_tested": 71,
+   "n_killed": 51,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -594,7 +578,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 23,
+   "n_tested": 24,
    "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
@@ -668,8 +652,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 17,
+   "n_tested": 20,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1110,6 +1094,26 @@
     "apex_max": 1
    }
   },
+  "mgc-failed-auction-extreme-volume-fade": {
+   "name": "mgc-failed-auction-extreme-volume-fade",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "Volume printed at the session extreme rather than its centre means initiative traders were filled by responsive counterparties exactly where the auction failed, leaving those initiative positions offside and fueling a reversal; fade the prior session direction when the share of RTH volume transacted in the top/bottom decile of that session range is abnormally high.",
+   "metrics": {
+    "n": 96,
+    "wr": 0.5104,
+    "pf": 1.387,
+    "usd_mo": 36,
+    "usd_trade": 13.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T13:07:08.141730+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mnq-event-free-day-flow-persistence": {
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -1273,26 +1277,6 @@
    "verdict_history": [
     {
      "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "rep3-vix-mes": {
-   "name": "rep3-vix-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot is market-wide: must appear on MES",
-   "metrics": {
-    "n": 25,
-    "wr": null,
-    "pf": 1.138,
-    "usd_mo": 8,
-    "usd_trade": 12.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T15:47:32.242638+00:00",
      "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
