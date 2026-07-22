@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:37:12Z",
+  "stamp": "2026-07-22T10:37:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,38 +408,43 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 12,
-    "idea": "zn-cash-market-closed-futures-open-asymmetry",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.35
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T10:37:14Z",
+    "state": "running"
    },
    {
-    "rank": 13,
-    "idea": "mcl-commodity-index-category-beta-dislocation",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.35
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-cash-market-closed-futures-open-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:37:14Z",
+    "state": "running"
    },
    {
-    "rank": 14,
-    "idea": "mym-leverage-constraint-low-beta-tilt",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.3
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-commodity-index-category-beta-dislocation",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:37:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MYM",
+    "task": "mym-leverage-constraint-low-beta-tilt",
+    "stage": "dev3yr",
+    "started": "2026-07-22T10:37:14Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 3,
+   "idea": 0,
    "registered": 48,
    "dev3yr": 0,
    "robustness": 0,
