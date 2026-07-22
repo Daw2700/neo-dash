@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:57:50Z",
+  "stamp": "2026-07-22T03:58:12Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 186,
   "n_results": 279,
@@ -405,14 +405,6 @@
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-shorthorizon-trend-decay-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:54:18Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
