@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:00:35Z",
+  "stamp": "2026-07-22T08:00:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:00:13Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MBT",
+    "task": "mbt-disposition-run-profit-taking",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:00:37Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mbt-disposition-run-profit-taking",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mes-thin-desk-season-impact-reversion",
@@ -483,7 +482,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 34,
    "dev3yr": 0,
    "robustness": 0,
