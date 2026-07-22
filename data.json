@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:28:48Z",
+  "stamp": "2026-07-22T04:28:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,27 +412,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T04:23:55Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-margin-hike-lag-deleveraging",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:28:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-refinery-turnaround-crude-length-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:28:50Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-margin-hike-lag-deleveraging",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 8,
-    "idea": "mcl-refinery-turnaround-crude-length-premium",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 9,
     "idea": "zs-south-american-weather-premium-decay",
@@ -453,7 +451,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 13,
    "dev3yr": 0,
    "robustness": 0,
