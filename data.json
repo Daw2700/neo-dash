@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-22T14:19:00Z",
+  "stamp": "2026-07-22T14:25:26Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 460,
-  "n_results": 581,
-  "n_trials": 30569,
+  "n_registered": 464,
+  "n_results": 584,
+  "n_trials": 30572,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 1
+  "needs_attention_count": 2
  },
  "leaderboard": [
   {
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "mnq-participation-surprise-orb",
+   "name": "mnq-participation-surprise-orb",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 176,
+   "wr": 0.4886,
+   "usd_mo": 193,
+   "pf": 1.419,
+   "usd_trade": 39.6
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -249,6 +261,18 @@
    "usd_trade": 15.4
   },
   {
+   "id": "mcl-hedging-pressure-horizon-decomposition-v2",
+   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 89,
+   "wr": 0.5169,
+   "usd_mo": 89,
+   "pf": 1.263,
+   "usd_trade": 35.8
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -279,33 +303,41 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "b6-monday-m2k",
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 133,
-   "wr": null,
-   "usd_mo": 19,
-   "pf": 1.154,
-   "usd_trade": 5.3
-  },
-  {
-   "id": "b6-vix-m2k",
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 26,
-   "wr": null,
-   "usd_mo": 5,
-   "pf": 1.148,
-   "usd_trade": 6.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T14:24:36.767126+00:00",
+   "hash": "c044425e",
+   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.263"
+  },
+  {
+   "t": "2026-07-22T14:23:15.462741+00:00",
+   "hash": "5fb0f1ef",
+   "name": "mcl-quiescence-range-band-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.872"
+  },
+  {
+   "t": "2026-07-22T14:22:52.765608+00:00",
+   "hash": "fa5acf93",
+   "name": "mnq-participation-surprise-orb",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.419"
+  },
+  {
+   "t": "2026-07-22T14:22:03.601299+00:00",
+   "hash": "30cdd035",
+   "name": "mcl-hedging-pressure-horizon-decomposition",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T14:15:41.271464+00:00",
    "hash": "d806b114",
@@ -369,38 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.917"
-  },
-  {
-   "t": "2026-07-22T14:04:03.200545+00:00",
-   "hash": "372f96e1",
-   "name": "mng-untradeable-bar-density-pentup-flow",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.931"
-  },
-  {
-   "t": "2026-07-22T14:02:50.408653+00:00",
-   "hash": "86e3d36f",
-   "name": "mgc-option-expiry-underlying-desync",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.368"
-  },
-  {
-   "t": "2026-07-22T13:58:26.589769+00:00",
-   "hash": "58608f22",
-   "name": "zc-ethanol-margin-demand-hedge-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.705"
-  },
-  {
-   "t": "2026-07-22T13:58:01.976830+00:00",
-   "hash": "2df89562",
-   "name": "zn-path-efficiency-inventory-overnight-carry",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -417,14 +417,6 @@
     "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-hedging-pressure-horizon-decomposition",
-    "stage": "dev3yr",
-    "started": "2026-07-22T14:19:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-participation-surprise-vs-seasonal-volume-norm",
     "stage": "dev3yr",
     "started": "2026-07-22T14:19:00Z",
     "state": "running"
@@ -533,7 +525,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 63,
+   "registered": 64,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -595,7 +587,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 402
+    "trials": 405
    }
   ]
  },
@@ -604,7 +596,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 85,
+   "n_tested": 86,
    "n_killed": 49,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -666,8 +658,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 27,
-   "n_killed": 16,
+   "n_tested": 29,
+   "n_killed": 17,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1072,6 +1064,26 @@
     }
    ]
   },
+  "mnq-participation-surprise-orb": {
+   "name": "mnq-participation-surprise-orb",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Open-30m volume measured against its own trailing time-of-day median isolates genuine participation surprise (inventory arriving faster than dealers can lay it off) net of the U-shaped intraday seasonal that already refuted raw open volume as a gate; that unabsorbed imbalance should resolve as range extension later in the same session, so gating a 09:30-10:00 opening-range breakout (OCO entries at the OR high/low, stop at the opposite OR edge, no target, flat 15:55) on trailing-causal top-quintile participation surprise should outperform taking every ORB day.",
+   "metrics": {
+    "n": 176,
+    "wr": 0.4886,
+    "pf": 1.419,
+    "usd_mo": 193,
+    "usd_trade": 39.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:22:52.765608+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1264,6 +1276,26 @@
     }
    ]
   },
+  "mcl-hedging-pressure-horizon-decomposition-v2": {
+   "name": "mcl-hedging-pressure-horizon-decomposition-v2",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Kang, Rouwenhorst and Tang (A Tale of Two Premiums) show weekly net-position changes decompose into a SHORT-horizon component driven by non-commercial liquidity demand and a LONG-horizon component driven by commercial hedging demand, and the two forecast futures returns with OPPOSITE signs; every prior COT crowding test in this lab (n9-cot-crowded-fade, n9-cot-washout-buy) traded the raw undecomposed net level, which nets the two effects to roughly zero, so decomposing should recover signal the raw level test could not see. Supersedes hash 30cdd035a7c5b391 which used a COT market string (CRUDE OIL, LIGHT SWEET - NEW YORK MERCANTILE EXCHANGE) that stops reporting after 2022-02-01; corrected to the continuously-reporting WTI FINANCIAL CRUDE OIL series before any result was recorded.",
+   "metrics": {
+    "n": 89,
+    "wr": 0.5169,
+    "pf": 1.263,
+    "usd_mo": 89,
+    "usd_trade": 35.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:24:36.767126+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1321,49 +1353,27 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "b6-monday-m2k": {
-   "name": "b6-monday-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
-   "metrics": {
-    "n": 133,
-    "wr": null,
-    "pf": 1.154,
-    "usd_mo": 19,
-    "usd_trade": 5.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:04:19.694798+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "b6-vix-m2k": {
-   "name": "b6-vix-m2k",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "VIX fear-overshoot rebounds should extend to Russell since small-caps are typically MORE sensitive to risk-appetite swings",
-   "metrics": {
-    "n": 26,
-    "wr": null,
-    "pf": 1.148,
-    "usd_mo": 5,
-    "usd_trade": 6.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:03:08.112070+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
+  {
+   "id": "d-closurelen-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Third machine-discovered sleeve ready: crude closure-length reopen overshoot (PF 1.325)",
+   "recommendation": "ADMIT to the book \u2014 full funnel passed with a solid replication (PF 1.143 on MNG, n~67)",
+   "evidence": "dev3yr: n=154, PF 1.325, $14.28/trade | robustness: SURVIVES (incl. a dose-response diagnostic: longer closures -> bigger overshoots) | replication: PF 1.143 on MNG vs 1.10 bar, sibling window honestly truncated to MNG data start (2023-11)",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "After a trading halt or weekend closure on crude, the reopen overshoots in proportion to how long the market was closed, then retraces. Discovered, hardened, and replicated by the engine this morning.",
+   "why": "It cleared every pre-registered gate, and unlike most reopen ideas it shows a dose-response: longer closures produce bigger overshoots, which is what a real pent-up-flow mechanism predicts. Honest caveat: the MNG replication window is shorter than ideal (sibling data begins 2023-11), declared before the run rather than discovered after.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you ask for",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-22T14:19:27Z"
+  },
   {
    "id": "d-eventfree-book-entry",
    "kind": "book_entry",
