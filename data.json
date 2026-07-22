@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:50:01Z",
+  "stamp": "2026-07-22T21:50:03Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZC",
+    "task": "zc-post-fomc-liquidity-drain-impact-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:50:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-liquidity-oversupply-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:50:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-t1-usd-funding-witching-hour",
+    "stage": "dev3yr",
+    "started": "2026-07-22T21:50:03Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zc-post-fomc-liquidity-drain-impact-reversion",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-liquidity-oversupply-reversal",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-t1-usd-funding-witching-hour",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mes-prior-instance-reaction-memory-positioning",
@@ -494,7 +492,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 7,
    "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
