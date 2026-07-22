@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:40:35Z",
+  "stamp": "2026-07-22T01:40:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "mgc-overnight-false-breakout-supply",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:40:36Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-backwardation-carry-regime",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:40:36Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-volcontrol-releverage-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:40:36Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mgc-overnight-false-breakout-supply",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mcl-backwardation-carry-regime",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "mes-volcontrol-releverage-lag",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 4,
     "idea": "zn-london-close-duration-handoff",
@@ -515,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 8,
    "registered": 7,
    "dev3yr": 0,
    "robustness": 0,
