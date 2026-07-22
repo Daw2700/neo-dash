@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T13:20:32Z",
+  "stamp": "2026-07-22T13:20:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -406,14 +406,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-micro-complex-retail-mix-contrarian",
-    "stage": "dev3yr",
-    "started": "2026-07-22T13:15:19Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-event-cluster-bracket",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-volume-clock-opening-range",
     "stage": "dev3yr",
