@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T03:31:49Z",
+  "stamp": "2026-07-22T03:34:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -302,7 +302,11 @@
    "wr": 0.593,
    "usd_mo": 61,
    "pf": 1.945,
-   "usd_trade": 81.0
+   "usd_trade": 81.0,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 6
+   }
   }
  ],
  "feed": [
@@ -404,32 +408,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-m2k-open-dispersion-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:25:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-vix-soq-wednesday-open-distortion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:25:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "replication: mnq-m2k-open-dispersion-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-22T03:29:44Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 8,
@@ -1260,7 +1239,11 @@
      "stage": "robustness",
      "verdict": "DEMOTED"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 6
+   }
   }
  },
  "decisions": [
@@ -1515,18 +1498,19 @@
    "provisional": true,
    "assumed_rules": true,
    "members": {
-    "b2-vix-reversion": 4,
-    "b3-preholiday-drift": 2,
-    "b2-opex-release": 1
+    "b2-vix-reversion": 3,
+    "b10-nagel-vix-reversal": 2,
+    "b2-opex-release": 1,
+    "b7-down-weeks-dip": 2
    },
-   "total_micros": 7,
-   "p_breach": 0.167,
-   "usd_mo": 245,
-   "usd_mo_5acct": 1225,
-   "pct_goal": 0.441,
+   "total_micros": 8,
+   "p_breach": 0.192,
+   "usd_mo": 296,
+   "usd_mo_5acct": 1480,
+   "pct_goal": 0.533,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 4410
+   "usd_mo_total": 5328
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1651,16 +1635,16 @@
     "b2-vix-reversion": 4,
     "b10-nagel-vix-reversal": 4,
     "b3-preholiday-drift": 4,
-    "b2-opex-release": 4
+    "b7-down-weeks-dip": 1
    },
-   "total_micros": 16,
-   "p_breach": 0.193,
-   "usd_mo": 308,
-   "usd_mo_5acct": 1540,
-   "pct_goal": 0.154,
+   "total_micros": 13,
+   "p_breach": 0.192,
+   "usd_mo": 261,
+   "usd_mo_5acct": 1305,
+   "pct_goal": 0.131,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 1540
+   "usd_mo_total": 1305
   }
  ],
  "sizing_meta": {

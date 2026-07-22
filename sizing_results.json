@@ -109,6 +109,14 @@
    "apex150": {
     "max_micros": 6
    }
+  },
+  "b7-down-weeks-dip": {
+   "growth": {
+    "max_micros": 7
+   },
+   "apex150": {
+    "max_micros": 6
+   }
   }
  },
  "bundles": [
@@ -305,6 +313,24 @@
    "pct_goal": 0.167
   },
   {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (assumed)",
+   "provisional": true,
+   "assumed_rules": true,
+   "members": {
+    "b2-vix-reversion": 3,
+    "b10-nagel-vix-reversal": 2,
+    "b2-opex-release": 1,
+    "b7-down-weeks-dip": 2
+   },
+   "total_micros": 8,
+   "p_breach": 0.192,
+   "usd_mo": 296,
+   "usd_mo_5acct": 1480,
+   "pct_goal": 0.148
+  },
+  {
    "id": "Risk-premium core (rare, high WR)|growth",
    "name": "Risk-premium core (rare, high WR)",
    "plan": "tradeify-growth",
@@ -314,30 +340,13 @@
     "b2-vix-reversion": 4,
     "b10-nagel-vix-reversal": 4,
     "b3-preholiday-drift": 4,
-    "b2-opex-release": 4
+    "b7-down-weeks-dip": 1
    },
-   "total_micros": 16,
-   "p_breach": 0.193,
-   "usd_mo": 308,
-   "usd_mo_5acct": 1540,
-   "pct_goal": 0.154
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (assumed)",
-   "provisional": true,
-   "assumed_rules": true,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b3-preholiday-drift": 2,
-    "b2-opex-release": 1
-   },
-   "total_micros": 7,
-   "p_breach": 0.167,
-   "usd_mo": 245,
-   "usd_mo_5acct": 1225,
-   "pct_goal": 0.122
+   "total_micros": 13,
+   "p_breach": 0.192,
+   "usd_mo": 261,
+   "usd_mo_5acct": 1305,
+   "pct_goal": 0.131
   }
  ]
 }
