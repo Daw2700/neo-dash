@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:55:57Z",
+  "stamp": "2026-07-22T19:57:00Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 601,
   "n_results": 742,
@@ -400,19 +400,146 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-22T19:50:22Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mbt-etf-nav-strike-ap-hedge-window",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "zn-basis-trade-deleverage-cascade",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-overnight-origin-session-information",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "mgc-auction-result-real-yield-transmission-lag",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "mcl-convenience-yield-vol-term-structure-gate",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 6,
+    "idea": "mes-vix-settlement-spx-rotation-impulse",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "zc-export-inspections-monday-demand-stamp",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 8,
+    "idea": "mng-bidweek-physical-fixing-hedge-concentration",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 9,
+    "idea": "m6e-monthend-turn-usd-funding-squeeze",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "zs-board-crush-margin-stress-hedge-pressure",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 11,
+    "idea": "mym-highprice-constituent-earnings-weight-dislocation",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 12,
+    "idea": "met-perp-funding-settlement-leak",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 13,
+    "idea": "zn-fomc-blackout-information-void-persistence",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 14,
+    "idea": "mcl-opec-meeting-uncertainty-premium-release",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 15,
+    "idea": "zc-ethanol-crush-margin-demand-transmission",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 15,
    "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
