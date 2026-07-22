@@ -1,11 +1,11 @@
 {
  "meta": {
-  "stamp": "2026-07-22T01:33:29Z",
+  "stamp": "2026-07-22T01:36:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 139,
-  "n_results": 224,
+  "n_results": 225,
   "n_trials": 30160,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
@@ -301,19 +301,27 @@
    "usd_trade": 5.7
   },
   {
-   "id": "zn-volshock-equity-degross-rebound",
-   "name": "zn-volshock-equity-degross-rebound",
-   "market": "ZN",
+   "id": "b4-bigday-fade",
+   "name": "b4-bigday-fade",
+   "market": "MNQ",
    "tier": "candidate",
    "pinned": false,
-   "n": 83,
-   "wr": 0.5422,
-   "usd_mo": 26,
-   "pf": 1.081,
-   "usd_trade": 11.4
+   "n": 202,
+   "wr": 0.48,
+   "usd_mo": 56,
+   "pf": 1.08,
+   "usd_trade": 10.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T01:35:53.812028+00:00",
+   "hash": "44ea882d",
+   "name": "zn-volshock-equity-degross-rebound",
+   "status": "killed",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-22T01:31:07.966170+00:00",
    "hash": "117bdf18",
@@ -401,14 +409,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T01:06:22.062256+00:00",
-   "hash": "5eec7217",
-   "name": "mym-prehol (Dow)",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -427,6 +427,14 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-22T01:28:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: zn-volshock-equity-degross-rebound",
+    "stage": "dev3yr",
+    "started": "2026-07-22T01:33:30Z",
     "state": "running"
    }
   ],
@@ -495,7 +503,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 28
+    "trials": 29
    }
   ]
  },
@@ -1258,23 +1266,33 @@
     }
    ]
   },
-  "zn-volshock-equity-degross-rebound": {
-   "name": "zn-volshock-equity-degross-rebound",
-   "market": "ZN",
+  "b4-bigday-fade": {
+   "name": "b4-bigday-fade",
+   "market": "MNQ",
    "tier": "candidate",
-   "mechanism": "Risk-parity and vol-target funds size equity exposure off a portfolio vol estimate in which bond volatility is a large input, so a rates-vol shock forces mechanical equity de-grossing on the following session regardless of equity news; we are paid for absorbing that forced supply and holding while it exhausts.",
+   "mechanism": "A single-day move beyond 1.5% overshoots via forced flows and margin selling; next-open liquidity providers fade it",
    "metrics": {
-    "n": 83,
-    "wr": 0.5422,
-    "pf": 1.081,
-    "usd_mo": 26,
-    "usd_trade": 11.4
+    "n": 202,
+    "wr": 0.48,
+    "pf": 1.08,
+    "usd_mo": 56,
+    "usd_trade": 10.1
    },
    "verdict_history": [
     {
-     "t": "2026-07-22T01:30:04.283585+00:00",
+     "t": "2026-07-21T14:44:57.606619+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.918482+00:00",
      "stage": "dev3yr",
-     "verdict": "KILLED"
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.714243+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
    ]
   }
