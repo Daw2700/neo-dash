@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:26:41Z",
+  "stamp": "2026-07-22T08:28:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 316,
-  "n_results": 418,
-  "n_trials": 30389,
+  "n_results": 419,
+  "n_trials": 30390,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-22T08:26:38.471831+00:00",
+   "t": "2026-07-22T08:27:47.099581+00:00",
    "hash": "f5f47349",
    "name": "mcl-option-expiry-gamma-pin",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.577"
   },
   {
    "t": "2026-07-22T08:26:18.544016+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-option-expiry-gamma-pin-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T08:23:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-variation-margin-call-preopen-window",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-treasury-buyback-operation-window",
     "stage": "dev3yr",
@@ -528,7 +520,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 38,
+   "registered": 37,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -590,7 +582,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 222
+    "trials": 223
    }
   ]
  },
@@ -661,8 +653,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 13,
+   "n_tested": 21,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
