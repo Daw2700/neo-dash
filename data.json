@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T22:04:36Z",
+  "stamp": "2026-07-22T22:04:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -403,14 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-dividend-paydate-reinvestment-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T22:00:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-treasury-roll-week-capacity-drain",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-soma-reinvestment-cap-overflow-window",
     "stage": "dev3yr",
