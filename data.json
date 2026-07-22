@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:54:27Z",
+  "stamp": "2026-07-22T05:54:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T05:54:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-late-session-inventory-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-22T05:54:29Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mgc-late-session-inventory-reversal",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 10,
     "idea": "met-mbt-open-rotation-dispersion",
@@ -483,7 +482,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 23,
    "dev3yr": 0,
    "robustness": 0,
