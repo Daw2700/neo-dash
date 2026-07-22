@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:57:44Z",
+  "stamp": "2026-07-22T19:57:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T19:57:02Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-auction-result-real-yield-transmission-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-22T19:57:46Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mgc-auction-result-real-yield-transmission-lag",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 5,
     "idea": "mcl-convenience-yield-vol-term-structure-gate",
@@ -529,7 +528,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 11,
    "registered": 85,
    "dev3yr": 0,
    "robustness": 0,
