@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:58:08Z",
+  "stamp": "2026-07-22T23:59:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 689,
-  "n_results": 847,
-  "n_trials": 30835,
+  "n_registered": 692,
+  "n_results": 848,
+  "n_trials": 30836,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,6 +303,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T23:59:48.360249+00:00",
+   "hash": "6c338812",
+   "name": "levetf-eod-convex-rebalance-amp",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.717"
+  },
+  {
+   "t": "2026-07-22T23:59:46.606335+00:00",
+   "hash": "568a352d",
+   "name": "gsr-extreme-metal-substitution-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T23:58:50.614909+00:00",
+   "hash": "bf0545f8",
+   "name": "zn-weekend-safehaven-monday-unwind",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T23:57:53.289310+00:00",
    "hash": "c5f18189",
    "name": "m6e-euro-session-segmentation-drift",
@@ -373,44 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.875"
-  },
-  {
-   "t": "2026-07-22T23:33:23.547849+00:00",
-   "hash": "ef7ae51d",
-   "name": "m6e-london-open-impulse-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.5327"
-  },
-  {
-   "t": "2026-07-22T23:28:55.377537+00:00",
-   "hash": "9e6981bd",
-   "name": "mes-secondtier-attention-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.586"
-  },
-  {
-   "t": "2026-07-22T23:28:52.996313+00:00",
-   "hash": "7907c86c",
-   "name": "mnq-index-52wk-high-anchor-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.3"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "levetf-eod-convex-rebalance-amp",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:56:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-weekend-safehaven-monday-unwind",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "gsr-extreme-metal-substitution-reversion",
     "stage": "dev3yr",
@@ -466,7 +458,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 90,
+   "registered": 92,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -528,7 +520,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 668
+    "trials": 669
    }
   ]
  },
@@ -537,8 +529,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 110,
-   "n_killed": 66,
+   "n_tested": 111,
+   "n_killed": 67,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
