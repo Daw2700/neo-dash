@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T16:41:38Z",
+  "stamp": "2026-07-22T16:43:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 518,
-  "n_results": 649,
-  "n_trials": 30637,
+  "n_registered": 522,
+  "n_results": 651,
+  "n_trials": 30639,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -307,6 +307,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T16:43:31.551977+00:00",
+   "hash": "729b2943",
+   "name": "zn-latehour-hedging-demand-pressure-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.131"
+  },
+  {
+   "t": "2026-07-22T16:43:30.798953+00:00",
+   "hash": "dd939f8a",
+   "name": "mym-constituent-halt-stale-leg-catchup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.066"
+  },
+  {
+   "t": "2026-07-22T16:43:16.159724+00:00",
+   "hash": "f40a0f04",
+   "name": "scout-38-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T16:42:40.326109+00:00",
+   "hash": "73931a1a",
+   "name": "mgc-margin-hike-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T16:41:20.589158+00:00",
    "hash": "9b1d00ce",
    "name": "mes-maker-risk-budget-crowdout",
@@ -369,58 +401,10 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 2.075"
-  },
-  {
-   "t": "2026-07-22T16:28:30.650145+00:00",
-   "hash": "59e60edb",
-   "name": "sil-comex-london-efp-delivery-squeeze",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.44"
-  },
-  {
-   "t": "2026-07-22T16:28:28.714950+00:00",
-   "hash": "640b45ff",
-   "name": "sil-side-impact-asymmetry-inventory-pressure",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T16:27:00.513266+00:00",
-   "hash": "b6d3e98b",
-   "name": "ROBUSTNESS-BATTERY sil-side-impact-asymmetry-inventory-pressure",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T16:25:11.672106+00:00",
-   "hash": "cfc1f37c",
-   "name": "mnq-micro-share-capitulation-low",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.629"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-constituent-halt-stale-leg-catchup",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:40:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-latehour-hedging-demand-pressure-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-22T16:40:34Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -430,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-exchange-margin-hike-forced-deleveraging",
     "stage": "dev3yr",
@@ -441,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 71,
+   "registered": 73,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +487,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 470
+    "trials": 472
    }
   ]
  },
@@ -538,8 +522,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 5,
-   "n_killed": 4,
+   "n_tested": 6,
+   "n_killed": 5,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -621,8 +605,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 41,
-   "n_killed": 33,
+   "n_tested": 42,
+   "n_killed": 34,
    "book_sleeves": [],
    "agents_now": []
   },
