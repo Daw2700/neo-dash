@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:17:54Z",
+  "stamp": "2026-07-22T19:18:17Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 587,
   "n_results": 726,
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-dst-transatlantic-overlap-shift-weeks",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:12:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "recheck: mnq-dst-desync-clock-shift",
     "stage": "dev3yr",
