@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T18:35:46Z",
+  "stamp": "2026-07-22T18:35:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,21 +420,27 @@
     "stage": "dev3yr",
     "started": "2026-07-22T18:35:24Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 12,
-    "idea": "mnq-funded-account-daily-reset-reentry-window",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T18:35:48Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "mnq-funded-account-daily-reset-reentry-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T18:35:48Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 81,
    "dev3yr": 0,
    "robustness": 0,
