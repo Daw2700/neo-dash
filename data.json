@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T21:30:58Z",
+  "stamp": "2026-07-22T21:32:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 635,
-  "n_results": 782,
-  "n_trials": 30770,
+  "n_results": 784,
+  "n_trials": 30772,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T21:31:52.372079+00:00",
+   "hash": "0e695e38",
+   "name": "m2k-mm-program-monthly-quota-liquidity-gradient",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.829"
+  },
+  {
+   "t": "2026-07-22T21:31:37.278321+00:00",
+   "hash": "fba10ca5",
+   "name": "sil-nonreviewable-range-sweep-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.626"
+  },
+  {
    "t": "2026-07-22T21:30:41.570580+00:00",
    "hash": "ae4a6a08",
    "name": "mcl-cushing-tank-constraint-expiry-convexity",
@@ -311,28 +327,12 @@
    "detail": "PF 0.95"
   },
   {
-   "t": "2026-07-22T21:30:19.027076+00:00",
-   "hash": "0e695e38",
-   "name": "m2k-mm-program-monthly-quota-liquidity-gradient",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
    "t": "2026-07-22T21:28:38.782598+00:00",
    "hash": "c2c600ed",
    "name": "zn-japan-holiday-tokyo-absence",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.386"
-  },
-  {
-   "t": "2026-07-22T21:28:09.182220+00:00",
-   "hash": "fba10ca5",
-   "name": "sil-nonreviewable-range-sweep-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T21:26:31.631576+00:00",
@@ -403,22 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "SIL",
-    "task": "sil-nonreviewable-range-sweep-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:23:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-mm-program-monthly-quota-liquidity-gradient",
-    "stage": "dev3yr",
-    "started": "2026-07-22T21:28:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-fcm-residual-interest-nextsession-liquidation",
     "stage": "dev3yr",
@@ -484,7 +468,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 89,
+   "registered": 87,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -546,7 +530,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 603
+    "trials": 605
    }
   ]
  },
@@ -590,8 +574,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 13,
+   "n_tested": 24,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -608,8 +592,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 9,
-   "n_killed": 6,
+   "n_tested": 10,
+   "n_killed": 7,
    "book_sleeves": [],
    "agents_now": []
   },
