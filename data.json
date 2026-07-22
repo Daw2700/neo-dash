@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:36:03Z",
+  "stamp": "2026-07-22T06:39:29Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 270,
-  "n_results": 370,
-  "n_trials": 30341,
+  "n_registered": 272,
+  "n_results": 371,
+  "n_trials": 30342,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 0
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T06:39:09.450750+00:00",
+   "hash": "810832c5",
+   "name": "mym-split-divisor-rebalance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
+   "t": "2026-07-22T06:37:52.943314+00:00",
+   "hash": "45c0ee47",
+   "name": "scout-23-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-22T06:35:40.285507+00:00",
    "hash": "7fe8960c",
    "name": "mgc-etf-creation-hedge-1600-print",
@@ -389,22 +405,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T06:18:55.681468+00:00",
-   "hash": "b2fe77b9",
-   "name": "zn-corporate-ratelock-issuance-hedge",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.567"
-  },
-  {
-   "t": "2026-07-22T06:18:45.264308+00:00",
-   "hash": "dfbce2dc",
-   "name": "mes-divexdate-cluster",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.16"
   }
  ],
  "pipeline": {
@@ -424,20 +424,12 @@
     "stage": "idea-scout",
     "started": "2026-07-22T06:35:40Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MYM",
-    "task": "mym-component-split-divisor-rebalance",
-    "stage": "dev3yr",
-    "started": "2026-07-22T06:35:40Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 24,
+   "registered": 25,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 174
+    "trials": 175
    }
   ]
  },
@@ -534,8 +526,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 2,
-   "n_killed": 1,
+   "n_tested": 3,
+   "n_killed": 2,
    "book_sleeves": [],
    "agents_now": []
   },
