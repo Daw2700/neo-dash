@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-22T04:45:04Z",
+  "stamp": "2026-07-22T04:45:27Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 217,
   "n_results": 308,
@@ -404,7 +404,40 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-22T04:45:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "recheck: n8-mcl-eia-wed",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:45:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "recheck: n9-cot-washout-buy",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:45:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "recheck: buyback-blackout-regime",
+    "stage": "dev3yr",
+    "started": "2026-07-22T04:45:26Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
    {
     "rank": 8,
