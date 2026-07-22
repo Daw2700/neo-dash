@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T10:54:31Z",
+  "stamp": "2026-07-22T10:54:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 385,
-  "n_results": 488,
-  "n_trials": 30459,
+  "n_results": 489,
+  "n_trials": 30460,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T10:54:33.937455+00:00",
+   "hash": "765a8e88",
+   "name": "mes-poc-migration-acceptance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.901"
+  },
+  {
    "t": "2026-07-22T10:53:58.643065+00:00",
    "hash": "bb29dc56",
    "name": "mes-overnight-intraday-tugofwar",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.863"
-  },
-  {
-   "t": "2026-07-22T10:53:16.764620+00:00",
-   "hash": "765a8e88",
-   "name": "mes-poc-migration-acceptance",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T10:51:30.720138+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-poc-migration-acceptance",
-    "stage": "dev3yr",
-    "started": "2026-07-22T10:51:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-range-completion-timing-overnight-carry",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-stop-pool-recharge-duration",
     "stage": "dev3yr",
@@ -519,7 +511,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 53,
+   "registered": 52,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -581,7 +573,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 292
+    "trials": 293
    }
   ]
  },
@@ -605,8 +597,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 56,
-   "n_killed": 38,
+   "n_tested": 57,
+   "n_killed": 39,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
