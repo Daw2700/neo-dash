@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:56:39Z",
+  "stamp": "2026-07-22T23:56:42Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -400,35 +400,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "levetf-eod-convex-rebalance-amp",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:56:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-euro-session-segmentation-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:56:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-weekend-safehaven-monday-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-22T23:56:42Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "levetf-eod-convex-rebalance-amp",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "m6e-euro-session-segmentation-drift",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 3,
-    "idea": "zn-weekend-safehaven-monday-unwind",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 4,
     "idea": "gsr-extreme-metal-substitution-reversion",
@@ -476,7 +474,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 5,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
