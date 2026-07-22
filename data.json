@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T08:07:14Z",
+  "stamp": "2026-07-22T08:07:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-22T08:06:11Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-crypto-internal-risk-gradient",
+    "stage": "dev3yr",
+    "started": "2026-07-22T08:07:15Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mnq-crypto-internal-risk-gradient",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "zc-short-horizon-hedger-liquidity-rebate",
@@ -465,7 +464,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 34,
    "dev3yr": 0,
    "robustness": 0,
