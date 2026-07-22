@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T19:07:45Z",
+  "stamp": "2026-07-22T19:11:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 582,
-  "n_results": 720,
-  "n_trials": 30708,
+  "n_registered": 584,
+  "n_results": 723,
+  "n_trials": 30711,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -153,6 +153,18 @@
    "usd_trade": 37.1
   },
   {
+   "id": "mnq-monthstart-retail-inflow-cohort",
+   "name": "mnq-monthstart-retail-inflow-cohort",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 105,
+   "wr": 0.619,
+   "usd_mo": 222,
+   "pf": 1.76,
+   "usd_trade": 76.0
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -291,28 +303,32 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  {
-   "id": "mes-depth-consumption-print-size-range-forecast",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 124,
-   "wr": 0.4355,
-   "usd_mo": 31,
-   "pf": 1.168,
-   "usd_trade": 9.1
   }
  ],
  "feed": [
   {
-   "t": "2026-07-22T19:07:36.665644+00:00",
+   "t": "2026-07-22T19:10:09.725050+00:00",
+   "hash": "9c057b86",
+   "name": "zn-desk-operation-result-window-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.402"
+  },
+  {
+   "t": "2026-07-22T19:10:06.053485+00:00",
    "hash": "494f4e55",
    "name": "zn-wi-hedge-build-release-asymmetry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.017"
+  },
+  {
+   "t": "2026-07-22T19:08:59.233128+00:00",
+   "hash": "c4ed8311",
+   "name": "mnq-monthstart-retail-inflow-cohort",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.76"
   },
   {
    "t": "2026-07-22T19:05:24.115932+00:00",
@@ -385,22 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.55"
-  },
-  {
-   "t": "2026-07-22T18:49:26.827928+00:00",
-   "hash": "e6f710fb",
-   "name": "zc-halt-window-crossmarket-reopen",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.207"
-  },
-  {
-   "t": "2026-07-22T18:47:07.981226+00:00",
-   "hash": "847e9bee",
-   "name": "mnq-propfirm-loss-limit-cascade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
     "task": "zn-desk-operation-result-window-repricing",
     "stage": "dev3yr",
     "started": "2026-07-22T19:07:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "micro-complex-monthstart-retail-deposit-inflow-cohort",
-    "stage": "dev3yr",
-    "started": "2026-07-22T19:07:45Z",
     "state": "running"
    }
   ],
@@ -452,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 83,
+   "registered": 82,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 541
+    "trials": 544
    }
   ]
  },
@@ -523,7 +515,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 98,
+   "n_tested": 99,
    "n_killed": 58,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -632,8 +624,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 46,
-   "n_killed": 38,
+   "n_tested": 48,
+   "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -991,6 +983,26 @@
     }
    ]
   },
+  "mnq-monthstart-retail-inflow-cohort": {
+   "name": "mnq-monthstart-retail-inflow-cohort",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Retail-favoured micro contracts are funded by monthly paycheck deposits and prop-account resets landing on the first business days of the month, so MNQ (a retail-heavy micro) should show a long-only drift on calendar sessions 1-3 of each month that commercial-dominated contracts do not share; this is a cohort claim, tested here on the MNQ leg with the same trade_market machinery as the existing turn-of-month probes (131/135).",
+   "metrics": {
+    "n": 105,
+    "wr": 0.619,
+    "pf": 1.76,
+    "usd_mo": 222,
+    "usd_trade": 76.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T19:08:59.233128+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1260,36 +1272,6 @@
     "growth_max": 8,
     "apex_max": 6
    }
-  },
-  "mes-depth-consumption-print-size-range-forecast": {
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
-   "metrics": {
-    "n": 124,
-    "wr": 0.4355,
-    "pf": 1.168,
-    "usd_mo": 31,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:40:13.765212+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T15:47:15.796894+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T15:52:13.200686+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
