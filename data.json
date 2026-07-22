@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T05:25:18Z",
+  "stamp": "2026-07-22T05:25:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 236,
-  "n_results": 332,
-  "n_trials": 30303,
+  "n_results": 333,
+  "n_trials": 30304,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 1
@@ -307,20 +307,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T05:25:20.837275+00:00",
+   "hash": "75d7bcf8",
+   "name": "zn-fomc-blackout-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.476"
+  },
+  {
    "t": "2026-07-22T05:24:16.002241+00:00",
    "hash": "c21268d8",
    "name": "mes-crypto-overnight-riskappetite-overshoot-fade",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.0249"
-  },
-  {
-   "t": "2026-07-22T05:23:35.517929+00:00",
-   "hash": "75d7bcf8",
-   "name": "zn-fomc-blackout-carry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T05:22:28.370881+00:00",
@@ -407,14 +407,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-fomc-blackout-communication-vacuum-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-22T05:19:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-round-number-stop-cluster-repulsion",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-mym-rate-shock-duration-rotation-overshoot",
     "stage": "dev3yr",
@@ -469,7 +461,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 22,
+   "registered": 21,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -531,7 +523,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 136
+    "trials": 137
    }
   ]
  },
@@ -647,8 +639,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 17,
-   "n_killed": 14,
+   "n_tested": 18,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
