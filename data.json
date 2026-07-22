@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T20:15:12Z",
+  "stamp": "2026-07-22T20:16:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 609,
-  "n_results": 756,
-  "n_trials": 30744,
+  "n_registered": 610,
+  "n_results": 757,
+  "n_trials": 30745,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 4
@@ -303,6 +303,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-22T20:16:53.018834+00:00",
+   "hash": "3c4a9bfa",
+   "name": "zs-board-crush-margin-stress-hedge-pressure",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.771"
+  },
+  {
    "t": "2026-07-22T20:13:51.714837+00:00",
    "hash": "63b83aad",
    "name": "m6e-monthend-turn-usd-funding-squeeze",
@@ -389,28 +397,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.093"
-  },
-  {
-   "t": "2026-07-22T19:59:59.288427+00:00",
-   "hash": "f4544f8a",
-   "name": "mnq-overnight-origin-session-information",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.317"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-board-crush-margin-stress-hedge-pressure",
-    "stage": "dev3yr",
-    "started": "2026-07-22T20:13:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-perp-funding-settlement-leak",
     "stage": "dev3yr",
@@ -418,7 +410,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-fomc-blackout-information-void-persistence",
     "stage": "dev3yr",
@@ -510,7 +502,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 577
+    "trials": 578
    }
   ]
  },
@@ -646,8 +638,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 9,
-   "n_killed": 7,
+   "n_tested": 10,
+   "n_killed": 8,
    "book_sleeves": [],
    "agents_now": []
   }
