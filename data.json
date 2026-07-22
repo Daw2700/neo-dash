@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-22T06:22:24Z",
+  "stamp": "2026-07-22T06:22:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T06:22:00Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNG",
+    "task": "mng-european-gas-open-lng-netback-transmission",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:22:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-ndx-annual-reconstitution-window",
+    "stage": "dev3yr",
+    "started": "2026-07-22T06:22:25Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mng-european-gas-open-lng-netback-transmission",
-    "source": "data-screen",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 5,
-    "idea": "mnq-ndx-annual-reconstitution-window",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 6,
     "idea": "m6e-quarter-turn-fx-swap-basis-dislocation",
@@ -520,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 9,
    "registered": 24,
    "dev3yr": 0,
    "robustness": 0,
