@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T17:48:37Z",
+  "stamp": "2026-07-22T17:53:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 549,
-  "n_results": 683,
-  "n_trials": 30671,
+  "n_registered": 552,
+  "n_results": 685,
+  "n_trials": 30673,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 3
@@ -225,18 +225,6 @@
    "usd_trade": 14.3
   },
   {
-   "id": "zs-argentina-export-incentive-window",
-   "name": "zs-argentina-export-incentive-window",
-   "market": "ZS",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 99,
-   "wr": 0.4949,
-   "usd_mo": 186,
-   "pf": 1.3,
-   "usd_trade": 67.8
-  },
-  {
    "id": "mnq-cost-basis-overhang-underreaction",
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -303,9 +291,53 @@
    "usd_mo": 31,
    "pf": 1.168,
    "usd_trade": 9.1
+  },
+  {
+   "id": "b6-monday-m2k",
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 133,
+   "wr": null,
+   "usd_mo": 19,
+   "pf": 1.154,
+   "usd_trade": 5.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-22T17:53:45.862436+00:00",
+   "hash": "600fb33b",
+   "name": "mes-1500et-median-rent-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-22T17:52:19.195135+00:00",
+   "hash": "943eadd6",
+   "name": "m2k-postclose-ratify-jump-asymmetry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.015"
+  },
+  {
+   "t": "2026-07-22T17:51:03.279299+00:00",
+   "hash": "22dc5916",
+   "name": "zs-argentina-export-incentive-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-22T17:49:43.154463+00:00",
+   "hash": "e9ead1b5",
+   "name": "ROBUSTNESS-BATTERY zs-argentina-export-incentive-window (22dc591628ec9237)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-22T17:45:28.789956+00:00",
    "hash": "2fb8d325",
@@ -369,52 +401,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.0771"
-  },
-  {
-   "t": "2026-07-22T17:35:17.592922+00:00",
-   "hash": "3838ecd5",
-   "name": "m6e-cls-payin-deadline-liquidity-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4449"
-  },
-  {
-   "t": "2026-07-22T17:35:06.808473+00:00",
-   "hash": "1538f93d",
-   "name": "mgc-india-festival-import-hedge-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.05"
-  },
-  {
-   "t": "2026-07-22T17:34:58.020653+00:00",
-   "hash": "3055d710",
-   "name": "mng-evening-net-load-ramp-burn-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.666"
-  },
-  {
-   "t": "2026-07-22T17:29:47.775282+00:00",
-   "hash": "987c8d88",
-   "name": "mcl-london-overlap-variance-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.063"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "robustness: zs-argentina-export-incentive-window",
-    "stage": "dev3yr",
-    "started": "2026-07-22T17:48:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-postclose-index-ratification-jump-asymmetry",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-clock-minute-jump-asymmetry-liquidity-rent",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 77,
+   "registered": 79,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -541,7 +533,7 @@
    },
    {
     "date": "2026-07-22",
-    "trials": 504
+    "trials": 506
    }
   ]
  },
@@ -585,8 +577,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 8,
+   "n_tested": 19,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1170,26 +1162,6 @@
     }
    ]
   },
-  "zs-argentina-export-incentive-window": {
-   "name": "zs-argentina-export-incentive-window",
-   "market": "ZS",
-   "tier": "candidate",
-   "mechanism": "Argentina dolar-soja / export-incentive-program windows (Sep 5-30 2022, Nov 28-Dec 30 2022, Apr 10-May 31 2023, Sep 5-30 2023) offer soybean farmers a preferential FX rate for a few weeks, pulling months of deferred farmer selling into that short calendar window; exporters who buy that grain hedge the origination flow by selling CBOT ZS futures, so ZS should see sustained bearish pressure on every session the window is open.",
-   "metrics": {
-    "n": 99,
-    "wr": 0.4949,
-    "pf": 1.3,
-    "usd_mo": 186,
-    "usd_trade": 67.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T17:43:20.699642+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mnq-cost-basis-overhang-underreaction": {
    "name": "mnq-cost-basis-overhang-underreaction",
    "market": "MNQ",
@@ -1314,6 +1286,26 @@
     {
      "t": "2026-07-22T15:52:13.200686+00:00",
      "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b6-monday-m2k": {
+   "name": "b6-monday-m2k",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Weekend equity risk premium should extend to small-caps (Russell): Monday-long on M2K",
+   "metrics": {
+    "n": 133,
+    "wr": null,
+    "pf": 1.154,
+    "usd_mo": 19,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T16:04:19.694798+00:00",
+     "stage": "dev3yr",
      "verdict": "REPLICATES"
     }
    ]
