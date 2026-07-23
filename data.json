@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:06:00Z",
+  "stamp": "2026-07-23T02:09:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 739,
+  "n_registered": 740,
   "n_results": 905,
   "n_trials": 30893,
   "holdout_looks_spent": 0,
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:06:08.552525+00:00",
+   "hash": "fe7b4980",
+   "name": "mnq-volpeak-extreme-order",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T02:04:08.923418+00:00",
    "hash": "ec760829",
    "name": "zs-delivery-option-decay-ramp",
@@ -385,36 +393,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.763"
-  },
-  {
-   "t": "2026-07-23T01:48:59.793483+00:00",
-   "hash": "7b9d9616",
-   "name": "mbt-equity-overnight-overextrapolation-us-session-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.1661"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "robustness: zs-delivery-option-decay-ramp",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:57:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MBT",
-    "task": "recheck: mbt-multiday-closure-no-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:58:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-volume-peak-vs-price-extreme-ordering-absorption",
     "stage": "dev3yr",
@@ -444,7 +428,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 98,
+   "registered": 99,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
