@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:21:43Z",
+  "stamp": "2026-07-23T06:25:58Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 817,
-  "n_results": 991,
-  "n_trials": 39858,
+  "n_registered": 818,
+  "n_results": 993,
+  "n_trials": 39860,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -153,38 +153,6 @@
    "usd_trade": 94.1
   },
   {
-   "id": "mym-price-weighted-exdiv-mechanical-drop",
-   "name": "mym-price-weighted-exdiv-mechanical-drop",
-   "market": "MYM",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 23,
-   "wr": 0.6957,
-   "usd_mo": 31,
-   "pf": 2.775,
-   "usd_trade": 49.0,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  {
-   "id": "mbt-session-beta-channel-regime",
-   "name": "mbt-session-beta-channel-regime",
-   "market": "MBT",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 37,
-   "wr": 0.5135,
-   "usd_mo": 38,
-   "pf": 2.345,
-   "usd_trade": 37.1,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  {
    "id": "mes-wk10-derisk",
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -237,38 +205,6 @@
    }
   },
   {
-   "id": "mcl-hurricane-supplyrisk-decay",
-   "name": "mcl-hurricane-supplyrisk-decay",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 34,
-   "wr": 0.5882,
-   "usd_mo": 15,
-   "pf": 1.459,
-   "usd_trade": 16.2,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  {
-   "id": "rep-bondflight-mes",
-   "name": "rep-bondflight-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 56,
-   "wr": null,
-   "usd_mo": 35,
-   "pf": 1.413,
-   "usd_trade": 22.5,
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 5
-   }
-  },
-  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -311,24 +247,96 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
+  },
+  {
+   "id": "mcl-closure-length-dose-response-reopen-overshoot",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 154,
+   "wr": 0.526,
+   "usd_mo": 61,
+   "pf": 1.325,
+   "usd_trade": 14.3,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
+  },
+  {
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5,
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
+  },
+  {
+   "id": "mes-depth-consumption-print-size-range-forecast",
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 124,
+   "wr": 0.4355,
+   "usd_mo": 31,
+   "pf": 1.168,
+   "usd_trade": 9.1,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
+  },
+  {
+   "id": "zn-cash-market-closed-futures-open-asymmetry",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "pinned": false,
+   "n": 6,
+   "wr": 0.8333,
+   "usd_mo": 18,
+   "pf": 6.676,
+   "usd_trade": 105.1,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  ],
  "feed": [
   {
-   "t": "2026-07-23T06:21:38.258875+00:00",
-   "hash": "d31808e8",
-   "name": "mnq-postclosure-range-budget-fade",
+   "t": "2026-07-23T06:24:09.711087+00:00",
+   "hash": "2410d188",
+   "name": "mbt-close-auction-risk-budget-substitution",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
   },
   {
-   "t": "2026-07-23T06:21:20.282359+00:00",
+   "t": "2026-07-23T06:23:05.379473+00:00",
+   "hash": "d31808e8",
+   "name": "mnq-postclosure-range-budget-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.03"
+  },
+  {
+   "t": "2026-07-23T06:22:16.041056+00:00",
    "hash": "696b354c",
    "name": "mcl-china-month-boundary-pmi-thin-hour",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.735"
   },
   {
    "t": "2026-07-23T05:55:31.374074+00:00",
@@ -401,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.72"
-  },
-  {
-   "t": "2026-07-23T05:48:03.220718+00:00",
-   "hash": "7da28edd",
-   "name": "mnq-protection-point-snapback",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.597"
   }
  ],
  "pipeline": {
@@ -523,7 +523,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 111,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -585,7 +585,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9022
+    "trials": 9024
    }
   ]
  },
@@ -594,8 +594,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 123,
-   "n_killed": 76,
+   "n_tested": 124,
+   "n_killed": 81,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -610,7 +610,7 @@
    "display": "S&P 500",
    "status": "active",
    "n_tested": 137,
-   "n_killed": 108,
+   "n_killed": 117,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -621,7 +621,7 @@
    "display": "Dow",
    "status": "active",
    "n_tested": 13,
-   "n_killed": 11,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -630,7 +630,7 @@
    "display": "Russell 2000",
    "status": "active",
    "n_tested": 32,
-   "n_killed": 19,
+   "n_killed": 22,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -639,7 +639,7 @@
    "display": "Gold",
    "status": "active",
    "n_tested": 49,
-   "n_killed": 41,
+   "n_killed": 42,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -656,8 +656,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 56,
-   "n_killed": 35,
+   "n_tested": 57,
+   "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -675,7 +675,7 @@
    "display": "Bitcoin",
    "status": "active",
    "n_tested": 19,
-   "n_killed": 10,
+   "n_killed": 13,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
@@ -704,7 +704,7 @@
    "display": "10-yr Note",
    "status": "active",
    "n_tested": 65,
-   "n_killed": 56,
+   "n_killed": 58,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1072,54 +1072,6 @@
     }
    ]
   },
-  "mym-price-weighted-exdiv-mechanical-drop": {
-   "name": "mym-price-weighted-exdiv-mechanical-drop",
-   "market": "MYM",
-   "tier": "candidate",
-   "mechanism": "The Dow is price-weighted and its divisor is not adjusted for ordinary dividends, so on ex-dividend dates of high-dollar-dividend DJIA components (GS, UNH) the index mechanically falls by dollar-dividend-over-divisor, an accounting drop rather than information; this drop hits the CASH index, so MYM futures should be relatively undragged or firm on these sessions versus an ordinary day, distinct from the diluted cap-weighted MES analogue already tested.",
-   "metrics": {
-    "n": 23,
-    "wr": 0.6957,
-    "pf": 2.775,
-    "usd_mo": 31,
-    "usd_trade": 49.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T19:48:22.516271+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  "mbt-session-beta-channel-regime": {
-   "name": "mbt-session-beta-channel-regime",
-   "market": "MBT",
-   "tier": "candidate",
-   "mechanism": "Bitcoin futures equity beta is carried by the US-hours institutional/ETF arbitrage channel and is near-absent while that channel is closed overnight in Asia, so a large MBT move built entirely inside the 20:00-02:59 ET Asia window is more likely flow noise than information and should partially revert once the equity channel reopens at the 09:30 ET US cash open; we are paid for fading that noise on the reopen rather than treating the overnight move as a persistent signal.",
-   "metrics": {
-    "n": 37,
-    "wr": 0.5135,
-    "pf": 2.345,
-    "usd_mo": 38,
-    "usd_trade": 37.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T11:41:29.504610+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
   "mes-wk10-derisk": {
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -1244,54 +1196,6 @@
     "apex_max": 0
    }
   },
-  "mcl-hurricane-supplyrisk-decay": {
-   "name": "mcl-hurricane-supplyrisk-decay",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "During Atlantic hurricane season (Aug-Oct), Gulf of Mexico production and refinery shut-in risk embeds a supply-disruption premium into large single-day WTI rallies; absent confirmed follow-through the next session, that premium decays as the storm threat resolves or forecasts weaken, so fade the RTH open following an in-season blowout-up day.",
-   "metrics": {
-    "n": 34,
-    "wr": 0.5882,
-    "pf": 1.459,
-    "usd_mo": 15,
-    "usd_trade": 16.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T00:05:28.382783+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  "rep-bondflight-mes": {
-   "name": "rep-bondflight-mes",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Flight-to-quality unwind is a market-wide equity phenomenon and must appear on MES if the treasury fear gauge is real",
-   "metrics": {
-    "n": 56,
-    "wr": null,
-    "pf": 1.413,
-    "usd_mo": 35,
-    "usd_trade": 22.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T16:20:47.675701+00:00",
-     "stage": "dev3yr",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 5
-   }
-  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1389,6 +1293,142 @@
      "verdict": "REPLICATES"
     }
    ]
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
+   "metrics": {
+    "n": 154,
+    "wr": 0.526,
+    "pf": 1.325,
+    "usd_mo": 61,
+    "usd_trade": 14.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:10:08.535860+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T14:13:24.952332+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T14:15:41.271464+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
+  },
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "metrics": {
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ],
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
+  },
+  "mes-depth-consumption-print-size-range-forecast": {
+   "name": "mes-depth-consumption-print-size-range-forecast",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
+   "metrics": {
+    "n": 124,
+    "wr": 0.4355,
+    "pf": 1.168,
+    "usd_mo": 31,
+    "usd_trade": 9.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T15:40:13.765212+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T15:47:15.796894+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T15:52:13.200686+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
+  },
+  "zn-cash-market-closed-futures-open-asymmetry": {
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
+   "metrics": {
+    "n": 6,
+    "wr": 0.8333,
+    "pf": 6.676,
+    "usd_mo": 18,
+    "usd_trade": 105.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:40:09.435772+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T10:46:10.359530+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T10:51:30.720138+00:00",
+     "stage": "replication",
+     "verdict": "FAIL"
+    }
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  },
  "decisions": [
@@ -1594,39 +1634,6 @@
  },
  "bundles": [
   {
-   "id": "Cross-market spread|apex150",
-   "name": "Cross-market spread",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 3,
-    "b3-monday-long": 1,
-    "mbt-session-beta-channel-regime": 5,
-    "mym-price-weighted-exdiv-mechanical-drop": 5,
-    "rep-bondflight-mes": 1,
-    "scan-mbt": 5
-   },
-   "total_micros": 20,
-   "p_breach": 0.197,
-   "usd_mo": 625,
-   "usd_mo_5acct": 3125,
-   "pct_goal": 1.125,
-   "wr": 0.559,
-   "wr_month": 0.833,
-   "months": {
-    "win_per_yr": 10.0,
-    "lose_per_yr": 2.0,
-    "avg_win": 1438,
-    "avg_lose": -946
-   },
-   "first_pay_days": 85,
-   "pay_rate_1yr": 0.915,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 11250
-  },
-  {
    "id": "Everything (full pool)|apex150",
    "name": "Everything (full pool)",
    "plan": "apex150 (verified)",
@@ -1637,62 +1644,62 @@
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
     "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b4-open-drive": 1,
-    "mbt-session-beta-channel-regime": 1,
-    "b3-tom-long": 1
+    "b2-opex-release": 1,
+    "b3-tom-long": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "b3-prior-high-break": 1
    },
    "total_micros": 10,
-   "p_breach": 0.181,
-   "usd_mo": 620,
-   "usd_mo_5acct": 3100,
-   "pct_goal": 1.116,
-   "wr": 0.51,
-   "wr_month": 0.861,
-   "months": {
-    "win_per_yr": 10.3,
-    "lose_per_yr": 1.7,
-    "avg_win": 1264,
-    "avg_lose": -886
-   },
-   "first_pay_days": 65,
-   "pay_rate_1yr": 0.968,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 11160
-  },
-  {
-   "id": "Frequent-firing engine|apex150",
-   "name": "Frequent-firing engine",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b3-monday-long": 1,
-    "b3-nr7-breakout": 1,
-    "b3-tom-long": 1,
-    "b4-open-drive": 1,
-    "scan-mbt": 2
-   },
-   "total_micros": 6,
-   "p_breach": 0.175,
-   "usd_mo": 382,
-   "usd_mo_5acct": 1910,
-   "pct_goal": 0.688,
-   "wr": 0.51,
+   "p_breach": 0.189,
+   "usd_mo": 563,
+   "usd_mo_5acct": 2815,
+   "pct_goal": 1.013,
+   "wr": 0.518,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 1040,
-    "avg_lose": -745
+    "avg_win": 1297,
+    "avg_lose": -581
    },
-   "first_pay_days": 79,
-   "pay_rate_1yr": 0.929,
+   "first_pay_days": 65,
+   "pay_rate_1yr": 0.959,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6876
+   "usd_mo_total": 10134
+  },
+  {
+   "id": "Cross-market spread|apex150",
+   "name": "Cross-market spread",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "b3-monday-long": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "scan-mbt": 1
+   },
+   "total_micros": 8,
+   "p_breach": 0.179,
+   "usd_mo": 377,
+   "usd_mo_5acct": 1885,
+   "pct_goal": 0.679,
+   "wr": 0.544,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1055,
+    "avg_lose": -527
+   },
+   "first_pay_days": 96,
+   "pay_rate_1yr": 0.856,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 6786
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -1765,31 +1772,60 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 1,
-    "b2-vix-reversion": 3,
+    "b2-vix-reversion": 2,
+    "b3-prior-high-break": 1,
     "b3-tom-long": 1,
-    "mbt-session-beta-channel-regime": 1,
-    "mym-price-weighted-exdiv-mechanical-drop": 1
+    "mcl-closure-length-dose-response-reopen-overshoot": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.149,
-   "usd_mo": 342,
-   "usd_mo_5acct": 1710,
-   "pct_goal": 0.616,
-   "wr": 0.57,
-   "wr_month": 0.694,
+   "total_micros": 5,
+   "p_breach": 0.194,
+   "usd_mo": 343,
+   "usd_mo_5acct": 1715,
+   "pct_goal": 0.617,
+   "wr": 0.512,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1121,
-    "avg_lose": -411
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 981,
+    "avg_lose": -442
    },
-   "first_pay_days": 109,
-   "pay_rate_1yr": 0.822,
+   "first_pay_days": 84,
+   "pay_rate_1yr": 0.882,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6156
+   "usd_mo_total": 6174
+  },
+  {
+   "id": "Frequent-firing engine|apex150",
+   "name": "Frequent-firing engine",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 1,
+    "b3-prior-high-break": 1,
+    "b3-tom-long": 1,
+    "scan-mbt": 2
+   },
+   "total_micros": 5,
+   "p_breach": 0.162,
+   "usd_mo": 306,
+   "usd_mo_5acct": 1530,
+   "pct_goal": 0.551,
+   "wr": 0.497,
+   "wr_month": 0.667,
+   "months": {
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 1136,
+    "avg_lose": -715
+   },
+   "first_pay_days": 84,
+   "pay_rate_1yr": 0.883,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 5508
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1798,36 +1834,32 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 3,
-    "b3-nr7-breakout": 2,
+    "b2-vix-reversion": 1,
+    "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b3-preholiday-drift": 1,
-    "b4-open-drive": 1,
-    "mym-price-weighted-exdiv-mechanical-drop": 1,
-    "mbt-session-beta-channel-regime": 2,
     "zs-china-state-reserve-auction-window": 1,
-    "b3-tom-long": 1
+    "b3-tom-long": 1,
+    "b3-prior-high-break": 1
    },
-   "total_micros": 16,
-   "p_breach": 0.198,
-   "usd_mo": 1191,
-   "usd_mo_5acct": 5955,
-   "pct_goal": 0.596,
-   "wr": 0.535,
+   "total_micros": 8,
+   "p_breach": 0.181,
+   "usd_mo": 828,
+   "usd_mo_5acct": 4140,
+   "pct_goal": 0.414,
+   "wr": 0.536,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 2587,
-    "avg_lose": -745
+    "avg_win": 2025,
+    "avg_lose": -1035
    },
-   "first_pay_days": 92,
-   "pay_rate_1yr": 0.915,
+   "first_pay_days": 105,
+   "pay_rate_1yr": 0.891,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 5955
+   "usd_mo_total": 4140
   },
   {
    "id": "Cross-market spread|growth",
@@ -1836,31 +1868,31 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 4,
+    "b2-vix-reversion": 5,
     "b3-monday-long": 2,
-    "mym-price-weighted-exdiv-mechanical-drop": 1,
-    "rep-bondflight-mes": 1,
-    "scan-mbt": 5,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "scan-mbt": 3,
     "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.2,
-   "usd_mo": 798,
-   "usd_mo_5acct": 3990,
-   "pct_goal": 0.399,
-   "wr": 0.555,
+   "total_micros": 13,
+   "p_breach": 0.198,
+   "usd_mo": 768,
+   "usd_mo_5acct": 3840,
+   "pct_goal": 0.384,
+   "wr": 0.552,
    "wr_month": 0.722,
    "months": {
     "win_per_yr": 8.7,
     "lose_per_yr": 3.3,
-    "avg_win": 2293,
-    "avg_lose": -868
+    "avg_win": 2429,
+    "avg_lose": -966
    },
-   "first_pay_days": 108,
-   "pay_rate_1yr": 0.82,
+   "first_pay_days": 114,
+   "pay_rate_1yr": 0.781,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3990
+   "usd_mo_total": 3840
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -1894,39 +1926,6 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3765
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 3,
-    "b2-vix-reversion": 2,
-    "b3-tom-long": 2,
-    "mym-price-weighted-exdiv-mechanical-drop": 2,
-    "rep-bondflight-mes": 2,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 12,
-   "p_breach": 0.195,
-   "usd_mo": 691,
-   "usd_mo_5acct": 3455,
-   "pct_goal": 0.345,
-   "wr": 0.601,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2210,
-    "avg_lose": -929
-   },
-   "first_pay_days": 117,
-   "pay_rate_1yr": 0.786,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 3455
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -1967,29 +1966,62 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b3-monday-long": 2,
+    "b3-monday-long": 1,
     "b3-nr7-breakout": 2,
+    "b3-prior-high-break": 1,
     "b3-tom-long": 2,
-    "b4-open-drive": 1
+    "b4-open-drive": 1,
+    "scan-mbt": 1
    },
-   "total_micros": 7,
-   "p_breach": 0.184,
-   "usd_mo": 584,
-   "usd_mo_5acct": 2920,
-   "pct_goal": 0.292,
-   "wr": 0.522,
-   "wr_month": 0.778,
+   "total_micros": 8,
+   "p_breach": 0.185,
+   "usd_mo": 619,
+   "usd_mo_5acct": 3095,
+   "pct_goal": 0.309,
+   "wr": 0.495,
+   "wr_month": 0.694,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1655,
-    "avg_lose": -1144
+    "win_per_yr": 8.3,
+    "lose_per_yr": 3.7,
+    "avg_win": 1946,
+    "avg_lose": -993
    },
-   "first_pay_days": 121,
-   "pay_rate_1yr": 0.798,
+   "first_pay_days": 118,
+   "pay_rate_1yr": 0.815,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 2920
+   "usd_mo_total": 3095
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "b3-prior-high-break": 1,
+    "b3-tom-long": 1,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 5,
+   "p_breach": 0.12,
+   "usd_mo": 493,
+   "usd_mo_5acct": 2465,
+   "pct_goal": 0.246,
+   "wr": 0.534,
+   "wr_month": 0.694,
+   "months": {
+    "win_per_yr": 8.3,
+    "lose_per_yr": 3.7,
+    "avg_win": 1724,
+    "avg_lose": -783
+   },
+   "first_pay_days": 133,
+   "pay_rate_1yr": 0.757,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 2465
   }
  ],
  "sizing_meta": {

@@ -42,12 +42,20 @@ def market_of(name):
     return "MNQ"
 
 def tier_of(h):
-    vs = " ".join(x["metrics"].get("verdict", "") for x in hist.get(h, [])).upper()
     if h in VALID:
         return "BOOK SLEEVE"
-    if "DEMOT" in vs or "STAYS OUT" in vs or "FAILS REPLICATION" in vs:
+    # last verdict per stage; kill-words dominate stray prose tokens ("expectancy passes")
+    st = {}
+    for x in hist.get(h, []):
+        st[x.get("stage", "?")] = str(x["metrics"].get("verdict", "")).upper()
+    dev, rc = st.get("dev3yr", ""), st.get("dev3yr_recheck", "")
+    rob, rep = st.get("robustness", ""), st.get("replication", "")
+    other = " ".join(v for s, v in st.items() if s not in ("dev3yr", "dev3yr_recheck", "robustness", "replication"))
+    if ("DEMOT" in rob or "STAYS OUT" in other or "DEMOT" in other
+            or ("FAILS REPLICATION" in rep)):
         return "demoted"
-    if "PASSES" in vs or "REPLICATES" in vs:
+    alive = ("PASSES" in dev and "KILLED" not in dev) or ("OVERTURNED" in rc)
+    if alive:
         return "candidate"
     return "killed"
 
