@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:39:27Z",
+  "stamp": "2026-07-23T13:39:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,35 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-release-flow-variance-collapse-impact-inflation-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:39:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-liquidity-tail-state-large-print-noninformative-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:39:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-both-extremes-before-11-afternoon-acceptance-range-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:39:29Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "mes-release-flow-variance-collapse-impact-inflation-fade",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 4,
-    "idea": "mnq-liquidity-tail-state-large-print-noninformative-fade",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 5,
-    "idea": "mgc-both-extremes-before-11-afternoon-acceptance-range-fade",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 6,
     "idea": "mes-settle-vs-tradable-return-divergence-margin-channel",
@@ -502,7 +500,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 7,
    "registered": 142,
    "dev3yr": 0,
    "robustness": 0,
