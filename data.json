@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:28:37Z",
+  "stamp": "2026-07-23T20:33:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "M2K",
-    "task": "recheck: m2k-russell-quarterly-ipo-addition-offrecon",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:16:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-petrodollar-recycling-sovereign-inflow-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:16:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "robustness: mes-petrodollar-recycling-sovereign-inflow-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:24:12Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 7,
@@ -536,7 +511,7 @@
   "funnel": {
    "idea": 8,
    "registered": 168,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
