@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:34:45Z",
+  "stamp": "2026-07-23T09:34:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:30:18Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-speculative-oi-change-tsmom-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:34:48Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "zs-speculative-oi-change-tsmom-gate",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 8,
     "idea": "mym-minute-scale-variance-ratio-regime",
@@ -487,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 122,
    "dev3yr": 0,
    "robustness": 0,
