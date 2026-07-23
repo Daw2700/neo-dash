@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:37:41Z",
+  "stamp": "2026-07-23T16:42:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1019,
-  "n_results": 1198,
-  "n_trials": 68268,
+  "n_results": 1199,
+  "n_trials": 68269,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -293,22 +293,6 @@
    "usd_trade": 48.9
   },
   {
-   "id": "zn-stockbond-corr-regime-term-premium-drift",
-   "name": "zn-stockbond-corr-regime-term-premium-drift",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 16,
-   "wr": 0.6875,
-   "usd_mo": 232,
-   "pf": 1.957,
-   "usd_trade": 521.7,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 1
-   }
-  },
-  {
    "id": "mgc-china-lpr-fix-evening-window",
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -323,9 +307,29 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  {
+   "id": "b2-opex-release",
+   "name": "b2-opex-release",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.429,
+   "usd_mo": 16,
+   "pf": 1.407,
+   "usd_trade": 16.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T16:39:06.432334+00:00",
+   "hash": "911f8c12",
+   "name": "zn-stockbond-corr-regime-term-premium-drift",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T16:36:01.100963+00:00",
    "hash": "3a05e6e4",
@@ -413,36 +417,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T16:09:17.190309+00:00",
-   "hash": "eae9183b",
-   "name": "mng-regulated-utility-mandated-hedge-program-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.912"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-voltick-ratio-trend-persistence-dose-response",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:26:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-stockbond-corr-regime-term-premium-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:26:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: zn-stockbond-corr-regime-term-premium-drift",
     "stage": "dev3yr",
@@ -606,7 +586,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27947
+    "trials": 27948
    }
   ]
  },
@@ -1444,30 +1424,6 @@
     }
    ]
   },
-  "zn-stockbond-corr-regime-term-premium-drift": {
-   "name": "zn-stockbond-corr-regime-term-premium-drift",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "When the rolling stock-bond daily-return correlation turns positive, duration stops functioning as an equity hedge and investors demand a higher term premium to hold it; the repricing is slow because mandate and risk-model changes move at committee speed, producing a multi-week downward drift in ZN price rather than a jump, so shorting ZN on a fresh positive-correlation flip and holding a fixed multi-week horizon should show positive expectancy.",
-   "metrics": {
-    "n": 16,
-    "wr": 0.6875,
-    "pf": 1.957,
-    "usd_mo": 232,
-    "usd_trade": 521.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T16:29:31.967330+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 1
-   }
-  },
   "mgc-china-lpr-fix-evening-window": {
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -1501,6 +1457,36 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  "b2-opex-release": {
+   "name": "b2-opex-release",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
+   "metrics": {
+    "n": 35,
+    "wr": 0.429,
+    "pf": 1.407,
+    "usd_mo": 16,
+    "usd_trade": 16.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:02:40.560966+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.903542+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.697136+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
   }
  },
  "decisions": [
