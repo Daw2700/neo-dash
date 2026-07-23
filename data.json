@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:57:14Z",
+  "stamp": "2026-07-23T22:02:03Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 1112,
-  "n_results": 1299,
-  "n_trials": 71395,
+  "n_results": 1300,
+  "n_trials": 71396,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71395,
+   "trials": 71396,
    "registered": 1112,
    "tested": 901,
    "passed": 168,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T21:57:21.639449+00:00",
+   "hash": "b5e35ee3",
+   "name": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T21:56:37.537413+00:00",
    "hash": "d10c3171",
    "name": "scout-73-screen",
@@ -422,26 +430,10 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T21:29:55.566825+00:00",
-   "hash": "bc03e1cb",
-   "name": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.435"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:48:02Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -449,24 +441,16 @@
     "stage": "idea-scout",
     "started": "2026-07-23T21:48:26Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "robustness: zs-china-sow-herd-monthly-print-soymeal-demand-revision",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:52:57Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 174,
-   "dev3yr": 2,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 14,
+   "book_candidate": 13,
    "golden_staged": 1
   },
   "throughput": [
@@ -524,7 +508,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31071
+    "trials": 31072
    }
   ]
  },
