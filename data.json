@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:18:23Z",
+  "stamp": "2026-07-23T11:18:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:17:20Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-extremity-regime-adverse-selection-liquidity-rent",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:18:25Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "met-extremity-regime-adverse-selection-liquidity-rent",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 6,
     "idea": "mcl-interprint-thursday-positioning-freeze",
@@ -496,7 +495,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 131,
    "dev3yr": 0,
    "robustness": 0,
