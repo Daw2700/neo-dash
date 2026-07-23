@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:38:05Z",
+  "stamp": "2026-07-23T15:46:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1000,
-  "n_results": 1179,
-  "n_trials": 68249,
+  "n_registered": 1003,
+  "n_results": 1183,
+  "n_trials": 68253,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -169,6 +169,18 @@
    "usd_trade": 94.1
   },
   {
+   "id": "zn-fr2004-dealer-inventory-capacity-state",
+   "name": "zn-fr2004-dealer-inventory-capacity-state",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 16,
+   "wr": 0.6875,
+   "usd_mo": 152,
+   "pf": 2.615,
+   "usd_trade": 343.0
+  },
+  {
    "id": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -303,25 +315,41 @@
     "growth_max": 1,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mcl-closure-length-dose-response-reopen-overshoot",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 154,
-   "wr": 0.526,
-   "usd_mo": 61,
-   "pf": 1.325,
-   "usd_trade": 14.3,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T15:42:44.699710+00:00",
+   "hash": "06c2fb56",
+   "name": "mes-forward-event-load-anticipatory-derisk",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.045"
+  },
+  {
+   "t": "2026-07-23T15:41:45.183523+00:00",
+   "hash": "422d0c89",
+   "name": "zn-fr2004-dealer-inventory-capacity-state",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.615"
+  },
+  {
+   "t": "2026-07-23T15:40:47.019913+00:00",
+   "hash": "8d9f68ef",
+   "name": "met-deribit-cme-expiry-clock-wedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.672"
+  },
+  {
+   "t": "2026-07-23T15:40:20.095066+00:00",
+   "hash": "8d9f68ef",
+   "name": "met-deribit-cme-expiry-clock-wedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF nan"
+  },
   {
    "t": "2026-07-23T15:37:13.964593+00:00",
    "hash": "c35f6afa",
@@ -385,38 +413,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T15:11:25.321948+00:00",
-   "hash": "4d1cf52c",
-   "name": "zn-nth-weekday-institutional-process-clock",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.723"
-  },
-  {
-   "t": "2026-07-23T15:10:40.478145+00:00",
-   "hash": "f1afd1d3",
-   "name": "mes-simultaneous-roll-congestion-capacity-drain",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.135"
-  },
-  {
-   "t": "2026-07-23T15:09:27.201208+00:00",
-   "hash": "b3e80ee0",
-   "name": "scout-68-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T15:08:50.528406+00:00",
-   "hash": "eb43a6a5",
-   "name": "mnq-shared-maker-capital-scarcity-impact-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.776"
   }
  ],
  "pipeline": {
@@ -425,22 +421,6 @@
     "agent": "tester-1",
     "market": "MES",
     "task": "mes-forward-event-load-anticipatory-derisk",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:38:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-fr2004-dealer-inventory-capacity-state",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:38:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MET",
-    "task": "met-deribit-cme-expiry-clock-wedge",
     "stage": "dev3yr",
     "started": "2026-07-23T15:38:05Z",
     "state": "running"
@@ -584,7 +564,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27928
+    "trials": 27932
    }
   ]
  },
@@ -608,8 +588,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 165,
-   "n_killed": 137,
+   "n_tested": 166,
+   "n_killed": 138,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -684,8 +664,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 23,
+   "n_tested": 25,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -702,7 +682,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 72,
+   "n_tested": 73,
    "n_killed": 63,
    "book_sleeves": [],
    "agents_now": []
@@ -1105,6 +1085,26 @@
     }
    ]
   },
+  "zn-fr2004-dealer-inventory-capacity-state": {
+   "name": "zn-fr2004-dealer-inventory-capacity-state",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "The NY Fed publishes primary-dealer Treasury positions weekly (FR2004). When reported dealer net long duration sits high in its own trailing distribution, intermediation balance sheet capacity is already committed, so the next increment of one-sided customer flow gets absorbed at a worse price and reverts less afterward -- a momentum-continuation effect conditioned on a published capacity STATE, distinct from calendar-event auction-concession trades that decay. PROXY (no FR2004 panel exists in this lab): weekly signed RTH volume flow on ZN itself stands in for the capacity-state variable, since no dealer position feed is available; this is a stated, honest limitation, not the real FR2004 series.",
+   "metrics": {
+    "n": 16,
+    "wr": 0.6875,
+    "pf": 2.615,
+    "usd_mo": 152,
+    "usd_trade": 343.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T15:41:45.183523+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end": {
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -1401,40 +1401,6 @@
    "sizing": {
     "growth_max": 1,
     "apex_max": 1
-   }
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
-   "metrics": {
-    "n": 154,
-    "wr": 0.526,
-    "pf": 1.325,
-    "usd_mo": 61,
-    "usd_trade": 14.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:10:08.535860+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T14:13:24.952332+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T14:15:41.271464+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
    }
   }
  },
