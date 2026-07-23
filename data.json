@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:13:41Z",
+  "stamp": "2026-07-23T20:14:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1080,
-  "n_results": 1264,
-  "n_trials": 71360,
+  "n_results": 1265,
+  "n_trials": 71361,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71360,
+   "trials": 71361,
    "registered": 1080,
-   "tested": 876,
+   "tested": 877,
    "passed": 164,
    "survived": 34,
    "replicated": 12,
@@ -336,12 +336,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T20:13:07.354369+00:00",
+   "t": "2026-07-23T20:13:50.155789+00:00",
    "hash": "566b50cf",
    "name": "mgc-regulatory-reporting-date-metals-book-roundtrip",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.093"
   },
   {
    "t": "2026-07-23T20:13:06.900214+00:00",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-regulatory-reporting-date-metals-book-roundtrip",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:11:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-monthend-duration-demand-net-of-reporting-quarter-drag",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-russell-quarterly-ipo-addition-offrecon",
     "stage": "dev3yr",
@@ -553,8 +545,8 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 168,
-   "dev3yr": 3,
+   "registered": 167,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31036
+    "trials": 31037
    }
   ]
  },
@@ -671,8 +663,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 59,
-   "n_killed": 49,
+   "n_tested": 60,
+   "n_killed": 50,
    "book_sleeves": [],
    "agents_now": []
   },
