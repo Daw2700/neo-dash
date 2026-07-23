@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:41:36Z",
+  "stamp": "2026-07-23T09:45:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 886,
-  "n_results": 1070,
-  "n_trials": 49206,
+  "n_registered": 888,
+  "n_results": 1073,
+  "n_trials": 49209,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:45:08.245280+00:00",
+   "hash": "7e8af789",
+   "name": "mng-eia-storage-revision-underreaction",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.065"
+  },
+  {
+   "t": "2026-07-23T09:45:07.851607+00:00",
+   "hash": "bc6431c8",
+   "name": "sil-preopen-placeholder-print-prerelease-retrace",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.7632"
+  },
+  {
+   "t": "2026-07-23T09:45:06.713775+00:00",
+   "hash": "7b085561",
+   "name": "mng-roll-seasonal-exposure-discontinuity-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.356"
+  },
+  {
    "t": "2026-07-23T09:41:13.426338+00:00",
    "hash": "645f5287",
    "name": "zs-speculative-oi-change-tsmom-gate",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.978"
-  },
-  {
-   "t": "2026-07-23T09:26:42.238359+00:00",
-   "hash": "93fd03fe",
-   "name": "mcl-inside-week-unresolved-positioning-carryover",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.996"
-  },
-  {
-   "t": "2026-07-23T09:25:13.784451+00:00",
-   "hash": "89be97f0",
-   "name": "mcl-inside-week-unresolved-positioning-carryover-REPLICATION-1021",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T09:18:38.969646+00:00",
-   "hash": "93fd03fe",
-   "name": "mcl-inside-week-unresolved-positioning-carryover",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNG",
-    "task": "recheck: mng-roll-seasonal-exposure-discontinuity-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:40:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "SIL",
     "task": "sil-preopen-placeholder-print-prerelease-retrace",
     "stage": "dev3yr",
@@ -513,7 +505,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18604
+    "trials": 18607
    }
   ]
  },
@@ -575,8 +567,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 11,
+   "n_tested": 15,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -593,8 +585,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 27,
-   "n_killed": 23,
+   "n_tested": 28,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
