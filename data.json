@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:08:27Z",
+  "stamp": "2026-07-23T21:16:11Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1095,
-  "n_results": 1284,
-  "n_trials": 71380,
+  "n_registered": 1098,
+  "n_results": 1287,
+  "n_trials": 71383,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71380,
-   "registered": 1095,
-   "tested": 889,
-   "passed": 165,
+   "trials": 71383,
+   "registered": 1098,
+   "tested": 892,
+   "passed": 167,
    "survived": 35,
    "replicated": 13,
    "book": 13
@@ -278,6 +278,18 @@
    }
   },
   {
+   "id": "zn-withheld-tax-receipts-labor-nowcast-drift",
+   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 60.0,
+   "usd_mo": 141,
+   "pf": 2.54,
+   "usd_trade": 144.7
+  },
+  {
    "id": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -316,25 +328,33 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 93,
-   "wr": 0.6237,
-   "usd_mo": 76,
-   "pf": 1.687,
-   "usd_trade": 29.4,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 4
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T21:14:01.814471+00:00",
+   "hash": "4b757361",
+   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.5399"
+  },
+  {
+   "t": "2026-07-23T21:12:30.502995+00:00",
+   "hash": "da646473",
+   "name": "mgc-cross-asset-hedge-demand-absence-carry-drag",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.45"
+  },
+  {
+   "t": "2026-07-23T21:11:51.362451+00:00",
+   "hash": "2b5458f5",
+   "name": "mnq-tsmc-asia-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.493"
+  },
   {
    "t": "2026-07-23T21:07:33.314729+00:00",
    "hash": "c18e1503",
@@ -406,30 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T20:36:08.865767+00:00",
-   "hash": "2598911e",
-   "name": "mcl-opec-compensation-cut-published-schedule",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.565"
-  },
-  {
-   "t": "2026-07-23T20:35:05.160357+00:00",
-   "hash": "a8e6e3a6",
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag-REPLICATION-1224",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T20:27:13.722963+00:00",
-   "hash": "8b298a3a",
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,14 +440,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-tsmc-monthly-revenue-asia-hours-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:08:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-withheld-tax-receipts-labor-nowcast-drift",
     "stage": "dev3yr",
@@ -545,10 +533,10 @@
   "funnel": {
    "idea": 9,
    "registered": 169,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 13,
+   "book_candidate": 15,
    "golden_staged": 1
   },
   "throughput": [
@@ -606,7 +594,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31056
+    "trials": 31059
    }
   ]
  },
@@ -615,8 +603,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 138,
-   "n_killed": 94,
+   "n_tested": 139,
+   "n_killed": 95,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -662,7 +650,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 61,
+   "n_tested": 62,
    "n_killed": 51,
    "book_sleeves": [],
    "agents_now": []
@@ -727,7 +715,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 83,
+   "n_tested": 84,
    "n_killed": 71,
    "book_sleeves": [],
    "agents_now": []
@@ -1384,6 +1372,26 @@
     "apex_max": 2
    }
   },
+  "zn-withheld-tax-receipts-labor-nowcast-drift": {
+   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "The Daily Treasury Statement publishes withheld income and employment tax receipts daily with a one-day lag, an unrevised census-level wage-income measure that mechanically leads the BLS payroll print; rates reprice on the monthly print so whoever waits for BLS pays whoever tracked the receipts trend divergence from consensus in advance.",
+   "metrics": {
+    "n": 35,
+    "wr": 60.0,
+    "pf": 2.54,
+    "usd_mo": 141,
+    "usd_trade": 144.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T21:14:01.814471+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end": {
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -1476,40 +1484,6 @@
    "sizing": {
     "growth_max": 8,
     "apex_max": 8
-   }
-  },
-  "mes-petrodollar-recycling-sovereign-inflow-lag": {
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Sustained high crude oil revenue accrues to oil-exporting sovereign wealth funds, which redeploy into global equities on a budgeting cycle that lags the revenue accrual by roughly one quarter, so a slow flow-driven equity bid is conditional on LAGGED cumulative crude return rather than contemporaneous crude moves.",
-   "metrics": {
-    "n": 93,
-    "wr": 0.6237,
-    "pf": 1.687,
-    "usd_mo": 76,
-    "usd_trade": 29.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T20:20:55.649694+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T20:27:13.722963+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T20:37:13.372105+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 4
    }
   }
  },
