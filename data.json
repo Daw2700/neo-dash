@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:02:20Z",
+  "stamp": "2026-07-23T05:02:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:01:55Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "recheck: gap-age-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:02:22Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-staggered-weekly-reopen-crossmarket-leak",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:02:22Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "zc-staggered-weekly-reopen-crossmarket-leak",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 7,
     "idea": "m6e-dollar-factor-versus-euro-idiosyncratic-decomposition",
@@ -506,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
