@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:22:26Z",
+  "stamp": "2026-07-23T02:27:21Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 743,
-  "n_results": 910,
-  "n_trials": 30898,
+  "n_results": 911,
+  "n_trials": 30899,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:24:53.340915+00:00",
+   "hash": "97ae3e36",
+   "name": "m2k-quiet-session-onesided-flow",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T02:19:40.037991+00:00",
    "hash": "16209d6d",
    "name": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
@@ -385,14 +393,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T01:58:41.221239+00:00",
-   "hash": "6299d924",
-   "name": "mbt-multiday-closure-no-overshoot",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1356"
   }
  ],
  "pipeline": {
@@ -403,14 +403,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T02:09:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "robustness: m2k-quiet-session-onesided-flow",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:22:04Z",
     "state": "running"
    }
   ],
@@ -479,7 +471,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 62
+    "trials": 63
    }
   ]
  },
@@ -1113,6 +1105,11 @@
      "t": "2026-07-23T02:12:48.873716+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T02:24:53.340915+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
