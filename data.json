@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:49:59Z",
+  "stamp": "2026-07-23T00:55:11Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 712,
-  "n_results": 872,
-  "n_trials": 30860,
+  "n_registered": 713,
+  "n_results": 874,
+  "n_trials": 30862,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6
@@ -299,6 +299,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:54:37.701842+00:00",
+   "hash": "109efb3a",
+   "name": "zs-china-state-reserve-auction-window",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.364"
+  },
+  {
+   "t": "2026-07-23T00:53:46.502417+00:00",
+   "hash": "c4eca244",
+   "name": "rep-zs-china-state-reserve-auction-window-zc",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T00:52:34.124878+00:00",
+   "hash": "109efb3a",
+   "name": "zs-china-state-reserve-auction-window",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T00:48:46.428543+00:00",
    "hash": "b1927210",
    "name": "sil-pv-gridconnection-deadline-demand-pulse",
@@ -369,30 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.608"
-  },
-  {
-   "t": "2026-07-23T00:37:03.049018+00:00",
-   "hash": "472a81f2",
-   "name": "zc-farm-cash-rent-duedate-liquidation-window",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T00:33:08.646296+00:00",
-   "hash": "8cb89d82",
-   "name": "mes-policy-rate-step",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.346"
-  },
-  {
-   "t": "2026-07-23T00:32:12.294893+00:00",
-   "hash": "472a81f2",
-   "name": "zc-farm-cash-rent-duedate-liquidation-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.909"
   }
  ],
  "pipeline": {
@@ -412,12 +412,20 @@
     "stage": "dev3yr",
     "started": "2026-07-23T00:49:37Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "replication: zs-china-state-reserve-auction-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:52:44Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 94,
+   "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -479,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 24
+    "trials": 26
    }
   ]
  },
@@ -1083,6 +1091,16 @@
      "t": "2026-07-23T00:47:04.227373+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T00:52:34.124878+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T00:54:37.701842+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
