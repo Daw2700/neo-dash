@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:36:06Z",
+  "stamp": "2026-07-23T07:41:18Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 842,
-  "n_results": 1025,
-  "n_trials": 49161,
+  "n_registered": 845,
+  "n_results": 1028,
+  "n_trials": 49164,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -265,6 +265,18 @@
    }
   },
   {
+   "id": "zs-marketing-year-high-reference-price-hedge-supply",
+   "name": "zs-marketing-year-high-reference-price-hedge-supply",
+   "market": "ZS",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 79,
+   "wr": 0.5443,
+   "usd_mo": 158,
+   "pf": 1.325,
+   "usd_trade": 72.1
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -295,25 +307,33 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "zn-cash-market-closed-futures-open-asymmetry",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.8333,
-   "usd_mo": 18,
-   "pf": 6.676,
-   "usd_trade": 105.1,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T07:39:33.257282+00:00",
+   "hash": "7bc15ccc",
+   "name": "zs-marketing-year-high-reference-price-hedge-supply",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.325"
+  },
+  {
+   "t": "2026-07-23T07:38:49.309935+00:00",
+   "hash": "537dbe93",
+   "name": "mng-weather-premium-multiday-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.649"
+  },
+  {
+   "t": "2026-07-23T07:38:25.166680+00:00",
+   "hash": "29664aa5",
+   "name": "mcl-quarterend-workingcapital-hedge-lift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.829"
+  },
   {
    "t": "2026-07-23T07:30:12.371866+00:00",
    "hash": "69c93951",
@@ -385,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.057"
-  },
-  {
-   "t": "2026-07-23T07:14:17.438501+00:00",
-   "hash": "71124a34",
-   "name": "mes-orb-failed-breakout-reclaim-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.818"
-  },
-  {
-   "t": "2026-07-23T07:13:17.639186+00:00",
-   "hash": "b09c1d3f",
-   "name": "zs-both-sided-overnight-sweep-liquidation-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.057"
-  },
-  {
-   "t": "2026-07-23T07:13:11.106581+00:00",
-   "hash": "53d91a2b",
-   "name": "m2k-umich-prelim-elasticity-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.015"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-merchant-quarterend-workingcapital-hedge-lift",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:36:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-marketing-year-high-reference-price-hedge-supply",
     "stage": "dev3yr",
@@ -430,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-weather-premium-multiday-physical-supply-response",
     "stage": "dev3yr",
@@ -594,7 +582,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18559
+    "trials": 18562
    }
   ]
  },
@@ -665,8 +653,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 59,
-   "n_killed": 42,
+   "n_tested": 60,
+   "n_killed": 43,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -674,8 +662,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 20,
+   "n_tested": 25,
+   "n_killed": 21,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -730,7 +718,7 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 19,
+   "n_tested": 20,
    "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
@@ -1337,6 +1325,26 @@
     "apex_max": 3
    }
   },
+  "zs-marketing-year-high-reference-price-hedge-supply": {
+   "name": "zs-marketing-year-high-reference-price-hedge-supply",
+   "market": "ZS",
+   "tier": "candidate",
+   "mechanism": "Farmers form a reference price from the soybean marketing-year (Sep1-Aug31) high and refuse to sell below it, so cash sales and elevator short-hedge selling into futures cluster when ZS returns within a small band of that season-to-date high, capping rallies at the anchor rather than at a round number or moving-average envelope; payer is the producer disposition effect and the state variable is the season high itself.",
+   "metrics": {
+    "n": 79,
+    "wr": 0.5443,
+    "pf": 1.325,
+    "usd_mo": 158,
+    "usd_trade": 72.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T07:39:33.257282+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1403,40 +1411,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "zn-cash-market-closed-futures-open-asymmetry": {
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.8333,
-    "pf": 6.676,
-    "usd_mo": 18,
-    "usd_trade": 105.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:40:09.435772+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T10:46:10.359530+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T10:51:30.720138+00:00",
-     "stage": "replication",
-     "verdict": "FAIL"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
    }
   }
  },
