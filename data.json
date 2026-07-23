@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:48:20Z",
+  "stamp": "2026-07-23T20:48:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,23 +449,29 @@
     "stage": "dev3yr",
     "started": "2026-07-23T20:47:57Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 14,
-    "idea": "sil-india-import-duty-change-window",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.28
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T20:48:22Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "SIL",
+    "task": "sil-india-import-duty-change-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:48:22Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 170,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
