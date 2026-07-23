@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:17:17Z",
+  "stamp": "2026-07-23T11:17:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:14:32Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-rough-vol-fast-reversion-atr-budget-overhang",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:17:20Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-rough-vol-fast-reversion-atr-budget-overhang",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 5,
     "idea": "met-extremity-regime-adverse-selection-liquidity-rent",
@@ -505,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 133,
    "dev3yr": 0,
    "robustness": 0,
