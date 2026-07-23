@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:18:14Z",
+  "stamp": "2026-07-23T22:22:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1115,
+  "n_registered": 1116,
   "n_results": 1303,
   "n_trials": 71399,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 6,
   "lifetime": {
    "trials": 71399,
-   "registered": 1115,
+   "registered": 1116,
    "tested": 904,
    "passed": 169,
    "survived": 36,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T22:21:29.421630+00:00",
+   "hash": "9fa5b1db",
+   "name": "ROBUSTNESS-BATTERY mes-vwap-occupation-displacement-asymmetry (candidate b314a86053efa51c)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T22:14:46.832586+00:00",
    "hash": "ed28f638",
    "name": "mnq-overnight-jump-conditioned-day-night-flip",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T21:42:35.645178+00:00",
-   "hash": "6b31b6db",
-   "name": "zn-settlement-fails-specialness-futures-substitution",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.497"
   }
  ],
  "pipeline": {
@@ -448,6 +448,14 @@
     "task": "mnq-overnight-jump-conditioned-day-night-clientele-flip",
     "stage": "dev3yr",
     "started": "2026-07-23T22:11:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-vwap-occupation-displacement-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:18:16Z",
     "state": "running"
    }
   ],
@@ -536,8 +544,8 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 174,
-   "dev3yr": 2,
+   "registered": 175,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
