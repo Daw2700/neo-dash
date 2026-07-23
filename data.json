@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:20:46Z",
+  "stamp": "2026-07-23T23:21:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1135,
-  "n_results": 1321,
-  "n_trials": 79186,
+  "n_results": 1322,
+  "n_trials": 79187,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79186,
+   "trials": 79187,
    "registered": 1135,
-   "tested": 919,
+   "tested": 920,
    "passed": 170,
    "survived": 36,
    "replicated": 13,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:21:12.952788+00:00",
+   "hash": "cc81c6ed",
+   "name": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.767"
+  },
+  {
    "t": "2026-07-23T23:20:39.130991+00:00",
    "hash": "3cbba9e7",
    "name": "mes-holiday-deferred-margin",
@@ -350,14 +358,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.027"
-  },
-  {
-   "t": "2026-07-23T23:18:29.861792+00:00",
-   "hash": "cc81c6ed",
-   "name": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T23:16:42.610324+00:00",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:16:28Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-constant-leverage-etf-close-rebalance-convexity",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-euro-national-market-holiday-anchor-absence",
     "stage": "dev3yr",
@@ -481,8 +473,8 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 179,
-   "dev3yr": 3,
+   "registered": 178,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -543,7 +535,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38868
+    "trials": 38869
    }
   ]
  },
@@ -552,8 +544,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 140,
-   "n_killed": 96,
+   "n_tested": 141,
+   "n_killed": 97,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
