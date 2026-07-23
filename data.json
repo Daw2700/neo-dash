@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:59:31Z",
+  "stamp": "2026-07-23T07:04:40Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -408,19 +408,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T06:44:56Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mcl-unrevisited-settlement-oneway-auction-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 2,
+    "idea": "mgc-overnight-vwap-inventory-profit-supply",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mes-adp-refutation-nfp-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "met-onshore-mark-gap-offshore-led-overnight-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "zs-both-sided-overnight-sweep-liquidation-reversal",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 6,
+    "idea": "m2k-umich-prelim-consumer-elasticity-relative-repricing",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-opening-range-failed-breakout-reclaim-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 8,
+    "idea": "mnq-range-acceptance-age-compression-release",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 9,
+    "idea": "zn-conference-board-labor-differential-rates-channel",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 11,
+    "idea": "m6e-prior-onshore-vwap-overnight-anchor-reversion",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 12,
+    "idea": "mnq-durable-goods-capex-orders-tech-revenue-channel",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.32
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
