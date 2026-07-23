@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:44:04Z",
+  "stamp": "2026-07-23T14:48:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 982,
-  "n_results": 1161,
-  "n_trials": 49297,
+  "n_results": 1162,
+  "n_trials": 49298,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 9
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T14:45:30.657498+00:00",
+   "hash": "63685af3",
+   "name": "m2k-tick-binding-regime-continuation-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1401"
+  },
+  {
    "t": "2026-07-23T14:43:54.869388+00:00",
    "hash": "0233b6f2",
    "name": "mes-adv-holiday-contamination",
@@ -397,26 +405,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T14:15:30.692787+00:00",
-   "hash": "63b62f39",
-   "name": "mcl-impact-regime-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.128"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "M2K",
-    "task": "recheck: m2k-tick-binding-regime-continuation-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:42:15Z",
-    "state": "running"
-   },
    {
     "agent": "decision",
     "market": null,
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "recheck: mgc-trend-regime-age-crowding-exhaustion",
     "stage": "dev3yr",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-roll-crown-transfer-earliness-participant-mix",
     "stage": "dev3yr",
@@ -580,7 +572,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18695
+    "trials": 18696
    }
   ]
  },
@@ -1424,24 +1416,6 @@
  },
  "decisions": [
   {
-   "id": "d-settlediv-book-entry",
-   "kind": "book_entry",
-   "needs_attention": true,
-   "title": "Ninth machine-discovered sleeve ready: settle-vs-tradable divergence (PF 1.151, n=288)",
-   "recommendation": "ADMIT to the book \u2014 high-frequency dual-leg (dev n=288, replication n=303 on MNQ)",
-   "evidence": "dev3yr: n=288, PF 1.151, $10.60/trade on MES | robustness: SURVIVES (plateau, placebos, ex-best-year) | replication: n=303, PF 1.122, $15.68/trade on MNQ \u2014 both legs profitable on 250+ trades each",
-   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
-   "recap": "The daily settlement print can diverge from the last tradeable price. When it does, the next session tends to close part of that wedge. Fires roughly twice a week \u2014 the largest-sample graduate in the book.",
-   "why": "It cleared every gate on genuinely large samples: 288 dev trades and 303 replication trades, where most candidates die on thin data. The edge per trade is modest (PF 1.151 / 1.122, both within ~0.05 of their bars) but it is measured with far more statistical weight than any rare-event sleeve \u2014 this is the trade-count profile the frequent-firing bar was designed for. Honest caveat: modest margins mean it is more sensitive to costs/slippage than the high-PF sleeves, worth remembering at sizing time.",
-   "steps": [
-    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
-    "Deny: remains a replicated candidate, fully preserved",
-    "Question: the card returns with any analysis you want",
-    "Live/paper exposure still requires its own GO regardless"
-   ],
-   "staged": "2026-07-23T14:11:50Z"
-  },
-  {
    "id": "d-crudechannel-book-entry",
    "kind": "book_entry",
    "needs_attention": true,
@@ -1584,6 +1558,27 @@
     "Live/paper exposure still requires its own GO regardless"
    ],
    "staged": "2026-07-22T07:47:26Z"
+  },
+  {
+   "id": "d-settlediv-mirror-sync",
+   "kind": "cleanup",
+   "needs_attention": true,
+   "title": "Book entry is on the ledger, but the published book and all sizing still exclude it",
+   "recommendation": "Approve the one-hash mirror edit + a sizing re-run so the new sleeve actually counts",
+   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 8 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set). sizing.py no longer needs a manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv, and data/trades_mes-settle-tradable-divergence.csv already exists (n=288, 2022-03-03..2025-02-27), so adding the hash is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+   "what_yes_means": "The site shows an 8-sleeve book, sizing computes max micros for the new sleeve under the same 20% breach cap, and every bundle + the $10k roadmap recompute including it",
+   "recap": "You approved the settle-vs-tradable divergence sleeve into the book and the ledger says so. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and the new one gets zero micros in every bundle.",
+   "why": "The ledger is the source of truth and it already records the admission, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This one is smaller than the gold-signal sync was: one hash, then a re-run.",
+   "steps": [
+    "Approve: add 5e5ccf350206d13f to ~/neo-dashboard/build_data.py VALID",
+    "Re-run sizing.py then build_data.py; engine pushes on its next publish",
+    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives both now",
+    "Deny: the ledger admission still stands, but the published book stays at 7 sleeves and the sleeve earns no allocation"
+   ],
+   "pending_mirrors": [
+    "mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
+   ],
+   "staged": "2026-07-23T14:45:17Z"
   }
  ],
  "roadmap": {
