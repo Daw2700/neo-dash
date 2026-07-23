@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:08:23Z",
+  "stamp": "2026-07-23T16:08:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -444,18 +444,17 @@
     "stage": "decision",
     "started": "2026-07-23T16:07:01Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MET",
+    "task": "met-net-issuance-burn-regime-supply-state",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:08:25Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "met-net-issuance-burn-regime-supply-state",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 13,
     "idea": "m6e-ecb-fed-balance-sheet-release-stagger",
@@ -476,7 +475,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 156,
    "dev3yr": 0,
    "robustness": 0,
