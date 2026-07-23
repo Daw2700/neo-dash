@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:39:35Z",
+  "stamp": "2026-07-23T12:39:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T12:37:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-provider-overnight-inventory-pnl-liquidity-withdrawal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:39:38Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mgc-provider-overnight-inventory-pnl-liquidity-withdrawal",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 5,
     "idea": "zs-hedge-supply-velocity-vs-level-asymmetry",
@@ -514,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 138,
    "dev3yr": 0,
    "robustness": 0,
