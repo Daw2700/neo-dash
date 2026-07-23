@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:09:39Z",
+  "stamp": "2026-07-23T07:10:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 833,
-  "n_results": 1012,
-  "n_trials": 49148,
+  "n_results": 1013,
+  "n_trials": 49149,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:10:02.742577+00:00",
+   "hash": "d6fe4f5f",
+   "name": "mcl-unrevisited-settlement-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.974"
+  },
+  {
    "t": "2026-07-23T07:09:27.009048+00:00",
    "hash": "40cfe01c",
    "name": "met-onshore-mark-gap-offshore-continuation",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.13"
-  },
-  {
-   "t": "2026-07-23T06:44:51.553666+00:00",
-   "hash": "61e8dc49",
-   "name": "mbt-natgas-hashprice-margin-squeeze",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.0897"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "recheck: mcl-unrevisited-settlement-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:08:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZS",
     "task": "zs-both-sided-overnight-sweep-liquidation-reversal",
     "stage": "dev3yr",
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18546
+    "trials": 18547
    }
   ]
  },
