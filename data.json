@@ -1,22 +1,22 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:38:27Z",
+  "stamp": "2026-07-23T23:42:30Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1140,
-  "n_results": 1327,
-  "n_trials": 79192,
+  "n_registered": 1142,
+  "n_results": 1329,
+  "n_trials": 79194,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 6,
+  "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79192,
-   "registered": 1140,
-   "tested": 924,
+   "trials": 79194,
+   "registered": 1142,
+   "tested": 925,
    "passed": 171,
    "survived": 37,
-   "replicated": 13,
+   "replicated": 14,
    "book": 13
   }
  },
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:41:43.870737+00:00",
+   "hash": "26584da7",
+   "name": "mes-september-complex-wide-rth-only-weakness",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.405"
+  },
+  {
+   "t": "2026-07-23T23:41:02.332120+00:00",
+   "hash": "423e8155",
+   "name": "mcl-storage-response-lag-monthly-mean-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.697"
+  },
+  {
+   "t": "2026-07-23T23:39:46.522013+00:00",
+   "hash": "4fb16f57",
+   "name": "mes-september-complex-wide-rth-only-weakness-REPLICATION-1277",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T23:29:35.979387+00:00",
    "hash": "26584da7",
    "name": "mes-september-complex-wide-rth-only-weakness",
@@ -406,54 +430,14 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.027"
-  },
-  {
-   "t": "2026-07-23T23:16:42.610324+00:00",
-   "hash": "9b3d1560",
-   "name": "zc-wasde-revision-prehour-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.781"
-  },
-  {
-   "t": "2026-07-23T23:16:12.782448+00:00",
-   "hash": "e3a7ce71",
-   "name": "mgc-margin-reduction-releveraging-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4666"
-  },
-  {
-   "t": "2026-07-23T23:12:45.746421+00:00",
-   "hash": "b767fac9",
-   "name": "mcl-consumer-hedger-cohort-post-earnings-reset",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.793"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "replication: mes-september-complex-wide-rth-only-weakness",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:38:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "xmkt-inverse-variance-exposure-scaling",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:38:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-storage-response-lag-monthly-mean-reversion",
     "stage": "dev3yr",
     "started": "2026-07-23T23:38:26Z",
     "state": "running"
@@ -571,8 +555,8 @@
   ],
   "funnel": {
    "idea": 12,
-   "registered": 179,
-   "dev3yr": 3,
+   "registered": 180,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -633,7 +617,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38874
+    "trials": 38876
    }
   ]
  },
@@ -707,8 +691,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 79,
-   "n_killed": 55,
+   "n_tested": 80,
+   "n_killed": 56,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1541,6 +1525,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-september-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Eleventh graduate, with a caveat: September RTH weakness (PF 1.51 / 1.405)",
+   "recommendation": "HOLD \u2014 passed every gate, but the evidence is weaker than the numbers look (engine's honest read)",
+   "evidence": "dev3yr: n=61, PF 1.51, $29.29/trade shorting MES day-sessions in September | robustness: SURVIVES | replication: n=61, PF 1.405 on MNQ",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "US equity indexes have historically been weak in September during regular trading hours. This shorts that window. It passed all three gates.",
+   "why": "Why the gates passed but the engine still hesitates: (1) a September seasonal in a 3-year window samples only THREE Septembers \u2014 n=61 trades but really 3 independent yearly events; (2) the replication ran on MNQ, which moves almost identically to MES day-to-day, so for a calendar effect the sibling test is nearly the same bet twice, not independent confirmation; (3) September weakness is a widely-published anomaly, which cuts both ways \u2014 real historical basis, but also heavily arbitraged. If you admit it, its bundle weight will be small either way. Waiting costs nothing: it stays a preserved candidate and the next real September is out-of-sample evidence for free.",
+   "steps": [
+    "Approve: joins the book despite the engine's hesitation (your call, like the RMA window)",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-23T23:42:30Z"
+  },
   {
    "id": "d-petrodollar-book-entry",
    "kind": "book_entry",
