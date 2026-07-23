@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:08:46Z",
+  "stamp": "2026-07-23T23:11:11Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1127,
-  "n_results": 1314,
-  "n_trials": 79179,
+  "n_registered": 1129,
+  "n_results": 1315,
+  "n_trials": 79180,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79179,
-   "registered": 1127,
-   "tested": 912,
+   "trials": 79180,
+   "registered": 1129,
+   "tested": 913,
    "passed": 170,
    "survived": 36,
    "replicated": 13,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:11:01.584492+00:00",
+   "hash": "a77e69ca",
+   "name": "mes-zn-1400-settlement-print-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.684"
+  },
+  {
+   "t": "2026-07-23T23:10:51.937067+00:00",
+   "hash": "b767fac9",
+   "name": "mcl-consumer-hedger-cohort-post-earnings-reset",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T23:03:42.636452+00:00",
    "hash": "27379561",
    "name": "sweep-8-volume-clock-participation",
@@ -414,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.799"
-  },
-  {
-   "t": "2026-07-23T22:36:07.532528+00:00",
-   "hash": "e8b9be34",
-   "name": "mes-eod-imbalance-dispersion-tail-overnight",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.6"
-  },
-  {
-   "t": "2026-07-23T22:34:05.519602+00:00",
-   "hash": "34e37c11",
-   "name": "mcl-roll-window-implied-spread-leg-print-contamination",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.982"
   }
  ],
  "pipeline": {
@@ -446,14 +446,6 @@
     "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-consumer-hedger-cohort-post-earnings-reset",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:08:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-zn-1400-settlement-print-crossmarket-stamp",
     "stage": "dev3yr",
     "started": "2026-07-23T23:08:46Z",
     "state": "running"
@@ -544,8 +536,8 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 178,
-   "dev3yr": 3,
+   "registered": 179,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -606,7 +598,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38861
+    "trials": 38862
    }
   ]
  },
@@ -631,8 +623,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 186,
-   "n_killed": 153,
+   "n_tested": 187,
+   "n_killed": 154,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
