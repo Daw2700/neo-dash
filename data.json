@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:44:20Z",
+  "stamp": "2026-07-23T05:44:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:43:58Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-market-order-protection-point-residual-snapback",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:44:22Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mnq-market-order-protection-point-residual-snapback",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 7,
     "idea": "m6e-wednesday-value-date-triple-swap-carry-adjustment",
@@ -496,7 +495,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
