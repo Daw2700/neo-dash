@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:27:13Z",
+  "stamp": "2026-07-23T12:37:28Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 942,
   "n_results": 1122,
@@ -412,19 +412,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T12:22:41Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-arbitrage-capacity-inverse-u-dislocation-flip",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "met-unhedgeable-halt-window-carry-premium",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mes-liquidity-withdrawal-surprise-vs-event-norm",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mgc-provider-overnight-inventory-pnl-liquidity-withdrawal",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "zs-hedge-supply-velocity-vs-level-asymmetry",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mym-cost-per-unit-beta-substitution-gate",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mng-closing-hedge-completion-share-overnight-handoff",
+    "source": "data-screen",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "zn-orderflow-volatility-not-level-liquidity-rent",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-gap-dose-response-continuation-with-capacity-break",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "m2k-overnight-session-discovery-share-regime-gap-quality",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mes-weekend-daycount-financing-accrual-wedge",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.32
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 136,
    "dev3yr": 0,
    "robustness": 0,
