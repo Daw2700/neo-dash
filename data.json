@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:52:51Z",
+  "stamp": "2026-07-23T06:52:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -431,6 +431,14 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T06:44:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "robustness: mes-quarter-start-institutional-rebalance-execution-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:52:53Z",
     "state": "running"
    }
   ],
