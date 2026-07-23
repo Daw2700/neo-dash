@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:00:06Z",
+  "stamp": "2026-07-23T10:05:13Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 891,
-  "n_results": 1074,
-  "n_trials": 49210,
+  "n_registered": 894,
+  "n_results": 1077,
+  "n_trials": 49213,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -193,6 +193,18 @@
    "usd_trade": 61.6
   },
   {
+   "id": "mgc-china-lpr-fix-evening-window",
+   "name": "mgc-china-lpr-fix-evening-window",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 27,
+   "wr": 0.5926,
+   "usd_mo": 8,
+   "pf": 1.887,
+   "usd_trade": 10.6
+  },
+  {
    "id": "mes-crude-liquidity-channel-risk-transfer",
    "name": "mes-crude-liquidity-channel-risk-transfer",
    "market": "MES",
@@ -295,25 +307,33 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mes-depth-consumption-print-size-range-forecast",
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 124,
-   "wr": 0.4355,
-   "usd_mo": 31,
-   "pf": 1.168,
-   "usd_trade": 9.1,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T10:04:06.029149+00:00",
+   "hash": "36f82387",
+   "name": "zc-clv-aggression-absorption",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.73"
+  },
+  {
+   "t": "2026-07-23T10:02:56.886461+00:00",
+   "hash": "1b6e6cb5",
+   "name": "mbt-settlement-window-marking-pressure-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.585"
+  },
+  {
+   "t": "2026-07-23T10:02:09.794157+00:00",
+   "hash": "25b44c27",
+   "name": "mgc-china-lpr-fix-evening-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.887"
+  },
   {
    "t": "2026-07-23T09:53:30.903347+00:00",
    "hash": "8f886902",
@@ -385,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-23T09:38:35.667535+00:00",
-   "hash": "0dc7b66d",
-   "name": "mym-minute-scale-variance-ratio-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.62"
-  },
-  {
-   "t": "2026-07-23T09:35:47.177476+00:00",
-   "hash": "4b1d1e15",
-   "name": "mbt-annualized-basis-leverage-crowding-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.048"
-  },
-  {
-   "t": "2026-07-23T09:35:16.717897+00:00",
-   "hash": "04db4a97",
-   "name": "zn-mts-supply-repricing-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.809"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-china-lpr-fix-evening-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:00:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-settlement-window-marking-pressure-repair",
     "stage": "dev3yr",
@@ -430,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-intrabar-aggression-uninformed-absorption",
     "stage": "dev3yr",
@@ -603,7 +591,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18608
+    "trials": 18611
    }
   ]
  },
@@ -656,7 +644,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 50,
+   "n_tested": 51,
    "n_killed": 43,
    "book_sleeves": [],
    "agents_now": []
@@ -692,8 +680,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 16,
+   "n_tested": 24,
+   "n_killed": 17,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
@@ -730,8 +718,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 46,
-   "n_killed": 40,
+   "n_tested": 47,
+   "n_killed": 41,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1184,6 +1172,26 @@
     }
    ]
   },
+  "mgc-china-lpr-fix-evening-window": {
+   "name": "mgc-china-lpr-fix-evening-window",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "China Loan Prime Rate is fixed at 09:15 Beijing time on the 20th of each month; the print lands ~20:00-23:00 ET the evening before (the 19th), a thin Globex window with only Asian desks marking gold, so SGE-side repricing of rate-sensitive physical/retail demand transmits into COMEX gold before US desks arrive to arbitrage it away.",
+   "metrics": {
+    "n": 27,
+    "wr": 0.5926,
+    "pf": 1.887,
+    "usd_mo": 8,
+    "usd_trade": 10.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T10:02:09.794157+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mes-crude-liquidity-channel-risk-transfer": {
    "name": "mes-crude-liquidity-channel-risk-transfer",
    "market": "MES",
@@ -1412,40 +1420,6 @@
    "sizing": {
     "growth_max": 2,
     "apex_max": 1
-   }
-  },
-  "mes-depth-consumption-print-size-range-forecast": {
-   "name": "mes-depth-consumption-print-size-range-forecast",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Contracts consumed per price-changing minute measures how much size the book absorbs before price moves; abnormally high print-size means large size-insensitive participants are still working an unfinished order, so tomorrow inherits an enlarged range that breakout/bracket sellers of optionality underprice.",
-   "metrics": {
-    "n": 124,
-    "wr": 0.4355,
-    "pf": 1.168,
-    "usd_mo": 31,
-    "usd_trade": 9.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T15:40:13.765212+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T15:47:15.796894+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T15:52:13.200686+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
    }
   }
  },
