@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:01:56Z",
+  "stamp": "2026-07-23T08:01:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T07:57:20Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-complex-breadth-riskbudget-funding-drain",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:01:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "met-complex-breadth-riskbudget-funding-drain",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mcl-beta-decoupling-idiosyncratic-flow-continuation",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 113,
    "dev3yr": 0,
    "robustness": 0,
