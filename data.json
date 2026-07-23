@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:00:06Z",
+  "stamp": "2026-07-23T17:00:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -440,18 +440,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T16:57:40Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-onetick-absorption-shelf-exhaustion-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:00:09Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "zn-onetick-absorption-shelf-exhaustion-continuation",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 11,
     "idea": "mnq-grid-coarseness-repricing-completion-lag",
@@ -481,7 +480,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 160,
    "dev3yr": 0,
    "robustness": 0,
