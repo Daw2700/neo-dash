@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:25:26Z",
+  "stamp": "2026-07-23T12:25:48Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 942,
   "n_results": 1121,
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-quarterly-vs-serial-expiry-dose-response",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:22:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-us-holiday-london-only-discovery-catchup",
     "stage": "dev3yr",
