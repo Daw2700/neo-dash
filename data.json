@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:08:36Z",
+  "stamp": "2026-07-23T17:08:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -427,14 +427,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-onetick-absorption-shelf-exhaustion-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:00:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-monthly-vwap-benchmark-completion-pressure",
     "stage": "dev3yr",
@@ -442,7 +434,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-buyback-constant-notional-lowadv-amplification",
     "stage": "dev3yr",
