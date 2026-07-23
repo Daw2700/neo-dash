@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:25:02Z",
+  "stamp": "2026-07-23T08:28:48Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 858,
-  "n_results": 1040,
-  "n_trials": 49176,
+  "n_registered": 860,
+  "n_results": 1041,
+  "n_trials": 49177,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T08:28:30.878224+00:00",
+   "hash": "359035db",
+   "name": "m2k-crsp-packeting-transition-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.389"
+  },
+  {
+   "t": "2026-07-23T08:28:09.684730+00:00",
+   "hash": "da95f05a",
+   "name": "zc-grain-stocks-continuation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T08:12:37.717022+00:00",
    "hash": "9085c4d9",
    "name": "met-staking-yield-frontend-lag",
@@ -393,36 +409,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T07:57:08.590796+00:00",
-   "hash": "6ea8c1a1",
-   "name": "m2k-housing-release-homebuilder-weight-channel",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.05"
-  },
-  {
-   "t": "2026-07-23T07:51:50.498854+00:00",
-   "hash": "04a21981",
-   "name": "m6e-tokyo-margin-liquidation-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.3344"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-crsp-packeting-transition-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:25:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-aramco-osp-announcement-window",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-grain-stocks-measurement-print-persistence",
     "stage": "dev3yr",
@@ -532,7 +524,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 114,
+   "registered": 115,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -594,7 +586,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18574
+    "trials": 18575
    }
   ]
  },
@@ -638,8 +630,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 35,
-   "n_killed": 25,
+   "n_tested": 36,
+   "n_killed": 26,
    "book_sleeves": [],
    "agents_now": []
   },
