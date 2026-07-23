@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:35:30Z",
+  "stamp": "2026-07-23T09:35:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:34:48Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-minute-scale-variance-ratio-regime",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:35:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mym-minute-scale-variance-ratio-regime",
-    "source": "data-screen",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 9,
     "idea": "mng-roll-seasonal-exposure-discontinuity-fade",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 121,
    "dev3yr": 0,
    "robustness": 0,
