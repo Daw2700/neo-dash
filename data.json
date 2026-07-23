@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:14:32Z",
+  "stamp": "2026-07-23T18:16:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1047,
-  "n_results": 1225,
-  "n_trials": 68295,
+  "n_results": 1226,
+  "n_trials": 68296,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68295,
+   "trials": 68296,
    "registered": 1047,
-   "tested": 846,
+   "tested": 847,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -332,6 +332,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:16:21.135449+00:00",
+   "hash": "a9bde86d",
+   "name": "mcl-brent-midland-inclusion-regime-shift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.785"
+  },
+  {
    "t": "2026-07-23T18:14:22.841140+00:00",
    "hash": "b4932cee",
    "name": "zc-elevator-storage-financing-rate-regime-carry-drag",
@@ -346,14 +354,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.2259"
-  },
-  {
-   "t": "2026-07-23T18:12:54.765094+00:00",
-   "hash": "a9bde86d",
-   "name": "mcl-brent-midland-inclusion-regime-shift",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T18:06:07.348662+00:00",
@@ -432,14 +432,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-brent-basket-wti-midland-inclusion-regime-shift",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:10:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-tokyo-afternoon-reopen-us-exposure-hedge-restart",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
     "stage": "dev3yr",
@@ -468,8 +460,8 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 165,
-   "dev3yr": 3,
+   "registered": 164,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -530,7 +522,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27974
+    "trials": 27975
    }
   ]
  },
@@ -604,8 +596,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 71,
-   "n_killed": 49,
+   "n_tested": 72,
+   "n_killed": 50,
    "book_sleeves": [],
    "agents_now": []
   },
