@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:02:29Z",
+  "stamp": "2026-07-23T16:06:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,32 +420,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZN",
-    "task": "robustness: zn-fr2004-dealer-inventory-capacity-state",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:46:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-lbma-lease-rate-physical-tightness-transmission",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:46:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZN",
-    "task": "replication: zn-fr2004-dealer-inventory-capacity-state",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:56:43Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 9,
@@ -1632,8 +1607,8 @@
  },
  "bundles": [
   {
-   "id": "Validated 8 + vix-reversion|apex150",
-   "name": "Validated 8 + vix-reversion",
+   "id": "Validated book + vix-reversion|apex150",
+   "name": "Validated book + vix-reversion",
    "plan": "apex150 (verified)",
    "provisional": true,
    "assumed_rules": false,
@@ -1733,8 +1708,8 @@
    "usd_mo_total": 12582
   },
   {
-   "id": "Validated 8 (the book)|apex150",
-   "name": "Validated 8 (the book)",
+   "id": "Validated book (all approved sleeves)|apex150",
+   "name": "Validated book (all approved sleeves)",
    "plan": "apex150 (verified)",
    "provisional": false,
    "assumed_rules": false,
@@ -1868,8 +1843,8 @@
    "usd_mo_total": 6255
   },
   {
-   "id": "Validated 8 + vix-reversion|growth",
-   "name": "Validated 8 + vix-reversion",
+   "id": "Validated book + vix-reversion|growth",
+   "name": "Validated book + vix-reversion",
    "plan": "tradeify-growth",
    "provisional": true,
    "assumed_rules": false,
@@ -1903,8 +1878,8 @@
    "usd_mo_total": 5630
   },
   {
-   "id": "Validated 8 (the book)|growth",
-   "name": "Validated 8 (the book)",
+   "id": "Validated book (all approved sleeves)|growth",
+   "name": "Validated book (all approved sleeves)",
    "plan": "tradeify-growth",
    "provisional": false,
    "assumed_rules": false,

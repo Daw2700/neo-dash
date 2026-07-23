@@ -211,8 +211,8 @@
    "pay_rate_1yr": 0.914
   },
   {
-   "id": "Validated 8 + vix-reversion|growth",
-   "name": "Validated 8 + vix-reversion",
+   "id": "Validated book + vix-reversion|growth",
+   "name": "Validated book + vix-reversion",
    "plan": "tradeify-growth",
    "provisional": true,
    "assumed_rules": false,
@@ -243,8 +243,8 @@
    "pay_rate_1yr": 0.944
   },
   {
-   "id": "Validated 8 (the book)|growth",
-   "name": "Validated 8 (the book)",
+   "id": "Validated book (all approved sleeves)|growth",
+   "name": "Validated book (all approved sleeves)",
    "plan": "tradeify-growth",
    "provisional": false,
    "assumed_rules": false,
@@ -303,8 +303,8 @@
    "pay_rate_1yr": 0.92
   },
   {
-   "id": "Validated 8 + vix-reversion|apex150",
-   "name": "Validated 8 + vix-reversion",
+   "id": "Validated book + vix-reversion|apex150",
+   "name": "Validated book + vix-reversion",
    "plan": "apex150 (verified)",
    "provisional": true,
    "assumed_rules": false,
@@ -425,8 +425,8 @@
    "pay_rate_1yr": 0.815
   },
   {
-   "id": "Validated 8 (the book)|apex150",
-   "name": "Validated 8 (the book)",
+   "id": "Validated book (all approved sleeves)|apex150",
+   "name": "Validated book (all approved sleeves)",
    "plan": "apex150 (verified)",
    "provisional": false,
    "assumed_rules": false,
