@@ -115,8 +115,8 @@ FREQ = [s for s in have if s in ("b3-monday-long", "b3-nr7-breakout", "b4-open-d
 XMKT = [s for s in have if s in ("b3-monday-long", "scan-mbt", "scan-mcl", "scan-mym",
         "b7-bond-flight-unwind", "rep-bondflight-mes", "b2-vix-reversion")]
 BUNDLES = [
-    ("Validated 8 (the book)", val),
-    ("Validated 8 + vix-reversion", val + ["b2-vix-reversion"]),
+    ("Validated book (all approved sleeves)", val),
+    ("Validated book + vix-reversion", val + ["b2-vix-reversion"]),
     ("Everything (full pool)", have),
     ("Risk-premium core (rare, high WR)", sorted(set(RARE) | set(_auto_rare))[:14]),
     ("Frequent-firing engine", sorted(set(FREQ) | set(_auto_freq))[:14]),
