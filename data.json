@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:27:45Z",
+  "stamp": "2026-07-23T02:27:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -404,27 +404,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T02:27:23Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "zs-rth-reopen-nonretouch-acceptance",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:27:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MBT",
+    "task": "mbt-uniform-volume-distribution-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:27:47Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zs-rth-reopen-nonretouch-acceptance",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 2,
-    "idea": "mbt-uniform-volume-distribution-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 3,
     "idea": "mes-structured-note-strike-setting-window",
@@ -517,7 +515,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 10,
    "registered": 99,
    "dev3yr": 0,
    "robustness": 0,
