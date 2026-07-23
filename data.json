@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:11:13Z",
+  "stamp": "2026-07-23T14:11:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -9,7 +9,7 @@
   "n_trials": 49287,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 8
+  "needs_attention_count": 9
  },
  "leaderboard": [
   {
@@ -1352,6 +1352,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-settlediv-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Ninth machine-discovered sleeve ready: settle-vs-tradable divergence (PF 1.151, n=288)",
+   "recommendation": "ADMIT to the book \u2014 high-frequency dual-leg (dev n=288, replication n=303 on MNQ)",
+   "evidence": "dev3yr: n=288, PF 1.151, $10.60/trade on MES | robustness: SURVIVES (plateau, placebos, ex-best-year) | replication: n=303, PF 1.122, $15.68/trade on MNQ \u2014 both legs profitable on 250+ trades each",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "The daily settlement print can diverge from the last tradeable price. When it does, the next session tends to close part of that wedge. Fires roughly twice a week \u2014 the largest-sample graduate in the book.",
+   "why": "It cleared every gate on genuinely large samples: 288 dev trades and 303 replication trades, where most candidates die on thin data. The edge per trade is modest (PF 1.151 / 1.122, both within ~0.05 of their bars) but it is measured with far more statistical weight than any rare-event sleeve \u2014 this is the trade-count profile the frequent-firing bar was designed for. Honest caveat: modest margins mean it is more sensitive to costs/slippage than the high-PF sleeves, worth remembering at sizing time.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-23T14:11:50Z"
+  },
   {
    "id": "d-crudechannel-book-entry",
    "kind": "book_entry",
