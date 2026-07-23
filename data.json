@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:06:26Z",
+  "stamp": "2026-07-23T20:11:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -327,7 +327,11 @@
    "wr": 0.429,
    "usd_mo": 16,
    "pf": 1.407,
-   "usd_trade": 16.0
+   "usd_trade": 16.0,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  ],
  "feed": [
@@ -437,30 +441,6 @@
     "stage": "idea-scout",
     "started": "2026-07-23T19:55:08Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "robustness: mcl-precautionary-demand-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:55:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-weekend-noneconomic-shock-flight-to-growth-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:55:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MES",
-    "task": "replication: mcl-precautionary-demand-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:01:53Z",
-    "state": "running"
    }
   ],
   "backlog": [
@@ -477,7 +457,7 @@
   "funnel": {
    "idea": 1,
    "registered": 167,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -1438,7 +1418,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  },
  "decisions": [
@@ -1944,40 +1928,6 @@
    "usd_mo_total": 4266
   },
   {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 3,
-    "b2-vix-reversion": 5,
-    "b3-preholiday-drift": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mcl-precautionary-demand-decay": 4,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 22,
-   "p_breach": 0.19,
-   "usd_mo": 773,
-   "usd_mo_5acct": 3865,
-   "pct_goal": 0.387,
-   "wr": 0.61,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2660,
-    "avg_lose": -1096
-   },
-   "first_pay_days": 101,
-   "pay_rate_1yr": 0.813,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 3865
-  },
-  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -2007,6 +1957,39 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3855
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 4,
+    "b2-opex-release": 5,
+    "b2-vix-reversion": 5,
+    "b3-preholiday-drift": 3,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 24,
+   "p_breach": 0.189,
+   "usd_mo": 694,
+   "usd_mo_5acct": 3470,
+   "pct_goal": 0.347,
+   "wr": 0.591,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2698,
+    "avg_lose": -1294
+   },
+   "first_pay_days": 99,
+   "pay_rate_1yr": 0.815,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 3470
   }
  ],
  "sizing_meta": {

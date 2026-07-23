@@ -142,12 +142,12 @@
     "max_micros": 8
    }
   },
-  "mcl-precautionary-demand-decay": {
+  "b2-opex-release": {
    "growth": {
-    "max_micros": 5
+    "max_micros": 8
    },
    "apex150": {
-    "max_micros": 4
+    "max_micros": 8
    }
   }
  },
@@ -320,37 +320,6 @@
    "pay_rate_1yr": 0.992
   },
   {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 3,
-    "b2-vix-reversion": 5,
-    "b3-preholiday-drift": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mcl-precautionary-demand-decay": 4,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 22,
-   "p_breach": 0.19,
-   "usd_mo": 773,
-   "usd_mo_5acct": 3865,
-   "pct_goal": 0.387,
-   "wr": 0.61,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2660,
-    "avg_lose": -1096
-   },
-   "first_pay_days": 101,
-   "pay_rate_1yr": 0.813
-  },
-  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -470,6 +439,36 @@
    },
    "first_pay_days": 53,
    "pay_rate_1yr": 0.986
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 4,
+    "b2-opex-release": 5,
+    "b2-vix-reversion": 5,
+    "b3-preholiday-drift": 3,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 24,
+   "p_breach": 0.189,
+   "usd_mo": 694,
+   "usd_mo_5acct": 3470,
+   "pct_goal": 0.347,
+   "wr": 0.591,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2698,
+    "avg_lose": -1294
+   },
+   "first_pay_days": 99,
+   "pay_rate_1yr": 0.815
   },
   {
    "id": "Frequent-firing engine|apex150",
