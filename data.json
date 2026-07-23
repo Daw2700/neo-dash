@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:01:32Z",
+  "stamp": "2026-07-23T15:01:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 989,
-  "n_results": 1167,
-  "n_trials": 49303,
+  "n_registered": 990,
+  "n_results": 1168,
+  "n_trials": 68238,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T15:01:46.809687+00:00",
+   "hash": "7f9de903",
+   "name": "sweep-6-reference-level-acceptance",
+   "status": "killed",
+   "kind": "sweep",
+   "detail": "9,216 configs"
+  },
+  {
+   "t": "2026-07-23T15:01:37.032482+00:00",
+   "hash": "f1afd1d3",
+   "name": "mes-simultaneous-roll-congestion-capacity-drain",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T15:01:19.088285+00:00",
    "hash": "9e775731",
    "name": "met-crossimpact-passenger-leg-decay",
@@ -363,14 +379,6 @@
    "detail": "PF 1.622"
   },
   {
-   "t": "2026-07-23T14:52:31.738084+00:00",
-   "hash": "7f9de903",
-   "name": "sweep-6-reference-level-acceptance",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
    "t": "2026-07-23T14:50:58.467292+00:00",
    "hash": "951f5bbf",
    "name": "mgc-trend-regime-age-crowding-exhaustion",
@@ -401,28 +409,12 @@
    "status": "result",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T14:43:27.280718+00:00",
-   "hash": "951f5bbf",
-   "name": "mgc-trend-regime-age-crowding-exhaustion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.08"
   }
  ],
  "pipeline": {
   "workers": [
    {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-23T14:49:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MES",
     "task": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-simultaneous-roll-congestion-capacity-drain",
     "stage": "dev3yr",
@@ -446,7 +438,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "ZC",
     "task": "zc-deadhour-move-in-spread-units-deferred-completion",
     "stage": "dev3yr",
@@ -538,7 +530,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18701
+    "trials": 27917
    }
   ]
  },
