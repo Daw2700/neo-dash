@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:03:29Z",
+  "stamp": "2026-07-23T23:03:53Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1127,
-  "n_results": 1313,
-  "n_trials": 71409,
+  "n_results": 1314,
+  "n_trials": 79179,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71409,
+   "trials": 79179,
    "registered": 1127,
-   "tested": 911,
+   "tested": 912,
    "passed": 170,
    "survived": 36,
    "replicated": 13,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:03:42.636452+00:00",
+   "hash": "27379561",
+   "name": "sweep-8-volume-clock-participation",
+   "status": "killed",
+   "kind": "sweep",
+   "detail": "7,776 configs"
+  },
+  {
    "t": "2026-07-23T22:56:19.180119+00:00",
    "hash": "e8b9be34",
    "name": "mes-eod-imbalance-dispersion-tail-overnight",
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T22:55:11.366137+00:00",
-   "hash": "27379561",
-   "name": "sweep-8-volume-clock-participation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T22:52:41.864792+00:00",
@@ -441,20 +441,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T22:51:29Z",
     "state": "running"
-   },
-   {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-23T22:51:29Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 179,
+   "registered": 178,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31085
+    "trials": 38861
    }
   ]
  },
