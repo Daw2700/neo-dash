@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:06:38Z",
+  "stamp": "2026-07-23T16:06:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,35 +420,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MBT",
+    "task": "mbt-stablecoin-net-mint-onramp-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:06:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNG",
+    "task": "mng-regulated-utility-mandated-hedge-program-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:06:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-etf-primary-market-creation-ap-overnight-hedge",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:06:39Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mbt-stablecoin-net-mint-onramp-lag",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 10,
-    "idea": "mng-regulated-utility-mandated-hedge-program-window",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 11,
-    "idea": "mnq-etf-primary-market-creation-ap-overnight-hedge",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "met-net-issuance-burn-regime-supply-state",
@@ -478,7 +476,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 3,
    "registered": 156,
    "dev3yr": 0,
    "robustness": 0,
