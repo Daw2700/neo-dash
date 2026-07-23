@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:14:57Z",
+  "stamp": "2026-07-23T13:15:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -431,6 +431,14 @@
     "task": "mes-weekend-daycount-financing-accrual-wedge",
     "stage": "dev3yr",
     "started": "2026-07-23T13:10:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MGC",
+    "task": "robustness: mgc-gap-dose-response-continuation-with-capacity-break",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:15:00Z",
     "state": "running"
    }
   ],
