@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:36:30Z",
+  "stamp": "2026-07-23T00:36:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -404,27 +404,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T00:34:04Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-statutory-fiscal-deadline-premium-release",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:36:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-tltro-repayment-settlement-liquidity-drain",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:36:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "zn-statutory-fiscal-deadline-premium-release",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.28
-   },
-   {
-    "rank": 8,
-    "idea": "m6e-tltro-repayment-settlement-liquidity-drain",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.25
-   },
    {
     "rank": 9,
     "idea": "mbt-difficulty-adjustment-miner-payout-clock",
@@ -463,7 +461,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 4,
    "registered": 92,
    "dev3yr": 0,
    "robustness": 0,
