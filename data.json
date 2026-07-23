@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:18:47Z",
+  "stamp": "2026-07-23T11:18:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:18:25Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-interprint-thursday-positioning-freeze",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:18:48Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mcl-interprint-thursday-positioning-freeze",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.34
-   },
    {
     "rank": 7,
     "idea": "mng-crude-lead-rth-only-divergence-reconvergence",
@@ -487,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
