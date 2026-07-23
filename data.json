@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:44:39Z",
+  "stamp": "2026-07-23T01:45:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 731,
-  "n_results": 894,
-  "n_trials": 30882,
+  "n_results": 895,
+  "n_trials": 30883,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T01:45:15.862469+00:00",
+   "hash": "23793bc8",
+   "name": "zs-export-sales-china-ratification",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.927"
+  },
+  {
    "t": "2026-07-23T01:44:28.197125+00:00",
    "hash": "372fb899",
    "name": "mes-preclosure-inventory-aversion-reversal-dose-response",
@@ -313,14 +321,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.198"
-  },
-  {
-   "t": "2026-07-23T01:44:24.618015+00:00",
-   "hash": "23793bc8",
-   "name": "zs-export-sales-china-ratification",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T01:43:00.923897+00:00",
@@ -399,14 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-export-sales-china-session-ratification",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:43:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-continuous-chart-roll-indicator-discontinuity",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-equity-overnight-overextrapolation-us-session-fade",
     "stage": "dev3yr",
@@ -489,7 +481,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 97,
+   "registered": 96,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -551,7 +543,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 46
+    "trials": 47
    }
   ]
  },
@@ -687,8 +679,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 10,
+   "n_tested": 14,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   }
