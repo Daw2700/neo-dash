@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:36:57Z",
+  "stamp": "2026-07-23T04:37:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 782,
-  "n_results": 954,
-  "n_trials": 39821,
+  "n_results": 955,
+  "n_trials": 39822,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:37:11.388147+00:00",
+   "hash": "bc19d77a",
+   "name": "m6e-post-fix-us-hours-uninformed-flow-absorption",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2632"
+  },
+  {
    "t": "2026-07-23T04:36:34.353103+00:00",
    "hash": "3451262d",
    "name": "xmkt-turb-mcl-repair",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1855"
-  },
-  {
-   "t": "2026-07-23T04:36:21.914643+00:00",
-   "hash": "bc19d77a",
-   "name": "m6e-post-fix-us-hours-uninformed-flow-absorption",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:34:57.823335+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-post-fix-us-hours-uninformed-flow-absorption",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:34:28Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-eigen-rotation-risk-model-staleness",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-china-session-metals-information-ratification",
     "stage": "dev3yr",
@@ -460,7 +452,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 107,
+   "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -522,7 +514,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8985
+    "trials": 8986
    }
   ]
  },
@@ -631,8 +623,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 35,
-   "n_killed": 34,
+   "n_tested": 36,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
