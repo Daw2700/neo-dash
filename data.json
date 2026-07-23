@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:14:04Z",
+  "stamp": "2026-07-23T10:17:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 898,
-  "n_results": 1080,
-  "n_trials": 49216,
+  "n_results": 1081,
+  "n_trials": 49217,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T10:14:59.559673+00:00",
+   "hash": "25b44c27",
+   "name": "mgc-china-lpr-fix-evening-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.17"
+  },
+  {
    "t": "2026-07-23T10:13:16.959520+00:00",
    "hash": "fe87e602",
    "name": "mgc-china-lpr-fix-evening-window-REPLICATION-1040",
@@ -401,36 +409,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T09:45:08.245280+00:00",
-   "hash": "7e8af789",
-   "name": "mng-eia-storage-revision-underreaction",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 2.065"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "robustness: mgc-china-lpr-fix-evening-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:05:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "xmkt-afternoon-liquidity-trough-coherent-impact-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:05:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "replication: mgc-china-lpr-fix-evening-window",
     "stage": "dev3yr",
@@ -585,7 +569,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18614
+    "trials": 18615
    }
   ]
  },
@@ -1188,6 +1172,11 @@
      "t": "2026-07-23T10:09:48.610703+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T10:14:59.559673+00:00",
+     "stage": "replication",
+     "verdict": "KILLED"
     }
    ],
    "sizing": {
