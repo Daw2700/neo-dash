@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:03:50Z",
+  "stamp": "2026-07-23T14:07:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 971,
-  "n_results": 1150,
-  "n_trials": 49286,
+  "n_results": 1151,
+  "n_trials": 49287,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T14:05:47.108332+00:00",
+   "hash": "5e5ccf35",
+   "name": "mes-settle-tradable-divergence",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.122"
+  },
+  {
    "t": "2026-07-23T14:02:33.428245+00:00",
    "hash": "c2c4acce",
    "name": "mes-settle-tradable-divergence-REPLICATION-1110",
@@ -397,36 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.7087"
-  },
-  {
-   "t": "2026-07-23T13:38:23.143203+00:00",
-   "hash": "bc5281cf",
-   "name": "mes-lag1-magnitude-channel-two-sided-bracket",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.733"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-settle-tradable-divergence",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:49:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "robustness: sil-impact-dispersion-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:52:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "replication: mes-settle-tradable-divergence",
     "stage": "dev3yr",
@@ -536,7 +520,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18684
+    "trials": 18685
    }
   ]
  },
