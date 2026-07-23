@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:15:56Z",
+  "stamp": "2026-07-23T05:15:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:10:13Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "robustness: mnq-propfirm-cohort-monthstart-stop-density",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:15:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-samuelson-maturity-regime-switch",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:15:57Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "zc-samuelson-maturity-regime-switch",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 13,
     "idea": "mgc-changepoint-in-volume-per-unit-range-participant-mix",
@@ -452,7 +459,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
