@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:38:28Z",
+  "stamp": "2026-07-23T21:38:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: zn-withheld-tax-receipts-labor-nowcast-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:25:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:25:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-convertible-issuance-delta-hedge-overnight-supply",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:34:09Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 6,
@@ -527,7 +502,7 @@
   "funnel": {
    "idea": 7,
    "registered": 172,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
