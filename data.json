@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:01:06Z",
+  "stamp": "2026-07-23T19:02:51Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1064,
-  "n_results": 1242,
-  "n_trials": 68312,
+  "n_results": 1243,
+  "n_trials": 71339,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68312,
+   "trials": 71339,
    "registered": 1064,
-   "tested": 862,
+   "tested": 863,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T19:02:34.402069+00:00",
+   "hash": "9e8f27a4",
+   "name": "sweep-7-session-profile-sequencing",
+   "status": "killed",
+   "kind": "sweep",
+   "detail": "3,024 configs"
+  },
+  {
    "t": "2026-07-23T19:00:09.141086+00:00",
    "hash": "6cd7c4c4",
    "name": "mbt-etf-inflow-underreaction-continuation",
@@ -358,14 +366,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.9734"
-  },
-  {
-   "t": "2026-07-23T18:55:10.669191+00:00",
-   "hash": "9e8f27a4",
-   "name": "sweep-7-session-profile-sequencing",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T18:52:36.185616+00:00",
@@ -435,14 +435,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-23T18:49:21Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -454,7 +446,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 166,
+   "registered": 165,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27991
+    "trials": 31015
    }
   ]
  },
