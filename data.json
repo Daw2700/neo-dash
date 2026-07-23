@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:56:37Z",
+  "stamp": "2026-07-23T04:56:40Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-outside-day-two-sided-stop-depletion-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:56:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-unfilled-gap-age-hazard-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:56:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-short-horizon-hedger-immediacy-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:56:40Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-outside-day-two-sided-stop-depletion-fade",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-unfilled-gap-age-hazard-decay",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 3,
-    "idea": "zs-short-horizon-hedger-immediacy-premium",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 4,
     "idea": "mcl-minute-run-completion-impact-decay",
@@ -542,7 +540,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
