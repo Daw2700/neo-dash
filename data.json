@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:50:51Z",
+  "stamp": "2026-07-23T21:51:54Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1109,
-  "n_results": 1297,
-  "n_trials": 71393,
+  "n_registered": 1110,
+  "n_results": 1298,
+  "n_trials": 71394,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71393,
-   "registered": 1109,
-   "tested": 899,
+   "trials": 71394,
+   "registered": 1110,
+   "tested": 900,
    "passed": 167,
    "survived": 36,
    "replicated": 13,
@@ -336,20 +336,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T21:51:39.856024+00:00",
+   "hash": "0ee721fa",
+   "name": "mes-insider-form4-breadth-capitulation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T21:50:57.405505+00:00",
+   "hash": "b5e35ee3",
+   "name": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T21:50:41.864882+00:00",
    "hash": "b60053a4",
    "name": "mym-rail-carloadings-industrial-nowcast-diffusion",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T21:50:07.238176+00:00",
-   "hash": "0ee721fa",
-   "name": "mes-insider-form4-breadth-capitulation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T21:45:16.624384+00:00",
@@ -422,14 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T21:27:20.799812+00:00",
-   "hash": "ed979524",
-   "name": "zn-withheld-tax-receipts-labor-nowcast-drift-ROBUSTNESS-1238",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -449,21 +449,13 @@
     "stage": "idea-scout",
     "started": "2026-07-23T21:48:26Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-insider-form4-breadth-capitulation-signal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:48:26Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 173,
-   "dev3yr": 2,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -524,7 +516,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31069
+    "trials": 31070
    }
   ]
  },
