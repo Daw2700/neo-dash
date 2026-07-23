@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:28:21Z",
+  "stamp": "2026-07-23T19:28:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T19:24:55Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-oil-shock-supply-demand-classification-equity-leg",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:28:26Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-oil-shock-supply-demand-classification-equity-leg",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 5,
     "idea": "mnq-underwater-duration-coiled-recovery-snapback",
@@ -535,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 167,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
