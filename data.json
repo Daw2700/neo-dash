@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:47:29Z",
+  "stamp": "2026-07-23T05:48:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 808,
-  "n_results": 982,
-  "n_trials": 39849,
+  "n_results": 983,
+  "n_trials": 39850,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:48:03.220718+00:00",
+   "hash": "7da28edd",
+   "name": "mnq-protection-point-snapback",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.597"
+  },
+  {
    "t": "2026-07-23T05:47:13.549659+00:00",
    "hash": "4869d28c",
    "name": "xmkt-post-settlement-breadth-coherence",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T05:46:41.794815+00:00",
-   "hash": "7da28edd",
-   "name": "mnq-protection-point-snapback",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T05:46:09.191633+00:00",
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-market-order-protection-point-residual-snapback",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:44:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-wednesday-value-date-triple-swap-carry-adjustment",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 110,
+   "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -549,7 +541,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9013
+    "trials": 9014
    }
   ]
  },
@@ -558,8 +550,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 121,
-   "n_killed": 74,
+   "n_tested": 122,
+   "n_killed": 75,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
