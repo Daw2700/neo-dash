@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:28:04Z",
+  "stamp": "2026-07-23T03:28:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,22 +419,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-crude-liquidity-channel-risk-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:15:34Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-price-vol-cojump-information-vs-flow-classifier",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:15:34Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: cojump-overnight-gate",
     "stage": "dev3yr",
