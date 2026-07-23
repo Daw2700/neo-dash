@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:40:10Z",
+  "stamp": "2026-07-23T09:41:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 886,
-  "n_results": 1069,
-  "n_trials": 49205,
+  "n_results": 1070,
+  "n_trials": 49206,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:41:13.426338+00:00",
+   "hash": "645f5287",
+   "name": "zs-speculative-oi-change-tsmom-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.969"
+  },
+  {
    "t": "2026-07-23T09:39:14.384945+00:00",
    "hash": "7b085561",
    "name": "mng-roll-seasonal-exposure-discontinuity-fade",
@@ -337,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.62"
-  },
-  {
-   "t": "2026-07-23T09:37:16.634365+00:00",
-   "hash": "645f5287",
-   "name": "zs-speculative-oi-change-tsmom-gate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T09:35:47.177476+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-speculative-oi-change-tsmom-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:34:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-eia-storage-revision-underreaction",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "recheck: mng-roll-seasonal-exposure-discontinuity-fade",
     "stage": "dev3yr",
@@ -460,7 +452,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 121,
+   "registered": 120,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -522,7 +514,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18603
+    "trials": 18604
    }
   ]
  },
@@ -658,8 +650,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 15,
+   "n_tested": 21,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   }
