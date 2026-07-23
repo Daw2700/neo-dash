@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:07:43Z",
+  "stamp": "2026-07-23T05:07:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:07:21Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-propfirm-cohort-monthstart-stop-density",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:07:45Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mnq-propfirm-cohort-monthstart-stop-density",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 11,
     "idea": "sil-retail-hours-unconfirmed-move-fade",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
