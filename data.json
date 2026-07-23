@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:28:50Z",
+  "stamp": "2026-07-23T23:33:34Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1140,
-  "n_results": 1326,
-  "n_trials": 79191,
+  "n_results": 1327,
+  "n_trials": 79192,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79191,
+   "trials": 79192,
    "registered": 1140,
    "tested": 924,
    "passed": 171,
-   "survived": 36,
+   "survived": 37,
    "replicated": 13,
    "book": 13
   }
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:29:35.979387+00:00",
+   "hash": "26584da7",
+   "name": "mes-september-complex-wide-rth-only-weakness",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T23:26:43.828152+00:00",
    "hash": "0f1f0890",
    "name": "ROBUSTNESS-BATTERY mes-september-complex-wide-rth-only-weakness",
@@ -422,26 +430,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.793"
-  },
-  {
-   "t": "2026-07-23T23:12:34.532292+00:00",
-   "hash": "0ded1235",
-   "name": "mes-btic-close-basis-hedge-transfer",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.609"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-price-weight-herfindahl-effective-breadth-variance-split",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:21:31Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -451,15 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-september-complex-wide-rth-only-weakness",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:22:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-september-complex-wide-rth-only-weakness",
     "stage": "dev3yr",
@@ -471,7 +455,7 @@
   "funnel": {
    "idea": 0,
    "registered": 179,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -532,7 +516,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38873
+    "trials": 38874
    }
   ]
  },
