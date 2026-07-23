@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:45:50Z",
+  "stamp": "2026-07-23T03:45:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T03:43:25Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MBT",
+    "task": "mbt-idiosyncratic-vs-common-illiquidity-split",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:45:53Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mbt-idiosyncratic-vs-common-illiquidity-split",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.43
-   },
    {
     "rank": 8,
     "idea": "mgc-globex-reopen-simultaneous-remark-overshoot",
@@ -487,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 105,
    "dev3yr": 0,
    "robustness": 0,
