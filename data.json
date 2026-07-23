@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:44:56Z",
+  "stamp": "2026-07-23T06:46:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 825,
-  "n_results": 1003,
-  "n_trials": 39870,
+  "n_results": 1004,
+  "n_trials": 39871,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T06:45:31.906409+00:00",
+   "hash": "c8a7c55e",
+   "name": "mym-volirreg-liquidity-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.13"
+  },
+  {
    "t": "2026-07-23T06:44:51.553666+00:00",
    "hash": "61e8dc49",
    "name": "mbt-natgas-hashprice-margin-squeeze",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.0897"
-  },
-  {
-   "t": "2026-07-23T06:44:43.957773+00:00",
-   "hash": "c8a7c55e",
-   "name": "mym-volirreg-liquidity-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T06:43:22.497224+00:00",
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-volume-irregularity-liquidity-uncertainty-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:43:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-scheduled-sovereign-rating-review-window",
     "stage": "dev3yr",
@@ -442,7 +434,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "MES",
     "task": "mes-quarter-start-institutional-rebalance-execution-window",
     "stage": "dev3yr",
@@ -453,7 +445,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 110,
+   "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -515,7 +507,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9034
+    "trials": 9035
    }
   ]
  },
@@ -550,8 +542,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 12,
+   "n_tested": 14,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
