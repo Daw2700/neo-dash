@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:42:15Z",
+  "stamp": "2026-07-23T04:44:40Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 785,
-  "n_results": 958,
-  "n_trials": 39825,
+  "n_registered": 787,
+  "n_results": 959,
+  "n_trials": 39826,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:43:57.526591+00:00",
+   "hash": "ffd724f3",
+   "name": "rank-effect-extreme",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.048"
+  },
+  {
+   "t": "2026-07-23T04:43:43.271832+00:00",
+   "hash": "992f94eb",
+   "name": "scout-54-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T04:41:58.558658+00:00",
    "hash": "a2d04ab0",
    "name": "zc-dispersion-gated-overnight-reversal",
@@ -393,22 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.105"
-  },
-  {
-   "t": "2026-07-23T04:26:25.515093+00:00",
-   "hash": "fd850e03",
-   "name": "same-slot-echo",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.901"
-  },
-  {
-   "t": "2026-07-23T04:25:46.727835+00:00",
-   "hash": "5608954e",
-   "name": "mes-covar-window-rolloff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.69"
   }
  ],
  "pipeline": {
@@ -420,20 +420,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T04:40:10Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-rank-effect-extreme-position-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:40:10Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 106,
+   "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8989
+    "trials": 8990
    }
   ]
  },
@@ -504,8 +496,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 118,
-   "n_killed": 72,
+   "n_tested": 119,
+   "n_killed": 73,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
