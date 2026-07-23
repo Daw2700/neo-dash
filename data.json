@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:33:41Z",
+  "stamp": "2026-07-23T16:37:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1018,
+  "n_registered": 1019,
   "n_results": 1198,
   "n_trials": 68268,
   "holdout_looks_spent": 0,
@@ -302,7 +302,11 @@
    "wr": 0.6875,
    "usd_mo": 232,
    "pf": 1.957,
-   "usd_trade": 521.7
+   "usd_trade": 521.7,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 1
+   }
   },
   {
    "id": "mgc-china-lpr-fix-evening-window",
@@ -322,6 +326,14 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T16:36:01.100963+00:00",
+   "hash": "3a05e6e4",
+   "name": "zn-stockbond-corr-regime-term-premium-drift-ROBUSTNESS-1153",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T16:29:47.391735+00:00",
    "hash": "422d0c89",
@@ -409,14 +421,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.912"
-  },
-  {
-   "t": "2026-07-23T16:08:00.357490+00:00",
-   "hash": "74a436b7",
-   "name": "mbt-stablecoin-net-mint-onramp-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
   }
  ],
  "pipeline": {
@@ -435,6 +439,14 @@
     "task": "zn-stockbond-corr-regime-term-premium-drift",
     "stage": "dev3yr",
     "started": "2026-07-23T16:26:41Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: zn-stockbond-corr-regime-term-premium-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:33:43Z",
     "state": "running"
    }
   ],
@@ -532,7 +544,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 157,
+   "registered": 158,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -1450,7 +1462,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 1
+   }
   },
   "mgc-china-lpr-fix-evening-window": {
    "name": "mgc-china-lpr-fix-evening-window",
@@ -1959,36 +1975,6 @@
    "usd_mo_total": 5630
   },
   {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-vix-reversion": 2,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 5,
-   "p_breach": 0.131,
-   "usd_mo": 237,
-   "usd_mo_5acct": 1185,
-   "pct_goal": 0.427,
-   "wr": 0.656,
-   "wr_month": 0.528,
-   "months": {
-    "win_per_yr": 6.3,
-    "lose_per_yr": 5.7,
-    "avg_win": 1400,
-    "avg_lose": -333
-   },
-   "first_pay_days": 138,
-   "pay_rate_1yr": 0.619,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 4266
-  },
-  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -2026,31 +2012,62 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b10-nagel-vix-reversal": 4,
-    "b2-opex-release": 5,
-    "b2-vix-reversion": 5,
+    "b10-nagel-vix-reversal": 3,
+    "b2-vix-reversion": 4,
     "b3-preholiday-drift": 3,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
+    "zn-fr2004-dealer-inventory-capacity-state": 2,
+    "zn-stockbond-corr-regime-term-premium-drift": 1
    },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
+   "total_micros": 18,
+   "p_breach": 0.193,
+   "usd_mo": 671,
+   "usd_mo_5acct": 3355,
+   "pct_goal": 0.336,
+   "wr": 0.629,
+   "wr_month": 0.667,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 2961,
+    "avg_lose": -1205
    },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815,
+   "first_pay_days": 97,
+   "pay_rate_1yr": 0.808,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3470
+   "usd_mo_total": 3355
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mgc-china-lpr-fix-evening-window": 3,
+    "zn-stockbond-corr-regime-term-premium-drift": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.183,
+   "usd_mo": 128,
+   "usd_mo_5acct": 640,
+   "pct_goal": 0.23,
+   "wr": 0.609,
+   "wr_month": 0.611,
+   "months": {
+    "win_per_yr": 7.3,
+    "lose_per_yr": 4.7,
+    "avg_win": 974,
+    "avg_lose": -597
+   },
+   "first_pay_days": 157,
+   "pay_rate_1yr": 0.462,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 2304
   }
  ],
  "sizing_meta": {
