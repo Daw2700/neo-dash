@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:05:28Z",
+  "stamp": "2026-07-23T13:05:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T12:54:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-orderflow-volatility-not-level-liquidity-rent",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:05:30Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-gap-dose-response-continuation-with-capacity-break",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:05:30Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "zn-orderflow-volatility-not-level-liquidity-rent",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 9,
-    "idea": "mgc-gap-dose-response-continuation-with-capacity-break",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 10,
     "idea": "m2k-overnight-session-discovery-share-regime-gap-quality",
@@ -470,7 +468,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 3,
    "registered": 138,
    "dev3yr": 0,
    "robustness": 0,
