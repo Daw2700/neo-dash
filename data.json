@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:09:10Z",
+  "stamp": "2026-07-23T02:12:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 740,
-  "n_results": 905,
-  "n_trials": 30893,
+  "n_registered": 743,
+  "n_results": 906,
+  "n_trials": 30894,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,12 +299,36 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T02:06:08.552525+00:00",
-   "hash": "fe7b4980",
-   "name": "mnq-volpeak-extreme-order",
+   "t": "2026-07-23T02:11:31.881905+00:00",
+   "hash": "2e7e8afd",
+   "name": "scout-51-screen",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T02:11:30.893673+00:00",
+   "hash": "97ae3e36",
+   "name": "m2k-quiet-session-onesided-flow",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T02:11:01.691753+00:00",
+   "hash": "16209d6d",
+   "name": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T02:09:32.771486+00:00",
+   "hash": "fe7b4980",
+   "name": "mnq-volpeak-extreme-order",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.16"
   },
   {
    "t": "2026-07-23T02:04:08.923418+00:00",
@@ -369,42 +393,10 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T01:54:41.038156+00:00",
-   "hash": "983a9b27",
-   "name": "mym-preopen-earnings-window-repricing-asymmetry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.856"
-  },
-  {
-   "t": "2026-07-23T01:51:14.561356+00:00",
-   "hash": "2c28d906",
-   "name": "mnq-roll-discontinuity-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.374"
-  },
-  {
-   "t": "2026-07-23T01:49:13.900136+00:00",
-   "hash": "bc44554e",
-   "name": "zn-offshore-riskon-coherence-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.763"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-volume-peak-vs-price-extreme-ordering-absorption",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:03:49Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-post-quiet-session-onesided-flow-asymmetry",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 99,
+   "registered": 101,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 57
+    "trials": 58
    }
   ]
  },
@@ -504,7 +496,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 113,
+   "n_tested": 114,
    "n_killed": 69,
    "book_sleeves": [
     "b3-nr7-breakout",
