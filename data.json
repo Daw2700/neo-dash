@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:23:35Z",
+  "stamp": "2026-07-23T13:29:10Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 958,
-  "n_results": 1138,
-  "n_trials": 49274,
+  "n_registered": 959,
+  "n_results": 1139,
+  "n_trials": 49275,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T13:27:34.579626+00:00",
+   "hash": "e051b57c",
+   "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T13:25:30.472552+00:00",
+   "hash": "d66499f6",
+   "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end-ROBUSTNESS-1098",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T13:20:10.800443+00:00",
    "hash": "e051b57c",
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
@@ -389,36 +405,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T12:57:48.059988+00:00",
-   "hash": "611c9a60",
-   "name": "mng-closing-hedge-completion-share-overnight-handoff-ROBUSTNESS-1090",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T12:52:46.559792+00:00",
-   "hash": "7840d8aa",
-   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T13:10:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MES",
     "task": "robustness: mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
     "stage": "dev3yr",
@@ -426,10 +418,119 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "zc-hedger-skew-supply-asymmetric-bracket",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 2,
+    "idea": "mes-lag1-magnitude-channel-two-sided-bracket",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 3,
+    "idea": "mes-release-flow-variance-collapse-impact-inflation-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-liquidity-tail-state-large-print-noninformative-fade",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-both-extremes-before-11-afternoon-acceptance-range-fade",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 6,
+    "idea": "mes-settle-vs-tradable-return-divergence-margin-channel",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 7,
+    "idea": "m2k-informedness-inverse-u-liquidity-provision-rent",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 8,
+    "idea": "sil-complex-impact-coefficient-dispersion-overextension",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 9,
+    "idea": "mym-fundamental-anchoring-erosion-liquidity-fragility",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 10,
+    "idea": "mcl-impact-law-regime-participant-sophistication",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 11,
+    "idea": "m6e-dealer-internalisation-capacity-externalisation-burst",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 12,
+    "idea": "met-realtime-impact-detection-parent-order-completion-fade",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.3
+   }
+  ],
   "funnel": {
-   "idea": 0,
-   "registered": 140,
+   "idea": 12,
+   "registered": 141,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -491,7 +592,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18672
+    "trials": 18673
    }
   ]
  },
@@ -1029,6 +1130,11 @@
      "t": "2026-07-23T13:20:10.800443+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T13:27:34.579626+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
