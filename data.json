@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:29:06Z",
+  "stamp": "2026-07-23T00:29:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -399,14 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-monthend-us-session-redemption-drag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:24:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: m2k-monthend-overnight-only-allocation-hedge",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-monthend-note-settlement-duration-supply",
     "stage": "dev3yr",
