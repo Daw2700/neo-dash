@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:43:28Z",
+  "stamp": "2026-07-23T17:43:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -440,18 +440,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T17:42:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-followon-offering-supply-overnight-dilution-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:43:31Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "m2k-followon-offering-supply-overnight-dilution-window",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.46
-   },
    {
     "rank": 6,
     "idea": "mgc-official-sector-purchase-pace-reporting-lag-state",
@@ -544,9 +543,9 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 10,
    "registered": 161,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
