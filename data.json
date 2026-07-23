@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:24:56Z",
+  "stamp": "2026-07-23T00:29:03Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 698,
-  "n_results": 857,
-  "n_trials": 30845,
+  "n_registered": 701,
+  "n_results": 860,
+  "n_trials": 30848,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -261,6 +261,18 @@
    "usd_trade": 30.0
   },
   {
+   "id": "m2k-monthend-overnight-only-allocation-hedge",
+   "name": "m2k-monthend-overnight-only-allocation-hedge",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 141,
+   "wr": 0.5461,
+   "usd_mo": 28,
+   "pf": 1.356,
+   "usd_trade": 7.2
+  },
+  {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -283,21 +295,33 @@
    "usd_mo": 8,
    "pf": 1.283,
    "usd_trade": 58.3
-  },
-  {
-   "id": "mes-funding-basis-stress-cheapening",
-   "name": "mes-funding-basis-stress-cheapening",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 72,
-   "wr": 0.5278,
-   "usd_mo": 31,
-   "pf": 1.273,
-   "usd_trade": 15.4
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T00:27:17.757070+00:00",
+   "hash": "f45fdd29",
+   "name": "met-monthend-us-session-redemption-drag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.593"
+  },
+  {
+   "t": "2026-07-23T00:26:45.428579+00:00",
+   "hash": "ab98bb65",
+   "name": "m2k-monthend-overnight-only-allocation-hedge",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.356"
+  },
+  {
+   "t": "2026-07-23T00:26:40.644978+00:00",
+   "hash": "9dd82224",
+   "name": "mes-buffer-etf-outcome-period-reset",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.44"
+  },
   {
    "t": "2026-07-23T00:16:16.846566+00:00",
    "hash": "3c72c870",
@@ -369,30 +393,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.346"
-  },
-  {
-   "t": "2026-07-23T00:00:44.125744+00:00",
-   "hash": "568a352d",
-   "name": "gsr-extreme-metal-substitution-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.011"
-  },
-  {
-   "t": "2026-07-23T00:00:38.563407+00:00",
-   "hash": "bf0545f8",
-   "name": "zn-weekend-safehaven-monday-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.846"
-  },
-  {
-   "t": "2026-07-22T23:59:48.360249+00:00",
-   "hash": "6c338812",
-   "name": "levetf-eod-convex-rebalance-amp",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.717"
   }
  ],
  "pipeline": {
@@ -401,22 +401,6 @@
     "agent": "tester-1",
     "market": "MET",
     "task": "met-monthend-us-session-redemption-drag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:24:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-buffer-etf-outcome-period-reset",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:24:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-monthend-overnight-only-allocation-hedge",
     "stage": "dev3yr",
     "started": "2026-07-23T00:24:56Z",
     "state": "running"
@@ -569,7 +553,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9
+    "trials": 12
    }
   ]
  },
@@ -593,8 +577,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 120,
-   "n_killed": 92,
+   "n_tested": 121,
+   "n_killed": 93,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -613,7 +597,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 24,
+   "n_tested": 25,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -669,8 +653,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 14,
-   "n_killed": 13,
+   "n_tested": 15,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1268,6 +1252,26 @@
     }
    ]
   },
+  "m2k-monthend-overnight-only-allocation-hedge": {
+   "name": "m2k-monthend-overnight-only-allocation-hedge",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Month-end allocation and index inflows into small caps cannot be sourced in the cash basket at the close without large impact, so the desk hedges the exposure in the overnight/pre-open futures window instead of at the MOC; the flow therefore appears entirely in the overnight leg (prior RTH close -> next RTH open), not in RTH, the opposite footprint of close-executed rebalancing.",
+   "metrics": {
+    "n": 141,
+    "wr": 0.5461,
+    "pf": 1.356,
+    "usd_mo": 28,
+    "usd_trade": 7.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T00:26:45.428579+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -1313,26 +1317,6 @@
    "verdict_history": [
     {
      "t": "2026-07-22T10:20:02.231812+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "mes-funding-basis-stress-cheapening": {
-   "name": "mes-funding-basis-stress-cheapening",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Index futures embed an implicit dealer financing/collateral leg (Baltussen, Terstegge & Whelan, \"The Derivative Payoff Bias\"); when dealer balance-sheet capacity is most constrained around calendar quarter-end regulatory reporting dates, repo/collateral funding is pulled from cash-futures basis arbitrageurs, transiently cheapening MES futures against fair value into the quarter-end and re-converging (richening back up) in the first sessions of the new quarter. The buyer of the cheapened future during the reversal leg is paid a balance-sheet-rental fee, not a directional forecast.",
-   "metrics": {
-    "n": 72,
-    "wr": 0.5278,
-    "pf": 1.273,
-    "usd_mo": 31,
-    "usd_trade": 15.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T05:57:32.220572+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
