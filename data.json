@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:23:48Z",
+  "stamp": "2026-07-23T11:24:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 922,
-  "n_results": 1103,
-  "n_trials": 49239,
+  "n_registered": 923,
+  "n_results": 1105,
+  "n_trials": 49241,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T11:24:39.159356+00:00",
+   "hash": "d0f44211",
+   "name": "mym-earnings-blackout-price-weight-sensitivity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T11:24:13.583568+00:00",
+   "hash": "fa7c2e56",
+   "name": "mng-crude-lead-rth-only-divergence-reconvergence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.389"
+  },
+  {
    "t": "2026-07-23T11:23:36.063298+00:00",
    "hash": "1154b4ae",
    "name": "sil-industrial-vs-monetary-session-attribution-conflict",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.754"
-  },
-  {
-   "t": "2026-07-23T11:22:53.766282+00:00",
-   "hash": "fa7c2e56",
-   "name": "mng-crude-lead-rth-only-divergence-reconvergence",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T11:21:52.674097+00:00",
@@ -401,40 +409,16 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T11:05:16.190528+00:00",
-   "hash": "7fd6bf6d",
-   "name": "ROBUSTNESS-BATTERY mes-bd4-inflow-exhaustion-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-crude-lead-rth-only-divergence-reconvergence",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:20:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-report-free-week-hedger-immediacy-discount",
     "stage": "dev3yr",
     "started": "2026-07-23T11:22:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MYM",
-    "task": "mym-earnings-blackout-vs-open-window-price-weight-sensitivity",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:23:48Z",
     "state": "running"
    }
   ],
@@ -451,7 +435,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 132,
+   "registered": 131,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -513,7 +497,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18637
+    "trials": 18639
    }
   ]
  },
@@ -593,8 +577,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 30,
-   "n_killed": 26,
+   "n_tested": 31,
+   "n_killed": 27,
    "book_sleeves": [],
    "agents_now": []
   },
