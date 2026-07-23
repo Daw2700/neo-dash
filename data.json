@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:41:00Z",
+  "stamp": "2026-07-23T22:41:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,6 +449,14 @@
     "stage": "dev3yr",
     "started": "2026-07-23T22:35:58Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-eod-imbalance-dispersion-tail-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:41:02Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -492,7 +500,7 @@
   "funnel": {
    "idea": 4,
    "registered": 176,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
