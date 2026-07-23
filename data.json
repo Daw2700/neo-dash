@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:58:09Z",
+  "stamp": "2026-07-23T14:58:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -444,18 +444,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T14:51:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-5",
+    "market": "MET",
+    "task": "met-crossimpact-passenger-leg-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T14:58:10Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "met-crossimpact-passenger-leg-decay",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 8,
     "idea": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
@@ -503,7 +502,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 150,
    "dev3yr": 0,
    "robustness": 0,
