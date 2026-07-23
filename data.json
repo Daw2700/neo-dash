@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:47:27Z",
+  "stamp": "2026-07-23T05:47:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:44:22Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-wednesday-value-date-triple-swap-carry-adjustment",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:47:29Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "m6e-wednesday-value-date-triple-swap-carry-adjustment",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 8,
     "idea": "mes-updown-minute-volume-asymmetry-absorption-carry",
@@ -487,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
