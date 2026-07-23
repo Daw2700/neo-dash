@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:55:40Z",
+  "stamp": "2026-07-23T23:03:29Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 1127,
-  "n_results": 1312,
-  "n_trials": 71408,
+  "n_results": 1313,
+  "n_trials": 71409,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71408,
+   "trials": 71409,
    "registered": 1127,
    "tested": 911,
    "passed": 170,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T22:56:19.180119+00:00",
+   "hash": "e8b9be34",
+   "name": "mes-eod-imbalance-dispersion-tail-overnight",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T22:55:11.366137+00:00",
    "hash": "27379561",
    "name": "sweep-8-volume-clock-participation",
@@ -422,26 +430,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.982"
-  },
-  {
-   "t": "2026-07-23T22:32:51.121269+00:00",
-   "hash": "93be4151",
-   "name": "mym-gamma-damping-deficit-residual",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-eod-imbalance-dispersion-tail-overnight",
-    "stage": "dev3yr",
-    "started": "2026-07-23T22:41:02Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -463,10 +455,10 @@
   "funnel": {
    "idea": 0,
    "registered": 179,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 14,
+   "book_candidate": 13,
    "golden_staged": 1
   },
   "throughput": [
@@ -524,7 +516,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31084
+    "trials": 31085
    }
   ]
  },
