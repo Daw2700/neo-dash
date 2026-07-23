@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:14:30Z",
+  "stamp": "2026-07-23T18:14:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -445,18 +445,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:14:07Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:14:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 14,
-    "idea": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.33
-   },
    {
     "rank": 15,
     "idea": "zs-renewable-diesel-crush-capacity-commissioning-step",
@@ -468,9 +467,9 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 165,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
