@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:20:12Z",
+  "stamp": "2026-07-23T11:20:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:18:48Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-crude-lead-rth-only-divergence-reconvergence",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:20:14Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mng-crude-lead-rth-only-divergence-reconvergence",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 8,
     "idea": "sil-industrial-vs-monetary-session-attribution-conflict",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
