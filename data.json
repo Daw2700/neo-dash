@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:51:30Z",
+  "stamp": "2026-07-23T22:52:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1125,
-  "n_results": 1311,
-  "n_trials": 71407,
+  "n_registered": 1126,
+  "n_results": 1312,
+  "n_trials": 71408,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71407,
-   "registered": 1125,
-   "tested": 910,
+   "trials": 71408,
+   "registered": 1126,
+   "tested": 911,
    "passed": 170,
    "survived": 36,
    "replicated": 13,
@@ -336,20 +336,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T22:52:41.864792+00:00",
+   "hash": "76e3ffa1",
+   "name": "met-asian-envelope-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.581"
+  },
+  {
+   "t": "2026-07-23T22:52:18.212234+00:00",
+   "hash": "ff3d2217",
+   "name": "met-mbt-gamma-damping-deficit-residual",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T22:51:12.996323+00:00",
    "hash": "aaedec5e",
    "name": "mgc-hedger-adjustment-state-drift",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.04"
-  },
-  {
-   "t": "2026-07-23T22:51:11.804824+00:00",
-   "hash": "76e3ffa1",
-   "name": "met-asian-envelope-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T22:45:45.536516+00:00",
@@ -422,14 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T22:21:29.421630+00:00",
-   "hash": "9fa5b1db",
-   "name": "ROBUSTNESS-BATTERY mes-vwap-occupation-displacement-asymmetry (candidate b314a86053efa51c)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -440,14 +440,6 @@
     "task": "robustness: mes-eod-imbalance-dispersion-tail-overnight",
     "stage": "dev3yr",
     "started": "2026-07-23T22:41:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MET",
-    "task": "met-asian-block-overnight-envelope-ownership-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T22:49:02Z",
     "state": "running"
    },
    {
@@ -467,7 +459,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "MET",
     "task": "met-listed-derivative-void-undamped-move-continuation-vs-mbt",
     "stage": "dev3yr",
@@ -479,7 +471,7 @@
   "funnel": {
    "idea": 0,
    "registered": 178,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -540,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31083
+    "trials": 31084
    }
   ]
  },
@@ -643,8 +635,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 25,
+   "n_tested": 27,
+   "n_killed": 26,
    "book_sleeves": [],
    "agents_now": []
   },
