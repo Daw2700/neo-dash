@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:48:01Z",
+  "stamp": "2026-07-23T21:48:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T21:38:56Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:48:02Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-rail-carloadings-industrial-nowcast-diffusion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:48:02Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.35
-   },
-   {
-    "rank": 11,
-    "idea": "mym-rail-carloadings-industrial-nowcast-diffusion",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.33
-   },
    {
     "rank": 12,
     "idea": "mes-insider-form4-breadth-capitulation-signal",
@@ -473,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 1,
    "registered": 172,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
