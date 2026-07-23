@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:21:28Z",
+  "stamp": "2026-07-23T23:21:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:20:46Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-price-weight-herfindahl-effective-breadth-variance-split",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:21:31Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mym-price-weight-herfindahl-effective-breadth-variance-split",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.24
-   },
    {
     "rank": 12,
     "idea": "mes-september-complex-wide-rth-only-weakness",
@@ -472,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 178,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
