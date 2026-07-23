@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:28:53Z",
+  "stamp": "2026-07-23T04:31:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 779,
-  "n_results": 950,
-  "n_trials": 39817,
+  "n_results": 951,
+  "n_trials": 39818,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:29:46.796126+00:00",
+   "hash": "7b5d7b72",
+   "name": "met-post-benchmark-afternoon-flow-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.128"
+  },
+  {
    "t": "2026-07-23T04:28:39.374899+00:00",
    "hash": "980d7cbb",
    "name": "mgc-invariance-elasticity-range-residual",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.752"
-  },
-  {
-   "t": "2026-07-23T04:28:29.258179+00:00",
-   "hash": "7b5d7b72",
-   "name": "met-post-benchmark-afternoon-flow-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:27:18.747143+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-post-benchmark-afternoon-flow-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:26:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "recheck: xmkt-turb-mcl-repair",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-continuous-component-crossmarket-morning-predictor",
     "stage": "dev3yr",
@@ -496,7 +488,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 107,
+   "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -558,7 +550,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8981
+    "trials": 8982
    }
   ]
  },
@@ -658,8 +650,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 15,
-   "n_killed": 14,
+   "n_tested": 16,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
