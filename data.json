@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:23:57Z",
+  "stamp": "2026-07-23T09:24:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:23:35Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-evening-globex-reopen-impulse-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:24:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zc-evening-globex-reopen-impulse-overshoot",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 5,
     "idea": "zn-monthly-treasury-statement-supply-path-repricing",
@@ -514,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 119,
    "dev3yr": 0,
    "robustness": 0,
