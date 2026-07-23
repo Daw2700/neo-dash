@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:42:45Z",
+  "stamp": "2026-07-23T17:43:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -427,14 +427,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-gdp-residual-seasonality-quarter-signed-surprise",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:39:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "xmkt-simultaneous-availability-hedging-leg-outage-premium",
     "stage": "dev3yr",
@@ -442,7 +434,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-tba-48hour-day-pool-allocation-clock",
     "stage": "dev3yr",
@@ -554,7 +546,7 @@
   "funnel": {
    "idea": 11,
    "registered": 161,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
