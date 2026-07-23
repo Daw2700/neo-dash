@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:45:03Z",
+  "stamp": "2026-07-23T12:54:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 947,
-  "n_results": 1127,
-  "n_trials": 49263,
+  "n_registered": 950,
+  "n_results": 1130,
+  "n_trials": 49266,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -297,19 +297,51 @@
    }
   },
   {
-   "id": "mes-liquidity-withdrawal-surprise-vs-event-norm",
-   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm",
-   "market": "MES",
+   "id": "mng-closing-hedge-completion-share-overnight-handoff",
+   "name": "mng-closing-hedge-completion-share-overnight-handoff",
+   "market": "MNG",
    "tier": "candidate",
    "pinned": false,
-   "n": 44,
-   "wr": 52.27,
-   "usd_mo": 7,
-   "pf": 1.247,
-   "usd_trade": 5.7
+   "n": 147,
+   "wr": 0.4898,
+   "usd_mo": 37,
+   "pf": 1.304,
+   "usd_trade": 9.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T12:52:46.559792+00:00",
+   "hash": "7840d8aa",
+   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T12:52:38.867410+00:00",
+   "hash": "13f12e09",
+   "name": "mym-cost-per-unit-beta-substitution-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.872"
+  },
+  {
+   "t": "2026-07-23T12:49:19.528680+00:00",
+   "hash": "17e8ad9e",
+   "name": "mng-closing-hedge-completion-share-overnight-handoff",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.304"
+  },
+  {
+   "t": "2026-07-23T12:46:49.900188+00:00",
+   "hash": "ba574416",
+   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm-ROBUSTNESS-1087",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T12:44:18.611253+00:00",
    "hash": "22da5ebe",
@@ -373,38 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.572"
-  },
-  {
-   "t": "2026-07-23T12:23:33.923661+00:00",
-   "hash": "fe4b1f1e",
-   "name": "scout-64-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T12:17:22.360992+00:00",
-   "hash": "f5c3ba92",
-   "name": "mcl-holiday-shifted-eia-print-day-relocation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T12:13:38.568666+00:00",
-   "hash": "2db6299e",
-   "name": "ROBUSTNESS-BATTERY mcl-holiday-shifted-eia-print-day-relocation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T12:09:47.055338+00:00",
-   "hash": "9ad71839",
-   "name": "m2k-floatrate-level-asymmetry",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -421,14 +421,6 @@
     "agent": "tester-2",
     "market": "MYM",
     "task": "mym-cost-per-unit-beta-substitution-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:45:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNG",
-    "task": "mng-closing-hedge-completion-share-overnight-handoff",
     "stage": "dev3yr",
     "started": "2026-07-23T12:45:03Z",
     "state": "running"
@@ -483,7 +475,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 136,
+   "registered": 137,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -545,7 +537,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18661
+    "trials": 18664
    }
   ]
  },
@@ -580,8 +572,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 17,
-   "n_killed": 15,
+   "n_tested": 18,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -625,7 +617,7 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 32,
+   "n_tested": 33,
    "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
@@ -1356,21 +1348,21 @@
     "apex_max": 3
    }
   },
-  "mes-liquidity-withdrawal-surprise-vs-event-norm": {
-   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm",
-   "market": "MES",
+  "mng-closing-hedge-completion-share-overnight-handoff": {
+   "name": "mng-closing-hedge-completion-share-overnight-handoff",
+   "market": "MNG",
    "tier": "candidate",
-   "mechanism": "Each recurring macro release type (CPI, FOMC, NFP) has its own stable typical pre-release liquidity withdrawal; we trade only when today withdrawal exceeds that release types own historical norm, betting the abnormally thinned book means a more forced marginal participant and a post-release move that persists rather than reverts.",
+   "mechanism": "Gas-day and cash-window hedgers must complete a fixed notional program by the MNG RTH close, so when the last 15 minutes carry an abnormally large share of the session volume the program was not finished and the residual completion flow hits the overnight Globex leg (continuation), while an abnormally small closing share means the imbalance was already fully absorbed intraday and the overnight leg reverts; we are paid by hedgers who must finish their program regardless of price.",
    "metrics": {
-    "n": 44,
-    "wr": 52.27,
-    "pf": 1.247,
-    "usd_mo": 7,
-    "usd_trade": 5.7
+    "n": 147,
+    "wr": 0.4898,
+    "pf": 1.304,
+    "usd_mo": 37,
+    "usd_trade": 9.0
    },
    "verdict_history": [
     {
-     "t": "2026-07-23T12:41:21.399545+00:00",
+     "t": "2026-07-23T12:49:19.528680+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
@@ -1590,66 +1582,32 @@
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
     "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-china-lpr-fix-evening-window": 3,
+    "b4-open-drive": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
     "b2-opex-release": 2,
     "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "b3-prior-high-break": 1
+    "mes-liquidity-withdrawal-surprise-vs-event-norm": 2
    },
    "total_micros": 16,
-   "p_breach": 0.194,
-   "usd_mo": 677,
-   "usd_mo_5acct": 3385,
-   "pct_goal": 1.219,
-   "wr": 0.524,
-   "wr_month": 0.778,
+   "p_breach": 0.2,
+   "usd_mo": 779,
+   "usd_mo_5acct": 3895,
+   "pct_goal": 1.402,
+   "wr": 0.519,
+   "wr_month": 0.861,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1508,
-    "avg_lose": -646
+    "win_per_yr": 10.3,
+    "lose_per_yr": 1.7,
+    "avg_win": 1503,
+    "avg_lose": -882
    },
-   "first_pay_days": 57,
-   "pay_rate_1yr": 0.982,
+   "first_pay_days": 53,
+   "pay_rate_1yr": 0.991,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 12186
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-opex-release": 2,
-    "b2-vix-reversion": 2,
-    "b3-prior-high-break": 1,
-    "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-china-lpr-fix-evening-window": 5
-   },
-   "total_micros": 14,
-   "p_breach": 0.199,
-   "usd_mo": 469,
-   "usd_mo_5acct": 2345,
-   "pct_goal": 0.844,
-   "wr": 0.525,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1164,
-    "avg_lose": -687
-   },
-   "first_pay_days": 68,
-   "pay_rate_1yr": 0.941,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 8442
+   "usd_mo_total": 14022
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1682,6 +1640,71 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 8280
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 1,
+    "b2-vix-reversion": 3,
+    "b3-tom-long": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mes-liquidity-withdrawal-surprise-vs-event-norm": 1
+   },
+   "total_micros": 8,
+   "p_breach": 0.198,
+   "usd_mo": 390,
+   "usd_mo_5acct": 1950,
+   "pct_goal": 0.702,
+   "wr": 0.565,
+   "wr_month": 0.694,
+   "months": {
+    "win_per_yr": 8.3,
+    "lose_per_yr": 3.7,
+    "avg_win": 1218,
+    "avg_lose": -470
+   },
+   "first_pay_days": 96,
+   "pay_rate_1yr": 0.87,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 7020
+  },
+  {
+   "id": "Frequent-firing engine|apex150",
+   "name": "Frequent-firing engine",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b3-monday-long": 1,
+    "b3-nr7-breakout": 1,
+    "b3-tom-long": 1,
+    "b4-open-drive": 1,
+    "scan-mbt": 2
+   },
+   "total_micros": 6,
+   "p_breach": 0.175,
+   "usd_mo": 382,
+   "usd_mo_5acct": 1910,
+   "pct_goal": 0.688,
+   "wr": 0.51,
+   "wr_month": 0.778,
+   "months": {
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 1040,
+    "avg_lose": -745
+   },
+   "first_pay_days": 79,
+   "pay_rate_1yr": 0.929,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 6876
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -1748,37 +1771,6 @@
    "usd_mo_total": 6696
   },
   {
-   "id": "Frequent-firing engine|apex150",
-   "name": "Frequent-firing engine",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b3-nr7-breakout": 1,
-    "b3-prior-high-break": 1,
-    "b3-tom-long": 1,
-    "scan-mbt": 2
-   },
-   "total_micros": 5,
-   "p_breach": 0.162,
-   "usd_mo": 306,
-   "usd_mo_5acct": 1530,
-   "pct_goal": 0.551,
-   "wr": 0.497,
-   "wr_month": 0.667,
-   "months": {
-    "win_per_yr": 8.0,
-    "lose_per_yr": 4.0,
-    "avg_win": 1136,
-    "avg_lose": -715
-   },
-   "first_pay_days": 84,
-   "pay_rate_1yr": 0.883,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 5508
-  },
-  {
    "id": "Everything (full pool)|growth",
    "name": "Everything (full pool)",
    "plan": "tradeify-growth",
@@ -1786,33 +1778,66 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
     "zs-china-state-reserve-auction-window": 1,
     "b3-tom-long": 1,
-    "b3-prior-high-break": 1
+    "mcl-closure-length-dose-response-reopen-overshoot": 1
    },
-   "total_micros": 11,
-   "p_breach": 0.2,
-   "usd_mo": 1056,
-   "usd_mo_5acct": 5280,
-   "pct_goal": 0.528,
-   "wr": 0.519,
+   "total_micros": 15,
+   "p_breach": 0.195,
+   "usd_mo": 1253,
+   "usd_mo_5acct": 6265,
+   "pct_goal": 0.626,
+   "wr": 0.553,
+   "wr_month": 0.889,
+   "months": {
+    "win_per_yr": 10.7,
+    "lose_per_yr": 1.3,
+    "avg_win": 2290,
+    "avg_lose": -1387
+   },
+   "first_pay_days": 88,
+   "pay_rate_1yr": 0.95,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 6265
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 2,
+    "b2-opex-release": 1,
+    "b2-vix-reversion": 3,
+    "b3-tom-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 14,
+   "p_breach": 0.198,
+   "usd_mo": 897,
+   "usd_mo_5acct": 4485,
+   "pct_goal": 0.449,
+   "wr": 0.577,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 2376,
-    "avg_lose": -1025
+    "avg_win": 2342,
+    "avg_lose": -1013
    },
-   "first_pay_days": 96,
-   "pay_rate_1yr": 0.921,
+   "first_pay_days": 100,
+   "pay_rate_1yr": 0.865,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 5280
+   "usd_mo_total": 4485
   },
   {
    "id": "Cross-market spread|growth",
@@ -1918,62 +1943,29 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b3-monday-long": 1,
+    "b3-monday-long": 2,
     "b3-nr7-breakout": 2,
-    "b3-prior-high-break": 1,
     "b3-tom-long": 2,
-    "b4-open-drive": 1,
-    "scan-mbt": 1
+    "b4-open-drive": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.185,
-   "usd_mo": 619,
-   "usd_mo_5acct": 3095,
-   "pct_goal": 0.309,
-   "wr": 0.495,
-   "wr_month": 0.694,
+   "total_micros": 7,
+   "p_breach": 0.184,
+   "usd_mo": 584,
+   "usd_mo_5acct": 2920,
+   "pct_goal": 0.292,
+   "wr": 0.522,
+   "wr_month": 0.778,
    "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1946,
-    "avg_lose": -993
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 1655,
+    "avg_lose": -1144
    },
-   "first_pay_days": 118,
-   "pay_rate_1yr": 0.815,
+   "first_pay_days": 121,
+   "pay_rate_1yr": 0.798,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3095
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "b3-prior-high-break": 1,
-    "b3-tom-long": 1,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.12,
-   "usd_mo": 493,
-   "usd_mo_5acct": 2465,
-   "pct_goal": 0.246,
-   "wr": 0.534,
-   "wr_month": 0.694,
-   "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1724,
-    "avg_lose": -783
-   },
-   "first_pay_days": 133,
-   "pay_rate_1yr": 0.757,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 2465
+   "usd_mo_total": 2920
   }
  ],
  "sizing_meta": {
