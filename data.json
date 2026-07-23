@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:57:12Z",
+  "stamp": "2026-07-23T16:57:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,32 +424,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-intraday-variation-margin-cycle-deleveraging",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:46:28Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-monthly-horizon-allocation-reversal-equity-only",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:46:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "recheck: mes-monthly-horizon-allocation-reversal-equity-only",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:53:05Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 7,
