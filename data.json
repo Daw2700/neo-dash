@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:52:53Z",
+  "stamp": "2026-07-23T22:55:40Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1126,
+  "n_registered": 1127,
   "n_results": 1312,
   "n_trials": 71408,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 6,
   "lifetime": {
    "trials": 71408,
-   "registered": 1126,
+   "registered": 1127,
    "tested": 911,
    "passed": 170,
    "survived": 36,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T22:55:11.366137+00:00",
+   "hash": "27379561",
+   "name": "sweep-8-volume-clock-participation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T22:52:41.864792+00:00",
    "hash": "76e3ffa1",
    "name": "met-asian-envelope-continuation",
@@ -422,14 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T22:24:56.979894+00:00",
-   "hash": "b314a860",
-   "name": "mes-vwap-occupation-displacement-asymmetry",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -457,21 +457,13 @@
     "stage": "sweep",
     "started": "2026-07-23T22:51:29Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MET",
-    "task": "met-listed-derivative-void-undamped-move-continuation-vs-mbt",
-    "stage": "dev3yr",
-    "started": "2026-07-23T22:51:29Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 178,
-   "dev3yr": 2,
+   "registered": 179,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
