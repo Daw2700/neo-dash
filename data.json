@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:27:26Z",
+  "stamp": "2026-07-23T04:28:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 778,
-  "n_results": 949,
-  "n_trials": 39816,
+  "n_registered": 779,
+  "n_results": 950,
+  "n_trials": 39817,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:28:39.374899+00:00",
+   "hash": "980d7cbb",
+   "name": "mgc-invariance-elasticity-range-residual",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.752"
+  },
+  {
+   "t": "2026-07-23T04:28:29.258179+00:00",
+   "hash": "7b5d7b72",
+   "name": "met-post-benchmark-afternoon-flow-continuation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T04:27:18.747143+00:00",
    "hash": "3451262d",
    "name": "xmkt-turb-mcl-repair",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.105"
-  },
-  {
-   "t": "2026-07-23T04:27:15.757230+00:00",
-   "hash": "980d7cbb",
-   "name": "mgc-invariance-elasticity-range-residual",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:26:25.515093+00:00",
@@ -401,28 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.073"
-  },
-  {
-   "t": "2026-07-23T03:49:35.339280+00:00",
-   "hash": "a8980ec7",
-   "name": "mgc-globex-reopen-remark-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.57"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-invariance-elasticity-range-residual",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:25:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-post-benchmark-afternoon-flow-continuation",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "recheck: xmkt-turb-mcl-repair",
     "stage": "dev3yr",
@@ -567,7 +559,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8980
+    "trials": 8981
    }
   ]
  },
@@ -620,8 +612,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 37,
+   "n_tested": 46,
+   "n_killed": 38,
    "book_sleeves": [],
    "agents_now": []
   },
