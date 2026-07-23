@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:40:26Z",
+  "stamp": "2026-07-23T05:40:29Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "mgc-liquidity-void-first-print-impact-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:40:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MYM",
+    "task": "mym-price-level-parsimony-absorption-release",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:40:29Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-single-minute-block-footprint-inventory-workout",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:40:29Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mgc-liquidity-void-first-print-impact-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mym-price-level-parsimony-absorption-release",
-    "source": "data-screen",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "m2k-single-minute-block-footprint-inventory-workout",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.46
-   },
    {
     "rank": 4,
     "idea": "xmkt-post-settlement-breadth-coherence-late-afternoon",
@@ -524,7 +522,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
