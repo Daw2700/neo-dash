@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:25:56Z",
+  "stamp": "2026-07-23T04:25:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T04:22:50Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-invariance-elasticity-range-residual",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:25:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mgc-invariance-elasticity-range-residual",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 5,
     "idea": "met-post-benchmark-afternoon-flow-continuation",
@@ -514,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
