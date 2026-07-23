@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:17:58Z",
+  "stamp": "2026-07-23T19:24:50Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,19 +433,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T18:56:33Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-conviction-close-next-rth-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mes-size-factor-overextension-leader-reversion",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 3,
+    "idea": "mes-cross-micro-return-dispersion-overpricing-derisk",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 4,
+    "idea": "mes-oil-shock-supply-demand-classification-equity-leg",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-underwater-duration-coiled-recovery-snapback",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 6,
+    "idea": "mcl-3day-selloff-capitulation-close-reversal",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 7,
+    "idea": "mes-cross-micro-skew-dispersion-crash-gate",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 8,
+    "idea": "mcl-precautionary-demand-premium-multiasset-decay",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-gold-oil-ratio-macro-rotation-reversion",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 10,
+    "idea": "mnq-weekend-noneconomic-shock-flight-to-growth-reversal",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 11,
+    "idea": "mbt-realized-kurtosis-jump-regime-reversal",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 12,
+    "idea": "mes-intraday-momentum-multi-anchor-composite",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 165,
    "dev3yr": 0,
    "robustness": 0,
