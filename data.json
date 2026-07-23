@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:10:55Z",
+  "stamp": "2026-07-23T18:14:04Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1044,
-  "n_results": 1223,
-  "n_trials": 68293,
+  "n_registered": 1047,
+  "n_results": 1224,
+  "n_trials": 68294,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68293,
-   "registered": 1044,
-   "tested": 844,
+   "trials": 68294,
+   "registered": 1047,
+   "tested": 845,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -332,6 +332,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:13:35.507327+00:00",
+   "hash": "04fcb3da",
+   "name": "mbt-utc-day-boundary-offshore-mark-nonalignment",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2259"
+  },
+  {
+   "t": "2026-07-23T18:13:33.731620+00:00",
+   "hash": "b4932cee",
+   "name": "zc-elevator-storage-financing-rate-regime-carry-drag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T18:12:54.765094+00:00",
+   "hash": "a9bde86d",
+   "name": "mcl-brent-midland-inclusion-regime-shift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T18:06:07.348662+00:00",
    "hash": "89a4879a",
    "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
@@ -402,30 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.742"
-  },
-  {
-   "t": "2026-07-23T17:48:00.797189+00:00",
-   "hash": "58ab4f74",
-   "name": "zn-tba-48hour-daypool-clock",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T17:45:12.001782+00:00",
-   "hash": "650a8410",
-   "name": "m2k-followon-offering-supply-overnight-dilution-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.755"
-  },
-  {
-   "t": "2026-07-23T17:42:45.665941+00:00",
-   "hash": "822180cf",
-   "name": "zn-gdp-residual-seasonality-quarter-signed-surprise",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.606"
   }
  ],
  "pipeline": {
@@ -442,14 +442,6 @@
     "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-brent-basket-wti-midland-inclusion-regime-shift",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:10:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MBT",
-    "task": "mbt-utc-day-boundary-offshore-mark-nonalignment",
     "stage": "dev3yr",
     "started": "2026-07-23T18:10:55Z",
     "state": "running"
@@ -486,8 +478,8 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 164,
-   "dev3yr": 3,
+   "registered": 166,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -548,7 +540,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27972
+    "trials": 27973
    }
   ]
  },
@@ -640,8 +632,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 17,
+   "n_tested": 25,
+   "n_killed": 18,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
