@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:22:43Z",
+  "stamp": "2026-07-23T11:23:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 921,
-  "n_results": 1102,
-  "n_trials": 49238,
+  "n_registered": 922,
+  "n_results": 1103,
+  "n_trials": 49239,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,9 +315,17 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T11:22:30.015406+00:00",
+   "t": "2026-07-23T11:23:36.063298+00:00",
    "hash": "1154b4ae",
    "name": "sil-industrial-vs-monetary-session-attribution-conflict",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.754"
+  },
+  {
+   "t": "2026-07-23T11:22:53.766282+00:00",
+   "hash": "fa7c2e56",
+   "name": "mng-crude-lead-rth-only-divergence-reconvergence",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -401,14 +409,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T11:05:15.891542+00:00",
-   "hash": "611516df",
-   "name": "mng-thin-book-preclose-impact-repair",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.512"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "SIL",
-    "task": "sil-industrial-vs-monetary-session-attribution-conflict",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:20:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-report-free-week-hedger-immediacy-discount",
     "stage": "dev3yr",
@@ -522,7 +514,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18636
+    "trials": 18637
    }
   ]
  },
@@ -584,8 +576,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 15,
-   "n_killed": 12,
+   "n_tested": 16,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
