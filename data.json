@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:42:43Z",
+  "stamp": "2026-07-23T17:42:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1034,
-  "n_results": 1214,
-  "n_trials": 68284,
+  "n_results": 1215,
+  "n_trials": 68285,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -327,20 +327,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T17:42:45.665941+00:00",
+   "hash": "822180cf",
+   "name": "zn-gdp-residual-seasonality-quarter-signed-surprise",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.606"
+  },
+  {
    "t": "2026-07-23T17:42:18.612106+00:00",
    "hash": "590e58f3",
    "name": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.318"
-  },
-  {
-   "t": "2026-07-23T17:42:05.046628+00:00",
-   "hash": "822180cf",
-   "name": "zn-gdp-residual-seasonality-quarter-signed-surprise",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T17:28:39.444179+00:00",
@@ -440,18 +440,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T17:39:57Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-tba-48hour-day-pool-allocation-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:42:45Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zn-tba-48hour-day-pool-allocation-clock",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.48
-   },
    {
     "rank": 5,
     "idea": "m2k-followon-offering-supply-overnight-dilution-window",
@@ -553,9 +552,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
-   "registered": 162,
-   "dev3yr": 2,
+   "idea": 11,
+   "registered": 161,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -616,7 +615,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27963
+    "trials": 27964
    }
   ]
  },
@@ -737,8 +736,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 77,
-   "n_killed": 66,
+   "n_tested": 78,
+   "n_killed": 67,
    "book_sleeves": [],
    "agents_now": []
   },
