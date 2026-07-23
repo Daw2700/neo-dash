@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:47:58Z",
+  "stamp": "2026-07-23T20:48:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1092,
-  "n_results": 1279,
-  "n_trials": 71375,
+  "n_results": 1280,
+  "n_trials": 71376,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71375,
+   "trials": 71376,
    "registered": 1092,
-   "tested": 885,
+   "tested": 886,
    "passed": 165,
    "survived": 35,
    "replicated": 13,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:48:07.729818+00:00",
+   "hash": "dd246320",
+   "name": "mng-ngl-fractionation-spread-substitution-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
    "t": "2026-07-23T20:47:34.592792+00:00",
    "hash": "ba8c8306",
    "name": "mgc-swiss-customs-flow-stamp",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.717"
-  },
-  {
-   "t": "2026-07-23T20:47:17.729818+00:00",
-   "hash": "dd246320",
-   "name": "mng-ngl-fractionation-spread-substitution-gate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T20:47:04.750462+00:00",
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-ngl-fractionation-spread-substitution-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:45:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-hpai-flock-depopulation-feed-demand-shock",
     "stage": "dev3yr",
@@ -472,8 +464,8 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 171,
-   "dev3yr": 3,
+   "registered": 170,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -534,7 +526,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31051
+    "trials": 31052
    }
   ]
  },
