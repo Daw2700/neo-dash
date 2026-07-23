@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:25:04Z",
+  "stamp": "2026-07-23T21:25:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,17 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 4,
-    "idea": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.42
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "replication: mgc-cross-asset-hedge-demand-absence-carry-drag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:25:05Z",
+    "state": "running"
    },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "robustness: zn-withheld-tax-receipts-labor-nowcast-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:25:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:25:05Z",
+    "state": "running"
+   }
+  ],
+  "backlog": [
    {
     "rank": 5,
     "idea": "m2k-convertible-issuance-delta-hedge-overnight-supply",
@@ -518,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 170,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
