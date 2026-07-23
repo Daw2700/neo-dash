@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:46:24Z",
+  "stamp": "2026-07-23T23:46:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,18 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:38:26Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "recheck: mnq-invvar-scaling",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:46:27Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "xmkt-scheduled-announcement-day-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:46:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "xmkt-scheduled-announcement-day-premium",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.54
-   },
    {
     "rank": 4,
     "idea": "xmkt-longhorizon-value-own-price-mean-reversion",
@@ -554,9 +561,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 11,
    "registered": 180,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
