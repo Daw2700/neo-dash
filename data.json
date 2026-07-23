@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:21:12Z",
+  "stamp": "2026-07-23T10:21:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T10:20:50Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-first-business-day-index-allocation-print",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:21:17Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mgc-first-business-day-index-allocation-print",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 9,
     "idea": "mnq-overnight-envelope-containment-deferred-transfer",
@@ -496,7 +495,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 124,
    "dev3yr": 0,
    "robustness": 0,
