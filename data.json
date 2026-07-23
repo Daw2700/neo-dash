@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:05:13Z",
+  "stamp": "2026-07-23T10:05:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "zc-intrabar-aggression-uninformed-absorption",
     "stage": "dev3yr",
     "started": "2026-07-23T10:00:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "robustness: mgc-china-lpr-fix-evening-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:05:15Z",
     "state": "running"
    }
   ],
