@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:24:55Z",
+  "stamp": "2026-07-23T11:24:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,21 +420,27 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:22:43Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 11,
-    "idea": "m2k-liquidation-order-first-sold-overshoot",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.25
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T11:24:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-liquidation-order-first-sold-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:24:57Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 131,
    "dev3yr": 0,
    "robustness": 0,
