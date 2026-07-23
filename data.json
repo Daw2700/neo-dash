@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:38:11Z",
+  "stamp": "2026-07-23T06:40:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 821,
-  "n_results": 998,
-  "n_trials": 39865,
+  "n_results": 999,
+  "n_trials": 39866,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T06:39:54.439495+00:00",
+   "hash": "b2ad5271",
+   "name": "mcl-weekend-rth-rotation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.131"
+  },
+  {
    "t": "2026-07-23T06:36:47.108636+00:00",
    "hash": "dd636e95",
    "name": "mes-bimodal-profile-unresolved-auction-resolution",
@@ -397,28 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.534"
-  },
-  {
-   "t": "2026-07-23T05:52:05.417017+00:00",
-   "hash": "c172e0cb",
-   "name": "m2k-finra-short-interest-publication-cover-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.527"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "recheck: mcl-weekend-rth-rotation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:37:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-natgas-hashprice-margin-squeeze-miner-supply",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-0830-print-truncated-by-scheduled-pause",
     "stage": "dev3yr",
@@ -536,7 +528,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9029
+    "trials": 9030
    }
   ]
  },
