@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:00:37Z",
+  "stamp": "2026-07-23T03:00:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -398,31 +398,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-23T02:40:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "robustness: mcl-api-eia-disagreement-stranded-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:49:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-noise-trader-share-lambda-recovery",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:53:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
+    "agent": "tester-1",
     "market": "MES",
     "task": "xmkt-open-print-acceptance-breadth-gate",
     "stage": "dev3yr",
