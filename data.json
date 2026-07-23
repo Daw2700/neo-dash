@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:43:22Z",
+  "stamp": "2026-07-23T13:44:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 965,
-  "n_results": 1144,
-  "n_trials": 49280,
+  "n_results": 1145,
+  "n_trials": 49281,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T13:44:11.314216+00:00",
+   "hash": "99959d4e",
+   "name": "mgc-both-extremes-range-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.87"
+  },
+  {
    "t": "2026-07-23T13:43:05.093498+00:00",
    "hash": "5e33bc6f",
    "name": "liq-tail-state-fade",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.995"
-  },
-  {
-   "t": "2026-07-23T13:42:23.849880+00:00",
-   "hash": "99959d4e",
-   "name": "mgc-both-extremes-range-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T13:41:40.682203+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-both-extremes-before-11-afternoon-acceptance-range-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:39:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-settle-vs-tradable-return-divergence-margin-channel",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-informedness-inverse-u-liquidity-provision-rent",
     "stage": "dev3yr",
@@ -483,7 +475,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 143,
+   "registered": 142,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -545,7 +537,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18678
+    "trials": 18679
    }
   ]
  },
@@ -569,8 +561,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 159,
-   "n_killed": 132,
+   "n_tested": 160,
+   "n_killed": 133,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
