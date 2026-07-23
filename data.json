@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:40:08Z",
+  "stamp": "2026-07-23T00:43:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 706,
-  "n_results": 866,
-  "n_trials": 30854,
+  "n_registered": 707,
+  "n_results": 868,
+  "n_trials": 30856,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 5
+  "needs_attention_count": 6
  },
  "leaderboard": [
   {
@@ -299,20 +299,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:41:31.127556+00:00",
+   "hash": "472a81f2",
+   "name": "zc-farm-cash-rent-duedate-liquidation-window",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.862"
+  },
+  {
+   "t": "2026-07-23T00:41:15.104116+00:00",
+   "hash": "eda3d99a",
+   "name": "zn-statutory-fiscal-deadline-premium-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.191"
+  },
+  {
+   "t": "2026-07-23T00:40:41.736221+00:00",
+   "hash": "48ed56c2",
+   "name": "rep-zc-farm-cash-rent-duedate-liquidation-window-zs",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T00:39:19.481010+00:00",
    "hash": "9dd25f37",
    "name": "m6e-tltro-repayment-settlement-liquidity-drain",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.608"
-  },
-  {
-   "t": "2026-07-23T00:38:49.695712+00:00",
-   "hash": "eda3d99a",
-   "name": "zn-statutory-fiscal-deadline-premium-release",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T00:37:03.049018+00:00",
@@ -377,36 +393,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.44"
-  },
-  {
-   "t": "2026-07-23T00:16:16.846566+00:00",
-   "hash": "3c72c870",
-   "name": "mcl-preweekend-overnight-riskpremium",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.559"
-  },
-  {
-   "t": "2026-07-23T00:14:57.011063+00:00",
-   "hash": "6b8006c0",
-   "name": "rep-mcl-preweekend-overnight-riskpremium-mng",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-statutory-fiscal-deadline-premium-release",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:36:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "replication: zc-farm-cash-rent-duedate-liquidation-window",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-difficulty-adjustment-miner-payout-clock",
     "stage": "dev3yr",
@@ -515,7 +507,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18
+    "trials": 20
    }
   ]
  },
@@ -633,8 +625,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 56,
-   "n_killed": 47,
+   "n_tested": 57,
+   "n_killed": 48,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1094,6 +1086,11 @@
      "t": "2026-07-23T00:37:03.049018+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T00:41:31.127556+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ]
   },
@@ -1291,6 +1288,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-cashrent-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Sixth machine-discovered sleeve ready: farm cash-rent liquidation window (PF 1.909)",
+   "recommendation": "ADMIT to the book \u2014 consistent dual-leg showing (dev PF 1.909, replication PF 1.862 on soybeans) with adequate samples",
+   "evidence": "dev3yr: n=30, PF 1.909, $61.65/trade on corn | robustness: SURVIVES | replication: n=30, PF 1.862, $115/trade on soybeans \u2014 near-identical edge on both grains",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "Around farm cash-rent due dates, farmers are forced sellers of grain regardless of price, and the strategy positions for that flow. A genuinely agricultural mechanism \u2014 the first candidate from the grains complex.",
+   "why": "The near-identical PF on corn AND soybeans (1.909 vs 1.862) is what a real forced-flow mechanism looks like \u2014 the payer is the farmer's lease calendar, not a curve fit. Samples are 2x the floor. Calendar-anchored, but its dates (rent due dates) share nothing with your equity calendar sleeves, so overlap risk is minimal.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-23T00:42:33Z"
+  },
   {
    "id": "d-rmawindow-book-entry",
    "kind": "book_entry",
