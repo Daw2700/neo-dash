@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:12:31Z",
+  "stamp": "2026-07-23T01:17:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 717,
-  "n_results": 879,
-  "n_trials": 30867,
+  "n_registered": 719,
+  "n_results": 882,
+  "n_trials": 30870,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T01:15:48.274284+00:00",
+   "hash": "f3a3751f",
+   "name": "zn-h41-reserve-release-thursday-late-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.038"
+  },
+  {
+   "t": "2026-07-23T01:15:12.958643+00:00",
+   "hash": "18420f62",
+   "name": "m6e-big-figure-barrier-defense-break",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.3945"
+  },
+  {
+   "t": "2026-07-23T01:14:51.156647+00:00",
+   "hash": "7a5dbd84",
+   "name": "mcl-post-washout-hedge-supply-ceiling",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T01:09:39.080378+00:00",
    "hash": "ed7f8b98",
    "name": "mbt-macro-decoupling-offshore-bid-overnight",
@@ -369,44 +393,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.622"
-  },
-  {
-   "t": "2026-07-23T00:47:45.561320+00:00",
-   "hash": "bf6ad9e5",
-   "name": "scout-49-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T00:47:04.227373+00:00",
-   "hash": "109efb3a",
-   "name": "zs-china-state-reserve-auction-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.658"
-  },
-  {
-   "t": "2026-07-23T00:46:36.999032+00:00",
-   "hash": "d3ac9060",
-   "name": "mbt-difficulty-adjustment-miner-payout-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mcl-post-washout-hedge-supply-ceiling",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:12:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-big-figure-barrier-defense-break-asymmetry",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-h41-reserve-release-thursday-late-window",
     "stage": "dev3yr",
@@ -542,7 +534,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31
+    "trials": 34
    }
   ]
  },
@@ -651,8 +643,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 32,
-   "n_killed": 31,
+   "n_tested": 33,
+   "n_killed": 32,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -660,8 +652,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 59,
-   "n_killed": 50,
+   "n_tested": 60,
+   "n_killed": 51,
    "book_sleeves": [],
    "agents_now": []
   },
