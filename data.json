@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:54:57Z",
+  "stamp": "2026-07-23T01:57:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 736,
-  "n_results": 899,
-  "n_trials": 30887,
+  "n_registered": 737,
+  "n_results": 901,
+  "n_trials": 30889,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,20 +299,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T01:57:18.757299+00:00",
+   "hash": "6299d924",
+   "name": "mbt-multiday-closure-no-overshoot",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T01:55:12.815978+00:00",
+   "hash": "ec760829",
+   "name": "zs-delivery-option-decay-ramp",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.069"
+  },
+  {
+   "t": "2026-07-23T01:55:04.814645+00:00",
+   "hash": "7b9d9616",
+   "name": "mbt-equity-overnight-overextrapolation-us-session-fade",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T01:54:41.038156+00:00",
    "hash": "983a9b27",
    "name": "mym-preopen-earnings-window-repricing-asymmetry",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.856"
-  },
-  {
-   "t": "2026-07-23T01:54:12.481075+00:00",
-   "hash": "ec760829",
-   "name": "zs-delivery-option-decay-ramp",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T01:51:14.561356+00:00",
@@ -377,44 +393,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T01:28:36.378267+00:00",
-   "hash": "8554e6c3",
-   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.507"
-  },
-  {
-   "t": "2026-07-23T01:26:41.792324+00:00",
-   "hash": "8554e6c3",
-   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.766"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mbt-equity-overnight-overextrapolation-us-session-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:51:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZS",
-    "task": "zs-short-delivery-option-decay-ramp-vs-cash-settled-control",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:51:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MBT",
     "task": "mbt-multiday-closure-known-target-remark-no-overshoot",
     "stage": "dev3yr",
@@ -515,7 +499,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 51
+    "trials": 53
    }
   ]
  },
@@ -651,7 +635,7 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 14,
+   "n_tested": 15,
    "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
