@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:40:11Z",
+  "stamp": "2026-07-23T17:42:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1032,
-  "n_results": 1213,
-  "n_trials": 68283,
+  "n_registered": 1034,
+  "n_results": 1214,
+  "n_trials": 68284,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -327,6 +327,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T17:42:18.612106+00:00",
+   "hash": "590e58f3",
+   "name": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.318"
+  },
+  {
+   "t": "2026-07-23T17:42:05.046628+00:00",
+   "hash": "822180cf",
+   "name": "zn-gdp-residual-seasonality-quarter-signed-surprise",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T17:28:39.444179+00:00",
    "hash": "79fc1626",
    "name": "zs-corn-limit-lock-displaced-hedge-substitution",
@@ -405,22 +421,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 2.062"
-  },
-  {
-   "t": "2026-07-23T17:00:09.807745+00:00",
-   "hash": "6bb1a09a",
-   "name": "mes-monthly-vwap-benchmark-completion-pressure",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.638"
-  },
-  {
-   "t": "2026-07-23T16:59:46.212500+00:00",
-   "hash": "8c147297",
-   "name": "m6e-monthend-corporate-remeasurement-trueup",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.6245"
   }
  ],
  "pipeline": {
@@ -437,14 +437,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "xmkt-simultaneous-availability-hedging-leg-outage-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:39:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZN",
-    "task": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T17:39:57Z",
     "state": "running"
@@ -562,8 +554,8 @@
   ],
   "funnel": {
    "idea": 12,
-   "registered": 161,
-   "dev3yr": 3,
+   "registered": 162,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -624,7 +616,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27962
+    "trials": 27963
    }
   ]
  },
@@ -745,8 +737,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 76,
-   "n_killed": 65,
+   "n_tested": 77,
+   "n_killed": 66,
    "book_sleeves": [],
    "agents_now": []
   },
