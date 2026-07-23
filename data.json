@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:07:53Z",
+  "stamp": "2026-07-23T09:13:33Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 874,
-  "n_results": 1056,
-  "n_trials": 49192,
+  "n_registered": 875,
+  "n_results": 1057,
+  "n_trials": 49193,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -139,6 +139,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mcl-inside-week-unresolved-positioning-carryover",
+   "name": "mcl-inside-week-unresolved-positioning-carryover",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 17,
+   "wr": 0.7647,
+   "usd_mo": 66,
+   "pf": 3.326,
+   "usd_trade": 140.5
   },
   {
    "id": "zc-rma-volatility-factor-five-day-window",
@@ -295,25 +307,17 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "zn-cash-market-closed-futures-open-asymmetry",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.8333,
-   "usd_mo": 18,
-   "pf": 6.676,
-   "usd_trade": 105.1,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T09:10:42.832140+00:00",
+   "hash": "93fd03fe",
+   "name": "mcl-inside-week-unresolved-positioning-carryover",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 3.326"
+  },
   {
    "t": "2026-07-23T09:03:15.038214+00:00",
    "hash": "69c4eaa4",
@@ -401,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.346"
-  },
-  {
-   "t": "2026-07-23T08:45:50.799950+00:00",
-   "hash": "3e759634",
-   "name": "mes-1256-mtm-placeholder-substitution-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.199"
   }
  ],
  "pipeline": {
@@ -419,14 +415,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T08:58:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-inside-week-unresolved-positioning-carryover",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:07:31Z",
     "state": "running"
    }
   ],
@@ -495,7 +483,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18590
+    "trials": 18591
    }
   ]
  },
@@ -566,7 +554,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 62,
+   "n_tested": 63,
    "n_killed": 45,
    "book_sleeves": [],
    "agents_now": []
@@ -952,6 +940,26 @@
     "apex_max": 2
    }
   },
+  "mcl-inside-week-unresolved-positioning-carryover": {
+   "name": "mcl-inside-week-unresolved-positioning-carryover",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "A week that trades entirely inside the prior week's RTH high/low fires no weekly-horizon trigger for the systematic cohort (weekly-refresh trend models, weekly option writers), so positioning and inventory carry forward unchanged instead of being reset by de-risking flow, letting the following week's move run unimpeded on MCL.",
+   "metrics": {
+    "n": 17,
+    "wr": 0.7647,
+    "pf": 3.326,
+    "usd_mo": 66,
+    "usd_trade": 140.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T09:10:42.832140+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "zc-rma-volatility-factor-five-day-window": {
    "name": "zc-rma-volatility-factor-five-day-window",
    "market": "ZC",
@@ -1304,40 +1312,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "zn-cash-market-closed-futures-open-asymmetry": {
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.8333,
-    "pf": 6.676,
-    "usd_mo": 18,
-    "usd_trade": 105.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:40:09.435772+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T10:46:10.359530+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T10:51:30.720138+00:00",
-     "stage": "replication",
-     "verdict": "FAIL"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
    }
   }
  },
