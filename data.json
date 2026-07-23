@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:37:35Z",
+  "stamp": "2026-07-23T15:37:57Z",
   "stale_after_min": 30,
-  "status": "d-eventfree-book-entry approve applied \u2014 mnq-event-free-day-flow-persistence admitted to the book (12 sleeves on the ledger); dashboard mirror + sizing recompute still pending for it, cash-rent, china-auction, crude-liquidity-channel and settle-divergence (d-settlediv-mirror-sync)",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1000,
   "n_results": 1179,
@@ -420,40 +420,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZN",
-    "task": "replication: zn-nth-weekday-institutional-process-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:24:52Z",
-    "state": "running"
-   },
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Second machine-discovered sleeve ready: ",
-    "stage": "decision",
-    "started": "2026-07-23T15:25:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-eia-refinery-utilization-subline-next-draw-underreaction",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:25:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZC",
-    "task": "zc-usda-export-cancellation-salience-asymmetry",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:33:43Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 4,
