@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:10:07Z",
+  "stamp": "2026-07-23T13:14:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 954,
-  "n_results": 1133,
-  "n_trials": 49269,
+  "n_registered": 956,
+  "n_results": 1136,
+  "n_trials": 49272,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -237,6 +237,18 @@
    }
   },
   {
+   "id": "mgc-gap-dose-response-continuation-with-capacity-break",
+   "name": "mgc-gap-dose-response-continuation-with-capacity-break",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 125,
+   "wr": 0.536,
+   "usd_mo": 62,
+   "pf": 1.444,
+   "usd_trade": 17.9
+  },
+  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -295,25 +307,41 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T13:13:49.857550+00:00",
+   "hash": "2c15eee4",
+   "name": "mes-weekend-daycount-financing-accrual-wedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.754"
+  },
+  {
+   "t": "2026-07-23T13:13:48.223302+00:00",
+   "hash": "4eaadcc5",
+   "name": "m2k-overnight-session-discovery-share-regime-gap-quality",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.954"
+  },
+  {
+   "t": "2026-07-23T13:11:13.895571+00:00",
+   "hash": "159e229a",
+   "name": "scout-65-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T13:11:07.195654+00:00",
+   "hash": "94384ffe",
+   "name": "mgc-gap-dose-response-continuation-with-capacity-break",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.444"
+  },
   {
    "t": "2026-07-23T13:09:53.056352+00:00",
    "hash": "4eaadcc5",
@@ -329,14 +357,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.57"
-  },
-  {
-   "t": "2026-07-23T13:09:24.652523+00:00",
-   "hash": "94384ffe",
-   "name": "mgc-gap-dose-response-continuation-with-capacity-break",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T13:01:29.830903+00:00",
@@ -385,42 +405,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T12:44:18.611253+00:00",
-   "hash": "22da5ebe",
-   "name": "mgc-inventory-pnl-gap-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.649"
-  },
-  {
-   "t": "2026-07-23T12:43:37.324121+00:00",
-   "hash": "9f69aeb6",
-   "name": "zs-hedge-supply-velocity-vs-level-asymmetry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.997"
-  },
-  {
-   "t": "2026-07-23T12:41:21.399545+00:00",
-   "hash": "7840d8aa",
-   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.2472"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-gap-dose-response-continuation-with-capacity-break",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:05:30Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -430,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "recheck: m2k-overnight-session-discovery-share-regime-gap-quality",
     "stage": "dev3yr",
@@ -438,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-weekend-daycount-financing-accrual-wedge",
     "stage": "dev3yr",
@@ -521,7 +509,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18667
+    "trials": 18670
    }
   ]
  },
@@ -545,8 +533,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 156,
-   "n_killed": 129,
+   "n_tested": 157,
+   "n_killed": 130,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -574,7 +562,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 54,
+   "n_tested": 55,
    "n_killed": 45,
    "book_sleeves": [],
    "agents_now": []
@@ -1200,6 +1188,26 @@
     "apex_max": 0
    }
   },
+  "mgc-gap-dose-response-continuation-with-capacity-break": {
+   "name": "mgc-gap-dose-response-continuation-with-capacity-break",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "Gold's overnight gaps are produced offshore by physical and real-rate repricing that NY continues to ratify during RTH, so continuation should rise monotonically with gap size until the absorbing capacity of NY liquidity is exceeded and the top bucket breaks down; this is an inventory-transfer effect, not a mined threshold.",
+   "metrics": {
+    "n": 125,
+    "wr": 0.536,
+    "pf": 1.444,
+    "usd_mo": 62,
+    "usd_trade": 17.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T13:11:07.195654+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1330,40 +1338,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
-   "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
    }
   }
  },
