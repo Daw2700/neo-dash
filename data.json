@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:17:37Z",
+  "stamp": "2026-07-23T16:17:59Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 1015,
   "n_results": 1194,
@@ -426,34 +426,10 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Borderline graduate: RMA crop-insurance ",
-    "stage": "decision",
-    "started": "2026-07-23T16:07:01Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-ecb-fed-balance-sheet-release-stagger",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:09:51Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-23T16:10:38Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "M2K",
-    "task": "m2k-smallcap-earnings-calendar-offset-risk-window",
-    "stage": "dev3yr",
     "started": "2026-07-23T16:10:38Z",
     "state": "running"
    }
