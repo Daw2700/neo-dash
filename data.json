@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:25:17Z",
+  "stamp": "2026-07-23T16:25:36Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -1406,9 +1406,9 @@
    "id": "d-golden-22452",
    "kind": "golden_test",
    "needs_attention": true,
-   "title": "GOLDEN TEST: Validated book (all approved sleeves) projects $12,222/mo",
+   "title": "GOLDEN TEST: Validated book (all approved sleeves) projects $13,230/mo",
    "recommendation": "APPROVE \u2014 clears the $10k/mo goal on verified rules, fully deployable",
-   "evidence": "18 x Apex, breach 18%, frozen at golden_1784822452.json",
+   "evidence": "18 x Apex, breach 18%, frozen at golden_1784823936.json (supersedes the earlier 12-sleeve freeze after your RMA approval)",
    "what_yes_means": "Spends one irreversible holdout look on data after 2025-03-01",
    "recap": "Runs the frozen bundle once on the untouched holdout data. Pass means it is real and paper trading becomes the next conversation.",
    "why": "Every number so far comes from the dev window. The holdout is the only data that can't have been overfit \u2014 one look, spent only when the projection already clears the goal.",
@@ -1419,7 +1419,7 @@
     "PASS -> bundle flagged paper-ready on the dashboard; FAIL -> back to the funnel, holdout look spent",
     "Nothing trades real or paper money either way without your further GO"
    ],
-   "staged": "2026-07-23T16:00:52Z"
+   "staged": "2026-07-23T16:25:36Z"
   },
   {
    "id": "d-wk10derisk-book-entry",
