@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:43:08Z",
+  "stamp": "2026-07-23T06:43:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 824,
-  "n_results": 1001,
-  "n_trials": 39868,
+  "n_results": 1002,
+  "n_trials": 39869,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T06:43:22.497224+00:00",
+   "hash": "b2f602fc",
+   "name": "zc-southamerican-season-price-leadership-handoff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.608"
+  },
+  {
    "t": "2026-07-23T06:42:36.441944+00:00",
    "hash": "61e8dc49",
    "name": "mbt-natgas-hashprice-margin-squeeze",
@@ -325,14 +333,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.904"
-  },
-  {
-   "t": "2026-07-23T06:41:54.636886+00:00",
-   "hash": "b2f602fc",
-   "name": "zc-southamerican-season-price-leadership-handoff",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T06:39:54.439495+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-southamerican-season-price-leadership-handoff",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:40:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "recheck: mbt-natgas-hashprice-margin-squeeze",
     "stage": "dev3yr",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MYM",
     "task": "mym-volume-irregularity-liquidity-uncertainty-premium",
     "stage": "dev3yr",
@@ -464,7 +456,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 110,
+   "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -526,7 +518,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9032
+    "trials": 9033
    }
   ]
  },
@@ -653,8 +645,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 41,
-   "n_killed": 35,
+   "n_tested": 42,
+   "n_killed": 36,
    "book_sleeves": [],
    "agents_now": []
   },
