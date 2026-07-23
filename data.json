@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:45:50Z",
+  "stamp": "2026-07-23T09:53:53Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 888,
-  "n_results": 1073,
-  "n_trials": 49209,
+  "n_registered": 891,
+  "n_results": 1074,
+  "n_trials": 49210,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:53:30.903347+00:00",
+   "hash": "8f886902",
+   "name": "scout-61b-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T09:50:29.480389+00:00",
+   "hash": "22a686b8",
+   "name": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.812"
+  },
+  {
+   "t": "2026-07-23T09:46:14.943219+00:00",
+   "hash": "da642742",
+   "name": "scout-61-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T09:45:08.245280+00:00",
    "hash": "7e8af789",
    "name": "mng-eia-storage-revision-underreaction",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.809"
-  },
-  {
-   "t": "2026-07-23T09:34:38.358478+00:00",
-   "hash": "272e6ca2",
-   "name": "m2k-open-hour-extreme-minute-artifact-retrace",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.883"
-  },
-  {
-   "t": "2026-07-23T09:29:03.134265+00:00",
-   "hash": "bcee80f1",
-   "name": "zc-evening-globex-reopen-impulse-overshoot",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.374"
-  },
-  {
-   "t": "2026-07-23T09:27:41.599351+00:00",
-   "hash": "272e6ca2",
-   "name": "m2k-open-hour-extreme-minute-artifact-retrace",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.978"
   }
  ],
  "pipeline": {
@@ -420,20 +420,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T09:45:25Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:45:25Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 120,
+   "registered": 122,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18607
+    "trials": 18608
    }
   ]
  },
@@ -519,8 +511,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 147,
-   "n_killed": 123,
+   "n_tested": 148,
+   "n_killed": 124,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
