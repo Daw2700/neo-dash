@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:01:56Z",
+  "stamp": "2026-07-23T15:02:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 990,
-  "n_results": 1168,
-  "n_trials": 68238,
+  "n_results": 1169,
+  "n_trials": 68239,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T15:02:06.711151+00:00",
+   "hash": "bf5ca9da",
+   "name": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.589"
+  },
+  {
    "t": "2026-07-23T15:01:46.809687+00:00",
    "hash": "7f9de903",
    "name": "sweep-6-reference-level-acceptance",
@@ -337,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.323"
-  },
-  {
-   "t": "2026-07-23T15:00:56.077368+00:00",
-   "hash": "bf5ca9da",
-   "name": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T15:00:28.806649+00:00",
@@ -416,14 +416,6 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:58:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-simultaneous-roll-congestion-capacity-drain",
     "stage": "dev3yr",
     "started": "2026-07-23T14:58:40Z",
@@ -438,7 +430,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-deadhour-move-in-spread-units-deferred-completion",
     "stage": "dev3yr",
@@ -468,7 +460,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 152,
+   "registered": 151,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -530,7 +522,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27917
+    "trials": 27918
    }
   ]
  },
@@ -554,8 +546,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 163,
-   "n_killed": 135,
+   "n_tested": 164,
+   "n_killed": 136,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
