@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:25:09Z",
+  "stamp": "2026-07-23T17:28:56Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1030,
-  "n_results": 1212,
-  "n_trials": 68282,
+  "n_registered": 1032,
+  "n_results": 1213,
+  "n_trials": 68283,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -327,6 +327,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T17:28:39.444179+00:00",
+   "hash": "79fc1626",
+   "name": "zs-corn-limit-lock-displaced-hedge-substitution",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.995"
+  },
+  {
+   "t": "2026-07-23T17:27:29.660231+00:00",
+   "hash": "7162f5a6",
+   "name": "scout-70-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T17:19:23.434738+00:00",
    "hash": "a722f1ba",
    "name": "mcl-energy-desk-shared-risk-budget-crowdout",
@@ -405,22 +421,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.6245"
-  },
-  {
-   "t": "2026-07-23T16:56:04.191148+00:00",
-   "hash": "9e497940",
-   "name": "mes-monthly-horizon-allocation-reversal-equity-only",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.091"
-  },
-  {
-   "t": "2026-07-23T16:55:23.811985+00:00",
-   "hash": "9e497940",
-   "name": "mes-monthly-horizon-allocation-reversal-equity-only",
-   "status": "intent only -- no data rea",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -432,20 +432,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T17:25:09Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZS",
-    "task": "zs-corn-limit-lock-displaced-hedge-substitution",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:25:09Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 160,
+   "registered": 161,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +499,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27961
+    "trials": 27962
    }
   ]
  },
@@ -649,8 +641,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 24,
-   "n_killed": 19,
+   "n_tested": 25,
+   "n_killed": 20,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
    ],
