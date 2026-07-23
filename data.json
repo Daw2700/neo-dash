@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:12:03Z",
+  "stamp": "2026-07-23T02:14:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 743,
-  "n_results": 906,
-  "n_trials": 30894,
+  "n_results": 908,
+  "n_trials": 30896,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -213,6 +213,18 @@
    "usd_trade": 144.4
   },
   {
+   "id": "m2k-quiet-session-onesided-flow",
+   "name": "m2k-quiet-session-onesided-flow",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 175,
+   "wr": 0.5371,
+   "usd_mo": 69,
+   "pf": 1.546,
+   "usd_trade": 14.2
+  },
+  {
    "id": "mcl-hurricane-supplyrisk-decay",
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -283,41 +295,29 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
-  },
-  {
-   "id": "mcl-closure-length-dose-response-reopen-overshoot",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 154,
-   "wr": 0.526,
-   "usd_mo": 61,
-   "pf": 1.325,
-   "usd_trade": 14.3
   }
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:12:48.873716+00:00",
+   "hash": "97ae3e36",
+   "name": "m2k-quiet-session-onesided-flow",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.546"
+  },
+  {
+   "t": "2026-07-23T02:12:09.512329+00:00",
+   "hash": "16209d6d",
+   "name": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.304"
+  },
+  {
    "t": "2026-07-23T02:11:31.881905+00:00",
    "hash": "2e7e8afd",
    "name": "scout-51-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T02:11:30.893673+00:00",
-   "hash": "97ae3e36",
-   "name": "m2k-quiet-session-onesided-flow",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T02:11:01.691753+00:00",
-   "hash": "16209d6d",
-   "name": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:09:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "MNQ",
     "task": "robustness: mnq-volpeak-extreme-order",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 101,
+   "registered": 99,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 58
+    "trials": 60
    }
   ]
  },
@@ -539,7 +531,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 25,
+   "n_tested": 26,
    "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
@@ -566,7 +558,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 50,
+   "n_tested": 51,
    "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
@@ -1112,6 +1104,26 @@
     }
    ]
   },
+  "m2k-quiet-session-onesided-flow": {
+   "name": "m2k-quiet-session-onesided-flow",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Following the calmest M2K sessions, systematic vol-target and short-vol supply sit at maximum size while discretionary demand is absent, leaving the small-cap book one-sided so any arriving flow moves price without a counterparty; tested with a mechanism control of matched quiet MES sessions, where the same vol-target cohort operates in a deeper book, to check whether the effect is M2K-specific microstructure or generic macro drift.",
+   "metrics": {
+    "n": 175,
+    "wr": 0.5371,
+    "pf": 1.546,
+    "usd_mo": 69,
+    "usd_trade": 14.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T02:12:48.873716+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-hurricane-supplyrisk-decay": {
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -1249,36 +1261,6 @@
     },
     {
      "t": "2026-07-22T07:46:52.300888+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
-   "metrics": {
-    "n": 154,
-    "wr": 0.526,
-    "pf": 1.325,
-    "usd_mo": 61,
-    "usd_trade": 14.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:10:08.535860+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T14:13:24.952332+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
     }
