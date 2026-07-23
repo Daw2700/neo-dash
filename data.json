@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:33:22Z",
+  "stamp": "2026-07-23T18:33:26Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "SIL",
+    "task": "sil-prehalt-final-hour-momentum-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:33:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-equalweight-rebalance-megacap-trim-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:33:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-regsho-ftd-t35-closeout-buyin-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:33:25Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "sil-prehalt-final-hour-momentum-drift",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 2,
-    "idea": "mes-equalweight-rebalance-megacap-trim-window",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.48
-   },
-   {
-    "rank": 3,
-    "idea": "m2k-regsho-ftd-t35-closeout-buyin-window",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 5,
     "idea": "mcl-gsci-index-roll-sunshine-crude-weight",
@@ -554,9 +552,9 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 165,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
