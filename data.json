@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:49:44Z",
+  "stamp": "2026-07-23T11:49:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:48:41Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-earnings-density-idiosyncratic-variance-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:49:47Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mes-earnings-density-idiosyncratic-variance-reversion",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 6,
     "idea": "mes-momentum-crash-bearstate-highvol-reversal",
@@ -505,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
