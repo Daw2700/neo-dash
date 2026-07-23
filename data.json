@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:21:17Z",
+  "stamp": "2026-07-23T10:28:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 898,
-  "n_results": 1081,
-  "n_trials": 49217,
+  "n_registered": 900,
+  "n_results": 1082,
+  "n_trials": 49218,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -237,6 +237,18 @@
    }
   },
   {
+   "id": "mgc-first-business-day-index-allocation-print",
+   "name": "mgc-first-business-day-index-allocation-print",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.5429,
+   "usd_mo": 20,
+   "pf": 1.543,
+   "usd_trade": 20.1
+  },
+  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -295,25 +307,25 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T10:23:20.915483+00:00",
+   "hash": "609dfa02",
+   "name": "mgc-first-business-day-index-allocation-print",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.543"
+  },
+  {
+   "t": "2026-07-23T10:23:02.749628+00:00",
+   "hash": "4d8d63c0",
+   "name": "mym-pw-closing-impact-residual",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T10:14:59.559673+00:00",
    "hash": "25b44c27",
@@ -393,22 +405,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T09:50:29.480389+00:00",
-   "hash": "22a686b8",
-   "name": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.812"
-  },
-  {
-   "t": "2026-07-23T09:46:14.943219+00:00",
-   "hash": "da642742",
-   "name": "scout-61-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -427,14 +423,6 @@
     "task": "mym-price-weighted-closing-impact-residual",
     "stage": "dev3yr",
     "started": "2026-07-23T10:20:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-first-business-day-index-allocation-print",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:21:17Z",
     "state": "running"
    }
   ],
@@ -496,7 +484,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 124,
+   "registered": 125,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -558,7 +546,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18615
+    "trials": 18616
    }
   ]
  },
@@ -611,7 +599,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 51,
+   "n_tested": 52,
    "n_killed": 43,
    "book_sleeves": [],
    "agents_now": []
@@ -1237,6 +1225,26 @@
     "apex_max": 0
    }
   },
+  "mgc-first-business-day-index-allocation-print": {
+   "name": "mgc-first-business-day-index-allocation-print",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "Commodity-index and gold-ETF cash allocations are struck on the first business day of the month and are calendar-mandated and price-insensitive, so the flow arrives as a participation spike rather than as information, producing a price move that is a liquidity concession paid to whoever supplies the other side.",
+   "metrics": {
+    "n": 35,
+    "wr": 0.5429,
+    "pf": 1.543,
+    "usd_mo": 20,
+    "usd_trade": 20.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T10:23:20.915483+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1367,40 +1375,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
-   "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
    }
   }
  },
