@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:46:45Z",
+  "stamp": "2026-07-23T15:56:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1003,
-  "n_results": 1183,
-  "n_trials": 68253,
+  "n_registered": 1006,
+  "n_results": 1186,
+  "n_trials": 68256,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -26,6 +26,54 @@
    "sizing": {
     "growth_max": 8,
     "apex_max": 6
+   }
+  },
+  {
+   "id": "zc-farm-cash-rent-duedate-liquidation-window",
+   "name": "zc-farm-cash-rent-duedate-liquidation-window",
+   "market": "ZC",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 30,
+   "wr": 0.5667,
+   "usd_mo": 51,
+   "pf": 1.909,
+   "usd_trade": 61.6,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
+  },
+  {
+   "id": "mes-crude-liquidity-channel-risk-transfer",
+   "name": "mes-crude-liquidity-channel-risk-transfer",
+   "market": "MES",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 55,
+   "wr": 0.4727,
+   "usd_mo": 61,
+   "pf": 1.831,
+   "usd_trade": 40.2,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
+  },
+  {
+   "id": "zs-china-state-reserve-auction-window",
+   "name": "zs-china-state-reserve-auction-window",
+   "market": "ZS",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 108,
+   "wr": 0.5185,
+   "usd_mo": 433,
+   "pf": 1.658,
+   "usd_trade": 144.4,
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 0
    }
   },
   {
@@ -109,6 +157,22 @@
    }
   },
   {
+   "id": "mnq-event-free-day-flow-persistence",
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 675,
+   "wr": 0.5481,
+   "usd_mo": 563,
+   "pf": 1.368,
+   "usd_trade": 30.0,
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 1
+   }
+  },
+  {
    "id": "b3-preholiday-drift",
    "name": "b3-preholiday-drift",
    "market": "MNQ",
@@ -139,6 +203,18 @@
     "growth_max": 3,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mes-settle-tradable-divergence",
+   "name": "mes-settle-tradable-divergence",
+   "market": "MES",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 288,
+   "wr": 0.4931,
+   "usd_mo": 85,
+   "pf": 1.151,
+   "usd_trade": 10.6
   },
   {
    "id": "mcl-inside-week-unresolved-positioning-carryover",
@@ -178,7 +254,11 @@
    "wr": 0.6875,
    "usd_mo": 152,
    "pf": 2.615,
-   "usd_trade": 343.0
+   "usd_trade": 343.0,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 2
+   }
   },
   {
    "id": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
@@ -205,22 +285,6 @@
    "usd_trade": 48.9
   },
   {
-   "id": "zc-farm-cash-rent-duedate-liquidation-window",
-   "name": "zc-farm-cash-rent-duedate-liquidation-window",
-   "market": "ZC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 30,
-   "wr": 0.5667,
-   "usd_mo": 51,
-   "pf": 1.909,
-   "usd_trade": 61.6,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 4
-   }
-  },
-  {
    "id": "mgc-china-lpr-fix-evening-window",
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -234,38 +298,6 @@
    "sizing": {
     "growth_max": 8,
     "apex_max": 8
-   }
-  },
-  {
-   "id": "mes-crude-liquidity-channel-risk-transfer",
-   "name": "mes-crude-liquidity-channel-risk-transfer",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 55,
-   "wr": 0.4727,
-   "usd_mo": 61,
-   "pf": 1.831,
-   "usd_trade": 40.2,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
-  },
-  {
-   "id": "zs-china-state-reserve-auction-window",
-   "name": "zs-china-state-reserve-auction-window",
-   "market": "ZS",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 108,
-   "wr": 0.5185,
-   "usd_mo": 433,
-   "pf": 1.658,
-   "usd_trade": 144.4,
-   "sizing": {
-    "growth_max": 1,
-    "apex_max": 0
    }
   },
   {
@@ -283,41 +315,41 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "b3-tom-long",
-   "name": "b3-tom-long",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 144,
-   "wr": 0.576,
-   "usd_mo": 185,
-   "pf": 1.399,
-   "usd_trade": 46.1,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
-  },
-  {
-   "id": "mnq-event-free-day-flow-persistence",
-   "name": "mnq-event-free-day-flow-persistence",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 675,
-   "wr": 0.5481,
-   "usd_mo": 563,
-   "pf": 1.368,
-   "usd_trade": 30.0,
-   "sizing": {
-    "growth_max": 1,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T15:51:56.862488+00:00",
+   "hash": "422d0c89",
+   "name": "zn-fr2004-dealer-inventory-capacity-state",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T15:51:22.363587+00:00",
+   "hash": "34c7665c",
+   "name": "mgc-lbma-lease-rate-physical-tightness-transmission",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.852"
+  },
+  {
+   "t": "2026-07-23T15:49:52.847817+00:00",
+   "hash": "36285256",
+   "name": "zs-brl-producer-revenue-incentive-selling",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T15:48:51.619869+00:00",
+   "hash": "3e1dcc33",
+   "name": "zn-fr2004-dealer-inventory-capacity-state-ROBUSTNESS-1140",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T15:42:44.699710+00:00",
    "hash": "06c2fb56",
@@ -381,38 +413,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.861"
-  },
-  {
-   "t": "2026-07-23T15:27:19.405549+00:00",
-   "hash": "64808704",
-   "name": "zn-nth-weekday-institutional-process-clock-REPLICATION-1133",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T15:18:11.519352+00:00",
-   "hash": "4d1cf52c",
-   "name": "zn-nth-weekday-institutional-process-clock",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T15:16:09.060194+00:00",
-   "hash": "f66aaacc",
-   "name": "scout-68b-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T15:13:57.590168+00:00",
-   "hash": "6df5f117",
-   "name": "zn-nth-weekday-institutional-process-clock-ROBUSTNESS-1132",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -431,14 +431,6 @@
     "task": "mgc-lbma-lease-rate-physical-tightness-transmission",
     "stage": "dev3yr",
     "started": "2026-07-23T15:46:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "zs-brl-producer-revenue-incentive-selling",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:46:45Z",
     "state": "running"
    }
   ],
@@ -500,7 +492,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 154,
+   "registered": 155,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -562,7 +554,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27932
+    "trials": 27935
    }
   ]
  },
@@ -577,6 +569,7 @@
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
     "b3-monday-long",
+    "mnq-event-free-day-flow-persistence",
     "b3-preholiday-drift",
     "b4-open-drive"
    ],
@@ -589,7 +582,9 @@
    "n_tested": 166,
    "n_killed": 138,
    "book_sleeves": [
-    "mes-gold-overnight-macro-signal-open-continuation"
+    "mes-crude-liquidity-channel-risk-transfer",
+    "mes-gold-overnight-macro-signal-open-continuation",
+    "mes-settle-tradable-divergence"
    ],
    "agents_now": []
   },
@@ -615,8 +610,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 56,
-   "n_killed": 46,
+   "n_tested": 57,
+   "n_killed": 47,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -691,7 +686,9 @@
    "status": "active",
    "n_tested": 52,
    "n_killed": 46,
-   "book_sleeves": [],
+   "book_sleeves": [
+    "zc-farm-cash-rent-duedate-liquidation-window"
+   ],
    "agents_now": []
   },
   {
@@ -700,7 +697,9 @@
    "status": "active",
    "n_tested": 24,
    "n_killed": 19,
-   "book_sleeves": [],
+   "book_sleeves": [
+    "zs-china-state-reserve-auction-window"
+   ],
    "agents_now": []
   }
  ],
@@ -737,6 +736,126 @@
    "sizing": {
     "growth_max": 8,
     "apex_max": 6
+   }
+  },
+  "zc-farm-cash-rent-duedate-liquidation-window": {
+   "name": "zc-farm-cash-rent-duedate-liquidation-window",
+   "market": "ZC",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "US cash farm rent is contractually due on fixed calendar dates (primary instalment March 1, second instalment November 1, per Midwest cash-rent literature e.g. Iowa State Extension / USDA ERS EIB-219) and farmers holding stored grain must raise cash by those dates regardless of price, producing concentrated forced commercial selling in the sessions leading into the deadline; the buyer of that inventory is compensated with a price discount, so ZC should drift down into each due date.",
+   "metrics": {
+    "n": 30,
+    "wr": 0.5667,
+    "pf": 1.909,
+    "usd_mo": 51,
+    "usd_trade": 61.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T00:32:12.294893+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T00:37:03.049018+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T00:41:31.127556+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
+  },
+  "mes-crude-liquidity-channel-risk-transfer": {
+   "name": "mes-crude-liquidity-channel-risk-transfer",
+   "market": "MES",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Crude oil is the dominant SOURCE of intraday liquidity spillover across futures, and that liquidity channel is separate from the return channel: when WTI's price-impact coefficient (Amihud illiquidity) spikes, dealers' balance-sheet capacity for commodity-flow risk-bearing is constrained, and that same constraint reprices equity index risk with a one-session lag because the same dealer balance sheets intermediate both books; whoever supplies equity-index liquidity the NEXT session is paid a liquidity-provision premium, which shows up as a next-session down-drift in MES that is a supply/liquidity effect, not a directional crude-return effect (MCL's own return tails give only -6bp/-4bp vs MES -16.5bp/base +2.2bp on the illiquidity-conditioned cut). Per Miao & Yang (JFM 2026), commonality in intraday futures liquidity is supply-side driven and liquidity spillovers do not mirror return spillovers -- this candidate trades that spillover directionally: SHORT MES the session after MCL prints unusually high illiquidity.",
+   "metrics": {
+    "n": 55,
+    "wr": 0.4727,
+    "pf": 1.831,
+    "usd_mo": 61,
+    "usd_trade": 40.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T03:19:39.732176+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T03:32:12.086722+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T03:37:38.155216+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
+  },
+  "zs-china-state-reserve-auction-window": {
+   "name": "zs-china-state-reserve-auction-window",
+   "market": "ZS",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Sinograin/state-reserve rotation auctions for soybeans and oilseeds are scheduled events that either withdraw supply from or release supply into the domestic Chinese market on a known day; board crush and export-basis participants must adjust hedges into that announced date, so risk transfers on a schedule rather than on news, producing hedge-flow pressure in the sessions leading into the recurring auction date.",
+   "metrics": {
+    "n": 108,
+    "wr": 0.5185,
+    "pf": 1.658,
+    "usd_mo": 433,
+    "usd_trade": 144.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T00:47:04.227373+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T00:52:34.124878+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T00:54:37.701842+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 0
    }
   },
   "scan-mbt": {
@@ -939,6 +1058,46 @@
     "apex_max": 5
    }
   },
+  "mnq-event-free-day-flow-persistence": {
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "On days with no scheduled macro release (no FOMC/CPI on the calendar), intraday price movement is driven by inventory and order-flow imbalance rather than information, so the first-60-minute directional displacement reflects a liquidity-provider inventory imbalance that must keep being paid for through the rest of the session; on scheduled-event days an information shock resets order books and kills that persistence, so the edge should only appear when the macro calendar is empty.",
+   "metrics": {
+    "n": 675,
+    "wr": 0.5481,
+    "pf": 1.368,
+    "usd_mo": 563,
+    "usd_trade": 30.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:36:35.002815+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T07:42:14.432674+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
+   },
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 1
+   }
+  },
   "b3-preholiday-drift": {
    "name": "b3-preholiday-drift",
    "market": "MNQ",
@@ -1017,6 +1176,42 @@
    "sizing": {
     "growth_max": 3,
     "apex_max": 2
+   }
+  },
+  "mes-settle-tradable-divergence": {
+   "name": "mes-settle-tradable-divergence",
+   "market": "MES",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Variation margin and fund NAVs are struck off the RTH-close (settle proxy) while a flat-overnight participant only captures the open-to-open return; on days where settle-to-settle and open-to-open returns disagree in sign, the forced position adjustment implied by the settle-based return lands in the following RTH session, so taking that side captures the unwind.",
+   "metrics": {
+    "n": 288,
+    "wr": 0.4931,
+    "pf": 1.151,
+    "usd_mo": 85,
+    "usd_trade": 10.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T13:45:47.923471+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T13:56:40.915434+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T14:05:47.108332+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
    }
   },
   "mcl-inside-week-unresolved-positioning-carryover": {
@@ -1100,8 +1295,17 @@
      "t": "2026-07-23T15:41:45.183523+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T15:51:56.862488+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 2
+   }
   },
   "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end": {
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
@@ -1163,40 +1367,6 @@
     }
    ]
   },
-  "zc-farm-cash-rent-duedate-liquidation-window": {
-   "name": "zc-farm-cash-rent-duedate-liquidation-window",
-   "market": "ZC",
-   "tier": "candidate",
-   "mechanism": "US cash farm rent is contractually due on fixed calendar dates (primary instalment March 1, second instalment November 1, per Midwest cash-rent literature e.g. Iowa State Extension / USDA ERS EIB-219) and farmers holding stored grain must raise cash by those dates regardless of price, producing concentrated forced commercial selling in the sessions leading into the deadline; the buyer of that inventory is compensated with a price discount, so ZC should drift down into each due date.",
-   "metrics": {
-    "n": 30,
-    "wr": 0.5667,
-    "pf": 1.909,
-    "usd_mo": 51,
-    "usd_trade": 61.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T00:32:12.294893+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T00:37:03.049018+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T00:41:31.127556+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 4
-   }
-  },
   "mgc-china-lpr-fix-evening-window": {
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -1231,74 +1401,6 @@
     "apex_max": 8
    }
   },
-  "mes-crude-liquidity-channel-risk-transfer": {
-   "name": "mes-crude-liquidity-channel-risk-transfer",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Crude oil is the dominant SOURCE of intraday liquidity spillover across futures, and that liquidity channel is separate from the return channel: when WTI's price-impact coefficient (Amihud illiquidity) spikes, dealers' balance-sheet capacity for commodity-flow risk-bearing is constrained, and that same constraint reprices equity index risk with a one-session lag because the same dealer balance sheets intermediate both books; whoever supplies equity-index liquidity the NEXT session is paid a liquidity-provision premium, which shows up as a next-session down-drift in MES that is a supply/liquidity effect, not a directional crude-return effect (MCL's own return tails give only -6bp/-4bp vs MES -16.5bp/base +2.2bp on the illiquidity-conditioned cut). Per Miao & Yang (JFM 2026), commonality in intraday futures liquidity is supply-side driven and liquidity spillovers do not mirror return spillovers -- this candidate trades that spillover directionally: SHORT MES the session after MCL prints unusually high illiquidity.",
-   "metrics": {
-    "n": 55,
-    "wr": 0.4727,
-    "pf": 1.831,
-    "usd_mo": 61,
-    "usd_trade": 40.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T03:19:39.732176+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T03:32:12.086722+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T03:37:38.155216+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 5
-   }
-  },
-  "zs-china-state-reserve-auction-window": {
-   "name": "zs-china-state-reserve-auction-window",
-   "market": "ZS",
-   "tier": "candidate",
-   "mechanism": "Sinograin/state-reserve rotation auctions for soybeans and oilseeds are scheduled events that either withdraw supply from or release supply into the domestic Chinese market on a known day; board crush and export-basis participants must adjust hedges into that announced date, so risk transfers on a schedule rather than on news, producing hedge-flow pressure in the sessions leading into the recurring auction date.",
-   "metrics": {
-    "n": 108,
-    "wr": 0.5185,
-    "pf": 1.658,
-    "usd_mo": 433,
-    "usd_trade": 144.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T00:47:04.227373+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T00:52:34.124878+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T00:54:37.701842+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 1,
-    "apex_max": 0
-   }
-  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1331,74 +1433,6 @@
    "sizing": {
     "growth_max": 8,
     "apex_max": 8
-   }
-  },
-  "b3-tom-long": {
-   "name": "b3-tom-long",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Pension/401k inflows cluster at month boundaries and are price-insensitive buyers; long the turn-of-month sessions",
-   "metrics": {
-    "n": 144,
-    "wr": 0.576,
-    "pf": 1.399,
-    "usd_mo": 185,
-    "usd_trade": 46.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:22:09.481870+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.908251+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.702496+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
-  },
-  "mnq-event-free-day-flow-persistence": {
-   "name": "mnq-event-free-day-flow-persistence",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "On days with no scheduled macro release (no FOMC/CPI on the calendar), intraday price movement is driven by inventory and order-flow imbalance rather than information, so the first-60-minute directional displacement reflects a liquidity-provider inventory imbalance that must keep being paid for through the rest of the session; on scheduled-event days an information shock resets order books and kills that persistence, so the edge should only appear when the macro calendar is empty.",
-   "metrics": {
-    "n": 675,
-    "wr": 0.5481,
-    "pf": 1.368,
-    "usd_mo": 563,
-    "usd_trade": 30.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:36:35.002815+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T07:42:14.432674+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T07:46:52.300888+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 1,
-    "apex_max": 1
    }
   }
  },
@@ -1564,35 +1598,31 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b10-nagel-vix-reversal": 2,
-    "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b2-vix-reversion": 1,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
-    "b2-opex-release": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 1,
     "mnq-event-free-day-flow-persistence": 1
    },
-   "total_micros": 13,
-   "p_breach": 0.19,
-   "usd_mo": 863,
-   "usd_mo_5acct": 4315,
-   "pct_goal": 1.553,
-   "wr": 0.552,
-   "wr_month": 0.75,
+   "total_micros": 6,
+   "p_breach": 0.184,
+   "usd_mo": 721,
+   "usd_mo_5acct": 3605,
+   "pct_goal": 1.298,
+   "wr": 0.564,
+   "wr_month": 0.778,
    "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 1835,
-    "avg_lose": -384
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 1515,
+    "avg_lose": -429
    },
-   "first_pay_days": 45,
-   "pay_rate_1yr": 0.996,
+   "first_pay_days": 51,
+   "pay_rate_1yr": 0.989,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 15534
+   "usd_mo_total": 12978
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1603,29 +1633,30 @@
    "members": {
     "b2-vix-reversion": 3,
     "b3-monday-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
     "mes-crude-liquidity-channel-risk-transfer": 3,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "scan-mbt": 1
+    "mgc-china-lpr-fix-evening-window": 3,
+    "scan-mbt": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 13,
-   "p_breach": 0.176,
-   "usd_mo": 549,
-   "usd_mo_5acct": 2745,
-   "pct_goal": 0.988,
-   "wr": 0.552,
+   "total_micros": 15,
+   "p_breach": 0.197,
+   "usd_mo": 699,
+   "usd_mo_5acct": 3495,
+   "pct_goal": 1.258,
+   "wr": 0.545,
    "wr_month": 0.75,
    "months": {
     "win_per_yr": 9.0,
     "lose_per_yr": 3.0,
-    "avg_win": 1387,
-    "avg_lose": -596
+    "avg_win": 1707,
+    "avg_lose": -599
    },
-   "first_pay_days": 82,
-   "pay_rate_1yr": 0.922,
+   "first_pay_days": 78,
+   "pay_rate_1yr": 0.923,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9882
+   "usd_mo_total": 12582
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -1634,32 +1665,31 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 2,
-    "b2-vix-reversion": 3,
+    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 2,
     "b3-tom-long": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 2,
-    "zc-farm-cash-rent-duedate-liquidation-window": 1
+    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 1
    },
-   "total_micros": 12,
-   "p_breach": 0.194,
-   "usd_mo": 548,
-   "usd_mo_5acct": 2740,
-   "pct_goal": 0.986,
-   "wr": 0.551,
-   "wr_month": 0.639,
+   "total_micros": 9,
+   "p_breach": 0.193,
+   "usd_mo": 535,
+   "usd_mo_5acct": 2675,
+   "pct_goal": 0.963,
+   "wr": 0.588,
+   "wr_month": 0.694,
    "months": {
-    "win_per_yr": 7.7,
-    "lose_per_yr": 4.3,
-    "avg_win": 1703,
-    "avg_lose": -504
+    "win_per_yr": 8.3,
+    "lose_per_yr": 3.7,
+    "avg_win": 1485,
+    "avg_lose": -524
    },
-   "first_pay_days": 77,
-   "pay_rate_1yr": 0.933,
+   "first_pay_days": 68,
+   "pay_rate_1yr": 0.956,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9864
+   "usd_mo_total": 9630
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1797,32 +1827,32 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 4,
+    "b2-vix-reversion": 5,
     "b3-monday-long": 2,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "mes-crude-liquidity-channel-risk-transfer": 3,
-    "scan-mbt": 3,
-    "zc-farm-cash-rent-duedate-liquidation-window": 1,
+    "scan-mbt": 2,
+    "zn-fr2004-dealer-inventory-capacity-state": 1,
     "zs-china-state-reserve-auction-window": 1
    },
    "total_micros": 19,
-   "p_breach": 0.185,
-   "usd_mo": 1154,
-   "usd_mo_5acct": 5770,
-   "pct_goal": 0.577,
-   "wr": 0.542,
-   "wr_month": 0.75,
+   "p_breach": 0.198,
+   "usd_mo": 1251,
+   "usd_mo_5acct": 6255,
+   "pct_goal": 0.625,
+   "wr": 0.554,
+   "wr_month": 0.778,
    "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 2816,
-    "avg_lose": -1090
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 2892,
+    "avg_lose": -1080
    },
-   "first_pay_days": 88,
-   "pay_rate_1yr": 0.905,
+   "first_pay_days": 81,
+   "pay_rate_1yr": 0.914,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 5770
+   "usd_mo_total": 6255
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -1831,30 +1861,32 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 4,
-    "b3-tom-long": 2,
+    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 3,
+    "b3-tom-long": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 4,
     "mes-crude-liquidity-channel-risk-transfer": 3,
+    "zn-fr2004-dealer-inventory-capacity-state": 1,
     "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.192,
-   "usd_mo": 937,
-   "usd_mo_5acct": 4685,
-   "pct_goal": 0.469,
-   "wr": 0.578,
-   "wr_month": 0.722,
+   "total_micros": 15,
+   "p_breach": 0.197,
+   "usd_mo": 1038,
+   "usd_mo_5acct": 5190,
+   "pct_goal": 0.519,
+   "wr": 0.582,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2657,
-    "avg_lose": -867
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 2450,
+    "avg_lose": -686
    },
-   "first_pay_days": 98,
-   "pay_rate_1yr": 0.853,
+   "first_pay_days": 89,
+   "pay_rate_1yr": 0.897,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4685
+   "usd_mo_total": 5190
   },
   {
    "id": "Frequent-firing engine|growth",
