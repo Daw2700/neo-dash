@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:33:26Z",
+  "stamp": "2026-07-23T18:39:51Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1050,
-  "n_results": 1228,
-  "n_trials": 68298,
+  "n_registered": 1053,
+  "n_results": 1231,
+  "n_trials": 68301,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68298,
-   "registered": 1050,
-   "tested": 849,
+   "trials": 68301,
+   "registered": 1053,
+   "tested": 852,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:36:15.032785+00:00",
+   "hash": "798f2272",
+   "name": "m2k-regsho-ftd-t35-closeout-buyin-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.964"
+  },
+  {
+   "t": "2026-07-23T18:35:57.811079+00:00",
+   "hash": "f7b3946c",
+   "name": "sil-prehalt-final-hour-momentum-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.498"
+  },
+  {
+   "t": "2026-07-23T18:35:44.214844+00:00",
+   "hash": "930b84c8",
+   "name": "mes-equalweight-rebalance-megacap-trim-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 5.297"
+  },
+  {
    "t": "2026-07-23T18:21:37.995082+00:00",
    "hash": "1e593342",
    "name": "zs-renewable-diesel-crush-capacity-commissioning-step",
@@ -406,30 +430,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.502"
-  },
-  {
-   "t": "2026-07-23T17:57:46.917268+00:00",
-   "hash": "6b68ea18",
-   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T17:52:12.455285+00:00",
-   "hash": "05b15d18",
-   "name": "zn-tba-classA-48hour-day-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.3"
-  },
-  {
-   "t": "2026-07-23T17:52:11.975030+00:00",
-   "hash": "712d3fc7",
-   "name": "mes-fund-tournament-rank-shift-monthend",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.363"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-equalweight-rebalance-megacap-trim-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:33:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-regsho-ftd-t35-closeout-buyin-window",
     "stage": "dev3yr",
@@ -554,7 +546,7 @@
   "funnel": {
    "idea": 10,
    "registered": 165,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27977
+    "trials": 27980
    }
   ]
  },
@@ -640,8 +632,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 173,
-   "n_killed": 143,
+   "n_tested": 174,
+   "n_killed": 144,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -662,8 +654,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 44,
-   "n_killed": 33,
+   "n_tested": 45,
+   "n_killed": 34,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -680,8 +672,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 13,
+   "n_tested": 19,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
