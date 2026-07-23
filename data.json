@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:11:31Z",
+  "stamp": "2026-07-23T20:13:15Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1077,
-  "n_results": 1262,
-  "n_trials": 71358,
+  "n_registered": 1080,
+  "n_results": 1264,
+  "n_trials": 71360,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71358,
-   "registered": 1077,
-   "tested": 874,
+   "trials": 71360,
+   "registered": 1080,
+   "tested": 876,
    "passed": 164,
    "survived": 34,
    "replicated": 12,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:13:07.354369+00:00",
+   "hash": "566b50cf",
+   "name": "mgc-regulatory-reporting-date-metals-book-roundtrip",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T20:13:06.900214+00:00",
+   "hash": "b4f9fbbe",
+   "name": "mng-interstate-pipeline-maintenance-shoulder-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.735"
+  },
+  {
+   "t": "2026-07-23T20:13:04.142497+00:00",
+   "hash": "3f36f238",
+   "name": "mes-intraday-momentum-multi-anchor-composite",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.714"
+  },
+  {
    "t": "2026-07-23T20:06:19.450872+00:00",
    "hash": "8b976c3d",
    "name": "mcl-precautionary-demand-decay",
@@ -406,44 +430,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.472"
-  },
-  {
-   "t": "2026-07-23T19:46:10.480072+00:00",
-   "hash": "3fcc999e",
-   "name": "mgc-gold-oil-ratio-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.076"
-  },
-  {
-   "t": "2026-07-23T19:46:01.080626+00:00",
-   "hash": "b6d33dca",
-   "name": "mcl-3day-selloff-capitulation-close-reversal",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T19:39:35.714263+00:00",
-   "hash": "bb9f19c6",
-   "name": "mes-cross-micro-skew-dispersion-crash-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-intraday-momentum-multi-anchor-composite",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:11:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-regulatory-reporting-date-metals-book-roundtrip",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-interstate-pipeline-maintenance-shoulder-window",
     "stage": "dev3yr",
@@ -571,8 +563,8 @@
   ],
   "funnel": {
    "idea": 12,
-   "registered": 167,
-   "dev3yr": 3,
+   "registered": 168,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -633,7 +625,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31034
+    "trials": 31036
    }
   ]
  },
@@ -658,8 +650,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 181,
-   "n_killed": 151,
+   "n_tested": 182,
+   "n_killed": 152,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -716,8 +708,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 35,
-   "n_killed": 30,
+   "n_tested": 36,
+   "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
   },
