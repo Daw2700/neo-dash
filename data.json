@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:09:04Z",
+  "stamp": "2026-07-23T00:13:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 696,
-  "n_results": 853,
-  "n_trials": 30841,
+  "n_registered": 697,
+  "n_results": 856,
+  "n_trials": 30844,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -299,6 +299,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:10:47.186374+00:00",
+   "hash": "de5c8d5b",
+   "name": "mes-buyback-window-reopen-postearnings-bid",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.967"
+  },
+  {
+   "t": "2026-07-23T00:10:41.282967+00:00",
+   "hash": "91b3e9c3",
+   "name": "mes-ira-april-deadline-inflow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.613"
+  },
+  {
+   "t": "2026-07-23T00:10:36.007524+00:00",
+   "hash": "3c72c870",
+   "name": "mcl-preweekend-overnight-riskpremium",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T00:07:45.309784+00:00",
    "hash": "fd67dcc9",
    "name": "scout-48-screen",
@@ -369,30 +393,6 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 0.775"
-  },
-  {
-   "t": "2026-07-22T23:47:36.774194+00:00",
-   "hash": "729dbe10",
-   "name": "mgc-830-scheduled-data-range-breakout",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T23:40:56.753279+00:00",
-   "hash": "7907c86c",
-   "name": "mnq-index-52wk-high-anchor-continuation",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.771"
-  },
-  {
-   "t": "2026-07-22T23:36:48.728102+00:00",
-   "hash": "129e674b",
-   "name": "mes-friday-data-inattention-monday-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.877"
   }
  ],
  "pipeline": {
@@ -407,24 +407,8 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "robustness: mcl-preweekend-overnight-riskpremium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:06:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "recheck: mes-buyback-window-reopen-postearnings-bid",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:09:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MES",
-    "task": "mes-ira-april-deadline-inflow",
     "stage": "dev3yr",
     "started": "2026-07-23T00:09:04Z",
     "state": "running"
@@ -495,7 +479,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 5
+    "trials": 8
    }
   ]
  },
@@ -519,8 +503,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 119,
-   "n_killed": 91,
+   "n_tested": 120,
+   "n_killed": 92,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1211,6 +1195,11 @@
      "t": "2026-07-23T00:03:11.929567+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T00:10:36.007524+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
   },
