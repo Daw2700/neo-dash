@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:28:50Z",
+  "stamp": "2026-07-23T04:28:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T04:27:26Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-continuous-component-crossmarket-morning-predictor",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:28:52Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-continuous-component-crossmarket-morning-predictor",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 7,
     "idea": "zn-goodside-semibeta-insurance-drag",
@@ -496,7 +495,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
