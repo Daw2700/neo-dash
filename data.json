@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:46:26Z",
+  "stamp": "2026-07-23T16:46:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -432,27 +432,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T16:33:43Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-tokyo-ttm-fix-completion-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:46:28Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-intraday-variation-margin-cycle-deleveraging",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:46:28Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "m6e-tokyo-ttm-fix-completion-reversion",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 5,
-    "idea": "mes-intraday-variation-margin-cycle-deleveraging",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 6,
     "idea": "mes-monthly-horizon-allocation-reversal-equity-only",
@@ -527,7 +525,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 8,
    "registered": 158,
    "dev3yr": 0,
    "robustness": 0,
