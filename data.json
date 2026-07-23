@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:05:56Z",
+  "stamp": "2026-07-23T13:10:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 951,
-  "n_results": 1131,
-  "n_trials": 49267,
+  "n_registered": 954,
+  "n_results": 1133,
+  "n_trials": 49269,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T13:09:53.056352+00:00",
+   "hash": "4eaadcc5",
+   "name": "m2k-overnight-session-discovery-share-regime-gap-quality",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.968"
+  },
+  {
+   "t": "2026-07-23T13:09:39.126617+00:00",
+   "hash": "26415c7a",
+   "name": "zn-orderflow-volatility-not-level-liquidity-rent",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.57"
+  },
+  {
+   "t": "2026-07-23T13:09:24.652523+00:00",
+   "hash": "94384ffe",
+   "name": "mgc-gap-dose-response-continuation-with-capacity-break",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T13:01:29.830903+00:00",
    "hash": "17e8ad9e",
    "name": "mng-closing-hedge-completion-share-overnight-handoff",
@@ -385,56 +409,16 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.2472"
-  },
-  {
-   "t": "2026-07-23T12:40:22.245844+00:00",
-   "hash": "cee62b96",
-   "name": "met-unhedgeable-halt-window-carry-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1953"
-  },
-  {
-   "t": "2026-07-23T12:39:32.536447+00:00",
-   "hash": "ec04afc4",
-   "name": "mes-arb-inverseu-dislocation-flip",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.827"
-  },
-  {
-   "t": "2026-07-23T12:26:51.764878+00:00",
-   "hash": "95e1507b",
-   "name": "mgc-us-holiday-london-only-discovery-catchup",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.514"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-orderflow-volatility-not-level-liquidity-rent",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:05:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-gap-dose-response-continuation-with-capacity-break",
     "stage": "dev3yr",
     "started": "2026-07-23T13:05:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-overnight-session-discovery-share-regime-gap-quality",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:05:55Z",
     "state": "running"
    }
   ],
@@ -460,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 138,
+   "registered": 139,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -522,7 +506,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18665
+    "trials": 18667
    }
   ]
  },
@@ -566,8 +550,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 39,
-   "n_killed": 28,
+   "n_tested": 40,
+   "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -640,8 +624,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 70,
-   "n_killed": 62,
+   "n_tested": 71,
+   "n_killed": 63,
    "book_sleeves": [],
    "agents_now": []
   },
