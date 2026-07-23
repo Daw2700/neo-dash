@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:50:09Z",
+  "stamp": "2026-07-23T18:56:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1058,
-  "n_results": 1236,
-  "n_trials": 68306,
+  "n_registered": 1062,
+  "n_results": 1239,
+  "n_trials": 68309,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68306,
-   "registered": 1058,
-   "tested": 857,
+   "trials": 68309,
+   "registered": 1062,
+   "tested": 860,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:55:10.669191+00:00",
+   "hash": "9e8f27a4",
+   "name": "sweep-7-session-profile-sequencing",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T18:52:36.185616+00:00",
+   "hash": "16124c94",
+   "name": "mcl-overnight-return-persistence-momentum",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.973"
+  },
+  {
+   "t": "2026-07-23T18:52:31.151261+00:00",
+   "hash": "840f5cfa",
+   "name": "m2k-securities-lending-recall-record-date-shortcover",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9"
+  },
+  {
+   "t": "2026-07-23T18:51:03.995068+00:00",
+   "hash": "84910be5",
+   "name": "zn-coupon-payment-reinvestment-duration-bid",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.471"
+  },
+  {
    "t": "2026-07-23T18:49:34.666861+00:00",
    "hash": "3bb86679",
    "name": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
@@ -398,38 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 5.297"
-  },
-  {
-   "t": "2026-07-23T18:21:37.995082+00:00",
-   "hash": "1e593342",
-   "name": "zs-renewable-diesel-crush-capacity-commissioning-step",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.115"
-  },
-  {
-   "t": "2026-07-23T18:19:29.145704+00:00",
-   "hash": "ae77254f",
-   "name": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.674"
-  },
-  {
-   "t": "2026-07-23T18:16:47.189611+00:00",
-   "hash": "94398b86",
-   "name": "mes-tokyo-afternoon-reopen-hedge-restart",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T18:16:21.135449+00:00",
-   "hash": "a9bde86d",
-   "name": "mcl-brent-midland-inclusion-regime-shift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.785"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-coupon-payment-reinvestment-duration-bid",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:49:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-securities-lending-recall-record-date-shortcover",
     "stage": "dev3yr",
@@ -459,7 +451,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-overnight-return-persistence-momentum",
     "stage": "dev3yr",
@@ -489,8 +481,8 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 165,
-   "dev3yr": 3,
+   "registered": 166,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -551,7 +543,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27985
+    "trials": 27988
    }
   ]
  },
@@ -598,8 +590,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 34,
+   "n_tested": 46,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -625,8 +617,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 73,
-   "n_killed": 51,
+   "n_tested": 74,
+   "n_killed": 52,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -672,8 +664,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 79,
-   "n_killed": 68,
+   "n_tested": 80,
+   "n_killed": 69,
    "book_sleeves": [],
    "agents_now": []
   },
