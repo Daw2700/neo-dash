@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:09:51Z",
+  "stamp": "2026-07-23T16:10:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1010,
-  "n_results": 1189,
-  "n_trials": 68259,
+  "n_registered": 1011,
+  "n_results": 1190,
+  "n_trials": 68260,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6
@@ -323,9 +323,17 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T16:09:32.594366+00:00",
+   "t": "2026-07-23T16:10:08.554168+00:00",
    "hash": "d7845825",
    "name": "mnq-etf-primary-market-creation-ap-overnight-hedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T16:10:00.084415+00:00",
+   "hash": "c9ac28ef",
+   "name": "bundlefit-zc-rma-volatility-factor-five-day-window",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -409,26 +417,10 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 2.615"
-  },
-  {
-   "t": "2026-07-23T15:40:47.019913+00:00",
-   "hash": "8d9f68ef",
-   "name": "met-deribit-cme-expiry-clock-wedge",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.672"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-etf-primary-market-creation-ap-overnight-hedge",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:06:39Z",
-    "state": "running"
-   },
    {
     "agent": "decision",
     "market": null,
@@ -438,7 +430,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MET",
     "task": "met-net-issuance-burn-regime-supply-state",
     "stage": "dev3yr",
@@ -446,7 +438,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-ecb-fed-balance-sheet-release-stagger",
     "stage": "dev3yr",
@@ -529,7 +521,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27938
+    "trials": 27939
    }
   ]
  },
