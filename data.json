@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:13:57Z",
+  "stamp": "2026-07-23T09:14:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:13:35Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-announcement-flow-variance-collapse-signal-switch",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:14:00Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-liquidity-state-transition-flow-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:14:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-announcement-flow-variance-collapse-signal-switch",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "met-liquidity-state-transition-flow-gate",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "m2k-open-hour-extreme-minute-artifact-retrace",
@@ -529,7 +527,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 10,
    "registered": 118,
    "dev3yr": 0,
    "robustness": 0,
