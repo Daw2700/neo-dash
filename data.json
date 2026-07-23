@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:26:39Z",
+  "stamp": "2026-07-23T16:26:41Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -424,35 +424,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-voltick-ratio-trend-persistence-dose-response",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:26:41Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-stockbond-corr-regime-term-premium-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:26:41Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-messaging-ratio-monthend-quote-throttle",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:26:41Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zn-voltick-ratio-trend-persistence-dose-response",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 2,
-    "idea": "zn-stockbond-corr-regime-term-premium-drift",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-messaging-ratio-monthend-quote-throttle",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.41
-   },
    {
     "rank": 4,
     "idea": "m6e-tokyo-ttm-fix-completion-reversion",
@@ -545,7 +543,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 157,
    "dev3yr": 0,
    "robustness": 0,
