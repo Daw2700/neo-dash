@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:07:29Z",
+  "stamp": "2026-07-23T09:07:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,21 +428,19 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:58:18Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "mcl-inside-week-unresolved-positioning-carryover",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.35
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-inside-week-unresolved-positioning-carryover",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:07:31Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 118,
    "dev3yr": 0,
    "robustness": 0,
