@@ -142,7 +142,7 @@
     "max_micros": 8
    }
   },
-  "b2-opex-release": {
+  "mcl-3day-selloff-capitulation-close-reversal": {
    "growth": {
     "max_micros": 8
    },
@@ -171,20 +171,21 @@
     "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1
+    "mgc-china-lpr-fix-evening-window": 1,
+    "mcl-3day-selloff-capitulation-close-reversal": 1
    },
-   "total_micros": 17,
-   "p_breach": 0.19,
-   "usd_mo": 1428,
-   "usd_mo_5acct": 7140,
-   "pct_goal": 0.714,
+   "total_micros": 18,
+   "p_breach": 0.194,
+   "usd_mo": 1435,
+   "usd_mo_5acct": 7175,
+   "pct_goal": 0.718,
    "wr": 0.548,
    "wr_month": 0.917,
    "months": {
     "win_per_yr": 11.0,
     "lose_per_yr": 1.0,
-    "avg_win": 2382,
-    "avg_lose": -1670
+    "avg_win": 2398,
+    "avg_lose": -1697
    },
    "first_pay_days": 70,
    "pay_rate_1yr": 0.973
@@ -448,27 +449,27 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 4,
-    "b2-opex-release": 5,
     "b2-vix-reversion": 5,
     "b3-preholiday-drift": 3,
+    "mcl-3day-selloff-capitulation-close-reversal": 2,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
+   "total_micros": 21,
+   "p_breach": 0.172,
+   "usd_mo": 617,
+   "usd_mo_5acct": 3085,
+   "pct_goal": 0.308,
+   "wr": 0.609,
+   "wr_month": 0.667,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 2883,
+    "avg_lose": -1163
    },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815
+   "first_pay_days": 102,
+   "pay_rate_1yr": 0.802
   },
   {
    "id": "Frequent-firing engine|apex150",

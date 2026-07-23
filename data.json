@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:44:10Z",
+  "stamp": "2026-07-23T19:50:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1071,
-  "n_results": 1253,
-  "n_trials": 71349,
+  "n_registered": 1073,
+  "n_results": 1256,
+  "n_trials": 71352,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71349,
-   "registered": 1071,
-   "tested": 870,
-   "passed": 163,
+   "trials": 71352,
+   "registered": 1073,
+   "tested": 872,
+   "passed": 164,
    "survived": 33,
    "replicated": 12,
    "book": 13
@@ -318,19 +318,43 @@
    }
   },
   {
-   "id": "mcl-3day-selloff-capitulation-close-reversal",
-   "name": "mcl-3day-selloff-capitulation-close-reversal",
+   "id": "mcl-precautionary-demand-decay",
+   "name": "mcl-precautionary-demand-decay",
    "market": "MCL",
    "tier": "candidate",
    "pinned": false,
-   "n": 19,
-   "wr": 0.5263,
-   "usd_mo": 12,
-   "pf": 1.75,
-   "usd_trade": 22.4
+   "n": 98,
+   "wr": 0.5918,
+   "usd_mo": 57,
+   "pf": 1.472,
+   "usd_trade": 20.8
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T19:46:46.463493+00:00",
+   "hash": "8b976c3d",
+   "name": "mcl-precautionary-demand-decay",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.472"
+  },
+  {
+   "t": "2026-07-23T19:46:10.480072+00:00",
+   "hash": "3fcc999e",
+   "name": "mgc-gold-oil-ratio-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.076"
+  },
+  {
+   "t": "2026-07-23T19:46:01.080626+00:00",
+   "hash": "b6d33dca",
+   "name": "mcl-3day-selloff-capitulation-close-reversal",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T19:39:35.714263+00:00",
    "hash": "bb9f19c6",
@@ -402,30 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.951"
-  },
-  {
-   "t": "2026-07-23T19:27:52.155483+00:00",
-   "hash": "68cf9859",
-   "name": "mes-size-factor-overextension-leader-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.043"
-  },
-  {
-   "t": "2026-07-23T19:02:34.402069+00:00",
-   "hash": "9e8f27a4",
-   "name": "sweep-7-session-profile-sequencing",
-   "status": "killed",
-   "kind": "sweep",
-   "detail": "3,024 configs"
-  },
-  {
-   "t": "2026-07-23T19:00:09.141086+00:00",
-   "hash": "6cd7c4c4",
-   "name": "mbt-etf-inflow-underreaction-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.38"
   }
  ],
  "pipeline": {
@@ -433,21 +433,13 @@
    {
     "agent": "tester-1",
     "market": "MCL",
-    "task": "robustness: mcl-3day-selloff-capitulation-close-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:43:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
     "task": "mcl-precautionary-demand-premium-multiasset-decay",
     "stage": "dev3yr",
     "started": "2026-07-23T19:43:47Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-gold-oil-ratio-macro-rotation-reversion",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
   "funnel": {
    "idea": 3,
    "registered": 165,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -548,7 +540,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31025
+    "trials": 31028
    }
   ]
  },
@@ -604,8 +596,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 58,
-   "n_killed": 48,
+   "n_tested": 59,
+   "n_killed": 49,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -622,7 +614,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 75,
+   "n_tested": 76,
    "n_killed": 52,
    "book_sleeves": [],
    "agents_now": []
@@ -1420,21 +1412,21 @@
     "apex_max": 8
    }
   },
-  "mcl-3day-selloff-capitulation-close-reversal": {
-   "name": "mcl-3day-selloff-capitulation-close-reversal",
+  "mcl-precautionary-demand-decay": {
+   "name": "mcl-precautionary-demand-decay",
    "market": "MCL",
    "tier": "candidate",
-   "mechanism": "After three consecutive down RTH closes in MCL culminating in a strong close-location value (CLV>0) on the third down day, sellers are exhausted and shorts have covered into the bell, so the next session sees a mechanical bounce as forced selling finishes and short-covering continues, paid for by the momentum/CTA cohort still pressing the prior down move.",
+   "mechanism": "When crude oil rises alongside gold on the same session while equities fail to confirm the move higher, that co-movement reflects a precautionary fear-demand regime rather than genuine broad-based growth demand (Kilian 2009 precautionary-demand oil shock component); the embedded precautionary risk premium in the oil leg decays over the next session as the fear fades, so shorting MCL the following session fades late fear-buyers of crude who pay for that mean-reversion.",
    "metrics": {
-    "n": 19,
-    "wr": 0.5263,
-    "pf": 1.75,
-    "usd_mo": 12,
-    "usd_trade": 22.4
+    "n": 98,
+    "wr": 0.5918,
+    "pf": 1.472,
+    "usd_mo": 57,
+    "usd_trade": 20.8
    },
    "verdict_history": [
     {
-     "t": "2026-07-23T19:38:32.678252+00:00",
+     "t": "2026-07-23T19:46:46.463493+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
@@ -1786,26 +1778,27 @@
     "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1
+    "mgc-china-lpr-fix-evening-window": 1,
+    "mcl-3day-selloff-capitulation-close-reversal": 1
    },
-   "total_micros": 17,
-   "p_breach": 0.19,
-   "usd_mo": 1428,
-   "usd_mo_5acct": 7140,
-   "pct_goal": 0.714,
+   "total_micros": 18,
+   "p_breach": 0.194,
+   "usd_mo": 1435,
+   "usd_mo_5acct": 7175,
+   "pct_goal": 0.718,
    "wr": 0.548,
    "wr_month": 0.917,
    "months": {
     "win_per_yr": 11.0,
     "lose_per_yr": 1.0,
-    "avg_win": 2382,
-    "avg_lose": -1670
+    "avg_win": 2398,
+    "avg_lose": -1697
    },
    "first_pay_days": 70,
    "pay_rate_1yr": 0.973,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 7140
+   "usd_mo_total": 7175
   },
   {
    "id": "Cross-market spread|growth",
@@ -1982,30 +1975,30 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 4,
-    "b2-opex-release": 5,
     "b2-vix-reversion": 5,
     "b3-preholiday-drift": 3,
+    "mcl-3day-selloff-capitulation-close-reversal": 2,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
+   "total_micros": 21,
+   "p_breach": 0.172,
+   "usd_mo": 617,
+   "usd_mo_5acct": 3085,
+   "pct_goal": 0.308,
+   "wr": 0.609,
+   "wr_month": 0.667,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 2883,
+    "avg_lose": -1163
    },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815,
+   "first_pay_days": 102,
+   "pay_rate_1yr": 0.802,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3470
+   "usd_mo_total": 3085
   }
  ],
  "sizing_meta": {
