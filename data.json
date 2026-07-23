@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:58:40Z",
+  "stamp": "2026-07-23T08:58:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,18 +436,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:58:18Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "M6E",
+    "task": "m6e-quarter-end-reserve-manager-currency-rebalance",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:58:41Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "m6e-quarter-end-reserve-manager-currency-rebalance",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 13,
     "idea": "mcl-inside-week-unresolved-positioning-carryover",
@@ -459,7 +458,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 116,
    "dev3yr": 0,
    "robustness": 0,
