@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:58:12Z",
+  "stamp": "2026-07-23T13:02:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 951,
-  "n_results": 1130,
-  "n_trials": 49266,
+  "n_results": 1131,
+  "n_trials": 49267,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -297,23 +297,27 @@
    }
   },
   {
-   "id": "mng-closing-hedge-completion-share-overnight-handoff",
-   "name": "mng-closing-hedge-completion-share-overnight-handoff",
-   "market": "MNG",
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
    "tier": "candidate",
    "pinned": false,
-   "n": 147,
-   "wr": 0.4898,
-   "usd_mo": 37,
-   "pf": 1.304,
-   "usd_trade": 9.0,
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T13:01:29.830903+00:00",
+   "hash": "17e8ad9e",
+   "name": "mng-closing-hedge-completion-share-overnight-handoff",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T12:57:48.059988+00:00",
    "hash": "611c9a60",
@@ -401,36 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.514"
-  },
-  {
-   "t": "2026-07-23T12:25:23.525971+00:00",
-   "hash": "0d0230e3",
-   "name": "mes-quarterly-vs-serial-expiry-dose-response",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.973"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-liquidity-withdrawal-surprise-vs-event-norm",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:44:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-cost-per-unit-beta-substitution-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:45:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNG",
     "task": "robustness: mng-closing-hedge-completion-share-overnight-handoff",
     "stage": "dev3yr",
@@ -549,7 +529,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18664
+    "trials": 18665
    }
   ]
  },
@@ -1360,29 +1340,35 @@
     "apex_max": 3
    }
   },
-  "mng-closing-hedge-completion-share-overnight-handoff": {
-   "name": "mng-closing-hedge-completion-share-overnight-handoff",
-   "market": "MNG",
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
    "tier": "candidate",
-   "mechanism": "Gas-day and cash-window hedgers must complete a fixed notional program by the MNG RTH close, so when the last 15 minutes carry an abnormally large share of the session volume the program was not finished and the residual completion flow hits the overnight Globex leg (continuation), while an abnormally small closing share means the imbalance was already fully absorbed intraday and the overnight leg reverts; we are paid by hedgers who must finish their program regardless of price.",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
    "metrics": {
-    "n": 147,
-    "wr": 0.4898,
-    "pf": 1.304,
-    "usd_mo": 37,
-    "usd_trade": 9.0
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
    },
    "verdict_history": [
     {
-     "t": "2026-07-23T12:49:19.528680+00:00",
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
+   ]
   }
  },
  "decisions": [
