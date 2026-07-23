@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:52:52Z",
+  "stamp": "2026-07-23T05:53:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 811,
-  "n_results": 988,
-  "n_trials": 39855,
+  "n_registered": 813,
+  "n_results": 989,
+  "n_trials": 39856,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:53:41.988446+00:00",
+   "hash": "07c9ccb6",
+   "name": "mng-monthly-production-report-supply-anchor-reset",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.534"
+  },
+  {
+   "t": "2026-07-23T05:53:38.875517+00:00",
+   "hash": "257e4d96",
+   "name": "mes-ssa-wed-inflow",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T05:52:05.417017+00:00",
    "hash": "c172e0cb",
    "name": "m2k-finra-short-interest-publication-cover-window",
@@ -393,22 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.66"
-  },
-  {
-   "t": "2026-07-23T05:43:01.869082+00:00",
-   "hash": "69d5702f",
-   "name": "m2k-single-minute-block-footprint-inventory-workout",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.186"
-  },
-  {
-   "t": "2026-07-23T05:27:37.491508+00:00",
-   "hash": "c36ce88d",
-   "name": "mes-early-close-session-truncation-inventory-overshoot",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 2.638"
   }
  ],
  "pipeline": {
@@ -422,14 +422,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-monthly-production-report-supply-anchor-reset",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:51:48Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -438,7 +430,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-social-security-disbursement-wednesday-retail-inflow",
     "stage": "dev3yr",
@@ -449,7 +441,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 108,
+   "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -511,7 +503,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9019
+    "trials": 9020
    }
   ]
  },
@@ -591,8 +583,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 19,
+   "n_tested": 24,
+   "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
   },
