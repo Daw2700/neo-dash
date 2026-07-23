@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:58:18Z",
+  "stamp": "2026-07-23T18:58:41Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 1063,
-  "n_results": 1240,
-  "n_trials": 68310,
+  "n_results": 1241,
+  "n_trials": 68311,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68310,
+   "trials": 68311,
    "registered": 1063,
-   "tested": 860,
+   "tested": 861,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:58:35.742569+00:00",
+   "hash": "671edf06",
+   "name": "mes-etf-heartbeat-quarterend-inkind-flush",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.591"
+  },
+  {
    "t": "2026-07-23T18:58:13.587665+00:00",
    "hash": "16124c94",
    "name": "mcl-overnight-return-persistence-momentum",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.9734"
-  },
-  {
-   "t": "2026-07-23T18:57:45.926839+00:00",
-   "hash": "671edf06",
-   "name": "mes-etf-heartbeat-quarterend-inkind-flush",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T18:55:10.669191+00:00",
@@ -457,21 +457,13 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:56:33Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MES",
-    "task": "mes-etf-heartbeat-quarterend-inkind-flush",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:56:33Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 167,
-   "dev3yr": 2,
+   "registered": 166,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27989
+    "trials": 27990
    }
   ]
  },
@@ -557,8 +549,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 176,
-   "n_killed": 146,
+   "n_tested": 177,
+   "n_killed": 147,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
