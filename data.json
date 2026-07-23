@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:56:33Z",
+  "stamp": "2026-07-23T18:58:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1062,
-  "n_results": 1239,
-  "n_trials": 68309,
+  "n_registered": 1063,
+  "n_results": 1240,
+  "n_trials": 68310,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68309,
-   "registered": 1062,
+   "trials": 68310,
+   "registered": 1063,
    "tested": 860,
    "passed": 161,
    "survived": 33,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:58:13.587665+00:00",
+   "hash": "16124c94",
+   "name": "mcl-overnight-return-persistence-momentum",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9734"
+  },
+  {
+   "t": "2026-07-23T18:57:45.926839+00:00",
+   "hash": "671edf06",
+   "name": "mes-etf-heartbeat-quarterend-inkind-flush",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T18:55:10.669191+00:00",
    "hash": "9e8f27a4",
    "name": "sweep-7-session-profile-sequencing",
@@ -414,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.964"
-  },
-  {
-   "t": "2026-07-23T18:35:57.811079+00:00",
-   "hash": "f7b3946c",
-   "name": "sil-prehalt-final-hour-momentum-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.498"
-  },
-  {
-   "t": "2026-07-23T18:35:44.214844+00:00",
-   "hash": "930b84c8",
-   "name": "mes-equalweight-rebalance-megacap-trim-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 5.297"
   }
  ],
  "pipeline": {
@@ -443,14 +443,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "recheck: mcl-overnight-return-persistence-momentum",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:56:07Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -459,7 +451,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MBT",
     "task": "mbt-spot-etf-inflow-underreaction-continuation",
     "stage": "dev3yr",
@@ -467,7 +459,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "MES",
     "task": "mes-etf-heartbeat-quarterend-inkind-flush",
     "stage": "dev3yr",
@@ -478,8 +470,8 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 166,
-   "dev3yr": 3,
+   "registered": 167,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -540,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27988
+    "trials": 27989
    }
   ]
  },
