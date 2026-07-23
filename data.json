@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:39:29Z",
+  "stamp": "2026-07-23T13:41:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 962,
-  "n_results": 1142,
-  "n_trials": 49278,
+  "n_registered": 964,
+  "n_results": 1143,
+  "n_trials": 49279,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T13:41:54.262713+00:00",
+   "hash": "5e33bc6f",
+   "name": "liq-tail-state-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T13:41:40.682203+00:00",
+   "hash": "501c6804",
+   "name": "mes-release-impact-inflation-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.7087"
+  },
+  {
    "t": "2026-07-23T13:38:23.143203+00:00",
    "hash": "bc5281cf",
    "name": "mes-lag1-magnitude-channel-two-sided-bracket",
@@ -389,36 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.754"
-  },
-  {
-   "t": "2026-07-23T13:13:48.223302+00:00",
-   "hash": "4eaadcc5",
-   "name": "m2k-overnight-session-discovery-share-regime-gap-quality",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.954"
-  },
-  {
-   "t": "2026-07-23T13:11:13.895571+00:00",
-   "hash": "159e229a",
-   "name": "scout-65-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-release-flow-variance-collapse-impact-inflation-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:39:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-liquidity-tail-state-large-print-noninformative-fade",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-both-extremes-before-11-afternoon-acceptance-range-fade",
     "stage": "dev3yr",
@@ -501,7 +493,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 142,
+   "registered": 143,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18676
+    "trials": 18677
    }
   ]
  },
@@ -587,8 +579,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 158,
-   "n_killed": 131,
+   "n_tested": 159,
+   "n_killed": 132,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
