@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:53:58Z",
+  "stamp": "2026-07-23T03:56:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 769,
-  "n_results": 942,
-  "n_trials": 39809,
+  "n_results": 943,
+  "n_trials": 39810,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T03:55:47.751552+00:00",
+   "hash": "416f0c18",
+   "name": "m2k-freshair-short",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.073"
+  },
+  {
    "t": "2026-07-23T03:49:35.339280+00:00",
    "hash": "a8980ec7",
    "name": "mgc-globex-reopen-remark-fade",
@@ -401,14 +409,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T03:19:47.527147+00:00",
-   "hash": "348de1d4",
-   "name": "cojump-flow-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.103"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M2K",
-    "task": "recheck: m2k-freshair-short",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:53:34Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-inflation-pair-release-ordering-preprice",
     "stage": "dev3yr",
@@ -522,7 +514,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8973
+    "trials": 8974
    }
   ]
  },
