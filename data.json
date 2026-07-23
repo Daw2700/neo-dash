@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:41:26Z",
+  "stamp": "2026-07-23T22:41:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T22:41:02Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-gradual-hedger-adjustment-state-conditional-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:41:27Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-scheduled-release-impact-conditioned-on-clock-block-depth",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:41:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mgc-gradual-hedger-adjustment-state-conditional-drift",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.32
-   },
-   {
-    "rank": 10,
-    "idea": "mes-scheduled-release-impact-conditioned-on-clock-block-depth",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 11,
     "idea": "met-asian-block-overnight-envelope-ownership-continuation",
@@ -482,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 176,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
