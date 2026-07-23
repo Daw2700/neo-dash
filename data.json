@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:02:21Z",
+  "stamp": "2026-07-23T15:07:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 990,
-  "n_results": 1169,
-  "n_trials": 68239,
+  "n_registered": 992,
+  "n_results": 1171,
+  "n_trials": 68241,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 8
+  "needs_attention_count": 7
  },
  "leaderboard": [
   {
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T15:06:45.312281+00:00",
+   "hash": "eb43a6a5",
+   "name": "mnq-shared-maker-capital-scarcity-impact-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T15:06:42.448444+00:00",
+   "hash": "c8cfcbfc",
+   "name": "zc-deadhour-move-in-spread-units-deferred-completion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.736"
+  },
+  {
+   "t": "2026-07-23T15:03:17.924299+00:00",
+   "hash": "f1afd1d3",
+   "name": "mes-simultaneous-roll-congestion-capacity-drain",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.135"
+  },
+  {
    "t": "2026-07-23T15:02:06.711151+00:00",
    "hash": "bf5ca9da",
    "name": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
@@ -329,14 +353,6 @@
    "status": "killed",
    "kind": "sweep",
    "detail": "9,216 configs"
-  },
-  {
-   "t": "2026-07-23T15:01:37.032482+00:00",
-   "hash": "f1afd1d3",
-   "name": "mes-simultaneous-roll-congestion-capacity-drain",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T15:01:19.088285+00:00",
@@ -393,34 +409,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1401"
-  },
-  {
-   "t": "2026-07-23T14:43:54.869388+00:00",
-   "hash": "0233b6f2",
-   "name": "mes-adv-holiday-contamination",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.928"
-  },
-  {
-   "t": "2026-07-23T14:43:53.670296+00:00",
-   "hash": "63685af3",
-   "name": "m2k-tick-binding-regime-continuation-gate",
-   "status": "result",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-simultaneous-roll-congestion-capacity-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:58:40Z",
-    "state": "running"
-   },
    {
     "agent": "decision",
     "market": null,
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-deadhour-move-in-spread-units-deferred-completion",
     "stage": "dev3yr",
@@ -438,7 +430,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-shared-maker-capital-scarcity-impact-premium",
     "stage": "dev3yr",
@@ -521,7 +513,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27918
+    "trials": 27920
    }
   ]
  },
@@ -545,8 +537,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 164,
-   "n_killed": 136,
+   "n_tested": 165,
+   "n_killed": 137,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -648,8 +640,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 51,
-   "n_killed": 45,
+   "n_tested": 52,
+   "n_killed": 46,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1369,24 +1361,6 @@
  },
  "decisions": [
   {
-   "id": "d-chinaauction-book-entry",
-   "kind": "book_entry",
-   "needs_attention": true,
-   "title": "Seventh machine-discovered sleeve ready: China state-reserve auction window (PF 1.658)",
-   "recommendation": "ADMIT to the book \u2014 solid dual-leg (replication PF 1.364 on corn, n=108)",
-   "evidence": "dev3yr: n=108, PF 1.658, $144.36/trade on soybeans | robustness: SURVIVES | replication: n=108, PF 1.364 on corn",
-   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
-   "recap": "China's state grain-reserve auctions inject known supply into the market on announced dates; the strategy trades the digestion of that flow. Second grains-complex graduate tonight.",
-   "why": "Cleared every gate with healthy samples on both legs. Same family logic as the cash-rent sleeve (scheduled, price-insensitive grain flow) but a different payer and different dates \u2014 structurally distinct. If both grain sleeves enter the book, their combined breach usage will be sized by the allocator as usual.",
-   "steps": [
-    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
-    "Deny: remains a replicated candidate, fully preserved",
-    "Question: the card returns with any analysis you want",
-    "Live/paper exposure still requires its own GO regardless"
-   ],
-   "staged": "2026-07-23T00:58:21Z"
-  },
-  {
    "id": "d-cashrent-book-entry",
    "kind": "book_entry",
    "needs_attention": true,
@@ -1498,21 +1472,22 @@
    "id": "d-settlediv-mirror-sync",
    "kind": "cleanup",
    "needs_attention": true,
-   "title": "Two approved book entries are on the ledger, but the published book and all sizing still exclude both",
-   "recommendation": "Approve the two-hash mirror edit + a sizing re-run so both new sleeves actually count",
-   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 9 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set, still at 7). sizing.py needs no manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv. Both logs exist under their leaderboard ids \u2014 trades_mes-settle-tradable-divergence.csv (n=288, 2022-03-03..2025-02-27) and trades_mes-crude-liquidity-channel-risk-transfer.csv (n=55, 2022-04-18..2025-02-20, an id-named copy of the worker's trades_mes-mcl-liquidity-channel.csv) \u2014 so adding the two hashes is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-   "what_yes_means": "The site shows a 9-sleeve book, sizing computes max micros for both new sleeves under the same 20% breach cap, and every bundle + the $10k roadmap recompute including them",
-   "recap": "You approved the settle-vs-tradable divergence sleeve and now the crude-shock equity risk-transfer sleeve into the book, and the ledger says so for both. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and neither new one gets any micros in any bundle.",
-   "why": "The ledger is the source of truth and it already records both admissions, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This is now two hashes and a re-run.",
+   "title": "Three approved book entries are on the ledger, but the published book and all sizing still exclude all three",
+   "recommendation": "Approve the three-hash mirror edit + a sizing re-run so all three new sleeves actually count",
+   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 10 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set, still at 7). sizing.py needs no manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv. All three logs exist under their leaderboard ids \u2014 trades_mes-settle-tradable-divergence.csv (n=288, 2022-03-03..2025-02-27), trades_mes-crude-liquidity-channel-risk-transfer.csv (n=55, 2022-04-18..2025-02-20) and trades_zs-china-state-reserve-auction-window.csv (n=108, 2022-04-01..2025-02-28) \u2014 so adding the three hashes is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+   "what_yes_means": "The site shows a 10-sleeve book, sizing computes max micros for all three new sleeves under the same 20% breach cap, and every bundle + the $10k roadmap recompute including them",
+   "recap": "You've now approved three sleeves into the book \u2014 settle-vs-tradable divergence, the crude-shock equity risk-transfer, and the China state-reserve auction window \u2014 and the ledger says so for all three. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and none of the three gets any micros in any bundle.",
+   "why": "The ledger is the source of truth and it already records all three admissions, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This is now three hashes and a re-run.",
    "steps": [
-    "Approve: add 5e5ccf350206d13f and 628b3b410c1fbe65 to ~/neo-dashboard/build_data.py VALID",
+    "Approve: add 5e5ccf350206d13f, 628b3b410c1fbe65 and 109efb3a44241183 to ~/neo-dashboard/build_data.py VALID",
     "Re-run sizing.py then build_data.py; engine pushes on its next publish",
-    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives both, and both trade logs already sit under their leaderboard ids",
-    "Deny: both ledger admissions still stand, but the published book stays at 7 sleeves and neither sleeve earns any allocation"
+    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives all three, and all three trade logs already sit under their leaderboard ids",
+    "Deny: all three ledger admissions still stand, but the published book stays at 7 sleeves and none of the three sleeves earns any allocation"
    ],
    "pending_mirrors": [
     "mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
+    "mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+    "zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
    ],
    "staged": "2026-07-23T14:45:17Z"
   }
