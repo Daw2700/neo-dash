@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:24:50Z",
+  "stamp": "2026-07-23T15:24:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -431,6 +431,14 @@
     "task": "robustness: zn-nth-weekday-institutional-process-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T15:11:33Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "replication: zn-nth-weekday-institutional-process-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:24:52Z",
     "state": "running"
    }
   ],
