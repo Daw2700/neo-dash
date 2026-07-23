@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:41:18Z",
+  "stamp": "2026-07-23T10:44:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 905,
-  "n_results": 1087,
-  "n_trials": 49223,
+  "n_registered": 906,
+  "n_results": 1089,
+  "n_trials": 49225,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -237,18 +237,6 @@
    }
   },
   {
-   "id": "mnq-overnight-envelope-deferred",
-   "name": "mnq-overnight-envelope-deferred",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 41,
-   "wr": 0.5854,
-   "usd_mo": 60,
-   "pf": 1.623,
-   "usd_trade": 52.6
-  },
-  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -302,10 +290,42 @@
    "wr": 0.526,
    "usd_mo": 61,
    "pf": 1.325,
-   "usd_trade": 14.3
+   "usd_trade": 14.3,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
+  },
+  {
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T10:43:15.226069+00:00",
+   "hash": "8bdbb9bd",
+   "name": "m6e-london-desk-close-inventory-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1555"
+  },
+  {
+   "t": "2026-07-23T10:42:08.096461+00:00",
+   "hash": "47103f49",
+   "name": "mnq-overnight-envelope-deferred",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T10:38:46.917362+00:00",
    "hash": "609dfa02",
@@ -385,22 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.17"
-  },
-  {
-   "t": "2026-07-23T10:13:16.959520+00:00",
-   "hash": "fe87e602",
-   "name": "mgc-china-lpr-fix-evening-window-REPLICATION-1040",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T10:09:48.610703+00:00",
-   "hash": "25b44c27",
-   "name": "mgc-china-lpr-fix-evening-window",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -420,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T10:35:52Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-london-desk-close-inventory-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:41:20Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "m6e-london-desk-close-inventory-repair",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 11,
     "idea": "mng-nuclear-refuelling-outage-power-burn-window",
@@ -470,7 +473,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 127,
    "dev3yr": 0,
    "robustness": 0,
@@ -533,7 +536,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18621
+    "trials": 18623
    }
   ]
  },
@@ -642,8 +645,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 42,
-   "n_killed": 41,
+   "n_tested": 43,
+   "n_killed": 42,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1212,26 +1215,6 @@
     "apex_max": 0
    }
   },
-  "mnq-overnight-envelope-deferred": {
-   "name": "mnq-overnight-envelope-deferred",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "When a session RTH high-low range stays fully contained inside its own preceding overnight Globex range, the day generated no new price information, so risk transfer that normally happens in RTH is deferred; the inventory imbalance still needing to move gets moved in the following session, producing a directional drift on the NEXT session RTH.",
-   "metrics": {
-    "n": 41,
-    "wr": 0.5854,
-    "pf": 1.623,
-    "usd_mo": 60,
-    "usd_trade": 52.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T10:31:53.341675+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1357,6 +1340,40 @@
      "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
+    }
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
+  },
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "metrics": {
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
    ]
   }
@@ -1641,31 +1658,30 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 1,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "mgc-first-business-day-index-allocation-print": 2
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mgc-china-lpr-fix-evening-window": 5
    },
    "total_micros": 12,
-   "p_breach": 0.187,
-   "usd_mo": 428,
-   "usd_mo_5acct": 2140,
-   "pct_goal": 0.77,
-   "wr": 0.565,
-   "wr_month": 0.694,
+   "p_breach": 0.199,
+   "usd_mo": 392,
+   "usd_mo_5acct": 1960,
+   "pct_goal": 0.706,
+   "wr": 0.56,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1325,
-    "avg_lose": -537
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1182,
+    "avg_lose": -562
    },
-   "first_pay_days": 89,
-   "pay_rate_1yr": 0.907,
+   "first_pay_days": 95,
+   "pay_rate_1yr": 0.867,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 7704
+   "usd_mo_total": 7056
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1777,26 +1793,27 @@
     "b4-open-drive": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
     "zs-china-state-reserve-auction-window": 1,
-    "b3-tom-long": 1
+    "b3-tom-long": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.194,
-   "usd_mo": 1219,
-   "usd_mo_5acct": 6095,
-   "pct_goal": 0.61,
-   "wr": 0.55,
-   "wr_month": 0.861,
+   "total_micros": 15,
+   "p_breach": 0.195,
+   "usd_mo": 1253,
+   "usd_mo_5acct": 6265,
+   "pct_goal": 0.626,
+   "wr": 0.553,
+   "wr_month": 0.889,
    "months": {
-    "win_per_yr": 10.3,
-    "lose_per_yr": 1.7,
-    "avg_win": 2316,
-    "avg_lose": -1252
+    "win_per_yr": 10.7,
+    "lose_per_yr": 1.3,
+    "avg_win": 2290,
+    "avg_lose": -1387
    },
    "first_pay_days": 88,
-   "pay_rate_1yr": 0.946,
+   "pay_rate_1yr": 0.95,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 6095
+   "usd_mo_total": 6265
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -1806,29 +1823,30 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 2,
+    "b2-opex-release": 1,
     "b2-vix-reversion": 3,
     "b3-tom-long": 2,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 13,
-   "p_breach": 0.199,
-   "usd_mo": 879,
-   "usd_mo_5acct": 4395,
-   "pct_goal": 0.44,
-   "wr": 0.598,
+   "total_micros": 14,
+   "p_breach": 0.198,
+   "usd_mo": 897,
+   "usd_mo_5acct": 4485,
+   "pct_goal": 0.449,
+   "wr": 0.577,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 2324,
-    "avg_lose": -1023
+    "avg_win": 2342,
+    "avg_lose": -1013
    },
-   "first_pay_days": 101,
-   "pay_rate_1yr": 0.86,
+   "first_pay_days": 100,
+   "pay_rate_1yr": 0.865,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4395
+   "usd_mo_total": 4485
   },
   {
    "id": "Cross-market spread|growth",

@@ -94,14 +94,6 @@
     "max_micros": 0
    }
   },
-  "mgc-first-business-day-index-allocation-print": {
-   "growth": {
-    "max_micros": 8
-   },
-   "apex150": {
-    "max_micros": 8
-   }
-  },
   "b2-opex-release": {
    "growth": {
     "max_micros": 8
@@ -116,6 +108,14 @@
    },
    "apex150": {
     "max_micros": 1
+   }
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "growth": {
+    "max_micros": 5
+   },
+   "apex150": {
+    "max_micros": 3
    }
   }
  },
@@ -134,23 +134,24 @@
     "b4-open-drive": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
     "zs-china-state-reserve-auction-window": 1,
-    "b3-tom-long": 1
+    "b3-tom-long": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.194,
-   "usd_mo": 1219,
-   "usd_mo_5acct": 6095,
-   "pct_goal": 0.61,
-   "wr": 0.55,
-   "wr_month": 0.861,
+   "total_micros": 15,
+   "p_breach": 0.195,
+   "usd_mo": 1253,
+   "usd_mo_5acct": 6265,
+   "pct_goal": 0.626,
+   "wr": 0.553,
+   "wr_month": 0.889,
    "months": {
-    "win_per_yr": 10.3,
-    "lose_per_yr": 1.7,
-    "avg_win": 2316,
-    "avg_lose": -1252
+    "win_per_yr": 10.7,
+    "lose_per_yr": 1.3,
+    "avg_win": 2290,
+    "avg_lose": -1387
    },
    "first_pay_days": 88,
-   "pay_rate_1yr": 0.946
+   "pay_rate_1yr": 0.95
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",
@@ -160,26 +161,27 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 2,
+    "b2-opex-release": 1,
     "b2-vix-reversion": 3,
     "b3-tom-long": 2,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 13,
-   "p_breach": 0.199,
-   "usd_mo": 879,
-   "usd_mo_5acct": 4395,
-   "pct_goal": 0.44,
-   "wr": 0.598,
+   "total_micros": 14,
+   "p_breach": 0.198,
+   "usd_mo": 897,
+   "usd_mo_5acct": 4485,
+   "pct_goal": 0.449,
+   "wr": 0.577,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 2324,
-    "avg_lose": -1023
+    "avg_win": 2342,
+    "avg_lose": -1013
    },
-   "first_pay_days": 101,
-   "pay_rate_1yr": 0.86
+   "first_pay_days": 100,
+   "pay_rate_1yr": 0.865
   },
   {
    "id": "Cross-market spread|growth",
@@ -369,28 +371,27 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 1,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "mgc-first-business-day-index-allocation-print": 2
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mgc-china-lpr-fix-evening-window": 5
    },
    "total_micros": 12,
-   "p_breach": 0.187,
-   "usd_mo": 428,
-   "usd_mo_5acct": 2140,
-   "pct_goal": 0.214,
-   "wr": 0.565,
-   "wr_month": 0.694,
+   "p_breach": 0.199,
+   "usd_mo": 392,
+   "usd_mo_5acct": 1960,
+   "pct_goal": 0.196,
+   "wr": 0.56,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1325,
-    "avg_lose": -537
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1182,
+    "avg_lose": -562
    },
-   "first_pay_days": 89,
-   "pay_rate_1yr": 0.907
+   "first_pay_days": 95,
+   "pay_rate_1yr": 0.867
   },
   {
    "id": "Frequent-firing engine|apex150",
