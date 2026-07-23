@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:22:02Z",
+  "stamp": "2026-07-23T14:26:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 976,
-  "n_results": 1154,
-  "n_trials": 49290,
+  "n_results": 1155,
+  "n_trials": 49291,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 9
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T14:24:38.491872+00:00",
+   "hash": "916e9918",
+   "name": "mym-fundamental-anchoring-erosion-liquidity-fragility",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T14:21:55.961476+00:00",
    "hash": "c4a1ee97",
    "name": "scout-66-screen",
@@ -397,34 +405,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T13:49:30.711981+00:00",
-   "hash": "387728ba",
-   "name": "sil-impact-dispersion-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.54"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MYM",
-    "task": "mym-fundamental-anchoring-erosion-liquidity-fragility",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:10:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-impact-law-regime-participant-sophistication",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:10:48Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -434,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "robustness: mym-fundamental-anchoring-erosion-liquidity-fragility",
     "stage": "dev3yr",
@@ -517,7 +501,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18688
+    "trials": 18689
    }
   ]
  },
