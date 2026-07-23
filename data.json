@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:51:54Z",
+  "stamp": "2026-07-23T21:57:14Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1110,
-  "n_results": 1298,
-  "n_trials": 71394,
+  "n_registered": 1112,
+  "n_results": 1299,
+  "n_trials": 71395,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71394,
-   "registered": 1110,
-   "tested": 900,
-   "passed": 167,
+   "trials": 71395,
+   "registered": 1112,
+   "tested": 901,
+   "passed": 168,
    "survived": 36,
    "replicated": 13,
    "book": 13
@@ -336,20 +336,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T21:56:37.537413+00:00",
+   "hash": "d10c3171",
+   "name": "scout-73-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T21:55:05.105321+00:00",
+   "hash": "0d24d59f",
+   "name": "ROBUSTNESS-BATTERY zs-china-sow-herd-monthly-print-soymeal-demand-revision (candidate b5e35ee3ac75593f)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T21:52:55.647308+00:00",
+   "hash": "b5e35ee3",
+   "name": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.286"
+  },
+  {
    "t": "2026-07-23T21:51:39.856024+00:00",
    "hash": "0ee721fa",
    "name": "mes-insider-form4-breadth-capitulation",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T21:50:57.405505+00:00",
-   "hash": "b5e35ee3",
-   "name": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T21:50:41.864882+00:00",
@@ -414,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.435"
-  },
-  {
-   "t": "2026-07-23T21:29:40.888982+00:00",
-   "hash": "da646473",
-   "name": "mgc-cross-asset-hedge-demand-absence-carry-drag",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 1.081"
-  },
-  {
-   "t": "2026-07-23T21:27:36.822439+00:00",
-   "hash": "445bdc65",
-   "name": "mgc-cross-asset-hedge-demand-absence-carry-drag-REPLICATION-1237",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -449,16 +449,24 @@
     "stage": "idea-scout",
     "started": "2026-07-23T21:48:26Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "robustness: zs-china-sow-herd-monthly-print-soymeal-demand-revision",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:52:57Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 173,
-   "dev3yr": 1,
+   "registered": 174,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 13,
+   "book_candidate": 14,
    "golden_staged": 1
   },
   "throughput": [
@@ -516,7 +524,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31070
+    "trials": 31071
    }
   ]
  },
@@ -658,7 +666,7 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 27,
+   "n_tested": 28,
    "n_killed": 22,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
