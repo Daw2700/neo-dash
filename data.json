@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:14:09Z",
+  "stamp": "2026-07-23T00:18:42Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 697,
-  "n_results": 856,
-  "n_trials": 30844,
+  "n_registered": 698,
+  "n_results": 857,
+  "n_trials": 30845,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -261,18 +261,6 @@
    "usd_trade": 30.0
   },
   {
-   "id": "mcl-preweekend-overnight-riskpremium",
-   "name": "mcl-preweekend-overnight-riskpremium",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 311,
-   "wr": 0.5659,
-   "usd_mo": 120,
-   "pf": 1.346,
-   "usd_trade": 13.8
-  },
-  {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -295,9 +283,37 @@
    "usd_mo": 8,
    "pf": 1.283,
    "usd_trade": 58.3
+  },
+  {
+   "id": "mes-funding-basis-stress-cheapening",
+   "name": "mes-funding-basis-stress-cheapening",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 72,
+   "wr": 0.5278,
+   "usd_mo": 31,
+   "pf": 1.273,
+   "usd_trade": 15.4
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T00:16:16.846566+00:00",
+   "hash": "3c72c870",
+   "name": "mcl-preweekend-overnight-riskpremium",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.559"
+  },
+  {
+   "t": "2026-07-23T00:14:57.011063+00:00",
+   "hash": "6b8006c0",
+   "name": "rep-mcl-preweekend-overnight-riskpremium-mng",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T00:10:47.186374+00:00",
    "hash": "de5c8d5b",
@@ -377,22 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.717"
-  },
-  {
-   "t": "2026-07-22T23:57:53.289310+00:00",
-   "hash": "c5f18189",
-   "name": "m6e-euro-session-segmentation-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.4118"
-  },
-  {
-   "t": "2026-07-22T23:50:26.030376+00:00",
-   "hash": "729dbe10",
-   "name": "mgc-830-scheduled-data-range-breakout",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.775"
   }
  ],
  "pipeline": {
@@ -404,20 +404,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T00:06:07Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "replication: mcl-preweekend-overnight-riskpremium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:13:46Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 91,
+   "registered": 92,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -479,7 +471,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8
+    "trials": 9
    }
   ]
  },
@@ -1178,31 +1170,6 @@
     }
    ]
   },
-  "mcl-preweekend-overnight-riskpremium": {
-   "name": "mcl-preweekend-overnight-riskpremium",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Desks add geopolitical and supply-disruption risk premium to crude oil during late-week overnight sessions ahead of the two-day weekend closure when positions cannot be adjusted, bidding WTI from the prior RTH close to the next RTH open on Wednesday-to-Thursday and Thursday-to-Friday overnight legs.",
-   "metrics": {
-    "n": 311,
-    "wr": 0.5659,
-    "pf": 1.346,
-    "usd_mo": 120,
-    "usd_trade": 13.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T00:03:11.929567+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T00:10:36.007524+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -1248,6 +1215,26 @@
    "verdict_history": [
     {
      "t": "2026-07-22T10:20:02.231812+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
+  "mes-funding-basis-stress-cheapening": {
+   "name": "mes-funding-basis-stress-cheapening",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Index futures embed an implicit dealer financing/collateral leg (Baltussen, Terstegge & Whelan, \"The Derivative Payoff Bias\"); when dealer balance-sheet capacity is most constrained around calendar quarter-end regulatory reporting dates, repo/collateral funding is pulled from cash-futures basis arbitrageurs, transiently cheapening MES futures against fair value into the quarter-end and re-converging (richening back up) in the first sessions of the new quarter. The buyer of the cheapened future during the reversal leg is paid a balance-sheet-rental fee, not a directional forecast.",
+   "metrics": {
+    "n": 72,
+    "wr": 0.5278,
+    "pf": 1.273,
+    "usd_mo": 31,
+    "usd_trade": 15.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T05:57:32.220572+00:00",
      "stage": "dev3yr",
      "verdict": "KILLED"
     }
