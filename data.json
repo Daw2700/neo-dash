@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:39:42Z",
+  "stamp": "2026-07-23T00:39:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,6 +411,14 @@
     "task": "m6e-tltro-repayment-settlement-liquidity-drain",
     "stage": "dev3yr",
     "started": "2026-07-23T00:36:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "replication: zc-farm-cash-rent-duedate-liquidation-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:39:44Z",
     "state": "running"
    }
   ],
