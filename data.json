@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:31:00Z",
+  "stamp": "2026-07-23T08:34:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 863,
-  "n_results": 1043,
-  "n_trials": 49179,
+  "n_registered": 864,
+  "n_results": 1046,
+  "n_trials": 49182,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -265,6 +265,18 @@
    }
   },
   {
+   "id": "zn-sep-dotplot-path-integration-lag",
+   "name": "zn-sep-dotplot-path-integration-lag",
+   "market": "ZN",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 22,
+   "wr": 0.5455,
+   "usd_mo": 27,
+   "pf": 1.299,
+   "usd_trade": 44.5
+  },
+  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -295,32 +307,32 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "zn-cash-market-closed-futures-open-asymmetry",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.8333,
-   "usd_mo": 18,
-   "pf": 6.676,
-   "usd_trade": 105.1,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
   {
-   "t": "2026-07-23T08:30:54.275204+00:00",
+   "t": "2026-07-23T08:34:39.346712+00:00",
+   "hash": "d4da9cf4",
+   "name": "mnq-ndx-capping-quarterly-rebalance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.637"
+  },
+  {
+   "t": "2026-07-23T08:32:22.534148+00:00",
    "hash": "3aa6934c",
    "name": "zn-sep-dotplot-path-integration-lag",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.299"
+  },
+  {
+   "t": "2026-07-23T08:32:05.093476+00:00",
+   "hash": "74d31790",
+   "name": "mes-msci-quarterly-review-effective-close",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.103"
   },
   {
    "t": "2026-07-23T08:30:52.961721+00:00",
@@ -329,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.304"
-  },
-  {
-   "t": "2026-07-23T08:30:40.117227+00:00",
-   "hash": "74d31790",
-   "name": "mes-msci-quarterly-review-effective-close",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T08:28:59.800039+00:00",
@@ -401,28 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.434"
-  },
-  {
-   "t": "2026-07-23T08:01:12.156504+00:00",
-   "hash": "6ea8c1a1",
-   "name": "m2k-housing-release-homebuilder-weight-channel",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.05"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-msci-quarterly-review-effective-close",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:28:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-sep-dotplot-path-integration-lag",
     "stage": "dev3yr",
@@ -430,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-ndx-capping-rule-quarterly-test-window",
     "stage": "dev3yr",
@@ -505,7 +493,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 116,
+   "registered": 114,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -567,7 +555,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18577
+    "trials": 18580
    }
   ]
  },
@@ -576,8 +564,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 127,
-   "n_killed": 84,
+   "n_tested": 128,
+   "n_killed": 85,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -591,8 +579,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 143,
-   "n_killed": 122,
+   "n_tested": 144,
+   "n_killed": 123,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -685,7 +673,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 66,
+   "n_tested": 67,
    "n_killed": 59,
    "book_sleeves": [],
    "agents_now": []
@@ -1310,6 +1298,26 @@
     "apex_max": 3
    }
   },
+  "zn-sep-dotplot-path-integration-lag": {
+   "name": "zn-sep-dotplot-path-integration-lag",
+   "market": "ZN",
+   "tier": "candidate",
+   "mechanism": "Only four of eight FOMC meetings/year publish a Summary of Economic Projections (SEP dot plot): those releases deliver a multi-year rate PATH, not a single-meeting decision. The path reprices the 2y-5y sector fast (dealers can mark it off the dots immediately) while the 10y note must integrate the whole revised path against term premium, so ZN adjustment on SEP meetings should be slower/more persistent than on statement-only (non-SEP) meetings, where the 14:00-14:30 reaction is already close to the full information set. We are paid by whoever prices SEP path information as fast as a plain statement.",
+   "metrics": {
+    "n": 22,
+    "wr": 0.5455,
+    "pf": 1.299,
+    "usd_mo": 27,
+    "usd_trade": 44.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T08:32:22.534148+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1376,40 +1384,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "zn-cash-market-closed-futures-open-asymmetry": {
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.8333,
-    "pf": 6.676,
-    "usd_mo": 18,
-    "usd_trade": 105.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:40:09.435772+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T10:46:10.359530+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T10:51:30.720138+00:00",
-     "stage": "replication",
-     "verdict": "FAIL"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
    }
   }
  },
