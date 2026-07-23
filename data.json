@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:11:29Z",
+  "stamp": "2026-07-23T20:11:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T20:11:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-regulatory-reporting-date-metals-book-roundtrip",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:11:30Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-interstate-pipeline-maintenance-shoulder-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:11:30Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mgc-regulatory-reporting-date-metals-book-roundtrip",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mng-interstate-pipeline-maintenance-shoulder-window",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 3,
     "idea": "zn-monthend-duration-demand-net-of-reporting-quarter-drag",
@@ -572,9 +570,9 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 12,
    "registered": 167,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
