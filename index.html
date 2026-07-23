@@ -270,7 +270,7 @@ const G = {
   registered:{t:"Registered",b:"Strategy ideas formally entered into the gauntlet with a frozen config, awaiting or undergoing testing.",x:"n_registered"},
   trials:{t:"Trials",b:"Individual backtest runs executed, including parameter sweeps. One strategy idea can consume thousands of trials.",x:"n_trials"},
   results:{t:"Results",b:"Verdicts recorded in the ledger: PASSES, KILLED, DEMOTED, etc. One per completed test stage.",x:"n_results"},
-  funnel:{t:"Pipeline funnel",b:"Where work sits right now, left to right: raw ideas → registered → dev3yr backtest → robustness battery → MES replication → book candidate → staged for golden test. Counts shrink at every gate — that's the point.",x:"pipeline.funnel"},
+  funnel:{t:"Pipeline funnel",b:"Where work sits right now, top to bottom: raw ideas → registered → dev3yr backtest → robustness battery → MES replication → book candidate → staged for golden test. Counts shrink at every gate — that's the point.",x:"pipeline.funnel"},
   backlog:{t:"Idea backlog",b:"Ranked queue of untested ideas from literature scouting and data screens. An empty backlog is a failure state — it means the scouts have stalled.",x:"pipeline.backlog"},
   score:{t:"Idea score",b:"Scout's prior that the idea survives testing (0–1), from mechanism plausibility, literature support, and data-screen strength. Sets queue order.",x:"score"},
   throughput:{t:"Throughput",b:"Backtest trials completed per day, last 14 days. Spiky is normal (sweeps land in bursts); zero for days is not.",x:"pipeline.throughput"},
@@ -440,9 +440,17 @@ function feedChip(f){const s=f.status.toLowerCase();
 function rPipeline(){const p=DATA.pipeline;const f=p.funnel;
   const stages=[["idea","IDEAS"],["registered","REG"],["dev3yr","DEV3YR"],["robustness","ROBUST"],["mes_replication","MES-REP"],["book_candidate","BOOK-C"],["golden_staged","GOLDEN"]];
   const empty=!p.backlog.length;
+  const W=[100,86,72,58,45,33,24];                       // layer widths, % — the taper
+  const LMAP={"idea-scout":0,"sweep":0,"dev3yr":2,"recheck":2,"robustness":3,"replication":4,"decision":5};
+  const run=p.workers.filter(w=>w.state==="running");
+  const agentsAt=i=>run.filter(w=>(LMAP[w.stage]??-1)===i);
   return`
-  <div class="card"><h2>Funnel <span class="iico" data-g="funnel">i</span><span class="right">idea → golden test</span></h2>
-    <div class="funnel">${stages.map(([k,l])=>`<div class="fseg ${f[k]>0?"hot":""}" data-g="funnel"><div class="fv">${f[k]}</div><div class="fl">${l}</div></div>`).join("")}</div></div>
+  <div class="card"><h2>Funnel <span class="iico" data-g="funnel">i</span><span class="right">ideas in → book out</span></h2>
+    <div class="vfunnel">${stages.map(([k,l],i)=>{const t=i<stages.length-1?(1-W[i+1]/W[i])*50:8;const ag=agentsAt(i);
+      return`<div class="vlayer" style="width:${W[i]}%">
+        <div class="vseg ${f[k]>0||ag.length?"hot":""}" data-g="funnel" style="clip-path:polygon(0 0,100% 0,${100-t}% 100%,${t}% 100%)"><div class="fv">${f[k]}</div><div class="fl">${l}</div></div>
+        ${ag.length?`<div class="vagents">${ag.map(w=>`<span class="vagent"><span class="wdot running"></span>${esc(w.agent)}${w.market?" · "+esc(w.market):""}</span>`).join("")}</div>`:""}
+      </div>`}).join("")}<div class="vdrop"></div></div></div>
   <div class="card"><h2>Workers — right now <span class="iico" data-g="agent">i</span><span class="right">${p.workers.filter(w=>w.state==="running").length} running</span></h2>
     ${p.workers.map(w=>`<div class="worker"><span class="wdot ${w.state}"></span><div style="min-width:0;flex:1">
       <div class="task"><b class="mono" style="font-size:12px">${esc(w.agent)}</b> ${w.market?`<span class="chip n">${w.market}</span>`:""} — ${esc(w.task)}</div>

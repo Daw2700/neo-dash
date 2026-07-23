@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:39:57Z",
+  "stamp": "2026-07-23T17:40:11Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1032,
   "n_results": 1213,
