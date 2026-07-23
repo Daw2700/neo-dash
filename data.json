@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:57:24Z",
+  "stamp": "2026-07-23T01:57:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -403,6 +403,22 @@
     "task": "mbt-multiday-closure-known-target-remark-no-overshoot",
     "stage": "dev3yr",
     "started": "2026-07-23T01:54:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "replication: mbt-equity-overnight-overextrapolation-us-session-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:57:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "robustness: zs-delivery-option-decay-ramp",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:57:25Z",
     "state": "running"
    }
   ],
