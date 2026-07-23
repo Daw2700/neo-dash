@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:16:28Z",
+  "stamp": "2026-07-23T23:16:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1132,
-  "n_results": 1318,
-  "n_trials": 79183,
+  "n_results": 1319,
+  "n_trials": 79184,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79183,
+   "trials": 79184,
    "registered": 1132,
-   "tested": 916,
+   "tested": 917,
    "passed": 170,
    "survived": 36,
    "replicated": 13,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:16:42.610324+00:00",
+   "hash": "9b3d1560",
+   "name": "zc-wasde-revision-prehour-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.781"
+  },
+  {
    "t": "2026-07-23T23:16:12.782448+00:00",
    "hash": "e3a7ce71",
    "name": "mgc-margin-reduction-releveraging-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4666"
-  },
-  {
-   "t": "2026-07-23T23:14:27.270186+00:00",
-   "hash": "9b3d1560",
-   "name": "zc-wasde-revision-prehour-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T23:12:45.746421+00:00",
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-wasde-revision-vs-count-prepriced-event",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:13:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
     "stage": "dev3yr",
@@ -508,8 +500,8 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 179,
-   "dev3yr": 3,
+   "registered": 178,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -570,7 +562,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38865
+    "trials": 38866
    }
   ]
  },
@@ -700,8 +692,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 48,
+   "n_tested": 55,
+   "n_killed": 49,
    "book_sleeves": [
     "zc-rma-volatility-factor-five-day-window",
     "zc-farm-cash-rent-duedate-liquidation-window"
