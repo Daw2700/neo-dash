@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:58:41Z",
+  "stamp": "2026-07-23T19:01:06Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1063,
-  "n_results": 1241,
-  "n_trials": 68311,
+  "n_registered": 1064,
+  "n_results": 1242,
+  "n_trials": 68312,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68311,
-   "registered": 1063,
-   "tested": 861,
+   "trials": 68312,
+   "registered": 1064,
+   "tested": 862,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T19:00:09.141086+00:00",
+   "hash": "6cd7c4c4",
+   "name": "mbt-etf-inflow-underreaction-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.38"
+  },
+  {
    "t": "2026-07-23T18:58:35.742569+00:00",
    "hash": "671edf06",
    "name": "mes-etf-heartbeat-quarterend-inkind-flush",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4118"
-  },
-  {
-   "t": "2026-07-23T18:36:15.032785+00:00",
-   "hash": "798f2272",
-   "name": "m2k-regsho-ftd-t35-closeout-buyin-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.964"
   }
  ],
  "pipeline": {
@@ -449,21 +449,13 @@
     "stage": "idea-scout",
     "started": "2026-07-23T18:56:33Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MBT",
-    "task": "mbt-spot-etf-inflow-underreaction-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:56:33Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 166,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -524,7 +516,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27990
+    "trials": 27991
    }
   ]
  },
@@ -616,8 +608,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 25,
-   "n_killed": 18,
+   "n_tested": 26,
+   "n_killed": 19,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
