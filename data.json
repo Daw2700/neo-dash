@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:02:05Z",
+  "stamp": "2026-07-23T22:11:00Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1112,
   "n_results": 1300,
@@ -433,19 +433,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T21:48:26Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-session-vwap-occupation-vs-displacement-completion-asymmetry",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "zn-large-tick-regime-metaorder-impact-persistence",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-overnight-jump-conditioned-day-night-clientele-flip",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 4,
+    "idea": "mcl-roll-window-implied-spread-leg-print-contamination",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "mym-listed-option-gamma-damping-deficit-vs-mes-residual",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "mes-eod-imbalance-dispersion-tail-conditioned-overnight-premium",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 7,
+    "idea": "zs-overnight-extreme-single-region-provenance-unratified",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 8,
+    "idea": "mym-price-weight-global-revenue-dollar-beta-wedge",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-gradual-hedger-adjustment-state-conditional-drift",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 10,
+    "idea": "mes-scheduled-release-impact-conditioned-on-clock-block-depth",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 11,
+    "idea": "met-asian-block-overnight-envelope-ownership-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 12,
+    "idea": "met-listed-derivative-void-undamped-move-continuation-vs-mbt",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.28
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 174,
    "dev3yr": 0,
    "robustness": 0,
