@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:22:41Z",
+  "stamp": "2026-07-23T12:25:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 938,
-  "n_results": 1119,
-  "n_trials": 49255,
+  "n_registered": 942,
+  "n_results": 1121,
+  "n_trials": 49257,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T12:25:23.525971+00:00",
+   "hash": "0d0230e3",
+   "name": "mes-quarterly-vs-serial-expiry-dose-response",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.973"
+  },
+  {
+   "t": "2026-07-23T12:25:19.860515+00:00",
+   "hash": "95e1507b",
+   "name": "mgc-us-holiday-london-only-discovery-catchup",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T12:25:16.290626+00:00",
+   "hash": "85259508",
+   "name": "zs-nopa-crush-continuation-underreaction",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.572"
+  },
+  {
+   "t": "2026-07-23T12:23:33.923661+00:00",
+   "hash": "fe4b1f1e",
+   "name": "scout-64-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T12:17:22.360992+00:00",
    "hash": "f5c3ba92",
    "name": "mcl-holiday-shifted-eia-print-day-relocation",
@@ -377,38 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.864"
-  },
-  {
-   "t": "2026-07-23T11:55:53.914103+00:00",
-   "hash": "6add2341",
-   "name": "mes-overnight-stock-bond-sign-disagreement-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T11:52:02.079978+00:00",
-   "hash": "1e033bd2",
-   "name": "zc-feed-substitution-ratio-band-elasticity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.581"
-  },
-  {
-   "t": "2026-07-23T11:51:50.224641+00:00",
-   "hash": "8f5bf720",
-   "name": "mes-earnings-density-idiosyncratic-variance-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T11:50:16.693074+00:00",
-   "hash": "11940a41",
-   "name": "robustness-battery-mes-overnight-stock-bond-sign-disagreement-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -436,20 +436,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T12:22:41Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZS",
-    "task": "zs-nopa-monthly-crush-report-processor-demand-print",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:22:41Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 135,
+   "registered": 137,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -511,7 +503,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18653
+    "trials": 18655
    }
   ]
  },
@@ -535,8 +527,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 153,
-   "n_killed": 127,
+   "n_tested": 154,
+   "n_killed": 128,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -647,8 +639,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 22,
-   "n_killed": 17,
+   "n_tested": 23,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   }
