@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:20:58Z",
+  "stamp": "2026-07-23T11:22:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 920,
-  "n_results": 1101,
-  "n_trials": 49237,
+  "n_registered": 921,
+  "n_results": 1102,
+  "n_trials": 49238,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T11:22:30.015406+00:00",
+   "hash": "1154b4ae",
+   "name": "sil-industrial-vs-monetary-session-attribution-conflict",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T11:21:52.674097+00:00",
+   "hash": "fbff2998",
+   "name": "met-extremity-regime-adverse-selection-liquidity-rent",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.051"
+  },
+  {
    "t": "2026-07-23T11:20:51.988831+00:00",
    "hash": "c8e79ee3",
    "name": "mcl-interprint-thursday-freeze",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.855"
-  },
-  {
-   "t": "2026-07-23T11:20:16.254063+00:00",
-   "hash": "fbff2998",
-   "name": "met-extremity-regime-adverse-selection-liquidity-rent",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T11:20:02.028049+00:00",
@@ -401,28 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.512"
-  },
-  {
-   "t": "2026-07-23T10:58:01.905004+00:00",
-   "hash": "61a2ab7e",
-   "name": "mcl-first-week-producer-hedge-participation-spike",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-extremity-regime-adverse-selection-liquidity-rent",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:18:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-crude-lead-rth-only-divergence-reconvergence",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-industrial-vs-monetary-session-attribution-conflict",
     "stage": "dev3yr",
@@ -531,7 +523,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18635
+    "trials": 18636
    }
   ]
  },
@@ -631,8 +623,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 20,
-   "n_killed": 19,
+   "n_tested": 21,
+   "n_killed": 20,
    "book_sleeves": [],
    "agents_now": []
   },
