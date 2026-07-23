@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:09:43Z",
+  "stamp": "2026-07-23T01:12:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -396,32 +396,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-post-washout-hedge-supply-ceiling",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:02:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-percent-threshold-headline-salience-nextday",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:04:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "robustness: mbt-macro-decoupling-offshore-bid-overnight",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:07:29Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 5,
