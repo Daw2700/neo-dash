@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:48:13Z",
+  "stamp": "2026-07-23T05:50:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 808,
-  "n_results": 983,
-  "n_trials": 39850,
+  "n_registered": 810,
+  "n_results": 985,
+  "n_trials": 39852,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:50:02.997050+00:00",
+   "hash": "a12fc40e",
+   "name": "m6e-wednesday-value-date-triple-swap-carry-adjustment",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T05:49:59.277158+00:00",
+   "hash": "f698cf1a",
+   "name": "mnq-dcb-band-proximity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1975"
+  },
+  {
+   "t": "2026-07-23T05:49:40.616354+00:00",
+   "hash": "f698cf1a",
+   "name": "mnq-dcb-band-proximity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.72"
+  },
+  {
+   "t": "2026-07-23T05:49:25.998997+00:00",
+   "hash": "589b81f0",
+   "name": "mes-updown-minute-volume-asymmetry-absorption-carry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T05:48:03.220718+00:00",
    "hash": "7da28edd",
    "name": "mnq-protection-point-snapback",
@@ -329,14 +361,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T05:46:09.191633+00:00",
-   "hash": "f698cf1a",
-   "name": "mnq-dcb-band-proximity",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T05:45:40.896068+00:00",
@@ -385,44 +409,12 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 0.904"
-  },
-  {
-   "t": "2026-07-23T05:26:19.848539+00:00",
-   "hash": "3eea5fb0",
-   "name": "scout-55-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T05:20:31.032428+00:00",
-   "hash": "367a96f3",
-   "name": "zc-samuelson-maturity-regime-switch",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.719"
-  },
-  {
-   "t": "2026-07-23T05:19:23.307890+00:00",
-   "hash": "93f5fd60",
-   "name": "mnq-propfirm-cohort-monthstart-stop-density",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-dynamic-circuit-breaker-band-proximity-acceleration",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:43:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-wednesday-value-date-triple-swap-carry-adjustment",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-updown-minute-volume-asymmetry-absorption-carry",
     "stage": "dev3yr",
@@ -478,7 +470,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 109,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -540,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9014
+    "trials": 9016
    }
   ]
  },
@@ -549,8 +541,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 122,
-   "n_killed": 75,
+   "n_tested": 123,
+   "n_killed": 76,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
