@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:43:30Z",
+  "stamp": "2026-07-23T06:43:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -432,18 +432,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T06:43:08Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "M6E",
+    "task": "m6e-scheduled-sovereign-rating-review-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:43:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "m6e-scheduled-sovereign-rating-review-window",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 12,
     "idea": "mes-quarter-start-institutional-rebalance-execution-window",
@@ -455,7 +454,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
