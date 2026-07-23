@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:31:48Z",
+  "stamp": "2026-07-23T05:32:11Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 802,
   "n_results": 977,
@@ -419,14 +419,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T05:24:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-early-close-session-truncation-inventory-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:24:30Z",
     "state": "running"
    }
   ],
