@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:31:50Z",
+  "stamp": "2026-07-23T06:31:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T06:29:46Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-bimodal-profile-unresolved-auction-resolution",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:31:56Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-bimodal-profile-unresolved-auction-resolution",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 7,
     "idea": "mbt-natgas-hashprice-margin-squeeze-miner-supply",
@@ -492,7 +491,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
