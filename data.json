@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:59:46Z",
+  "stamp": "2026-07-23T12:05:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 932,
-  "n_results": 1113,
-  "n_trials": 49249,
+  "n_registered": 935,
+  "n_results": 1115,
+  "n_trials": 49251,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -237,6 +237,18 @@
    }
   },
   {
+   "id": "m2k-floatrate-level-asymmetry",
+   "name": "m2k-floatrate-level-asymmetry",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 34,
+   "wr": 0.5294,
+   "usd_mo": 17,
+   "pf": 1.448,
+   "usd_trade": 17.8
+  },
+  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -295,25 +307,33 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T12:03:01.972694+00:00",
+   "hash": "bdc8c7c3",
+   "name": "zs-export-pace-vs-usda-forecast-gap-revision",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T12:01:58.677922+00:00",
+   "hash": "9ad71839",
+   "name": "m2k-floatrate-level-asymmetry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.448"
+  },
+  {
+   "t": "2026-07-23T12:01:55.263228+00:00",
+   "hash": "d5d3dd98",
+   "name": "mes-bearvol-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.864"
+  },
   {
    "t": "2026-07-23T11:55:53.914103+00:00",
    "hash": "6add2341",
@@ -385,44 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 4.313"
-  },
-  {
-   "t": "2026-07-23T11:25:33.513634+00:00",
-   "hash": "de0e4edb",
-   "name": "scout-63-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T11:24:39.159356+00:00",
-   "hash": "d0f44211",
-   "name": "mym-earnings-blackout-price-weight-sensitivity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T11:24:13.583568+00:00",
-   "hash": "fa7c2e56",
-   "name": "mng-crude-lead-rth-only-divergence-reconvergence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.389"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-momentum-crash-bearstate-highvol-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:59:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-export-pace-vs-usda-forecast-gap-revision",
     "stage": "dev3yr",
@@ -430,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-floating-rate-interest-expense-level-asymmetry",
     "stage": "dev3yr",
@@ -478,7 +466,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 133,
+   "registered": 134,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -540,7 +528,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18647
+    "trials": 18649
    }
   ]
  },
@@ -564,8 +552,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 152,
-   "n_killed": 126,
+   "n_tested": 153,
+   "n_killed": 127,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -584,7 +572,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 38,
+   "n_tested": 39,
    "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
@@ -1219,6 +1207,26 @@
     "apex_max": 0
    }
   },
+  "m2k-floatrate-level-asymmetry": {
+   "name": "m2k-floatrate-level-asymmetry",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Small caps carry a much larger share of floating-rate debt than large caps, so Russell rate sensitivity runs through a cash-flow interest-expense channel that is asymmetric in the LEVEL of short rates, not just the size of a rate move; a given ZN rally (rate relief) should produce a bigger M2K reaction when the prevailing rate level is already elevated (thin coverage ratios) than when rates are low, so the conditioner is rate-level-times-move, not move alone.",
+   "metrics": {
+    "n": 34,
+    "wr": 0.5294,
+    "pf": 1.448,
+    "usd_mo": 17,
+    "usd_trade": 17.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T12:01:58.677922+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1349,40 +1357,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
-   "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
    }
   }
  },
