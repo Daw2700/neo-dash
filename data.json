@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:12:29Z",
+  "stamp": "2026-07-23T01:12:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -396,26 +396,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "robustness: mcl-post-washout-hedge-supply-ceiling",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:12:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-big-figure-barrier-defense-break-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:12:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-h41-reserve-release-thursday-late-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:12:31Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "m6e-big-figure-barrier-defense-break-asymmetry",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 6,
-    "idea": "zn-h41-reserve-release-thursday-late-window",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "mes-vwap-crossing-count-inventory-neutrality",
@@ -472,7 +479,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 6,
    "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
