@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:33:41Z",
+  "stamp": "2026-07-23T15:37:35Z",
   "stale_after_min": 30,
   "status": "d-eventfree-book-entry approve applied \u2014 mnq-event-free-day-flow-persistence admitted to the book (12 sleeves on the ledger); dashboard mirror + sizing recompute still pending for it, cash-rent, china-auction, crude-liquidity-channel and settle-divergence (d-settlediv-mirror-sync)",
   "engine_state": "ok",
-  "n_registered": 999,
-  "n_results": 1178,
-  "n_trials": 68248,
+  "n_registered": 1000,
+  "n_results": 1179,
+  "n_trials": 68249,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -298,7 +298,11 @@
    "wr": 0.5481,
    "usd_mo": 563,
    "pf": 1.368,
-   "usd_trade": 30.0
+   "usd_trade": 30.0,
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 1
+   }
   },
   {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
@@ -310,10 +314,22 @@
    "wr": 0.526,
    "usd_mo": 61,
    "pf": 1.325,
-   "usd_trade": 14.3
+   "usd_trade": 14.3,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T15:37:13.964593+00:00",
+   "hash": "c35f6afa",
+   "name": "zc-usda-export-cancellation-salience-asymmetry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
   {
    "t": "2026-07-23T15:30:26.784124+00:00",
    "hash": "ebf4a7e6",
@@ -401,14 +417,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.776"
-  },
-  {
-   "t": "2026-07-23T15:06:42.448444+00:00",
-   "hash": "c8cfcbfc",
-   "name": "zc-deadhour-move-in-spread-units-deferred-completion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.736"
   }
  ],
  "pipeline": {
@@ -436,18 +444,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T15:25:19Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZC",
+    "task": "zc-usda-export-cancellation-salience-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:33:43Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "zc-usda-export-cancellation-salience-asymmetry",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 4,
     "idea": "mes-forward-event-load-anticipatory-derisk",
@@ -549,7 +556,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 11,
    "registered": 154,
    "dev3yr": 0,
    "robustness": 0,
@@ -612,7 +619,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27927
+    "trials": 27928
    }
   ]
  },
@@ -1425,7 +1432,11 @@
      "stage": "replication",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 1
+   }
   },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
@@ -1455,7 +1466,11 @@
      "stage": "replication",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 3
+   }
   }
  },
  "decisions": [
@@ -1621,32 +1636,34 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
+    "scan-mbt": 1,
+    "b10-nagel-vix-reversal": 2,
     "b3-monday-long": 1,
-    "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "zn-nth-weekday-institutional-process-clock": 2,
-    "b3-tom-long": 1
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mgc-china-lpr-fix-evening-window": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "b2-opex-release": 1,
+    "mnq-event-free-day-flow-persistence": 1
    },
-   "total_micros": 11,
-   "p_breach": 0.184,
-   "usd_mo": 747,
-   "usd_mo_5acct": 3735,
-   "pct_goal": 1.345,
-   "wr": 0.541,
-   "wr_month": 0.833,
+   "total_micros": 13,
+   "p_breach": 0.19,
+   "usd_mo": 863,
+   "usd_mo_5acct": 4315,
+   "pct_goal": 1.553,
+   "wr": 0.552,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 10.0,
-    "lose_per_yr": 2.0,
-    "avg_win": 1491,
-    "avg_lose": -676
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1835,
+    "avg_lose": -384
    },
-   "first_pay_days": 55,
-   "pay_rate_1yr": 0.988,
+   "first_pay_days": 45,
+   "pay_rate_1yr": 0.996,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 13446
+   "usd_mo_total": 15534
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1657,30 +1674,29 @@
    "members": {
     "b2-vix-reversion": 3,
     "b3-monday-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
     "mes-crude-liquidity-channel-risk-transfer": 3,
-    "scan-mbt": 1,
-    "zc-farm-cash-rent-duedate-liquidation-window": 1,
-    "zn-nth-weekday-institutional-process-clock": 3
+    "mgc-china-lpr-fix-evening-window": 2,
+    "scan-mbt": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.183,
-   "usd_mo": 711,
-   "usd_mo_5acct": 3555,
-   "pct_goal": 1.28,
-   "wr": 0.559,
+   "total_micros": 13,
+   "p_breach": 0.176,
+   "usd_mo": 549,
+   "usd_mo_5acct": 2745,
+   "pct_goal": 0.988,
+   "wr": 0.552,
    "wr_month": 0.75,
    "months": {
     "win_per_yr": 9.0,
     "lose_per_yr": 3.0,
-    "avg_win": 1676,
-    "avg_lose": -608
+    "avg_win": 1387,
+    "avg_lose": -596
    },
-   "first_pay_days": 73,
-   "pay_rate_1yr": 0.94,
+   "first_pay_days": 82,
+   "pay_rate_1yr": 0.922,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 12798
+   "usd_mo_total": 9882
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -1689,64 +1705,32 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
+    "b10-nagel-vix-reversal": 1,
+    "b2-opex-release": 2,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
-    "zn-nth-weekday-institutional-process-clock": 3
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 2,
+    "zc-farm-cash-rent-duedate-liquidation-window": 1
    },
-   "total_micros": 9,
+   "total_micros": 12,
    "p_breach": 0.194,
-   "usd_mo": 512,
-   "usd_mo_5acct": 2560,
-   "pct_goal": 0.922,
-   "wr": 0.584,
-   "wr_month": 0.75,
+   "usd_mo": 548,
+   "usd_mo_5acct": 2740,
+   "pct_goal": 0.986,
+   "wr": 0.551,
+   "wr_month": 0.639,
    "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 1305,
-    "avg_lose": -469
+    "win_per_yr": 7.7,
+    "lose_per_yr": 4.3,
+    "avg_win": 1703,
+    "avg_lose": -504
    },
-   "first_pay_days": 86,
-   "pay_rate_1yr": 0.923,
+   "first_pay_days": 77,
+   "pay_rate_1yr": 0.933,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9216
-  },
-  {
-   "id": "Cross-market spread|growth",
-   "name": "Cross-market spread",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 5,
-    "b3-monday-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "scan-mbt": 3,
-    "zn-nth-weekday-institutional-process-clock": 5,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 24,
-   "p_breach": 0.2,
-   "usd_mo": 1397,
-   "usd_mo_5acct": 6985,
-   "pct_goal": 0.699,
-   "wr": 0.555,
-   "wr_month": 0.806,
-   "months": {
-    "win_per_yr": 9.7,
-    "lose_per_yr": 2.3,
-    "avg_win": 3174,
-    "avg_lose": -1438
-   },
-   "first_pay_days": 81,
-   "pay_rate_1yr": 0.908,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 6985
+   "usd_mo_total": 9864
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1756,29 +1740,27 @@
    "assumed_rules": false,
    "members": {
     "b3-monday-long": 1,
-    "b3-nr7-breakout": 1,
-    "b3-tom-long": 1,
-    "b4-open-drive": 1,
-    "scan-mbt": 2
+    "mnq-event-free-day-flow-persistence": 1,
+    "scan-mbt": 1
    },
-   "total_micros": 6,
-   "p_breach": 0.175,
-   "usd_mo": 382,
-   "usd_mo_5acct": 1910,
-   "pct_goal": 0.688,
-   "wr": 0.51,
-   "wr_month": 0.778,
+   "total_micros": 3,
+   "p_breach": 0.182,
+   "usd_mo": 469,
+   "usd_mo_5acct": 2345,
+   "pct_goal": 0.844,
+   "wr": 0.536,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1040,
-    "avg_lose": -745
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1211,
+    "avg_lose": -447
    },
-   "first_pay_days": 79,
-   "pay_rate_1yr": 0.929,
+   "first_pay_days": 65,
+   "pay_rate_1yr": 0.975,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 6876
+   "usd_mo_total": 8442
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -1852,33 +1834,130 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 2,
-    "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "zn-nth-weekday-institutional-process-clock": 2,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
     "zs-china-state-reserve-auction-window": 1,
-    "b3-tom-long": 1
+    "b3-tom-long": 1,
+    "mnq-event-free-day-flow-persistence": 1
    },
-   "total_micros": 13,
-   "p_breach": 0.194,
-   "usd_mo": 1183,
-   "usd_mo_5acct": 5915,
-   "pct_goal": 0.592,
-   "wr": 0.556,
-   "wr_month": 0.778,
+   "total_micros": 11,
+   "p_breach": 0.187,
+   "usd_mo": 1321,
+   "usd_mo_5acct": 6605,
+   "pct_goal": 0.66,
+   "wr": 0.542,
+   "wr_month": 0.917,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2564,
-    "avg_lose": -977
+    "win_per_yr": 11.0,
+    "lose_per_yr": 1.0,
+    "avg_win": 2192,
+    "avg_lose": -903
    },
-   "first_pay_days": 89,
-   "pay_rate_1yr": 0.939,
+   "first_pay_days": 77,
+   "pay_rate_1yr": 0.961,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 5915
+   "usd_mo_total": 6605
+  },
+  {
+   "id": "Cross-market spread|growth",
+   "name": "Cross-market spread",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 4,
+    "b3-monday-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "scan-mbt": 3,
+    "zc-farm-cash-rent-duedate-liquidation-window": 1,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 19,
+   "p_breach": 0.185,
+   "usd_mo": 1154,
+   "usd_mo_5acct": 5770,
+   "pct_goal": 0.577,
+   "wr": 0.542,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 2816,
+    "avg_lose": -1090
+   },
+   "first_pay_days": 88,
+   "pay_rate_1yr": 0.905,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 5770
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 4,
+    "b3-tom-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 4,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 14,
+   "p_breach": 0.192,
+   "usd_mo": 937,
+   "usd_mo_5acct": 4685,
+   "pct_goal": 0.469,
+   "wr": 0.578,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2657,
+    "avg_lose": -867
+   },
+   "first_pay_days": 98,
+   "pay_rate_1yr": 0.853,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 4685
+  },
+  {
+   "id": "Frequent-firing engine|growth",
+   "name": "Frequent-firing engine",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b3-monday-long": 1,
+    "b3-nr7-breakout": 1,
+    "b3-tom-long": 2,
+    "mnq-event-free-day-flow-persistence": 1,
+    "scan-mbt": 3
+   },
+   "total_micros": 8,
+   "p_breach": 0.186,
+   "usd_mo": 849,
+   "usd_mo_5acct": 4245,
+   "pct_goal": 0.424,
+   "wr": 0.529,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2179,
+    "avg_lose": -892
+   },
+   "first_pay_days": 102,
+   "pay_rate_1yr": 0.912,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 4245
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -1944,68 +2023,6 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3330
-  },
-  {
-   "id": "Frequent-firing engine|growth",
-   "name": "Frequent-firing engine",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b3-monday-long": 2,
-    "b3-nr7-breakout": 2,
-    "b3-tom-long": 2,
-    "b4-open-drive": 1
-   },
-   "total_micros": 7,
-   "p_breach": 0.184,
-   "usd_mo": 584,
-   "usd_mo_5acct": 2920,
-   "pct_goal": 0.292,
-   "wr": 0.522,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1655,
-    "avg_lose": -1144
-   },
-   "first_pay_days": 121,
-   "pay_rate_1yr": 0.798,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 2920
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "b3-tom-long": 2,
-    "zn-nth-weekday-institutional-process-clock": 1,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 6,
-   "p_breach": 0.199,
-   "usd_mo": 544,
-   "usd_mo_5acct": 2720,
-   "pct_goal": 0.272,
-   "wr": 0.613,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 1915,
-    "avg_lose": -1050
-   },
-   "first_pay_days": 123,
-   "pay_rate_1yr": 0.743,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 2720
   }
  ],
  "sizing_meta": {
