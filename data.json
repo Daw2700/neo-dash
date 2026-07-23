@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:37:31Z",
+  "stamp": "2026-07-23T12:39:35Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 942,
-  "n_results": 1122,
-  "n_trials": 49258,
+  "n_registered": 945,
+  "n_results": 1123,
+  "n_trials": 49259,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T12:39:32.536447+00:00",
+   "hash": "ec04afc4",
+   "name": "mes-arb-inverseu-dislocation-flip",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.827"
+  },
+  {
+   "t": "2026-07-23T12:39:11.654195+00:00",
+   "hash": "cee62b96",
+   "name": "met-unhedgeable-halt-window-carry-premium",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T12:39:05.826450+00:00",
+   "hash": "7840d8aa",
+   "name": "mes-liquidity-withdrawal-surprise-vs-event-norm",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T12:26:51.764878+00:00",
    "hash": "95e1507b",
    "name": "mgc-us-holiday-london-only-discovery-catchup",
@@ -385,44 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T12:07:00.232073+00:00",
-   "hash": "5c9e60c5",
-   "name": "m2k-floatrate-level-asymmetry-ROBUSTNESS-1076",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T12:01:58.677922+00:00",
-   "hash": "9ad71839",
-   "name": "m2k-floatrate-level-asymmetry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.448"
-  },
-  {
-   "t": "2026-07-23T12:01:55.263228+00:00",
-   "hash": "d5d3dd98",
-   "name": "mes-bearvol-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.864"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-arbitrage-capacity-inverse-u-dislocation-flip",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:37:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-unhedgeable-halt-window-carry-premium",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-liquidity-withdrawal-surprise-vs-event-norm",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 136,
+   "registered": 138,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -585,7 +577,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18656
+    "trials": 18657
    }
   ]
  },
@@ -609,8 +601,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 154,
-   "n_killed": 128,
+   "n_tested": 155,
+   "n_killed": 129,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
