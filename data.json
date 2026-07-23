@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:42:05Z",
+  "stamp": "2026-07-23T18:42:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1055,
-  "n_results": 1232,
-  "n_trials": 68302,
+  "n_registered": 1056,
+  "n_results": 1233,
+  "n_trials": 68303,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68302,
-   "registered": 1055,
-   "tested": 853,
+   "trials": 68303,
+   "registered": 1056,
+   "tested": 854,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,20 +336,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:42:30.119539+00:00",
+   "hash": "5b4991b3",
+   "name": "mnq-mes-mym-triangular-index-consistency-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.843"
+  },
+  {
+   "t": "2026-07-23T18:42:20.103650+00:00",
+   "hash": "69936a29",
+   "name": "mcl-gsci-index-roll-sunshine-crude-weight",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T18:41:47.063675+00:00",
    "hash": "cdc23af4",
    "name": "m6e-london-lunch-preus-usd-drift",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4118"
-  },
-  {
-   "t": "2026-07-23T18:41:32.523129+00:00",
-   "hash": "5b4991b3",
-   "name": "mnq-mes-mym-triangular-index-consistency-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T18:36:15.032785+00:00",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.2259"
-  },
-  {
-   "t": "2026-07-23T18:06:07.348662+00:00",
-   "hash": "89a4879a",
-   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-mes-mym-triangular-index-consistency-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:40:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
     "stage": "dev3yr",
@@ -518,7 +510,7 @@
   "funnel": {
    "idea": 6,
    "registered": 166,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -579,7 +571,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27981
+    "trials": 27982
    }
   ]
  },
@@ -617,8 +609,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 16,
+   "n_tested": 20,
+   "n_killed": 17,
    "book_sleeves": [],
    "agents_now": []
   },
