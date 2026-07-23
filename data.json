@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:10:57Z",
+  "stamp": "2026-07-23T10:14:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 897,
+  "n_registered": 898,
   "n_results": 1080,
   "n_trials": 49216,
   "holdout_looks_spent": 0,
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T10:13:16.959520+00:00",
+   "hash": "fe87e602",
+   "name": "mgc-china-lpr-fix-evening-window-REPLICATION-1040",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T10:09:48.610703+00:00",
    "hash": "25b44c27",
    "name": "mgc-china-lpr-fix-evening-window",
@@ -401,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 2.065"
-  },
-  {
-   "t": "2026-07-23T09:45:07.851607+00:00",
-   "hash": "bc6431c8",
-   "name": "sil-preopen-placeholder-print-prerelease-retrace",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.7632"
   }
  ],
  "pipeline": {
@@ -427,6 +427,14 @@
     "task": "xmkt-afternoon-liquidity-trough-coherent-impact-repair",
     "stage": "dev3yr",
     "started": "2026-07-23T10:05:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "replication: mgc-china-lpr-fix-evening-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:10:59Z",
     "state": "running"
    }
   ],
@@ -515,7 +523,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 123,
+   "registered": 124,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
