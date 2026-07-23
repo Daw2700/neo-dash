@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:29:24Z",
+  "stamp": "2026-07-23T11:30:28Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 926,
-  "n_results": 1106,
-  "n_trials": 49242,
+  "n_results": 1107,
+  "n_trials": 49243,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T11:30:15.710820+00:00",
+   "hash": "4e99a5f9",
+   "name": "zc-report-free-week-hedger-immediacy-discount",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.795"
+  },
+  {
    "t": "2026-07-23T11:28:57.267208+00:00",
    "hash": "77edd12c",
    "name": "m2k-liquidation-order-first-sold-overshoot",
    "status": "killed",
    "kind": "result",
    "detail": "PF 4.313"
-  },
-  {
-   "t": "2026-07-23T11:28:51.458691+00:00",
-   "hash": "4e99a5f9",
-   "name": "zc-report-free-week-hedger-immediacy-discount",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T11:25:33.513634+00:00",
@@ -414,14 +414,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-report-free-week-hedger-immediacy-discount",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:22:43Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 133,
+   "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18640
+    "trials": 18641
    }
   ]
  },
@@ -622,8 +614,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 48,
-   "n_killed": 42,
+   "n_tested": 49,
+   "n_killed": 43,
    "book_sleeves": [],
    "agents_now": []
   },
