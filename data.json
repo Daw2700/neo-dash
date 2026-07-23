@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:37:42Z",
+  "stamp": "2026-07-23T04:40:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 782,
-  "n_results": 955,
-  "n_trials": 39822,
+  "n_registered": 785,
+  "n_results": 957,
+  "n_trials": 39824,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:39:48.584584+00:00",
+   "hash": "cce978ba",
+   "name": "sil-china-session-metals-information-ratification",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.852"
+  },
+  {
+   "t": "2026-07-23T04:39:35.460416+00:00",
+   "hash": "a2d04ab0",
+   "name": "zc-dispersion-gated-overnight-reversal",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T04:39:14.504519+00:00",
+   "hash": "df9deb7a",
+   "name": "m2k-eigen-rotation-risk-model-staleness",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.488"
+  },
+  {
    "t": "2026-07-23T04:37:11.388147+00:00",
    "hash": "bc19d77a",
    "name": "m6e-post-fix-us-hours-uninformed-flow-absorption",
@@ -385,52 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.69"
-  },
-  {
-   "t": "2026-07-23T04:10:17.957931+00:00",
-   "hash": "08579929",
-   "name": "scout-53b-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T04:04:58.030118+00:00",
-   "hash": "183a7427",
-   "name": "scout-53-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T04:04:08.441107+00:00",
-   "hash": "2501cf95",
-   "name": "mcl-ine-day-session-regional-physical-signal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.732"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-eigen-rotation-risk-model-staleness",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:35:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "SIL",
-    "task": "sil-china-session-metals-information-ratification",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:36:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-dispersion-gated-overnight-intraday-reversal",
     "stage": "dev3yr",
@@ -451,7 +435,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 106,
+   "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -513,7 +497,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8986
+    "trials": 8988
    }
   ]
  },
@@ -557,8 +541,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 28,
-   "n_killed": 15,
+   "n_tested": 29,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -575,8 +559,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 9,
+   "n_tested": 13,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   },
