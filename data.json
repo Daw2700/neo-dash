@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:23:33Z",
+  "stamp": "2026-07-23T09:23:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:13:35Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "replication: mcl-inside-week-unresolved-positioning-carryover",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:23:35Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-open-hour-extreme-minute-artifact-retrace",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:23:35Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "m2k-open-hour-extreme-minute-artifact-retrace",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "zc-evening-globex-reopen-impulse-overshoot",
@@ -515,7 +522,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 119,
    "dev3yr": 0,
    "robustness": 0,
