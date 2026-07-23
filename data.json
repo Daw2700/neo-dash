@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:28:50Z",
+  "stamp": "2026-07-23T19:29:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1067,
-  "n_results": 1245,
-  "n_trials": 71341,
+  "n_registered": 1068,
+  "n_results": 1246,
+  "n_trials": 71342,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71341,
-   "registered": 1067,
-   "tested": 865,
+   "trials": 71342,
+   "registered": 1068,
+   "tested": 866,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T19:29:36.549592+00:00",
+   "hash": "347f0de4",
+   "name": "conviction-close-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.12"
+  },
+  {
+   "t": "2026-07-23T19:29:22.944485+00:00",
+   "hash": "522e0ff8",
+   "name": "mes-oilshock-classification",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T19:28:42.241214+00:00",
    "hash": "1fa8d85b",
    "name": "mes-cross-micro-dispersion-derisk",
@@ -350,14 +366,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.043"
-  },
-  {
-   "t": "2026-07-23T19:26:57.245180+00:00",
-   "hash": "347f0de4",
-   "name": "conviction-close-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T19:02:34.402069+00:00",
@@ -422,28 +430,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.432"
-  },
-  {
-   "t": "2026-07-23T18:47:01.359345+00:00",
-   "hash": "9d251c9f",
-   "name": "mes-dealer-zero-gamma-flip-regime-switch",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.504"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-conviction-close-next-rth-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:24:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-oil-shock-supply-demand-classification-equity-leg",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-underwater-duration-coiled-recovery-snapback",
     "stage": "dev3yr",
@@ -527,7 +519,7 @@
   "funnel": {
    "idea": 7,
    "registered": 166,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -588,7 +580,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31017
+    "trials": 31018
    }
   ]
  },
@@ -597,8 +589,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 136,
-   "n_killed": 92,
+   "n_tested": 137,
+   "n_killed": 93,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
