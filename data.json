@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:05:21Z",
+  "stamp": "2026-07-23T12:05:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "m2k-floating-rate-interest-expense-level-asymmetry",
     "stage": "dev3yr",
     "started": "2026-07-23T11:59:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "robustness: m2k-floatrate-level-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:05:23Z",
     "state": "running"
    }
   ],
