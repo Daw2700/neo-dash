@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:02:19Z",
+  "stamp": "2026-07-23T15:02:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,18 +436,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T15:01:32Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "mnq-shared-maker-capital-scarcity-impact-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:02:20Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mnq-shared-maker-capital-scarcity-impact-premium",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "zn-nth-weekday-institutional-process-clock",
@@ -459,7 +458,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 151,
    "dev3yr": 0,
    "robustness": 0,
