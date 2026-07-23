@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:52:53Z",
+  "stamp": "2026-07-23T06:53:15Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 829,
   "n_results": 1007,
@@ -418,14 +418,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-scheduled-sovereign-rating-review-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:43:32Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: mes-quarter-start-institutional-rebalance-execution-window",
     "stage": "dev3yr",
