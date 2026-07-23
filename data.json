@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:41:03Z",
+  "stamp": "2026-07-23T11:41:06Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-overnight-stock-bond-sign-disagreement-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:41:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-variance-risk-premium-compression-signal-switch",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:41:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-inventory-scarcity-scaled-reversal-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:41:06Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-overnight-stock-bond-sign-disagreement-fade",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "mes-variance-risk-premium-compression-signal-switch",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.48
-   },
-   {
-    "rank": 3,
-    "idea": "mng-inventory-scarcity-scaled-reversal-premium",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 4,
     "idea": "zc-feed-substitution-ratio-band-elasticity",
@@ -524,7 +522,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
