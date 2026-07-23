@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:58:40Z",
+  "stamp": "2026-07-23T15:01:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 986,
-  "n_results": 1166,
-  "n_trials": 49302,
+  "n_registered": 989,
+  "n_results": 1167,
+  "n_trials": 49303,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T15:01:19.088285+00:00",
+   "hash": "9e775731",
+   "name": "met-crossimpact-passenger-leg-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.323"
+  },
+  {
+   "t": "2026-07-23T15:00:56.077368+00:00",
+   "hash": "bf5ca9da",
+   "name": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T15:00:28.806649+00:00",
+   "hash": "f548d890",
+   "name": "test-xyz",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T14:55:36.552846+00:00",
    "hash": "8f7779fe",
    "name": "mnq-cost-router-leadlag",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.08"
-  },
-  {
-   "t": "2026-07-23T14:42:05.869121+00:00",
-   "hash": "63685af3",
-   "name": "m2k-tick-binding-regime-continuation-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.14"
-  },
-  {
-   "t": "2026-07-23T14:35:13.345164+00:00",
-   "hash": "63b62f39",
-   "name": "mcl-impact-regime-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T14:32:11.826128+00:00",
-   "hash": "dba1227f",
-   "name": "ROBUSTNESS-BATTERY mcl-impact-regime-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MET",
-    "task": "met-crossimpact-passenger-leg-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:58:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
     "stage": "dev3yr",
@@ -438,11 +430,19 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-simultaneous-roll-congestion-capacity-drain",
     "stage": "dev3yr",
     "started": "2026-07-23T14:58:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Seventh machine-discovered sleeve ready:",
+    "stage": "decision",
+    "started": "2026-07-23T14:59:02Z",
     "state": "running"
    }
   ],
@@ -477,7 +477,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 150,
+   "registered": 152,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -539,7 +539,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18700
+    "trials": 18701
    }
   ]
  },
@@ -639,8 +639,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 22,
+   "n_tested": 24,
+   "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
   },
