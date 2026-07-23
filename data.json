@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:55:06Z",
+  "stamp": "2026-07-23T19:55:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,26 +433,41 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T19:55:08Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "robustness: mcl-precautionary-demand-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:55:08Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-weekend-noneconomic-shock-flight-to-growth-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:55:08Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MBT",
+    "task": "mbt-realized-kurtosis-jump-regime-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:55:08Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mnq-weekend-noneconomic-shock-flight-to-growth-reversal",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.3
-   },
-   {
-    "rank": 11,
-    "idea": "mbt-realized-kurtosis-jump-regime-reversal",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.28
-   },
    {
     "rank": 12,
     "idea": "mes-intraday-momentum-multi-anchor-composite",
@@ -464,9 +479,9 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 1,
    "registered": 165,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
