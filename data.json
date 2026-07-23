@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:10:13Z",
+  "stamp": "2026-07-23T05:15:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 795,
-  "n_results": 969,
-  "n_trials": 39836,
+  "n_registered": 798,
+  "n_results": 972,
+  "n_trials": 39839,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -285,6 +285,18 @@
    }
   },
   {
+   "id": "mnq-propfirm-cohort-monthstart-stop-density",
+   "name": "mnq-propfirm-cohort-monthstart-stop-density",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 155,
+   "wr": 0.3871,
+   "usd_mo": 144,
+   "pf": 1.405,
+   "usd_trade": 33.5
+  },
+  {
    "id": "b3-tom-long",
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -299,21 +311,33 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  {
-   "id": "mnq-event-free-day-flow-persistence",
-   "name": "mnq-event-free-day-flow-persistence",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 675,
-   "wr": 0.5481,
-   "usd_mo": 563,
-   "pf": 1.368,
-   "usd_trade": 30.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T05:13:29.951534+00:00",
+   "hash": "acc8c1a2",
+   "name": "sil-retail-hours-unconfirmed-move-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.6384"
+  },
+  {
+   "t": "2026-07-23T05:11:45.471150+00:00",
+   "hash": "93f5fd60",
+   "name": "mnq-propfirm-cohort-monthstart-stop-density",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.405"
+  },
+  {
+   "t": "2026-07-23T05:11:16.897977+00:00",
+   "hash": "a7d29fa5",
+   "name": "mes-overnight-churn",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.697"
+  },
   {
    "t": "2026-07-23T05:10:06.788311+00:00",
    "hash": "ee223d7a",
@@ -385,52 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.71"
-  },
-  {
-   "t": "2026-07-23T04:58:45.653039+00:00",
-   "hash": "0b181bfd",
-   "name": "mes-outside-day-two-sided-stop-depletion-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.106"
-  },
-  {
-   "t": "2026-07-23T04:43:57.526591+00:00",
-   "hash": "ffd724f3",
-   "name": "rank-effect-extreme",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.048"
-  },
-  {
-   "t": "2026-07-23T04:43:43.271832+00:00",
-   "hash": "992f94eb",
-   "name": "scout-54-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-overnight-churn-high-volume-zero-net-expansion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:07:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-propfirm-cohort-monthstart-stop-density",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:07:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "SIL",
     "task": "sil-retail-hours-unconfirmed-move-fade",
     "stage": "dev3yr",
@@ -531,7 +515,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9000
+    "trials": 9003
    }
   ]
  },
@@ -540,7 +524,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 120,
+   "n_tested": 121,
    "n_killed": 74,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -555,8 +539,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 133,
-   "n_killed": 104,
+   "n_tested": 134,
+   "n_killed": 105,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -593,8 +577,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 10,
+   "n_tested": 14,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1272,6 +1256,26 @@
     "apex_max": 8
    }
   },
+  "mnq-propfirm-cohort-monthstart-stop-density": {
+   "name": "mnq-propfirm-cohort-monthstart-stop-density",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Prop firms concentrate evaluation-account promotions at month start, so each month opens with a fresh cohort of small, tightly stopped MNQ accounts whose stops sit at the same obvious levels (prior-day high/low, opening-range edges). Stop density at those levels is highest in the first business week of the month and decays as the cohort washes out, so sweep-and-reverse (fade a break of the prior RTH session high or low) pays best early in the month. Payer: the newly funded cohort whose stops get run and reverse.",
+   "metrics": {
+    "n": 155,
+    "wr": 0.3871,
+    "pf": 1.405,
+    "usd_mo": 144,
+    "usd_trade": 33.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T05:11:45.471150+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b3-tom-long": {
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -1305,36 +1309,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mnq-event-free-day-flow-persistence": {
-   "name": "mnq-event-free-day-flow-persistence",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "On days with no scheduled macro release (no FOMC/CPI on the calendar), intraday price movement is driven by inventory and order-flow imbalance rather than information, so the first-60-minute directional displacement reflects a liquidity-provider inventory imbalance that must keep being paid for through the rest of the session; on scheduled-event days an information shock resets order books and kills that persistence, so the edge should only appear when the macro calendar is empty.",
-   "metrics": {
-    "n": 675,
-    "wr": 0.5481,
-    "pf": 1.368,
-    "usd_mo": 563,
-    "usd_trade": 30.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T07:36:35.002815+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T07:42:14.432674+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T07:46:52.300888+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
   }
  },
  "decisions": [
