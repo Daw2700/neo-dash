@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:16:19Z",
+  "stamp": "2026-07-23T05:16:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:15:57Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-changepoint-in-volume-per-unit-range-participant-mix",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:16:21Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "mgc-changepoint-in-volume-per-unit-range-participant-mix",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 14,
     "idea": "mes-early-close-session-truncation-inventory-overshoot",
@@ -451,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
