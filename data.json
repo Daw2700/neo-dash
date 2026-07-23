@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:35:28Z",
+  "stamp": "2026-07-23T10:35:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "robustness: mgc-first-business-day-index-allocation-print",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:28:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "replication: mgc-first-business-day-index-allocation-print",
     "stage": "dev3yr",
