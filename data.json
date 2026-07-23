@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:14:07Z",
+  "stamp": "2026-07-23T18:14:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1047,
-  "n_results": 1224,
-  "n_trials": 68294,
+  "n_results": 1225,
+  "n_trials": 68295,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68294,
+   "trials": 68295,
    "registered": 1047,
-   "tested": 845,
+   "tested": 846,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -332,20 +332,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:14:22.841140+00:00",
+   "hash": "b4932cee",
+   "name": "zc-elevator-storage-financing-rate-regime-carry-drag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.749"
+  },
+  {
    "t": "2026-07-23T18:13:35.507327+00:00",
    "hash": "04fcb3da",
    "name": "mbt-utc-day-boundary-offshore-mark-nonalignment",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.2259"
-  },
-  {
-   "t": "2026-07-23T18:13:33.731620+00:00",
-   "hash": "b4932cee",
-   "name": "zc-elevator-storage-financing-rate-regime-carry-drag",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T18:12:54.765094+00:00",
@@ -432,14 +432,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-elevator-storage-financing-rate-regime-carry-drag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:10:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-brent-basket-wti-midland-inclusion-regime-shift",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-tokyo-afternoon-reopen-us-exposure-hedge-restart",
     "stage": "dev3yr",
@@ -477,8 +469,8 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 166,
-   "dev3yr": 3,
+   "registered": 165,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -539,7 +531,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27973
+    "trials": 27974
    }
   ]
  },
@@ -669,8 +661,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 52,
-   "n_killed": 46,
+   "n_tested": 53,
+   "n_killed": 47,
    "book_sleeves": [
     "zc-rma-volatility-factor-five-day-window",
     "zc-farm-cash-rent-duedate-liquidation-window"
