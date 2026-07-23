@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:58:03Z",
+  "stamp": "2026-07-23T11:03:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -422,34 +422,10 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-nuclear-refuelling-outage-power-burn-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:48:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-bd4-inflow-exhaustion-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:48:00Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-23T10:53:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-5",
-    "market": "MCL",
-    "task": "robustness: mcl-first-week-producer-hedge-participation-spike",
-    "stage": "dev3yr",
     "started": "2026-07-23T10:53:54Z",
     "state": "running"
    }
