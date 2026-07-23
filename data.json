@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:13:37Z",
+  "stamp": "2026-07-23T07:15:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 836,
-  "n_results": 1016,
-  "n_trials": 49152,
+  "n_results": 1017,
+  "n_trials": 49153,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,12 +311,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T07:13:33.772095+00:00",
+   "t": "2026-07-23T07:14:17.438501+00:00",
    "hash": "71124a34",
    "name": "mes-orb-failed-breakout-reclaim-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.818"
   },
   {
    "t": "2026-07-23T07:13:17.639186+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-opening-range-failed-breakout-reclaim-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:11:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "recheck: zs-both-sided-overnight-sweep-liquidation-reversal",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-range-acceptance-age-compression-release",
     "stage": "dev3yr",
@@ -474,7 +466,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 111,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -536,7 +528,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18550
+    "trials": 18551
    }
   ]
  },
@@ -560,8 +552,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 141,
-   "n_killed": 120,
+   "n_tested": 142,
+   "n_killed": 121,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
