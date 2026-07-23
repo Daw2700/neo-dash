@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:29:14Z",
+  "stamp": "2026-07-23T08:30:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 860,
-  "n_results": 1042,
-  "n_trials": 49178,
+  "n_registered": 863,
+  "n_results": 1043,
+  "n_trials": 49179,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T08:30:54.275204+00:00",
+   "hash": "3aa6934c",
+   "name": "zn-sep-dotplot-path-integration-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T08:30:52.961721+00:00",
+   "hash": "7a1fcb9d",
+   "name": "mcl-aramco-osp-announcement-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.304"
+  },
+  {
+   "t": "2026-07-23T08:30:40.117227+00:00",
+   "hash": "74d31790",
+   "name": "mes-msci-quarterly-review-effective-close",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T08:28:59.800039+00:00",
    "hash": "da95f05a",
    "name": "zc-grain-stocks-continuation",
@@ -385,44 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.05"
-  },
-  {
-   "t": "2026-07-23T08:00:05.413963+00:00",
-   "hash": "a600ec51",
-   "name": "levetf-close-overnight-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.333"
-  },
-  {
-   "t": "2026-07-23T07:59:18.322481+00:00",
-   "hash": "c65ab29e",
-   "name": "mbt-offshore-liq-cascade-multiday-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.8107"
-  },
-  {
-   "t": "2026-07-23T07:59:17.271741+00:00",
-   "hash": "3d65e160",
-   "name": "m2k-housing-release-homebuilder-weight-channel-RECHECK",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-aramco-osp-announcement-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:25:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-msci-quarterly-review-effective-close",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-sep-dotplot-path-integration-lag",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 114,
+   "registered": 116,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -576,7 +568,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18576
+    "trials": 18577
    }
   ]
  },
@@ -647,8 +639,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 61,
-   "n_killed": 44,
+   "n_tested": 62,
+   "n_killed": 45,
    "book_sleeves": [],
    "agents_now": []
   },
