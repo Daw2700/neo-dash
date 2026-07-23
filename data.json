@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:30:18Z",
+  "stamp": "2026-07-23T09:34:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 881,
-  "n_results": 1063,
-  "n_trials": 49199,
+  "n_registered": 883,
+  "n_results": 1064,
+  "n_trials": 49200,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:34:39.583412+00:00",
+   "hash": "4b1d1e15",
+   "name": "mbt-annualized-basis-leverage-crowding-gate",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T09:34:38.358478+00:00",
+   "hash": "272e6ca2",
+   "name": "m2k-open-hour-extreme-minute-artifact-retrace",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.883"
+  },
+  {
+   "t": "2026-07-23T09:34:24.231280+00:00",
+   "hash": "04db4a97",
+   "name": "zn-mts-supply-repricing-drift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T09:29:03.134265+00:00",
    "hash": "bcee80f1",
    "name": "zc-evening-globex-reopen-impulse-overshoot",
@@ -385,44 +409,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 3.326"
-  },
-  {
-   "t": "2026-07-23T09:03:15.038214+00:00",
-   "hash": "69c4eaa4",
-   "name": "mym-venue-allocation-wedge-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T09:02:02.250194+00:00",
-   "hash": "580dc1c1",
-   "name": "m6e-quarter-end-reserve-rebalance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.2019"
-  },
-  {
-   "t": "2026-07-23T09:01:58.639828+00:00",
-   "hash": "5cc7f1aa",
-   "name": "mes-quiet-streak-range-budget-contraction",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "recheck: m2k-open-hour-extreme-minute-artifact-retrace",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:29:52Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-monthly-treasury-statement-supply-path-repricing",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-annualized-basis-leverage-crowding-gate",
     "stage": "dev3yr",
@@ -496,7 +488,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 120,
+   "registered": 122,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -558,7 +550,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18597
+    "trials": 18598
    }
   ]
  },
