@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:09:02Z",
+  "stamp": "2026-07-23T00:09:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,21 +412,27 @@
     "stage": "dev3yr",
     "started": "2026-07-23T00:06:07Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 8,
-    "idea": "mes-ira-april-deadline-inflow",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.2
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "recheck: mes-buyback-window-reopen-postearnings-bid",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:09:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-ira-april-deadline-inflow",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:09:04Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
