@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:10:28Z",
+  "stamp": "2026-07-23T18:10:55Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1044,
   "n_results": 1223,
@@ -429,35 +429,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZC",
+    "task": "zc-elevator-storage-financing-rate-regime-carry-drag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:10:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-brent-basket-wti-midland-inclusion-regime-shift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:10:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MBT",
+    "task": "mbt-utc-day-boundary-offshore-mark-nonalignment",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:10:55Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "zc-elevator-storage-financing-rate-regime-carry-drag",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 11,
-    "idea": "mcl-brent-basket-wti-midland-inclusion-regime-shift",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 12,
-    "idea": "mbt-utc-day-boundary-offshore-mark-nonalignment",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 13,
     "idea": "mes-tokyo-afternoon-reopen-us-exposure-hedge-restart",
@@ -487,9 +485,9 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 3,
    "registered": 164,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
