@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:23:34Z",
+  "stamp": "2026-07-23T07:32:57Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 841,
-  "n_results": 1024,
-  "n_trials": 49160,
+  "n_registered": 842,
+  "n_results": 1025,
+  "n_trials": 49161,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -306,10 +306,22 @@
    "wr": 0.8333,
    "usd_mo": 18,
    "pf": 6.676,
-   "usd_trade": 105.1
+   "usd_trade": 105.1,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T07:30:12.371866+00:00",
+   "hash": "69c93951",
+   "name": "mnq-durable-goods-capex-techrev-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.963"
+  },
   {
    "t": "2026-07-23T07:23:18.609930+00:00",
    "hash": "a144b748",
@@ -397,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.015"
-  },
-  {
-   "t": "2026-07-23T07:11:03.179386+00:00",
-   "hash": "40cfe01c",
-   "name": "met-onshore-mark-gap-offshore-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.546"
   }
  ],
  "pipeline": {
@@ -415,14 +419,6 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T07:19:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-durable-goods-capex-orders-tech-revenue-channel",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:21:08Z",
     "state": "running"
    }
   ],
@@ -491,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18558
+    "trials": 18559
    }
   ]
  },
@@ -500,8 +496,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 125,
-   "n_killed": 82,
+   "n_tested": 126,
+   "n_killed": 83,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -1330,7 +1326,11 @@
      "stage": "replication",
      "verdict": "FAIL"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  },
  "decisions": [
