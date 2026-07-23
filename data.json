@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:27:23Z",
+  "stamp": "2026-07-23T02:27:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -398,15 +398,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T02:09:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MES",
     "task": "replication: m2k-quiet-session-onesided-flow",
     "stage": "dev3yr",
@@ -414,9 +406,118 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "zs-rth-reopen-nonretouch-acceptance",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 2,
+    "idea": "mbt-uniform-volume-distribution-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 3,
+    "idea": "mes-structured-note-strike-setting-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-equity-duration-ratio-rate-shock-lag",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-weekly-monwed-option-assignment-flow",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 6,
+    "idea": "mcl-api-eia-disagreement-stranded-reversal",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 7,
+    "idea": "m6e-flash-pmi-partial-info-overextrapolation",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 8,
+    "idea": "zn-mba-application-survey-origination-hedge-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 9,
+    "idea": "zc-weekly-ethanol-production-print-grind-demand",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 10,
+    "idea": "mes-noise-trader-share-lambda-recovery",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 11,
+    "idea": "xmkt-open-print-acceptance-breadth-gate",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 12,
+    "idea": "m2k-h8-bank-credit-friday-release-overnight-repricing",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.3
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 99,
    "dev3yr": 0,
    "robustness": 0,
