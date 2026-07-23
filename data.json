@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:27:47Z",
+  "stamp": "2026-07-23T02:33:43Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 743,
-  "n_results": 911,
-  "n_trials": 30899,
+  "n_registered": 746,
+  "n_results": 914,
+  "n_trials": 30902,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -213,18 +213,6 @@
    "usd_trade": 144.4
   },
   {
-   "id": "m2k-quiet-session-onesided-flow",
-   "name": "m2k-quiet-session-onesided-flow",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 175,
-   "wr": 0.5371,
-   "usd_mo": 69,
-   "pf": 1.546,
-   "usd_trade": 14.2
-  },
-  {
    "id": "mcl-hurricane-supplyrisk-decay",
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -295,9 +283,53 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
+  },
+  {
+   "id": "mcl-closure-length-dose-response-reopen-overshoot",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 154,
+   "wr": 0.526,
+   "usd_mo": 61,
+   "pf": 1.325,
+   "usd_trade": 14.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T02:31:16.201999+00:00",
+   "hash": "97ae3e36",
+   "name": "m2k-quiet-session-onesided-flow",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.946"
+  },
+  {
+   "t": "2026-07-23T02:31:14.210725+00:00",
+   "hash": "051717c0",
+   "name": "mbt-uniform-volume-distribution-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.1747"
+  },
+  {
+   "t": "2026-07-23T02:30:56.934891+00:00",
+   "hash": "7bafff27",
+   "name": "zs-rth-reopen-nonretouch-acceptance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.812"
+  },
+  {
+   "t": "2026-07-23T02:29:19.927144+00:00",
+   "hash": "74b6f61f",
+   "name": "rep-m2k-quiet-session-onesided-flow-mym",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T02:24:53.340915+00:00",
    "hash": "97ae3e36",
@@ -361,38 +393,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T02:02:06.745132+00:00",
-   "hash": "b6bdf375",
-   "name": "zs-delivery-option-decay-ramp-ROBUSTNESS-868",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T02:01:37.803684+00:00",
-   "hash": "6299d924",
-   "name": "mbt-multiday-closure-no-overshoot",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1356"
-  },
-  {
-   "t": "2026-07-23T02:01:11.007996+00:00",
-   "hash": "7b9d9616",
-   "name": "mbt-equity-overnight-overextrapolation-us-session-fade",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.542"
-  },
-  {
-   "t": "2026-07-23T01:58:53.271329+00:00",
-   "hash": "250b8476",
-   "name": "rep-mbt-equity-overnight-overextrapolation-us-session-fade-met",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZS",
-    "task": "zs-rth-reopen-nonretouch-acceptance",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:27:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MBT",
     "task": "mbt-uniform-volume-distribution-continuation",
     "stage": "dev3yr",
@@ -516,7 +508,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 99,
+   "registered": 100,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -578,7 +570,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 63
+    "trials": 66
    }
   ]
  },
@@ -667,7 +659,7 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 17,
+   "n_tested": 18,
    "n_killed": 10,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
@@ -714,8 +706,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 15,
-   "n_killed": 11,
+   "n_tested": 16,
+   "n_killed": 12,
    "book_sleeves": [],
    "agents_now": []
   }
@@ -1195,31 +1187,6 @@
     }
    ]
   },
-  "m2k-quiet-session-onesided-flow": {
-   "name": "m2k-quiet-session-onesided-flow",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Following the calmest M2K sessions, systematic vol-target and short-vol supply sit at maximum size while discretionary demand is absent, leaving the small-cap book one-sided so any arriving flow moves price without a counterparty; tested with a mechanism control of matched quiet MES sessions, where the same vol-target cohort operates in a deeper book, to check whether the effect is M2K-specific microstructure or generic macro drift.",
-   "metrics": {
-    "n": 175,
-    "wr": 0.5371,
-    "pf": 1.546,
-    "usd_mo": 69,
-    "usd_trade": 14.2
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T02:12:48.873716+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T02:24:53.340915+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ]
-  },
   "mcl-hurricane-supplyrisk-decay": {
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -1357,6 +1324,36 @@
     },
     {
      "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
+   "metrics": {
+    "n": 154,
+    "wr": 0.526,
+    "pf": 1.325,
+    "usd_mo": 61,
+    "usd_trade": 14.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:10:08.535860+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T14:13:24.952332+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
     }
