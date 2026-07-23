@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:24:47Z",
+  "stamp": "2026-07-23T18:33:22Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1050,
   "n_results": 1228,
@@ -433,19 +433,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T18:16:38Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "sil-prehalt-final-hour-momentum-drift",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 2,
+    "idea": "mes-equalweight-rebalance-megacap-trim-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 3,
+    "idea": "m2k-regsho-ftd-t35-closeout-buyin-window",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 5,
+    "idea": "mcl-gsci-index-roll-sunshine-crude-weight",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 4,
+    "idea": "m6e-london-lunch-preus-dollar-demand-drift",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 6,
+    "idea": "mnq-mes-mym-triangular-index-consistency-reversion",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 10,
+    "idea": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 7,
+    "idea": "mes-dealer-zero-gamma-flip-regime-switch",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 8,
+    "idea": "zn-coupon-payment-reinvestment-duration-bid",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-securities-lending-recall-record-date-shortcover",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 13,
+    "idea": "mcl-overnight-return-persistence-momentum",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 11,
+    "idea": "mbt-spot-etf-inflow-underreaction-continuation",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.26
+   },
+   {
+    "rank": 12,
+    "idea": "mes-etf-heartbeat-quarterend-inkind-flush",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.24
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 165,
    "dev3yr": 0,
    "robustness": 0,
