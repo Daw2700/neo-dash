@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:45:58Z",
+  "stamp": "2026-07-23T00:47:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 710,
-  "n_results": 869,
-  "n_trials": 30857,
+  "n_results": 870,
+  "n_trials": 30858,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6
@@ -299,12 +299,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T00:45:52.650170+00:00",
+   "t": "2026-07-23T00:46:36.999032+00:00",
    "hash": "d3ac9060",
    "name": "mbt-difficulty-adjustment-miner-payout-clock",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
   },
   {
    "t": "2026-07-23T00:45:37.281956+00:00",
@@ -399,14 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-difficulty-adjustment-miner-payout-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:40:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-china-state-reserve-auction-window",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "SIL",
     "task": "sil-pv-gridconnection-deadline-demand-pulse",
     "stage": "dev3yr",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 95,
+   "registered": 94,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 21
+    "trials": 22
    }
   ]
  },
