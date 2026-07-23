@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:35:32Z",
+  "stamp": "2026-07-23T09:35:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 883,
-  "n_results": 1065,
-  "n_trials": 49201,
+  "n_results": 1066,
+  "n_trials": 49202,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:35:47.177476+00:00",
+   "hash": "4b1d1e15",
+   "name": "mbt-annualized-basis-leverage-crowding-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.048"
+  },
+  {
    "t": "2026-07-23T09:35:16.717897+00:00",
    "hash": "04db4a97",
    "name": "zn-mts-supply-repricing-drift",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.809"
-  },
-  {
-   "t": "2026-07-23T09:34:39.583412+00:00",
-   "hash": "4b1d1e15",
-   "name": "mbt-annualized-basis-leverage-crowding-gate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T09:34:38.358478+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-annualized-basis-leverage-crowding-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:30:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-speculative-oi-change-tsmom-gate",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-minute-scale-variance-ratio-regime",
     "stage": "dev3yr",
@@ -478,7 +470,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 121,
+   "registered": 120,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -540,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18599
+    "trials": 18600
    }
   ]
  },
@@ -629,8 +621,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 22,
-   "n_killed": 15,
+   "n_tested": 23,
+   "n_killed": 16,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
