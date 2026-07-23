@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:40:01Z",
+  "stamp": "2026-07-23T01:40:04Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -396,35 +396,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-expiry-week-dealer-capacity-impact-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:40:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-preclosure-inventory-aversion-reversal-dose-response",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:40:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-wednesday-close-equity-to-duration-hedge-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:40:04Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-expiry-week-dealer-capacity-impact-reversion",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.58
-   },
-   {
-    "rank": 2,
-    "idea": "mes-preclosure-inventory-aversion-reversal-dose-response",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "zn-wednesday-close-equity-to-duration-hedge-rotation",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 4,
     "idea": "zs-export-sales-china-session-ratification",
@@ -517,7 +515,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 96,
    "dev3yr": 0,
    "robustness": 0,
