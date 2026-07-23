@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:13:46Z",
+  "stamp": "2026-07-23T00:14:09Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 697,
   "n_results": 856,
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "recheck: mes-buyback-window-reopen-postearnings-bid",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:09:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "replication: mcl-preweekend-overnight-riskpremium",
     "stage": "dev3yr",
