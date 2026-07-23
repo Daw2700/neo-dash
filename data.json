@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:20:22Z",
+  "stamp": "2026-07-23T23:20:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1135,
-  "n_results": 1320,
-  "n_trials": 79185,
+  "n_results": 1321,
+  "n_trials": 79186,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79185,
+   "trials": 79186,
    "registered": 1135,
-   "tested": 918,
+   "tested": 919,
    "passed": 170,
    "survived": 36,
    "replicated": 13,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:20:39.130991+00:00",
+   "hash": "3cbba9e7",
+   "name": "mes-holiday-deferred-margin",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.904"
+  },
+  {
    "t": "2026-07-23T23:20:06.249101+00:00",
    "hash": "b0bc5cb7",
    "name": "zn-sifma-earlyclose-truncation",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.027"
-  },
-  {
-   "t": "2026-07-23T23:19:44.269002+00:00",
-   "hash": "3cbba9e7",
-   "name": "mes-holiday-deferred-margin",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T23:18:29.861792+00:00",
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-holiday-deferred-variation-margin-free-leverage-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:16:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-constant-leverage-etf-close-rebalance-convexity",
     "stage": "dev3yr",
@@ -490,8 +482,8 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 180,
-   "dev3yr": 3,
+   "registered": 179,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -552,7 +544,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38867
+    "trials": 38868
    }
   ]
  },
@@ -577,8 +569,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 188,
-   "n_killed": 155,
+   "n_tested": 189,
+   "n_killed": 156,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
