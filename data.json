@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:48:11Z",
+  "stamp": "2026-07-23T05:48:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:47:29Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-updown-minute-volume-asymmetry-absorption-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:48:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mes-updown-minute-volume-asymmetry-absorption-carry",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 9,
     "idea": "m2k-finra-short-interest-publication-cover-window",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
