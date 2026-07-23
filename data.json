@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:19:41Z",
+  "stamp": "2026-07-23T07:19:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,22 @@
     "task": "m6e-prior-onshore-vwap-overnight-anchor-reversion",
     "stage": "dev3yr",
     "started": "2026-07-23T07:18:58Z",
+    "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T07:19:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "recheck: mes-chicago-pmi-monthend-flow-collision-impact-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:19:42Z",
     "state": "running"
    }
   ],
