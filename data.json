@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:15:31Z",
+  "stamp": "2026-07-23T03:15:34Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -396,35 +396,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-crude-liquidity-channel-risk-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:15:34Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-complex-cojump-breadth-overnight-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:15:34Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-price-vol-cojump-information-vs-flow-classifier",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:15:34Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-crude-liquidity-channel-risk-transfer",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-complex-cojump-breadth-overnight-gate",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-price-vol-cojump-information-vs-flow-classifier",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.48
-   },
    {
     "rank": 4,
     "idea": "m6e-prorata-matching-depth-illusion-reversion",
@@ -508,7 +506,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 102,
    "dev3yr": 0,
    "robustness": 0,
