@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:10:25Z",
+  "stamp": "2026-07-23T07:11:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 833,
-  "n_results": 1013,
-  "n_trials": 49149,
+  "n_results": 1014,
+  "n_trials": 49150,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,20 +311,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:11:03.179386+00:00",
+   "hash": "40cfe01c",
+   "name": "met-onshore-mark-gap-offshore-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.546"
+  },
+  {
    "t": "2026-07-23T07:10:02.742577+00:00",
    "hash": "d6fe4f5f",
    "name": "mcl-unrevisited-settlement-continuation",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.974"
-  },
-  {
-   "t": "2026-07-23T07:09:27.009048+00:00",
-   "hash": "40cfe01c",
-   "name": "met-onshore-mark-gap-offshore-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T07:09:23.127764+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-onshore-mark-gap-offshore-led-overnight-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:07:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "zs-both-sided-overnight-sweep-liquidation-reversal",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-umich-prelim-consumer-elasticity-relative-repricing",
     "stage": "dev3yr",
@@ -492,7 +484,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 111,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -554,7 +546,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18547
+    "trials": 18548
    }
   ]
  },
@@ -654,8 +646,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 15,
+   "n_tested": 17,
+   "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
   },
