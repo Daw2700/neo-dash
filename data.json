@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:45:52Z",
+  "stamp": "2026-07-23T00:45:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 709,
+  "n_registered": 710,
   "n_results": 869,
   "n_trials": 30857,
   "holdout_looks_spent": 0,
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:45:52.650170+00:00",
+   "hash": "d3ac9060",
+   "name": "mbt-difficulty-adjustment-miner-payout-clock",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T00:45:37.281956+00:00",
    "hash": "c6a6f22f",
    "name": "zn-pension-contribution-deadline-september",
@@ -385,14 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.601"
-  },
-  {
-   "t": "2026-07-23T00:27:17.757070+00:00",
-   "hash": "f45fdd29",
-   "name": "met-monthend-us-session-redemption-drag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.593"
   }
  ],
  "pipeline": {
@@ -412,22 +412,28 @@
     "stage": "dev3yr",
     "started": "2026-07-23T00:44:07Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 12,
-    "idea": "sil-pv-gridconnection-deadline-demand-pulse",
-    "source": "literature",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.2
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T00:45:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "SIL",
+    "task": "sil-pv-gridconnection-deadline-demand-pulse",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:45:57Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
-   "registered": 94,
+   "idea": 0,
+   "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
