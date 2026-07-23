@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:58:42Z",
+  "stamp": "2026-07-23T09:04:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 871,
-  "n_results": 1053,
-  "n_trials": 49189,
+  "n_registered": 874,
+  "n_results": 1056,
+  "n_trials": 49192,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -249,22 +249,6 @@
    "usd_trade": 30.0
   },
   {
-   "id": "mes-quiet-streak-range-budget-contraction",
-   "name": "mes-quiet-streak-range-budget-contraction",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 93,
-   "wr": 0.5484,
-   "usd_mo": 43,
-   "pf": 1.344,
-   "usd_trade": 16.6,
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
-  },
-  {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -311,9 +295,61 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  {
+   "id": "zn-cash-market-closed-futures-open-asymmetry",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "pinned": false,
+   "n": 6,
+   "wr": 0.8333,
+   "usd_mo": 18,
+   "pf": 6.676,
+   "usd_trade": 105.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T09:03:15.038214+00:00",
+   "hash": "69c4eaa4",
+   "name": "mym-venue-allocation-wedge-continuation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T09:02:02.250194+00:00",
+   "hash": "580dc1c1",
+   "name": "m6e-quarter-end-reserve-rebalance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.2019"
+  },
+  {
+   "t": "2026-07-23T09:01:58.639828+00:00",
+   "hash": "5cc7f1aa",
+   "name": "mes-quiet-streak-range-budget-contraction",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T09:00:42.215161+00:00",
+   "hash": "acd1e600",
+   "name": "robustness-battery::mym-venue-allocation-wedge-continuation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T09:00:38.294887+00:00",
+   "hash": "127b1483",
+   "name": "scout-60-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T08:53:23.090954+00:00",
    "hash": "5cc7f1aa",
@@ -369,46 +405,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.199"
-  },
-  {
-   "t": "2026-07-23T08:40:03.913361+00:00",
-   "hash": "3aa6934c",
-   "name": "zn-sep-dotplot-path-integration-lag",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T08:37:21.902205+00:00",
-   "hash": "771e08f7",
-   "name": "robustness-battery::zn-sep-dotplot-path-integration-lag",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T08:34:39.346712+00:00",
-   "hash": "d4da9cf4",
-   "name": "mnq-ndx-capping-quarterly-rebalance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.637"
-  },
-  {
-   "t": "2026-07-23T08:32:22.534148+00:00",
-   "hash": "3aa6934c",
-   "name": "zn-sep-dotplot-path-integration-lag",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.299"
-  },
-  {
-   "t": "2026-07-23T08:32:05.093476+00:00",
-   "hash": "74d31790",
-   "name": "mes-msci-quarterly-review-effective-close",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 2.103"
   }
  ],
  "pipeline": {
@@ -428,22 +424,6 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:58:18Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "robustness: mes-quiet-streak-range-budget-contraction",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:58:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "M6E",
-    "task": "m6e-quarter-end-reserve-manager-currency-rebalance",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:58:41Z",
-    "state": "running"
    }
   ],
   "backlog": [
@@ -459,7 +439,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 116,
+   "registered": 118,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -521,7 +501,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18587
+    "trials": 18590
    }
   ]
  },
@@ -630,8 +610,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 41,
-   "n_killed": 40,
+   "n_tested": 42,
+   "n_killed": 41,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1230,30 +1210,6 @@
     }
    ]
   },
-  "mes-quiet-streak-range-budget-contraction": {
-   "name": "mes-quiet-streak-range-budget-contraction",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Consecutive low-range sessions predict a smaller next-session range, monotonically, because breakout traders size stops and targets off trailing unconditional ATR and thus systematically over-buy range in exactly the state where realized range is contracting, so the counterparty who fades that over-sized excursion back toward the open is paid.",
-   "metrics": {
-    "n": 93,
-    "wr": 0.5484,
-    "pf": 1.344,
-    "usd_mo": 43,
-    "usd_trade": 16.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T08:53:23.090954+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
-  },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -1355,6 +1311,36 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  "zn-cash-market-closed-futures-open-asymmetry": {
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
+   "metrics": {
+    "n": 6,
+    "wr": 0.8333,
+    "pf": 6.676,
+    "usd_mo": 18,
+    "usd_trade": 105.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:40:09.435772+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T10:46:10.359530+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T10:51:30.720138+00:00",
+     "stage": "replication",
+     "verdict": "FAIL"
+    }
+   ]
   }
  },
  "decisions": [
