@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:43:30Z",
+  "stamp": "2026-07-23T01:43:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,18 +412,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T01:40:04Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-export-sales-china-session-ratification",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:43:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zs-export-sales-china-session-ratification",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 5,
     "idea": "mnq-continuous-chart-roll-indicator-discontinuity",
@@ -507,7 +506,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 98,
    "dev3yr": 0,
    "robustness": 0,
