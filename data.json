@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:34:26Z",
+  "stamp": "2026-07-23T04:34:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T04:31:40Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-post-fix-us-hours-uninformed-flow-absorption",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:34:28Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "m6e-post-fix-us-hours-uninformed-flow-absorption",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 9,
     "idea": "m2k-eigen-rotation-risk-model-staleness",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
