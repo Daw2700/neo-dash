@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:45:37Z",
+  "stamp": "2026-07-23T17:49:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1035,
-  "n_results": 1216,
-  "n_trials": 68286,
+  "n_registered": 1038,
+  "n_results": 1218,
+  "n_trials": 68288,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68286,
-   "registered": 1035,
-   "tested": 838,
+   "trials": 68288,
+   "registered": 1038,
+   "tested": 840,
    "passed": 160,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T17:49:04.747487+00:00",
+   "hash": "1a8f3eb0",
+   "name": "mgc-official-sector-purchase-pace-reporting-lag-state",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.267"
+  },
+  {
+   "t": "2026-07-23T17:49:01.663893+00:00",
+   "hash": "342a7ed5",
+   "name": "xmkt-hedge-outage-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.742"
+  },
+  {
+   "t": "2026-07-23T17:48:00.797189+00:00",
+   "hash": "58ab4f74",
+   "name": "zn-tba-48hour-daypool-clock",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T17:45:12.001782+00:00",
    "hash": "650a8410",
    "name": "m2k-followon-offering-supply-overnight-dilution-window",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.638"
-  },
-  {
-   "t": "2026-07-23T17:11:16.440402+00:00",
-   "hash": "93786c57",
-   "name": "ROBUSTNESS-BATTERY mes-monthly-vwap-benchmark-completion-pressure",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T17:10:31.076854+00:00",
-   "hash": "9d0817aa",
-   "name": "mes-buyback-constant-notional-lowadv-amplification-ROBUSTNESS-1163",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T17:03:39.456987+00:00",
-   "hash": "1063edb8",
-   "name": "zn-onetick-absorption-shelf-exhaustion-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.068"
   }
  ],
  "pipeline": {
@@ -448,14 +448,6 @@
     "task": "zn-tba-48hour-day-pool-allocation-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T17:42:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-official-sector-purchase-pace-reporting-lag-state",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:45:37Z",
     "state": "running"
    }
   ],
@@ -544,8 +536,8 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 161,
-   "dev3yr": 3,
+   "registered": 162,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -606,7 +598,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27965
+    "trials": 27967
    }
   ]
  },
@@ -615,8 +607,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 135,
-   "n_killed": 91,
+   "n_tested": 136,
+   "n_killed": 92,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -662,8 +654,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 57,
-   "n_killed": 47,
+   "n_tested": 58,
+   "n_killed": 48,
    "book_sleeves": [],
    "agents_now": []
   },
