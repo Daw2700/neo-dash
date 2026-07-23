@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:32:57Z",
+  "stamp": "2026-07-23T07:36:04Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 842,
   "n_results": 1025,
@@ -412,19 +412,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T07:19:42Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mcl-merchant-quarterend-workingcapital-hedge-lift",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "zs-marketing-year-high-reference-price-hedge-supply",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mng-weather-premium-multiday-physical-supply-response",
+    "source": "data-screen",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "m6e-tokyo-daily-margin-evaluation-liquidation-clock",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-oil-costpush-smallcap-margin-channel",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "m2k-housing-release-homebuilder-weight-channel",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mnq-single-stock-levetf-megacap-close-amplification",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mbt-offshore-liquidation-cascade-multiday-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "met-complex-breadth-riskbudget-funding-drain",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mcl-beta-decoupling-idiosyncratic-flow-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "mng-datacenter-power-load-equity-narrative-lag",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "met-staking-yield-frontend-rate-competition-lag",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "zc-farmer-cashflow-calendar-hedge-lift-vs-storage-decision",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 111,
    "dev3yr": 0,
    "robustness": 0,
