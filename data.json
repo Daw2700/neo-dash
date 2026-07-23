@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:39:51Z",
+  "stamp": "2026-07-23T18:39:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:33:25Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-gsci-index-roll-sunshine-crude-weight",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:39:53Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mcl-gsci-index-roll-sunshine-crude-weight",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 4,
     "idea": "m6e-london-lunch-preus-dollar-demand-drift",
@@ -544,9 +543,9 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 165,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
