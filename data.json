@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:29:53Z",
+  "stamp": "2026-07-23T19:29:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,6 +449,14 @@
     "stage": "dev3yr",
     "started": "2026-07-23T19:28:50Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "recheck: conviction-close-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:29:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -519,7 +527,7 @@
   "funnel": {
    "idea": 7,
    "registered": 166,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
