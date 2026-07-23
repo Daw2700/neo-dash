@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:08:35Z",
+  "stamp": "2026-07-23T07:09:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 832,
-  "n_results": 1011,
-  "n_trials": 49147,
+  "n_registered": 833,
+  "n_results": 1012,
+  "n_trials": 49148,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,20 +311,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:09:27.009048+00:00",
+   "hash": "40cfe01c",
+   "name": "met-onshore-mark-gap-offshore-continuation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T07:09:23.127764+00:00",
+   "hash": "19208aea",
+   "name": "mgc-overnight-vwap-supply",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.074"
+  },
+  {
    "t": "2026-07-23T07:08:11.783635+00:00",
    "hash": "d6fe4f5f",
    "name": "mcl-unrevisited-settlement-continuation",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.974"
-  },
-  {
-   "t": "2026-07-23T07:07:24.761865+00:00",
-   "hash": "19208aea",
-   "name": "mgc-overnight-vwap-supply",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T07:07:18.113163+00:00",
@@ -397,28 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.0897"
-  },
-  {
-   "t": "2026-07-23T06:43:22.497224+00:00",
-   "hash": "b2f602fc",
-   "name": "zc-southamerican-season-price-leadership-handoff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.608"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-overnight-vwap-inventory-profit-supply",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:04:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MET",
     "task": "met-onshore-mark-gap-offshore-led-overnight-continuation",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "recheck: mcl-unrevisited-settlement-continuation",
     "stage": "dev3yr",
@@ -572,7 +564,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18545
+    "trials": 18546
    }
   ]
  },
@@ -625,8 +617,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 49,
-   "n_killed": 42,
+   "n_tested": 50,
+   "n_killed": 43,
    "book_sleeves": [],
    "agents_now": []
   },
