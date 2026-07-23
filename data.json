@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:49:15Z",
+  "stamp": "2026-07-23T13:52:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 968,
-  "n_results": 1147,
-  "n_trials": 49283,
+  "n_registered": 969,
+  "n_results": 1148,
+  "n_trials": 49284,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -169,6 +169,18 @@
    "usd_trade": 94.1
   },
   {
+   "id": "sil-impact-dispersion-fade",
+   "name": "sil-impact-dispersion-fade",
+   "market": "SIL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.6,
+   "usd_mo": 61,
+   "pf": 2.54,
+   "usd_trade": 62.4
+  },
+  {
    "id": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -291,32 +303,24 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
-  },
-  {
-   "id": "mcl-closure-length-dose-response-reopen-overshoot",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 154,
-   "wr": 0.526,
-   "usd_mo": 61,
-   "pf": 1.325,
-   "usd_trade": 14.3,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
   }
  ],
  "feed": [
   {
-   "t": "2026-07-23T13:48:06.936875+00:00",
-   "hash": "387728ba",
-   "name": "sil-impact-dispersion-fade",
+   "t": "2026-07-23T13:52:11.354800+00:00",
+   "hash": "78e26764",
+   "name": "ROBUSTNESS-BATTERY mes-settle-tradable-divergence",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T13:49:30.711981+00:00",
+   "hash": "387728ba",
+   "name": "sil-impact-dispersion-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.54"
   },
   {
    "t": "2026-07-23T13:46:22.060636+00:00",
@@ -397,28 +401,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T13:25:30.472552+00:00",
-   "hash": "d66499f6",
-   "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end-ROBUSTNESS-1098",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-informedness-inverse-u-liquidity-provision-rent",
-    "stage": "dev3yr",
-    "started": "2026-07-23T13:43:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-complex-impact-coefficient-dispersion-overextension",
     "stage": "dev3yr",
@@ -426,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-settle-tradable-divergence",
     "stage": "dev3yr",
@@ -536,7 +524,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18681
+    "trials": 18682
    }
   ]
  },
@@ -598,7 +586,7 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 16,
+   "n_tested": 17,
    "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
@@ -1057,6 +1045,26 @@
     }
    ]
   },
+  "sil-impact-dispersion-fade": {
+   "name": "sil-impact-dispersion-fade",
+   "market": "SIL",
+   "tier": "candidate",
+   "mechanism": "Impact/liquidity supply is fragmented across the micro futures complex rather than uniformly scarce: when the cross-sectional dispersion of each markets own Amihud-style impact coefficient (abs daily return / RTH volume, z-scored vs its own trailing history) is wide, the single leg with the highest coefficient that day has moved further than its own flow justifies, and money changes hands fading that leg once dispersion normalizes toward the complex median.",
+   "metrics": {
+    "n": 35,
+    "wr": 0.6,
+    "pf": 2.54,
+    "usd_mo": 61,
+    "usd_trade": 62.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T13:49:30.711981+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end": {
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -1342,40 +1350,6 @@
      "verdict": "REPLICATES"
     }
    ]
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
-   "metrics": {
-    "n": 154,
-    "wr": 0.526,
-    "pf": 1.325,
-    "usd_mo": 61,
-    "usd_trade": 14.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:10:08.535860+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T14:13:24.952332+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T14:15:41.271464+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
   }
  },
  "decisions": [
