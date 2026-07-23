@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:16:39Z",
+  "stamp": "2026-07-23T18:24:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1047,
-  "n_results": 1226,
-  "n_trials": 68296,
+  "n_registered": 1050,
+  "n_results": 1228,
+  "n_trials": 68298,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68296,
-   "registered": 1047,
-   "tested": 847,
+   "trials": 68298,
+   "registered": 1050,
+   "tested": 849,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -327,10 +327,38 @@
    "wr": 0.429,
    "usd_mo": 16,
    "pf": 1.407,
-   "usd_trade": 16.0
+   "usd_trade": 16.0,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T18:21:37.995082+00:00",
+   "hash": "1e593342",
+   "name": "zs-renewable-diesel-crush-capacity-commissioning-step",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.115"
+  },
+  {
+   "t": "2026-07-23T18:19:29.145704+00:00",
+   "hash": "ae77254f",
+   "name": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.674"
+  },
+  {
+   "t": "2026-07-23T18:16:47.189611+00:00",
+   "hash": "94398b86",
+   "name": "mes-tokyo-afternoon-reopen-hedge-restart",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T18:16:21.135449+00:00",
    "hash": "a9bde86d",
@@ -402,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.363"
-  },
-  {
-   "t": "2026-07-23T17:52:07.528035+00:00",
-   "hash": "3c54ad7d",
-   "name": "mng-naesb-timely-nomination-cycle-cliff",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.408"
-  },
-  {
-   "t": "2026-07-23T17:49:04.747487+00:00",
-   "hash": "1a8f3eb0",
-   "name": "mgc-official-sector-purchase-pace-reporting-lag-state",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.267"
-  },
-  {
-   "t": "2026-07-23T17:49:01.663893+00:00",
-   "hash": "342a7ed5",
-   "name": "xmkt-hedge-outage-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.742"
   }
  ],
  "pipeline": {
@@ -439,14 +443,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:14:32Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -455,7 +451,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZS",
     "task": "zs-renewable-diesel-crush-capacity-commissioning-step",
     "stage": "dev3yr",
@@ -466,8 +462,8 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 164,
-   "dev3yr": 3,
+   "registered": 165,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -528,7 +524,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27975
+    "trials": 27977
    }
   ]
  },
@@ -553,8 +549,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 172,
-   "n_killed": 142,
+   "n_tested": 173,
+   "n_killed": 143,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -670,8 +666,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 25,
-   "n_killed": 20,
+   "n_tested": 26,
+   "n_killed": 21,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
    ],
@@ -1428,7 +1424,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  },
  "decisions": [
@@ -1972,29 +1972,30 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 4,
+    "b2-opex-release": 5,
     "b2-vix-reversion": 5,
     "b3-preholiday-drift": 3,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 19,
-   "p_breach": 0.182,
-   "usd_mo": 590,
-   "usd_mo_5acct": 2950,
-   "pct_goal": 0.295,
-   "wr": 0.635,
-   "wr_month": 0.667,
+   "total_micros": 24,
+   "p_breach": 0.189,
+   "usd_mo": 694,
+   "usd_mo_5acct": 3470,
+   "pct_goal": 0.347,
+   "wr": 0.591,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 8.0,
-    "lose_per_yr": 4.0,
-    "avg_win": 2837,
-    "avg_lose": -1141
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2698,
+    "avg_lose": -1294
    },
-   "first_pay_days": 103,
-   "pay_rate_1yr": 0.79,
+   "first_pay_days": 99,
+   "pay_rate_1yr": 0.815,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 2950
+   "usd_mo_total": 3470
   }
  ],
  "sizing_meta": {
