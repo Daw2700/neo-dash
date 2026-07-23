@@ -1,22 +1,22 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:33:25Z",
+  "stamp": "2026-07-23T20:40:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1085,
-  "n_results": 1274,
-  "n_trials": 71370,
+  "n_registered": 1088,
+  "n_results": 1277,
+  "n_trials": 71373,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71370,
-   "registered": 1085,
-   "tested": 881,
+   "trials": 71373,
+   "registered": 1088,
+   "tested": 883,
    "passed": 165,
    "survived": 35,
-   "replicated": 12,
+   "replicated": 13,
    "book": 13
   }
  },
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:37:13.372105+00:00",
+   "hash": "8b298a3a",
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "status": "replicates",
+   "kind": "result",
+   "detail": "PF 1.544"
+  },
+  {
+   "t": "2026-07-23T20:36:18.622262+00:00",
+   "hash": "ac702d4d",
+   "name": "mcl-floating-storage-freight-carry-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T20:36:08.865767+00:00",
+   "hash": "2598911e",
+   "name": "mcl-opec-compensation-cut-published-schedule",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.565"
+  },
+  {
+   "t": "2026-07-23T20:35:05.160357+00:00",
+   "hash": "a8e6e3a6",
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag-REPLICATION-1224",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T20:27:13.722963+00:00",
    "hash": "8b298a3a",
    "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
@@ -398,38 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.981"
-  },
-  {
-   "t": "2026-07-23T20:16:22.676903+00:00",
-   "hash": "00eedfa9",
-   "name": "m2k-russell-quarterly-ipo-addition-offrecon",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.124"
-  },
-  {
-   "t": "2026-07-23T20:15:15.879531+00:00",
-   "hash": "566b50cf",
-   "name": "mgc-regulatory-reporting-date-metals-book-roundtrip",
-   "status": "result",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T20:13:50.155789+00:00",
-   "hash": "566b50cf",
-   "name": "mgc-regulatory-reporting-date-metals-book-roundtrip",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.093"
-  },
-  {
-   "t": "2026-07-23T20:13:06.900214+00:00",
-   "hash": "b4f9fbbe",
-   "name": "mng-interstate-pipeline-maintenance-shoulder-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.735"
   }
  ],
  "pipeline": {
@@ -446,14 +446,6 @@
     "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-floating-storage-freight-carry-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:33:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-opec-compensation-cut-published-schedule",
     "stage": "dev3yr",
     "started": "2026-07-23T20:33:24Z",
     "state": "running"
@@ -517,8 +509,8 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 168,
-   "dev3yr": 3,
+   "registered": 169,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -579,7 +571,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31046
+    "trials": 31049
    }
   ]
  },
@@ -653,8 +645,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 76,
-   "n_killed": 52,
+   "n_tested": 77,
+   "n_killed": 53,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1473,6 +1465,11 @@
      "t": "2026-07-23T20:27:13.722963+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T20:37:13.372105+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
     }
    ],
    "sizing": {
