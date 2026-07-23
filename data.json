@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:51:21Z",
+  "stamp": "2026-07-23T01:51:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -399,22 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-continuous-chart-roll-indicator-discontinuity",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:44:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-offshore-riskon-night-us-session-duration-funding",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:45:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: mbt-equity-overnight-overextrapolation-us-session-fade",
     "stage": "dev3yr",
