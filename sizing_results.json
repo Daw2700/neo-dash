@@ -70,6 +70,38 @@
     "max_micros": 2
    }
   },
+  "mym-price-weighted-exdiv-mechanical-drop": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 8
+   }
+  },
+  "mbt-session-beta-channel-regime": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 8
+   }
+  },
+  "zs-china-state-reserve-auction-window": {
+   "growth": {
+    "max_micros": 1
+   },
+   "apex150": {
+    "max_micros": 0
+   }
+  },
+  "mcl-hurricane-supplyrisk-decay": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 8
+   }
+  },
   "rep-bondflight-mes": {
    "growth": {
     "max_micros": 6
@@ -93,9 +125,62 @@
    "apex150": {
     "max_micros": 1
    }
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "growth": {
+    "max_micros": 5
+   },
+   "apex150": {
+    "max_micros": 3
+   }
   }
  },
  "bundles": [
+  {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 2,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b3-preholiday-drift": 1,
+    "b4-open-drive": 1,
+    "mym-price-weighted-exdiv-mechanical-drop": 1,
+    "mbt-session-beta-channel-regime": 2,
+    "zs-china-state-reserve-auction-window": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 16,
+   "p_breach": 0.198,
+   "usd_mo": 1191,
+   "usd_mo_5acct": 5955,
+   "pct_goal": 0.596
+  },
+  {
+   "id": "Cross-market spread|growth",
+   "name": "Cross-market spread",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 4,
+    "b3-monday-long": 2,
+    "mym-price-weighted-exdiv-mechanical-drop": 1,
+    "rep-bondflight-mes": 1,
+    "scan-mbt": 5,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 14,
+   "p_breach": 0.2,
+   "usd_mo": 798,
+   "usd_mo_5acct": 3990,
+   "pct_goal": 0.399
+  },
   {
    "id": "Validated 8 + vix-reversion|growth",
    "name": "Validated 8 + vix-reversion",
@@ -117,27 +202,6 @@
    "pct_goal": 0.377
   },
   {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 1,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 2,
-    "b4-open-drive": 1,
-    "b3-tom-long": 2
-   },
-   "total_micros": 10,
-   "p_breach": 0.193,
-   "usd_mo": 726,
-   "usd_mo_5acct": 3630,
-   "pct_goal": 0.363
-  },
-  {
    "id": "Validated 8 (the book)|growth",
    "name": "Validated 8 (the book)",
    "plan": "tradeify-growth",
@@ -157,22 +221,44 @@
    "pct_goal": 0.333
   },
   {
-   "id": "Frequent-firing engine|growth",
-   "name": "Frequent-firing engine",
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
    "plan": "tradeify-growth",
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b3-nr7-breakout": 2,
-    "b3-monday-long": 2,
-    "b4-open-drive": 1,
-    "b3-tom-long": 2
+    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 2,
+    "b3-tom-long": 2,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "rep-bondflight-mes": 1,
+    "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 7,
-   "p_breach": 0.184,
-   "usd_mo": 584,
-   "usd_mo_5acct": 2920,
-   "pct_goal": 0.292
+   "total_micros": 9,
+   "p_breach": 0.194,
+   "usd_mo": 627,
+   "usd_mo_5acct": 3135,
+   "pct_goal": 0.314
+  },
+  {
+   "id": "Cross-market spread|apex150",
+   "name": "Cross-market spread",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "b3-monday-long": 1,
+    "mbt-session-beta-channel-regime": 5,
+    "mym-price-weighted-exdiv-mechanical-drop": 5,
+    "rep-bondflight-mes": 1,
+    "scan-mbt": 5
+   },
+   "total_micros": 20,
+   "p_breach": 0.197,
+   "usd_mo": 625,
+   "usd_mo_5acct": 3125,
+   "pct_goal": 0.312
   },
   {
    "id": "Everything (full pool)|apex150",
@@ -181,36 +267,60 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 1,
+    "b2-vix-reversion": 2,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b4-open-drive": 1,
+    "mbt-session-beta-channel-regime": 1,
     "b3-tom-long": 1
    },
-   "total_micros": 6,
-   "p_breach": 0.164,
-   "usd_mo": 452,
-   "usd_mo_5acct": 2260,
-   "pct_goal": 0.226
+   "total_micros": 10,
+   "p_breach": 0.181,
+   "usd_mo": 620,
+   "usd_mo_5acct": 3100,
+   "pct_goal": 0.31
   },
   {
-   "id": "Cross-market spread|growth",
-   "name": "Cross-market spread",
+   "id": "Frequent-firing engine|growth",
+   "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 5,
-    "scan-mbt": 5,
     "b3-monday-long": 2,
-    "rep-bondflight-mes": 4
+    "b3-nr7-breakout": 2,
+    "b3-tom-long": 2,
+    "b4-open-drive": 1
+   },
+   "total_micros": 7,
+   "p_breach": 0.184,
+   "usd_mo": 584,
+   "usd_mo_5acct": 2920,
+   "pct_goal": 0.292
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 1,
+    "b2-opex-release": 1,
+    "b2-vix-reversion": 3,
+    "b3-tom-long": 1,
+    "mbt-session-beta-channel-regime": 5,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mym-price-weighted-exdiv-mechanical-drop": 4
    },
    "total_micros": 16,
-   "p_breach": 0.196,
-   "usd_mo": 435,
-   "usd_mo_5acct": 2175,
-   "pct_goal": 0.217
+   "p_breach": 0.194,
+   "usd_mo": 542,
+   "usd_mo_5acct": 2710,
+   "pct_goal": 0.271
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -219,11 +329,11 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "scan-mbt": 2,
-    "b3-nr7-breakout": 1,
     "b3-monday-long": 1,
+    "b3-nr7-breakout": 1,
+    "b3-tom-long": 1,
     "b4-open-drive": 1,
-    "b3-tom-long": 1
+    "scan-mbt": 2
    },
    "total_micros": 6,
    "p_breach": 0.175,
@@ -268,58 +378,6 @@
    "usd_mo": 372,
    "usd_mo_5acct": 1860,
    "pct_goal": 0.186
-  },
-  {
-   "id": "Cross-market spread|apex150",
-   "name": "Cross-market spread",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 3,
-    "scan-mbt": 4,
-    "b3-monday-long": 1,
-    "rep-bondflight-mes": 1
-   },
-   "total_micros": 9,
-   "p_breach": 0.184,
-   "usd_mo": 371,
-   "usd_mo_5acct": 1855,
-   "pct_goal": 0.185
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b10-nagel-vix-reversal": 4,
-    "b3-preholiday-drift": 4,
-    "b2-opex-release": 4
-   },
-   "total_micros": 16,
-   "p_breach": 0.193,
-   "usd_mo": 308,
-   "usd_mo_5acct": 1540,
-   "pct_goal": 0.154
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b10-nagel-vix-reversal": 2
-   },
-   "total_micros": 6,
-   "p_breach": 0.175,
-   "usd_mo": 245,
-   "usd_mo_5acct": 1225,
-   "pct_goal": 0.122
   }
  ]
 }

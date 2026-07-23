@@ -64,7 +64,15 @@ def daily(sid):
 def sim(pnl, plan, sims):
     return simulate_account(pnl, plan, sims=sims, rng=np.random.default_rng(7))
 
-lb_ids = [r["id"] for r in json.loads(Path("data.json").read_text())["leaderboard"]]
+_lb = json.loads(Path("data.json").read_text())["leaderboard"]
+lb_ids = [r["id"] for r in _lb]
+# auto-map any strategy whose worker saved a trades CSV under its own name —
+# new graduates join the bundle pool with no manual edit
+for _r in _lb:
+    if _r["id"] not in CSV and (MNQ / f"data/trades_{_r['id']}.csv").exists():
+        CSV[_r["id"]] = _r["id"]
+# validated set now follows the leaderboard tier (source of truth: build_data VALID)
+VALIDATED = {r["id"] for r in _lb if r.get("tier") == "BOOK SLEEVE"}
 t0 = time.time()
 
 # ---------- per-strategy max micros ----------
@@ -89,6 +97,14 @@ print(f"strategy sizing done {time.time()-t0:.0f}s: "
 # ---------- bundle definitions ----------
 have = [s for s in lb_ids if s in CSV]
 val = [s for s in have if s in VALIDATED]
+_by = {r["id"]: r for r in _lb}
+_auto_rare = [s for s in have if (_by[s].get("n") or 0) < 300 and s not in VALIDATED]
+_auto_freq = [s for s in have if (_by[s].get("n") or 0) >= 300]
+_best_per_mkt = {}
+for s in have:
+    mk = _by[s].get("market")
+    if mk and (mk not in _best_per_mkt or (_by[s].get("pf") or 0) > (_by[_best_per_mkt[mk]].get("pf") or 0)):
+        _best_per_mkt[mk] = s
 RARE = [s for s in have if s in ("b2-vix-reversion", "b10-nagel-vix-reversal",
         "b3-preholiday-drift", "scan-mym", "scan-mcl", "b7-down-weeks-dip",
         "b2-opex-release", "b2-vol-climax-fade")]
@@ -101,9 +117,9 @@ BUNDLES = [
     ("Validated 8 (the book)", val),
     ("Validated 8 + vix-reversion", val + ["b2-vix-reversion"]),
     ("Everything (full pool)", have),
-    ("Risk-premium core (rare, high WR)", RARE),
-    ("Frequent-firing engine", FREQ),
-    ("Cross-market spread", XMKT),
+    ("Risk-premium core (rare, high WR)", sorted(set(RARE) | set(_auto_rare))[:14]),
+    ("Frequent-firing engine", sorted(set(FREQ) | set(_auto_freq))[:14]),
+    ("Cross-market spread", sorted(set(XMKT) | set(_best_per_mkt.values()))[:14]),
 ]
 
 def greedy(members, plan, cap_per=5):
