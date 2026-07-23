@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:24:52Z",
+  "stamp": "2026-07-23T15:25:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -418,33 +418,152 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T15:07:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "robustness: zn-nth-weekday-institutional-process-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:11:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
+    "agent": "tester-1",
     "market": "ZN",
     "task": "replication: zn-nth-weekday-institutional-process-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T15:24:52Z",
     "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Second machine-discovered sleeve ready: ",
+    "stage": "decision",
+    "started": "2026-07-23T15:25:14Z",
+    "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mnq-rsu-vest-withholding-supply-window",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-eia-refinery-utilization-subline-next-draw-underreaction",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "zc-usda-export-cancellation-salience-asymmetry",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mes-forward-event-load-anticipatory-derisk",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "zn-fr2004-dealer-inventory-capacity-state",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "met-deribit-cme-expiry-clock-wedge",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mgc-lbma-lease-rate-physical-tightness-transmission",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "zs-brl-producer-revenue-incentive-selling",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "mbt-stablecoin-net-mint-onramp-lag",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "mng-regulated-utility-mandated-hedge-program-window",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "mnq-etf-primary-market-creation-ap-overnight-hedge",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "met-net-issuance-burn-regime-supply-state",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "m6e-ecb-fed-balance-sheet-release-stagger",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 14,
+    "idea": "m2k-smallcap-earnings-calendar-offset-risk-window",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.4
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 153,
    "dev3yr": 0,
    "robustness": 0,
