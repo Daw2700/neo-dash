@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:40:29Z",
+  "stamp": "2026-07-23T05:43:54Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 802,
-  "n_results": 977,
-  "n_trials": 39844,
+  "n_registered": 805,
+  "n_results": 980,
+  "n_trials": 39847,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:43:52.738716+00:00",
+   "hash": "af3eda90",
+   "name": "mgc-liquidity-void-first-print-impact-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.17"
+  },
+  {
+   "t": "2026-07-23T05:43:16.150995+00:00",
+   "hash": "3aeec381",
+   "name": "mym-price-level-parsimony-absorption-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.66"
+  },
+  {
+   "t": "2026-07-23T05:43:01.869082+00:00",
+   "hash": "69d5702f",
+   "name": "m2k-single-minute-block-footprint-inventory-workout",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.186"
+  },
+  {
    "t": "2026-07-23T05:27:37.491508+00:00",
    "hash": "c36ce88d",
    "name": "mes-early-close-session-truncation-inventory-overshoot",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.697"
-  },
-  {
-   "t": "2026-07-23T05:10:06.788311+00:00",
-   "hash": "ee223d7a",
-   "name": "mgc-fomc-anchored-vwap-crossing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.858"
-  },
-  {
-   "t": "2026-07-23T05:07:22.480279+00:00",
-   "hash": "8bd73a79",
-   "name": "m6e-dollar-factor-decomp",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.473"
-  },
-  {
-   "t": "2026-07-23T05:06:51.465382+00:00",
-   "hash": "1365cdfc",
-   "name": "gap-age-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9545"
   }
  ],
  "pipeline": {
@@ -417,22 +417,6 @@
     "agent": "tester-1",
     "market": "MGC",
     "task": "mgc-liquidity-void-first-print-impact-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:40:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-price-level-parsimony-absorption-release",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:40:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-single-minute-block-footprint-inventory-workout",
     "stage": "dev3yr",
     "started": "2026-07-23T05:40:29Z",
     "state": "running"
@@ -585,7 +569,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9008
+    "trials": 9011
    }
   ]
  },
@@ -620,8 +604,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 10,
+   "n_tested": 13,
+   "n_killed": 11,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -629,8 +613,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 30,
-   "n_killed": 17,
+   "n_tested": 31,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -638,8 +622,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 48,
-   "n_killed": 40,
+   "n_tested": 49,
+   "n_killed": 41,
    "book_sleeves": [],
    "agents_now": []
   },
