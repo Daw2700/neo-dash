@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:24:05Z",
+  "stamp": "2026-07-23T05:24:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -418,22 +418,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-propfirm-cohort-monthstart-stop-density",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:15:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-samuelson-maturity-regime-switch",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:15:57Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -442,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "replication: mnq-propfirm-cohort-monthstart-stop-density",
     "stage": "dev3yr",
