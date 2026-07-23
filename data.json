@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:44:15Z",
+  "stamp": "2026-07-23T17:45:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1034,
-  "n_results": 1215,
-  "n_trials": 68285,
+  "n_registered": 1035,
+  "n_results": 1216,
+  "n_trials": 68286,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68285,
-   "registered": 1034,
-   "tested": 837,
+   "trials": 68286,
+   "registered": 1035,
+   "tested": 838,
    "passed": 160,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T17:45:12.001782+00:00",
+   "hash": "650a8410",
+   "name": "m2k-followon-offering-supply-overnight-dilution-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.755"
+  },
+  {
    "t": "2026-07-23T17:42:45.665941+00:00",
    "hash": "822180cf",
    "name": "zn-gdp-residual-seasonality-quarter-signed-surprise",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.068"
-  },
-  {
-   "t": "2026-07-23T17:00:21.492310+00:00",
-   "hash": "36292eeb",
-   "name": "mes-buyback-constant-notional-lowadv-amplification",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.062"
   }
  ],
  "pipeline": {
@@ -448,14 +448,6 @@
     "task": "zn-tba-48hour-day-pool-allocation-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T17:42:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-followon-offering-supply-overnight-dilution-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:43:31Z",
     "state": "running"
    }
   ],
@@ -554,7 +546,7 @@
   "funnel": {
    "idea": 10,
    "registered": 161,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27964
+    "trials": 27965
    }
   ]
  },
@@ -662,8 +654,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 43,
-   "n_killed": 32,
+   "n_tested": 44,
+   "n_killed": 33,
    "book_sleeves": [],
    "agents_now": []
   },
