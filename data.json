@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:15:03Z",
+  "stamp": "2026-07-23T07:17:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 836,
-  "n_results": 1017,
-  "n_trials": 49153,
+  "n_registered": 838,
+  "n_results": 1018,
+  "n_trials": 49154,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:16:42.901788+00:00",
+   "hash": "b09c1d3f",
+   "name": "zs-both-sided-overnight-sweep-liquidation-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.057"
+  },
+  {
+   "t": "2026-07-23T07:16:18.849240+00:00",
+   "hash": "f7d4cf6c",
+   "name": "zn-conference-board-labor-differential-rates-channel",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T07:16:06.247597+00:00",
+   "hash": "87490e75",
+   "name": "mnq-range-acceptance-age-release",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T07:14:17.438501+00:00",
    "hash": "71124a34",
    "name": "mes-orb-failed-breakout-reclaim-fade",
@@ -381,44 +405,12 @@
    "status": "killed",
    "kind": "sweep",
    "detail": "9,504 configs"
-  },
-  {
-   "t": "2026-07-23T06:56:02.805823+00:00",
-   "hash": "e7629de6",
-   "name": "mes-quarter-start-institutional-rebalance-execution-window",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T06:49:53.453712+00:00",
-   "hash": "58a08b5d",
-   "name": "m6e-sovereign-rating-reopen",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9468"
-  },
-  {
-   "t": "2026-07-23T06:49:13.618990+00:00",
-   "hash": "c8a7c55e",
-   "name": "mym-volirreg-liquidity-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.108"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "recheck: zs-both-sided-overnight-sweep-liquidation-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:13:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-range-acceptance-age-compression-release",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-conference-board-labor-differential-rates-channel",
     "stage": "dev3yr",
@@ -465,7 +457,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 110,
+   "registered": 112,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -527,7 +519,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18551
+    "trials": 18552
    }
   ]
  },
