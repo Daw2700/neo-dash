@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:54:40Z",
+  "stamp": "2026-07-23T05:56:44Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 814,
-  "n_results": 990,
-  "n_trials": 39857,
+  "n_registered": 815,
+  "n_results": 991,
+  "n_trials": 39858,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:55:31.374074+00:00",
+   "hash": "7dbeca30",
+   "name": "mcl-impact-halflife-matched-holding-horizon",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.467"
+  },
+  {
    "t": "2026-07-23T05:54:16.037107+00:00",
    "hash": "257e4d96",
    "name": "mes-ssa-wed-inflow",
@@ -401,26 +409,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF nan"
-  },
-  {
-   "t": "2026-07-23T05:43:52.738716+00:00",
-   "hash": "af3eda90",
-   "name": "mgc-liquidity-void-first-print-impact-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.17"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-impact-halflife-matched-holding-horizon",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:51:23Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9021
+    "trials": 9022
    }
   ]
  },
@@ -566,8 +558,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 55,
-   "n_killed": 34,
+   "n_tested": 56,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
