@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:19:33Z",
+  "stamp": "2026-07-23T01:20:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 721,
-  "n_results": 883,
-  "n_trials": 30871,
+  "n_results": 884,
+  "n_trials": 30872,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,20 +299,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T01:20:02.539292+00:00",
+   "hash": "ee441aa3",
+   "name": "mes-vwap-xcount-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.879"
+  },
+  {
    "t": "2026-07-23T01:19:14.688017+00:00",
    "hash": "5c114667",
    "name": "mgc-lbma-pm-fix-etf-nav-benchmark-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.785"
-  },
-  {
-   "t": "2026-07-23T01:18:44.402258+00:00",
-   "hash": "ee441aa3",
-   "name": "mes-vwap-xcount-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T01:15:48.274284+00:00",
@@ -399,14 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-vwap-crossing-count-inventory-neutrality",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:17:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-year-to-date-zero-line-magnet",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-vwap-versus-range-midpoint-inventory-shelf",
     "stage": "dev3yr",
@@ -444,7 +436,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 96,
+   "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -506,7 +498,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 35
+    "trials": 36
    }
   ]
  },
@@ -530,8 +522,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 123,
-   "n_killed": 95,
+   "n_tested": 124,
+   "n_killed": 96,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
