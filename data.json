@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:25:17Z",
+  "stamp": "2026-07-23T15:25:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -432,27 +432,25 @@
     "stage": "decision",
     "started": "2026-07-23T15:25:14Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-rsu-vest-withholding-supply-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:25:19Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "mcl-eia-refinery-utilization-subline-next-draw-underreaction",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:25:19Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mnq-rsu-vest-withholding-supply-window",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mcl-eia-refinery-utilization-subline-next-draw-underreaction",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 3,
     "idea": "zc-usda-export-cancellation-salience-asymmetry",
@@ -563,7 +561,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 12,
    "registered": 153,
    "dev3yr": 0,
    "robustness": 0,
