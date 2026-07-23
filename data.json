@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:13:35Z",
+  "stamp": "2026-07-23T07:13:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,18 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T07:11:09Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "recheck: zs-both-sided-overnight-sweep-liquidation-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:13:37Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-range-acceptance-age-compression-release",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:13:37Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mnq-range-acceptance-age-compression-release",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 9,
     "idea": "zn-conference-board-labor-differential-rates-channel",
@@ -466,7 +473,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 111,
    "dev3yr": 0,
    "robustness": 0,
