@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:46:52Z",
+  "stamp": "2026-07-23T23:49:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1143,
-  "n_results": 1330,
-  "n_trials": 79195,
+  "n_registered": 1145,
+  "n_results": 1332,
+  "n_trials": 79197,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79195,
-   "registered": 1143,
+   "trials": 79197,
+   "registered": 1145,
    "tested": 926,
    "passed": 171,
    "survived": 37,
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:49:16.260517+00:00",
+   "hash": "202127d5",
+   "name": "mgc-longhorizon-value-ownprice-meanrev",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T23:48:57.647751+00:00",
+   "hash": "9d659566",
+   "name": "mnq-invvar-scaling",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.031"
+  },
+  {
+   "t": "2026-07-23T23:48:27.173521+00:00",
+   "hash": "a26faec1",
+   "name": "sched-annday-premium-full",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T23:47:24.117982+00:00",
+   "hash": "9d659566",
+   "name": "mnq-invvar-scaling",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T23:44:19.221894+00:00",
    "hash": "9d659566",
    "name": "mnq-invvar-scaling",
@@ -398,52 +430,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.51"
-  },
-  {
-   "t": "2026-07-23T23:23:47.288429+00:00",
-   "hash": "36947de7",
-   "name": "m6e-euro-national-market-holiday-anchor-absence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-23T23:22:21.417869+00:00",
-   "hash": "c6525e02",
-   "name": "m2k-convex-close-rebalance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.45"
-  },
-  {
-   "t": "2026-07-23T23:21:12.952788+00:00",
-   "hash": "cc81c6ed",
-   "name": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.767"
-  },
-  {
-   "t": "2026-07-23T23:20:39.130991+00:00",
-   "hash": "3cbba9e7",
-   "name": "mes-holiday-deferred-margin",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.904"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "recheck: mnq-invvar-scaling",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:46:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "xmkt-scheduled-announcement-day-premium",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "xmkt-longhorizon-value-own-price-mean-reversion",
     "stage": "dev3yr",
@@ -553,8 +545,8 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 180,
-   "dev3yr": 3,
+   "registered": 182,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38877
+    "trials": 38879
    }
   ]
  },
