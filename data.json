@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:34:08Z",
+  "stamp": "2026-07-23T01:40:01Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 727,
   "n_results": 891,
@@ -396,19 +396,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T01:22:04Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-expiry-week-dealer-capacity-impact-reversion",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 2,
+    "idea": "mes-preclosure-inventory-aversion-reversal-dose-response",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "zn-wednesday-close-equity-to-duration-hedge-rotation",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "zs-export-sales-china-session-ratification",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 5,
+    "idea": "mnq-continuous-chart-roll-indicator-discontinuity",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "mbt-equity-overnight-overextrapolation-us-session-fade",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "zn-offshore-riskon-night-us-session-duration-funding",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 8,
+    "idea": "zs-short-delivery-option-decay-ramp-vs-cash-settled-control",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 9,
+    "idea": "mym-preopen-earnings-window-repricing-asymmetry",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "mbt-multiday-closure-known-target-remark-no-overshoot",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 11,
+    "idea": "mnq-volume-peak-vs-price-extreme-ordering-absorption",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "m2k-post-quiet-session-onesided-flow-asymmetry",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 96,
    "dev3yr": 0,
    "robustness": 0,
