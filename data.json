@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:55:00Z",
+  "stamp": "2026-07-23T21:08:24Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1095,
-  "n_results": 1283,
-  "n_trials": 71379,
+  "n_results": 1284,
+  "n_trials": 71380,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71379,
+   "trials": 71380,
    "registered": 1095,
    "tested": 889,
    "passed": 165,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T21:07:33.314729+00:00",
+   "hash": "c18e1503",
+   "name": "scout-72-screen",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T20:54:46.426754+00:00",
    "hash": "06b648d6",
    "name": "zc-hpai-flock-depop-feed-demand-shock",
@@ -358,14 +366,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.911"
-  },
-  {
-   "t": "2026-07-23T20:49:10.651816+00:00",
-   "hash": "c18e1503",
-   "name": "scout-72-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T20:48:07.729818+00:00",
@@ -433,20 +433,120 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T20:48:22Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mgc-cross-asset-hedge-demand-absence-carry-drag",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-tsmc-monthly-revenue-asia-hours-repricing",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "zn-withheld-tax-receipts-labor-nowcast-drift",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-convertible-issuance-delta-hedge-overnight-supply",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "zn-mof-weekly-foreign-bond-flow-program-persistence",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "mbt-exchange-netflow-sell-intent-lead",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 8,
+    "idea": "zn-settlement-fails-specialness-futures-substitution",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-ipo-lockup-expiry-supply-window",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mym-rail-carloadings-industrial-nowcast-diffusion",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 12,
+    "idea": "mes-insider-form4-breadth-capitulation-signal",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.32
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
-   "registered": 170,
+   "idea": 12,
+   "registered": 169,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -508,7 +608,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31055
+    "trials": 31056
    }
   ]
  },
