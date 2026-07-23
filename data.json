@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:20:48Z",
+  "stamp": "2026-07-23T10:20:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T10:10:59Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-tic-foreign-holdings-release-deferred-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:20:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-price-weighted-closing-impact-residual",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:20:50Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "zn-tic-foreign-holdings-release-deferred-repricing",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.48
-   },
-   {
-    "rank": 7,
-    "idea": "mym-price-weighted-closing-impact-residual",
-    "source": "data-screen",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 8,
     "idea": "mgc-first-business-day-index-allocation-print",
@@ -506,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 124,
    "dev3yr": 0,
    "robustness": 0,
