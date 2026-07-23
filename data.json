@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:40:41Z",
+  "stamp": "2026-07-23T12:40:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T12:39:38Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-hedge-supply-velocity-vs-level-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:40:42Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "zs-hedge-supply-velocity-vs-level-asymmetry",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 6,
     "idea": "mym-cost-per-unit-beta-substitution-gate",
@@ -505,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 137,
    "dev3yr": 0,
    "robustness": 0,
