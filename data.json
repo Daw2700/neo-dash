@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:13:33Z",
+  "stamp": "2026-07-23T09:13:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -415,6 +415,14 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T08:58:18Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "robustness: mcl-inside-week-unresolved-positioning-carryover",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:13:35Z",
     "state": "running"
    }
   ],
