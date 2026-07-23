@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:56:05Z",
+  "stamp": "2026-07-23T18:56:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -457,6 +457,14 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:50:09Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "recheck: mcl-overnight-return-persistence-momentum",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:56:07Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -482,7 +490,7 @@
   "funnel": {
    "idea": 2,
    "registered": 166,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
