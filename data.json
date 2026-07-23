@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:02:53Z",
+  "stamp": "2026-07-23T04:04:16Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 771,
-  "n_results": 945,
-  "n_trials": 39812,
+  "n_registered": 772,
+  "n_results": 946,
+  "n_trials": 39813,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:04:08.441107+00:00",
+   "hash": "2501cf95",
+   "name": "mcl-ine-day-session-regional-physical-signal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.732"
+  },
+  {
    "t": "2026-07-23T03:58:37.013642+00:00",
    "hash": "9a564284",
    "name": "mes-inflation-pair-release-ordering-preprice",
@@ -401,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.0041"
-  },
-  {
-   "t": "2026-07-23T03:37:38.155216+00:00",
-   "hash": "628b3b41",
-   "name": "mes-crude-liquidity-channel-risk-transfer",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 2.233"
   }
  ],
  "pipeline": {
@@ -418,14 +418,6 @@
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-23T04:02:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-ine-day-session-regional-physical-signal",
-    "stage": "dev3yr",
     "started": "2026-07-23T04:02:29Z",
     "state": "running"
    }
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8976
+    "trials": 8977
    }
   ]
  },
@@ -566,8 +558,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 52,
-   "n_killed": 31,
+   "n_tested": 53,
+   "n_killed": 32,
    "book_sleeves": [],
    "agents_now": []
   },
