@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:56:31Z",
+  "stamp": "2026-07-23T18:56:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,32 +449,37 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:56:07Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 11,
-    "idea": "mbt-spot-etf-inflow-underreaction-continuation",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.26
    },
    {
-    "rank": 12,
-    "idea": "mes-etf-heartbeat-quarterend-inkind-flush",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.24
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T18:56:33Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MBT",
+    "task": "mbt-spot-etf-inflow-underreaction-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:56:33Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-5",
+    "market": "MES",
+    "task": "mes-etf-heartbeat-quarterend-inkind-flush",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:56:33Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 166,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
