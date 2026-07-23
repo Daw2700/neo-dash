@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:08:08Z",
+  "stamp": "2026-07-23T08:14:41Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 855,
-  "n_results": 1038,
-  "n_trials": 49174,
+  "n_registered": 858,
+  "n_results": 1040,
+  "n_trials": 49176,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T08:12:37.717022+00:00",
+   "hash": "9085c4d9",
+   "name": "met-staking-yield-frontend-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.857"
+  },
+  {
+   "t": "2026-07-23T08:12:01.990216+00:00",
+   "hash": "4cc4d9bb",
+   "name": "zc-storage-carrycost-monthend-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.209"
+  },
+  {
+   "t": "2026-07-23T08:11:16.931961+00:00",
+   "hash": "a3a57094",
+   "name": "scout-59-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T08:05:54.094032+00:00",
    "hash": "afffa3d3",
    "name": "met-complex-breadth-riskbudget-funding-drain",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.3344"
-  },
-  {
-   "t": "2026-07-23T07:51:26.588389+00:00",
-   "hash": "1c7534a3",
-   "name": "m2k-oil-costpush-margin-channel",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.996"
-  },
-  {
-   "t": "2026-07-23T07:45:11.171160+00:00",
-   "hash": "7bc15ccc",
-   "name": "zs-marketing-year-high-reference-price-hedge-supply",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T07:43:12.112278+00:00",
-   "hash": "1257a6e6",
-   "name": "zs-marketing-year-high-reference-price-hedge-supply-ROBUSTNESS-989",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -428,20 +428,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T08:08:08Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZC",
-    "task": "zc-farmer-cashflow-calendar-hedge-lift-vs-storage-decision",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:08:08Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 113,
+   "registered": 114,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18572
+    "trials": 18574
    }
   ]
  },
@@ -603,8 +595,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 17,
+   "n_tested": 19,
+   "n_killed": 18,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -630,8 +622,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 42,
-   "n_killed": 36,
+   "n_tested": 43,
+   "n_killed": 37,
    "book_sleeves": [],
    "agents_now": []
   },
