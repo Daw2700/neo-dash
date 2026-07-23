@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:06:39Z",
+  "stamp": "2026-07-23T16:08:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1007,
-  "n_results": 1187,
-  "n_trials": 68257,
+  "n_registered": 1008,
+  "n_results": 1188,
+  "n_trials": 68258,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6
@@ -323,6 +323,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T16:08:00.357490+00:00",
+   "hash": "74a436b7",
+   "name": "mbt-stablecoin-net-mint-onramp-lag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
    "t": "2026-07-23T16:01:46.285175+00:00",
    "hash": "422d0c89",
    "name": "zn-fr2004-dealer-inventory-capacity-state",
@@ -409,28 +417,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T15:30:26.784124+00:00",
-   "hash": "ebf4a7e6",
-   "name": "mcl-eia-refinery-utilization-subline-next-draw-underreaction",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.884"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-stablecoin-net-mint-onramp-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:06:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-regulated-utility-mandated-hedge-program-window",
     "stage": "dev3yr",
@@ -438,11 +430,19 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-etf-primary-market-creation-ap-overnight-hedge",
     "stage": "dev3yr",
     "started": "2026-07-23T16:06:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Borderline graduate: RMA crop-insurance ",
+    "stage": "decision",
+    "started": "2026-07-23T16:07:01Z",
     "state": "running"
    }
   ],
@@ -539,7 +539,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27936
+    "trials": 27937
    }
   ]
  },
