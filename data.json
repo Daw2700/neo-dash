@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:01:03Z",
+  "stamp": "2026-07-23T00:01:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,27 +408,25 @@
     "stage": "dev3yr",
     "started": "2026-07-22T23:59:54Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-atlantic-hurricane-supplyrisk-premium-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:01:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-buyback-window-reopen-postearnings-bid",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:01:05Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mcl-atlantic-hurricane-supplyrisk-premium-decay",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.22
-   },
-   {
-    "rank": 7,
-    "idea": "mes-buyback-window-reopen-postearnings-bid",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.22
-   },
    {
     "rank": 8,
     "idea": "mes-ira-april-deadline-inflow",
@@ -440,7 +438,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 1,
    "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
