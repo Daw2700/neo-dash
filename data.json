@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:16:37Z",
+  "stamp": "2026-07-23T18:16:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -445,23 +445,29 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:14:32Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 15,
-    "idea": "zs-renewable-diesel-crush-capacity-commissioning-step",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T18:16:38Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZS",
+    "task": "zs-renewable-diesel-crush-capacity-commissioning-step",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:16:39Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 164,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
