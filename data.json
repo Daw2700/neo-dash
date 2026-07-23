@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:57:12Z",
+  "stamp": "2026-07-23T18:05:19Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1041,
-  "n_results": 1221,
-  "n_trials": 68291,
+  "n_registered": 1044,
+  "n_results": 1222,
+  "n_trials": 68292,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68291,
-   "registered": 1041,
-   "tested": 843,
-   "passed": 160,
+   "trials": 68292,
+   "registered": 1044,
+   "tested": 844,
+   "passed": 161,
    "survived": 33,
    "replicated": 12,
    "book": 13
@@ -318,23 +318,43 @@
    }
   },
   {
-   "id": "b2-opex-release",
-   "name": "b2-opex-release",
-   "market": "MNQ",
+   "id": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
+   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
+   "market": "SIL",
    "tier": "candidate",
    "pinned": false,
-   "n": 35,
-   "wr": 0.429,
-   "usd_mo": 16,
-   "pf": 1.407,
-   "usd_trade": 16.0,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
+   "n": 80,
+   "wr": 0.5625,
+   "usd_mo": 114,
+   "pf": 1.502,
+   "usd_trade": 51.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T18:04:08.414297+00:00",
+   "hash": "b76c9574",
+   "name": "sil-nondecimal-residual-v2 ROBUSTNESS BATTERY (1176)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T18:01:14.786425+00:00",
+   "hash": "89a4879a",
+   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.502"
+  },
+  {
+   "t": "2026-07-23T17:57:46.917268+00:00",
+   "hash": "6b68ea18",
+   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T17:52:12.455285+00:00",
    "hash": "05b15d18",
@@ -406,30 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.318"
-  },
-  {
-   "t": "2026-07-23T17:28:39.444179+00:00",
-   "hash": "79fc1626",
-   "name": "zs-corn-limit-lock-displaced-hedge-substitution",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.995"
-  },
-  {
-   "t": "2026-07-23T17:27:29.660231+00:00",
-   "hash": "7162f5a6",
-   "name": "scout-70-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T17:19:23.434738+00:00",
-   "hash": "a722f1ba",
-   "name": "mcl-energy-desk-shared-risk-budget-crowdout",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.283"
   }
  ],
  "pipeline": {
@@ -440,6 +436,14 @@
     "task": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual",
     "stage": "dev3yr",
     "started": "2026-07-23T17:56:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "SIL",
+    "task": "robustness: sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:01:19Z",
     "state": "running"
    }
   ],
@@ -501,11 +505,11 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 162,
-   "dev3yr": 1,
+   "registered": 164,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 12,
+   "book_candidate": 13,
    "golden_staged": 1
   },
   "throughput": [
@@ -563,7 +567,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27970
+    "trials": 27971
    }
   ]
  },
@@ -628,7 +632,7 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 17,
+   "n_tested": 18,
    "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
@@ -1435,39 +1439,25 @@
     "apex_max": 8
    }
   },
-  "b2-opex-release": {
-   "name": "b2-opex-release",
-   "market": "MNQ",
+  "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2": {
+   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
+   "market": "SIL",
    "tier": "candidate",
-   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
+   "mechanism": "Micro Silver (SIL, 1000 oz) is one fifth of full-size SI (5000 oz), the only non-decimal micro-to-full-size ratio in the CME micro complex; a market maker absorbing micro retail flow cannot net it into the full-size book below a 5-lot residual, so odd-lot inventory is carried and worked off in the micro book itself, producing reversion whose strength is hypothesized to peak on the 5th session of a rolling residual-accumulation cycle (v2: daily-scale shock gate after v1 first-5min-bar gate proved too fine-grained vs daily ATR20 and fired 1/775 days).",
    "metrics": {
-    "n": 35,
-    "wr": 0.429,
-    "pf": 1.407,
-    "usd_mo": 16,
-    "usd_trade": 16.0
+    "n": 80,
+    "wr": 0.5625,
+    "pf": 1.502,
+    "usd_mo": 114,
+    "usd_trade": 51.1
    },
    "verdict_history": [
     {
-     "t": "2026-07-21T05:02:40.560966+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.903542+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.697136+00:00",
+     "t": "2026-07-23T18:01:14.786425+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
+   ]
   }
  },
  "decisions": [
