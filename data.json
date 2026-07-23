@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:49:40Z",
+  "stamp": "2026-07-23T02:50:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,14 +415,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "ZN",
-    "task": "zn-mba-application-survey-origination-hedge-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:45:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "MCL",
     "task": "robustness: mcl-api-eia-disagreement-stranded-reversal",
     "stage": "dev3yr",
