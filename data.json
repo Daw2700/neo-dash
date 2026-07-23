@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:44:35Z",
+  "stamp": "2026-07-23T12:44:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "zs-hedge-supply-velocity-vs-level-asymmetry",
     "stage": "dev3yr",
     "started": "2026-07-23T12:40:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-liquidity-withdrawal-surprise-vs-event-norm",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:44:37Z",
     "state": "running"
    }
   ],
