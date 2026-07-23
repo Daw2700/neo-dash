@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:01:04Z",
+  "stamp": "2026-07-23T03:02:28Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 756,
-  "n_results": 925,
-  "n_trials": 39792,
+  "n_registered": 757,
+  "n_results": 927,
+  "n_trials": 39794,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,12 +299,28 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T02:59:57.645514+00:00",
-   "hash": "b3062552",
-   "name": "xmkt-open-print-acceptance-breadth-gate",
+   "t": "2026-07-23T03:01:42.171030+00:00",
+   "hash": "c503f0cf",
+   "name": "scout-52-screen",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T03:01:40.097301+00:00",
+   "hash": "b3062552",
+   "name": "xmkt-open-print-acceptance-breadth-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.505"
+  },
+  {
+   "t": "2026-07-23T03:01:04.906915+00:00",
+   "hash": "b3062552",
+   "name": "xmkt-open-print-acceptance-breadth-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF nan"
   },
   {
    "t": "2026-07-23T02:57:05.476457+00:00",
@@ -377,34 +393,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.963"
-  },
-  {
-   "t": "2026-07-23T02:42:41.259660+00:00",
-   "hash": "c44e2ded",
-   "name": "mes-structured-note-strike-setting-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.728"
-  },
-  {
-   "t": "2026-07-23T02:37:42.174834+00:00",
-   "hash": "051717c0",
-   "name": "mbt-uniform-volume-distribution-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "xmkt-open-print-acceptance-breadth-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:58:31Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-h8-bank-credit-friday-release-overnight-repricing",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8956
+    "trials": 8958
    }
   ]
  },
@@ -496,8 +488,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 114,
-   "n_killed": 69,
+   "n_tested": 115,
+   "n_killed": 70,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
