@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:01:05Z",
+  "stamp": "2026-07-23T00:06:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 692,
-  "n_results": 850,
-  "n_trials": 30838,
+  "n_registered": 695,
+  "n_results": 853,
+  "n_trials": 30841,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -189,6 +189,18 @@
    "usd_trade": 48.9
   },
   {
+   "id": "mcl-hurricane-supplyrisk-decay",
+   "name": "mcl-hurricane-supplyrisk-decay",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 34,
+   "wr": 0.5882,
+   "usd_mo": 15,
+   "pf": 1.459,
+   "usd_trade": 16.2
+  },
+  {
    "id": "rep-bondflight-mes",
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -249,6 +261,18 @@
    "usd_trade": 30.0
   },
   {
+   "id": "mcl-preweekend-overnight-riskpremium",
+   "name": "mcl-preweekend-overnight-riskpremium",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 311,
+   "wr": 0.5659,
+   "usd_mo": 120,
+   "pf": 1.346,
+   "usd_trade": 13.8
+  },
+  {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -271,37 +295,33 @@
    "usd_mo": 8,
    "pf": 1.283,
    "usd_trade": 58.3
-  },
-  {
-   "id": "mes-funding-basis-stress-cheapening",
-   "name": "mes-funding-basis-stress-cheapening",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 72,
-   "wr": 0.5278,
-   "usd_mo": 31,
-   "pf": 1.273,
-   "usd_trade": 15.4
-  },
-  {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T00:05:28.382783+00:00",
+   "hash": "e9b5d99f",
+   "name": "mcl-hurricane-supplyrisk-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.459"
+  },
+  {
+   "t": "2026-07-23T00:04:34.549634+00:00",
+   "hash": "de5c8d5b",
+   "name": "mes-buyback-window-reopen-postearnings-bid",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.967"
+  },
+  {
+   "t": "2026-07-23T00:03:11.929567+00:00",
+   "hash": "3c72c870",
+   "name": "mcl-preweekend-overnight-riskpremium",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.346"
+  },
   {
    "t": "2026-07-23T00:00:44.125744+00:00",
    "hash": "568a352d",
@@ -373,30 +393,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.173"
-  },
-  {
-   "t": "2026-07-22T23:35:35.668075+00:00",
-   "hash": "7907c86c",
-   "name": "mnq-index-52wk-high-anchor-continuation",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T23:34:03.556767+00:00",
-   "hash": "7907c86c",
-   "name": "mnq-index-52wk-high-anchor-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-22T23:33:25.614208+00:00",
-   "hash": "39a07683",
-   "name": "mes-post-opex-gamma-unclench-week",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.875"
   }
  ],
  "pipeline": {
@@ -404,21 +400,13 @@
    {
     "agent": "tester-1",
     "market": "MCL",
-    "task": "mcl-preweekend-overnight-riskpremium-buildup",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:59:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
     "task": "mcl-atlantic-hurricane-supplyrisk-premium-decay",
     "stage": "dev3yr",
     "started": "2026-07-23T00:01:05Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-buyback-window-reopen-postearnings-bid",
     "stage": "dev3yr",
@@ -501,7 +489,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 2
+    "trials": 5
    }
   ]
  },
@@ -525,8 +513,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 118,
-   "n_killed": 90,
+   "n_tested": 119,
+   "n_killed": 91,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -572,7 +560,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 46,
+   "n_tested": 48,
    "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
@@ -1058,6 +1046,26 @@
     }
    ]
   },
+  "mcl-hurricane-supplyrisk-decay": {
+   "name": "mcl-hurricane-supplyrisk-decay",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "During Atlantic hurricane season (Aug-Oct), Gulf of Mexico production and refinery shut-in risk embeds a supply-disruption premium into large single-day WTI rallies; absent confirmed follow-through the next session, that premium decays as the storm threat resolves or forecasts weaken, so fade the RTH open following an in-season blowout-up day.",
+   "metrics": {
+    "n": 34,
+    "wr": 0.5882,
+    "pf": 1.459,
+    "usd_mo": 15,
+    "usd_trade": 16.2
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T00:05:28.382783+00:00",
+     "stage": "dev3yr",
+     "verdict": "KILLED"
+    }
+   ]
+  },
   "rep-bondflight-mes": {
    "name": "rep-bondflight-mes",
    "market": "MES",
@@ -1180,6 +1188,26 @@
     }
    ]
   },
+  "mcl-preweekend-overnight-riskpremium": {
+   "name": "mcl-preweekend-overnight-riskpremium",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Desks add geopolitical and supply-disruption risk premium to crude oil during late-week overnight sessions ahead of the two-day weekend closure when positions cannot be adjusted, bidding WTI from the prior RTH close to the next RTH open on Wednesday-to-Thursday and Thursday-to-Friday overnight legs.",
+   "metrics": {
+    "n": 311,
+    "wr": 0.5659,
+    "pf": 1.346,
+    "usd_mo": 120,
+    "usd_trade": 13.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T00:03:11.929567+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -1229,60 +1257,6 @@
      "verdict": "KILLED"
     }
    ]
-  },
-  "mes-funding-basis-stress-cheapening": {
-   "name": "mes-funding-basis-stress-cheapening",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Index futures embed an implicit dealer financing/collateral leg (Baltussen, Terstegge & Whelan, \"The Derivative Payoff Bias\"); when dealer balance-sheet capacity is most constrained around calendar quarter-end regulatory reporting dates, repo/collateral funding is pulled from cash-futures basis arbitrageurs, transiently cheapening MES futures against fair value into the quarter-end and re-converging (richening back up) in the first sessions of the new quarter. The buyer of the cheapened future during the reversal leg is paid a balance-sheet-rental fee, not a directional forecast.",
-   "metrics": {
-    "n": 72,
-    "wr": 0.5278,
-    "pf": 1.273,
-    "usd_mo": 31,
-    "usd_trade": 15.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T05:57:32.220572+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
-    }
-   ]
-  },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
-   "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  },
  "decisions": [
