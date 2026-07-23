@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:48:42Z",
+  "stamp": "2026-07-23T11:49:44Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 929,
-  "n_results": 1109,
-  "n_trials": 49245,
+  "n_results": 1110,
+  "n_trials": 49246,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,12 +315,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T11:47:55.837931+00:00",
+   "t": "2026-07-23T11:49:04.522979+00:00",
    "hash": "3c6de963",
    "name": "mng-inventory-scarcity-scaled-reversal-premium",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.259"
   },
   {
    "t": "2026-07-23T11:45:28.433076+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-inventory-scarcity-scaled-reversal-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:41:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-overnight-stock-bond-sign-disagreement-fade",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-feed-substitution-ratio-band-elasticity",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 133,
+   "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -576,7 +568,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18643
+    "trials": 18644
    }
   ]
  },
@@ -656,8 +648,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 31,
-   "n_killed": 27,
+   "n_tested": 32,
+   "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
   },
