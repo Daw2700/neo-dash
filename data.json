@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:59:19Z",
+  "stamp": "2026-07-23T11:59:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:48:17Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-momentum-crash-bearstate-highvol-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:59:21Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-export-pace-vs-usda-forecast-gap-revision",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:59:21Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-momentum-crash-bearstate-highvol-reversal",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 7,
-    "idea": "zs-export-pace-vs-usda-forecast-gap-revision",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 8,
     "idea": "m2k-floating-rate-interest-expense-level-asymmetry",
@@ -488,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 5,
    "registered": 133,
    "dev3yr": 0,
    "robustness": 0,
