@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:35:56Z",
+  "stamp": "2026-07-23T09:38:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 883,
-  "n_results": 1066,
-  "n_trials": 49202,
+  "n_registered": 886,
+  "n_results": 1067,
+  "n_trials": 49203,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:38:35.667535+00:00",
+   "hash": "0dc7b66d",
+   "name": "mym-minute-scale-variance-ratio-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.62"
+  },
+  {
+   "t": "2026-07-23T09:37:45.106153+00:00",
+   "hash": "7b085561",
+   "name": "mng-roll-seasonal-exposure-discontinuity-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T09:37:16.634365+00:00",
+   "hash": "645f5287",
+   "name": "zs-speculative-oi-change-tsmom-gate",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T09:35:47.177476+00:00",
    "hash": "4b1d1e15",
    "name": "mbt-annualized-basis-leverage-crowding-gate",
@@ -385,30 +409,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "PF 1.1505"
-  },
-  {
-   "t": "2026-07-23T09:17:04.386846+00:00",
-   "hash": "78386dc0",
-   "name": "met-liquidity-state-transition-flow-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.022"
-  },
-  {
-   "t": "2026-07-23T09:16:39.066707+00:00",
-   "hash": "01a4eef6",
-   "name": "mcl-inside-week-unresolved-positioning-carryover-ROBUSTNESS-1018",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T09:10:42.832140+00:00",
-   "hash": "93fd03fe",
-   "name": "mcl-inside-week-unresolved-positioning-carryover",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 3.326"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-minute-scale-variance-ratio-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:35:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNG",
     "task": "mng-roll-seasonal-exposure-discontinuity-fade",
     "stage": "dev3yr",
@@ -469,7 +461,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 120,
+   "registered": 122,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -531,7 +523,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18600
+    "trials": 18601
    }
   ]
  },
@@ -566,8 +558,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 15,
-   "n_killed": 13,
+   "n_tested": 16,
+   "n_killed": 14,
    "book_sleeves": [],
    "agents_now": []
   },
