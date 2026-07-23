@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:05:19Z",
+  "stamp": "2026-07-23T18:05:42Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 1044,
   "n_results": 1222,
@@ -433,14 +433,6 @@
    {
     "agent": "tester-1",
     "market": "SIL",
-    "task": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:56:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "SIL",
     "task": "robustness: sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
     "stage": "dev3yr",
     "started": "2026-07-23T18:01:19Z",
@@ -506,7 +498,7 @@
   "funnel": {
    "idea": 6,
    "registered": 164,
-   "dev3yr": 2,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
