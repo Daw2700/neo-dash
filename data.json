@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:55:25Z",
+  "stamp": "2026-07-23T08:58:16Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -258,7 +258,11 @@
    "wr": 0.5484,
    "usd_mo": 43,
    "pf": 1.344,
-   "usd_trade": 16.6
+   "usd_trade": 16.6,
+   "sizing": {
+    "growth_max": 6,
+    "apex_max": 4
+   }
   },
   {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
@@ -1229,7 +1233,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 6,
+    "apex_max": 4
+   }
   },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
@@ -1550,28 +1558,28 @@
     "mes-gold-overnight-macro-signal-open-continuation": 1,
     "b2-opex-release": 1,
     "b3-tom-long": 1,
+    "mes-quiet-streak-range-budget-contraction": 1,
     "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "b3-prior-high-break": 1,
-    "mes-1256-mtm-placeholder-substitution-window": 1
+    "b3-prior-high-break": 1
    },
    "total_micros": 11,
-   "p_breach": 0.192,
-   "usd_mo": 570,
-   "usd_mo_5acct": 2850,
-   "pct_goal": 1.026,
-   "wr": 0.517,
+   "p_breach": 0.188,
+   "usd_mo": 593,
+   "usd_mo_5acct": 2965,
+   "pct_goal": 1.067,
+   "wr": 0.519,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 1301,
-    "avg_lose": -551
+    "avg_win": 1388,
+    "avg_lose": -707
    },
-   "first_pay_days": 64,
-   "pay_rate_1yr": 0.962,
+   "first_pay_days": 63,
+   "pay_rate_1yr": 0.969,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 10260
+   "usd_mo_total": 10674
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1604,6 +1612,38 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6786
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "b3-prior-high-break": 1,
+    "b3-tom-long": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mes-quiet-streak-range-budget-contraction": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.198,
+   "usd_mo": 375,
+   "usd_mo_5acct": 1875,
+   "pct_goal": 0.675,
+   "wr": 0.518,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1026,
+    "avg_lose": -561
+   },
+   "first_pay_days": 80,
+   "pay_rate_1yr": 0.906,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 6750
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -1668,37 +1708,6 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 6696
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "b3-prior-high-break": 1,
-    "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.194,
-   "usd_mo": 343,
-   "usd_mo_5acct": 1715,
-   "pct_goal": 0.617,
-   "wr": 0.512,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 981,
-    "avg_lose": -442
-   },
-   "first_pay_days": 84,
-   "pay_rate_1yr": 0.882,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 6174
   },
   {
    "id": "Frequent-firing engine|apex150",
