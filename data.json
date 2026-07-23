@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:28:32Z",
+  "stamp": "2026-07-23T03:34:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 762,
-  "n_results": 932,
-  "n_trials": 39799,
+  "n_results": 934,
+  "n_trials": 39801,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -221,22 +221,6 @@
    "usd_trade": 40.2
   },
   {
-   "id": "cojump-overnight-gate",
-   "name": "cojump-overnight-gate",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 108,
-   "wr": 0.5648,
-   "usd_mo": 155,
-   "pf": 1.669,
-   "usd_trade": 51.8,
-   "sizing": {
-    "growth_max": 3,
-    "apex_max": 2
-   }
-  },
-  {
    "id": "zs-china-state-reserve-auction-window",
    "name": "zs-china-state-reserve-auction-window",
    "market": "ZS",
@@ -315,9 +299,37 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  {
+   "id": "mnq-event-free-day-flow-persistence",
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 675,
+   "wr": 0.5481,
+   "usd_mo": 563,
+   "pf": 1.368,
+   "usd_trade": 30.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T03:32:12.086722+00:00",
+   "hash": "628b3b41",
+   "name": "mes-crude-liquidity-channel-risk-transfer",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T03:29:19.105373+00:00",
+   "hash": "80dbfe02",
+   "name": "cojump-overnight-gate",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T03:19:47.527147+00:00",
    "hash": "348de1d4",
@@ -397,36 +409,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T02:56:14.946803+00:00",
-   "hash": "f56ca675",
-   "name": "mes-noise-share-lambda-recovery",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.922"
-  },
-  {
-   "t": "2026-07-23T02:56:09.354983+00:00",
-   "hash": "a86629d6",
-   "name": "sweep-3-crosssession-carry",
-   "status": "killed",
-   "kind": "sweep",
-   "detail": "8,880 configs"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: cojump-overnight-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:23:51Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "robustness: mes-crude-liquidity-channel-risk-transfer",
     "stage": "dev3yr",
@@ -434,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "recheck: cojump-flow-fade",
     "stage": "dev3yr",
@@ -589,7 +577,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8963
+    "trials": 8965
    }
   ]
  },
@@ -1201,32 +1189,13 @@
      "t": "2026-07-23T03:19:39.732176+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T03:32:12.086722+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ]
-  },
-  "cojump-overnight-gate": {
-   "name": "cojump-overnight-gate",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Overnight co-jump breadth (>=4 of 14 markets simultaneously print a >99.5pct trailing minute move) signals a systemic macro repricing that happened in a thin overnight book; the RTH session is the first deep-liquidity venue available to absorb it and is paid a liquidity-provision premium, so MNQ drifts up over that RTH session when the ONLY high-breadth minute of the day was overnight (not during RTH itself).",
-   "metrics": {
-    "n": 108,
-    "wr": 0.5648,
-    "pf": 1.669,
-    "usd_mo": 155,
-    "usd_trade": 51.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T03:18:44.777182+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 3,
-    "apex_max": 2
-   }
   },
   "zs-china-state-reserve-auction-window": {
    "name": "zs-china-state-reserve-auction-window",
@@ -1377,6 +1346,36 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  "mnq-event-free-day-flow-persistence": {
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "On days with no scheduled macro release (no FOMC/CPI on the calendar), intraday price movement is driven by inventory and order-flow imbalance rather than information, so the first-60-minute directional displacement reflects a liquidity-provider inventory imbalance that must keep being paid for through the rest of the session; on scheduled-event days an information shock resets order books and kills that persistence, so the edge should only appear when the macro calendar is empty.",
+   "metrics": {
+    "n": 675,
+    "wr": 0.5481,
+    "pf": 1.368,
+    "usd_mo": 563,
+    "usd_trade": 30.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:36:35.002815+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T07:42:14.432674+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
