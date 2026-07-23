@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:53:15Z",
+  "stamp": "2026-07-23T06:59:09Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 829,
-  "n_results": 1007,
-  "n_trials": 39874,
+  "n_results": 1009,
+  "n_trials": 49145,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -249,18 +249,6 @@
    "usd_trade": 30.0
   },
   {
-   "id": "mes-quarter-start-institutional-rebalance-execution-window",
-   "name": "mes-quarter-start-institutional-rebalance-execution-window",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 48,
-   "wr": 0.5833,
-   "usd_mo": 24,
-   "pf": 1.338,
-   "usd_trade": 17.9
-  },
-  {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -307,9 +295,37 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  {
+   "id": "zn-cash-market-closed-futures-open-asymmetry",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "pinned": false,
+   "n": 6,
+   "wr": 0.8333,
+   "usd_mo": 18,
+   "pf": 6.676,
+   "usd_trade": 105.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T06:57:44.453476+00:00",
+   "hash": "fcf42e2d",
+   "name": "sweep-4-globex-regional-handoff",
+   "status": "killed",
+   "kind": "sweep",
+   "detail": "9,504 configs"
+  },
+  {
+   "t": "2026-07-23T06:56:02.805823+00:00",
+   "hash": "e7629de6",
+   "name": "mes-quarter-start-institutional-rebalance-execution-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T06:49:53.453712+00:00",
    "hash": "58a08b5d",
@@ -333,14 +349,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.338"
-  },
-  {
-   "t": "2026-07-23T06:47:33.974343+00:00",
-   "hash": "fcf42e2d",
-   "name": "sweep-4-globex-regional-handoff",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T06:46:29.960791+00:00",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.131"
-  },
-  {
-   "t": "2026-07-23T06:36:47.108636+00:00",
-   "hash": "dd636e95",
-   "name": "mes-bimodal-profile-unresolved-auction-resolution",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.996"
   }
  ],
  "pipeline": {
@@ -424,20 +424,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T06:44:56Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "robustness: mes-quarter-start-institutional-rebalance-execution-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:52:53Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 111,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -499,7 +491,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9038
+    "trials": 18543
    }
   ]
  },
@@ -1208,26 +1200,6 @@
     }
    ]
   },
-  "mes-quarter-start-institutional-rebalance-execution-window": {
-   "name": "mes-quarter-start-institutional-rebalance-execution-window",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Pension and insurance allocators rebalance on a quarterly board cycle; the quarter-end decision is executed over the first several business days of the NEW quarter by desks working to a schedule rather than to a price, producing price-insensitive net-buying pressure into MES distinct in cohort/clock from month-start retail/annuity flow (Gabaix & Koijen IMH; Etula/Rinne/Suominen/Vaittinen quarterly-cycle rebalancing evidence). Tested window is quarter-START execution.",
-   "metrics": {
-    "n": 48,
-    "wr": 0.5833,
-    "pf": 1.338,
-    "usd_mo": 24,
-    "usd_trade": 17.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T06:48:57.557101+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -1329,6 +1301,36 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  "zn-cash-market-closed-futures-open-asymmetry": {
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
+   "metrics": {
+    "n": 6,
+    "wr": 0.8333,
+    "pf": 6.676,
+    "usd_mo": 18,
+    "usd_trade": 105.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:40:09.435772+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T10:46:10.359530+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T10:51:30.720138+00:00",
+     "stage": "replication",
+     "verdict": "FAIL"
+    }
+   ]
   }
  },
  "decisions": [
