@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:45:48Z",
+  "stamp": "2026-07-23T02:49:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 749,
-  "n_results": 918,
-  "n_trials": 30906,
+  "n_registered": 752,
+  "n_results": 920,
+  "n_trials": 30908,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -273,6 +273,18 @@
    }
   },
   {
+   "id": "mcl-api-eia-disagreement-stranded-reversal",
+   "name": "mcl-api-eia-disagreement-stranded-reversal",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 81,
+   "wr": 0.5556,
+   "usd_mo": 31,
+   "pf": 1.384,
+   "usd_trade": 13.9
+  },
+  {
    "id": "mnq-event-free-day-flow-persistence",
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -283,21 +295,33 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
-  },
-  {
-   "id": "mcl-closure-length-dose-response-reopen-overshoot",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 154,
-   "wr": 0.526,
-   "usd_mo": 61,
-   "pf": 1.325,
-   "usd_trade": 14.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T02:48:15.240711+00:00",
+   "hash": "7761d9f2",
+   "name": "zn-mba-origination-hedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.459"
+  },
+  {
+   "t": "2026-07-23T02:47:15.974729+00:00",
+   "hash": "4b94d8f2",
+   "name": "mcl-api-eia-disagreement-stranded-reversal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.384"
+  },
+  {
+   "t": "2026-07-23T02:46:40.648117+00:00",
+   "hash": "a86629d6",
+   "name": "sweep-3-crosssession-carry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T02:44:48.492312+00:00",
    "hash": "7e03cfec",
@@ -369,30 +393,6 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T02:19:40.037991+00:00",
-   "hash": "16209d6d",
-   "name": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T02:16:10.697444+00:00",
-   "hash": "fe7b4980",
-   "name": "mnq-volpeak-extreme-order",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T02:12:48.873716+00:00",
-   "hash": "97ae3e36",
-   "name": "m2k-quiet-session-onesided-flow",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.546"
   }
  ],
  "pipeline": {
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-api-eia-disagreement-stranded-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:45:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-flash-pmi-partial-info-overextrapolation",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-mba-application-survey-origination-hedge-window",
     "stage": "dev3yr",
@@ -470,7 +462,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 100,
+   "registered": 101,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -532,7 +524,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 70
+    "trials": 72
    }
   ]
  },
@@ -603,7 +595,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 51,
+   "n_tested": 52,
    "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
@@ -650,8 +642,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 63,
-   "n_killed": 54,
+   "n_tested": 64,
+   "n_killed": 55,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1261,6 +1253,26 @@
     "apex_max": 1
    }
   },
+  "mcl-api-eia-disagreement-stranded-reversal": {
+   "name": "mcl-api-eia-disagreement-stranded-reversal",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "API prints Tuesday 16:30 ET and EIA prints Wednesday 10:30 ET; when their directional reactions disagree in sign, positions established on the API number overnight are stranded and must be reversed by participants who cannot hold an inventory view the official EIA data contradicts, so trading with the EIA-implied direction right after its reaction window should capture continued unwind flow.",
+   "metrics": {
+    "n": 81,
+    "wr": 0.5556,
+    "pf": 1.384,
+    "usd_mo": 31,
+    "usd_trade": 13.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T02:47:15.974729+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mnq-event-free-day-flow-persistence": {
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -1286,36 +1298,6 @@
     },
     {
      "t": "2026-07-22T07:46:52.300888+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
-   "metrics": {
-    "n": 154,
-    "wr": 0.526,
-    "pf": 1.325,
-    "usd_mo": 61,
-    "usd_trade": 14.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:10:08.535860+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T14:13:24.952332+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
     }
