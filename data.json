@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:45:23Z",
+  "stamp": "2026-07-23T09:45:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,21 +428,27 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:41:36Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 12,
-    "idea": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.38
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T09:45:25Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:45:25Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 120,
    "dev3yr": 0,
    "robustness": 0,
