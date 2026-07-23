@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:49:01Z",
+  "stamp": "2026-07-23T14:49:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 982,
+  "n_registered": 983,
   "n_results": 1162,
   "n_trials": 49298,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T14:49:02.098176+00:00",
+   "hash": "f6df153a",
+   "name": "mcl-roll-crown-transfer-earliness",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T14:45:30.657498+00:00",
    "hash": "63685af3",
    "name": "m2k-tick-binding-regime-continuation-gate",
@@ -397,28 +405,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T14:21:14.058707+00:00",
-   "hash": "622281ac",
-   "name": "ROBUSTNESS-BATTERY mym-fundamental-anchoring-erosion-liquidity-fragility",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Ninth machine-discovered sleeve ready: s",
-    "stage": "decision",
-    "started": "2026-07-23T14:42:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MGC",
     "task": "recheck: mgc-trend-regime-age-crowding-exhaustion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-roll-crown-transfer-earliness-participant-mix",
     "stage": "dev3yr",
@@ -442,7 +434,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "MNQ",
     "task": "mnq-execution-cost-router-crossmarket-lead-lag",
     "stage": "dev3yr",
@@ -517,7 +509,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 149,
+   "registered": 150,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
