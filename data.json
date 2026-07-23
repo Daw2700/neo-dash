@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:11:00Z",
+  "stamp": "2026-07-23T22:11:08Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-session-vwap-occupation-vs-displacement-completion-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:11:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-large-tick-regime-metaorder-impact-persistence",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:11:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-overnight-jump-conditioned-day-night-clientele-flip",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:11:06Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-session-vwap-occupation-vs-displacement-completion-asymmetry",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 2,
-    "idea": "zn-large-tick-regime-metaorder-impact-persistence",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-overnight-jump-conditioned-day-night-clientele-flip",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 4,
     "idea": "mcl-roll-window-implied-spread-leg-print-contamination",
@@ -545,9 +543,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 174,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
