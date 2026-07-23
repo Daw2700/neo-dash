@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:32:01Z",
+  "stamp": "2026-07-23T22:32:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T22:18:16Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-roll-window-implied-spread-leg-print-contamination",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:32:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-listed-option-gamma-damping-deficit-vs-mes-residual",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:32:03Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mcl-roll-window-implied-spread-leg-print-contamination",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 5,
-    "idea": "mym-listed-option-gamma-damping-deficit-vs-mes-residual",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 6,
     "idea": "mes-eod-imbalance-dispersion-tail-conditioned-overnight-premium",
@@ -527,9 +525,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 175,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
