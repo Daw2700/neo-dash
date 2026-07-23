@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:51:11Z",
+  "stamp": "2026-07-23T20:55:00Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1094,
-  "n_results": 1282,
-  "n_trials": 71378,
+  "n_registered": 1095,
+  "n_results": 1283,
+  "n_trials": 71379,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71378,
-   "registered": 1094,
-   "tested": 888,
+   "trials": 71379,
+   "registered": 1095,
+   "tested": 889,
    "passed": 165,
    "survived": 35,
    "replicated": 13,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:54:46.426754+00:00",
+   "hash": "06b648d6",
+   "name": "zc-hpai-flock-depop-feed-demand-shock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
    "t": "2026-07-23T20:50:56.916647+00:00",
    "hash": "ac55cc5f",
    "name": "sil-india-import-duty-change-window",
@@ -422,26 +430,10 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T20:25:46.122663+00:00",
-   "hash": "a3d10092",
-   "name": "ROBUSTNESS mes-petrodollar-recycling-sovereign-inflow-lag (8b298a3a53af7ca9)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-hpai-flock-depopulation-feed-demand-shock",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:47:57Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -455,7 +447,7 @@
   "funnel": {
    "idea": 0,
    "registered": 170,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31054
+    "trials": 31055
    }
   ]
  },
@@ -646,8 +638,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 53,
-   "n_killed": 47,
+   "n_tested": 54,
+   "n_killed": 48,
    "book_sleeves": [
     "zc-rma-volatility-factor-five-day-window",
     "zc-farm-cash-rent-duedate-liquidation-window"
