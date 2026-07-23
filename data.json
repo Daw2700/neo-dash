@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:07:27Z",
+  "stamp": "2026-07-23T01:09:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 717,
-  "n_results": 878,
-  "n_trials": 30866,
+  "n_results": 879,
+  "n_trials": 30867,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -213,18 +213,6 @@
    "usd_trade": 144.4
   },
   {
-   "id": "mbt-macro-decoupling-offshore-bid-overnight",
-   "name": "mbt-macro-decoupling-offshore-bid-overnight",
-   "market": "MBT",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 192,
-   "wr": 0.5885,
-   "usd_mo": 104,
-   "pf": 1.46,
-   "usd_trade": 19.5
-  },
-  {
    "id": "mcl-hurricane-supplyrisk-decay",
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -295,9 +283,29 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
+  },
+  {
+   "id": "mcl-closure-length-dose-response-reopen-overshoot",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 154,
+   "wr": 0.526,
+   "usd_mo": 61,
+   "pf": 1.325,
+   "usd_trade": 14.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T01:09:39.080378+00:00",
+   "hash": "ed7f8b98",
+   "name": "mbt-macro-decoupling-offshore-bid-overnight",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T01:07:07.294737+00:00",
    "hash": "60e7216e",
@@ -385,14 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T00:45:37.281956+00:00",
-   "hash": "c6a6f22f",
-   "name": "zn-pension-contribution-deadline-september",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.433"
   }
  ],
  "pipeline": {
@@ -411,6 +411,14 @@
     "task": "mes-percent-threshold-headline-salience-nextday",
     "stage": "dev3yr",
     "started": "2026-07-23T01:04:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mbt-macro-decoupling-offshore-bid-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:07:29Z",
     "state": "running"
    }
   ],
@@ -552,7 +560,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 30
+    "trials": 31
    }
   ]
  },
@@ -1169,26 +1177,6 @@
     }
    ]
   },
-  "mbt-macro-decoupling-offshore-bid-overnight": {
-   "name": "mbt-macro-decoupling-offshore-bid-overnight",
-   "market": "MBT",
-   "tier": "candidate",
-   "mechanism": "When bitcoin is not being priced as a macro-beta asset by US funds, the marginal price-setter reverts to 24h crypto-native/offshore flow, which is structurally long-biased; that bid shows up in the non-US hours (prior RTH close to next RTH open) that US desks are absent for. The conditioning variable is the cross-asset MES-MBT correlation REGIME (decoupled vs coupled), not MBT own-session beta level and not equity crash spillover.",
-   "metrics": {
-    "n": 192,
-    "wr": 0.5885,
-    "pf": 1.46,
-    "usd_mo": 104,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T01:05:02.105243+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mcl-hurricane-supplyrisk-decay": {
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -1326,6 +1314,36 @@
     },
     {
      "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
+   "metrics": {
+    "n": 154,
+    "wr": 0.526,
+    "pf": 1.325,
+    "usd_mo": 61,
+    "usd_trade": 14.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:10:08.535860+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T14:13:24.952332+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
     }
