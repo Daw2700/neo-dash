@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:35:56Z",
+  "stamp": "2026-07-23T22:35:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T22:34:12Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-price-weight-global-revenue-dollar-beta-wedge",
+    "stage": "dev3yr",
+    "started": "2026-07-23T22:35:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mym-price-weight-global-revenue-dollar-beta-wedge",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 9,
     "idea": "mgc-gradual-hedger-adjustment-state-conditional-drift",
@@ -499,9 +498,9 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 177,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
