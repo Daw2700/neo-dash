@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:32:03Z",
+  "stamp": "2026-07-23T22:32:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-vwap-occupation-displacement-asymmetry",
-    "stage": "dev3yr",
-    "started": "2026-07-23T22:18:16Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-roll-window-implied-spread-leg-print-contamination",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-listed-option-gamma-damping-deficit-vs-mes-residual",
     "stage": "dev3yr",
@@ -527,7 +519,7 @@
   "funnel": {
    "idea": 7,
    "registered": 175,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
