@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:57:42Z",
+  "stamp": "2026-07-23T01:02:10Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 713,
   "n_results": 874,
   "n_trials": 30862,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 6
+  "needs_attention_count": 7
  },
  "leaderboard": [
   {
@@ -396,19 +396,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T00:45:57Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mcl-post-washout-hedge-supply-ceiling",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "mbt-macro-decoupling-offshore-bid-overnight",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "zn-index-extension-preannouncement-frontrun",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mes-percent-threshold-headline-salience-nextday",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "m6e-big-figure-barrier-defense-break-asymmetry",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "zn-h41-reserve-release-thursday-late-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-vwap-crossing-count-inventory-neutrality",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mnq-year-to-date-zero-line-magnet",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 9,
+    "idea": "mgc-lbma-pm-fix-etf-nav-benchmark-window",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mcl-vwap-versus-range-midpoint-inventory-shelf",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mgc-return-volume-covariance-aggressor-sign-carry",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "zs-crush-plant-maintenance-season-demand-void",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
@@ -1262,6 +1362,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-chinaauction-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Seventh machine-discovered sleeve ready: China state-reserve auction window (PF 1.658)",
+   "recommendation": "ADMIT to the book \u2014 solid dual-leg (replication PF 1.364 on corn, n=108)",
+   "evidence": "dev3yr: n=108, PF 1.658, $144.36/trade on soybeans | robustness: SURVIVES | replication: n=108, PF 1.364 on corn",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "China's state grain-reserve auctions inject known supply into the market on announced dates; the strategy trades the digestion of that flow. Second grains-complex graduate tonight.",
+   "why": "Cleared every gate with healthy samples on both legs. Same family logic as the cash-rent sleeve (scheduled, price-insensitive grain flow) but a different payer and different dates \u2014 structurally distinct. If both grain sleeves enter the book, their combined breach usage will be sized by the allocator as usual.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-23T00:58:21Z"
+  },
   {
    "id": "d-cashrent-book-entry",
    "kind": "book_entry",
