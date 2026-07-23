@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:40:19Z",
+  "stamp": "2026-07-23T18:42:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1053,
-  "n_results": 1231,
-  "n_trials": 68301,
+  "n_registered": 1055,
+  "n_results": 1232,
+  "n_trials": 68302,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68301,
-   "registered": 1053,
-   "tested": 852,
+   "trials": 68302,
+   "registered": 1055,
+   "tested": 853,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:41:47.063675+00:00",
+   "hash": "cdc23af4",
+   "name": "m6e-london-lunch-preus-usd-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.4118"
+  },
+  {
+   "t": "2026-07-23T18:41:32.523129+00:00",
+   "hash": "5b4991b3",
+   "name": "mnq-mes-mym-triangular-index-consistency-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T18:36:15.032785+00:00",
    "hash": "798f2272",
    "name": "m2k-regsho-ftd-t35-closeout-buyin-window",
@@ -414,22 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T18:04:08.414297+00:00",
-   "hash": "b76c9574",
-   "name": "sil-nondecimal-residual-v2 ROBUSTNESS BATTERY (1176)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T18:01:14.786425+00:00",
-   "hash": "89a4879a",
-   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.502"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-london-lunch-preus-dollar-demand-drift",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:40:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-mes-mym-triangular-index-consistency-reversion",
     "stage": "dev3yr",
@@ -526,8 +518,8 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 165,
-   "dev3yr": 3,
+   "registered": 166,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -588,7 +580,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27980
+    "trials": 27981
    }
   ]
  },
@@ -700,8 +692,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 48,
-   "n_killed": 47,
+   "n_tested": 49,
+   "n_killed": 48,
    "book_sleeves": [],
    "agents_now": []
   },
