@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:15:57Z",
+  "stamp": "2026-07-23T05:16:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "SIL",
-    "task": "sil-retail-hours-unconfirmed-move-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:10:13Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "robustness: mnq-propfirm-cohort-monthstart-stop-density",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-samuelson-maturity-regime-switch",
     "stage": "dev3yr",
