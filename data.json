@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:06:05Z",
+  "stamp": "2026-07-23T00:08:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 695,
+  "n_registered": 696,
   "n_results": 853,
   "n_trials": 30841,
   "holdout_looks_spent": 0,
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:07:45.309784+00:00",
+   "hash": "fd67dcc9",
+   "name": "scout-48-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T00:05:28.382783+00:00",
    "hash": "e9b5d99f",
    "name": "mcl-hurricane-supplyrisk-decay",
@@ -385,14 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.877"
-  },
-  {
-   "t": "2026-07-22T23:36:28.591795+00:00",
-   "hash": "729dbe10",
-   "name": "mgc-830-scheduled-data-range-breakout",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.173"
   }
  ],
  "pipeline": {
@@ -412,6 +412,22 @@
     "stage": "dev3yr",
     "started": "2026-07-23T00:01:05Z",
     "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T00:06:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "robustness: mcl-preweekend-overnight-riskpremium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T00:06:07Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -427,7 +443,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 90,
+   "registered": 91,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -1414,23 +1430,43 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
+    "b2-vix-reversion": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
-    "b2-opex-release": 1,
-    "b3-tom-long": 1,
-    "b3-prior-high-break": 1
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.185,
-   "usd_mo": 552,
-   "usd_mo_5acct": 2760,
-   "pct_goal": 0.994,
+   "total_micros": 6,
+   "p_breach": 0.164,
+   "usd_mo": 452,
+   "usd_mo_5acct": 2260,
+   "pct_goal": 0.814,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9936
+   "usd_mo_total": 8136
+  },
+  {
+   "id": "Frequent-firing engine|apex150",
+   "name": "Frequent-firing engine",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "scan-mbt": 2,
+    "b3-nr7-breakout": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.175,
+   "usd_mo": 382,
+   "usd_mo_5acct": 1910,
+   "pct_goal": 0.688,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 6876
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -1498,27 +1534,6 @@
    "usd_mo_total": 6678
   },
   {
-   "id": "Frequent-firing engine|apex150",
-   "name": "Frequent-firing engine",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "scan-mbt": 2,
-    "b3-nr7-breakout": 1,
-    "b3-tom-long": 1,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.162,
-   "usd_mo": 306,
-   "usd_mo_5acct": 1530,
-   "pct_goal": 0.551,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 5508
-  },
-  {
    "id": "Risk-premium core (rare, high WR)|apex150",
    "name": "Risk-premium core (rare, high WR)",
    "plan": "apex150 (verified)",
@@ -1536,32 +1551,6 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 4410
-  },
-  {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b4-open-drive": 1,
-    "b3-tom-long": 2,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 12,
-   "p_breach": 0.199,
-   "usd_mo": 849,
-   "usd_mo_5acct": 4245,
-   "pct_goal": 0.424,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 4245
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -1585,6 +1574,30 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3765
+  },
+  {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 1,
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 2,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2
+   },
+   "total_micros": 10,
+   "p_breach": 0.193,
+   "usd_mo": 726,
+   "usd_mo_5acct": 3630,
+   "pct_goal": 0.363,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 3630
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -1615,21 +1628,19 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
-    "b3-monday-long": 1,
+    "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "b3-tom-long": 2,
-    "b3-prior-high-break": 1
+    "b3-tom-long": 2
    },
-   "total_micros": 8,
-   "p_breach": 0.185,
-   "usd_mo": 619,
-   "usd_mo_5acct": 3095,
-   "pct_goal": 0.309,
+   "total_micros": 7,
+   "p_breach": 0.184,
+   "usd_mo": 584,
+   "usd_mo_5acct": 2920,
+   "pct_goal": 0.292,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3095
+   "usd_mo_total": 2920
   },
   {
    "id": "Cross-market spread|growth",

@@ -93,40 +93,9 @@
    "apex150": {
     "max_micros": 1
    }
-  },
-  "b3-prior-high-break": {
-   "growth": {
-    "max_micros": 2
-   },
-   "apex150": {
-    "max_micros": 1
-   }
   }
  },
  "bundles": [
-  {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b4-open-drive": 1,
-    "b3-tom-long": 2,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 12,
-   "p_breach": 0.199,
-   "usd_mo": 849,
-   "usd_mo_5acct": 4245,
-   "pct_goal": 0.424
-  },
   {
    "id": "Validated 8 + vix-reversion|growth",
    "name": "Validated 8 + vix-reversion",
@@ -146,6 +115,27 @@
    "usd_mo": 753,
    "usd_mo_5acct": 3765,
    "pct_goal": 0.377
+  },
+  {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 1,
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 2,
+    "b4-open-drive": 1,
+    "b3-tom-long": 2
+   },
+   "total_micros": 10,
+   "p_breach": 0.193,
+   "usd_mo": 726,
+   "usd_mo_5acct": 3630,
+   "pct_goal": 0.363
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -173,18 +163,16 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
-    "b3-monday-long": 1,
+    "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "b3-tom-long": 2,
-    "b3-prior-high-break": 1
+    "b3-tom-long": 2
    },
-   "total_micros": 8,
-   "p_breach": 0.185,
-   "usd_mo": 619,
-   "usd_mo_5acct": 3095,
-   "pct_goal": 0.309
+   "total_micros": 7,
+   "p_breach": 0.184,
+   "usd_mo": 584,
+   "usd_mo_5acct": 2920,
+   "pct_goal": 0.292
   },
   {
    "id": "Everything (full pool)|apex150",
@@ -193,20 +181,18 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
+    "b2-vix-reversion": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
-    "b2-opex-release": 1,
-    "b3-tom-long": 1,
-    "b3-prior-high-break": 1
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.185,
-   "usd_mo": 552,
-   "usd_mo_5acct": 2760,
-   "pct_goal": 0.276
+   "total_micros": 6,
+   "p_breach": 0.164,
+   "usd_mo": 452,
+   "usd_mo_5acct": 2260,
+   "pct_goal": 0.226
   },
   {
    "id": "Cross-market spread|growth",
@@ -225,6 +211,25 @@
    "usd_mo": 435,
    "usd_mo_5acct": 2175,
    "pct_goal": 0.217
+  },
+  {
+   "id": "Frequent-firing engine|apex150",
+   "name": "Frequent-firing engine",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "scan-mbt": 2,
+    "b3-nr7-breakout": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.175,
+   "usd_mo": 382,
+   "usd_mo_5acct": 1910,
+   "pct_goal": 0.191
   },
   {
    "id": "Validated 8 (the book)|apex150",
@@ -299,24 +304,6 @@
    "usd_mo": 308,
    "usd_mo_5acct": 1540,
    "pct_goal": 0.154
-  },
-  {
-   "id": "Frequent-firing engine|apex150",
-   "name": "Frequent-firing engine",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "scan-mbt": 2,
-    "b3-nr7-breakout": 1,
-    "b3-tom-long": 1,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.162,
-   "usd_mo": 306,
-   "usd_mo_5acct": 1530,
-   "pct_goal": 0.153
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
