@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:25:48Z",
+  "stamp": "2026-07-23T12:27:13Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 942,
-  "n_results": 1121,
-  "n_trials": 49257,
+  "n_results": 1122,
+  "n_trials": 49258,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T12:26:51.764878+00:00",
+   "hash": "95e1507b",
+   "name": "mgc-us-holiday-london-only-discovery-catchup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.514"
+  },
+  {
    "t": "2026-07-23T12:25:23.525971+00:00",
    "hash": "0d0230e3",
    "name": "mes-quarterly-vs-serial-expiry-dose-response",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.973"
-  },
-  {
-   "t": "2026-07-23T12:25:19.860515+00:00",
-   "hash": "95e1507b",
-   "name": "mgc-us-holiday-london-only-discovery-catchup",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T12:25:16.290626+00:00",
@@ -414,14 +414,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-us-holiday-london-only-discovery-catchup",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:22:17Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -433,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 137,
+   "registered": 136,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18655
+    "trials": 18656
    }
   ]
  },
@@ -548,8 +540,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 52,
-   "n_killed": 43,
+   "n_tested": 53,
+   "n_killed": 44,
    "book_sleeves": [],
    "agents_now": []
   },
