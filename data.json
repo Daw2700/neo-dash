@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:40:04Z",
+  "stamp": "2026-07-23T01:43:30Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 727,
-  "n_results": 891,
-  "n_trials": 30879,
+  "n_registered": 730,
+  "n_results": 892,
+  "n_trials": 30880,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T01:43:00.923897+00:00",
+   "hash": "95afe179",
+   "name": "mes-expiry-week-dealer-capacity-impact-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.626"
+  },
+  {
+   "t": "2026-07-23T01:42:29.693295+00:00",
+   "hash": "2651408f",
+   "name": "zn-wed-close-equity-duration-rotation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T01:41:30.817156+00:00",
+   "hash": "372fb899",
+   "name": "mes-preclosure-inventory-aversion-reversal-dose-response",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T01:31:35.915245+00:00",
    "hash": "8554e6c3",
    "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
@@ -369,30 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.879"
-  },
-  {
-   "t": "2026-07-23T01:19:14.688017+00:00",
-   "hash": "5c114667",
-   "name": "mgc-lbma-pm-fix-etf-nav-benchmark-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.785"
-  },
-  {
-   "t": "2026-07-23T01:15:48.274284+00:00",
-   "hash": "f3a3751f",
-   "name": "zn-h41-reserve-release-thursday-late-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.038"
-  },
-  {
-   "t": "2026-07-23T01:15:12.958643+00:00",
-   "hash": "18420f62",
-   "name": "m6e-big-figure-barrier-defense-break",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.3945"
   }
  ],
  "pipeline": {
@@ -400,21 +400,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "mes-expiry-week-dealer-capacity-impact-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:40:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-preclosure-inventory-aversion-reversal-dose-response",
     "stage": "dev3yr",
     "started": "2026-07-23T01:40:04Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-wednesday-close-equity-to-duration-hedge-rotation",
     "stage": "dev3yr",
@@ -516,7 +508,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 96,
+   "registered": 98,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -578,7 +570,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 43
+    "trials": 44
    }
   ]
  },
@@ -602,8 +594,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 124,
-   "n_killed": 96,
+   "n_tested": 125,
+   "n_killed": 97,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
