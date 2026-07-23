@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:11:34Z",
+  "stamp": "2026-07-23T12:15:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 937,
+  "n_registered": 938,
   "n_results": 1118,
   "n_trials": 49254,
   "holdout_looks_spent": 0,
@@ -178,7 +178,11 @@
    "wr": 0.64,
    "usd_mo": 23,
    "pf": 2.118,
-   "usd_trade": 32.9
+   "usd_trade": 32.9,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "mes-wk10-derisk",
@@ -311,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T12:13:38.568666+00:00",
+   "hash": "2db6299e",
+   "name": "ROBUSTNESS-BATTERY mcl-holiday-shifted-eia-print-day-relocation",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T12:09:47.055338+00:00",
    "hash": "9ad71839",
    "name": "m2k-floatrate-level-asymmetry",
@@ -397,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.259"
-  },
-  {
-   "t": "2026-07-23T11:45:28.433076+00:00",
-   "hash": "56ce4bad",
-   "name": "mes-vrp-compression-switch",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.94"
   }
  ],
  "pipeline": {
@@ -423,6 +427,14 @@
     "task": "mcl-holiday-shifted-eia-print-day-relocation",
     "stage": "dev3yr",
     "started": "2026-07-23T12:05:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "robustness: mcl-holiday-shifted-eia-print-day-relocation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:11:36Z",
     "state": "running"
    }
   ],
@@ -457,7 +469,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 134,
+   "registered": 135,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -1058,7 +1070,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   "mes-wk10-derisk": {
    "name": "mes-wk10-derisk",
@@ -1568,28 +1584,28 @@
     "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b4-open-drive": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-china-lpr-fix-evening-window": 1,
-    "b2-opex-release": 2,
+    "mcl-holiday-shifted-eia-print-day-relocation": 2,
+    "b2-opex-release": 1,
     "b3-tom-long": 1
    },
    "total_micros": 15,
-   "p_breach": 0.2,
-   "usd_mo": 748,
-   "usd_mo_5acct": 3740,
-   "pct_goal": 1.346,
+   "p_breach": 0.196,
+   "usd_mo": 772,
+   "usd_mo_5acct": 3860,
+   "pct_goal": 1.39,
    "wr": 0.516,
    "wr_month": 0.833,
    "months": {
     "win_per_yr": 10.0,
     "lose_per_yr": 2.0,
-    "avg_win": 1512,
-    "avg_lose": -736
+    "avg_win": 1543,
+    "avg_lose": -711
    },
-   "first_pay_days": 55,
-   "pay_rate_1yr": 0.987,
+   "first_pay_days": 54,
+   "pay_rate_1yr": 0.988,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 13464
+   "usd_mo_total": 13896
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1600,30 +1616,28 @@
    "members": {
     "b2-vix-reversion": 3,
     "b3-monday-long": 1,
-    "m2k-floatrate-level-asymmetry": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
     "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "mgc-china-lpr-fix-evening-window": 1,
     "scan-mbt": 2
    },
-   "total_micros": 12,
+   "total_micros": 10,
    "p_breach": 0.178,
-   "usd_mo": 474,
-   "usd_mo_5acct": 2370,
-   "pct_goal": 0.853,
-   "wr": 0.551,
-   "wr_month": 0.833,
+   "usd_mo": 460,
+   "usd_mo_5acct": 2300,
+   "pct_goal": 0.828,
+   "wr": 0.549,
+   "wr_month": 0.806,
    "months": {
-    "win_per_yr": 10.0,
-    "lose_per_yr": 2.0,
-    "avg_win": 1056,
-    "avg_lose": -437
+    "win_per_yr": 9.7,
+    "lose_per_yr": 2.3,
+    "avg_win": 1082,
+    "avg_lose": -422
    },
-   "first_pay_days": 86,
-   "pay_rate_1yr": 0.929,
+   "first_pay_days": 87,
+   "pay_rate_1yr": 0.924,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 8532
+   "usd_mo_total": 8280
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -1635,29 +1649,29 @@
     "b10-nagel-vix-reversal": 1,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "m2k-floatrate-level-asymmetry": 1,
     "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mcl-holiday-shifted-eia-print-day-relocation": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "mgc-china-lpr-fix-evening-window": 3
+    "mgc-china-lpr-fix-evening-window": 2
    },
-   "total_micros": 11,
-   "p_breach": 0.193,
-   "usd_mo": 398,
-   "usd_mo_5acct": 1990,
-   "pct_goal": 0.716,
+   "total_micros": 10,
+   "p_breach": 0.199,
+   "usd_mo": 405,
+   "usd_mo_5acct": 2025,
+   "pct_goal": 0.729,
    "wr": 0.561,
-   "wr_month": 0.694,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 1247,
-    "avg_lose": -498
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1198,
+    "avg_lose": -527
    },
    "first_pay_days": 94,
-   "pay_rate_1yr": 0.869,
+   "pay_rate_1yr": 0.876,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 7164
+   "usd_mo_total": 7290
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1792,39 +1806,6 @@
    "usd_mo_total": 6265
   },
   {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 2,
-    "b2-opex-release": 1,
-    "b2-vix-reversion": 3,
-    "b3-tom-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 14,
-   "p_breach": 0.198,
-   "usd_mo": 897,
-   "usd_mo_5acct": 4485,
-   "pct_goal": 0.449,
-   "wr": 0.577,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2342,
-    "avg_lose": -1013
-   },
-   "first_pay_days": 100,
-   "pay_rate_1yr": 0.865,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 4485
-  },
-  {
    "id": "Cross-market spread|growth",
    "name": "Cross-market spread",
    "plan": "tradeify-growth",
@@ -1920,6 +1901,38 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3330
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 1,
+    "b2-vix-reversion": 2,
+    "b3-tom-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 8,
+   "p_breach": 0.191,
+   "usd_mo": 634,
+   "usd_mo_5acct": 3170,
+   "pct_goal": 0.317,
+   "wr": 0.606,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1940,
+    "avg_lose": -973
+   },
+   "first_pay_days": 118,
+   "pay_rate_1yr": 0.8,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 3170
   },
   {
    "id": "Frequent-firing engine|growth",
