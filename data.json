@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:29:10Z",
+  "stamp": "2026-07-23T13:32:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 959,
+  "n_registered": 960,
   "n_results": 1139,
   "n_trials": 49275,
   "holdout_looks_spent": 0,
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T13:31:17.602330+00:00",
+   "hash": "1b0b3d69",
+   "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end-REPLICATION-1099",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T13:27:34.579626+00:00",
    "hash": "e051b57c",
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.57"
-  },
-  {
-   "t": "2026-07-23T13:01:29.830903+00:00",
-   "hash": "17e8ad9e",
-   "name": "mng-closing-hedge-completion-share-overnight-handoff",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -416,18 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T13:23:14Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "replication: mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:29:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-hedger-skew-supply-asymmetric-bracket",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:29:12Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zc-hedger-skew-supply-asymmetric-bracket",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.46
-   },
    {
     "rank": 2,
     "idea": "mes-lag1-magnitude-channel-two-sided-bracket",
@@ -529,8 +536,8 @@
    }
   ],
   "funnel": {
-   "idea": 12,
-   "registered": 141,
+   "idea": 11,
+   "registered": 142,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
