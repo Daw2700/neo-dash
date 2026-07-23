@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:51:30Z",
+  "stamp": "2026-07-23T14:58:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 984,
-  "n_results": 1163,
-  "n_trials": 49299,
+  "n_registered": 986,
+  "n_results": 1166,
+  "n_trials": 49302,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 9
+  "needs_attention_count": 8
  },
  "leaderboard": [
   {
@@ -230,7 +230,11 @@
    "wr": 0.4727,
    "usd_mo": 61,
    "pf": 1.831,
-   "usd_trade": 40.2
+   "usd_trade": 40.2,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
   },
   {
    "id": "zs-china-state-reserve-auction-window",
@@ -311,9 +315,33 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T14:51:06.612287+00:00",
+   "t": "2026-07-23T14:55:36.552846+00:00",
    "hash": "8f7779fe",
    "name": "mnq-cost-router-leadlag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T14:55:07.934107+00:00",
+   "hash": "4da33134",
+   "name": "mes-jan-reset-liquidity-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.665"
+  },
+  {
+   "t": "2026-07-23T14:53:07.761242+00:00",
+   "hash": "f6df153a",
+   "name": "mcl-roll-crown-transfer-earliness",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.622"
+  },
+  {
+   "t": "2026-07-23T14:52:31.738084+00:00",
+   "hash": "7f9de903",
+   "name": "sweep-6-reference-level-acceptance",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -325,14 +353,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.088"
-  },
-  {
-   "t": "2026-07-23T14:49:02.098176+00:00",
-   "hash": "f6df153a",
-   "name": "mcl-roll-crown-transfer-earliness",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T14:45:30.657498+00:00",
@@ -389,34 +409,10 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T14:31:48.766797+00:00",
-   "hash": "d118a3b4",
-   "name": "met-impact-detection-completion-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.022"
-  },
-  {
-   "t": "2026-07-23T14:28:27.444023+00:00",
-   "hash": "a98d224b",
-   "name": "scout-67-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-roll-crown-transfer-earliness-participant-mix",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:44:04Z",
-    "state": "running"
-   },
    {
     "agent": "sweep",
     "market": null,
@@ -426,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-execution-cost-router-crossmarket-lead-lag",
     "stage": "dev3yr",
@@ -442,7 +438,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "MES",
     "task": "mes-annual-risk-limit-reset-liquidity-provision-regime",
     "stage": "dev3yr",
@@ -508,7 +504,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 151,
+   "registered": 150,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -570,7 +566,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18697
+    "trials": 18700
    }
   ]
  },
@@ -594,8 +590,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 162,
-   "n_killed": 134,
+   "n_tested": 163,
+   "n_killed": 135,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -641,8 +637,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 68,
-   "n_killed": 46,
+   "n_tested": 69,
+   "n_killed": 47,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1243,7 +1239,11 @@
      "stage": "replication",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 5
+   }
   },
   "zs-china-state-reserve-auction-window": {
    "name": "zs-china-state-reserve-auction-window",
@@ -1414,24 +1414,6 @@
  },
  "decisions": [
   {
-   "id": "d-crudechannel-book-entry",
-   "kind": "book_entry",
-   "needs_attention": true,
-   "title": "Eighth machine-discovered sleeve ready: crude-shock equity risk transfer (PF 1.831)",
-   "recommendation": "ADMIT to the book \u2014 emphatic dual-leg (replication PF 2.233 on MNQ, n=55)",
-   "evidence": "dev3yr: n=55, PF 1.831, $40.18/trade on MES | robustness: SURVIVES | replication: n=55, PF 2.233 on MNQ \u2014 replication stronger than dev, the strong-carry signature",
-   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
-   "recap": "When crude-oil liquidity shocks hit, equity indexes reprice with a tradeable transfer lag. Cross-asset mechanism carrying to both index siblings.",
-   "why": "Cleared every gate with the replication leg outperforming dev (2.233 vs dev) \u2014 the same emphatic-carry profile as gold-signal and depth-consumption, your two strongest graduates. Cross-asset cause with index expression, structurally distinct from everything in the book.",
-   "steps": [
-    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
-    "Deny: remains a replicated candidate, fully preserved",
-    "Question: the card returns with any analysis you want",
-    "Live/paper exposure still requires its own GO regardless"
-   ],
-   "staged": "2026-07-23T03:44:08Z"
-  },
-  {
    "id": "d-chinaauction-book-entry",
    "kind": "book_entry",
    "needs_attention": true,
@@ -1561,20 +1543,21 @@
    "id": "d-settlediv-mirror-sync",
    "kind": "cleanup",
    "needs_attention": true,
-   "title": "Book entry is on the ledger, but the published book and all sizing still exclude it",
-   "recommendation": "Approve the one-hash mirror edit + a sizing re-run so the new sleeve actually counts",
-   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 8 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set). sizing.py no longer needs a manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv, and data/trades_mes-settle-tradable-divergence.csv already exists (n=288, 2022-03-03..2025-02-27), so adding the hash is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-   "what_yes_means": "The site shows an 8-sleeve book, sizing computes max micros for the new sleeve under the same 20% breach cap, and every bundle + the $10k roadmap recompute including it",
-   "recap": "You approved the settle-vs-tradable divergence sleeve into the book and the ledger says so. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and the new one gets zero micros in every bundle.",
-   "why": "The ledger is the source of truth and it already records the admission, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This one is smaller than the gold-signal sync was: one hash, then a re-run.",
+   "title": "Two approved book entries are on the ledger, but the published book and all sizing still exclude both",
+   "recommendation": "Approve the two-hash mirror edit + a sizing re-run so both new sleeves actually count",
+   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 9 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set, still at 7). sizing.py needs no manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv. Both logs exist under their leaderboard ids \u2014 trades_mes-settle-tradable-divergence.csv (n=288, 2022-03-03..2025-02-27) and trades_mes-crude-liquidity-channel-risk-transfer.csv (n=55, 2022-04-18..2025-02-20, an id-named copy of the worker's trades_mes-mcl-liquidity-channel.csv) \u2014 so adding the two hashes is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+   "what_yes_means": "The site shows a 9-sleeve book, sizing computes max micros for both new sleeves under the same 20% breach cap, and every bundle + the $10k roadmap recompute including them",
+   "recap": "You approved the settle-vs-tradable divergence sleeve and now the crude-shock equity risk-transfer sleeve into the book, and the ledger says so for both. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and neither new one gets any micros in any bundle.",
+   "why": "The ledger is the source of truth and it already records both admissions, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This is now two hashes and a re-run.",
    "steps": [
-    "Approve: add 5e5ccf350206d13f to ~/neo-dashboard/build_data.py VALID",
+    "Approve: add 5e5ccf350206d13f and 628b3b410c1fbe65 to ~/neo-dashboard/build_data.py VALID",
     "Re-run sizing.py then build_data.py; engine pushes on its next publish",
-    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives both now",
-    "Deny: the ledger admission still stands, but the published book stays at 7 sleeves and the sleeve earns no allocation"
+    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives both, and both trade logs already sit under their leaderboard ids",
+    "Deny: both ledger admissions still stand, but the published book stays at 7 sleeves and neither sleeve earns any allocation"
    ],
    "pending_mirrors": [
-    "mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
+    "mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+    "mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
    ],
    "staged": "2026-07-23T14:45:17Z"
   }
@@ -1650,28 +1633,27 @@
     "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b4-open-drive": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-china-lpr-fix-evening-window": 1,
-    "b2-opex-release": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
     "b3-tom-long": 1
    },
-   "total_micros": 15,
-   "p_breach": 0.2,
-   "usd_mo": 748,
-   "usd_mo_5acct": 3740,
-   "pct_goal": 1.346,
-   "wr": 0.516,
+   "total_micros": 13,
+   "p_breach": 0.196,
+   "usd_mo": 774,
+   "usd_mo_5acct": 3870,
+   "pct_goal": 1.393,
+   "wr": 0.523,
    "wr_month": 0.833,
    "months": {
     "win_per_yr": 10.0,
     "lose_per_yr": 2.0,
-    "avg_win": 1512,
-    "avg_lose": -736
+    "avg_win": 1558,
+    "avg_lose": -787
    },
-   "first_pay_days": 55,
-   "pay_rate_1yr": 0.987,
+   "first_pay_days": 54,
+   "pay_rate_1yr": 0.989,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 13464
+   "usd_mo_total": 13932
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1683,27 +1665,28 @@
     "b2-vix-reversion": 3,
     "b3-monday-long": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "scan-mbt": 2
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "mgc-china-lpr-fix-evening-window": 2,
+    "scan-mbt": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.178,
-   "usd_mo": 460,
-   "usd_mo_5acct": 2300,
-   "pct_goal": 0.828,
-   "wr": 0.549,
-   "wr_month": 0.806,
+   "total_micros": 13,
+   "p_breach": 0.176,
+   "usd_mo": 549,
+   "usd_mo_5acct": 2745,
+   "pct_goal": 0.988,
+   "wr": 0.552,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 9.7,
-    "lose_per_yr": 2.3,
-    "avg_win": 1082,
-    "avg_lose": -422
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1387,
+    "avg_lose": -596
    },
-   "first_pay_days": 87,
-   "pay_rate_1yr": 0.924,
+   "first_pay_days": 82,
+   "pay_rate_1yr": 0.922,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 8280
+   "usd_mo_total": 9882
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -1713,30 +1696,31 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 1,
+    "b2-opex-release": 3,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "mgc-china-lpr-fix-evening-window": 5
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 2,
+    "mgc-china-lpr-fix-evening-window": 4
    },
-   "total_micros": 12,
-   "p_breach": 0.199,
-   "usd_mo": 392,
-   "usd_mo_5acct": 1960,
-   "pct_goal": 0.706,
-   "wr": 0.56,
-   "wr_month": 0.722,
+   "total_micros": 16,
+   "p_breach": 0.2,
+   "usd_mo": 525,
+   "usd_mo_5acct": 2625,
+   "pct_goal": 0.945,
+   "wr": 0.541,
+   "wr_month": 0.639,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 1182,
-    "avg_lose": -562
+    "win_per_yr": 7.7,
+    "lose_per_yr": 4.3,
+    "avg_win": 1672,
+    "avg_lose": -544
    },
-   "first_pay_days": 95,
-   "pay_rate_1yr": 0.867,
+   "first_pay_days": 77,
+   "pay_rate_1yr": 0.932,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 7056
+   "usd_mo_total": 9450
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1842,66 +1826,34 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 2,
+    "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
     "zs-china-state-reserve-auction-window": 1,
-    "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1
-   },
-   "total_micros": 15,
-   "p_breach": 0.195,
-   "usd_mo": 1253,
-   "usd_mo_5acct": 6265,
-   "pct_goal": 0.626,
-   "wr": 0.553,
-   "wr_month": 0.889,
-   "months": {
-    "win_per_yr": 10.7,
-    "lose_per_yr": 1.3,
-    "avg_win": 2290,
-    "avg_lose": -1387
-   },
-   "first_pay_days": 88,
-   "pay_rate_1yr": 0.95,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 6265
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 2,
-    "b2-opex-release": 1,
-    "b2-vix-reversion": 3,
-    "b3-tom-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "zs-china-state-reserve-auction-window": 1
+    "b3-tom-long": 1
    },
    "total_micros": 14,
-   "p_breach": 0.198,
-   "usd_mo": 897,
-   "usd_mo_5acct": 4485,
-   "pct_goal": 0.449,
-   "wr": 0.577,
-   "wr_month": 0.778,
+   "p_breach": 0.181,
+   "usd_mo": 1192,
+   "usd_mo_5acct": 5960,
+   "pct_goal": 0.596,
+   "wr": 0.536,
+   "wr_month": 0.806,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2342,
-    "avg_lose": -1013
+    "win_per_yr": 9.7,
+    "lose_per_yr": 2.3,
+    "avg_win": 2485,
+    "avg_lose": -1089
    },
-   "first_pay_days": 100,
-   "pay_rate_1yr": 0.865,
+   "first_pay_days": 88,
+   "pay_rate_1yr": 0.944,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4485
+   "usd_mo_total": 5960
   },
   {
    "id": "Cross-market spread|growth",
@@ -1910,30 +1862,63 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 3,
+    "b2-vix-reversion": 4,
     "b3-monday-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "scan-mbt": 3,
     "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 11,
-   "p_breach": 0.176,
-   "usd_mo": 812,
-   "usd_mo_5acct": 4060,
-   "pct_goal": 0.406,
-   "wr": 0.579,
-   "wr_month": 0.778,
+   "total_micros": 18,
+   "p_breach": 0.18,
+   "usd_mo": 1126,
+   "usd_mo_5acct": 5630,
+   "pct_goal": 0.563,
+   "wr": 0.545,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2010,
-    "avg_lose": -996
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 2722,
+    "avg_lose": -1013
    },
-   "first_pay_days": 101,
-   "pay_rate_1yr": 0.867,
+   "first_pay_days": 89,
+   "pay_rate_1yr": 0.907,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4060
+   "usd_mo_total": 5630
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 4,
+    "b3-tom-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 4,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 14,
+   "p_breach": 0.192,
+   "usd_mo": 937,
+   "usd_mo_5acct": 4685,
+   "pct_goal": 0.469,
+   "wr": 0.578,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2657,
+    "avg_lose": -867
+   },
+   "first_pay_days": 98,
+   "pay_rate_1yr": 0.853,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 4685
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
