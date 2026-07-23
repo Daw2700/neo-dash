@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:34:49Z",
+  "stamp": "2026-07-23T08:37:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 864,
+  "n_registered": 865,
   "n_results": 1046,
   "n_trials": 49182,
   "holdout_looks_spent": 0,
@@ -274,7 +274,11 @@
    "wr": 0.5455,
    "usd_mo": 27,
    "pf": 1.299,
-   "usd_trade": 44.5
+   "usd_trade": 44.5,
+   "sizing": {
+    "growth_max": 4,
+    "apex_max": 3
+   }
   },
   {
    "id": "b3-prior-high-break",
@@ -310,6 +314,14 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T08:37:21.902205+00:00",
+   "hash": "771e08f7",
+   "name": "robustness-battery::zn-sep-dotplot-path-integration-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T08:34:39.346712+00:00",
    "hash": "d4da9cf4",
@@ -397,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.036"
-  },
-  {
-   "t": "2026-07-23T08:04:39.180104+00:00",
-   "hash": "ed0f6e64",
-   "name": "mng-datacenter-power-load-equity-narrative-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.434"
   }
  ],
  "pipeline": {
@@ -423,6 +427,14 @@
     "task": "mnq-ndx-capping-rule-quarterly-test-window",
     "stage": "dev3yr",
     "started": "2026-07-23T08:31:00Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "robustness: zn-sep-dotplot-path-integration-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:34:51Z",
     "state": "running"
    }
   ],
@@ -493,7 +505,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 114,
+   "registered": 115,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -1316,7 +1328,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 4,
+    "apex_max": 3
+   }
   },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
@@ -1604,26 +1620,27 @@
     "b2-opex-release": 1,
     "b3-tom-long": 1,
     "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "zn-sep-dotplot-path-integration-lag": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.189,
-   "usd_mo": 563,
-   "usd_mo_5acct": 2815,
-   "pct_goal": 1.013,
-   "wr": 0.518,
+   "total_micros": 11,
+   "p_breach": 0.198,
+   "usd_mo": 584,
+   "usd_mo_5acct": 2920,
+   "pct_goal": 1.051,
+   "wr": 0.521,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 1297,
-    "avg_lose": -581
+    "avg_win": 1366,
+    "avg_lose": -700
    },
-   "first_pay_days": 65,
-   "pay_rate_1yr": 0.959,
+   "first_pay_days": 64,
+   "pay_rate_1yr": 0.96,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 10134
+   "usd_mo_total": 10512
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1791,31 +1808,34 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 1,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 2,
+    "b4-open-drive": 1,
     "zs-china-state-reserve-auction-window": 1,
     "b3-tom-long": 1,
+    "zn-sep-dotplot-path-integration-lag": 1,
     "b3-prior-high-break": 1
    },
-   "total_micros": 8,
-   "p_breach": 0.181,
-   "usd_mo": 828,
-   "usd_mo_5acct": 4140,
-   "pct_goal": 0.414,
-   "wr": 0.536,
-   "wr_month": 0.778,
+   "total_micros": 11,
+   "p_breach": 0.198,
+   "usd_mo": 977,
+   "usd_mo_5acct": 4885,
+   "pct_goal": 0.488,
+   "wr": 0.523,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2025,
-    "avg_lose": -1035
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 2363,
+    "avg_lose": -1038
    },
-   "first_pay_days": 105,
-   "pay_rate_1yr": 0.891,
+   "first_pay_days": 94,
+   "pay_rate_1yr": 0.923,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 4140
+   "usd_mo_total": 4885
   },
   {
    "id": "Cross-market spread|growth",
