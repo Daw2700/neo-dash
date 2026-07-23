@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:58:38Z",
+  "stamp": "2026-07-23T14:58:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,27 +428,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T14:58:10Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T14:58:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-simultaneous-roll-congestion-capacity-drain",
+    "stage": "dev3yr",
+    "started": "2026-07-23T14:58:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mes-sqrt-impact-law-residual-unconfirmed-move-decay",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 9,
-    "idea": "mes-simultaneous-roll-congestion-capacity-drain",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 10,
     "idea": "zc-deadhour-move-in-spread-units-deferred-completion",
@@ -478,7 +476,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 3,
    "registered": 150,
    "dev3yr": 0,
    "robustness": 0,
