@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:29:46Z",
+  "stamp": "2026-07-23T06:31:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 818,
-  "n_results": 994,
-  "n_trials": 39861,
+  "n_registered": 819,
+  "n_results": 995,
+  "n_trials": 39862,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T06:31:29.122418+00:00",
+   "hash": "1feef92f",
+   "name": "mes-zumbach-coarse-trend-range-expansion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.625"
+  },
+  {
    "t": "2026-07-23T06:26:05.491584+00:00",
    "hash": "2410d188",
    "name": "mbt-close-auction-risk-budget-substitution",
@@ -397,14 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.1975"
-  },
-  {
-   "t": "2026-07-23T05:49:40.616354+00:00",
-   "hash": "f698cf1a",
-   "name": "mnq-dcb-band-proximity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.72"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-zumbach-coarse-trend-range-expansion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:29:46Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "xmkt-weekend-closure-haven-supplyrisk-rotation",
     "stage": "dev3yr",
@@ -563,7 +555,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9025
+    "trials": 9026
    }
   ]
  },
@@ -587,8 +579,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 137,
-   "n_killed": 117,
+   "n_tested": 138,
+   "n_killed": 118,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
