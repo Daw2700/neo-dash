@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:24:10Z",
+  "stamp": "2026-07-23T20:28:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1084,
-  "n_results": 1273,
-  "n_trials": 71369,
+  "n_registered": 1085,
+  "n_results": 1274,
+  "n_trials": 71370,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71369,
-   "registered": 1084,
+   "trials": 71370,
+   "registered": 1085,
    "tested": 881,
    "passed": 165,
-   "survived": 34,
+   "survived": 35,
    "replicated": 12,
    "book": 13
   }
@@ -327,10 +327,30 @@
    "wr": 0.6237,
    "usd_mo": 76,
    "pf": 1.687,
-   "usd_trade": 29.4
+   "usd_trade": 29.4,
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 4
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T20:27:13.722963+00:00",
+   "hash": "8b298a3a",
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T20:25:46.122663+00:00",
+   "hash": "a3d10092",
+   "name": "ROBUSTNESS mes-petrodollar-recycling-sovereign-inflow-lag (8b298a3a53af7ca9)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T20:20:55.649694+00:00",
    "hash": "8b298a3a",
@@ -410,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.735"
-  },
-  {
-   "t": "2026-07-23T20:13:04.142497+00:00",
-   "hash": "3f36f238",
-   "name": "mes-intraday-momentum-multi-anchor-composite",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.714"
-  },
-  {
-   "t": "2026-07-23T20:06:19.450872+00:00",
-   "hash": "8b976c3d",
-   "name": "mcl-precautionary-demand-decay",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.572"
   }
  ],
  "pipeline": {
@@ -444,6 +448,14 @@
     "task": "mes-petrodollar-recycling-sovereign-inflow-lag",
     "stage": "dev3yr",
     "started": "2026-07-23T20:16:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mes-petrodollar-recycling-sovereign-inflow-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:24:12Z",
     "state": "running"
    }
   ],
@@ -523,8 +535,8 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 167,
-   "dev3yr": 2,
+   "registered": 168,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -585,7 +597,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31045
+    "trials": 31046
    }
   ]
  },
@@ -1474,8 +1486,17 @@
      "t": "2026-07-23T20:20:55.649694+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T20:27:13.722963+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 7,
+    "apex_max": 4
+   }
   }
  },
  "decisions": [
@@ -1673,6 +1694,40 @@
    "usd_mo_total": 15786
   },
   {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 1,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "mnq-event-free-day-flow-persistence": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 1,
+    "mes-petrodollar-recycling-sovereign-inflow-lag": 1
+   },
+   "total_micros": 7,
+   "p_breach": 0.188,
+   "usd_mo": 782,
+   "usd_mo_5acct": 3910,
+   "pct_goal": 1.408,
+   "wr": 0.562,
+   "wr_month": 0.806,
+   "months": {
+    "win_per_yr": 9.7,
+    "lose_per_yr": 2.3,
+    "avg_win": 1538,
+    "avg_lose": -413
+   },
+   "first_pay_days": 47,
+   "pay_rate_1yr": 0.99,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 14076
+  },
+  {
    "id": "Validated book (all approved sleeves)|apex150",
    "name": "Validated book (all approved sleeves)",
    "plan": "apex150 (verified)",
@@ -1742,39 +1797,6 @@
    "usd_mo_total": 13068
   },
   {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 1,
-    "zc-rma-volatility-factor-five-day-window": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
-    "mnq-event-free-day-flow-persistence": 1,
-    "zn-fr2004-dealer-inventory-capacity-state": 1
-   },
-   "total_micros": 6,
-   "p_breach": 0.183,
-   "usd_mo": 699,
-   "usd_mo_5acct": 3495,
-   "pct_goal": 1.258,
-   "wr": 0.562,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 1598,
-    "avg_lose": -354
-   },
-   "first_pay_days": 53,
-   "pay_rate_1yr": 0.986,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 12582
-  },
-  {
    "id": "Frequent-firing engine|apex150",
    "name": "Frequent-firing engine",
    "plan": "apex150 (verified)",
@@ -1811,38 +1833,38 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 2,
-    "zc-rma-volatility-factor-five-day-window": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "b2-vix-reversion": 1,
+    "zc-rma-volatility-factor-five-day-window": 1,
     "zs-china-state-reserve-auction-window": 1,
     "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "mnq-event-free-day-flow-persistence": 1,
-    "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1
+    "mgc-china-lpr-fix-evening-window": 3,
+    "mes-petrodollar-recycling-sovereign-inflow-lag": 2
    },
-   "total_micros": 17,
-   "p_breach": 0.19,
-   "usd_mo": 1428,
-   "usd_mo_5acct": 7140,
-   "pct_goal": 0.714,
-   "wr": 0.548,
-   "wr_month": 0.917,
+   "total_micros": 18,
+   "p_breach": 0.191,
+   "usd_mo": 1392,
+   "usd_mo_5acct": 6960,
+   "pct_goal": 0.696,
+   "wr": 0.549,
+   "wr_month": 0.944,
    "months": {
-    "win_per_yr": 11.0,
-    "lose_per_yr": 1.0,
-    "avg_win": 2382,
-    "avg_lose": -1670
+    "win_per_yr": 11.3,
+    "lose_per_yr": 0.7,
+    "avg_win": 2233,
+    "avg_lose": -1845
    },
-   "first_pay_days": 70,
-   "pay_rate_1yr": 0.973,
+   "first_pay_days": 69,
+   "pay_rate_1yr": 0.971,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 7140
+   "usd_mo_total": 6960
   },
   {
    "id": "Cross-market spread|growth",
@@ -1981,6 +2003,39 @@
    "usd_mo_total": 4266
   },
   {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 4,
+    "b3-preholiday-drift": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "mes-petrodollar-recycling-sovereign-inflow-lag": 5,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 18,
+   "p_breach": 0.194,
+   "usd_mo": 813,
+   "usd_mo_5acct": 4065,
+   "pct_goal": 0.406,
+   "wr": 0.639,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 2218,
+    "avg_lose": -673
+   },
+   "first_pay_days": 103,
+   "pay_rate_1yr": 0.844,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 4065
+  },
+  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -2010,39 +2065,6 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3855
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 4,
-    "b2-opex-release": 5,
-    "b2-vix-reversion": 5,
-    "b3-preholiday-drift": 3,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
-   },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 3470
   }
  ],
  "sizing_meta": {
