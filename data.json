@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:44:22Z",
+  "stamp": "2026-07-23T05:47:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 805,
-  "n_results": 980,
-  "n_trials": 39847,
+  "n_registered": 808,
+  "n_results": 982,
+  "n_trials": 39849,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:47:13.549659+00:00",
+   "hash": "4869d28c",
+   "name": "xmkt-post-settlement-breadth-coherence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T05:46:41.794815+00:00",
+   "hash": "7da28edd",
+   "name": "mnq-protection-point-snapback",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T05:46:09.191633+00:00",
+   "hash": "f698cf1a",
+   "name": "mnq-dcb-band-proximity",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T05:45:40.896068+00:00",
+   "hash": "4869d28c",
+   "name": "xmkt-post-settlement-breadth-coherence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF nan"
+  },
+  {
    "t": "2026-07-23T05:43:52.738716+00:00",
    "hash": "af3eda90",
    "name": "mgc-liquidity-void-first-print-impact-continuation",
@@ -377,52 +409,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T05:19:08.329470+00:00",
-   "hash": "60113c28",
-   "name": "mgc-cusum-volrange-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.646"
-  },
-  {
-   "t": "2026-07-23T05:13:29.951534+00:00",
-   "hash": "acc8c1a2",
-   "name": "sil-retail-hours-unconfirmed-move-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.6384"
-  },
-  {
-   "t": "2026-07-23T05:11:45.471150+00:00",
-   "hash": "93f5fd60",
-   "name": "mnq-propfirm-cohort-monthstart-stop-density",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.405"
-  },
-  {
-   "t": "2026-07-23T05:11:16.897977+00:00",
-   "hash": "a7d29fa5",
-   "name": "mes-overnight-churn",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.697"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "xmkt-post-settlement-breadth-coherence-late-afternoon",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:43:58Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-dynamic-circuit-breaker-band-proximity-acceleration",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-market-order-protection-point-residual-snapback",
     "stage": "dev3yr",
@@ -496,7 +488,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 108,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -558,7 +550,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9011
+    "trials": 9013
    }
   ]
  },
