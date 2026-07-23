@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:45:31Z",
+  "stamp": "2026-07-23T20:45:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -9,7 +9,7 @@
   "n_trials": 71374,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 5,
+  "needs_attention_count": 6,
   "lifetime": {
    "trials": 71374,
    "registered": 1089,
@@ -1451,6 +1451,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-petrodollar-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Tenth machine-discovered sleeve ready: petrodollar recycling lag (PF 1.687, n=93)",
+   "recommendation": "ADMIT to the book \u2014 strong dual-leg (dev PF 1.687, replication PF 1.544 on MNQ, n=93 both legs)",
+   "evidence": "dev3yr: n=93, PF 1.687, $29.42/trade on MES | robustness: SURVIVES | replication: n=93, PF 1.544 on MNQ \u2014 both legs strong on real samples",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "After large oil-revenue windfalls, sovereign wealth flows reach US equities with a measurable lag. The strategy trades that delayed inflow on the S&P, and the same lag shows up independently on the Nasdaq.",
+   "why": "It cleared every gate with margin: dev PF 1.687 and replication PF 1.544 are both far above their bars on 93-trade samples \u2014 no thin-sample caveat, no near-miss margins. The mechanism (petrodollar recycling) is a documented macro flow, structurally distinct from every sleeve in the book.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute (golden card auto-updates if the book improves)",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-23T20:45:55Z"
+  },
   {
    "id": "d-golden-22452",
    "kind": "golden_test",
