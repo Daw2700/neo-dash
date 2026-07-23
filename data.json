@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:42:30Z",
+  "stamp": "2026-07-23T23:46:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1142,
-  "n_results": 1329,
-  "n_trials": 79194,
+  "n_registered": 1143,
+  "n_results": 1330,
+  "n_trials": 79195,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79194,
-   "registered": 1142,
-   "tested": 925,
+   "trials": 79195,
+   "registered": 1143,
+   "tested": 926,
    "passed": 171,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:44:19.221894+00:00",
+   "hash": "9d659566",
+   "name": "mnq-invvar-scaling",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.031"
+  },
+  {
    "t": "2026-07-23T23:41:43.870737+00:00",
    "hash": "26584da7",
    "name": "mes-september-complex-wide-rth-only-weakness",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.904"
-  },
-  {
-   "t": "2026-07-23T23:20:06.249101+00:00",
-   "hash": "b0bc5cb7",
-   "name": "zn-sifma-earlyclose-truncation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.027"
   }
  ],
  "pipeline": {
@@ -617,7 +617,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38876
+    "trials": 38877
    }
   ]
  },
@@ -626,8 +626,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 141,
-   "n_killed": 97,
+   "n_tested": 142,
+   "n_killed": 98,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
