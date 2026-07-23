@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:00:09Z",
+  "stamp": "2026-07-23T17:04:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1025,
-  "n_results": 1205,
-  "n_trials": 68275,
+  "n_registered": 1026,
+  "n_results": 1208,
+  "n_trials": 68278,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -293,6 +293,18 @@
    "usd_trade": 48.9
   },
   {
+   "id": "mes-buyback-constant-notional-lowadv-amplification",
+   "name": "mes-buyback-constant-notional-lowadv-amplification",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 271,
+   "wr": 0.6199,
+   "usd_mo": 295,
+   "pf": 2.062,
+   "usd_trade": 39.1
+  },
+  {
    "id": "mgc-china-lpr-fix-evening-window",
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -307,25 +319,33 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "b2-opex-release",
-   "name": "b2-opex-release",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 35,
-   "wr": 0.429,
-   "usd_mo": 16,
-   "pf": 1.407,
-   "usd_trade": 16.0,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T17:03:39.456987+00:00",
+   "hash": "1063edb8",
+   "name": "zn-onetick-absorption-shelf-exhaustion-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.068"
+  },
+  {
+   "t": "2026-07-23T17:00:21.492310+00:00",
+   "hash": "36292eeb",
+   "name": "mes-buyback-constant-notional-lowadv-amplification",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.062"
+  },
+  {
+   "t": "2026-07-23T17:00:09.807745+00:00",
+   "hash": "6bb1a09a",
+   "name": "mes-monthly-vwap-benchmark-completion-pressure",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.638"
+  },
   {
    "t": "2026-07-23T16:59:46.212500+00:00",
    "hash": "8c147297",
@@ -333,22 +353,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.6245"
-  },
-  {
-   "t": "2026-07-23T16:58:51.294510+00:00",
-   "hash": "6bb1a09a",
-   "name": "mes-monthly-vwap-benchmark-completion-pressure",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T16:58:28.159408+00:00",
-   "hash": "36292eeb",
-   "name": "mes-buyback-constant-notional-lowadv-amplification",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T16:56:04.191148+00:00",
@@ -413,36 +417,12 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 2.615"
-  },
-  {
-   "t": "2026-07-23T16:29:31.967330+00:00",
-   "hash": "911f8c12",
-   "name": "zn-stockbond-corr-regime-term-premium-drift",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.957"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-buyback-constant-notional-lowadv-amplification",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:57:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-monthly-vwap-benchmark-completion-pressure",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:57:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-onetick-absorption-shelf-exhaustion-continuation",
     "stage": "dev3yr",
@@ -481,7 +461,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 160,
+   "registered": 158,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -543,7 +523,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27954
+    "trials": 27957
    }
   ]
  },
@@ -568,7 +548,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 169,
+   "n_tested": 171,
    "n_killed": 141,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
@@ -664,8 +644,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 75,
-   "n_killed": 64,
+   "n_tested": 76,
+   "n_killed": 65,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1381,6 +1361,26 @@
     }
    ]
   },
+  "mes-buyback-constant-notional-lowadv-amplification": {
+   "name": "mes-buyback-constant-notional-lowadv-amplification",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Rule 10b5-1 buyback programs execute a fixed daily dollar notional regardless of price, so their share of total market volume is mechanically larger on low-ADV days, and price impact scales with participation share (square-root law), predicting concentrated upward drift on low-volume sessions inside open post-earnings buyback reopen windows, distinct from the pure calendar-window buyback cousins.",
+   "metrics": {
+    "n": 271,
+    "wr": 0.6199,
+    "pf": 2.062,
+    "usd_mo": 295,
+    "usd_trade": 39.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T17:00:21.492310+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mgc-china-lpr-fix-evening-window": {
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -1408,40 +1408,6 @@
      "t": "2026-07-23T10:14:59.559673+00:00",
      "stage": "replication",
      "verdict": "KILLED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  "b2-opex-release": {
-   "name": "b2-opex-release",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
-   "metrics": {
-    "n": 35,
-    "wr": 0.429,
-    "pf": 1.407,
-    "usd_mo": 16,
-    "usd_trade": 16.0
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:02:40.560966+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.903542+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.697136+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
     }
    ],
    "sizing": {
