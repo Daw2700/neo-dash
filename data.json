@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:57:25Z",
+  "stamp": "2026-07-23T01:58:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 737,
-  "n_results": 901,
-  "n_trials": 30889,
+  "n_results": 902,
+  "n_trials": 30890,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,12 +299,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T01:57:18.757299+00:00",
+   "t": "2026-07-23T01:58:41.221239+00:00",
    "hash": "6299d924",
    "name": "mbt-multiday-closure-no-overshoot",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1356"
   },
   {
    "t": "2026-07-23T01:55:12.815978+00:00",
@@ -399,14 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-multiday-closure-known-target-remark-no-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:54:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "replication: mbt-equity-overnight-overextrapolation-us-session-fade",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZS",
     "task": "robustness: zs-delivery-option-decay-ramp",
     "stage": "dev3yr",
@@ -453,7 +445,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 97,
+   "registered": 96,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -515,7 +507,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 53
+    "trials": 54
    }
   ]
  },
@@ -604,8 +596,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 9,
+   "n_tested": 17,
+   "n_killed": 10,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
