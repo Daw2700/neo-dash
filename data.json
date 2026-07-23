@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:56:05Z",
+  "stamp": "2026-07-23T04:02:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 769,
-  "n_results": 943,
-  "n_trials": 39810,
+  "n_registered": 771,
+  "n_results": 945,
+  "n_trials": 39812,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T03:58:37.013642+00:00",
+   "hash": "9a564284",
+   "name": "mes-inflation-pair-release-ordering-preprice",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T03:58:19.461316+00:00",
+   "hash": "0403fb57",
+   "name": "zn-cojump-macro-confirmation-filter",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T03:56:53.346391+00:00",
+   "hash": "94f0cd9a",
+   "name": "mbt-idio-illiquidity-long",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T03:55:47.751552+00:00",
    "hash": "416f0c18",
    "name": "m2k-freshair-short",
@@ -385,44 +409,12 @@
    "status": "replicates",
    "kind": "result",
    "detail": "PF 2.233"
-  },
-  {
-   "t": "2026-07-23T03:35:46.299362+00:00",
-   "hash": "31eb59e2",
-   "name": "rep-mes-crude-liquidity-channel-risk-transfer-mnq",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T03:32:12.086722+00:00",
-   "hash": "628b3b41",
-   "name": "mes-crude-liquidity-channel-risk-transfer",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T03:29:19.105373+00:00",
-   "hash": "80dbfe02",
-   "name": "cojump-overnight-gate",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mbt-idio-illiquidity-long",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:53:34Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-inflation-pair-release-ordering-preprice",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-cojump-macro-confirmation-filter",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 103,
+   "registered": 104,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -513,7 +505,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8974
+    "trials": 8976
    }
   ]
  },
