@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:50:03Z",
+  "stamp": "2026-07-23T02:53:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 752,
-  "n_results": 920,
-  "n_trials": 30908,
+  "n_registered": 753,
+  "n_results": 921,
+  "n_trials": 30909,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:53:06.579966+00:00",
+   "hash": "8f919471",
+   "name": "zc-ethanol-print-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.486"
+  },
+  {
    "t": "2026-07-23T02:48:15.240711+00:00",
    "hash": "7761d9f2",
    "name": "zn-mba-origination-hedge",
@@ -385,14 +393,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T02:24:53.340915+00:00",
-   "hash": "97ae3e36",
-   "name": "m2k-quiet-session-onesided-flow",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -419,14 +419,6 @@
     "task": "robustness: mcl-api-eia-disagreement-stranded-reversal",
     "stage": "dev3yr",
     "started": "2026-07-23T02:49:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZC",
-    "task": "zc-weekly-ethanol-production-print-grind-demand",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:50:03Z",
     "state": "running"
    }
   ],
@@ -523,7 +515,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 72
+    "trials": 73
    }
   ]
  },
@@ -650,8 +642,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 36,
-   "n_killed": 30,
+   "n_tested": 37,
+   "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
   },
