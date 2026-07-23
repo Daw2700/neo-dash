@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:57:21Z",
+  "stamp": "2026-07-23T08:01:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 849,
-  "n_results": 1032,
-  "n_trials": 49168,
+  "n_registered": 852,
+  "n_results": 1035,
+  "n_trials": 49171,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T08:01:12.156504+00:00",
+   "hash": "6ea8c1a1",
+   "name": "m2k-housing-release-homebuilder-weight-channel",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.05"
+  },
+  {
+   "t": "2026-07-23T08:00:05.413963+00:00",
+   "hash": "a600ec51",
+   "name": "levetf-close-overnight-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.333"
+  },
+  {
+   "t": "2026-07-23T07:59:18.322481+00:00",
+   "hash": "c65ab29e",
+   "name": "mbt-offshore-liq-cascade-multiday-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.8107"
+  },
+  {
+   "t": "2026-07-23T07:59:17.271741+00:00",
+   "hash": "3d65e160",
+   "name": "m2k-housing-release-homebuilder-weight-channel-RECHECK",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T07:57:08.590796+00:00",
    "hash": "6ea8c1a1",
    "name": "m2k-housing-release-homebuilder-weight-channel",
@@ -377,38 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.829"
-  },
-  {
-   "t": "2026-07-23T07:30:12.371866+00:00",
-   "hash": "69c93951",
-   "name": "mnq-durable-goods-capex-techrev-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.963"
-  },
-  {
-   "t": "2026-07-23T07:23:18.609930+00:00",
-   "hash": "a144b748",
-   "name": "m6e-prior-onshore-vwap-overnight-anchor-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.7509"
-  },
-  {
-   "t": "2026-07-23T07:22:28.601816+00:00",
-   "hash": "fb1dcea0",
-   "name": "scout-58-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T07:22:26.106551+00:00",
-   "hash": "4b924287",
-   "name": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.08"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MBT",
-    "task": "mbt-offshore-liquidation-cascade-multiday-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:54:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "recheck: m2k-housing-release-homebuilder-weight-channel",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 112,
+   "registered": 113,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -549,7 +541,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18566
+    "trials": 18569
    }
   ]
  },
@@ -558,8 +550,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 126,
-   "n_killed": 83,
+   "n_tested": 127,
+   "n_killed": 84,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -638,8 +630,8 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 14,
+   "n_tested": 22,
+   "n_killed": 15,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
    ],
