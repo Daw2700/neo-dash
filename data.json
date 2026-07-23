@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:02:10Z",
+  "stamp": "2026-07-23T01:02:12Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -396,35 +396,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "mcl-post-washout-hedge-supply-ceiling",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:02:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MBT",
+    "task": "mbt-macro-decoupling-offshore-bid-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:02:12Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-index-extension-preannouncement-frontrun",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:02:12Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mcl-post-washout-hedge-supply-ceiling",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "mbt-macro-decoupling-offshore-bid-overnight",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "zn-index-extension-preannouncement-frontrun",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mes-percent-threshold-headline-salience-nextday",
@@ -508,7 +506,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
