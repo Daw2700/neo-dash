@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:37:40Z",
+  "stamp": "2026-07-23T04:37:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T04:36:57Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-dispersion-gated-overnight-intraday-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:37:42Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "zc-dispersion-gated-overnight-intraday-reversal",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 12,
     "idea": "mnq-rank-effect-extreme-position-liquidation",
@@ -451,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
