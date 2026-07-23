@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:10:38Z",
+  "stamp": "2026-07-23T16:17:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1011,
-  "n_results": 1190,
-  "n_trials": 68260,
+  "n_registered": 1015,
+  "n_results": 1194,
+  "n_trials": 68264,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 6
+  "needs_attention_count": 5
  },
  "leaderboard": [
   {
@@ -246,7 +246,11 @@
    "wr": 0.7333,
    "usd_mo": 39,
    "pf": 2.897,
-   "usd_trade": 94.1
+   "usd_trade": 94.1,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "zn-fr2004-dealer-inventory-capacity-state",
@@ -323,20 +327,52 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T16:16:02.476287+00:00",
+   "hash": "6a334486",
+   "name": "m6e-ecb-fed-balance-sheet-release-stagger",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0097"
+  },
+  {
+   "t": "2026-07-23T16:13:54.254830+00:00",
+   "hash": "55e6f95f",
+   "name": "m2k-smallcap-earnings-calendar-offset-risk-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.756"
+  },
+  {
+   "t": "2026-07-23T16:12:49.969378+00:00",
+   "hash": "90267550",
+   "name": "met-net-issuance-burn-regime-supply-state",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-23T16:11:21.423734+00:00",
+   "hash": "7d65260e",
+   "name": "scout-69-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T16:10:46.781939+00:00",
+   "hash": "c9ac28ef",
+   "name": "bundlefit-zc-rma-volatility-factor-five-day-window",
+   "status": "additive and not diversify",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T16:10:08.554168+00:00",
    "hash": "d7845825",
    "name": "mnq-etf-primary-market-creation-ap-overnight-hedge",
    "status": "killed",
    "kind": "result",
    "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T16:10:00.084415+00:00",
-   "hash": "c9ac28ef",
-   "name": "bundlefit-zc-rma-volatility-factor-five-day-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T16:09:17.190309+00:00",
@@ -385,38 +421,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.852"
-  },
-  {
-   "t": "2026-07-23T15:49:52.847817+00:00",
-   "hash": "36285256",
-   "name": "zs-brl-producer-revenue-incentive-selling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T15:48:51.619869+00:00",
-   "hash": "3e1dcc33",
-   "name": "zn-fr2004-dealer-inventory-capacity-state-ROBUSTNESS-1140",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T15:42:44.699710+00:00",
-   "hash": "06c2fb56",
-   "name": "mes-forward-event-load-anticipatory-derisk",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.045"
-  },
-  {
-   "t": "2026-07-23T15:41:45.183523+00:00",
-   "hash": "422d0c89",
-   "name": "zn-fr2004-dealer-inventory-capacity-state",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.615"
   }
  ],
  "pipeline": {
@@ -431,14 +435,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MET",
-    "task": "met-net-issuance-burn-regime-supply-state",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:08:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-ecb-fed-balance-sheet-release-stagger",
     "stage": "dev3yr",
@@ -454,7 +450,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-5",
+    "agent": "tester-4",
     "market": "M2K",
     "task": "m2k-smallcap-earnings-calendar-offset-risk-window",
     "stage": "dev3yr",
@@ -527,7 +523,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27939
+    "trials": 27943
    }
   ]
  },
@@ -574,8 +570,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 42,
-   "n_killed": 31,
+   "n_tested": 43,
+   "n_killed": 32,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -639,8 +635,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 44,
+   "n_tested": 46,
+   "n_killed": 45,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1253,7 +1249,11 @@
      "stage": "replication",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   "zn-fr2004-dealer-inventory-capacity-state": {
    "name": "zn-fr2004-dealer-inventory-capacity-state",
@@ -1439,24 +1439,6 @@
    "staged": "2026-07-23T16:00:52Z"
   },
   {
-   "id": "d-rmawindow-book-entry",
-   "kind": "book_entry",
-   "needs_attention": true,
-   "title": "Borderline graduate: RMA crop-insurance window (PF 2.897, but n=15 both legs)",
-   "recommendation": "HOLD as candidate \u2014 every gate passed, but 15 trades per leg is the bare minimum and the engine won't vouch for book money on 30 total trades",
-   "evidence": "dev3yr: n=15, PF 2.897, $94/trade | robustness: SURVIVES | replication: PF 2.099 on ZS, n=15 \u2014 ratios are exceptional, samples are the floor",
-   "what_yes_means": "Approve anyway and it enters the book; hold and it stays a preserved candidate accruing evidence",
-   "recap": "USDA's RMA sets crop-insurance prices from 5-day discovery windows in Feb and Oct; hedging concentrates into those windows. The mechanism is real and documented \u2014 the question is purely whether 30 trades is enough proof.",
-   "why": "This is the exact profile the n>=15 floor was built to flag: gates all green, mechanism plausible, sample thin. Unlike the n=3 fluke this one is defensible either way \u2014 which is why it's your call, not the engine's. If held, next Feb/Oct windows add real out-of-sample evidence.",
-   "steps": [
-    "Approve: enters the book despite the thin sample (your risk tolerance, your call)",
-    "Deny/hold: stays a replicated candidate; future windows accrue evidence automatically",
-    "Question: the card returns with any analysis you want",
-    "Live/paper exposure still requires its own GO regardless"
-   ],
-   "staged": "2026-07-22T22:47:34Z"
-  },
-  {
    "id": "d-wk10derisk-book-entry",
    "kind": "book_entry",
    "needs_attention": true,
@@ -1514,24 +1496,25 @@
    "id": "d-settlediv-mirror-sync",
    "kind": "cleanup",
    "needs_attention": true,
-   "title": "Five approved book entries are on the ledger, but the published book and all sizing still exclude all five",
-   "recommendation": "Approve the five-hash mirror edit + a sizing re-run so all five new sleeves actually count",
-   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 12 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set, still at 7). sizing.py needs no manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv. All five logs now sit under their leaderboard ids \u2014 trades_mes-settle-tradable-divergence.csv (n=288, 2022-03-03..2025-02-27), trades_mes-crude-liquidity-channel-risk-transfer.csv (n=55, 2022-04-18..2025-02-20), trades_zs-china-state-reserve-auction-window.csv (n=108, 2022-04-01..2025-02-28), trades_zc-farm-cash-rent-duedate-liquidation-window.csv (n=30, 2022-10-25..2025-02-28) and trades_mnq-event-free-day-flow-persistence.csv (n=675, 2022-03-29..2025-02-28, copied from the worker's short-named trades_event-free-flow.csv, which would otherwise have been skipped by the auto-map) \u2014 so adding the five hashes is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zc-farm-cash-rent-duedate-liquidation-window (472a81f2e6f1b0a6) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mnq-event-free-day-flow-persistence (27ca26e37ce18df2) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-   "what_yes_means": "The site shows a 12-sleeve book, sizing computes max micros for all five new sleeves under the same 20% breach cap, and every bundle + the $10k roadmap recompute including them",
-   "recap": "You've now approved five sleeves into the book \u2014 settle-vs-tradable divergence, the crude-shock equity risk-transfer, the China state-reserve auction window, the farm cash-rent due-date window, and the event-free-day flow persistence sleeve \u2014 and the ledger says so for all five. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and none of the five gets any micros in any bundle.",
-   "why": "The ledger is the source of truth and it already records all five admissions, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This is now five hashes and a re-run. Worth knowing before the recompute: the newest of the five fires on nearly every session and correlates +0.70 / +0.57 per-day with b3-nr7-breakout and b4-open-drive, so sizing it into an index bundle will not diversify the way the count of sleeves suggests.",
+   "title": "Six approved book entries are on the ledger, but the published book and all sizing still exclude all six",
+   "recommendation": "Approve the six-hash mirror edit + a sizing re-run so all six new sleeves actually count",
+   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 13 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set, still at 7). sizing.py needs no manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv. All six logs now sit under their leaderboard ids \u2014 trades_mes-settle-tradable-divergence.csv (n=288), trades_mes-crude-liquidity-channel-risk-transfer.csv (n=55), trades_zs-china-state-reserve-auction-window.csv (n=108), trades_zc-farm-cash-rent-duedate-liquidation-window.csv (n=30), trades_mnq-event-free-day-flow-persistence.csv (n=675) and trades_zc-rma-volatility-factor-five-day-window.csv (n=15, 2023-02-22..2025-02-28, copied from the worker's short-named trades_zc-rma-volfactor-five-day-window.csv, which would otherwise have been skipped by the auto-map) \u2014 so adding the six hashes is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zc-farm-cash-rent-duedate-liquidation-window (472a81f2e6f1b0a6) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mnq-event-free-day-flow-persistence (27ca26e37ce18df2) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zc-rma-volatility-factor-five-day-window (14f51e7397ad8290) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+   "what_yes_means": "The site shows a 13-sleeve book, sizing computes max micros for all six new sleeves under the same 20% breach cap, and every bundle + the $10k roadmap recompute including them",
+   "recap": "You've now approved six sleeves into the book \u2014 settle-vs-tradable divergence, the crude-shock equity risk-transfer, the China state-reserve auction window, the farm cash-rent due-date window, the event-free-day flow persistence sleeve, and the RMA crop-insurance February window \u2014 and the ledger says so for all six. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and none of the six gets any micros in any bundle.",
+   "why": "The ledger is the source of truth and it already records all six admissions, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This is now six hashes and a re-run. Two things worth knowing before the recompute: the event-free sleeve fires on nearly every session and correlates +0.70 / +0.57 per-day with b3-nr7-breakout and b4-open-drive, and the RMA sleeve you just approved trades the IDENTICAL 15 ZC sessions as the cash-rent sleeve's March-1 leg (corr +0.42, same direction 10/15). Neither will diversify the way a count of sleeves suggests.",
    "steps": [
-    "Approve: add 5e5ccf350206d13f, 628b3b410c1fbe65, 109efb3a44241183, 472a81f2e6f1b0a6 and 27ca26e37ce18df2 to ~/neo-dashboard/build_data.py VALID",
+    "Approve: add 5e5ccf350206d13f, 628b3b410c1fbe65, 109efb3a44241183, 472a81f2e6f1b0a6, 27ca26e37ce18df2 and 14f51e7397ad8290 to ~/neo-dashboard/build_data.py VALID",
     "Re-run sizing.py then build_data.py; engine pushes on its next publish",
-    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives all five, and all five trade logs now sit under their leaderboard ids",
-    "Deny: all five ledger admissions still stand, but the published book stays at 7 sleeves and none of the five sleeves earns any allocation"
+    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives all six, and all six trade logs now sit under their leaderboard ids",
+    "Deny: all six ledger admissions still stand, but the published book stays at 7 sleeves and none of the six sleeves earns any allocation"
    ],
    "pending_mirrors": [
     "mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
     "mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
     "zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
     "zc-farm-cash-rent-duedate-liquidation-window (472a81f2e6f1b0a6) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "mnq-event-free-day-flow-persistence (27ca26e37ce18df2) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
+    "mnq-event-free-day-flow-persistence (27ca26e37ce18df2) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
+    "zc-rma-volatility-factor-five-day-window (14f51e7397ad8290) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
    ],
    "staged": "2026-07-23T14:45:17Z"
   }
@@ -1627,39 +1610,6 @@
    "usd_mo_total": 13662
   },
   {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
-    "mnq-event-free-day-flow-persistence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "zn-fr2004-dealer-inventory-capacity-state": 1
-   },
-   "total_micros": 6,
-   "p_breach": 0.184,
-   "usd_mo": 721,
-   "usd_mo_5acct": 3605,
-   "pct_goal": 1.298,
-   "wr": 0.564,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1515,
-    "avg_lose": -429
-   },
-   "first_pay_days": 51,
-   "pay_rate_1yr": 0.989,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 12978
-  },
-  {
    "id": "Cross-market spread|apex150",
    "name": "Cross-market spread",
    "plan": "apex150 (verified)",
@@ -1672,23 +1622,57 @@
     "mes-crude-liquidity-channel-risk-transfer": 3,
     "mgc-china-lpr-fix-evening-window": 3,
     "scan-mbt": 1,
+    "zc-rma-volatility-factor-five-day-window": 1,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 15,
-   "p_breach": 0.197,
-   "usd_mo": 699,
-   "usd_mo_5acct": 3495,
-   "pct_goal": 1.258,
-   "wr": 0.545,
+   "total_micros": 16,
+   "p_breach": 0.198,
+   "usd_mo": 726,
+   "usd_mo_5acct": 3630,
+   "pct_goal": 1.307,
+   "wr": 0.55,
    "wr_month": 0.75,
    "months": {
     "win_per_yr": 9.0,
     "lose_per_yr": 3.0,
-    "avg_win": 1707,
+    "avg_win": 1759,
     "avg_lose": -599
    },
-   "first_pay_days": 78,
-   "pay_rate_1yr": 0.923,
+   "first_pay_days": 76,
+   "pay_rate_1yr": 0.932,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 13068
+  },
+  {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 1,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "mnq-event-free-day-flow-persistence": 1,
+    "zc-rma-volatility-factor-five-day-window": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.183,
+   "usd_mo": 699,
+   "usd_mo_5acct": 3495,
+   "pct_goal": 1.258,
+   "wr": 0.562,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1598,
+    "avg_lose": -354
+   },
+   "first_pay_days": 53,
+   "pay_rate_1yr": 0.986,
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 12582
@@ -1725,6 +1709,39 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 12222
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 3,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mgc-china-lpr-fix-evening-window": 1,
+    "zc-rma-volatility-factor-five-day-window": 5,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 14,
+   "p_breach": 0.199,
+   "usd_mo": 512,
+   "usd_mo_5acct": 2560,
+   "pct_goal": 0.922,
+   "wr": 0.64,
+   "wr_month": 0.611,
+   "months": {
+    "win_per_yr": 7.3,
+    "lose_per_yr": 4.7,
+    "avg_win": 1911,
+    "avg_lose": -394
+   },
+   "first_pay_days": 103,
+   "pay_rate_1yr": 0.831,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 9216
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1773,26 +1790,28 @@
     "mnq-event-free-day-flow-persistence": 1,
     "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "zc-rma-volatility-factor-five-day-window": 2,
+    "mgc-china-lpr-fix-evening-window": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.195,
-   "usd_mo": 1365,
-   "usd_mo_5acct": 6825,
-   "pct_goal": 0.682,
-   "wr": 0.547,
-   "wr_month": 0.889,
+   "total_micros": 17,
+   "p_breach": 0.19,
+   "usd_mo": 1428,
+   "usd_mo_5acct": 7140,
+   "pct_goal": 0.714,
+   "wr": 0.548,
+   "wr_month": 0.917,
    "months": {
-    "win_per_yr": 10.7,
-    "lose_per_yr": 1.3,
-    "avg_win": 2367,
-    "avg_lose": -1243
+    "win_per_yr": 11.0,
+    "lose_per_yr": 1.0,
+    "avg_win": 2382,
+    "avg_lose": -1670
    },
-   "first_pay_days": 71,
-   "pay_rate_1yr": 0.972,
+   "first_pay_days": 70,
+   "pay_rate_1yr": 0.973,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 6825
+   "usd_mo_total": 7140
   },
   {
    "id": "Cross-market spread|growth",
@@ -1899,36 +1918,6 @@
    "usd_mo_total": 5255
   },
   {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-vix-reversion": 2,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 5,
-   "p_breach": 0.131,
-   "usd_mo": 237,
-   "usd_mo_5acct": 1185,
-   "pct_goal": 0.427,
-   "wr": 0.656,
-   "wr_month": 0.528,
-   "months": {
-    "win_per_yr": 6.3,
-    "lose_per_yr": 5.7,
-    "avg_win": 1400,
-    "avg_lose": -333
-   },
-   "first_pay_days": 138,
-   "pay_rate_1yr": 0.619,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 4266
-  },
-  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -1971,26 +1960,27 @@
     "b2-vix-reversion": 5,
     "b3-preholiday-drift": 3,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "zc-rma-volatility-factor-five-day-window": 3,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
+   "total_micros": 27,
+   "p_breach": 0.181,
+   "usd_mo": 751,
+   "usd_mo_5acct": 3755,
+   "pct_goal": 0.376,
+   "wr": 0.606,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 2731,
+    "avg_lose": -1366
    },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815,
+   "first_pay_days": 101,
+   "pay_rate_1yr": 0.833,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3470
+   "usd_mo_total": 3755
   }
  ],
  "sizing_meta": {
