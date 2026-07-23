@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:16:21Z",
+  "stamp": "2026-07-23T05:24:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 798,
-  "n_results": 972,
-  "n_trials": 39839,
+  "n_registered": 800,
+  "n_results": 975,
+  "n_trials": 39842,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -294,7 +294,11 @@
    "wr": 0.3871,
    "usd_mo": 144,
    "pf": 1.405,
-   "usd_trade": 33.5
+   "usd_trade": 33.5,
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   },
   {
    "id": "b3-tom-long",
@@ -314,6 +318,30 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T05:20:31.032428+00:00",
+   "hash": "367a96f3",
+   "name": "zc-samuelson-maturity-regime-switch",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.719"
+  },
+  {
+   "t": "2026-07-23T05:19:23.307890+00:00",
+   "hash": "93f5fd60",
+   "name": "mnq-propfirm-cohort-monthstart-stop-density",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T05:19:08.329470+00:00",
+   "hash": "60113c28",
+   "name": "mgc-cusum-volrange-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.646"
+  },
   {
    "t": "2026-07-23T05:13:29.951534+00:00",
    "hash": "acc8c1a2",
@@ -385,30 +413,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.76"
-  },
-  {
-   "t": "2026-07-23T05:02:09.034203+00:00",
-   "hash": "1365cdfc",
-   "name": "gap-age-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.955"
-  },
-  {
-   "t": "2026-07-23T05:01:43.595173+00:00",
-   "hash": "0b181bfd",
-   "name": "mes-outside-day-two-sided-stop-depletion-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.106"
-  },
-  {
-   "t": "2026-07-23T04:58:46.139434+00:00",
-   "hash": "46e0cae5",
-   "name": "zs-short-horizon-hedger-immediacy-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.71"
   }
  ],
  "pipeline": {
@@ -427,14 +431,6 @@
     "task": "zc-samuelson-maturity-regime-switch",
     "stage": "dev3yr",
     "started": "2026-07-23T05:15:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-changepoint-in-volume-per-unit-range-participant-mix",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:16:21Z",
     "state": "running"
    }
   ],
@@ -513,7 +509,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9003
+    "trials": 9006
    }
   ]
  },
@@ -566,8 +562,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 47,
-   "n_killed": 39,
+   "n_tested": 48,
+   "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -640,8 +636,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 40,
-   "n_killed": 34,
+   "n_tested": 41,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1271,8 +1267,17 @@
      "t": "2026-07-23T05:11:45.471150+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T05:19:23.307890+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 2,
+    "apex_max": 1
+   }
   },
   "b3-tom-long": {
    "name": "b3-tom-long",
@@ -1512,6 +1517,34 @@
  },
  "bundles": [
   {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 1,
+    "scan-mbt": 2,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "mym-price-weighted-exdiv-mechanical-drop": 2,
+    "mbt-session-beta-channel-regime": 3,
+    "mcl-hurricane-supplyrisk-decay": 1,
+    "mnq-propfirm-cohort-monthstart-stop-density": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 17,
+   "p_breach": 0.182,
+   "usd_mo": 811,
+   "usd_mo_5acct": 4055,
+   "pct_goal": 1.46,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 14598
+  },
+  {
    "id": "Cross-market spread|apex150",
    "name": "Cross-market spread",
    "plan": "apex150 (verified)",
@@ -1535,30 +1568,59 @@
    "usd_mo_total": 11250
   },
   {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
    "plan": "apex150 (verified)",
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b4-open-drive": 1,
-    "mbt-session-beta-channel-regime": 1,
-    "b3-tom-long": 1
+    "b10-nagel-vix-reversal": 2,
+    "b2-vix-reversion": 1,
+    "b3-tom-long": 1,
+    "mbt-session-beta-channel-regime": 4,
+    "mnq-propfirm-cohort-monthstart-stop-density": 1,
+    "mym-price-weighted-exdiv-mechanical-drop": 2,
+    "rep-bondflight-mes": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.181,
-   "usd_mo": 620,
-   "usd_mo_5acct": 3100,
-   "pct_goal": 1.116,
+   "total_micros": 12,
+   "p_breach": 0.189,
+   "usd_mo": 502,
+   "usd_mo_5acct": 2510,
+   "pct_goal": 0.904,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 11160
+   "usd_mo_total": 9036
+  },
+  {
+   "id": "Everything (full pool)|growth",
+   "name": "Everything (full pool)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "scan-mbt": 1,
+    "b3-nr7-breakout": 2,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 2,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "b4-open-drive": 1,
+    "mym-price-weighted-exdiv-mechanical-drop": 5,
+    "mbt-session-beta-channel-regime": 5,
+    "zs-china-state-reserve-auction-window": 1,
+    "rep-bondflight-mes": 1,
+    "b2-opex-release": 1,
+    "mnq-propfirm-cohort-monthstart-stop-density": 1,
+    "b3-tom-long": 1
+   },
+   "total_micros": 27,
+   "p_breach": 0.179,
+   "usd_mo": 1517,
+   "usd_mo_5acct": 7585,
+   "pct_goal": 0.758,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 7585
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1627,57 +1689,6 @@
    "usd_mo_total": 6696
   },
   {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 1,
-    "b2-vix-reversion": 3,
-    "b3-tom-long": 1,
-    "mbt-session-beta-channel-regime": 1,
-    "mym-price-weighted-exdiv-mechanical-drop": 1
-   },
-   "total_micros": 8,
-   "p_breach": 0.149,
-   "usd_mo": 342,
-   "usd_mo_5acct": 1710,
-   "pct_goal": 0.616,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 6156
-  },
-  {
-   "id": "Everything (full pool)|growth",
-   "name": "Everything (full pool)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 3,
-    "b3-nr7-breakout": 2,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b3-preholiday-drift": 1,
-    "b4-open-drive": 1,
-    "mym-price-weighted-exdiv-mechanical-drop": 1,
-    "mbt-session-beta-channel-regime": 2,
-    "zs-china-state-reserve-auction-window": 1,
-    "b3-tom-long": 1
-   },
-   "total_micros": 16,
-   "p_breach": 0.198,
-   "usd_mo": 1191,
-   "usd_mo_5acct": 5955,
-   "pct_goal": 0.596,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 5955
-  },
-  {
    "id": "Cross-market spread|growth",
    "name": "Cross-market spread",
    "plan": "tradeify-growth",
@@ -1731,20 +1742,21 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 3,
-    "b2-vix-reversion": 2,
-    "b3-tom-long": 2,
-    "mym-price-weighted-exdiv-mechanical-drop": 2,
-    "rep-bondflight-mes": 2,
+    "b2-vix-reversion": 3,
+    "b3-preholiday-drift": 2,
+    "b3-tom-long": 1,
+    "mnq-propfirm-cohort-monthstart-stop-density": 1,
+    "rep-bondflight-mes": 1,
     "zs-china-state-reserve-auction-window": 1
    },
    "total_micros": 12,
-   "p_breach": 0.195,
-   "usd_mo": 691,
-   "usd_mo_5acct": 3455,
-   "pct_goal": 0.345,
+   "p_breach": 0.189,
+   "usd_mo": 753,
+   "usd_mo_5acct": 3765,
+   "pct_goal": 0.377,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3455
+   "usd_mo_total": 3765
   },
   {
    "id": "Validated 8 (the book)|growth",
