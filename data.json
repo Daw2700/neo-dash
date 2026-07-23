@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:46:39Z",
+  "stamp": "2026-07-23T03:46:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T03:46:17Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-fresh-territory-index-arb-capacity-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:46:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "m2k-fresh-territory-index-arb-capacity-overshoot",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mes-inflation-pair-release-ordering-preprice",
@@ -469,7 +468,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 103,
    "dev3yr": 0,
    "robustness": 0,
