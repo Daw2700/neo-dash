@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:31:37Z",
+  "stamp": "2026-07-23T01:34:06Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 727,
   "n_results": 891,
@@ -398,27 +398,11 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-vwap-versus-range-midpoint-inventory-shelf",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:19:33Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T01:22:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "robustness: mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:28:38Z",
     "state": "running"
    }
   ],
