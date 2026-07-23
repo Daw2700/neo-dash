@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:38:03Z",
+  "stamp": "2026-07-23T15:38:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,35 +420,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-forward-event-load-anticipatory-derisk",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:38:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-fr2004-dealer-inventory-capacity-state",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:38:05Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-deribit-cme-expiry-clock-wedge",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:38:05Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-forward-event-load-anticipatory-derisk",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 5,
-    "idea": "zn-fr2004-dealer-inventory-capacity-state",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 6,
-    "idea": "met-deribit-cme-expiry-clock-wedge",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "mgc-lbma-lease-rate-physical-tightness-transmission",
@@ -523,7 +521,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 8,
    "registered": 154,
    "dev3yr": 0,
    "robustness": 0,
