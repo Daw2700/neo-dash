@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:42:03Z",
+  "stamp": "2026-07-23T18:42:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:40:19Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:42:05Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.34
-   },
    {
     "rank": 7,
     "idea": "mes-dealer-zero-gamma-flip-regime-switch",
@@ -517,9 +516,9 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 166,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
