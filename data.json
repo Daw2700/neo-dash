@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:17:20Z",
+  "stamp": "2026-07-23T01:17:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,18 +412,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T01:12:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-vwap-crossing-count-inventory-neutrality",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:17:22Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-vwap-crossing-count-inventory-neutrality",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 8,
     "idea": "mnq-year-to-date-zero-line-magnet",
@@ -471,7 +470,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
