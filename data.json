@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:10:11Z",
+  "stamp": "2026-07-23T05:10:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:07:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "SIL",
+    "task": "sil-retail-hours-unconfirmed-move-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:10:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "sil-retail-hours-unconfirmed-move-fade",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 12,
     "idea": "zc-samuelson-maturity-regime-switch",
@@ -469,7 +468,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
