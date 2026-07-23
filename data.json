@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:07:18Z",
+  "stamp": "2026-07-23T05:07:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:06:56Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-overnight-churn-high-volume-zero-net-expansion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:07:21Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mes-overnight-churn-high-volume-zero-net-expansion",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 10,
     "idea": "mnq-propfirm-cohort-monthstart-stop-density",
@@ -487,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
