@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:30:58Z",
+  "stamp": "2026-07-23T08:31:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:29:14Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-ndx-capping-rule-quarterly-test-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:31:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mnq-ndx-capping-rule-quarterly-test-window",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "zn-frontloaded-week-weekend-risk-transfer",
@@ -505,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 116,
    "dev3yr": 0,
    "robustness": 0,
