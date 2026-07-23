@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:38:43Z",
+  "stamp": "2026-07-23T09:40:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 886,
-  "n_results": 1067,
-  "n_trials": 49203,
+  "n_results": 1069,
+  "n_trials": 49205,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:39:14.384945+00:00",
+   "hash": "7b085561",
+   "name": "mng-roll-seasonal-exposure-discontinuity-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.095"
+  },
+  {
+   "t": "2026-07-23T09:38:45.485084+00:00",
+   "hash": "7b085561",
+   "name": "mng-roll-seasonal-exposure-discontinuity-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
    "t": "2026-07-23T09:38:35.667535+00:00",
    "hash": "0dc7b66d",
    "name": "mym-minute-scale-variance-ratio-regime",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.62"
-  },
-  {
-   "t": "2026-07-23T09:37:45.106153+00:00",
-   "hash": "7b085561",
-   "name": "mng-roll-seasonal-exposure-discontinuity-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T09:37:16.634365+00:00",
@@ -401,14 +409,6 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T09:17:51.056232+00:00",
-   "hash": "6c6eb63a",
-   "name": "mes-flow-variance-collapse-signal-switch",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "PF 1.1505"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-roll-seasonal-exposure-discontinuity-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:35:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNG",
     "task": "mng-eia-storage-revision-underreaction",
     "stage": "dev3yr",
@@ -460,7 +452,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 122,
+   "registered": 121,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -522,7 +514,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18601
+    "trials": 18603
    }
   ]
  },
@@ -602,8 +594,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 22,
+   "n_tested": 27,
+   "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
   },
