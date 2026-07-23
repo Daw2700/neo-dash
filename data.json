@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:35:54Z",
+  "stamp": "2026-07-23T09:35:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:35:32Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-roll-seasonal-exposure-discontinuity-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:35:56Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mng-roll-seasonal-exposure-discontinuity-fade",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 10,
     "idea": "mng-eia-storage-revision-underreaction",
@@ -469,7 +468,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 120,
    "dev3yr": 0,
    "robustness": 0,
