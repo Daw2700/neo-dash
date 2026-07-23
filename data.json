@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:29:12Z",
+  "stamp": "2026-07-23T08:29:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:28:50Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-sep-dotplot-path-integration-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:29:14Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "zn-sep-dotplot-path-integration-lag",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "mnq-ndx-capping-rule-quarterly-test-window",
@@ -514,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 114,
    "dev3yr": 0,
    "robustness": 0,
