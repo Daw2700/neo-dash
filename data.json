@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:20:16Z",
+  "stamp": "2026-07-23T01:20:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,18 +412,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T01:19:33Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-return-volume-covariance-aggressor-sign-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:20:18Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mgc-return-volume-covariance-aggressor-sign-carry",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 12,
     "idea": "zs-crush-plant-maintenance-season-demand-void",
@@ -435,7 +434,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 95,
    "dev3yr": 0,
    "robustness": 0,
