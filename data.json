@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:13:35Z",
+  "stamp": "2026-07-23T09:13:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -410,15 +410,7 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T08:58:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
+    "agent": "tester-1",
     "market": "MCL",
     "task": "robustness: mcl-inside-week-unresolved-positioning-carryover",
     "stage": "dev3yr",
@@ -426,9 +418,118 @@
     "state": "running"
    }
   ],
-  "backlog": [],
+  "backlog": [
+   {
+    "rank": 1,
+    "idea": "mes-announcement-flow-variance-collapse-signal-switch",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "met-liquidity-state-transition-flow-gate",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "m2k-open-hour-extreme-minute-artifact-retrace",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "zc-evening-globex-reopen-impulse-overshoot",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "zn-monthly-treasury-statement-supply-path-repricing",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mbt-annualized-basis-leverage-crowding-gate",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "zs-speculative-oi-change-tsmom-gate",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "mym-minute-scale-variance-ratio-regime",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "mng-roll-seasonal-exposure-discontinuity-fade",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 10,
+    "idea": "mng-eia-storage-revision-underreaction",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "sil-preopen-placeholder-print-prerelease-retrace",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.38
+   }
+  ],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 118,
    "dev3yr": 0,
    "robustness": 0,
