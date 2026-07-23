@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:49:33Z",
+  "stamp": "2026-07-23T07:54:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 846,
-  "n_results": 1029,
-  "n_trials": 49165,
+  "n_registered": 848,
+  "n_results": 1031,
+  "n_trials": 49167,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:51:50.498854+00:00",
+   "hash": "04a21981",
+   "name": "m6e-tokyo-margin-liquidation-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.3344"
+  },
+  {
+   "t": "2026-07-23T07:51:26.588389+00:00",
+   "hash": "1c7534a3",
+   "name": "m2k-oil-costpush-margin-channel",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.996"
+  },
+  {
    "t": "2026-07-23T07:45:11.171160+00:00",
    "hash": "7bc15ccc",
    "name": "zs-marketing-year-high-reference-price-hedge-supply",
@@ -393,22 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.028"
-  },
-  {
-   "t": "2026-07-23T07:19:24.610822+00:00",
-   "hash": "4b924287",
-   "name": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.08"
-  },
-  {
-   "t": "2026-07-23T07:18:39.141148+00:00",
-   "hash": "f7d4cf6c",
-   "name": "zn-conference-board-labor-differential-rates-channel",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.231"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-oil-costpush-smallcap-margin-channel",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:49:09Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-housing-release-homebuilder-weight-channel",
     "stage": "dev3yr",
@@ -567,7 +559,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18563
+    "trials": 18565
    }
   ]
  },
@@ -611,8 +603,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 33,
-   "n_killed": 23,
+   "n_tested": 34,
+   "n_killed": 24,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -676,8 +668,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 40,
-   "n_killed": 39,
+   "n_tested": 41,
+   "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
   },
