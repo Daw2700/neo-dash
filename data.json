@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:25:07Z",
+  "stamp": "2026-07-23T17:25:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,20 +424,27 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 13,
-    "idea": "zs-corn-limit-lock-displaced-hedge-substitution",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.32
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-23T17:25:09Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "zs-corn-limit-lock-displaced-hedge-substitution",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:25:09Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 160,
    "dev3yr": 0,
    "robustness": 0,
