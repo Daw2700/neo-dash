@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:13:15Z",
+  "stamp": "2026-07-23T20:13:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T20:11:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-monthend-duration-demand-net-of-reporting-quarter-drag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:13:17Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "zn-monthend-duration-demand-net-of-reporting-quarter-drag",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 4,
     "idea": "m2k-russell-quarterly-ipo-addition-offrecon",
@@ -562,9 +561,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 11,
    "registered": 168,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
