@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:11:05Z",
+  "stamp": "2026-07-23T20:11:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,23 +441,21 @@
     "stage": "idea-scout",
     "started": "2026-07-23T19:55:08Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 12,
-    "idea": "mes-intraday-momentum-multi-anchor-composite",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.28
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-intraday-momentum-multi-anchor-composite",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:11:06Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 167,
-   "dev3yr": 0,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
