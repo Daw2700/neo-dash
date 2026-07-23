@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:31:40Z",
+  "stamp": "2026-07-23T04:34:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 779,
-  "n_results": 951,
-  "n_trials": 39818,
+  "n_registered": 781,
+  "n_results": 952,
+  "n_trials": 39819,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:34:18.813618+00:00",
+   "hash": "470616c4",
+   "name": "mes-crossmkt-continuous-morning",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.925"
+  },
+  {
+   "t": "2026-07-23T04:33:49.860446+00:00",
+   "hash": "b8f9b1d1",
+   "name": "zn-goodside-semibeta-insurance-drag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T04:29:46.796126+00:00",
    "hash": "7b5d7b72",
    "name": "met-post-benchmark-afternoon-flow-continuation",
@@ -393,22 +409,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T03:56:53.346391+00:00",
-   "hash": "94f0cd9a",
-   "name": "mbt-idio-illiquidity-long",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T03:55:47.751552+00:00",
-   "hash": "416f0c18",
-   "name": "m2k-freshair-short",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.073"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-continuous-component-crossmarket-morning-predictor",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:28:52Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-goodside-semibeta-insurance-drag",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 106,
+   "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -549,7 +541,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8982
+    "trials": 8983
    }
   ]
  },
@@ -573,8 +565,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 131,
-   "n_killed": 102,
+   "n_tested": 132,
+   "n_killed": 103,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
