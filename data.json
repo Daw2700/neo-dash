@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:09:03Z",
+  "stamp": "2026-07-23T15:10:50Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 992,
-  "n_results": 1172,
-  "n_trials": 68242,
+  "n_registered": 994,
+  "n_results": 1173,
+  "n_trials": 68243,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T15:10:46.106643+00:00",
+   "hash": "4d1cf52c",
+   "name": "zn-nth-weekday-institutional-process-clock",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T15:10:40.478145+00:00",
+   "hash": "f1afd1d3",
+   "name": "mes-simultaneous-roll-congestion-capacity-drain",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.135"
+  },
+  {
+   "t": "2026-07-23T15:09:27.201208+00:00",
+   "hash": "b3e80ee0",
+   "name": "scout-68-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T15:08:50.528406+00:00",
    "hash": "eb43a6a5",
    "name": "mnq-shared-maker-capital-scarcity-impact-premium",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.665"
-  },
-  {
-   "t": "2026-07-23T14:53:07.761242+00:00",
-   "hash": "f6df153a",
-   "name": "mcl-roll-crown-transfer-earliness",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.622"
-  },
-  {
-   "t": "2026-07-23T14:50:58.467292+00:00",
-   "hash": "951f5bbf",
-   "name": "mgc-trend-regime-age-crowding-exhaustion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.088"
-  },
-  {
-   "t": "2026-07-23T14:45:30.657498+00:00",
-   "hash": "63685af3",
-   "name": "m2k-tick-binding-regime-continuation-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.1401"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "recheck: mes-simultaneous-roll-congestion-capacity-drain",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:07:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-nth-weekday-institutional-process-clock",
     "stage": "dev3yr",
@@ -449,7 +441,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 150,
+   "registered": 152,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -511,7 +503,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27921
+    "trials": 27922
    }
   ]
  },
