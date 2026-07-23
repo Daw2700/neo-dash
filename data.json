@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:08:58Z",
+  "stamp": "2026-07-23T17:09:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -440,18 +440,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T17:08:36Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-grid-coarseness-repricing-completion-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:09:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mnq-grid-coarseness-repricing-completion-lag",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.34
-   },
    {
     "rank": 12,
     "idea": "mcl-energy-desk-shared-risk-budget-crowdout",
@@ -472,7 +471,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 158,
    "dev3yr": 0,
    "robustness": 0,
