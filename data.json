@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:48:39Z",
+  "stamp": "2026-07-23T11:48:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:48:17Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-feed-substitution-ratio-band-elasticity",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:48:41Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zc-feed-substitution-ratio-band-elasticity",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 5,
     "idea": "mes-earnings-density-idiosyncratic-variance-reversion",
@@ -514,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 133,
    "dev3yr": 0,
    "robustness": 0,
