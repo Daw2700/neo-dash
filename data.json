@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-22T23:59:54Z",
+  "stamp": "2026-07-23T00:01:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 692,
-  "n_results": 848,
-  "n_trials": 30836,
+  "n_results": 850,
+  "n_trials": 30838,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -303,28 +303,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:00:44.125744+00:00",
+   "hash": "568a352d",
+   "name": "gsr-extreme-metal-substitution-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.011"
+  },
+  {
+   "t": "2026-07-23T00:00:38.563407+00:00",
+   "hash": "bf0545f8",
+   "name": "zn-weekend-safehaven-monday-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.846"
+  },
+  {
    "t": "2026-07-22T23:59:48.360249+00:00",
    "hash": "6c338812",
    "name": "levetf-eod-convex-rebalance-amp",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.717"
-  },
-  {
-   "t": "2026-07-22T23:59:46.606335+00:00",
-   "hash": "568a352d",
-   "name": "gsr-extreme-metal-substitution-reversion",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-22T23:58:50.614909+00:00",
-   "hash": "bf0545f8",
-   "name": "zn-weekend-safehaven-monday-unwind",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-22T23:57:53.289310+00:00",
@@ -403,22 +403,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-weekend-safehaven-monday-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:56:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "SIL",
-    "task": "gsr-extreme-metal-substitution-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-22T23:58:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-preweekend-overnight-riskpremium-buildup",
     "stage": "dev3yr",
@@ -457,7 +441,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 92,
+   "registered": 90,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -465,10 +449,6 @@
    "golden_staged": 0
   },
   "throughput": [
-   {
-    "date": "2026-07-09",
-    "trials": 0
-   },
    {
     "date": "2026-07-10",
     "trials": 0
@@ -520,6 +500,10 @@
    {
     "date": "2026-07-22",
     "trials": 669
+   },
+   {
+    "date": "2026-07-23",
+    "trials": 2
    }
   ]
  },
@@ -619,8 +603,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 13,
-   "n_killed": 12,
+   "n_tested": 14,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -637,8 +621,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 45,
+   "n_tested": 55,
+   "n_killed": 46,
    "book_sleeves": [],
    "agents_now": []
   },
