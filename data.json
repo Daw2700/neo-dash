@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:15:04Z",
+  "stamp": "2026-07-23T08:25:00Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 858,
   "n_results": 1040,
@@ -412,19 +412,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T08:08:08Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "m2k-crsp-packeting-transition-window",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-aramco-osp-announcement-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "zc-grain-stocks-measurement-print-persistence",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "mes-msci-quarterly-review-effective-close",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 5,
+    "idea": "zn-sep-dotplot-path-integration-lag",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "mnq-ndx-capping-rule-quarterly-test-window",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "zn-frontloaded-week-weekend-risk-transfer",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 8,
+    "idea": "zc-daily-price-limit-magnet-approach",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "mes-1256-mtm-placeholder-substitution-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mym-venue-allocation-wedge-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "mes-quiet-streak-range-budget-contraction",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "m6e-quarter-end-reserve-manager-currency-rebalance",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 13,
+    "idea": "mcl-inside-week-unresolved-positioning-carryover",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 114,
    "dev3yr": 0,
    "robustness": 0,
