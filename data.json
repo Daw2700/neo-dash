@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:01:56Z",
+  "stamp": "2026-07-23T05:02:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 791,
-  "n_results": 962,
-  "n_trials": 39829,
+  "n_results": 964,
+  "n_trials": 39831,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,28 +315,28 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:02:09.158921+00:00",
+   "hash": "45f68084",
+   "name": "mcl-minute-run-completion-impact-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.76"
+  },
+  {
+   "t": "2026-07-23T05:02:09.034203+00:00",
+   "hash": "1365cdfc",
+   "name": "gap-age-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.955"
+  },
+  {
    "t": "2026-07-23T05:01:43.595173+00:00",
    "hash": "0b181bfd",
    "name": "mes-outside-day-two-sided-stop-depletion-fade",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.106"
-  },
-  {
-   "t": "2026-07-23T05:00:14.045997+00:00",
-   "hash": "45f68084",
-   "name": "mcl-minute-run-completion-impact-decay",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T04:59:04.755483+00:00",
-   "hash": "1365cdfc",
-   "name": "gap-age-decay",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:58:46.139434+00:00",
@@ -415,22 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-unfilled-gap-age-hazard-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:56:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-minute-run-completion-impact-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:59:08Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "m2k-tick-constraint-price-discovery-lag",
     "stage": "dev3yr",
@@ -523,7 +507,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 109,
+   "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -585,7 +569,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8993
+    "trials": 8995
    }
   ]
  },
@@ -594,8 +578,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 119,
-   "n_killed": 73,
+   "n_tested": 120,
+   "n_killed": 74,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -656,8 +640,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 33,
+   "n_tested": 55,
+   "n_killed": 34,
    "book_sleeves": [],
    "agents_now": []
   },
