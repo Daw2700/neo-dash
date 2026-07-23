@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:08:35Z",
+  "stamp": "2026-07-23T00:08:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -398,22 +398,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-atlantic-hurricane-supplyrisk-premium-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:01:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-buyback-window-reopen-postearnings-bid",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:01:05Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -422,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mcl-preweekend-overnight-riskpremium",
     "stage": "dev3yr",
