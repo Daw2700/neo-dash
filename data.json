@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:43:06Z",
+  "stamp": "2026-07-23T06:43:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T06:42:44Z",
     "state": "running"
+   },
+   {
+    "agent": "sweep",
+    "market": null,
+    "task": "vectorized grammar sweep",
+    "stage": "sweep",
+    "started": "2026-07-23T06:43:08Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MYM",
+    "task": "mym-volume-irregularity-liquidity-uncertainty-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:43:08Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mym-volume-irregularity-liquidity-uncertainty-premium",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 11,
     "idea": "m6e-scheduled-sovereign-rating-review-window",
@@ -456,7 +463,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
