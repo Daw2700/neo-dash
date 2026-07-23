@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:28:48Z",
+  "stamp": "2026-07-23T19:28:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T19:28:26Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-underwater-duration-coiled-recovery-snapback",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:28:50Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mnq-underwater-duration-coiled-recovery-snapback",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 6,
     "idea": "mcl-3day-selloff-capitulation-close-reversal",
@@ -526,9 +525,9 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 166,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
