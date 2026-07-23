@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:35:45Z",
+  "stamp": "2026-07-23T19:36:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,22 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-oil-shock-supply-demand-classification-equity-leg",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:28:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "recheck: conviction-close-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:29:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: mnq-underwater-duration-coiled-recovery-snapback",
     "stage": "dev3yr",
@@ -527,7 +511,7 @@
   "funnel": {
    "idea": 7,
    "registered": 165,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
