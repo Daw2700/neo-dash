@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:39:55Z",
+  "stamp": "2026-07-23T17:39:57Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -424,35 +424,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-gdp-residual-seasonality-quarter-signed-surprise",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:39:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "xmkt-simultaneous-availability-hedging-leg-outage-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:39:57Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:39:57Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zn-gdp-residual-seasonality-quarter-signed-surprise",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "xmkt-simultaneous-availability-hedging-leg-outage-premium",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 3,
-    "idea": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "zn-tba-48hour-day-pool-allocation-clock",
@@ -563,9 +561,9 @@
    }
   ],
   "funnel": {
-   "idea": 15,
+   "idea": 12,
    "registered": 161,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
