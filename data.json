@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:43:44Z",
+  "stamp": "2026-07-23T00:44:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -399,14 +399,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "replication: zc-farm-cash-rent-duedate-liquidation-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:39:44Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-difficulty-adjustment-miner-payout-clock",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-pension-contribution-deadline-september",
     "stage": "dev3yr",
