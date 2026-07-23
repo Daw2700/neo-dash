@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:43:58Z",
+  "stamp": "2026-07-23T05:44:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-liquidity-void-first-print-impact-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:40:29Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "xmkt-post-settlement-breadth-coherence-late-afternoon",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-dynamic-circuit-breaker-band-proximity-acceleration",
     "stage": "dev3yr",
