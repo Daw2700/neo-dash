@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:24:57Z",
+  "stamp": "2026-07-23T11:29:24Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 923,
-  "n_results": 1105,
-  "n_trials": 49241,
+  "n_registered": 926,
+  "n_results": 1106,
+  "n_trials": 49242,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T11:28:57.267208+00:00",
+   "hash": "77edd12c",
+   "name": "m2k-liquidation-order-first-sold-overshoot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 4.313"
+  },
+  {
+   "t": "2026-07-23T11:28:51.458691+00:00",
+   "hash": "4e99a5f9",
+   "name": "zc-report-free-week-hedger-immediacy-discount",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T11:25:33.513634+00:00",
+   "hash": "de0e4edb",
+   "name": "scout-63-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T11:24:39.159356+00:00",
    "hash": "d0f44211",
    "name": "mym-earnings-blackout-price-weight-sensitivity",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.4335"
-  },
-  {
-   "t": "2026-07-23T11:08:48.150628+00:00",
-   "hash": "9080a6f8",
-   "name": "mes-bd4-inflow-exhaustion-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T11:07:41.744845+00:00",
-   "hash": "61a2ab7e",
-   "name": "mcl-first-week-producer-hedge-participation-spike",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.839"
-  },
-  {
-   "t": "2026-07-23T11:05:26.822669+00:00",
-   "hash": "a28aa195",
-   "name": "mcl-first-week-producer-hedge-participation-spike-REPLICATION-1053",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -428,20 +428,12 @@
     "stage": "idea-scout",
     "started": "2026-07-23T11:24:57Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-liquidation-order-first-sold-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:24:57Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 131,
+   "registered": 133,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18639
+    "trials": 18640
    }
   ]
  },
@@ -547,8 +539,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 37,
-   "n_killed": 27,
+   "n_tested": 38,
+   "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
   },
