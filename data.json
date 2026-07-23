@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:37:42Z",
+  "stamp": "2026-07-23T06:37:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mes-bimodal-profile-unresolved-auction-resolution",
     "stage": "dev3yr",
     "started": "2026-07-23T06:31:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "recheck: mcl-weekend-rth-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:37:45Z",
     "state": "running"
    }
   ],
