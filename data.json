@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:19:43Z",
+  "stamp": "2026-07-23T07:21:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 839,
-  "n_results": 1021,
-  "n_trials": 49157,
+  "n_results": 1022,
+  "n_trials": 49158,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:20:45.494324+00:00",
+   "hash": "87490e75",
+   "name": "mnq-range-acceptance-age-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.028"
+  },
+  {
    "t": "2026-07-23T07:19:24.610822+00:00",
    "hash": "4b924287",
    "name": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
@@ -397,28 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.974"
-  },
-  {
-   "t": "2026-07-23T07:07:18.113163+00:00",
-   "hash": "1b7e69a0",
-   "name": "mes-adp-refutation-nfp-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.8497"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "recheck: mnq-range-acceptance-age-release",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:17:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-prior-onshore-vwap-overnight-anchor-reversion",
     "stage": "dev3yr",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "recheck: mes-chicago-pmi-monthend-flow-collision-impact-reversion",
     "stage": "dev3yr",
@@ -517,7 +509,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18555
+    "trials": 18556
    }
   ]
  },
