@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:49:51Z",
+  "stamp": "2026-07-23T17:56:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1038,
-  "n_results": 1218,
-  "n_trials": 68288,
+  "n_registered": 1041,
+  "n_results": 1221,
+  "n_trials": 68291,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68288,
-   "registered": 1038,
-   "tested": 840,
+   "trials": 68291,
+   "registered": 1041,
+   "tested": 843,
    "passed": 160,
    "survived": 33,
    "replicated": 12,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T17:52:12.455285+00:00",
+   "hash": "05b15d18",
+   "name": "zn-tba-classA-48hour-day-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.3"
+  },
+  {
+   "t": "2026-07-23T17:52:11.975030+00:00",
+   "hash": "712d3fc7",
+   "name": "mes-fund-tournament-rank-shift-monthend",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.363"
+  },
+  {
+   "t": "2026-07-23T17:52:07.528035+00:00",
+   "hash": "3c54ad7d",
+   "name": "mng-naesb-timely-nomination-cycle-cliff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.408"
+  },
+  {
    "t": "2026-07-23T17:49:04.747487+00:00",
    "hash": "1a8f3eb0",
    "name": "mgc-official-sector-purchase-pace-reporting-lag-state",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.283"
-  },
-  {
-   "t": "2026-07-23T17:13:22.545243+00:00",
-   "hash": "6bb1a09a",
-   "name": "mes-monthly-vwap-benchmark-completion-pressure",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T17:13:06.344602+00:00",
-   "hash": "36292eeb",
-   "name": "mes-buyback-constant-notional-lowadv-amplification",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T17:12:04.377622+00:00",
-   "hash": "bec1fe10",
-   "name": "mnq-grid-coarseness-completion-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.638"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-fund-tournament-midyear-rank-risk-shifting",
-    "stage": "dev3yr",
-    "started": "2026-07-23T17:49:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNG",
     "task": "mng-naesb-timely-nomination-cycle-cliff",
     "stage": "dev3yr",
@@ -527,7 +519,7 @@
   "funnel": {
    "idea": 7,
    "registered": 162,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -588,7 +580,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27967
+    "trials": 27970
    }
   ]
  },
@@ -613,8 +605,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 171,
-   "n_killed": 141,
+   "n_tested": 172,
+   "n_killed": 142,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -671,8 +663,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 34,
-   "n_killed": 29,
+   "n_tested": 35,
+   "n_killed": 30,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -709,8 +701,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 78,
-   "n_killed": 67,
+   "n_tested": 79,
+   "n_killed": 68,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1513,7 +1505,8 @@
     "PASS -> bundle flagged paper-ready on the dashboard; FAIL -> back to the funnel, holdout look spent",
     "Nothing trades real or paper money either way without your further GO"
    ],
-   "staged": "2026-07-23T16:25:36Z"
+   "staged": "2026-07-23T16:25:36Z",
+   "usd_mo": 13230
   },
   {
    "id": "d-wk10derisk-book-entry",
