@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:07:59Z",
+  "stamp": "2026-07-23T15:09:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 992,
-  "n_results": 1171,
-  "n_trials": 68241,
+  "n_results": 1172,
+  "n_trials": 68242,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -315,12 +315,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T15:06:45.312281+00:00",
+   "t": "2026-07-23T15:08:50.528406+00:00",
    "hash": "eb43a6a5",
    "name": "mnq-shared-maker-capital-scarcity-impact-premium",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.776"
   },
   {
    "t": "2026-07-23T15:06:42.448444+00:00",
@@ -414,14 +414,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-shared-maker-capital-scarcity-impact-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:02:20Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "recheck: mes-simultaneous-roll-congestion-capacity-drain",
     "stage": "dev3yr",
@@ -438,18 +430,26 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-nth-weekday-institutional-process-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T15:07:59Z",
+    "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Sixth machine-discovered sleeve ready: f",
+    "stage": "decision",
+    "started": "2026-07-23T15:08:21Z",
     "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 151,
+   "registered": 150,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -511,7 +511,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27920
+    "trials": 27921
    }
   ]
  },
@@ -520,8 +520,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 132,
-   "n_killed": 88,
+   "n_tested": 133,
+   "n_killed": 89,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
