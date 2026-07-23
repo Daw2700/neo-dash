@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:05:45Z",
+  "stamp": "2026-07-23T12:05:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T12:05:23Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-holiday-shifted-eia-print-day-relocation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:05:47Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mcl-holiday-shifted-eia-print-day-relocation",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 10,
     "idea": "mes-quarterly-vs-serial-expiry-dose-response",
@@ -465,7 +464,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 134,
    "dev3yr": 0,
    "robustness": 0,
