@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:14:25Z",
+  "stamp": "2026-07-23T20:16:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1080,
-  "n_results": 1265,
-  "n_trials": 71361,
+  "n_registered": 1082,
+  "n_results": 1268,
+  "n_trials": 71364,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71361,
-   "registered": 1080,
-   "tested": 877,
+   "trials": 71364,
+   "registered": 1082,
+   "tested": 879,
    "passed": 164,
    "survived": 34,
    "replicated": 12,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:16:29.858617+00:00",
+   "hash": "ce78d2fc",
+   "name": "zn-monthend-duration-demand-net-of-reporting-quarter-drag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.981"
+  },
+  {
+   "t": "2026-07-23T20:16:22.676903+00:00",
+   "hash": "00eedfa9",
+   "name": "m2k-russell-quarterly-ipo-addition-offrecon",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.124"
+  },
+  {
+   "t": "2026-07-23T20:15:15.879531+00:00",
+   "hash": "566b50cf",
+   "name": "mgc-regulatory-reporting-date-metals-book-roundtrip",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T20:13:50.155789+00:00",
    "hash": "566b50cf",
    "name": "mgc-regulatory-reporting-date-metals-book-roundtrip",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.948"
-  },
-  {
-   "t": "2026-07-23T19:53:31.486796+00:00",
-   "hash": "3fcc999e",
-   "name": "mgc-gold-oil-ratio-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.036"
-  },
-  {
-   "t": "2026-07-23T19:51:32.376010+00:00",
-   "hash": "3fcc999e",
-   "name": "mgc-gold-oil-ratio-reversion",
-   "status": "result",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T19:46:46.463493+00:00",
-   "hash": "8b976c3d",
-   "name": "mcl-precautionary-demand-decay",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.472"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-russell-quarterly-ipo-addition-offrecon",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:13:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "recheck: mgc-regulatory-reporting-date-metals-book-roundtrip",
     "stage": "dev3yr",
@@ -554,7 +546,7 @@
   "funnel": {
    "idea": 10,
    "registered": 167,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31037
+    "trials": 31040
    }
   ]
  },
@@ -662,8 +654,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 46,
-   "n_killed": 35,
+   "n_tested": 47,
+   "n_killed": 36,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -736,8 +728,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 81,
-   "n_killed": 69,
+   "n_tested": 82,
+   "n_killed": 70,
    "book_sleeves": [],
    "agents_now": []
   },
