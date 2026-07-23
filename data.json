@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:34:28Z",
+  "stamp": "2026-07-23T04:35:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 781,
-  "n_results": 952,
-  "n_trials": 39819,
+  "n_results": 953,
+  "n_trials": 39820,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:34:57.823335+00:00",
+   "hash": "b8f9b1d1",
+   "name": "zn-goodside-semibeta-insurance-drag",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.519"
+  },
+  {
    "t": "2026-07-23T04:34:18.813618+00:00",
    "hash": "470616c4",
    "name": "mes-crossmkt-continuous-morning",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.925"
-  },
-  {
-   "t": "2026-07-23T04:33:49.860446+00:00",
-   "hash": "b8f9b1d1",
-   "name": "zn-goodside-semibeta-insurance-drag",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:29:46.796126+00:00",
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-goodside-semibeta-insurance-drag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:31:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-post-fix-us-hours-uninformed-flow-absorption",
     "stage": "dev3yr",
@@ -478,7 +470,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 107,
+   "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -540,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8983
+    "trials": 8984
    }
   ]
  },
@@ -658,8 +650,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 64,
-   "n_killed": 55,
+   "n_tested": 65,
+   "n_killed": 56,
    "book_sleeves": [],
    "agents_now": []
   },
