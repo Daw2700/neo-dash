@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:28:01Z",
+  "stamp": "2026-07-23T10:28:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mym-price-weighted-closing-impact-residual",
     "stage": "dev3yr",
     "started": "2026-07-23T10:20:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "robustness: mgc-first-business-day-index-allocation-print",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:28:02Z",
     "state": "running"
    }
   ],
