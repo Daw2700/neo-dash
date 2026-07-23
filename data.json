@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:07:57Z",
+  "stamp": "2026-07-23T15:07:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,21 +436,19 @@
     "stage": "dev3yr",
     "started": "2026-07-23T15:07:33Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 12,
-    "idea": "zn-nth-weekday-institutional-process-clock",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.35
+    "agent": "tester-4",
+    "market": "ZN",
+    "task": "zn-nth-weekday-institutional-process-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:07:59Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 151,
    "dev3yr": 0,
    "robustness": 0,
