@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:46:41Z",
+  "stamp": "2026-07-23T03:53:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 766,
-  "n_results": 939,
-  "n_trials": 39806,
+  "n_registered": 769,
+  "n_results": 942,
+  "n_trials": 39809,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T03:49:35.339280+00:00",
+   "hash": "a8980ec7",
+   "name": "mgc-globex-reopen-remark-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.57"
+  },
+  {
+   "t": "2026-07-23T03:49:23.396930+00:00",
+   "hash": "416f0c18",
+   "name": "m2k-freshair-short",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.072"
+  },
+  {
+   "t": "2026-07-23T03:49:10.445303+00:00",
+   "hash": "94f0cd9a",
+   "name": "mbt-idio-illiquidity-long",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.231"
+  },
+  {
    "t": "2026-07-23T03:46:25.841055+00:00",
    "hash": "a81e5211",
    "name": "mes-continuous-lag",
@@ -385,56 +409,16 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.103"
-  },
-  {
-   "t": "2026-07-23T03:19:39.732176+00:00",
-   "hash": "628b3b41",
-   "name": "mes-crude-liquidity-channel-risk-transfer",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.831"
-  },
-  {
-   "t": "2026-07-23T03:18:44.777182+00:00",
-   "hash": "80dbfe02",
-   "name": "cojump-overnight-gate",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.669"
-  },
-  {
-   "t": "2026-07-23T03:11:12.345721+00:00",
-   "hash": "3d1f7047",
-   "name": "m2k-h8-credit-friday-repricing",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MBT",
-    "task": "mbt-idiosyncratic-vs-common-illiquidity-split",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:45:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-globex-reopen-simultaneous-remark-overshoot",
     "stage": "dev3yr",
     "started": "2026-07-23T03:46:17Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-fresh-territory-index-arb-capacity-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:46:40Z",
     "state": "running"
    }
   ],
@@ -531,7 +515,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8970
+    "trials": 8973
    }
   ]
  },
@@ -575,8 +559,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 27,
-   "n_killed": 14,
+   "n_tested": 28,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -584,8 +568,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 44,
-   "n_killed": 36,
+   "n_tested": 45,
+   "n_killed": 37,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -620,7 +604,7 @@
    "ticker": "MBT",
    "display": "Bitcoin",
    "status": "active",
-   "n_tested": 18,
+   "n_tested": 19,
    "n_killed": 10,
    "book_sleeves": [
     "mbt-nr7 (bitcoin)"
