@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:37:28Z",
+  "stamp": "2026-07-23T12:37:31Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-arbitrage-capacity-inverse-u-dislocation-flip",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:37:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MET",
+    "task": "met-unhedgeable-halt-window-carry-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:37:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-liquidity-withdrawal-surprise-vs-event-norm",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:37:31Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-arbitrage-capacity-inverse-u-dislocation-flip",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "met-unhedgeable-halt-window-carry-premium",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "mes-liquidity-withdrawal-surprise-vs-event-norm",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mgc-provider-overnight-inventory-pnl-liquidity-withdrawal",
@@ -524,7 +522,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 136,
    "dev3yr": 0,
    "robustness": 0,
