@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:24:30Z",
+  "stamp": "2026-07-23T05:31:48Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 800,
-  "n_results": 975,
-  "n_trials": 39842,
+  "n_registered": 802,
+  "n_results": 977,
+  "n_trials": 39844,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -285,22 +285,6 @@
    }
   },
   {
-   "id": "mnq-propfirm-cohort-monthstart-stop-density",
-   "name": "mnq-propfirm-cohort-monthstart-stop-density",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 155,
-   "wr": 0.3871,
-   "usd_mo": 144,
-   "pf": 1.405,
-   "usd_trade": 33.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
-  },
-  {
    "id": "b3-tom-long",
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -315,9 +299,45 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  {
+   "id": "mnq-event-free-day-flow-persistence",
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 675,
+   "wr": 0.5481,
+   "usd_mo": 563,
+   "pf": 1.368,
+   "usd_trade": 30.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T05:27:37.491508+00:00",
+   "hash": "c36ce88d",
+   "name": "mes-early-close-session-truncation-inventory-overshoot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.638"
+  },
+  {
+   "t": "2026-07-23T05:26:31.800389+00:00",
+   "hash": "93f5fd60",
+   "name": "mnq-propfirm-cohort-monthstart-stop-density",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.904"
+  },
+  {
+   "t": "2026-07-23T05:26:19.848539+00:00",
+   "hash": "3eea5fb0",
+   "name": "scout-55-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T05:20:31.032428+00:00",
    "hash": "367a96f3",
@@ -389,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.9545"
-  },
-  {
-   "t": "2026-07-23T05:06:37.327510+00:00",
-   "hash": "eb34cf81",
-   "name": "zc-staggered-weekly-reopen-crossmarket-leak",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.366"
-  },
-  {
-   "t": "2026-07-23T05:04:06.503006+00:00",
-   "hash": "e1f6cf1e",
-   "name": "m2k-tick-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.81"
-  },
-  {
-   "t": "2026-07-23T05:02:09.158921+00:00",
-   "hash": "45f68084",
-   "name": "mcl-minute-run-completion-impact-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.76"
   }
  ],
  "pipeline": {
@@ -427,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "replication: mnq-propfirm-cohort-monthstart-stop-density",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:24:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-early-close-session-truncation-inventory-overshoot",
     "stage": "dev3yr",
@@ -445,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 107,
+   "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +495,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9006
+    "trials": 9008
    }
   ]
  },
@@ -531,8 +519,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 134,
-   "n_killed": 105,
+   "n_tested": 135,
+   "n_killed": 106,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -1248,35 +1236,6 @@
     "apex_max": 8
    }
   },
-  "mnq-propfirm-cohort-monthstart-stop-density": {
-   "name": "mnq-propfirm-cohort-monthstart-stop-density",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Prop firms concentrate evaluation-account promotions at month start, so each month opens with a fresh cohort of small, tightly stopped MNQ accounts whose stops sit at the same obvious levels (prior-day high/low, opening-range edges). Stop density at those levels is highest in the first business week of the month and decays as the cohort washes out, so sweep-and-reverse (fade a break of the prior RTH session high or low) pays best early in the month. Payer: the newly funded cohort whose stops get run and reverse.",
-   "metrics": {
-    "n": 155,
-    "wr": 0.3871,
-    "pf": 1.405,
-    "usd_mo": 144,
-    "usd_trade": 33.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T05:11:45.471150+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T05:19:23.307890+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
-  },
   "b3-tom-long": {
    "name": "b3-tom-long",
    "market": "MNQ",
@@ -1310,6 +1269,36 @@
     "growth_max": 2,
     "apex_max": 1
    }
+  },
+  "mnq-event-free-day-flow-persistence": {
+   "name": "mnq-event-free-day-flow-persistence",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "On days with no scheduled macro release (no FOMC/CPI on the calendar), intraday price movement is driven by inventory and order-flow imbalance rather than information, so the first-60-minute directional displacement reflects a liquidity-provider inventory imbalance that must keep being paid for through the rest of the session; on scheduled-event days an information shock resets order books and kills that persistence, so the edge should only appear when the macro calendar is empty.",
+   "metrics": {
+    "n": 675,
+    "wr": 0.5481,
+    "pf": 1.368,
+    "usd_mo": 563,
+    "usd_trade": 30.0
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T07:36:35.002815+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T07:42:14.432674+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
