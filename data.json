@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:47:56Z",
+  "stamp": "2026-07-23T20:47:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T20:45:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-hpai-flock-depopulation-feed-demand-shock",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:47:57Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "zc-hpai-flock-depopulation-feed-demand-shock",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 14,
     "idea": "sil-india-import-duty-change-window",
@@ -472,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 171,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
