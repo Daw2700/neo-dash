@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:23:12Z",
+  "stamp": "2026-07-23T13:23:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
     "stage": "dev3yr",
     "started": "2026-07-23T13:15:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "robustness: mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:23:14Z",
     "state": "running"
    }
   ],
