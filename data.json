@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:21:08Z",
+  "stamp": "2026-07-23T07:22:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 839,
-  "n_results": 1022,
-  "n_trials": 49158,
+  "n_registered": 841,
+  "n_results": 1023,
+  "n_trials": 49159,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:22:28.601816+00:00",
+   "hash": "fb1dcea0",
+   "name": "scout-58-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T07:22:26.106551+00:00",
+   "hash": "4b924287",
+   "name": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.08"
+  },
+  {
+   "t": "2026-07-23T07:21:31.617221+00:00",
+   "hash": "a144b748",
+   "name": "m6e-prior-onshore-vwap-overnight-anchor-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T07:20:45.494324+00:00",
    "hash": "87490e75",
    "name": "mnq-range-acceptance-age-release",
@@ -381,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.546"
-  },
-  {
-   "t": "2026-07-23T07:10:02.742577+00:00",
-   "hash": "d6fe4f5f",
-   "name": "mcl-unrevisited-settlement-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.974"
-  },
-  {
-   "t": "2026-07-23T07:09:23.127764+00:00",
-   "hash": "19208aea",
-   "name": "mgc-overnight-vwap-supply",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.074"
-  },
-  {
-   "t": "2026-07-23T07:08:11.783635+00:00",
-   "hash": "d6fe4f5f",
-   "name": "mcl-unrevisited-settlement-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.974"
   }
  ],
  "pipeline": {
@@ -427,14 +427,6 @@
    },
    {
     "agent": "tester-3",
-    "market": "MES",
-    "task": "recheck: mes-chicago-pmi-monthend-flow-collision-impact-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:19:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
     "market": "MNQ",
     "task": "mnq-durable-goods-capex-orders-tech-revenue-channel",
     "stage": "dev3yr",
@@ -445,7 +437,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 110,
+   "registered": 112,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +499,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18556
+    "trials": 18557
    }
   ]
  },
