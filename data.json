@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:54:34Z",
+  "stamp": "2026-07-23T07:57:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 848,
-  "n_results": 1031,
-  "n_trials": 49167,
+  "n_registered": 849,
+  "n_results": 1032,
+  "n_trials": 49168,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:57:08.590796+00:00",
+   "hash": "6ea8c1a1",
+   "name": "m2k-housing-release-homebuilder-weight-channel",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.05"
+  },
+  {
    "t": "2026-07-23T07:51:50.498854+00:00",
    "hash": "04a21981",
    "name": "m6e-tokyo-margin-liquidation-clock",
@@ -401,28 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.08"
-  },
-  {
-   "t": "2026-07-23T07:20:45.494324+00:00",
-   "hash": "87490e75",
-   "name": "mnq-range-acceptance-age-release",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.028"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-housing-release-homebuilder-weight-channel",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:49:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-single-stock-levetf-megacap-close-amplification",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-offshore-liquidation-cascade-multiday-continuation",
     "stage": "dev3yr",
@@ -549,7 +541,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18565
+    "trials": 18566
    }
   ]
  },
@@ -593,8 +585,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 34,
-   "n_killed": 24,
+   "n_tested": 35,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
