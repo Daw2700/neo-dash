@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:24:00Z",
+  "stamp": "2026-07-23T09:29:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 878,
-  "n_results": 1060,
-  "n_trials": 49196,
+  "n_registered": 881,
+  "n_results": 1063,
+  "n_trials": 49199,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T09:29:03.134265+00:00",
+   "hash": "bcee80f1",
+   "name": "zc-evening-globex-reopen-impulse-overshoot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.374"
+  },
+  {
+   "t": "2026-07-23T09:27:41.599351+00:00",
+   "hash": "272e6ca2",
+   "name": "m2k-open-hour-extreme-minute-artifact-retrace",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.978"
+  },
+  {
+   "t": "2026-07-23T09:26:42.238359+00:00",
+   "hash": "93fd03fe",
+   "name": "mcl-inside-week-unresolved-positioning-carryover",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.996"
+  },
+  {
+   "t": "2026-07-23T09:25:13.784451+00:00",
+   "hash": "89be97f0",
+   "name": "mcl-inside-week-unresolved-positioning-carryover-REPLICATION-1021",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T09:18:38.969646+00:00",
    "hash": "93fd03fe",
    "name": "mcl-inside-week-unresolved-positioning-carryover",
@@ -377,52 +409,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T09:00:42.215161+00:00",
-   "hash": "acd1e600",
-   "name": "robustness-battery::mym-venue-allocation-wedge-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T09:00:38.294887+00:00",
-   "hash": "127b1483",
-   "name": "scout-60-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T08:53:23.090954+00:00",
-   "hash": "5cc7f1aa",
-   "name": "mes-quiet-streak-range-budget-contraction",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.344"
-  },
-  {
-   "t": "2026-07-23T08:52:41.867744+00:00",
-   "hash": "69c4eaa4",
-   "name": "mym-venue-allocation-wedge-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.161"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "replication: mcl-inside-week-unresolved-positioning-carryover",
-    "stage": "dev3yr",
-    "started": "2026-07-23T09:23:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-open-hour-extreme-minute-artifact-retrace",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-evening-globex-reopen-impulse-overshoot",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 119,
+   "registered": 120,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -576,7 +568,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18594
+    "trials": 18597
    }
   ]
  },
@@ -620,8 +612,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 36,
-   "n_killed": 26,
+   "n_tested": 37,
+   "n_killed": 27,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -703,8 +695,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 45,
-   "n_killed": 39,
+   "n_tested": 46,
+   "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1055,6 +1047,11 @@
      "t": "2026-07-23T09:18:38.969646+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T09:26:42.238359+00:00",
+     "stage": "replication",
+     "verdict": "KILLED"
     }
    ],
    "sizing": {
