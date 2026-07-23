@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:01:51Z",
+  "stamp": "2026-07-23T20:06:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1076,
-  "n_results": 1261,
-  "n_trials": 71357,
+  "n_registered": 1077,
+  "n_results": 1262,
+  "n_trials": 71358,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71357,
-   "registered": 1076,
+   "trials": 71358,
+   "registered": 1077,
    "tested": 874,
    "passed": 164,
    "survived": 34,
@@ -318,23 +318,35 @@
    }
   },
   {
-   "id": "mcl-precautionary-demand-decay",
-   "name": "mcl-precautionary-demand-decay",
-   "market": "MCL",
+   "id": "b2-opex-release",
+   "name": "b2-opex-release",
+   "market": "MNQ",
    "tier": "candidate",
    "pinned": false,
-   "n": 98,
-   "wr": 0.5918,
-   "usd_mo": 57,
-   "pf": 1.472,
-   "usd_trade": 20.8,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 4
-   }
+   "n": 35,
+   "wr": 0.429,
+   "usd_mo": 16,
+   "pf": 1.407,
+   "usd_trade": 16.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T20:06:19.450872+00:00",
+   "hash": "8b976c3d",
+   "name": "mcl-precautionary-demand-decay",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.572"
+  },
+  {
+   "t": "2026-07-23T20:04:45.969975+00:00",
+   "hash": "e7670d5b",
+   "name": "mcl-precautionary-demand-decay-REPLICATION-1213",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T19:59:27.405734+00:00",
    "hash": "58319bc7",
@@ -414,22 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.9"
-  },
-  {
-   "t": "2026-07-23T19:39:09.544888+00:00",
-   "hash": "65f665a4",
-   "name": "mnq-underwater-duration-coiled-recovery-snapback",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T19:38:32.678252+00:00",
-   "hash": "b6d33dca",
-   "name": "mcl-3day-selloff-capitulation-close-reversal",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.75"
   }
  ],
  "pipeline": {
@@ -457,6 +453,14 @@
     "stage": "dev3yr",
     "started": "2026-07-23T19:55:08Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "replication: mcl-precautionary-demand-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:01:53Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -472,11 +476,11 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 166,
-   "dev3yr": 2,
+   "registered": 167,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 13,
+   "book_candidate": 12,
    "golden_staged": 1
   },
   "throughput": [
@@ -534,7 +538,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31033
+    "trials": 31034
    }
   ]
  },
@@ -1406,34 +1410,35 @@
     "apex_max": 8
    }
   },
-  "mcl-precautionary-demand-decay": {
-   "name": "mcl-precautionary-demand-decay",
-   "market": "MCL",
+  "b2-opex-release": {
+   "name": "b2-opex-release",
+   "market": "MNQ",
    "tier": "candidate",
-   "mechanism": "When crude oil rises alongside gold on the same session while equities fail to confirm the move higher, that co-movement reflects a precautionary fear-demand regime rather than genuine broad-based growth demand (Kilian 2009 precautionary-demand oil shock component); the embedded precautionary risk premium in the oil leg decays over the next session as the fear fades, so shorting MCL the following session fades late fear-buyers of crude who pay for that mean-reversion.",
+   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
    "metrics": {
-    "n": 98,
-    "wr": 0.5918,
-    "pf": 1.472,
-    "usd_mo": 57,
-    "usd_trade": 20.8
+    "n": 35,
+    "wr": 0.429,
+    "pf": 1.407,
+    "usd_mo": 16,
+    "usd_trade": 16.0
    },
    "verdict_history": [
     {
-     "t": "2026-07-23T19:46:46.463493+00:00",
+     "t": "2026-07-21T05:02:40.560966+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.903542+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     },
     {
-     "t": "2026-07-23T19:57:49.479446+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
+     "t": "2026-07-21T15:49:52.697136+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 4
-   }
+   ]
   }
  },
  "decisions": [
