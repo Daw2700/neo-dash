@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:11:56Z",
+  "stamp": "2026-07-23T14:18:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 971,
-  "n_results": 1151,
-  "n_trials": 49287,
+  "n_registered": 974,
+  "n_results": 1154,
+  "n_trials": 49290,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 9
@@ -181,6 +181,18 @@
    "usd_trade": 45.4
   },
   {
+   "id": "mcl-impact-regime-fade",
+   "name": "mcl-impact-regime-fade",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 22,
+   "wr": 0.6364,
+   "usd_mo": 23,
+   "pf": 2.128,
+   "usd_trade": 38.1
+  },
+  {
    "id": "mes-wk10-derisk",
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -291,25 +303,33 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
-  },
-  {
-   "id": "mcl-closure-length-dose-response-reopen-overshoot",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 154,
-   "wr": 0.526,
-   "usd_mo": 61,
-   "pf": 1.325,
-   "usd_trade": 14.3,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T14:15:30.692787+00:00",
+   "hash": "63b62f39",
+   "name": "mcl-impact-regime-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.128"
+  },
+  {
+   "t": "2026-07-23T14:15:12.331572+00:00",
+   "hash": "0d3bd43a",
+   "name": "m6e-dealer-flow-burst-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.5449"
+  },
+  {
+   "t": "2026-07-23T14:14:46.141415+00:00",
+   "hash": "916e9918",
+   "name": "mym-fundamental-anchoring-erosion-liquidity-fragility",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.14"
+  },
   {
    "t": "2026-07-23T14:05:47.108332+00:00",
    "hash": "5e5ccf35",
@@ -381,30 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.151"
-  },
-  {
-   "t": "2026-07-23T13:44:11.314216+00:00",
-   "hash": "99959d4e",
-   "name": "mgc-both-extremes-range-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.87"
-  },
-  {
-   "t": "2026-07-23T13:43:05.093498+00:00",
-   "hash": "5e33bc6f",
-   "name": "liq-tail-state-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.995"
-  },
-  {
-   "t": "2026-07-23T13:41:40.682203+00:00",
-   "hash": "501c6804",
-   "name": "mes-release-impact-inflation-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.7087"
   }
  ],
  "pipeline": {
@@ -423,14 +419,6 @@
     "task": "mcl-impact-law-regime-participant-sophistication",
     "stage": "dev3yr",
     "started": "2026-07-23T14:10:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-dealer-internalisation-capacity-externalisation-burst",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:11:13Z",
     "state": "running"
    }
   ],
@@ -509,7 +497,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18685
+    "trials": 18688
    }
   ]
  },
@@ -544,7 +532,7 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 18,
+   "n_tested": 19,
    "n_killed": 16,
    "book_sleeves": [],
    "agents_now": []
@@ -580,7 +568,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 67,
+   "n_tested": 68,
    "n_killed": 46,
    "book_sleeves": [],
    "agents_now": []
@@ -618,8 +606,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 44,
-   "n_killed": 43,
+   "n_tested": 45,
+   "n_killed": 44,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1060,6 +1048,26 @@
     }
    ]
   },
+  "mcl-impact-regime-fade": {
+   "name": "mcl-impact-regime-fade",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Two square-root impact laws with different prefactors depending on whether sophisticated participants are present to replenish liquidity behind a metaorder; on holiday-adjacent MCL sessions the sophisticated cohort is thinned, so the same volume produces excess (high-prefactor) price impact that is mechanical rather than informational and should decay into the next session, so fading the sign of an outsized volume-normalized move on those sessions should be profitable net of costs.",
+   "metrics": {
+    "n": 22,
+    "wr": 0.6364,
+    "pf": 2.128,
+    "usd_mo": 23,
+    "usd_trade": 38.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T14:15:30.692787+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mes-wk10-derisk": {
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -1315,40 +1323,6 @@
      "verdict": "REPLICATES"
     }
    ]
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
-   "metrics": {
-    "n": 154,
-    "wr": 0.526,
-    "pf": 1.325,
-    "usd_mo": 61,
-    "usd_trade": 14.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:10:08.535860+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T14:13:24.952332+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T14:15:41.271464+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
   }
  },
  "decisions": [
