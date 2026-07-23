@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:22:50Z",
+  "stamp": "2026-07-23T04:25:56Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 774,
-  "n_results": 946,
-  "n_trials": 39813,
+  "n_registered": 777,
+  "n_results": 947,
+  "n_trials": 39814,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:25:46.727835+00:00",
+   "hash": "5608954e",
+   "name": "mes-covar-window-rolloff",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.69"
+  },
+  {
+   "t": "2026-07-23T04:25:27.689941+00:00",
+   "hash": "3451262d",
+   "name": "xmkt-turb-mcl-repair",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T04:25:07.824101+00:00",
+   "hash": "fd850e03",
+   "name": "same-slot-echo",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T04:10:17.957931+00:00",
    "hash": "08579929",
    "name": "scout-53b-screen",
@@ -385,30 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.072"
-  },
-  {
-   "t": "2026-07-23T03:49:10.445303+00:00",
-   "hash": "94f0cd9a",
-   "name": "mbt-idio-illiquidity-long",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.231"
-  },
-  {
-   "t": "2026-07-23T03:46:25.841055+00:00",
-   "hash": "a81e5211",
-   "name": "mes-continuous-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.847"
-  },
-  {
-   "t": "2026-07-23T03:45:54.290126+00:00",
-   "hash": "77b43d9d",
-   "name": "zc-envelope-breakout-hedge-supply-ceiling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.831"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-covariance-window-rolloff-releverage-cliff",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:22:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-same-slot-execution-schedule-echo",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 106,
+   "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -585,7 +577,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8977
+    "trials": 8978
    }
   ]
  },
@@ -609,8 +601,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 130,
-   "n_killed": 101,
+   "n_tested": 131,
+   "n_killed": 102,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
