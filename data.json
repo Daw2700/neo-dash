@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:02:12Z",
+  "stamp": "2026-07-23T01:04:37Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 713,
-  "n_results": 874,
-  "n_trials": 30862,
+  "n_registered": 715,
+  "n_results": 875,
+  "n_trials": 30863,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T01:04:18.806663+00:00",
+   "hash": "28a5db60",
+   "name": "zn-index-extension-preannouncement-frontrun",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.177"
+  },
+  {
+   "t": "2026-07-23T01:03:51.501556+00:00",
+   "hash": "ed7f8b98",
+   "name": "mbt-macro-decoupling-offshore-bid-overnight",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T00:54:37.701842+00:00",
    "hash": "109efb3a",
    "name": "zs-china-state-reserve-auction-window",
@@ -377,22 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.191"
-  },
-  {
-   "t": "2026-07-23T00:40:41.736221+00:00",
-   "hash": "48ed56c2",
-   "name": "rep-zc-farm-cash-rent-duedate-liquidation-window-zs",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T00:39:19.481010+00:00",
-   "hash": "9dd25f37",
-   "name": "m6e-tltro-repayment-settlement-liquidity-drain",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.608"
   }
  ],
  "pipeline": {
@@ -409,14 +409,6 @@
     "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-macro-decoupling-offshore-bid-overnight",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:02:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZN",
-    "task": "zn-index-extension-preannouncement-frontrun",
     "stage": "dev3yr",
     "started": "2026-07-23T01:02:12Z",
     "state": "running"
@@ -507,7 +499,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 95,
+   "registered": 96,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -569,7 +561,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 26
+    "trials": 27
    }
   ]
  },
@@ -687,8 +679,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 58,
-   "n_killed": 49,
+   "n_tested": 59,
+   "n_killed": 50,
    "book_sleeves": [],
    "agents_now": []
   },
