@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:33:43Z",
+  "stamp": "2026-07-23T02:36:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,6 +411,14 @@
     "task": "mbt-uniform-volume-distribution-continuation",
     "stage": "dev3yr",
     "started": "2026-07-23T02:27:47Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MBT",
+    "task": "robustness: mbt-uniform-volume-distribution-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:33:45Z",
     "state": "running"
    }
   ],
