@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:42:48Z",
+  "stamp": "2026-07-23T18:42:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:42:05Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-dealer-zero-gamma-flip-regime-switch",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:42:49Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-dealer-zero-gamma-flip-regime-switch",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 8,
     "idea": "zn-coupon-payment-reinvestment-duration-bid",
@@ -508,9 +507,9 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 166,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
