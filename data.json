@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:49:07Z",
+  "stamp": "2026-07-23T07:49:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T07:41:20Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-tokyo-daily-margin-evaluation-liquidation-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:49:09Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-oil-costpush-smallcap-margin-channel",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:49:09Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "m6e-tokyo-daily-margin-evaluation-liquidation-clock",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 5,
-    "idea": "m2k-oil-costpush-smallcap-margin-channel",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 6,
     "idea": "m2k-housing-release-homebuilder-weight-channel",
@@ -515,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 8,
    "registered": 112,
    "dev3yr": 0,
    "robustness": 0,
