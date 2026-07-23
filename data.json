@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:53:31Z",
+  "stamp": "2026-07-23T02:58:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 753,
-  "n_results": 921,
-  "n_trials": 30909,
+  "n_registered": 755,
+  "n_results": 925,
+  "n_trials": 39792,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -273,18 +273,6 @@
    }
   },
   {
-   "id": "mcl-api-eia-disagreement-stranded-reversal",
-   "name": "mcl-api-eia-disagreement-stranded-reversal",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 81,
-   "wr": 0.5556,
-   "usd_mo": 31,
-   "pf": 1.384,
-   "usd_trade": 13.9
-  },
-  {
    "id": "mnq-event-free-day-flow-persistence",
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -295,9 +283,53 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
+  },
+  {
+   "id": "mcl-closure-length-dose-response-reopen-overshoot",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 154,
+   "wr": 0.526,
+   "usd_mo": 61,
+   "pf": 1.325,
+   "usd_trade": 14.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T02:57:05.476457+00:00",
+   "hash": "4b94d8f2",
+   "name": "mcl-api-eia-disagreement-stranded-reversal",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T02:56:14.946803+00:00",
+   "hash": "f56ca675",
+   "name": "mes-noise-share-lambda-recovery",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.922"
+  },
+  {
+   "t": "2026-07-23T02:56:09.354983+00:00",
+   "hash": "a86629d6",
+   "name": "sweep-3-crosssession-carry",
+   "status": "killed",
+   "kind": "sweep",
+   "detail": "8,880 configs"
+  },
+  {
+   "t": "2026-07-23T02:55:42.075633+00:00",
+   "hash": "23ccde8e",
+   "name": "m6e-flash-pmi-partial-info-overextrapolation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1834"
+  },
   {
    "t": "2026-07-23T02:53:06.579966+00:00",
    "hash": "8f919471",
@@ -321,14 +353,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.384"
-  },
-  {
-   "t": "2026-07-23T02:46:40.648117+00:00",
-   "hash": "a86629d6",
-   "name": "sweep-3-crosssession-carry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T02:44:48.492312+00:00",
@@ -369,30 +393,6 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 0.946"
-  },
-  {
-   "t": "2026-07-23T02:31:14.210725+00:00",
-   "hash": "051717c0",
-   "name": "mbt-uniform-volume-distribution-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.1747"
-  },
-  {
-   "t": "2026-07-23T02:30:56.934891+00:00",
-   "hash": "7bafff27",
-   "name": "zs-rth-reopen-nonretouch-acceptance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.812"
-  },
-  {
-   "t": "2026-07-23T02:29:19.927144+00:00",
-   "hash": "74b6f61f",
-   "name": "rep-m2k-quiet-session-onesided-flow-mym",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-flash-pmi-partial-info-overextrapolation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:45:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "robustness: mcl-api-eia-disagreement-stranded-reversal",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-noise-trader-share-lambda-recovery",
     "stage": "dev3yr",
@@ -452,7 +444,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 101,
+   "registered": 100,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -514,7 +506,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 73
+    "trials": 8956
    }
   ]
  },
@@ -538,8 +530,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 127,
-   "n_killed": 99,
+   "n_tested": 128,
+   "n_killed": 100,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -623,8 +615,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 33,
-   "n_killed": 32,
+   "n_tested": 34,
+   "n_killed": 33,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1243,26 +1235,6 @@
     "apex_max": 1
    }
   },
-  "mcl-api-eia-disagreement-stranded-reversal": {
-   "name": "mcl-api-eia-disagreement-stranded-reversal",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "API prints Tuesday 16:30 ET and EIA prints Wednesday 10:30 ET; when their directional reactions disagree in sign, positions established on the API number overnight are stranded and must be reversed by participants who cannot hold an inventory view the official EIA data contradicts, so trading with the EIA-implied direction right after its reaction window should capture continued unwind flow.",
-   "metrics": {
-    "n": 81,
-    "wr": 0.5556,
-    "pf": 1.384,
-    "usd_mo": 31,
-    "usd_trade": 13.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T02:47:15.974729+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "mnq-event-free-day-flow-persistence": {
    "name": "mnq-event-free-day-flow-persistence",
    "market": "MNQ",
@@ -1288,6 +1260,36 @@
     },
     {
      "t": "2026-07-22T07:46:52.300888+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
+   "metrics": {
+    "n": 154,
+    "wr": 0.526,
+    "pf": 1.325,
+    "usd_mo": 61,
+    "usd_trade": 14.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:10:08.535860+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T14:13:24.952332+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
     }
