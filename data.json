@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:16:57Z",
+  "stamp": "2026-07-23T20:24:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1082,
-  "n_results": 1269,
-  "n_trials": 71365,
+  "n_registered": 1084,
+  "n_results": 1273,
+  "n_trials": 71369,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71365,
-   "registered": 1082,
-   "tested": 879,
-   "passed": 164,
+   "trials": 71369,
+   "registered": 1084,
+   "tested": 881,
+   "passed": 165,
    "survived": 34,
    "replicated": 12,
    "book": 13
@@ -318,23 +318,51 @@
    }
   },
   {
-   "id": "b2-opex-release",
-   "name": "b2-opex-release",
-   "market": "MNQ",
+   "id": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "market": "MES",
    "tier": "candidate",
    "pinned": false,
-   "n": 35,
-   "wr": 0.429,
-   "usd_mo": 16,
-   "pf": 1.407,
-   "usd_trade": 16.0,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
+   "n": 93,
+   "wr": 0.6237,
+   "usd_mo": 76,
+   "pf": 1.687,
+   "usd_trade": 29.4
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T20:20:55.649694+00:00",
+   "hash": "8b298a3a",
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.687"
+  },
+  {
+   "t": "2026-07-23T20:20:10.889580+00:00",
+   "hash": "00eedfa9",
+   "name": "m2k-russell-quarterly-ipo-addition-offrecon",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.134"
+  },
+  {
+   "t": "2026-07-23T20:19:49.866764+00:00",
+   "hash": "ecbae067",
+   "name": "zs-mississippi-draft-restriction-export-logistics-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.656"
+  },
+  {
+   "t": "2026-07-23T20:17:58.641873+00:00",
+   "hash": "00eedfa9",
+   "name": "m2k-russell-quarterly-ipo-addition-offrecon",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T20:16:37.714468+00:00",
    "hash": "566b50cf",
@@ -398,38 +426,6 @@
    "status": "fail",
    "kind": "result",
    "detail": "PF 0.572"
-  },
-  {
-   "t": "2026-07-23T20:04:45.969975+00:00",
-   "hash": "e7670d5b",
-   "name": "mcl-precautionary-demand-decay-REPLICATION-1213",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T19:59:27.405734+00:00",
-   "hash": "58319bc7",
-   "name": "mnq-weekend-noneconomic-shock-flight-to-growth-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.981"
-  },
-  {
-   "t": "2026-07-23T19:59:04.606022+00:00",
-   "hash": "47db810a",
-   "name": "scout-71-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T19:57:49.479446+00:00",
-   "hash": "8b976c3d",
-   "name": "mcl-precautionary-demand-decay",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,14 +440,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZS",
-    "task": "zs-mississippi-draft-restriction-export-logistics-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:16:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-petrodollar-recycling-sovereign-inflow-lag",
     "stage": "dev3yr",
@@ -536,10 +524,10 @@
   "funnel": {
    "idea": 8,
    "registered": 167,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 12,
+   "book_candidate": 13,
    "golden_staged": 1
   },
   "throughput": [
@@ -597,7 +585,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31041
+    "trials": 31045
    }
   ]
  },
@@ -622,7 +610,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 182,
+   "n_tested": 183,
    "n_killed": 152,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
@@ -739,8 +727,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 26,
-   "n_killed": 21,
+   "n_tested": 27,
+   "n_killed": 22,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
    ],
@@ -1469,39 +1457,25 @@
     "apex_max": 8
    }
   },
-  "b2-opex-release": {
-   "name": "b2-opex-release",
-   "market": "MNQ",
+  "mes-petrodollar-recycling-sovereign-inflow-lag": {
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "market": "MES",
    "tier": "candidate",
-   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
+   "mechanism": "Sustained high crude oil revenue accrues to oil-exporting sovereign wealth funds, which redeploy into global equities on a budgeting cycle that lags the revenue accrual by roughly one quarter, so a slow flow-driven equity bid is conditional on LAGGED cumulative crude return rather than contemporaneous crude moves.",
    "metrics": {
-    "n": 35,
-    "wr": 0.429,
-    "pf": 1.407,
-    "usd_mo": 16,
-    "usd_trade": 16.0
+    "n": 93,
+    "wr": 0.6237,
+    "pf": 1.687,
+    "usd_mo": 76,
+    "usd_trade": 29.4
    },
    "verdict_history": [
     {
-     "t": "2026-07-21T05:02:40.560966+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.903542+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.697136+00:00",
+     "t": "2026-07-23T20:20:55.649694+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
+   ]
   }
  },
  "decisions": [
