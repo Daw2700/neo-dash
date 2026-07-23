@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:10:49Z",
+  "stamp": "2026-07-23T14:11:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "replication: mes-settle-tradable-divergence",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:00:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-fundamental-anchoring-erosion-liquidity-fragility",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-impact-law-regime-participant-sophistication",
     "stage": "dev3yr",
