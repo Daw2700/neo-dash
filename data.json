@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:50:02Z",
+  "stamp": "2026-07-23T02:50:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,18 +420,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T02:49:40Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZC",
+    "task": "zc-weekly-ethanol-production-print-grind-demand",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:50:03Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "zc-weekly-ethanol-production-print-grind-demand",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.33
-   },
    {
     "rank": 10,
     "idea": "mes-noise-trader-share-lambda-recovery",
@@ -461,7 +460,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 101,
    "dev3yr": 0,
    "robustness": 0,
