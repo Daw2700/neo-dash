@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:18:25Z",
+  "stamp": "2026-07-23T11:18:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 917,
+  "n_registered": 918,
   "n_results": 1099,
   "n_trials": 49235,
   "holdout_looks_spent": 0,
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T11:18:34.622582+00:00",
+   "hash": "9a8404f9",
+   "name": "mnq-rough-vol-fast-reversion-atr-budget-overhang",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T11:18:17.287234+00:00",
    "hash": "98f3ab85",
    "name": "zs-cash-desk-midsession-to-final-hour-hedge-continuation",
@@ -401,28 +409,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T10:51:25.835014+00:00",
-   "hash": "9080a6f8",
-   "name": "mes-bd4-inflow-exhaustion-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.487"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-halted-futures-vs-continuous-spot-reopen-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:14:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-rough-vol-fast-reversion-atr-budget-overhang",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MET",
     "task": "met-extremity-regime-adverse-selection-liquidity-rent",
     "stage": "dev3yr",
@@ -496,7 +488,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 131,
+   "registered": 132,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
