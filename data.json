@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:20:44Z",
+  "stamp": "2026-07-23T23:20:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:20:22Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-euro-national-market-holiday-anchor-absence",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:20:46Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "m6e-euro-national-market-holiday-anchor-absence",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.26
-   },
    {
     "rank": 11,
     "idea": "mym-price-weight-herfindahl-effective-breadth-variance-split",
@@ -481,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 179,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
