@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:23:50Z",
+  "stamp": "2026-07-23T01:31:37Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 726,
-  "n_results": 887,
-  "n_trials": 30875,
+  "n_registered": 727,
+  "n_results": 891,
+  "n_trials": 30879,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,12 +299,36 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T01:23:45.589414+00:00",
+   "t": "2026-07-23T01:31:35.915245+00:00",
+   "hash": "8554e6c3",
+   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T01:28:36.378267+00:00",
+   "hash": "8554e6c3",
+   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.507"
+  },
+  {
+   "t": "2026-07-23T01:26:41.792324+00:00",
+   "hash": "8554e6c3",
+   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.766"
+  },
+  {
+   "t": "2026-07-23T01:26:16.325489+00:00",
    "hash": "4ba7ce1e",
    "name": "mcl-vwap-vs-range-midpoint-inventory-shelf",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
   },
   {
    "t": "2026-07-23T01:23:32.319314+00:00",
@@ -369,30 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.3945"
-  },
-  {
-   "t": "2026-07-23T01:14:51.156647+00:00",
-   "hash": "7a5dbd84",
-   "name": "mcl-post-washout-hedge-supply-ceiling",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T01:09:39.080378+00:00",
-   "hash": "ed7f8b98",
-   "name": "mbt-macro-decoupling-offshore-bid-overnight",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T01:07:07.294737+00:00",
-   "hash": "60e7216e",
-   "name": "mes-pct-threshold-headline-salience-nextday",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.254"
   }
  ],
  "pipeline": {
@@ -412,12 +412,20 @@
     "stage": "idea-scout",
     "started": "2026-07-23T01:22:04Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "robustness: mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
+    "stage": "dev3yr",
+    "started": "2026-07-23T01:28:38Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 97,
+   "registered": 96,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -479,7 +487,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 39
+    "trials": 43
    }
   ]
  },
@@ -550,7 +558,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 49,
+   "n_tested": 50,
    "n_killed": 31,
    "book_sleeves": [],
    "agents_now": []
