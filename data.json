@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:37:22Z",
+  "stamp": "2026-07-23T08:40:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 865,
-  "n_results": 1046,
-  "n_trials": 49182,
+  "n_results": 1047,
+  "n_trials": 49183,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -265,22 +265,6 @@
    }
   },
   {
-   "id": "zn-sep-dotplot-path-integration-lag",
-   "name": "zn-sep-dotplot-path-integration-lag",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 22,
-   "wr": 0.5455,
-   "usd_mo": 27,
-   "pf": 1.299,
-   "usd_trade": 44.5,
-   "sizing": {
-    "growth_max": 4,
-    "apex_max": 3
-   }
-  },
-  {
    "id": "b3-prior-high-break",
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -311,9 +295,29 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  {
+   "id": "zn-cash-market-closed-futures-open-asymmetry",
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "pinned": false,
+   "n": 6,
+   "wr": 0.8333,
+   "usd_mo": 18,
+   "pf": 6.676,
+   "usd_trade": 105.1
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T08:40:03.913361+00:00",
+   "hash": "3aa6934c",
+   "name": "zn-sep-dotplot-path-integration-lag",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T08:37:21.902205+00:00",
    "hash": "771e08f7",
@@ -401,36 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.608"
-  },
-  {
-   "t": "2026-07-23T08:05:16.001812+00:00",
-   "hash": "2333f5a5",
-   "name": "mcl-beta-decoupling-idiosyncratic-flow-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.036"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-sep-dotplot-path-integration-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:29:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-ndx-capping-rule-quarterly-test-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:31:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZN",
     "task": "robustness: zn-sep-dotplot-path-integration-lag",
     "stage": "dev3yr",
@@ -567,7 +547,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18580
+    "trials": 18581
    }
   ]
  },
@@ -1310,30 +1290,6 @@
     "apex_max": 3
    }
   },
-  "zn-sep-dotplot-path-integration-lag": {
-   "name": "zn-sep-dotplot-path-integration-lag",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "Only four of eight FOMC meetings/year publish a Summary of Economic Projections (SEP dot plot): those releases deliver a multi-year rate PATH, not a single-meeting decision. The path reprices the 2y-5y sector fast (dealers can mark it off the dots immediately) while the 10y note must integrate the whole revised path against term premium, so ZN adjustment on SEP meetings should be slower/more persistent than on statement-only (non-SEP) meetings, where the 14:00-14:30 reaction is already close to the full information set. We are paid by whoever prices SEP path information as fast as a plain statement.",
-   "metrics": {
-    "n": 22,
-    "wr": 0.5455,
-    "pf": 1.299,
-    "usd_mo": 27,
-    "usd_trade": 44.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T08:32:22.534148+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 4,
-    "apex_max": 3
-   }
-  },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
    "market": "MNQ",
@@ -1401,6 +1357,36 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  "zn-cash-market-closed-futures-open-asymmetry": {
+   "name": "zn-cash-market-closed-futures-open-asymmetry",
+   "market": "ZN",
+   "tier": "demoted",
+   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
+   "metrics": {
+    "n": 6,
+    "wr": 0.8333,
+    "pf": 6.676,
+    "usd_mo": 18,
+    "usd_trade": 105.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T10:40:09.435772+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T10:46:10.359530+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T10:51:30.720138+00:00",
+     "stage": "replication",
+     "verdict": "FAIL"
+    }
+   ]
   }
  },
  "decisions": [
