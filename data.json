@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:42:49Z",
+  "stamp": "2026-07-23T18:49:19Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1056,
-  "n_results": 1233,
-  "n_trials": 68303,
+  "n_registered": 1058,
+  "n_results": 1235,
+  "n_trials": 68305,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68303,
-   "registered": 1056,
-   "tested": 854,
+   "trials": 68305,
+   "registered": 1058,
+   "tested": 856,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,20 +336,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T18:48:38.129099+00:00",
+   "hash": "3bb86679",
+   "name": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T18:47:01.359345+00:00",
+   "hash": "9d251c9f",
+   "name": "mes-dealer-zero-gamma-flip-regime-switch",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.504"
+  },
+  {
+   "t": "2026-07-23T18:43:48.716402+00:00",
+   "hash": "69936a29",
+   "name": "mcl-gsci-index-roll-sunshine-crude-weight",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.644"
+  },
+  {
    "t": "2026-07-23T18:42:30.119539+00:00",
    "hash": "5b4991b3",
    "name": "mnq-mes-mym-triangular-index-consistency-reversion",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.843"
-  },
-  {
-   "t": "2026-07-23T18:42:20.103650+00:00",
-   "hash": "69936a29",
-   "name": "mcl-gsci-index-roll-sunshine-crude-weight",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T18:41:47.063675+00:00",
@@ -414,36 +430,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.785"
-  },
-  {
-   "t": "2026-07-23T18:14:22.841140+00:00",
-   "hash": "b4932cee",
-   "name": "zc-elevator-storage-financing-rate-regime-carry-drag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.749"
-  },
-  {
-   "t": "2026-07-23T18:13:35.507327+00:00",
-   "hash": "04fcb3da",
-   "name": "mbt-utc-day-boundary-offshore-mark-nonalignment",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.2259"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-gsci-index-roll-sunshine-crude-weight",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:39:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-dealer-zero-gamma-flip-regime-switch",
     "stage": "dev3yr",
@@ -509,7 +501,7 @@
   "funnel": {
    "idea": 5,
    "registered": 166,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -570,7 +562,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27982
+    "trials": 27984
    }
   ]
  },
@@ -595,8 +587,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 174,
-   "n_killed": 144,
+   "n_tested": 175,
+   "n_killed": 145,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -644,8 +636,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 72,
-   "n_killed": 50,
+   "n_tested": 73,
+   "n_killed": 51,
    "book_sleeves": [],
    "agents_now": []
   },
