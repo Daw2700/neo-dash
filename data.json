@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:07:28Z",
+  "stamp": "2026-07-23T07:07:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T07:04:42Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-onshore-mark-gap-offshore-led-overnight-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:07:30Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "met-onshore-mark-gap-offshore-led-overnight-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 5,
     "idea": "zs-both-sided-overnight-sweep-liquidation-reversal",
@@ -510,7 +509,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 112,
    "dev3yr": 0,
    "robustness": 0,
