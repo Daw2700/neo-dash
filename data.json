@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:08:42Z",
+  "stamp": "2026-07-23T23:08:46Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-btic-close-basis-hedge-transfer",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:08:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-consumer-hedger-cohort-post-earnings-reset",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:08:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-zn-1400-settlement-print-crossmarket-stamp",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:08:46Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mes-btic-close-basis-hedge-transfer",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 2,
-    "idea": "mcl-consumer-hedger-cohort-post-earnings-reset",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 3,
-    "idea": "mes-zn-1400-settlement-print-crossmarket-stamp",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 4,
     "idea": "zn-sifma-early-close-cash-channel-truncation",
@@ -545,9 +543,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 178,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
