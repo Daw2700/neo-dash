@@ -221,7 +221,19 @@ data = {"meta": {"stamp": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H
                  "n_registered": len(regs), "n_results": len(results), "n_trials": n_trials,
                  "holdout_looks_spent": sum(1 for r in results if r.get("stage") == "holdout"),
                  "pinned_id": pinned_id,
-                 "needs_attention_count": sum(1 for d in decisions if d["needs_attention"])},
+                 "needs_attention_count": sum(1 for d in decisions if d["needs_attention"]),
+                 "lifetime": (lambda V=lambda r: str(r["metrics"].get("verdict", "")).upper(): {
+                     "trials": n_trials, "registered": len(regs),
+                     "tested": len({r["hash"] for r in results if r.get("stage") == "dev3yr"}),
+                     "passed": len({r["hash"] for r in results if r.get("stage") == "dev3yr"
+                                    and "PASSES" in V(r) and "KILLED" not in V(r)}
+                                   | {r["hash"] for r in results if r.get("stage") == "dev3yr_recheck"
+                                      and "OVERTURNED" in V(r)}),
+                     "survived": len({r["hash"] for r in results if r.get("stage") == "robustness"
+                                      and "SURVIVES" in V(r) and "DEMOT" not in V(r)}),
+                     "replicated": len({r["hash"] for r in results if r.get("stage") == "replication"
+                                        and "REPLICATES" in V(r) and "FAILS" not in V(r)}),
+                     "book": len(VALID)})()},
         "leaderboard": [{k: v for k, v in r.items() if k != "_hash"} for r in leaderboard],
         "feed": feed, "pipeline": pipeline, "markets": markets,
         "strategies": strategies, "decisions": decisions, "roadmap": roadmap,

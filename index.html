@@ -285,6 +285,7 @@ const G = {
   micros:{t:"Micro sizing",b:"Contracts of each sleeve per account, in micro futures. Sizing balances $/mo against the 20% breach cap per funding plan.",x:"micros"},
   evalplan:{t:"Eval-account plan",b:"Funded-account path: 5 Tradeify + ~18 Apex evaluations, ~$7–11k one-time cost, first payouts ~month 4 after GO, full run-rate months 6–9.",x:"eval_plan"},
   sim:{t:"Simulation-tier",b:"Every dollar figure here comes from backtests and simulation. Nothing is live money until funded accounts GO.",x:"disclaimer"},
+  lifetime:{t:"The gauntlet — all time",b:"Cumulative totals since the project began: every trial ever run, every strategy registered, and how brutally the gates cut them down. 68k+ trials become a book you can count on one hand — that ratio is the whole discipline.",x:"meta.lifetime"},
   status:{t:"Engine state",b:"What the autonomous pipeline is doing overall. 'funnel running' = scouts, testers and robustness workers are cycling on their own.",x:"meta.status"},
   agent:{t:"Agents / workers",b:"Autonomous AI workers: scouts hunt ideas (literature + data screens), testers run dev3yr backtests, robust-* run the battery, repl-* check MES replication.",x:"pipeline.workers"},
   stagefrozen:{t:"Staged & frozen",b:"The candidate's config and evidence bundle are written to the ledger and can no longer change. Nothing is lost by waiting — review when ready.",x:"gauntlet/staged/"},
@@ -429,6 +430,10 @@ function rOverview(){const m=DATA.meta;
       <div class="stat" data-g="trials"><div class="l">TRIALS RUN</div><div class="v">${fmt(m.n_trials)}</div></div>
       <div class="stat sacred" data-g="holdout"><div class="l">HOLDOUT LOOKS SPENT <span class="iico">i</span></div><div class="v">${m.holdout_looks_spent}</div></div>
     </div></div>
+  <div class="card"><h2>The gauntlet — all time <span class="iico" data-g="lifetime">i</span><span class="right">everything ever thrown at it</span></h2>
+    <div class="vfunnel">${(()=>{const L=m.lifetime;const rows=[["trials","TRIALS RUN"],["registered","STRATEGIES REGISTERED"],["tested","TESTED 3-YR"],["passed","PASSED THE BAR"],["survived","SURVIVED THE BATTERY"],["replicated","REPLICATED"],["book","IN THE BOOK"]];const W=[100,86,72,58,45,33,24];
+      return rows.map(([k,l],i)=>{const t=i<rows.length-1?(1-W[i+1]/W[i])*50:8;
+        return`<div class="vlayer" style="width:${W[i]}%"><div class="vseg ${i===rows.length-1?"hot":""}" data-g="lifetime" style="clip-path:polygon(0 0,100% 0,${100-t}% 100%,${t}% 100%)"><div class="fv">${fmt(L[k])}</div><div class="fl">${l}</div></div></div>`}).join("")+`<div class="vdrop"></div>`})()}</div></div>
   <div class="card"><h2>Leaderboard — top 20 <span class="right" data-g="dev3yr">dev3yr · $ per 1 micro contract</span></h2>
     ${lbHead}${lbRows(DATA.leaderboard,20)}</div>
   <div class="card"><h2>Activity <span class="right" data-g="gauntlet">append-only ledger</span></h2>
