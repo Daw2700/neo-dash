@@ -142,12 +142,12 @@
     "max_micros": 8
    }
   },
-  "mcl-3day-selloff-capitulation-close-reversal": {
+  "mcl-precautionary-demand-decay": {
    "growth": {
-    "max_micros": 8
+    "max_micros": 5
    },
    "apex150": {
-    "max_micros": 8
+    "max_micros": 4
    }
   }
  },
@@ -171,21 +171,20 @@
     "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1,
-    "mcl-3day-selloff-capitulation-close-reversal": 1
+    "mgc-china-lpr-fix-evening-window": 1
    },
-   "total_micros": 18,
-   "p_breach": 0.194,
-   "usd_mo": 1435,
-   "usd_mo_5acct": 7175,
-   "pct_goal": 0.718,
+   "total_micros": 17,
+   "p_breach": 0.19,
+   "usd_mo": 1428,
+   "usd_mo_5acct": 7140,
+   "pct_goal": 0.714,
    "wr": 0.548,
    "wr_month": 0.917,
    "months": {
     "win_per_yr": 11.0,
     "lose_per_yr": 1.0,
-    "avg_win": 2398,
-    "avg_lose": -1697
+    "avg_win": 2382,
+    "avg_lose": -1670
    },
    "first_pay_days": 70,
    "pay_rate_1yr": 0.973
@@ -321,6 +320,37 @@
    "pay_rate_1yr": 0.992
   },
   {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 3,
+    "b2-vix-reversion": 5,
+    "b3-preholiday-drift": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "mcl-precautionary-demand-decay": 4,
+    "mgc-china-lpr-fix-evening-window": 2,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 22,
+   "p_breach": 0.19,
+   "usd_mo": 773,
+   "usd_mo_5acct": 3865,
+   "pct_goal": 0.387,
+   "wr": 0.61,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2660,
+    "avg_lose": -1096
+   },
+   "first_pay_days": 101,
+   "pay_rate_1yr": 0.813
+  },
+  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -440,36 +470,6 @@
    },
    "first_pay_days": 53,
    "pay_rate_1yr": 0.986
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 4,
-    "b2-vix-reversion": 5,
-    "b3-preholiday-drift": 3,
-    "mcl-3day-selloff-capitulation-close-reversal": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 21,
-   "p_breach": 0.172,
-   "usd_mo": 617,
-   "usd_mo_5acct": 3085,
-   "pct_goal": 0.308,
-   "wr": 0.609,
-   "wr_month": 0.667,
-   "months": {
-    "win_per_yr": 8.0,
-    "lose_per_yr": 4.0,
-    "avg_win": 2883,
-    "avg_lose": -1163
-   },
-   "first_pay_days": 102,
-   "pay_rate_1yr": 0.802
   },
   {
    "id": "Frequent-firing engine|apex150",

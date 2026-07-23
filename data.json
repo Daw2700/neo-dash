@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:50:23Z",
+  "stamp": "2026-07-23T19:54:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1073,
-  "n_results": 1256,
-  "n_trials": 71352,
+  "n_results": 1258,
+  "n_trials": 71354,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71352,
+   "trials": 71354,
    "registered": 1073,
    "tested": 872,
    "passed": 164,
@@ -327,10 +327,30 @@
    "wr": 0.5918,
    "usd_mo": 57,
    "pf": 1.472,
-   "usd_trade": 20.8
+   "usd_trade": 20.8,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T19:53:31.486796+00:00",
+   "hash": "3fcc999e",
+   "name": "mgc-gold-oil-ratio-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.036"
+  },
+  {
+   "t": "2026-07-23T19:51:32.376010+00:00",
+   "hash": "3fcc999e",
+   "name": "mgc-gold-oil-ratio-reversion",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T19:46:46.463493+00:00",
    "hash": "8b976c3d",
@@ -410,22 +430,6 @@
    "status": "result",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T19:29:36.549592+00:00",
-   "hash": "347f0de4",
-   "name": "conviction-close-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.12"
-  },
-  {
-   "t": "2026-07-23T19:28:42.241214+00:00",
-   "hash": "1fa8d85b",
-   "name": "mes-cross-micro-dispersion-derisk",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.951"
   }
  ],
  "pipeline": {
@@ -444,6 +448,14 @@
     "task": "mgc-gold-oil-ratio-macro-rotation-reversion",
     "stage": "dev3yr",
     "started": "2026-07-23T19:44:10Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "recheck: mgc-gold-oil-ratio-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T19:50:25Z",
     "state": "running"
    }
   ],
@@ -479,7 +491,7 @@
   "funnel": {
    "idea": 3,
    "registered": 165,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -540,7 +552,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31028
+    "trials": 31030
    }
   ]
  },
@@ -1430,7 +1442,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   }
  },
  "decisions": [
@@ -1778,27 +1794,26 @@
     "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1,
-    "mcl-3day-selloff-capitulation-close-reversal": 1
+    "mgc-china-lpr-fix-evening-window": 1
    },
-   "total_micros": 18,
-   "p_breach": 0.194,
-   "usd_mo": 1435,
-   "usd_mo_5acct": 7175,
-   "pct_goal": 0.718,
+   "total_micros": 17,
+   "p_breach": 0.19,
+   "usd_mo": 1428,
+   "usd_mo_5acct": 7140,
+   "pct_goal": 0.714,
    "wr": 0.548,
    "wr_month": 0.917,
    "months": {
     "win_per_yr": 11.0,
     "lose_per_yr": 1.0,
-    "avg_win": 2398,
-    "avg_lose": -1697
+    "avg_win": 2382,
+    "avg_lose": -1670
    },
    "first_pay_days": 70,
    "pay_rate_1yr": 0.973,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 7175
+   "usd_mo_total": 7140
   },
   {
    "id": "Cross-market spread|growth",
@@ -1937,6 +1952,40 @@
    "usd_mo_total": 4266
   },
   {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b10-nagel-vix-reversal": 3,
+    "b2-vix-reversion": 5,
+    "b3-preholiday-drift": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "mcl-precautionary-demand-decay": 4,
+    "mgc-china-lpr-fix-evening-window": 2,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 22,
+   "p_breach": 0.19,
+   "usd_mo": 773,
+   "usd_mo_5acct": 3865,
+   "pct_goal": 0.387,
+   "wr": 0.61,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2660,
+    "avg_lose": -1096
+   },
+   "first_pay_days": 101,
+   "pay_rate_1yr": 0.813,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 3865
+  },
+  {
    "id": "Frequent-firing engine|growth",
    "name": "Frequent-firing engine",
    "plan": "tradeify-growth",
@@ -1966,39 +2015,6 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 3855
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b10-nagel-vix-reversal": 4,
-    "b2-vix-reversion": 5,
-    "b3-preholiday-drift": 3,
-    "mcl-3day-selloff-capitulation-close-reversal": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 21,
-   "p_breach": 0.172,
-   "usd_mo": 617,
-   "usd_mo_5acct": 3085,
-   "pct_goal": 0.308,
-   "wr": 0.609,
-   "wr_month": 0.667,
-   "months": {
-    "win_per_yr": 8.0,
-    "lose_per_yr": 4.0,
-    "avg_win": 2883,
-    "avg_lose": -1163
-   },
-   "first_pay_days": 102,
-   "pay_rate_1yr": 0.802,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 3085
   }
  ],
  "sizing_meta": {
