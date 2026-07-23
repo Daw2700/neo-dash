@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:25:05Z",
+  "stamp": "2026-07-23T21:34:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1099,
-  "n_results": 1288,
-  "n_trials": 71384,
+  "n_registered": 1102,
+  "n_results": 1291,
+  "n_trials": 71387,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71384,
-   "registered": 1099,
-   "tested": 892,
+   "trials": 71387,
+   "registered": 1102,
+   "tested": 893,
    "passed": 167,
    "survived": 36,
    "replicated": 13,
@@ -278,22 +278,6 @@
    }
   },
   {
-   "id": "zn-withheld-tax-receipts-labor-nowcast-drift",
-   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
-   "market": "ZN",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 35,
-   "wr": 60.0,
-   "usd_mo": 141,
-   "pf": 2.54,
-   "usd_trade": 144.7,
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
-  },
-  {
    "id": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -332,9 +316,61 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  {
+   "id": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 93,
+   "wr": 0.6237,
+   "usd_mo": 76,
+   "pf": 1.687,
+   "usd_trade": 29.4
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T21:30:35.005314+00:00",
+   "hash": "4b757361",
+   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T21:29:55.566825+00:00",
+   "hash": "bc03e1cb",
+   "name": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.435"
+  },
+  {
+   "t": "2026-07-23T21:29:40.888982+00:00",
+   "hash": "da646473",
+   "name": "mgc-cross-asset-hedge-demand-absence-carry-drag",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 1.081"
+  },
+  {
+   "t": "2026-07-23T21:27:36.822439+00:00",
+   "hash": "445bdc65",
+   "name": "mgc-cross-asset-hedge-demand-absence-carry-drag-REPLICATION-1237",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T21:27:20.799812+00:00",
+   "hash": "ed979524",
+   "name": "zn-withheld-tax-receipts-labor-nowcast-drift-ROBUSTNESS-1238",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T21:19:39.095569+00:00",
    "hash": "da646473",
@@ -390,46 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-23T20:50:56.916647+00:00",
-   "hash": "ac55cc5f",
-   "name": "sil-india-import-duty-change-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.538"
-  },
-  {
-   "t": "2026-07-23T20:49:28.838377+00:00",
-   "hash": "5ff34a16",
-   "name": "zn-tips-accrual-carry-seasonality-nominal-channel",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.911"
-  },
-  {
-   "t": "2026-07-23T20:48:07.729818+00:00",
-   "hash": "dd246320",
-   "name": "mng-ngl-fractionation-spread-substitution-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T20:47:34.592792+00:00",
-   "hash": "ba8c8306",
-   "name": "mgc-swiss-customs-flow-stamp",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.717"
-  },
-  {
-   "t": "2026-07-23T20:43:39.663546+00:00",
-   "hash": "84ed2208",
-   "name": "m6e-ecb-reinvestment-taper-step-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9036"
   }
  ],
  "pipeline": {
@@ -437,21 +433,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "replication: mgc-cross-asset-hedge-demand-absence-carry-drag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T21:25:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "robustness: zn-withheld-tax-receipts-labor-nowcast-drift",
     "stage": "dev3yr",
     "started": "2026-07-23T21:25:05Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-shfe-preholiday-margin-hike-forced-deleveraging",
     "stage": "dev3yr",
@@ -535,11 +523,11 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 170,
-   "dev3yr": 3,
+   "registered": 172,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 15,
+   "book_candidate": 13,
    "golden_staged": 1
   },
   "throughput": [
@@ -597,7 +585,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31060
+    "trials": 31063
    }
   ]
  },
@@ -653,8 +641,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 62,
-   "n_killed": 51,
+   "n_tested": 63,
+   "n_killed": 52,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1375,30 +1363,6 @@
     "apex_max": 2
    }
   },
-  "zn-withheld-tax-receipts-labor-nowcast-drift": {
-   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
-   "market": "ZN",
-   "tier": "candidate",
-   "mechanism": "The Daily Treasury Statement publishes withheld income and employment tax receipts daily with a one-day lag, an unrevised census-level wage-income measure that mechanically leads the BLS payroll print; rates reprice on the monthly print so whoever waits for BLS pays whoever tracked the receipts trend divergence from consensus in advance.",
-   "metrics": {
-    "n": 35,
-    "wr": 60.0,
-    "pf": 2.54,
-    "usd_mo": 141,
-    "usd_trade": 144.7
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T21:14:01.814471+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
-  },
   "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end": {
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
    "market": "MCL",
@@ -1492,6 +1456,36 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  "mes-petrodollar-recycling-sovereign-inflow-lag": {
+   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Sustained high crude oil revenue accrues to oil-exporting sovereign wealth funds, which redeploy into global equities on a budgeting cycle that lags the revenue accrual by roughly one quarter, so a slow flow-driven equity bid is conditional on LAGGED cumulative crude return rather than contemporaneous crude moves.",
+   "metrics": {
+    "n": 93,
+    "wr": 0.6237,
+    "pf": 1.687,
+    "usd_mo": 76,
+    "usd_trade": 29.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T20:20:55.649694+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T20:27:13.722963+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T20:37:13.372105+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
   }
  },
  "decisions": [
