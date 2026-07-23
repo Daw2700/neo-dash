@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:38:25Z",
+  "stamp": "2026-07-23T23:38:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:38:01Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "xmkt-inverse-variance-exposure-scaling",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:38:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-storage-response-lag-monthly-mean-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:38:26Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 2,
-    "idea": "xmkt-inverse-variance-exposure-scaling",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.58
-   },
-   {
-    "rank": 1,
-    "idea": "mcl-storage-response-lag-monthly-mean-reversion",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "xmkt-scheduled-announcement-day-premium",
@@ -572,9 +570,9 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 12,
    "registered": 179,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
