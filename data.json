@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:15:08Z",
+  "stamp": "2026-07-23T12:19:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 938,
-  "n_results": 1118,
-  "n_trials": 49254,
+  "n_results": 1119,
+  "n_trials": 49255,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -169,22 +169,6 @@
    "usd_trade": 94.1
   },
   {
-   "id": "mcl-holiday-shifted-eia-print-day-relocation",
-   "name": "mcl-holiday-shifted-eia-print-day-relocation",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 25,
-   "wr": 0.64,
-   "usd_mo": 23,
-   "pf": 2.118,
-   "usd_trade": 32.9,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  {
    "id": "mes-wk10-derisk",
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -311,9 +295,29 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  {
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T12:17:22.360992+00:00",
+   "hash": "f5c3ba92",
+   "name": "mcl-holiday-shifted-eia-print-day-relocation",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T12:13:38.568666+00:00",
    "hash": "2db6299e",
@@ -401,36 +405,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T11:49:04.522979+00:00",
-   "hash": "3c6de963",
-   "name": "mng-inventory-scarcity-scaled-reversal-premium",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.259"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "robustness: m2k-floatrate-level-asymmetry",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:05:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-holiday-shifted-eia-print-day-relocation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:05:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "robustness: mcl-holiday-shifted-eia-print-day-relocation",
     "stage": "dev3yr",
@@ -531,7 +511,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18652
+    "trials": 18653
    }
   ]
  },
@@ -1052,30 +1032,6 @@
     }
    ]
   },
-  "mcl-holiday-shifted-eia-print-day-relocation": {
-   "name": "mcl-holiday-shifted-eia-print-day-relocation",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "On the ~27 dev-window weeks where a Mon/Tue/Wed federal holiday pushes the EIA Weekly Petroleum Status Report from its habitual Wednesday 10:30 ET slot to Thursday 10:30 ET, participants anchored to the usual weekday must carry unhedged inventory risk through an extra, unresolved session (the now-quiet Wednesday) before the report finally lands Thursday, and should demand price compensation (a long risk premium) for bearing that extra day of unresolved inventory risk, distinct from the empty-slot push-fade already tested in mcl-eia-release-shift-stranded-positioning (467) and from the normal-schedule interprint behaviour in mcl-interprint-thursday-freeze (1061).",
-   "metrics": {
-    "n": 25,
-    "wr": 0.64,
-    "pf": 2.118,
-    "usd_mo": 23,
-    "usd_trade": 32.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T12:09:11.547685+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
   "mes-wk10-derisk": {
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -1365,6 +1321,36 @@
     "growth_max": 5,
     "apex_max": 3
    }
+  },
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "metrics": {
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
   }
  },
  "decisions": [
