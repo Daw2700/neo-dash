@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:28:50Z",
+  "stamp": "2026-07-23T08:29:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 860,
-  "n_results": 1041,
-  "n_trials": 49177,
+  "n_results": 1042,
+  "n_trials": 49178,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T08:28:59.800039+00:00",
+   "hash": "da95f05a",
+   "name": "zc-grain-stocks-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.006"
+  },
+  {
    "t": "2026-07-23T08:28:30.878224+00:00",
    "hash": "359035db",
    "name": "m2k-crsp-packeting-transition-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.389"
-  },
-  {
-   "t": "2026-07-23T08:28:09.684730+00:00",
-   "hash": "da95f05a",
-   "name": "zc-grain-stocks-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T08:12:37.717022+00:00",
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-grain-stocks-measurement-print-persistence",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:25:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-msci-quarterly-review-effective-close",
     "stage": "dev3yr",
@@ -523,7 +515,7 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 115,
+   "registered": 114,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -585,7 +577,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18575
+    "trials": 18576
    }
   ]
  },
@@ -712,8 +704,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 43,
-   "n_killed": 37,
+   "n_tested": 44,
+   "n_killed": 38,
    "book_sleeves": [],
    "agents_now": []
   },
