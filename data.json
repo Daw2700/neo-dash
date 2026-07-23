@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:22:17Z",
+  "stamp": "2026-07-23T12:22:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mcl-holiday-shifted-eia-print-day-relocation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:11:36Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-quarterly-vs-serial-expiry-dose-response",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-us-holiday-london-only-discovery-catchup",
     "stage": "dev3yr",
