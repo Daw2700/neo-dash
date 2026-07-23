@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:14:41Z",
+  "stamp": "2026-07-23T08:15:04Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 858,
   "n_results": 1040,
@@ -413,14 +413,6 @@
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MET",
-    "task": "met-staking-yield-frontend-rate-competition-lag",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:07:42Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
