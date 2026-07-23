@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:49:31Z",
+  "stamp": "2026-07-23T07:49:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T07:49:09Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-housing-release-homebuilder-weight-channel",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:49:33Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "m2k-housing-release-homebuilder-weight-channel",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "mnq-single-stock-levetf-megacap-close-amplification",
@@ -505,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 7,
    "registered": 112,
    "dev3yr": 0,
    "robustness": 0,
