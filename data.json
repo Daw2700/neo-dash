@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:40:42Z",
+  "stamp": "2026-07-23T02:45:19Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 746,
-  "n_results": 915,
-  "n_trials": 30903,
+  "n_registered": 749,
+  "n_results": 918,
+  "n_trials": 30906,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:44:48.492312+00:00",
+   "hash": "7e03cfec",
+   "name": "mgc-weekly-monwed-option-assignment-flow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.751"
+  },
+  {
+   "t": "2026-07-23T02:43:55.459069+00:00",
+   "hash": "c88c02e0",
+   "name": "mnq-duration-lag-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.963"
+  },
+  {
+   "t": "2026-07-23T02:42:41.259660+00:00",
+   "hash": "c44e2ded",
+   "name": "mes-structured-note-strike-setting-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.728"
+  },
+  {
    "t": "2026-07-23T02:37:42.174834+00:00",
    "hash": "051717c0",
    "name": "mbt-uniform-volume-distribution-continuation",
@@ -369,30 +393,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.546"
-  },
-  {
-   "t": "2026-07-23T02:12:09.512329+00:00",
-   "hash": "16209d6d",
-   "name": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.304"
-  },
-  {
-   "t": "2026-07-23T02:11:31.881905+00:00",
-   "hash": "2e7e8afd",
-   "name": "scout-51-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T02:09:32.771486+00:00",
-   "hash": "fe7b4980",
-   "name": "mnq-volpeak-extreme-order",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.16"
   }
  ],
  "pipeline": {
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-structured-note-strike-setting-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T02:40:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-equity-duration-ratio-rate-shock-lag",
     "stage": "dev3yr",
@@ -422,7 +414,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MGC",
     "task": "mgc-weekly-monwed-option-assignment-flow",
     "stage": "dev3yr",
@@ -559,7 +551,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 67
+    "trials": 70
    }
   ]
  },
@@ -583,8 +575,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 126,
-   "n_killed": 98,
+   "n_tested": 127,
+   "n_killed": 99,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -612,8 +604,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 43,
-   "n_killed": 35,
+   "n_tested": 44,
+   "n_killed": 36,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -677,8 +669,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 62,
-   "n_killed": 53,
+   "n_tested": 63,
+   "n_killed": 54,
    "book_sleeves": [],
    "agents_now": []
   },
