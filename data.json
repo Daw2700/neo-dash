@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:46:20Z",
+  "stamp": "2026-07-23T15:46:42Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,14 +419,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-forward-event-load-anticipatory-derisk",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:38:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "robustness: zn-fr2004-dealer-inventory-capacity-state",
     "stage": "dev3yr",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-lbma-lease-rate-physical-tightness-transmission",
     "stage": "dev3yr",
