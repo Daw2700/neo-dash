@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:31:38Z",
+  "stamp": "2026-07-23T04:31:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T04:28:52Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-goodside-semibeta-insurance-drag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:31:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "zn-goodside-semibeta-insurance-drag",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.48
-   },
    {
     "rank": 8,
     "idea": "m6e-post-fix-us-hours-uninformed-flow-absorption",
@@ -487,7 +486,7 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
