@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:47:01Z",
+  "stamp": "2026-07-23T00:49:35Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 710,
-  "n_results": 870,
-  "n_trials": 30858,
+  "n_registered": 712,
+  "n_results": 872,
+  "n_trials": 30860,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6
@@ -201,6 +201,18 @@
    "usd_trade": 61.6
   },
   {
+   "id": "zs-china-state-reserve-auction-window",
+   "name": "zs-china-state-reserve-auction-window",
+   "market": "ZS",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 108,
+   "wr": 0.5185,
+   "usd_mo": 433,
+   "pf": 1.658,
+   "usd_trade": 144.4
+  },
+  {
    "id": "mcl-hurricane-supplyrisk-decay",
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -283,21 +295,33 @@
    "usd_mo": 61,
    "pf": 1.325,
    "usd_trade": 14.3
-  },
-  {
-   "id": "mnq-cost-basis-overhang-underreaction",
-   "name": "mnq-cost-basis-overhang-underreaction",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 5,
-   "wr": 0.6,
-   "usd_mo": 8,
-   "pf": 1.283,
-   "usd_trade": 58.3
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T00:48:46.428543+00:00",
+   "hash": "b1927210",
+   "name": "sil-pv-gridconnection-deadline-demand-pulse",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.622"
+  },
+  {
+   "t": "2026-07-23T00:47:45.561320+00:00",
+   "hash": "bf6ad9e5",
+   "name": "scout-49-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T00:47:04.227373+00:00",
+   "hash": "109efb3a",
+   "name": "zs-china-state-reserve-auction-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.658"
+  },
   {
    "t": "2026-07-23T00:46:36.999032+00:00",
    "hash": "d3ac9060",
@@ -313,14 +337,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.433"
-  },
-  {
-   "t": "2026-07-23T00:45:29.672868+00:00",
-   "hash": "109efb3a",
-   "name": "zs-china-state-reserve-auction-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T00:41:31.127556+00:00",
@@ -377,34 +393,10 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.909"
-  },
-  {
-   "t": "2026-07-23T00:31:46.331344+00:00",
-   "hash": "ab98bb65",
-   "name": "m2k-monthend-overnight-only-allocation-hedge",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T00:30:32.229314+00:00",
-   "hash": "ff3ec484",
-   "name": "zn-monthend-note-settlement-duration-supply",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.601"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-china-state-reserve-auction-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:44:07Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "SIL",
     "task": "sil-pv-gridconnection-deadline-demand-pulse",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 22
+    "trials": 24
    }
   ]
  },
@@ -549,8 +541,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 11,
-   "n_killed": 8,
+   "n_tested": 12,
+   "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -623,7 +615,7 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 11,
+   "n_tested": 12,
    "n_killed": 9,
    "book_sleeves": [],
    "agents_now": []
@@ -1074,6 +1066,26 @@
     }
    ]
   },
+  "zs-china-state-reserve-auction-window": {
+   "name": "zs-china-state-reserve-auction-window",
+   "market": "ZS",
+   "tier": "candidate",
+   "mechanism": "Sinograin/state-reserve rotation auctions for soybeans and oilseeds are scheduled events that either withdraw supply from or release supply into the domestic Chinese market on a known day; board crush and export-basis participants must adjust hedges into that announced date, so risk transfers on a schedule rather than on news, producing hedge-flow pressure in the sessions leading into the recurring auction date.",
+   "metrics": {
+    "n": 108,
+    "wr": 0.5185,
+    "pf": 1.658,
+    "usd_mo": 433,
+    "usd_trade": 144.4
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T00:47:04.227373+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-hurricane-supplyrisk-decay": {
    "name": "mcl-hurricane-supplyrisk-decay",
    "market": "MCL",
@@ -1243,26 +1255,6 @@
      "t": "2026-07-22T14:15:41.271464+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
-    }
-   ]
-  },
-  "mnq-cost-basis-overhang-underreaction": {
-   "name": "mnq-cost-basis-overhang-underreaction",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Disposition-prone MNQ holders sell winners early and refuse to realise losers, so price underreacts until the volume-weighted (turnover-decayed) reference cost-basis price is crossed; constrained holders then capitulate, releasing the pent-up move, so trading the break of that reference price (gated by the size of the prior unrealised overhang) should show positive expectancy.",
-   "metrics": {
-    "n": 5,
-    "wr": 0.6,
-    "pf": 1.283,
-    "usd_mo": 8,
-    "usd_trade": 58.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:20:02.231812+00:00",
-     "stage": "dev3yr",
-     "verdict": "KILLED"
     }
    ]
   }
