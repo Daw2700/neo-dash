@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:43:56Z",
+  "stamp": "2026-07-23T05:43:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T05:40:29Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "xmkt-post-settlement-breadth-coherence-late-afternoon",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:43:58Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-dynamic-circuit-breaker-band-proximity-acceleration",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:43:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "xmkt-post-settlement-breadth-coherence-late-afternoon",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.44
-   },
-   {
-    "rank": 5,
-    "idea": "mnq-dynamic-circuit-breaker-band-proximity-acceleration",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 6,
     "idea": "mnq-market-order-protection-point-residual-snapback",
@@ -506,7 +504,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
