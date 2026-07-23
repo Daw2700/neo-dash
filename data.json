@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:12:58Z",
+  "stamp": "2026-07-23T23:13:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:11:13Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-margin-reduction-releveraging-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:13:00Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-wasde-revision-vs-count-prepriced-event",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:13:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mgc-margin-reduction-releveraging-window",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.31
-   },
-   {
-    "rank": 6,
-    "idea": "zc-wasde-revision-vs-count-prepriced-event",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 7,
     "idea": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
@@ -518,9 +516,9 @@
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 6,
    "registered": 178,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
