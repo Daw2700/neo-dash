@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:43:47Z",
+  "stamp": "2026-07-23T19:44:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -432,14 +432,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-cross-micro-skew-dispersion-crash-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:36:11Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mcl-3day-selloff-capitulation-close-reversal",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-precautionary-demand-premium-multiasset-decay",
     "stage": "dev3yr",
@@ -496,7 +488,7 @@
   "funnel": {
    "idea": 4,
    "registered": 165,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
