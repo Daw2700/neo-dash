@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:03:48Z",
+  "stamp": "2026-07-23T11:10:08Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 911,
-  "n_results": 1093,
-  "n_trials": 49229,
+  "n_registered": 914,
+  "n_results": 1096,
+  "n_trials": 49232,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -169,22 +169,6 @@
    "usd_trade": 94.1
   },
   {
-   "id": "mcl-first-week-producer-hedge-participation-spike",
-   "name": "mcl-first-week-producer-hedge-participation-spike",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 72,
-   "wr": 0.5278,
-   "usd_mo": 113,
-   "pf": 2.198,
-   "usd_trade": 56.3,
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
-  },
-  {
    "id": "mes-wk10-derisk",
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -253,22 +237,6 @@
    }
   },
   {
-   "id": "mes-bd4-inflow-exhaustion-fade",
-   "name": "mes-bd4-inflow-exhaustion-fade",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 35,
-   "wr": 0.4857,
-   "usd_mo": 28,
-   "pf": 1.487,
-   "usd_trade": 29.1,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 6
-   }
-  },
-  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -311,9 +279,73 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
+  },
+  {
+   "id": "mcl-closure-length-dose-response-reopen-overshoot",
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 154,
+   "wr": 0.526,
+   "usd_mo": 61,
+   "pf": 1.325,
+   "usd_trade": 14.3
+  },
+  {
+   "id": "b3-prior-high-break",
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 235,
+   "wr": 0.498,
+   "usd_mo": 127,
+   "pf": 1.237,
+   "usd_trade": 19.5
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T11:08:48.150628+00:00",
+   "hash": "9080a6f8",
+   "name": "mes-bd4-inflow-exhaustion-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T11:07:41.744845+00:00",
+   "hash": "61a2ab7e",
+   "name": "mcl-first-week-producer-hedge-participation-spike",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.839"
+  },
+  {
+   "t": "2026-07-23T11:05:26.822669+00:00",
+   "hash": "a28aa195",
+   "name": "mcl-first-week-producer-hedge-participation-spike-REPLICATION-1053",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T11:05:16.190528+00:00",
+   "hash": "7fd6bf6d",
+   "name": "ROBUSTNESS-BATTERY mes-bd4-inflow-exhaustion-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T11:05:15.891542+00:00",
+   "hash": "611516df",
+   "name": "mng-thin-book-preclose-impact-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.512"
+  },
   {
    "t": "2026-07-23T10:58:01.905004+00:00",
    "hash": "61a2ab7e",
@@ -369,46 +401,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.1555"
-  },
-  {
-   "t": "2026-07-23T10:42:08.096461+00:00",
-   "hash": "47103f49",
-   "name": "mnq-overnight-envelope-deferred",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T10:38:46.917362+00:00",
-   "hash": "609dfa02",
-   "name": "mgc-first-business-day-index-allocation-print",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.997"
-  },
-  {
-   "t": "2026-07-23T10:38:39.654325+00:00",
-   "hash": "d6512c7b",
-   "name": "ROBUSTNESS-BATTERY mnq-overnight-envelope-deferred",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T10:37:24.025791+00:00",
-   "hash": "1dcc3bbb",
-   "name": "mgc-first-business-day-index-allocation-print-REPLICATION-1046",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T10:36:59.913595+00:00",
-   "hash": "9edb5ec8",
-   "name": "zn-tic-foreign-holdings-release-deferred-repricing",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.339"
   }
  ],
  "pipeline": {
@@ -436,20 +428,12 @@
     "stage": "dev3yr",
     "started": "2026-07-23T11:03:26Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MNG",
-    "task": "mng-thin-book-preclose-impact-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-23T11:03:26Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 129,
+   "registered": 131,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -511,7 +495,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18627
+    "trials": 18630
    }
   ]
  },
@@ -591,8 +575,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 25,
+   "n_tested": 30,
+   "n_killed": 26,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1032,35 +1016,6 @@
     }
    ]
   },
-  "mcl-first-week-producer-hedge-participation-spike": {
-   "name": "mcl-first-week-producer-hedge-participation-spike",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Crude's monthly physical pricing cycle concentrates term-contract nominations and index-pricing days in the first week of the calendar month, pulling producer/hedger selling supply into a narrow window; the elevated session volume z-score on these days (not a thin book) is the distinguishing signature that this is a genuine supply event, so we are paid for absorbing that price-insensitive hedge flow by shorting MCL RTH on the first-week business-day cells the screen flagged (BD1, BD3).",
-   "metrics": {
-    "n": 72,
-    "wr": 0.5278,
-    "pf": 2.198,
-    "usd_mo": 113,
-    "usd_trade": 56.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T10:50:41.635960+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T10:58:01.905004+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    }
-   ],
-   "sizing": {
-    "growth_max": 6,
-    "apex_max": 4
-   }
-  },
   "mes-wk10-derisk": {
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -1219,30 +1174,6 @@
     "apex_max": 0
    }
   },
-  "mes-bd4-inflow-exhaustion-fade": {
-   "name": "mes-bd4-inflow-exhaustion-fade",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Turn-of-month retirement and index inflows have a fixed duration that runs out after the third business day of the month, while month-start hedging and rebalancing supply persists into the following session; BD4 (the 4th NASDAQ trading day of the calendar month) is therefore the first day on which the mandated bid is gone but the mandated offer is not, so RTH should show a short-side drift on that specific day.",
-   "metrics": {
-    "n": 35,
-    "wr": 0.4857,
-    "pf": 1.487,
-    "usd_mo": 28,
-    "usd_trade": 29.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T10:51:25.835014+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 6
-   }
-  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1338,6 +1269,66 @@
      "t": "2026-07-22T07:46:52.300888+00:00",
      "stage": "replication",
      "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "mcl-closure-length-dose-response-reopen-overshoot": {
+   "name": "mcl-closure-length-dose-response-reopen-overshoot",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
+   "metrics": {
+    "n": 154,
+    "wr": 0.526,
+    "pf": 1.325,
+    "usd_mo": 61,
+    "usd_trade": 14.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-22T14:10:08.535860+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-22T14:13:24.952332+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-22T14:15:41.271464+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ]
+  },
+  "b3-prior-high-break": {
+   "name": "b3-prior-high-break",
+   "market": "MNQ",
+   "tier": "candidate",
+   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
+   "metrics": {
+    "n": 235,
+    "wr": 0.498,
+    "pf": 1.237,
+    "usd_mo": 127,
+    "usd_trade": 19.5
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-21T05:21:22.937526+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.917188+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.712645+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
     }
    ]
   }
