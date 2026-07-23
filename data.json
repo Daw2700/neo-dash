@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:49:46Z",
+  "stamp": "2026-07-23T20:51:11Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1093,
-  "n_results": 1281,
-  "n_trials": 71377,
+  "n_registered": 1094,
+  "n_results": 1282,
+  "n_trials": 71378,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71377,
-   "registered": 1093,
-   "tested": 887,
+   "trials": 71378,
+   "registered": 1094,
+   "tested": 888,
    "passed": 165,
    "survived": 35,
    "replicated": 13,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:50:56.916647+00:00",
+   "hash": "ac55cc5f",
+   "name": "sil-india-import-duty-change-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.538"
+  },
+  {
    "t": "2026-07-23T20:49:28.838377+00:00",
    "hash": "5ff34a16",
    "name": "zn-tips-accrual-carry-seasonality-nominal-channel",
@@ -422,14 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T20:20:55.649694+00:00",
-   "hash": "8b298a3a",
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.687"
   }
  ],
  "pipeline": {
@@ -449,21 +449,13 @@
     "stage": "idea-scout",
     "started": "2026-07-23T20:48:22Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "SIL",
-    "task": "sil-india-import-duty-change-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T20:48:22Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 170,
-   "dev3yr": 2,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -524,7 +516,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31053
+    "trials": 31054
    }
   ]
  },
@@ -589,8 +581,8 @@
    "ticker": "SIL",
    "display": "Silver",
    "status": "active",
-   "n_tested": 19,
-   "n_killed": 14,
+   "n_tested": 20,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   },
