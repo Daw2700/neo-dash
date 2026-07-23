@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:40:11Z",
+  "stamp": "2026-07-23T04:42:15Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
   "n_registered": 785,
-  "n_results": 957,
-  "n_trials": 39824,
+  "n_results": 958,
+  "n_trials": 39825,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:41:58.558658+00:00",
+   "hash": "a2d04ab0",
+   "name": "zc-dispersion-gated-overnight-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.685"
+  },
+  {
    "t": "2026-07-23T04:39:48.584584+00:00",
    "hash": "cce978ba",
    "name": "sil-china-session-metals-information-ratification",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.852"
-  },
-  {
-   "t": "2026-07-23T04:39:35.460416+00:00",
-   "hash": "a2d04ab0",
-   "name": "zc-dispersion-gated-overnight-reversal",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:39:14.504519+00:00",
@@ -414,14 +414,6 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-dispersion-gated-overnight-intraday-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:37:42Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-rank-effect-extreme-position-liquidation",
     "stage": "dev3yr",
@@ -441,7 +433,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 107,
+   "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -503,7 +495,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8988
+    "trials": 8989
    }
   ]
  },
@@ -630,8 +622,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 38,
-   "n_killed": 32,
+   "n_tested": 39,
+   "n_killed": 33,
    "book_sleeves": [],
    "agents_now": []
   },
