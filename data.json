@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:57:38Z",
+  "stamp": "2026-07-23T16:57:40Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -424,35 +424,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-buyback-constant-notional-lowadv-amplification",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:57:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-monthly-vwap-benchmark-completion-pressure",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:57:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-monthend-corporate-remeasurement-trueup",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:57:40Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-buyback-constant-notional-lowadv-amplification",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 8,
-    "idea": "mes-monthly-vwap-benchmark-completion-pressure",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 9,
-    "idea": "m6e-monthend-corporate-remeasurement-trueup",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.37
-   },
    {
     "rank": 10,
     "idea": "zn-onetick-absorption-shelf-exhaustion-continuation",
@@ -491,7 +489,7 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 4,
    "registered": 158,
    "dev3yr": 0,
    "robustness": 0,
