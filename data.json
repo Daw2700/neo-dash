@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:43:26Z",
+  "stamp": "2026-07-23T08:48:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 865,
-  "n_results": 1047,
-  "n_trials": 49183,
+  "n_registered": 868,
+  "n_results": 1050,
+  "n_trials": 49186,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -281,6 +281,18 @@
    }
   },
   {
+   "id": "mes-1256-mtm-placeholder-substitution-window",
+   "name": "mes-1256-mtm-placeholder-substitution-window",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 30,
+   "wr": 0.5667,
+   "usd_mo": 10,
+   "pf": 1.199,
+   "usd_trade": 11.8
+  },
+  {
    "id": "mes-depth-consumption-print-size-range-forecast",
    "name": "mes-depth-consumption-print-size-range-forecast",
    "market": "MES",
@@ -295,25 +307,33 @@
     "growth_max": 5,
     "apex_max": 3
    }
-  },
-  {
-   "id": "zn-cash-market-closed-futures-open-asymmetry",
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "pinned": false,
-   "n": 6,
-   "wr": 0.8333,
-   "usd_mo": 18,
-   "pf": 6.676,
-   "usd_trade": 105.1,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T08:47:28.344782+00:00",
+   "hash": "2a0e6460",
+   "name": "zc-daily-price-limit-magnet-approach",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.29"
+  },
+  {
+   "t": "2026-07-23T08:46:11.928176+00:00",
+   "hash": "5002dde6",
+   "name": "zn-frontloaded-week-weekend-risk-transfer",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.346"
+  },
+  {
+   "t": "2026-07-23T08:45:50.799950+00:00",
+   "hash": "3e759634",
+   "name": "mes-1256-mtm-placeholder-substitution-window",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.199"
+  },
   {
    "t": "2026-07-23T08:40:03.913361+00:00",
    "hash": "3aa6934c",
@@ -385,30 +405,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.857"
-  },
-  {
-   "t": "2026-07-23T08:12:01.990216+00:00",
-   "hash": "4cc4d9bb",
-   "name": "zc-storage-carrycost-monthend-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.209"
-  },
-  {
-   "t": "2026-07-23T08:11:16.931961+00:00",
-   "hash": "a3a57094",
-   "name": "scout-59-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T08:05:54.094032+00:00",
-   "hash": "afffa3d3",
-   "name": "met-complex-breadth-riskbudget-funding-drain",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.608"
   }
  ],
  "pipeline": {
@@ -427,14 +423,6 @@
     "task": "zc-daily-price-limit-magnet-approach",
     "stage": "dev3yr",
     "started": "2026-07-23T08:43:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-1256-mtm-placeholder-substitution-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:43:26Z",
     "state": "running"
    }
   ],
@@ -540,7 +528,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18581
+    "trials": 18584
    }
   ]
  },
@@ -564,7 +552,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 144,
+   "n_tested": 145,
    "n_killed": 123,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -658,8 +646,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 67,
-   "n_killed": 59,
+   "n_tested": 68,
+   "n_killed": 60,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -667,8 +655,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 44,
-   "n_killed": 38,
+   "n_tested": 45,
+   "n_killed": 39,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1317,6 +1305,26 @@
     "apex_max": 1
    }
   },
+  "mes-1256-mtm-placeholder-substitution-window": {
+   "name": "mes-1256-mtm-placeholder-substitution-window",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Section 1256 marks futures to market on Dec 31 and exempts them from the wash-sale rule, so late-December tax-motivated selling happens in cash equities while index futures are bought as a beta placeholder during the repurchase gap, creating a futures-side demand imbalance in the final December sessions that is unwound in early January when the cash exposure is rebuilt.",
+   "metrics": {
+    "n": 30,
+    "wr": 0.5667,
+    "pf": 1.199,
+    "usd_mo": 10,
+    "usd_trade": 11.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T08:45:50.799950+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mes-depth-consumption-print-size-range-forecast": {
    "name": "mes-depth-consumption-print-size-range-forecast",
    "market": "MES",
@@ -1349,40 +1357,6 @@
    "sizing": {
     "growth_max": 5,
     "apex_max": 3
-   }
-  },
-  "zn-cash-market-closed-futures-open-asymmetry": {
-   "name": "zn-cash-market-closed-futures-open-asymmetry",
-   "market": "ZN",
-   "tier": "demoted",
-   "mechanism": "On SIFMA-recommended bond-market holidays (Columbus Day, Veterans Day) that are NOT CME/NASDAQ equity holidays, the cash Treasury market is shut while ZN futures trade a normal RTH session, so dealers who need to hedge cannot execute in cash and must either defer entirely or over-hedge in futures; that one-sided futures positioning built during the closure is unwound/continued once cash reopens the next session, producing a directional move keyed off the holiday-day ZN return.",
-   "metrics": {
-    "n": 6,
-    "wr": 0.8333,
-    "pf": 6.676,
-    "usd_mo": 18,
-    "usd_trade": 105.1
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T10:40:09.435772+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T10:46:10.359530+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T10:51:30.720138+00:00",
-     "stage": "replication",
-     "verdict": "FAIL"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
    }
   }
  },
