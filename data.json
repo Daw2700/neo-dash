@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T14:49:22Z",
+  "stamp": "2026-07-23T14:51:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 983,
-  "n_results": 1162,
-  "n_trials": 49298,
+  "n_registered": 984,
+  "n_results": 1163,
+  "n_trials": 49299,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 9
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T14:51:06.612287+00:00",
+   "hash": "8f7779fe",
+   "name": "mnq-cost-router-leadlag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T14:50:58.467292+00:00",
+   "hash": "951f5bbf",
+   "name": "mgc-trend-regime-age-crowding-exhaustion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.088"
+  },
+  {
    "t": "2026-07-23T14:49:02.098176+00:00",
    "hash": "f6df153a",
    "name": "mcl-roll-crown-transfer-earliness",
@@ -389,36 +405,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T14:24:38.491872+00:00",
-   "hash": "916e9918",
-   "name": "mym-fundamental-anchoring-erosion-liquidity-fragility",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T14:21:55.961476+00:00",
-   "hash": "c4a1ee97",
-   "name": "scout-66-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "recheck: mgc-trend-regime-age-crowding-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T14:43:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-roll-crown-transfer-earliness-participant-mix",
     "stage": "dev3yr",
@@ -434,11 +426,19 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-execution-cost-router-crossmarket-lead-lag",
     "stage": "dev3yr",
     "started": "2026-07-23T14:49:01Z",
+    "state": "running"
+   },
+   {
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Eighth machine-discovered sleeve ready: ",
+    "stage": "decision",
+    "started": "2026-07-23T14:49:45Z",
     "state": "running"
    }
   ],
@@ -509,7 +509,7 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 150,
+   "registered": 151,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -571,7 +571,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18696
+    "trials": 18697
    }
   ]
  },
