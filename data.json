@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:59:09Z",
+  "stamp": "2026-07-23T06:59:31Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 829,
   "n_results": 1009,
@@ -409,14 +409,6 @@
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-23T06:43:08Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
