@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:48:37Z",
+  "stamp": "2026-07-23T08:48:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -411,22 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-frontloaded-week-weekend-risk-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:43:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-daily-price-limit-magnet-approach",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:43:02Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "robustness: mes-1256-mtm-placeholder-substitution-window",
     "stage": "dev3yr",
