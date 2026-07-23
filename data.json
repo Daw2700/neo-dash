@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:29:30Z",
+  "stamp": "2026-07-23T00:30:53Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 701,
-  "n_results": 860,
-  "n_trials": 30848,
+  "n_registered": 702,
+  "n_results": 861,
+  "n_trials": 30849,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T00:30:32.229314+00:00",
+   "hash": "ff3ec484",
+   "name": "zn-monthend-note-settlement-duration-supply",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.601"
+  },
+  {
    "t": "2026-07-23T00:27:17.757070+00:00",
    "hash": "f45fdd29",
    "name": "met-monthend-us-session-redemption-drag",
@@ -385,14 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.967"
-  },
-  {
-   "t": "2026-07-23T00:03:11.929567+00:00",
-   "hash": "3c72c870",
-   "name": "mcl-preweekend-overnight-riskpremium",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.346"
   }
  ],
  "pipeline": {
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-monthend-note-settlement-duration-supply",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:29:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZC",
     "task": "zc-farm-cash-rent-duedate-liquidation-window",
     "stage": "dev3yr",
@@ -551,7 +543,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 12
+    "trials": 13
    }
   ]
  },
@@ -669,8 +661,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 55,
-   "n_killed": 46,
+   "n_tested": 56,
+   "n_killed": 47,
    "book_sleeves": [],
    "agents_now": []
   },
