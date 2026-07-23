@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:00:04Z",
+  "stamp": "2026-07-23T10:00:06Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "mgc-china-lpr-fix-evening-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:00:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MBT",
+    "task": "mbt-settlement-window-marking-pressure-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:00:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-intrabar-aggression-uninformed-absorption",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:00:06Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mgc-china-lpr-fix-evening-window",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 2,
-    "idea": "mbt-settlement-window-marking-pressure-repair",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 3,
-    "idea": "zc-intrabar-aggression-uninformed-absorption",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.58
-   },
    {
     "rank": 4,
     "idea": "xmkt-afternoon-liquidity-trough-coherent-impact-repair",
@@ -542,7 +540,7 @@
    }
   ],
   "funnel": {
-   "idea": 14,
+   "idea": 11,
    "registered": 122,
    "dev3yr": 0,
    "robustness": 0,
