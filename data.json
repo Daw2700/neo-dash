@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:05:42Z",
+  "stamp": "2026-07-23T18:10:28Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 1044,
-  "n_results": 1222,
-  "n_trials": 68292,
+  "n_results": 1223,
+  "n_trials": 68293,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68292,
+   "trials": 68293,
    "registered": 1044,
    "tested": 844,
    "passed": 161,
@@ -318,19 +318,27 @@
    }
   },
   {
-   "id": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
-   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
-   "market": "SIL",
+   "id": "b2-opex-release",
+   "name": "b2-opex-release",
+   "market": "MNQ",
    "tier": "candidate",
    "pinned": false,
-   "n": 80,
-   "wr": 0.5625,
-   "usd_mo": 114,
-   "pf": 1.502,
-   "usd_trade": 51.1
+   "n": 35,
+   "wr": 0.429,
+   "usd_mo": 16,
+   "pf": 1.407,
+   "usd_trade": 16.0
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T18:06:07.348662+00:00",
+   "hash": "89a4879a",
+   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-23T18:04:08.414297+00:00",
    "hash": "b76c9574",
@@ -418,27 +426,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.606"
-  },
-  {
-   "t": "2026-07-23T17:42:18.612106+00:00",
-   "hash": "590e58f3",
-   "name": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.318"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "SIL",
-    "task": "robustness: sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:01:19Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 10,
@@ -498,10 +489,10 @@
   "funnel": {
    "idea": 6,
    "registered": 164,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 13,
+   "book_candidate": 12,
    "golden_staged": 1
   },
   "throughput": [
@@ -559,7 +550,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27971
+    "trials": 27972
    }
   ]
  },
@@ -1431,21 +1422,31 @@
     "apex_max": 8
    }
   },
-  "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2": {
-   "name": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual-v2",
-   "market": "SIL",
+  "b2-opex-release": {
+   "name": "b2-opex-release",
+   "market": "MNQ",
    "tier": "candidate",
-   "mechanism": "Micro Silver (SIL, 1000 oz) is one fifth of full-size SI (5000 oz), the only non-decimal micro-to-full-size ratio in the CME micro complex; a market maker absorbing micro retail flow cannot net it into the full-size book below a 5-lot residual, so odd-lot inventory is carried and worked off in the micro book itself, producing reversion whose strength is hypothesized to peak on the 5th session of a rolling residual-accumulation cycle (v2: daily-scale shock gate after v1 first-5min-bar gate proved too fine-grained vs daily ATR20 and fired 1/775 days).",
+   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
    "metrics": {
-    "n": 80,
-    "wr": 0.5625,
-    "pf": 1.502,
-    "usd_mo": 114,
-    "usd_trade": 51.1
+    "n": 35,
+    "wr": 0.429,
+    "pf": 1.407,
+    "usd_mo": 16,
+    "usd_trade": 16.0
    },
    "verdict_history": [
     {
-     "t": "2026-07-23T18:01:14.786425+00:00",
+     "t": "2026-07-21T05:02:40.560966+00:00",
+     "stage": "dev",
+     "verdict": "SURVIVES dev screen"
+    },
+    {
+     "t": "2026-07-21T15:31:04.903542+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-21T15:49:52.697136+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
@@ -1993,30 +1994,29 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 4,
-    "b2-opex-release": 5,
     "b2-vix-reversion": 5,
     "b3-preholiday-drift": 3,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
+   "total_micros": 19,
+   "p_breach": 0.182,
+   "usd_mo": 590,
+   "usd_mo_5acct": 2950,
+   "pct_goal": 0.295,
+   "wr": 0.635,
+   "wr_month": 0.667,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 2837,
+    "avg_lose": -1141
    },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815,
+   "first_pay_days": 103,
+   "pay_rate_1yr": 0.79,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3470
+   "usd_mo_total": 2950
   }
  ],
  "sizing_meta": {

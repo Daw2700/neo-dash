@@ -141,14 +141,6 @@
    "apex150": {
     "max_micros": 8
    }
-  },
-  "b2-opex-release": {
-   "growth": {
-    "max_micros": 8
-   },
-   "apex150": {
-    "max_micros": 8
-   }
   }
  },
  "bundles": [
@@ -448,27 +440,26 @@
    "assumed_rules": false,
    "members": {
     "b10-nagel-vix-reversal": 4,
-    "b2-opex-release": 5,
     "b2-vix-reversion": 5,
     "b3-preholiday-drift": 3,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 24,
-   "p_breach": 0.189,
-   "usd_mo": 694,
-   "usd_mo_5acct": 3470,
-   "pct_goal": 0.347,
-   "wr": 0.591,
-   "wr_month": 0.722,
+   "total_micros": 19,
+   "p_breach": 0.182,
+   "usd_mo": 590,
+   "usd_mo_5acct": 2950,
+   "pct_goal": 0.295,
+   "wr": 0.635,
+   "wr_month": 0.667,
    "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2698,
-    "avg_lose": -1294
+    "win_per_yr": 8.0,
+    "lose_per_yr": 4.0,
+    "avg_win": 2837,
+    "avg_lose": -1141
    },
-   "first_pay_days": 99,
-   "pay_rate_1yr": 0.815
+   "first_pay_days": 103,
+   "pay_rate_1yr": 0.79
   },
   {
    "id": "Frequent-firing engine|apex150",
