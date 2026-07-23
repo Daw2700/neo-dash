@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:29:55Z",
+  "stamp": "2026-07-23T19:35:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1068,
-  "n_results": 1246,
-  "n_trials": 71342,
+  "n_registered": 1069,
+  "n_results": 1250,
+  "n_trials": 71346,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71342,
-   "registered": 1068,
-   "tested": 866,
-   "passed": 161,
+   "trials": 71346,
+   "registered": 1069,
+   "tested": 868,
+   "passed": 162,
    "survived": 33,
    "replicated": 12,
    "book": 13
@@ -336,20 +336,44 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T19:32:43.527724+00:00",
+   "hash": "347f0de4",
+   "name": "conviction-close-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.042"
+  },
+  {
+   "t": "2026-07-23T19:31:48.561753+00:00",
+   "hash": "522e0ff8",
+   "name": "mes-oilshock-classification",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.694"
+  },
+  {
+   "t": "2026-07-23T19:31:19.553963+00:00",
+   "hash": "65f665a4",
+   "name": "mnq-underwater-duration-coiled-recovery-snapback",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.391"
+  },
+  {
+   "t": "2026-07-23T19:31:15.644967+00:00",
+   "hash": "347f0de4",
+   "name": "conviction-close-continuation",
+   "status": "result",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T19:29:36.549592+00:00",
    "hash": "347f0de4",
    "name": "conviction-close-continuation",
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.12"
-  },
-  {
-   "t": "2026-07-23T19:29:22.944485+00:00",
-   "hash": "522e0ff8",
-   "name": "mes-oilshock-classification",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T19:28:42.241214+00:00",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.973"
-  },
-  {
-   "t": "2026-07-23T18:52:31.151261+00:00",
-   "hash": "840f5cfa",
-   "name": "m2k-securities-lending-recall-record-date-shortcover",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9"
-  },
-  {
-   "t": "2026-07-23T18:51:03.995068+00:00",
-   "hash": "84910be5",
-   "name": "zn-coupon-payment-reinvestment-duration-bid",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.471"
-  },
-  {
-   "t": "2026-07-23T18:49:34.666861+00:00",
-   "hash": "3bb86679",
-   "name": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.432"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-underwater-duration-coiled-recovery-snapback",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:28:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "recheck: conviction-close-continuation",
     "stage": "dev3yr",
@@ -526,11 +518,11 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 166,
-   "dev3yr": 3,
+   "registered": 165,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 12,
+   "book_candidate": 13,
    "golden_staged": 1
   },
   "throughput": [
@@ -588,7 +580,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31018
+    "trials": 31022
    }
   ]
  },
@@ -613,8 +605,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 179,
-   "n_killed": 149,
+   "n_tested": 180,
+   "n_killed": 150,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -709,7 +701,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 80,
+   "n_tested": 81,
    "n_killed": 69,
    "book_sleeves": [],
    "agents_now": []
