@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:04:30Z",
+  "stamp": "2026-07-23T05:06:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 793,
-  "n_results": 965,
-  "n_trials": 39832,
+  "n_registered": 794,
+  "n_results": 967,
+  "n_trials": 39834,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:06:51.465382+00:00",
+   "hash": "1365cdfc",
+   "name": "gap-age-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9545"
+  },
+  {
+   "t": "2026-07-23T05:06:37.327510+00:00",
+   "hash": "eb34cf81",
+   "name": "zc-staggered-weekly-reopen-crossmarket-leak",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.366"
+  },
+  {
+   "t": "2026-07-23T05:06:19.635845+00:00",
+   "hash": "8bd73a79",
+   "name": "m6e-dollar-factor-decomp",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T05:04:06.503006+00:00",
    "hash": "e1f6cf1e",
    "name": "m2k-tick-lag",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.81"
-  },
-  {
-   "t": "2026-07-23T05:03:55.238907+00:00",
-   "hash": "eb34cf81",
-   "name": "zc-staggered-weekly-reopen-crossmarket-leak",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T05:02:09.158921+00:00",
@@ -393,22 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.685"
-  },
-  {
-   "t": "2026-07-23T04:39:48.584584+00:00",
-   "hash": "cce978ba",
-   "name": "sil-china-session-metals-information-ratification",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.852"
-  },
-  {
-   "t": "2026-07-23T04:39:14.504519+00:00",
-   "hash": "df9deb7a",
-   "name": "m2k-eigen-rotation-risk-model-staleness",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.488"
   }
  ],
  "pipeline": {
@@ -423,14 +423,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-staggered-weekly-reopen-crossmarket-leak",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:02:22Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-dollar-factor-versus-euro-idiosyncratic-decomposition",
     "stage": "dev3yr",
@@ -567,7 +559,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8996
+    "trials": 8998
    }
   ]
  },
@@ -694,8 +686,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 39,
-   "n_killed": 33,
+   "n_tested": 40,
+   "n_killed": 34,
    "book_sleeves": [],
    "agents_now": []
   },
