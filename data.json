@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:03:53Z",
+  "stamp": "2026-07-23T23:08:42Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,19 +433,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T22:51:29Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-btic-close-basis-hedge-transfer",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 2,
+    "idea": "mcl-consumer-hedger-cohort-post-earnings-reset",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 3,
+    "idea": "mes-zn-1400-settlement-print-crossmarket-stamp",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 4,
+    "idea": "zn-sifma-early-close-cash-channel-truncation",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-margin-reduction-releveraging-window",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.31
+   },
+   {
+    "rank": 6,
+    "idea": "zc-wasde-revision-vs-count-prepriced-event",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 7,
+    "idea": "mnq-nasdaq-closing-cross-vs-nyse-close-venue-wedge",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 8,
+    "idea": "mes-holiday-deferred-variation-margin-free-leverage-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-constant-leverage-etf-close-rebalance-convexity",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.26
+   },
+   {
+    "rank": 10,
+    "idea": "m6e-euro-national-market-holiday-anchor-absence",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.26
+   },
+   {
+    "rank": 11,
+    "idea": "mym-price-weight-herfindahl-effective-breadth-variance-split",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.24
+   },
+   {
+    "rank": 12,
+    "idea": "mes-september-complex-wide-rth-only-weakness",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.2
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 178,
    "dev3yr": 0,
    "robustness": 0,
