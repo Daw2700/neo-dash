@@ -95,7 +95,8 @@ print(f"strategy sizing done {time.time()-t0:.0f}s: "
       f"{ {s: v['growth']['max_micros'] for s, v in strategies.items()} }")
 
 # ---------- bundle definitions ----------
-have = [s for s in lb_ids if s in CSV]
+_ok_tiers = {"BOOK SLEEVE", "candidate"}
+have = [r["id"] for r in _lb if r["id"] in CSV and r.get("tier") in _ok_tiers]
 val = [s for s in have if s in VALIDATED]
 _by = {r["id"]: r for r in _lb}
 _auto_rare = [s for s in have if (_by[s].get("n") or 0) < 300 and s not in VALIDATED]
@@ -187,6 +188,61 @@ for name, members in BUNDLES:
             "pct_goal": round(r["usd_mo"] * 5 / 10000, 3)})
         print(f"{time.time()-t0:5.0f}s  {name} [{plan}] -> ${r['usd_mo']}/mo "
               f"breach {r['p_breach']:.1%} {r['micros']}")
+
+# --- per-bundle texture stats: Daniel's priority metrics, computed EVERY refresh ---
+from gauntlet.account import SPLIT, WIN_DAY, _consistency_ok
+
+def _first_pay(daily_pnl, plan, years=1, sims=3000, block=10):
+    """Faithful extension of gauntlet simulate_account tracking the first payout day."""
+    P = PLANS[plan]; rng = np.random.default_rng(7)
+    pnl = np.asarray(daily_pnl, float); L = len(pnl); days = int(252 * years)
+    first = []
+    for s in range(sims):
+        idx = np.concatenate([np.arange(i, i + block) % L
+                              for i in rng.integers(0, L, days // block + 2)])[:days]
+        path = pnl[idx]
+        if P.get("dll"): path = np.maximum(path, -P["dll"])
+        bal = hw = 0.0; locked = False; day_max = 0.0
+        wins = 0; n_pay = 0; cycle_start_bal = 0.0; paid_total = 0.0; fp = None
+        for di, d in enumerate(path):
+            bal += d
+            floor = 100.0 if locked else hw - P["buffer"]
+            if bal < floor:
+                bal = None; break
+            hw = max(hw, bal)
+            if not locked and hw > P["buffer"] + 100: locked = True
+            day_max = max(day_max, d)
+            if d >= WIN_DAY: wins += 1
+            room = bal - 2100.0
+            w = 0.0; g = P["gate"]
+            if room > 0:
+                if g == "cycle5" and wins >= 5 and bal > cycle_start_bal:
+                    if P.get("caps"):
+                        if bal >= P.get("min_bal_profit", 0) and _consistency_ok(P.get("consistency"), n_pay, day_max, bal + paid_total):
+                            w = min(P["caps"][min(n_pay, 3)], room)
+                    else:
+                        w = min(P.get("cap_frac", 1.0) * (bal + paid_total), P.get("cap_abs", 1e9), room)
+            if w >= P.get("min_payout", 0) and w > 0:
+                if fp is None: fp = di + 1
+                bal -= w; paid_total += w; n_pay += 1
+                wins = 0; cycle_start_bal = bal; locked = True
+        if fp is not None: first.append(fp)
+    return (int(np.median(first)) if first else None, round(len(first) / sims, 3))
+
+for b in bundles:
+    _pnl = sum(daily(s) * q for s, q in b["members"].items())
+    _ser = pd.Series(_pnl, index=CAL)
+    _act = _ser[_ser != 0]
+    b["wr"] = round(float((_act > 0).mean()), 3) if len(_act) else 0
+    _mo = _ser.resample("ME").sum()
+    _w, _l = _mo[_mo > 0], _mo[_mo <= 0]
+    b["wr_month"] = round(float((_mo > 0).mean()), 3)
+    b["months"] = {"win_per_yr": round(len(_w) / len(_mo) * 12, 1),
+                   "lose_per_yr": round(len(_l) / len(_mo) * 12, 1),
+                   "avg_win": round(float(_w.mean())) if len(_w) else 0,
+                   "avg_lose": round(float(_l.mean())) if len(_l) else 0}
+    _plan = b["id"].split("|")[1]
+    b["first_pay_days"], b["pay_rate_1yr"] = _first_pay(_pnl, _plan)
 
 bundles.sort(key=lambda b: -b["usd_mo"])
 Path("sizing_results.json").write_text(json.dumps(
