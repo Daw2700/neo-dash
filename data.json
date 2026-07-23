@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:51:48Z",
+  "stamp": "2026-07-23T05:52:51Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 811,
-  "n_results": 987,
-  "n_trials": 39854,
+  "n_results": 988,
+  "n_trials": 39855,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:52:05.417017+00:00",
+   "hash": "c172e0cb",
+   "name": "m2k-finra-short-interest-publication-cover-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.527"
+  },
+  {
    "t": "2026-07-23T05:51:39.121620+00:00",
    "hash": "589b81f0",
    "name": "mes-updown-minute-volume-asymmetry-absorption-carry",
    "status": "killed",
    "kind": "result",
    "detail": "PF 8.707"
-  },
-  {
-   "t": "2026-07-23T05:51:18.830401+00:00",
-   "hash": "c172e0cb",
-   "name": "m2k-finra-short-interest-publication-cover-window",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T05:51:14.290644+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-finra-short-interest-publication-cover-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:50:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-impact-halflife-matched-holding-horizon",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-monthly-production-report-supply-anchor-reset",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 109,
+   "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -513,7 +505,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9018
+    "trials": 9019
    }
   ]
  },
@@ -557,8 +549,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 31,
-   "n_killed": 18,
+   "n_tested": 32,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
