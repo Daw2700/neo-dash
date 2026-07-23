@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:22:48Z",
+  "stamp": "2026-07-23T04:22:50Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "xmkt-turbulence-configuration-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:22:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-covariance-window-rolloff-releverage-cliff",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:22:50Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-same-slot-execution-schedule-echo",
+    "stage": "dev3yr",
+    "started": "2026-07-23T04:22:50Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "xmkt-turbulence-configuration-repair",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.68
-   },
-   {
-    "rank": 2,
-    "idea": "mes-covariance-window-rolloff-releverage-cliff",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "mnq-same-slot-execution-schedule-echo",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 4,
     "idea": "mgc-invariance-elasticity-range-residual",
@@ -524,7 +522,7 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
