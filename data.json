@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:07:50Z",
+  "stamp": "2026-07-23T03:07:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -403,6 +403,14 @@
     "task": "scout",
     "stage": "idea-scout",
     "started": "2026-07-23T03:01:04Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M2K",
+    "task": "robustness: m2k-h8-credit-friday-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:07:52Z",
     "state": "running"
    }
   ],
