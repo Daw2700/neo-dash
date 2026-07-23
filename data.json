@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:49:37Z",
+  "stamp": "2026-07-23T00:49:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
@@ -407,14 +407,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "SIL",
-    "task": "sil-pv-gridconnection-deadline-demand-pulse",
-    "stage": "dev3yr",
-    "started": "2026-07-23T00:45:57Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "ZS",
     "task": "robustness: zs-china-state-reserve-auction-window",
     "stage": "dev3yr",
