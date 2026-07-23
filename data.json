@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:02:21Z",
+  "stamp": "2026-07-23T08:02:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:01:58Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-beta-decoupling-idiosyncratic-flow-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:02:23Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-datacenter-power-load-equity-narrative-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:02:23Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mcl-beta-decoupling-idiosyncratic-flow-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 11,
-    "idea": "mng-datacenter-power-load-equity-narrative-lag",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "met-staking-yield-frontend-rate-competition-lag",
@@ -461,7 +459,7 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 113,
    "dev3yr": 0,
    "robustness": 0,
