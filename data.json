@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:12:02Z",
+  "stamp": "2026-07-23T02:12:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -419,6 +419,14 @@
     "task": "mcl-ramadan-gulf-desk-absence-liquidity-regime",
     "stage": "dev3yr",
     "started": "2026-07-23T02:09:10Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "robustness: mnq-volpeak-extreme-order",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:12:03Z",
     "state": "running"
    }
   ],
