@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:41:18Z",
+  "stamp": "2026-07-23T07:43:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 845,
+  "n_registered": 846,
   "n_results": 1028,
   "n_trials": 49164,
   "holdout_looks_spent": 0,
@@ -274,7 +274,11 @@
    "wr": 0.5443,
    "usd_mo": 158,
    "pf": 1.325,
-   "usd_trade": 72.1
+   "usd_trade": 72.1,
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 1
+   }
   },
   {
    "id": "b3-prior-high-break",
@@ -310,6 +314,14 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T07:43:12.112278+00:00",
+   "hash": "1257a6e6",
+   "name": "zs-marketing-year-high-reference-price-hedge-supply-ROBUSTNESS-989",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T07:39:33.257282+00:00",
    "hash": "7bc15ccc",
@@ -397,14 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.019"
-  },
-  {
-   "t": "2026-07-23T07:16:42.901788+00:00",
-   "hash": "b09c1d3f",
-   "name": "zs-both-sided-overnight-sweep-liquidation-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.057"
   }
  ],
  "pipeline": {
@@ -423,6 +427,14 @@
     "task": "mng-weather-premium-multiday-physical-supply-response",
     "stage": "dev3yr",
     "started": "2026-07-23T07:36:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "robustness: zs-marketing-year-high-reference-price-hedge-supply",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:41:20Z",
     "state": "running"
    }
   ],
@@ -520,7 +532,7 @@
   ],
   "funnel": {
    "idea": 10,
-   "registered": 111,
+   "registered": 112,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -1343,7 +1355,11 @@
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 1,
+    "apex_max": 1
+   }
   },
   "b3-prior-high-break": {
    "name": "b3-prior-high-break",
@@ -1617,42 +1633,6 @@
  },
  "bundles": [
   {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "b2-opex-release": 1,
-    "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "b3-prior-high-break": 1
-   },
-   "total_micros": 10,
-   "p_breach": 0.189,
-   "usd_mo": 563,
-   "usd_mo_5acct": 2815,
-   "pct_goal": 1.013,
-   "wr": 0.518,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1297,
-    "avg_lose": -581
-   },
-   "first_pay_days": 65,
-   "pay_rate_1yr": 0.959,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 10134
-  },
-  {
    "id": "Cross-market spread|apex150",
    "name": "Cross-market spread",
    "plan": "apex150 (verified)",
@@ -1749,37 +1729,6 @@
    "usd_mo_total": 6696
   },
   {
-   "id": "Risk-premium core (rare, high WR)|apex150",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "b3-prior-high-break": 1,
-    "b3-tom-long": 1,
-    "mcl-closure-length-dose-response-reopen-overshoot": 1
-   },
-   "total_micros": 5,
-   "p_breach": 0.194,
-   "usd_mo": 343,
-   "usd_mo_5acct": 1715,
-   "pct_goal": 0.617,
-   "wr": 0.512,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 981,
-    "avg_lose": -442
-   },
-   "first_pay_days": 84,
-   "pay_rate_1yr": 0.882,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 6174
-  },
-  {
    "id": "Frequent-firing engine|apex150",
    "name": "Frequent-firing engine",
    "plan": "apex150 (verified)",
@@ -1809,6 +1758,70 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 5508
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|apex150",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-opex-release": 1,
+    "b2-vix-reversion": 2,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "mes-depth-consumption-print-size-range-forecast": 1,
+    "zs-marketing-year-high-reference-price-hedge-supply": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.2,
+   "usd_mo": 254,
+   "usd_mo_5acct": 1270,
+   "pct_goal": 0.457,
+   "wr": 0.503,
+   "wr_month": 0.639,
+   "months": {
+    "win_per_yr": 7.7,
+    "lose_per_yr": 4.3,
+    "avg_win": 905,
+    "avg_lose": -274
+   },
+   "first_pay_days": 111,
+   "pay_rate_1yr": 0.747,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 4572
+  },
+  {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 1,
+    "mcl-closure-length-dose-response-reopen-overshoot": 1,
+    "zs-marketing-year-high-reference-price-hedge-supply": 1
+   },
+   "total_micros": 5,
+   "p_breach": 0.198,
+   "usd_mo": 237,
+   "usd_mo_5acct": 1185,
+   "pct_goal": 0.427,
+   "wr": 0.536,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 778,
+    "avg_lose": -367
+   },
+   "first_pay_days": 110,
+   "pay_rate_1yr": 0.798,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 4266
   },
   {
    "id": "Everything (full pool)|growth",
