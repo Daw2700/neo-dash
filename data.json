@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:24:00Z",
+  "stamp": "2026-07-23T23:28:50Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1138,
-  "n_results": 1324,
-  "n_trials": 79189,
+  "n_registered": 1140,
+  "n_results": 1326,
+  "n_trials": 79191,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79189,
-   "registered": 1138,
-   "tested": 922,
-   "passed": 170,
+   "trials": 79191,
+   "registered": 1140,
+   "tested": 924,
+   "passed": 171,
    "survived": 36,
    "replicated": 13,
    "book": 13
@@ -336,20 +336,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:26:43.828152+00:00",
+   "hash": "0f1f0890",
+   "name": "ROBUSTNESS-BATTERY mes-september-complex-wide-rth-only-weakness",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T23:25:41.602353+00:00",
+   "hash": "7ec32277",
+   "name": "mym-price-weight-herfindahl-effective-breadth-variance-split",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.879"
+  },
+  {
+   "t": "2026-07-23T23:24:21.710585+00:00",
+   "hash": "26584da7",
+   "name": "mes-september-complex-wide-rth-only-weakness",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.51"
+  },
+  {
    "t": "2026-07-23T23:23:47.288429+00:00",
    "hash": "36947de7",
    "name": "m6e-euro-national-market-holiday-anchor-absence",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0"
-  },
-  {
-   "t": "2026-07-23T23:23:24.069537+00:00",
-   "hash": "26584da7",
-   "name": "mes-september-complex-wide-rth-only-weakness",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T23:22:21.417869+00:00",
@@ -414,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.609"
-  },
-  {
-   "t": "2026-07-23T23:11:01.584492+00:00",
-   "hash": "a77e69ca",
-   "name": "mes-zn-1400-settlement-print-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.684"
-  },
-  {
-   "t": "2026-07-23T23:03:42.636452+00:00",
-   "hash": "27379561",
-   "name": "sweep-8-volume-clock-participation",
-   "status": "killed",
-   "kind": "sweep",
-   "detail": "7,776 configs"
   }
  ],
  "pipeline": {
@@ -457,16 +457,24 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:22:37Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "robustness: mes-september-complex-wide-rth-only-weakness",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:24:23Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 179,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 13,
+   "book_candidate": 14,
    "golden_staged": 1
   },
   "throughput": [
@@ -524,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38871
+    "trials": 38873
    }
   ]
  },
@@ -549,7 +557,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 189,
+   "n_tested": 190,
    "n_killed": 156,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
@@ -562,8 +570,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 18,
+   "n_tested": 22,
+   "n_killed": 19,
    "book_sleeves": [],
    "agents_now": []
   },
