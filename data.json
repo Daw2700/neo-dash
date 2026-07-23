@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:22:04Z",
+  "stamp": "2026-07-23T01:23:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 723,
-  "n_results": 885,
-  "n_trials": 30873,
+  "n_registered": 726,
+  "n_results": 887,
+  "n_trials": 30875,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,9 +299,33 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T01:21:57.162413+00:00",
+   "t": "2026-07-23T01:23:45.589414+00:00",
+   "hash": "4ba7ce1e",
+   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T01:23:32.319314+00:00",
+   "hash": "3bba0944",
+   "name": "zs-crush-plant-maintenance-season-demand-void",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.86"
+  },
+  {
+   "t": "2026-07-23T01:23:27.383649+00:00",
    "hash": "c0fa5f38",
    "name": "mgc-retvol-covariance-carry",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.846"
+  },
+  {
+   "t": "2026-07-23T01:23:25.492618+00:00",
+   "hash": "6d1d7ae4",
+   "name": "scout-50-screen",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -369,30 +393,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.254"
-  },
-  {
-   "t": "2026-07-23T01:06:36.859591+00:00",
-   "hash": "7a5dbd84",
-   "name": "mcl-post-washout-hedge-supply-ceiling",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.265"
-  },
-  {
-   "t": "2026-07-23T01:05:02.105243+00:00",
-   "hash": "ed7f8b98",
-   "name": "mbt-macro-decoupling-offshore-bid-overnight",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.46"
-  },
-  {
-   "t": "2026-07-23T01:04:18.806663+00:00",
-   "hash": "28a5db60",
-   "name": "zn-index-extension-preannouncement-frontrun",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.177"
   }
  ],
  "pipeline": {
@@ -406,26 +406,10 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-return-volume-covariance-aggressor-sign-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:20:18Z",
-    "state": "running"
-   },
-   {
     "agent": "scout",
     "market": null,
     "task": "scout",
     "stage": "idea-scout",
-    "started": "2026-07-23T01:22:04Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZS",
-    "task": "zs-crush-plant-maintenance-season-demand-void",
-    "stage": "dev3yr",
     "started": "2026-07-23T01:22:04Z",
     "state": "running"
    }
@@ -433,7 +417,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 96,
+   "registered": 97,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -495,7 +479,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 37
+    "trials": 39
    }
   ]
  },
@@ -548,8 +532,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 42,
-   "n_killed": 34,
+   "n_tested": 43,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -631,8 +615,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 12,
-   "n_killed": 9,
+   "n_tested": 13,
+   "n_killed": 10,
    "book_sleeves": [],
    "agents_now": []
   }
