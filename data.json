@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:43:26Z",
+  "stamp": "2026-07-23T03:45:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 763,
-  "n_results": 936,
-  "n_trials": 39803,
+  "n_registered": 766,
+  "n_results": 937,
+  "n_trials": 39804,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 7
+  "needs_attention_count": 8
  },
  "leaderboard": [
   {
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T03:45:29.172672+00:00",
+   "hash": "a5428f92",
+   "name": "m6e-prorata-depth-illusion-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1216"
+  },
+  {
+   "t": "2026-07-23T03:45:22.878603+00:00",
+   "hash": "a81e5211",
+   "name": "mes-continuous-lag",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T03:44:46.520319+00:00",
+   "hash": "77b43d9d",
+   "name": "zc-envelope-breakout-hedge-supply-ceiling",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T03:38:04.824401+00:00",
    "hash": "348de1d4",
    "name": "cojump-flow-fade",
@@ -385,44 +409,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T03:06:36.588452+00:00",
-   "hash": "476536c8",
-   "name": "scout-52b-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T03:05:19.778968+00:00",
-   "hash": "3d1f7047",
-   "name": "m2k-h8-credit-friday-repricing",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.165"
-  },
-  {
-   "t": "2026-07-23T03:01:42.171030+00:00",
-   "hash": "c503f0cf",
-   "name": "scout-52-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-prorata-matching-depth-illusion-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:43:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-envelope-breakout-hedge-supply-ceiling",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "mes-crossmarket-continuous-component-lag",
     "stage": "dev3yr",
@@ -496,7 +488,7 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 103,
+   "registered": 105,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -558,7 +550,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8967
+    "trials": 8968
    }
   ]
  },
@@ -667,8 +659,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 34,
-   "n_killed": 33,
+   "n_tested": 35,
+   "n_killed": 34,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1365,6 +1357,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-crudechannel-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Eighth machine-discovered sleeve ready: crude-shock equity risk transfer (PF 1.831)",
+   "recommendation": "ADMIT to the book \u2014 emphatic dual-leg (replication PF 2.233 on MNQ, n=55)",
+   "evidence": "dev3yr: n=55, PF 1.831, $40.18/trade on MES | robustness: SURVIVES | replication: n=55, PF 2.233 on MNQ \u2014 replication stronger than dev, the strong-carry signature",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute including it",
+   "recap": "When crude-oil liquidity shocks hit, equity indexes reprice with a tradeable transfer lag. Cross-asset mechanism carrying to both index siblings.",
+   "why": "Cleared every gate with the replication leg outperforming dev (2.233 vs dev) \u2014 the same emphatic-carry profile as gold-signal and depth-consumption, your two strongest graduates. Cross-asset cause with index expression, structurally distinct from everything in the book.",
+   "steps": [
+    "Approve: strategy joins the validated book; sizing/bundles/roadmap recompute",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-23T03:44:08Z"
+  },
   {
    "id": "d-chinaauction-book-entry",
    "kind": "book_entry",
