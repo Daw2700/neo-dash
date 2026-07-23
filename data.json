@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T13:35:52Z",
+  "stamp": "2026-07-23T13:39:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 961,
-  "n_results": 1141,
-  "n_trials": 49277,
+  "n_registered": 962,
+  "n_results": 1142,
+  "n_trials": 49278,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T13:38:23.143203+00:00",
+   "hash": "bc5281cf",
+   "name": "mes-lag1-magnitude-channel-two-sided-bracket",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.733"
+  },
+  {
    "t": "2026-07-23T13:33:51.393894+00:00",
    "hash": "397839af",
    "name": "zc-hedger-skew-supply-asymmetric-bracket",
@@ -397,14 +405,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T13:11:07.195654+00:00",
-   "hash": "94384ffe",
-   "name": "mgc-gap-dose-response-continuation-with-capacity-break",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.444"
   }
  ],
  "pipeline": {
@@ -424,18 +424,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T13:29:12Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-lag1-magnitude-channel-two-sided-bracket",
+    "stage": "dev3yr",
+    "started": "2026-07-23T13:35:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 2,
-    "idea": "mes-lag1-magnitude-channel-two-sided-bracket",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 3,
     "idea": "mes-release-flow-variance-collapse-impact-inflation-fade",
@@ -528,7 +527,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 10,
    "registered": 142,
    "dev3yr": 0,
    "robustness": 0,
@@ -591,7 +590,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18675
+    "trials": 18676
    }
   ]
  },
@@ -615,8 +614,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 157,
-   "n_killed": 130,
+   "n_tested": 158,
+   "n_killed": 131,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
