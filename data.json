@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:07:45Z",
+  "stamp": "2026-07-23T05:10:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 794,
-  "n_results": 968,
-  "n_trials": 39835,
+  "n_registered": 795,
+  "n_results": 969,
+  "n_trials": 39836,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T05:10:06.788311+00:00",
+   "hash": "ee223d7a",
+   "name": "mgc-fomc-anchored-vwap-crossing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.858"
+  },
+  {
    "t": "2026-07-23T05:07:22.480279+00:00",
    "hash": "8bd73a79",
    "name": "m6e-dollar-factor-decomp",
@@ -401,28 +409,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T04:41:58.558658+00:00",
-   "hash": "a2d04ab0",
-   "name": "zc-dispersion-gated-overnight-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.685"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-fomc-anchored-volume-weighted-breakeven-crossing",
-    "stage": "dev3yr",
-    "started": "2026-07-23T05:06:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-overnight-churn-high-volume-zero-net-expansion",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-propfirm-cohort-monthstart-stop-density",
     "stage": "dev3yr",
@@ -540,7 +532,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8999
+    "trials": 9000
    }
   ]
  },
@@ -593,8 +585,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 46,
-   "n_killed": 38,
+   "n_tested": 47,
+   "n_killed": 39,
    "book_sleeves": [],
    "agents_now": []
   },
