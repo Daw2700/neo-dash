@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:17:33Z",
+  "stamp": "2026-07-23T07:18:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 838,
-  "n_results": 1019,
-  "n_trials": 49155,
+  "n_registered": 839,
+  "n_results": 1020,
+  "n_trials": 49156,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:18:39.141148+00:00",
+   "hash": "f7d4cf6c",
+   "name": "zn-conference-board-labor-differential-rates-channel",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.231"
+  },
+  {
+   "t": "2026-07-23T07:18:29.092225+00:00",
+   "hash": "4b924287",
+   "name": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T07:17:11.876771+00:00",
    "hash": "87490e75",
    "name": "mnq-range-acceptance-age-release",
@@ -325,14 +341,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.057"
-  },
-  {
-   "t": "2026-07-23T07:16:18.849240+00:00",
-   "hash": "f7d4cf6c",
-   "name": "zn-conference-board-labor-differential-rates-channel",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T07:14:17.438501+00:00",
@@ -397,28 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.8497"
-  },
-  {
-   "t": "2026-07-23T06:57:44.453476+00:00",
-   "hash": "fcf42e2d",
-   "name": "sweep-4-globex-regional-handoff",
-   "status": "killed",
-   "kind": "sweep",
-   "detail": "9,504 configs"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-conference-board-labor-differential-rates-channel",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:15:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-chicago-pmi-monthend-flow-collision-impact-reversion",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "recheck: mnq-range-acceptance-age-release",
     "stage": "dev3yr",
@@ -518,7 +510,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18553
+    "trials": 18554
    }
   ]
  },
@@ -636,8 +628,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 65,
-   "n_killed": 58,
+   "n_tested": 66,
+   "n_killed": 59,
    "book_sleeves": [],
    "agents_now": []
   },
