@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:26:42Z",
+  "stamp": "2026-07-23T04:27:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 777,
-  "n_results": 948,
-  "n_trials": 39815,
+  "n_registered": 778,
+  "n_results": 949,
+  "n_trials": 39816,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:27:18.747143+00:00",
+   "hash": "3451262d",
+   "name": "xmkt-turb-mcl-repair",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.105"
+  },
+  {
+   "t": "2026-07-23T04:27:15.757230+00:00",
+   "hash": "980d7cbb",
+   "name": "mgc-invariance-elasticity-range-residual",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T04:26:25.515093+00:00",
    "hash": "fd850e03",
    "name": "same-slot-echo",
@@ -329,14 +345,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.69"
-  },
-  {
-   "t": "2026-07-23T04:25:27.689941+00:00",
-   "hash": "3451262d",
-   "name": "xmkt-turb-mcl-repair",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T04:10:17.957931+00:00",
@@ -401,28 +409,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.57"
-  },
-  {
-   "t": "2026-07-23T03:49:23.396930+00:00",
-   "hash": "416f0c18",
-   "name": "m2k-freshair-short",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.072"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "xmkt-turbulence-configuration-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:22:50Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-invariance-elasticity-range-residual",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MET",
     "task": "met-post-benchmark-afternoon-flow-continuation",
     "stage": "dev3yr",
@@ -567,7 +559,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8979
+    "trials": 8980
    }
   ]
  },
@@ -638,8 +630,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 53,
-   "n_killed": 32,
+   "n_tested": 54,
+   "n_killed": 33,
    "book_sleeves": [],
    "agents_now": []
   },
