@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T00:18:42Z",
+  "stamp": "2026-07-23T00:24:54Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 698,
   "n_results": 857,
@@ -396,19 +396,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T00:06:07Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "met-monthend-us-session-redemption-drag",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 2,
+    "idea": "mes-buffer-etf-outcome-period-reset",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 3,
+    "idea": "m2k-monthend-overnight-only-allocation-hedge",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 4,
+    "idea": "zn-monthend-note-settlement-duration-supply",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 5,
+    "idea": "zc-farm-cash-rent-duedate-liquidation-window",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 6,
+    "idea": "mes-policy-rate-effective-date-financing-step",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 7,
+    "idea": "zn-statutory-fiscal-deadline-premium-release",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 8,
+    "idea": "m6e-tltro-repayment-settlement-liquidity-drain",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.25
+   },
+   {
+    "rank": 9,
+    "idea": "mbt-difficulty-adjustment-miner-payout-clock",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.25
+   },
+   {
+    "rank": 10,
+    "idea": "zn-pension-contribution-deadline-september",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.24
+   },
+   {
+    "rank": 11,
+    "idea": "zs-china-state-reserve-auction-window",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.22
+   },
+   {
+    "rank": 12,
+    "idea": "sil-pv-gridconnection-deadline-demand-pulse",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.2
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 92,
    "dev3yr": 0,
    "robustness": 0,
