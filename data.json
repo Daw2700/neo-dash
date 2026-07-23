@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:38:52Z",
+  "stamp": "2026-07-23T03:43:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -412,32 +412,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-crude-liquidity-channel-risk-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:28:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "recheck: cojump-flow-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:28:32Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "replication: mes-crude-liquidity-channel-risk-transfer",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:34:14Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 4,
