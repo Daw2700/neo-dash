@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:48:00Z",
+  "stamp": "2026-07-23T10:53:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 906,
-  "n_results": 1089,
-  "n_trials": 49225,
+  "n_registered": 910,
+  "n_results": 1092,
+  "n_trials": 49228,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -169,6 +169,18 @@
    "usd_trade": 94.1
   },
   {
+   "id": "mcl-first-week-producer-hedge-participation-spike",
+   "name": "mcl-first-week-producer-hedge-participation-spike",
+   "market": "MCL",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 72,
+   "wr": 0.5278,
+   "usd_mo": 113,
+   "pf": 2.198,
+   "usd_trade": 56.3
+  },
+  {
    "id": "mes-wk10-derisk",
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -237,6 +249,18 @@
    }
   },
   {
+   "id": "mes-bd4-inflow-exhaustion-fade",
+   "name": "mes-bd4-inflow-exhaustion-fade",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.4857,
+   "usd_mo": 28,
+   "pf": 1.487,
+   "usd_trade": 29.1
+  },
+  {
    "id": "b2-opex-release",
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -279,41 +303,41 @@
    "usd_mo": 563,
    "pf": 1.368,
    "usd_trade": 30.0
-  },
-  {
-   "id": "mcl-closure-length-dose-response-reopen-overshoot",
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 154,
-   "wr": 0.526,
-   "usd_mo": 61,
-   "pf": 1.325,
-   "usd_trade": 14.3,
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
-  },
-  {
-   "id": "b3-prior-high-break",
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 235,
-   "wr": 0.498,
-   "usd_mo": 127,
-   "pf": 1.237,
-   "usd_trade": 19.5,
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T10:53:29.213117+00:00",
+   "hash": "a1dcceb9",
+   "name": "sweep-5-crosssection-rank",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T10:51:25.835014+00:00",
+   "hash": "9080a6f8",
+   "name": "mes-bd4-inflow-exhaustion-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.487"
+  },
+  {
+   "t": "2026-07-23T10:50:41.635960+00:00",
+   "hash": "61a2ab7e",
+   "name": "mcl-first-week-producer-hedge-participation-spike",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.198"
+  },
+  {
+   "t": "2026-07-23T10:50:31.858238+00:00",
+   "hash": "59ad10d9",
+   "name": "mng-nuclear-refuel-outage-power-burn",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.92"
+  },
   {
    "t": "2026-07-23T10:43:15.226069+00:00",
    "hash": "8bdbb9bd",
@@ -377,38 +401,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.623"
-  },
-  {
-   "t": "2026-07-23T10:29:50.580248+00:00",
-   "hash": "a349a2b7",
-   "name": "ROBUSTNESS-BATTERY mgc-first-business-day-index-allocation-print",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T10:28:50.385481+00:00",
-   "hash": "4d8d63c0",
-   "name": "mym-pw-closing-impact-residual",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.663"
-  },
-  {
-   "t": "2026-07-23T10:23:20.915483+00:00",
-   "hash": "609dfa02",
-   "name": "mgc-first-business-day-index-allocation-print",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.543"
-  },
-  {
-   "t": "2026-07-23T10:14:59.559673+00:00",
-   "hash": "25b44c27",
-   "name": "mgc-china-lpr-fix-evening-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.17"
   }
  ],
  "pipeline": {
@@ -436,14 +428,6 @@
     "stage": "dev3yr",
     "started": "2026-07-23T10:48:00Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MCL",
-    "task": "mcl-first-week-producer-hedge-participation-spike",
-    "stage": "dev3yr",
-    "started": "2026-07-23T10:48:00Z",
-    "state": "running"
    }
   ],
   "backlog": [
@@ -459,7 +443,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 127,
+   "registered": 128,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -521,7 +505,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18623
+    "trials": 18626
    }
   ]
  },
@@ -545,7 +529,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 148,
+   "n_tested": 149,
    "n_killed": 124,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -592,7 +576,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 63,
+   "n_tested": 64,
    "n_killed": 45,
    "book_sleeves": [],
    "agents_now": []
@@ -601,8 +585,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 28,
-   "n_killed": 24,
+   "n_tested": 29,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1042,6 +1026,26 @@
     }
    ]
   },
+  "mcl-first-week-producer-hedge-participation-spike": {
+   "name": "mcl-first-week-producer-hedge-participation-spike",
+   "market": "MCL",
+   "tier": "candidate",
+   "mechanism": "Crude's monthly physical pricing cycle concentrates term-contract nominations and index-pricing days in the first week of the calendar month, pulling producer/hedger selling supply into a narrow window; the elevated session volume z-score on these days (not a thin book) is the distinguishing signature that this is a genuine supply event, so we are paid for absorbing that price-insensitive hedge flow by shorting MCL RTH on the first-week business-day cells the screen flagged (BD1, BD3).",
+   "metrics": {
+    "n": 72,
+    "wr": 0.5278,
+    "pf": 2.198,
+    "usd_mo": 113,
+    "usd_trade": 56.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T10:50:41.635960+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mes-wk10-derisk": {
    "name": "mes-wk10-derisk",
    "market": "MES",
@@ -1200,6 +1204,26 @@
     "apex_max": 0
    }
   },
+  "mes-bd4-inflow-exhaustion-fade": {
+   "name": "mes-bd4-inflow-exhaustion-fade",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Turn-of-month retirement and index inflows have a fixed duration that runs out after the third business day of the month, while month-start hedging and rebalancing supply persists into the following session; BD4 (the 4th NASDAQ trading day of the calendar month) is therefore the first day on which the mandated bid is gone but the mandated offer is not, so RTH should show a short-side drift on that specific day.",
+   "metrics": {
+    "n": 35,
+    "wr": 0.4857,
+    "pf": 1.487,
+    "usd_mo": 28,
+    "usd_trade": 29.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T10:51:25.835014+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "b2-opex-release": {
    "name": "b2-opex-release",
    "market": "MNQ",
@@ -1297,74 +1321,6 @@
      "verdict": "REPLICATES"
     }
    ]
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "name": "mcl-closure-length-dose-response-reopen-overshoot",
-   "market": "MCL",
-   "tier": "candidate",
-   "mechanism": "Information accumulates while MCL is shut, so the amount that must be repriced at reopen scales with how many calendar days the market was closed; if the reopen-day move overshoots rather than being a clean one-shot repricing, the next session should fade it, and that fade should be larger after longer closures (1 vs 3 vs 4 calendar-day gaps between RTH sessions), a dose-response structure a curve fit on one closure type cannot mimic.",
-   "metrics": {
-    "n": 154,
-    "wr": 0.526,
-    "pf": 1.325,
-    "usd_mo": 61,
-    "usd_trade": 14.3
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-22T14:10:08.535860+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-22T14:13:24.952332+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-22T14:15:41.271464+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 5,
-    "apex_max": 3
-   }
-  },
-  "b3-prior-high-break": {
-   "name": "b3-prior-high-break",
-   "market": "MNQ",
-   "tier": "candidate",
-   "mechanism": "Stops cluster above the prior-day high; the first break runs them and continues",
-   "metrics": {
-    "n": 235,
-    "wr": 0.498,
-    "pf": 1.237,
-    "usd_mo": 127,
-    "usd_trade": 19.5
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-21T05:21:22.937526+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.917188+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.712645+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 2,
-    "apex_max": 1
-   }
   }
  },
  "decisions": [
