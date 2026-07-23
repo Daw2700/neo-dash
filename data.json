@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:11:11Z",
+  "stamp": "2026-07-23T23:11:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:08:46Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-sifma-early-close-cash-channel-truncation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T23:11:13Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zn-sifma-early-close-cash-channel-truncation",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.34
-   },
    {
     "rank": 5,
     "idea": "mgc-margin-reduction-releveraging-window",
@@ -535,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 179,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
