@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:50:07Z",
+  "stamp": "2026-07-23T18:50:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -457,18 +457,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T18:49:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MCL",
+    "task": "mcl-overnight-return-persistence-momentum",
+    "stage": "dev3yr",
+    "started": "2026-07-23T18:50:09Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 13,
-    "idea": "mcl-overnight-return-persistence-momentum",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 11,
     "idea": "mbt-spot-etf-inflow-underreaction-continuation",
@@ -489,9 +488,9 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 165,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
