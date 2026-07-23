@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:44:40Z",
+  "stamp": "2026-07-23T04:56:37Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 787,
   "n_results": 959,
@@ -412,19 +412,137 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T04:40:10Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-outside-day-two-sided-stop-depletion-fade",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-unfilled-gap-age-hazard-decay",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "zs-short-horizon-hedger-immediacy-premium",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mcl-minute-run-completion-impact-decay",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-tick-constraint-price-discovery-lag",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "zc-staggered-weekly-reopen-crossmarket-leak",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "m6e-dollar-factor-versus-euro-idiosyncratic-decomposition",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mgc-fomc-anchored-volume-weighted-breakeven-crossing",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 9,
+    "idea": "mes-overnight-churn-high-volume-zero-net-expansion",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "mnq-propfirm-cohort-monthstart-stop-density",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "sil-retail-hours-unconfirmed-move-fade",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "zc-samuelson-maturity-regime-switch",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 13,
+    "idea": "mgc-changepoint-in-volume-per-unit-range-participant-mix",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 14,
+    "idea": "mes-early-close-session-truncation-inventory-overshoot",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 14,
    "registered": 107,
    "dev3yr": 0,
    "robustness": 0,
