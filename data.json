@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:19:38Z",
+  "stamp": "2026-07-23T06:21:43Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 815,
+  "n_registered": 817,
   "n_results": 991,
   "n_trials": 39858,
   "holdout_looks_spent": 0,
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T06:21:38.258875+00:00",
+   "hash": "d31808e8",
+   "name": "mnq-postclosure-range-budget-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T06:21:20.282359+00:00",
+   "hash": "696b354c",
+   "name": "mcl-china-month-boundary-pmi-thin-hour",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T05:55:31.374074+00:00",
    "hash": "7dbeca30",
    "name": "mcl-impact-halflife-matched-holding-horizon",
@@ -393,54 +409,36 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.597"
-  },
-  {
-   "t": "2026-07-23T05:47:13.549659+00:00",
-   "hash": "4869d28c",
-   "name": "xmkt-post-settlement-breadth-coherence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T05:45:40.896068+00:00",
-   "hash": "4869d28c",
-   "name": "xmkt-post-settlement-breadth-coherence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF nan"
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "mcl-china-month-boundary-pmi-thin-hour",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:19:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-post-closure-range-budget-exhaustion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:19:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MBT",
+    "task": "mbt-equity-close-auction-risk-budget-substitution",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:19:40Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mcl-china-month-boundary-pmi-thin-hour",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "mnq-post-closure-range-budget-exhaustion",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 3,
-    "idea": "mbt-equity-close-auction-risk-budget-substitution",
-    "source": "data-screen",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "mes-zumbach-coarse-trend-range-expansion",
@@ -524,8 +522,8 @@
    }
   ],
   "funnel": {
-   "idea": 12,
-   "registered": 109,
+   "idea": 9,
+   "registered": 111,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
