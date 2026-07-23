@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:39:38Z",
+  "stamp": "2026-07-23T12:40:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 945,
-  "n_results": 1123,
-  "n_trials": 49259,
+  "n_results": 1124,
+  "n_trials": 49260,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,20 +315,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T12:40:22.245844+00:00",
+   "hash": "cee62b96",
+   "name": "met-unhedgeable-halt-window-carry-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1953"
+  },
+  {
    "t": "2026-07-23T12:39:32.536447+00:00",
    "hash": "ec04afc4",
    "name": "mes-arb-inverseu-dislocation-flip",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.827"
-  },
-  {
-   "t": "2026-07-23T12:39:11.654195+00:00",
-   "hash": "cee62b96",
-   "name": "met-unhedgeable-halt-window-carry-premium",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T12:39:05.826450+00:00",
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MET",
-    "task": "met-unhedgeable-halt-window-carry-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-23T12:37:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-liquidity-withdrawal-surprise-vs-event-norm",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-provider-overnight-inventory-pnl-liquidity-withdrawal",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 138,
+   "registered": 137,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -576,7 +568,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18657
+    "trials": 18658
    }
   ]
  },
@@ -676,8 +668,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 21,
-   "n_killed": 20,
+   "n_tested": 22,
+   "n_killed": 21,
    "book_sleeves": [],
    "agents_now": []
   },
