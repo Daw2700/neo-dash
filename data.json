@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T18:49:21Z",
+  "stamp": "2026-07-23T18:49:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1058,
-  "n_results": 1235,
-  "n_trials": 68305,
+  "n_results": 1236,
+  "n_trials": 68306,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 68305,
+   "trials": 68306,
    "registered": 1058,
-   "tested": 856,
+   "tested": 857,
    "passed": 161,
    "survived": 33,
    "replicated": 12,
@@ -336,12 +336,12 @@
  ],
  "feed": [
   {
-   "t": "2026-07-23T18:48:38.129099+00:00",
+   "t": "2026-07-23T18:49:34.666861+00:00",
    "hash": "3bb86679",
    "name": "mes-sp500-adhoc-inclusion-announce-to-effective-drift",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.432"
   },
   {
    "t": "2026-07-23T18:47:01.359345+00:00",
@@ -443,14 +443,6 @@
     "state": "running"
    },
    {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-dealer-zero-gamma-flip-regime-switch",
-    "stage": "dev3yr",
-    "started": "2026-07-23T18:42:49Z",
-    "state": "running"
-   },
-   {
     "agent": "sweep",
     "market": null,
     "task": "vectorized grammar sweep",
@@ -459,7 +451,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-coupon-payment-reinvestment-duration-bid",
     "stage": "dev3yr",
@@ -507,8 +499,8 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 166,
-   "dev3yr": 3,
+   "registered": 165,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
@@ -569,7 +561,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27984
+    "trials": 27985
    }
   ]
  },
@@ -594,8 +586,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 175,
-   "n_killed": 145,
+   "n_tested": 176,
+   "n_killed": 146,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
