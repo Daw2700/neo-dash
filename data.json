@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:13:47Z",
+  "stamp": "2026-07-23T03:15:31Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 759,
   "n_results": 929,
@@ -396,19 +396,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T03:01:04Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mes-crude-liquidity-channel-risk-transfer",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-complex-cojump-breadth-overnight-gate",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 2,
+    "idea": "mnq-price-vol-cojump-information-vs-flow-classifier",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 4,
+    "idea": "m6e-prorata-matching-depth-illusion-reversion",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 5,
+    "idea": "zc-envelope-breakout-hedge-supply-ceiling",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-crossmarket-continuous-component-lag",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 6,
+    "idea": "mbt-idiosyncratic-vs-common-illiquidity-split",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.43
+   },
+   {
+    "rank": 8,
+    "idea": "mgc-globex-reopen-simultaneous-remark-overshoot",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-fresh-territory-index-arb-capacity-overshoot",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mes-inflation-pair-release-ordering-preprice",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "zn-cojump-macro-confirmation-filter",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 11,
+    "idea": "mcl-ine-day-session-regional-physical-signal",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.37
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 102,
    "dev3yr": 0,
    "robustness": 0,
