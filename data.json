@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:03:47Z",
+  "stamp": "2026-07-23T02:06:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 739,
-  "n_results": 904,
-  "n_trials": 30892,
+  "n_results": 905,
+  "n_trials": 30893,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:04:08.923418+00:00",
+   "hash": "ec760829",
+   "name": "zs-delivery-option-decay-ramp",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T02:02:06.745132+00:00",
    "hash": "b6bdf375",
    "name": "zs-delivery-option-decay-ramp-ROBUSTNESS-868",
@@ -385,14 +393,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.1661"
-  },
-  {
-   "t": "2026-07-23T01:45:15.862469+00:00",
-   "hash": "23793bc8",
-   "name": "zs-export-sales-china-ratification",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.927"
   }
  ],
  "pipeline": {
@@ -412,18 +412,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T01:58:50Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-volume-peak-vs-price-extreme-ordering-absorption",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:03:49Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mnq-volume-peak-vs-price-extreme-ordering-absorption",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "m2k-post-quiet-session-onesided-flow-asymmetry",
@@ -444,7 +443,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 98,
    "dev3yr": 0,
    "robustness": 0,
@@ -507,7 +506,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 56
+    "trials": 57
    }
   ]
  },
