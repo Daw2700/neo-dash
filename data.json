@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:56:40Z",
+  "stamp": "2026-07-23T04:59:04Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 787,
-  "n_results": 959,
-  "n_trials": 39826,
+  "n_registered": 790,
+  "n_results": 961,
+  "n_trials": 39828,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:59:04.755483+00:00",
+   "hash": "1365cdfc",
+   "name": "gap-age-decay",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T04:58:46.139434+00:00",
+   "hash": "46e0cae5",
+   "name": "zs-short-horizon-hedger-immediacy-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.71"
+  },
+  {
+   "t": "2026-07-23T04:58:45.653039+00:00",
+   "hash": "0b181bfd",
+   "name": "mes-outside-day-two-sided-stop-depletion-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.106"
+  },
+  {
    "t": "2026-07-23T04:43:57.526591+00:00",
    "hash": "ffd724f3",
    "name": "rank-effect-extreme",
@@ -385,54 +409,14 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.925"
-  },
-  {
-   "t": "2026-07-23T04:29:46.796126+00:00",
-   "hash": "7b5d7b72",
-   "name": "met-post-benchmark-afternoon-flow-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.128"
-  },
-  {
-   "t": "2026-07-23T04:28:39.374899+00:00",
-   "hash": "980d7cbb",
-   "name": "mgc-invariance-elasticity-range-residual",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.752"
-  },
-  {
-   "t": "2026-07-23T04:27:18.747143+00:00",
-   "hash": "3451262d",
-   "name": "xmkt-turb-mcl-repair",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.105"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-outside-day-two-sided-stop-depletion-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:56:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-unfilled-gap-age-hazard-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T04:56:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "zs-short-horizon-hedger-immediacy-premium",
     "stage": "dev3yr",
     "started": "2026-07-23T04:56:40Z",
     "state": "running"
@@ -541,7 +525,7 @@
   ],
   "funnel": {
    "idea": 11,
-   "registered": 107,
+   "registered": 108,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -603,7 +587,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8990
+    "trials": 8992
    }
   ]
  },
@@ -627,8 +611,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 132,
-   "n_killed": 103,
+   "n_tested": 133,
+   "n_killed": 104,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
    ],
@@ -739,8 +723,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 16,
-   "n_killed": 12,
+   "n_tested": 17,
+   "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
   }
