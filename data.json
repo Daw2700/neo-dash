@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:29:44Z",
+  "stamp": "2026-07-23T06:29:46Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -408,26 +408,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MNQ",
+    "task": "robustness: mbt-close-auction-risk-budget-substitution",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:29:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-zumbach-coarse-trend-range-expansion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:29:46Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "xmkt-weekend-closure-haven-supplyrisk-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T06:29:46Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-zumbach-coarse-trend-range-expansion",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 5,
-    "idea": "xmkt-weekend-closure-haven-supplyrisk-rotation",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 6,
     "idea": "mes-bimodal-profile-unresolved-auction-resolution",
@@ -493,7 +500,7 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
