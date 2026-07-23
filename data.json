@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:19:22Z",
+  "stamp": "2026-07-23T04:22:48Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,19 +412,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T04:02:29Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "xmkt-turbulence-configuration-repair",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.68
+   },
+   {
+    "rank": 2,
+    "idea": "mes-covariance-window-rolloff-releverage-cliff",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-same-slot-execution-schedule-echo",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 4,
+    "idea": "mgc-invariance-elasticity-range-residual",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 5,
+    "idea": "met-post-benchmark-afternoon-flow-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 6,
+    "idea": "mes-continuous-component-crossmarket-morning-predictor",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 7,
+    "idea": "zn-goodside-semibeta-insurance-drag",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 8,
+    "idea": "m6e-post-fix-us-hours-uninformed-flow-absorption",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-eigen-rotation-risk-model-staleness",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 10,
+    "idea": "sil-china-session-metals-information-ratification",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 11,
+    "idea": "zc-dispersion-gated-overnight-intraday-reversal",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "mnq-rank-effect-extreme-position-liquidation",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.36
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
