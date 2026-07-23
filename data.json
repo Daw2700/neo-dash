@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:56:03Z",
+  "stamp": "2026-07-23T03:56:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T03:53:58Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-cojump-macro-confirmation-filter",
+    "stage": "dev3yr",
+    "started": "2026-07-23T03:56:05Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "zn-cojump-macro-confirmation-filter",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 11,
     "idea": "mcl-ine-day-session-regional-physical-signal",
@@ -451,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 103,
    "dev3yr": 0,
    "robustness": 0,
