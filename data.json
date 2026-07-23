@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T05:01:53Z",
+  "stamp": "2026-07-23T05:01:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T04:59:08Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "m2k-tick-constraint-price-discovery-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T05:01:55Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "m2k-tick-constraint-price-discovery-lag",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 6,
     "idea": "zc-staggered-weekly-reopen-crossmarket-leak",
@@ -523,7 +522,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 9,
    "registered": 109,
    "dev3yr": 0,
    "robustness": 0,
