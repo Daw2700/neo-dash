@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:08:33Z",
+  "stamp": "2026-07-23T07:08:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -423,6 +423,14 @@
     "task": "met-onshore-mark-gap-offshore-led-overnight-continuation",
     "stage": "dev3yr",
     "started": "2026-07-23T07:07:30Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "recheck: mcl-unrevisited-settlement-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:08:35Z",
     "state": "running"
    }
   ],
