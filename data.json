@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T21:38:54Z",
+  "stamp": "2026-07-23T21:38:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-mof-weekly-foreign-bond-flow-program-persistence",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:38:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MBT",
+    "task": "mbt-exchange-netflow-sell-intent-lead",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:38:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-settlement-fails-specialness-futures-substitution",
+    "stage": "dev3yr",
+    "started": "2026-07-23T21:38:56Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "zn-mof-weekly-foreign-bond-flow-program-persistence",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 7,
-    "idea": "mbt-exchange-netflow-sell-intent-lead",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 8,
-    "idea": "zn-settlement-fails-specialness-futures-substitution",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 9,
     "idea": "m2k-ipo-lockup-expiry-supply-window",
@@ -500,9 +498,9 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 4,
    "registered": 172,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
