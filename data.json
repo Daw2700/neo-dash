@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:36:04Z",
+  "stamp": "2026-07-23T07:36:06Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "mcl-merchant-quarterend-workingcapital-hedge-lift",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:36:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZS",
+    "task": "zs-marketing-year-high-reference-price-hedge-supply",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:36:06Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-weather-premium-multiday-physical-supply-response",
+    "stage": "dev3yr",
+    "started": "2026-07-23T07:36:06Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mcl-merchant-quarterend-workingcapital-hedge-lift",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 2,
-    "idea": "zs-marketing-year-high-reference-price-hedge-supply",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "mng-weather-premium-multiday-physical-supply-response",
-    "source": "data-screen",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 4,
     "idea": "m6e-tokyo-daily-margin-evaluation-liquidation-clock",
@@ -533,7 +531,7 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 111,
    "dev3yr": 0,
    "robustness": 0,
