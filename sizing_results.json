@@ -117,6 +117,14 @@
    "apex150": {
     "max_micros": 3
    }
+  },
+  "zn-cash-market-closed-futures-open-asymmetry": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 8
+   }
   }
  },
  "bundles": [
