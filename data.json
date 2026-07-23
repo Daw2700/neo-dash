@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T20:40:40Z",
+  "stamp": "2026-07-23T20:45:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1088,
-  "n_results": 1277,
-  "n_trials": 71373,
+  "n_registered": 1089,
+  "n_results": 1278,
+  "n_trials": 71374,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71373,
-   "registered": 1088,
-   "tested": 883,
+   "trials": 71374,
+   "registered": 1089,
+   "tested": 884,
    "passed": 165,
    "survived": 35,
    "replicated": 13,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T20:43:39.663546+00:00",
+   "hash": "84ed2208",
+   "name": "m6e-ecb-reinvestment-taper-step-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9036"
+  },
+  {
    "t": "2026-07-23T20:37:13.372105+00:00",
    "hash": "8b298a3a",
    "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.033"
-  },
-  {
-   "t": "2026-07-23T20:16:29.858617+00:00",
-   "hash": "ce78d2fc",
-   "name": "zn-monthend-duration-demand-net-of-reporting-quarter-drag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.981"
   }
  ],
  "pipeline": {
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T20:33:24Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-ecb-reinvestment-taper-step-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T20:40:42Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "m6e-ecb-reinvestment-taper-step-window",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.33
-   },
    {
     "rank": 10,
     "idea": "zn-tips-accrual-carry-seasonality-nominal-channel",
@@ -508,9 +507,9 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 169,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -571,7 +570,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31049
+    "trials": 31050
    }
   ]
  },
@@ -683,8 +682,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 49,
-   "n_killed": 48,
+   "n_tested": 50,
+   "n_killed": 49,
    "book_sleeves": [],
    "agents_now": []
   },
