@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:25:36Z",
+  "stamp": "2026-07-23T16:26:39Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -424,19 +424,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T16:10:38Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zn-voltick-ratio-trend-persistence-dose-response",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 2,
+    "idea": "zn-stockbond-corr-regime-term-premium-drift",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 3,
+    "idea": "mnq-messaging-ratio-monthend-quote-throttle",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.41
+   },
+   {
+    "rank": 4,
+    "idea": "m6e-tokyo-ttm-fix-completion-reversion",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "mes-intraday-variation-margin-cycle-deleveraging",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "mes-monthly-horizon-allocation-reversal-equity-only",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "mes-buyback-constant-notional-lowadv-amplification",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mes-monthly-vwap-benchmark-completion-pressure",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 9,
+    "idea": "m6e-monthend-corporate-remeasurement-trueup",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.37
+   },
+   {
+    "rank": 10,
+    "idea": "zn-onetick-absorption-shelf-exhaustion-continuation",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 11,
+    "idea": "mnq-grid-coarseness-repricing-completion-lag",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 12,
+    "idea": "mcl-energy-desk-shared-risk-budget-crowdout",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 13,
+    "idea": "zs-corn-limit-lock-displaced-hedge-substitution",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.32
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 157,
    "dev3yr": 0,
    "robustness": 0,
