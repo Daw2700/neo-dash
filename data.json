@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T12:22:15Z",
+  "stamp": "2026-07-23T12:22:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -420,27 +420,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T12:11:36Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-quarterly-vs-serial-expiry-dose-response",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:22:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-us-holiday-london-only-discovery-catchup",
+    "stage": "dev3yr",
+    "started": "2026-07-23T12:22:17Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mes-quarterly-vs-serial-expiry-dose-response",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
-   },
-   {
-    "rank": 11,
-    "idea": "mgc-us-holiday-london-only-discovery-catchup",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 12,
     "idea": "zs-nopa-monthly-crush-report-processor-demand-print",
@@ -452,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 1,
    "registered": 135,
    "dev3yr": 0,
    "robustness": 0,
