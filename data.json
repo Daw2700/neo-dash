@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:36:11Z",
+  "stamp": "2026-07-23T19:43:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1069,
-  "n_results": 1250,
-  "n_trials": 71346,
+  "n_registered": 1071,
+  "n_results": 1253,
+  "n_trials": 71349,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5,
   "lifetime": {
-   "trials": 71346,
-   "registered": 1069,
-   "tested": 868,
-   "passed": 162,
+   "trials": 71349,
+   "registered": 1071,
+   "tested": 870,
+   "passed": 163,
    "survived": 33,
    "replicated": 12,
    "book": 13
@@ -318,23 +318,43 @@
    }
   },
   {
-   "id": "b2-opex-release",
-   "name": "b2-opex-release",
-   "market": "MNQ",
+   "id": "mcl-3day-selloff-capitulation-close-reversal",
+   "name": "mcl-3day-selloff-capitulation-close-reversal",
+   "market": "MCL",
    "tier": "candidate",
    "pinned": false,
-   "n": 35,
-   "wr": 0.429,
-   "usd_mo": 16,
-   "pf": 1.407,
-   "usd_trade": 16.0,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
+   "n": 19,
+   "wr": 0.5263,
+   "usd_mo": 12,
+   "pf": 1.75,
+   "usd_trade": 22.4
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T19:39:35.714263+00:00",
+   "hash": "bb9f19c6",
+   "name": "mes-cross-micro-skew-dispersion-crash-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.9"
+  },
+  {
+   "t": "2026-07-23T19:39:09.544888+00:00",
+   "hash": "65f665a4",
+   "name": "mnq-underwater-duration-coiled-recovery-snapback",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T19:38:32.678252+00:00",
+   "hash": "b6d33dca",
+   "name": "mcl-3day-selloff-capitulation-close-reversal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.75"
+  },
   {
    "t": "2026-07-23T19:32:43.527724+00:00",
    "hash": "347f0de4",
@@ -406,52 +426,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.38"
-  },
-  {
-   "t": "2026-07-23T18:58:35.742569+00:00",
-   "hash": "671edf06",
-   "name": "mes-etf-heartbeat-quarterend-inkind-flush",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.591"
-  },
-  {
-   "t": "2026-07-23T18:58:13.587665+00:00",
-   "hash": "16124c94",
-   "name": "mcl-overnight-return-persistence-momentum",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.9734"
-  },
-  {
-   "t": "2026-07-23T18:52:36.185616+00:00",
-   "hash": "16124c94",
-   "name": "mcl-overnight-return-persistence-momentum",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.973"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-underwater-duration-coiled-recovery-snapback",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:35:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-3day-selloff-capitulation-close-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:36:11Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-cross-micro-skew-dispersion-crash-gate",
     "stage": "dev3yr",
@@ -509,7 +489,7 @@
   "funnel": {
    "idea": 5,
    "registered": 165,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
@@ -570,7 +550,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31022
+    "trials": 31025
    }
   ]
  },
@@ -595,8 +575,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 180,
-   "n_killed": 150,
+   "n_tested": 181,
+   "n_killed": 151,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -644,7 +624,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 74,
+   "n_tested": 75,
    "n_killed": 52,
    "book_sleeves": [],
    "agents_now": []
@@ -1442,39 +1422,25 @@
     "apex_max": 8
    }
   },
-  "b2-opex-release": {
-   "name": "b2-opex-release",
-   "market": "MNQ",
+  "mcl-3day-selloff-capitulation-close-reversal": {
+   "name": "mcl-3day-selloff-capitulation-close-reversal",
+   "market": "MCL",
    "tier": "candidate",
-   "mechanism": "Monthly options expiry pins price to dealer gamma into early afternoon; when hedges roll off the pin releases and the afternoon break trends into the close",
+   "mechanism": "After three consecutive down RTH closes in MCL culminating in a strong close-location value (CLV>0) on the third down day, sellers are exhausted and shorts have covered into the bell, so the next session sees a mechanical bounce as forced selling finishes and short-covering continues, paid for by the momentum/CTA cohort still pressing the prior down move.",
    "metrics": {
-    "n": 35,
-    "wr": 0.429,
-    "pf": 1.407,
-    "usd_mo": 16,
-    "usd_trade": 16.0
+    "n": 19,
+    "wr": 0.5263,
+    "pf": 1.75,
+    "usd_mo": 12,
+    "usd_trade": 22.4
    },
    "verdict_history": [
     {
-     "t": "2026-07-21T05:02:40.560966+00:00",
-     "stage": "dev",
-     "verdict": "SURVIVES dev screen"
-    },
-    {
-     "t": "2026-07-21T15:31:04.903542+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-21T15:49:52.697136+00:00",
+     "t": "2026-07-23T19:38:32.678252+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
     }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
+   ]
   }
  },
  "decisions": [
