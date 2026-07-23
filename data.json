@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:53:03Z",
+  "stamp": "2026-07-23T16:57:12Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1022,
-  "n_results": 1202,
-  "n_trials": 68272,
+  "n_results": 1204,
+  "n_trials": 68274,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -327,6 +327,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T16:56:04.191148+00:00",
+   "hash": "9e497940",
+   "name": "mes-monthly-horizon-allocation-reversal-equity-only",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.091"
+  },
+  {
+   "t": "2026-07-23T16:55:23.811985+00:00",
+   "hash": "9e497940",
+   "name": "mes-monthly-horizon-allocation-reversal-equity-only",
+   "status": "intent only -- no data rea",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-23T16:50:38.508979+00:00",
    "hash": "9e497940",
    "name": "mes-monthly-horizon-allocation-reversal-equity-only",
@@ -405,22 +421,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.0097"
-  },
-  {
-   "t": "2026-07-23T16:13:54.254830+00:00",
-   "hash": "55e6f95f",
-   "name": "m2k-smallcap-earnings-calendar-offset-risk-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.756"
-  },
-  {
-   "t": "2026-07-23T16:12:49.969378+00:00",
-   "hash": "90267550",
-   "name": "met-net-issuance-burn-regime-supply-state",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
   }
  ],
  "pipeline": {
@@ -439,6 +439,14 @@
     "task": "mes-monthly-horizon-allocation-reversal-equity-only",
     "stage": "dev3yr",
     "started": "2026-07-23T16:46:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "recheck: mes-monthly-horizon-allocation-reversal-equity-only",
+    "stage": "dev3yr",
+    "started": "2026-07-23T16:53:05Z",
     "state": "running"
    }
   ],
@@ -571,7 +579,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27951
+    "trials": 27953
    }
   ]
  },
