@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:14:30Z",
+  "stamp": "2026-07-23T11:14:32Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -412,35 +412,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZS",
+    "task": "zs-cash-desk-midsession-to-final-hour-hedge-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:14:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M6E",
+    "task": "m6e-halted-futures-vs-continuous-spot-reopen-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:14:32Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-roll-week-fragmented-book-release-impact-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-23T11:14:32Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zs-cash-desk-midsession-to-final-hour-hedge-continuation",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.66
-   },
-   {
-    "rank": 2,
-    "idea": "m6e-halted-futures-vs-continuous-spot-reopen-overshoot",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "mes-roll-week-fragmented-book-release-impact-overshoot",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 4,
     "idea": "mnq-rough-vol-fast-reversion-atr-budget-overhang",
@@ -515,7 +513,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 8,
    "registered": 131,
    "dev3yr": 0,
    "robustness": 0,
