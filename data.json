@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T11:13:48Z",
+  "stamp": "2026-07-23T11:14:30Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 914,
   "n_results": 1096,
@@ -412,19 +412,110 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T10:53:54Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zs-cash-desk-midsession-to-final-hour-hedge-continuation",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.66
+   },
+   {
+    "rank": 2,
+    "idea": "m6e-halted-futures-vs-continuous-spot-reopen-overshoot",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mes-roll-week-fragmented-book-release-impact-overshoot",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 4,
+    "idea": "mnq-rough-vol-fast-reversion-atr-budget-overhang",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "met-extremity-regime-adverse-selection-liquidity-rent",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 6,
+    "idea": "mcl-interprint-thursday-positioning-freeze",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 7,
+    "idea": "mng-crude-lead-rth-only-divergence-reconvergence",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 8,
+    "idea": "sil-industrial-vs-monetary-session-attribution-conflict",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 9,
+    "idea": "zc-report-free-week-hedger-immediacy-discount",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 10,
+    "idea": "mym-earnings-blackout-vs-open-window-price-weight-sensitivity",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.26
+   },
+   {
+    "rank": 11,
+    "idea": "m2k-liquidation-order-first-sold-overshoot",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.25
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 11,
    "registered": 131,
    "dev3yr": 0,
    "robustness": 0,
