@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T02:40:20Z",
+  "stamp": "2026-07-23T02:40:42Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 746,
   "n_results": 915,
@@ -396,35 +396,41 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "sweep",
+    "market": null,
+    "task": "vectorized grammar sweep",
+    "stage": "sweep",
+    "started": "2026-07-23T02:40:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-structured-note-strike-setting-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:40:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-equity-duration-ratio-rate-shock-lag",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:40:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MGC",
+    "task": "mgc-weekly-monwed-option-assignment-flow",
+    "stage": "dev3yr",
+    "started": "2026-07-23T02:40:42Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "mes-structured-note-strike-setting-window",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 4,
-    "idea": "mnq-equity-duration-ratio-rate-shock-lag",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 5,
-    "idea": "mgc-weekly-monwed-option-assignment-flow",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 6,
     "idea": "mcl-api-eia-disagreement-stranded-reversal",
@@ -490,7 +496,7 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 7,
    "registered": 100,
    "dev3yr": 0,
    "robustness": 0,
