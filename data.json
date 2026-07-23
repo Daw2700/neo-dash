@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-23T22:11:08Z",
+  "stamp": "2026-07-23T22:18:14Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1112,
-  "n_results": 1300,
-  "n_trials": 71396,
+  "n_registered": 1115,
+  "n_results": 1303,
+  "n_trials": 71399,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 71396,
-   "registered": 1112,
-   "tested": 901,
-   "passed": 168,
+   "trials": 71399,
+   "registered": 1115,
+   "tested": 904,
+   "passed": 169,
    "survived": 36,
    "replicated": 13,
    "book": 13
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T22:14:46.832586+00:00",
+   "hash": "ed28f638",
+   "name": "mnq-overnight-jump-conditioned-day-night-flip",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.881"
+  },
+  {
+   "t": "2026-07-23T22:14:06.514399+00:00",
+   "hash": "b314a860",
+   "name": "mes-vwap-occupation-displacement-asymmetry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.089"
+  },
+  {
+   "t": "2026-07-23T22:13:39.118078+00:00",
+   "hash": "02c8ea8e",
+   "name": "zn-large-tick-metaorder-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.614"
+  },
+  {
    "t": "2026-07-23T21:57:21.639449+00:00",
    "hash": "b5e35ee3",
    "name": "zs-china-sow-herd-monthly-print-soymeal-demand-revision",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.497"
-  },
-  {
-   "t": "2026-07-23T21:39:56.555705+00:00",
-   "hash": "d1668248",
-   "name": "mbt-exchange-netflow-sell-intent-lead",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-23T21:36:17.230342+00:00",
-   "hash": "e4617196",
-   "name": "m2k-convertible-issuance-delta-hedge-overnight-supply",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.786"
-  },
-  {
-   "t": "2026-07-23T21:30:35.005314+00:00",
-   "hash": "4b757361",
-   "name": "zn-withheld-tax-receipts-labor-nowcast-drift",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-large-tick-regime-metaorder-impact-persistence",
-    "stage": "dev3yr",
-    "started": "2026-07-23T22:11:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-overnight-jump-conditioned-day-night-clientele-flip",
     "stage": "dev3yr",
@@ -545,10 +537,10 @@
   "funnel": {
    "idea": 9,
    "registered": 174,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 13,
+   "book_candidate": 14,
    "golden_staged": 1
   },
   "throughput": [
@@ -606,7 +598,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 31072
+    "trials": 31075
    }
   ]
  },
@@ -615,8 +607,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 139,
-   "n_killed": 95,
+   "n_tested": 140,
+   "n_killed": 96,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -631,7 +623,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 183,
+   "n_tested": 184,
    "n_killed": 152,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
@@ -709,8 +701,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 25,
-   "n_killed": 24,
+   "n_tested": 26,
+   "n_killed": 25,
    "book_sleeves": [],
    "agents_now": []
   },
