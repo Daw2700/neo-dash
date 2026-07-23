@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T09:41:34Z",
+  "stamp": "2026-07-23T09:41:36Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T09:40:10Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "SIL",
+    "task": "sil-preopen-placeholder-print-prerelease-retrace",
+    "stage": "dev3yr",
+    "started": "2026-07-23T09:41:36Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "sil-preopen-placeholder-print-prerelease-retrace",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "mes-complex-extreme-minute-concordance-afternoon-exhaustion",
@@ -451,7 +450,7 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 120,
    "dev3yr": 0,
    "robustness": 0,
