@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T16:57:40Z",
+  "stamp": "2026-07-23T17:00:06Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1022,
-  "n_results": 1204,
-  "n_trials": 68274,
+  "n_registered": 1025,
+  "n_results": 1205,
+  "n_trials": 68275,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 5
@@ -327,6 +327,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T16:59:46.212500+00:00",
+   "hash": "8c147297",
+   "name": "m6e-monthend-corporate-remeasurement-trueup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.6245"
+  },
+  {
+   "t": "2026-07-23T16:58:51.294510+00:00",
+   "hash": "6bb1a09a",
+   "name": "mes-monthly-vwap-benchmark-completion-pressure",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T16:58:28.159408+00:00",
+   "hash": "36292eeb",
+   "name": "mes-buyback-constant-notional-lowadv-amplification",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T16:56:04.191148+00:00",
    "hash": "9e497940",
    "name": "mes-monthly-horizon-allocation-reversal-equity-only",
@@ -397,30 +421,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.957"
-  },
-  {
-   "t": "2026-07-23T16:29:18.394953+00:00",
-   "hash": "865f34b7",
-   "name": "zn-voltick-ratio-trend-persistence-dose-response",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.105"
-  },
-  {
-   "t": "2026-07-23T16:29:17.911014+00:00",
-   "hash": "ab897dac",
-   "name": "mnq-messaging-ratio-monthend-quote-throttle",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.356"
-  },
-  {
-   "t": "2026-07-23T16:16:02.476287+00:00",
-   "hash": "6a334486",
-   "name": "m6e-ecb-fed-balance-sheet-release-stagger",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.0097"
   }
  ],
  "pipeline": {
@@ -437,14 +437,6 @@
     "agent": "tester-2",
     "market": "MES",
     "task": "mes-monthly-vwap-benchmark-completion-pressure",
-    "stage": "dev3yr",
-    "started": "2026-07-23T16:57:40Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-monthend-corporate-remeasurement-trueup",
     "stage": "dev3yr",
     "started": "2026-07-23T16:57:40Z",
     "state": "running"
@@ -490,7 +482,7 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 158,
+   "registered": 160,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -552,7 +544,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27953
+    "trials": 27954
    }
   ]
  },
@@ -664,8 +656,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 47,
-   "n_killed": 46,
+   "n_tested": 48,
+   "n_killed": 47,
    "book_sleeves": [],
    "agents_now": []
   },
