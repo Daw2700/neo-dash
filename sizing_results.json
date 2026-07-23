@@ -110,20 +110,20 @@
     "max_micros": 1
    }
   },
+  "mes-1256-mtm-placeholder-substitution-window": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 8
+   }
+  },
   "mes-depth-consumption-print-size-range-forecast": {
    "growth": {
     "max_micros": 5
    },
    "apex150": {
     "max_micros": 3
-   }
-  },
-  "zn-cash-market-closed-futures-open-asymmetry": {
-   "growth": {
-    "max_micros": 8
-   },
-   "apex150": {
-    "max_micros": 8
    }
   }
  },
@@ -293,23 +293,24 @@
     "b2-opex-release": 1,
     "b3-tom-long": 1,
     "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "b3-prior-high-break": 1
+    "b3-prior-high-break": 1,
+    "mes-1256-mtm-placeholder-substitution-window": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.189,
-   "usd_mo": 563,
-   "usd_mo_5acct": 2815,
-   "pct_goal": 0.281,
-   "wr": 0.518,
+   "total_micros": 11,
+   "p_breach": 0.192,
+   "usd_mo": 570,
+   "usd_mo_5acct": 2850,
+   "pct_goal": 0.285,
+   "wr": 0.517,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 1297,
-    "avg_lose": -581
+    "avg_win": 1301,
+    "avg_lose": -551
    },
-   "first_pay_days": 65,
-   "pay_rate_1yr": 0.959
+   "first_pay_days": 64,
+   "pay_rate_1yr": 0.962
   },
   {
    "id": "Risk-premium core (rare, high WR)|growth",

@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:49:03Z",
+  "stamp": "2026-07-23T08:55:25Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 868,
-  "n_results": 1050,
-  "n_trials": 49186,
+  "n_registered": 871,
+  "n_results": 1053,
+  "n_trials": 49189,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -249,6 +249,18 @@
    "usd_trade": 30.0
   },
   {
+   "id": "mes-quiet-streak-range-budget-contraction",
+   "name": "mes-quiet-streak-range-budget-contraction",
+   "market": "MES",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 93,
+   "wr": 0.5484,
+   "usd_mo": 43,
+   "pf": 1.344,
+   "usd_trade": 16.6
+  },
+  {
    "id": "mcl-closure-length-dose-response-reopen-overshoot",
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -281,18 +293,6 @@
    }
   },
   {
-   "id": "mes-1256-mtm-placeholder-substitution-window",
-   "name": "mes-1256-mtm-placeholder-substitution-window",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 30,
-   "wr": 0.5667,
-   "usd_mo": 10,
-   "pf": 1.199,
-   "usd_trade": 11.8
-  },
-  {
    "id": "mes-depth-consumption-print-size-range-forecast",
    "name": "mes-depth-consumption-print-size-range-forecast",
    "market": "MES",
@@ -310,6 +310,38 @@
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-23T08:53:23.090954+00:00",
+   "hash": "5cc7f1aa",
+   "name": "mes-quiet-streak-range-budget-contraction",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.344"
+  },
+  {
+   "t": "2026-07-23T08:52:41.867744+00:00",
+   "hash": "69c4eaa4",
+   "name": "mym-venue-allocation-wedge-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.161"
+  },
+  {
+   "t": "2026-07-23T08:52:23.502335+00:00",
+   "hash": "3e759634",
+   "name": "mes-1256-mtm-placeholder-substitution-window",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T08:50:26.126492+00:00",
+   "hash": "781688a5",
+   "name": "ROBUSTNESS-BATTERY mes-1256-mtm-placeholder-substitution-window (3e7596347f0242a5)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-23T08:47:28.344782+00:00",
    "hash": "2a0e6460",
@@ -373,60 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 2.103"
-  },
-  {
-   "t": "2026-07-23T08:30:52.961721+00:00",
-   "hash": "7a1fcb9d",
-   "name": "mcl-aramco-osp-announcement-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.304"
-  },
-  {
-   "t": "2026-07-23T08:28:59.800039+00:00",
-   "hash": "da95f05a",
-   "name": "zc-grain-stocks-continuation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.006"
-  },
-  {
-   "t": "2026-07-23T08:28:30.878224+00:00",
-   "hash": "359035db",
-   "name": "m2k-crsp-packeting-transition-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.389"
-  },
-  {
-   "t": "2026-07-23T08:12:37.717022+00:00",
-   "hash": "9085c4d9",
-   "name": "met-staking-yield-frontend-lag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.857"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "robustness: mes-1256-mtm-placeholder-substitution-window",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:48:37Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-venue-allocation-wedge-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T08:49:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-quiet-streak-range-budget-contraction",
     "stage": "dev3yr",
@@ -456,7 +440,7 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 115,
+   "registered": 116,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -518,7 +502,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18584
+    "trials": 18587
    }
   ]
  },
@@ -542,7 +526,7 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 145,
+   "n_tested": 146,
    "n_killed": 123,
    "book_sleeves": [
     "mes-gold-overnight-macro-signal-open-continuation"
@@ -553,7 +537,7 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 14,
+   "n_tested": 15,
    "n_killed": 13,
    "book_sleeves": [],
    "agents_now": []
@@ -1227,6 +1211,26 @@
     }
    ]
   },
+  "mes-quiet-streak-range-budget-contraction": {
+   "name": "mes-quiet-streak-range-budget-contraction",
+   "market": "MES",
+   "tier": "candidate",
+   "mechanism": "Consecutive low-range sessions predict a smaller next-session range, monotonically, because breakout traders size stops and targets off trailing unconditional ATR and thus systematically over-buy range in exactly the state where realized range is contracting, so the counterparty who fades that over-sized excursion back toward the open is paid.",
+   "metrics": {
+    "n": 93,
+    "wr": 0.5484,
+    "pf": 1.344,
+    "usd_mo": 43,
+    "usd_trade": 16.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T08:53:23.090954+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-closure-length-dose-response-reopen-overshoot": {
    "name": "mcl-closure-length-dose-response-reopen-overshoot",
    "market": "MCL",
@@ -1294,26 +1298,6 @@
     "growth_max": 2,
     "apex_max": 1
    }
-  },
-  "mes-1256-mtm-placeholder-substitution-window": {
-   "name": "mes-1256-mtm-placeholder-substitution-window",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Section 1256 marks futures to market on Dec 31 and exempts them from the wash-sale rule, so late-December tax-motivated selling happens in cash equities while index futures are bought as a beta placeholder during the repurchase gap, creating a futures-side demand imbalance in the final December sessions that is unwound in early January when the cash exposure is rebuilt.",
-   "metrics": {
-    "n": 30,
-    "wr": 0.5667,
-    "pf": 1.199,
-    "usd_mo": 10,
-    "usd_trade": 11.8
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T08:45:50.799950+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
   },
   "mes-depth-consumption-print-size-range-forecast": {
    "name": "mes-depth-consumption-print-size-range-forecast",
@@ -1567,26 +1551,27 @@
     "b2-opex-release": 1,
     "b3-tom-long": 1,
     "mcl-closure-length-dose-response-reopen-overshoot": 1,
-    "b3-prior-high-break": 1
+    "b3-prior-high-break": 1,
+    "mes-1256-mtm-placeholder-substitution-window": 1
    },
-   "total_micros": 10,
-   "p_breach": 0.189,
-   "usd_mo": 563,
-   "usd_mo_5acct": 2815,
-   "pct_goal": 1.013,
-   "wr": 0.518,
+   "total_micros": 11,
+   "p_breach": 0.192,
+   "usd_mo": 570,
+   "usd_mo_5acct": 2850,
+   "pct_goal": 1.026,
+   "wr": 0.517,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 1297,
-    "avg_lose": -581
+    "avg_win": 1301,
+    "avg_lose": -551
    },
-   "first_pay_days": 65,
-   "pay_rate_1yr": 0.959,
+   "first_pay_days": 64,
+   "pay_rate_1yr": 0.962,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 10134
+   "usd_mo_total": 10260
   },
   {
    "id": "Cross-market spread|apex150",
