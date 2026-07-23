@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:07:30Z",
+  "stamp": "2026-07-23T07:08:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 832,
-  "n_results": 1010,
-  "n_trials": 49146,
+  "n_results": 1011,
+  "n_trials": 49147,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:08:11.783635+00:00",
+   "hash": "d6fe4f5f",
+   "name": "mcl-unrevisited-settlement-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.974"
+  },
+  {
    "t": "2026-07-23T07:07:24.761865+00:00",
    "hash": "19208aea",
    "name": "mgc-overnight-vwap-supply",
@@ -325,14 +333,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.8497"
-  },
-  {
-   "t": "2026-07-23T07:06:46.983733+00:00",
-   "hash": "d6fe4f5f",
-   "name": "mcl-unrevisited-settlement-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-23T06:57:44.453476+00:00",
@@ -411,14 +411,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-unrevisited-settlement-oneway-auction-continuation",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:04:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-overnight-vwap-inventory-profit-supply",
     "stage": "dev3yr",
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MET",
     "task": "met-onshore-mark-gap-offshore-led-overnight-continuation",
     "stage": "dev3yr",
@@ -510,7 +502,7 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 112,
+   "registered": 111,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -572,7 +564,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18544
+    "trials": 18545
    }
   ]
  },
@@ -643,8 +635,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 58,
-   "n_killed": 41,
+   "n_tested": 59,
+   "n_killed": 42,
    "book_sleeves": [],
    "agents_now": []
   },
