@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:28:56Z",
+  "stamp": "2026-07-23T17:39:55Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1032,
   "n_results": 1213,
@@ -424,25 +424,152 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-23T17:25:09Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zn-gdp-residual-seasonality-quarter-signed-surprise",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "xmkt-simultaneous-availability-hedging-leg-outage-premium",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 3,
+    "idea": "zn-15c3-3-customer-reserve-tuesday-funding-clock",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "zn-tba-48hour-day-pool-allocation-clock",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.48
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-followon-offering-supply-overnight-dilution-window",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 6,
+    "idea": "mgc-official-sector-purchase-pace-reporting-lag-state",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mes-fund-tournament-midyear-rank-risk-shifting",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 8,
+    "idea": "mng-naesb-timely-nomination-cycle-cliff",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "sil-nondecimal-micro-fullsize-ratio-unnettable-residual",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "zc-elevator-storage-financing-rate-regime-carry-drag",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 11,
+    "idea": "mcl-brent-basket-wti-midland-inclusion-regime-shift",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 12,
+    "idea": "mbt-utc-day-boundary-offshore-mark-nonalignment",
+    "source": "data-screen",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 13,
+    "idea": "mes-tokyo-afternoon-reopen-us-exposure-hedge-restart",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 14,
+    "idea": "mes-attention-diversion-mass-audience-event-liquidity-thinning",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 15,
+    "idea": "zs-renewable-diesel-crush-capacity-commissioning-step",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 15,
    "registered": 161,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 0,
-   "golden_staged": 0
+   "book_candidate": 12,
+   "golden_staged": 1
   },
   "throughput": [
    {

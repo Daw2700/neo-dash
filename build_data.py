@@ -173,6 +173,13 @@ pipeline["backlog"] = [{"rank": b.get("rank", i + 1), "idea": b.get("idea"),
                         "source": b.get("source"), "markets": [b.get("market")],
                         "score": b.get("score")} for i, b in enumerate(_backlog)]
 pipeline["funnel"]["idea"] = len(_backlog)
+# live stage counts: running workers per stage + resting strategies per tier
+_wstage = [w.get("stage") for w in _workers if w.get("state") == "running"]
+pipeline["funnel"]["dev3yr"] = _wstage.count("dev3yr") + _wstage.count("recheck")
+pipeline["funnel"]["robustness"] = _wstage.count("robustness")
+pipeline["funnel"]["mes_replication"] = _wstage.count("replication")
+pipeline["funnel"]["book_candidate"] = sum(1 for r in rows if r["tier"] == "candidate")
+pipeline["funnel"]["golden_staged"] = sum(1 for d in decisions if d.get("kind") == "golden_test")
 
 # --- roadmap ---
 bg = json.loads((ROOT / "data/book4_goal.json").read_text())
