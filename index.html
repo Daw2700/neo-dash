@@ -61,7 +61,8 @@ main{padding:12px 14px 90px;max-width:1100px;margin:0 auto}
 /* status strip */
 .strip{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 @media(min-width:720px){.strip{grid-template-columns:repeat(4,1fr)}}
-.stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px}
+.stat{position:relative;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-height:44px}
+.stat .dl{position:absolute;top:6px;right:8px;font:700 9.5px var(--mono);color:var(--good,#5dd39e);background:rgba(93,211,158,.1);border:1px solid rgba(93,211,158,.25);border-radius:999px;padding:1px 6px}
 .stat .l{font-size:10px;font-weight:700;letter-spacing:.06em;color:var(--dim)}
 .stat .v{font:700 19px/1.5 var(--mono)}
 .stat.sacred{border-color:#3d4470;background:linear-gradient(135deg,rgba(109,124,255,.12),var(--panel2))}
@@ -330,7 +331,7 @@ window.addEventListener("hashchange",route);
 
 /* ================= data ================= */
 async function load(){try{
-  const r=await fetch("data.json",{cache:"no-store"});DATA=await r.json();fetchedAt=Date.now();
+  const r=await fetch("data.json",{cache:"no-store"});DATA=await r.json();fetchedAt=Date.now();visitBase();
   const ids=new Set((DATA.decisions||[]).map(d=>d.id));
   const qa=id=>((DATA.decisions||[]).find(d=>d.id===id)||{}).qa||[];
   window.OUTBOX=outboxGet().filter(x=>ids.has(x.id)&&!(x.action==="question"&&qa(x.id).some(z=>z.q_t===x.t)));
@@ -421,14 +422,28 @@ function lbRows(rows,limit){return lbSorted(rows).slice(0,limit||99).map((s,i)=>
   </div>`}).join("")}
 const lbHead=`<div class="lb-head"><span>#</span><span>STRATEGY</span><span data-g="tier">TIER</span><span class="r" data-g="usd_mo">$/MO</span><span class="r lb-desk" data-g="n">N</span><span class="r lb-desk" data-g="wr">WR</span><span class="r lb-desk" data-g="pf">PF</span><span class="r lb-desk" data-g="usd_trade">$/TR</span><span class="lb-desk"></span></div>`;
 
+const SEEN_KEYS=["n_registered","n_results","n_trials","holdout_looks_spent"];
+function visitBase(){try{
+  const now=Date.now(), m=DATA.meta;
+  const cur=Object.fromEntries(SEEN_KEYS.map(k=>[k,m[k]||0]));
+  const seen=JSON.parse(localStorage.getItem("neo_seen")||"null");
+  if(!seen){localStorage.setItem("neo_base",JSON.stringify(cur));}
+  else if(now-seen.t>30*60*1000){localStorage.setItem("neo_base",JSON.stringify(seen.stats));}
+  localStorage.setItem("neo_seen",JSON.stringify({stats:cur,t:now}));
+}catch(e){}}
+function delta(k){try{
+  const base=JSON.parse(localStorage.getItem("neo_base")||"null");if(!base)return"";
+  const d=(DATA.meta[k]||0)-(base[k]||0);
+  return d>0?`<span class="dl">+${fmt(d)}</span>`:"";
+}catch(e){return""}}
 function rOverview(){const m=DATA.meta;
   return`
   <div class="card"><h2>Engine <span data-g="status" class="chip ${m.engine_state==="ok"?"g":"y"}">${esc(m.status).toUpperCase()}</span><span class="right">${hhmm(m.stamp)} UTC heartbeat</span></h2>
     <div class="strip">
-      <div class="stat" data-g="registered"><div class="l">STRATEGIES REGISTERED</div><div class="v">${fmt(m.n_registered)}</div></div>
-      <div class="stat" data-g="results"><div class="l">RESULTS ON LEDGER</div><div class="v">${fmt(m.n_results)}</div></div>
-      <div class="stat" data-g="trials"><div class="l">TRIALS RUN</div><div class="v">${fmt(m.n_trials)}</div></div>
-      <div class="stat sacred" data-g="holdout"><div class="l">HOLDOUT LOOKS SPENT <span class="iico">i</span></div><div class="v">${m.holdout_looks_spent}</div></div>
+      <div class="stat" data-g="registered">${delta("n_registered")}<div class="l">STRATEGIES REGISTERED</div><div class="v">${fmt(m.n_registered)}</div></div>
+      <div class="stat" data-g="results">${delta("n_results")}<div class="l">RESULTS ON LEDGER</div><div class="v">${fmt(m.n_results)}</div></div>
+      <div class="stat" data-g="trials">${delta("n_trials")}<div class="l">TRIALS RUN</div><div class="v">${fmt(m.n_trials)}</div></div>
+      <div class="stat sacred" data-g="holdout">${delta("holdout_looks_spent")}<div class="l">HOLDOUT LOOKS SPENT <span class="iico">i</span></div><div class="v">${m.holdout_looks_spent}</div></div>
     </div></div>
   <div class="card"><h2>The gauntlet — all time <span class="iico" data-g="lifetime">i</span><span class="right">everything ever thrown at it</span></h2>
     <div class="vfunnel">${(()=>{const L=m.lifetime;const rows=[["trials","TRIALS RUN"],["registered","STRATEGIES REGISTERED"],["tested","TESTED 3-YR"],["passed","PASSED THE BAR"],["survived","SURVIVED THE BATTERY"],["replicated","REPLICATED"],["book","IN THE BOOK"]];const W=[100,86,72,58,45,33,24];
