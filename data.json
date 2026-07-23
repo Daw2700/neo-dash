@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T03:45:53Z",
+  "stamp": "2026-07-23T03:46:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 766,
-  "n_results": 937,
-  "n_trials": 39804,
+  "n_results": 938,
+  "n_trials": 39805,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -315,6 +315,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T03:45:54.290126+00:00",
+   "hash": "77b43d9d",
+   "name": "zc-envelope-breakout-hedge-supply-ceiling",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.831"
+  },
+  {
    "t": "2026-07-23T03:45:29.172672+00:00",
    "hash": "a5428f92",
    "name": "m6e-prorata-depth-illusion-reversion",
@@ -326,14 +334,6 @@
    "t": "2026-07-23T03:45:22.878603+00:00",
    "hash": "a81e5211",
    "name": "mes-continuous-lag",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T03:44:46.520319+00:00",
-   "hash": "77b43d9d",
-   "name": "zc-envelope-breakout-hedge-supply-ceiling",
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
@@ -415,14 +415,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-envelope-breakout-hedge-supply-ceiling",
-    "stage": "dev3yr",
-    "started": "2026-07-23T03:43:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-crossmarket-continuous-component-lag",
     "stage": "dev3yr",
@@ -430,7 +422,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "mbt-idiosyncratic-vs-common-illiquidity-split",
     "stage": "dev3yr",
@@ -487,7 +479,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 105,
+   "registered": 104,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -549,7 +541,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 8968
+    "trials": 8969
    }
   ]
  },
@@ -676,8 +668,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 37,
-   "n_killed": 31,
+   "n_tested": 38,
+   "n_killed": 32,
    "book_sleeves": [],
    "agents_now": []
   },
