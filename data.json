@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T10:05:39Z",
+  "stamp": "2026-07-23T10:05:41Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -416,27 +416,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T10:05:15Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "xmkt-afternoon-liquidity-trough-coherent-impact-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:05:40Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-binding-tick-discovery-suppression-release",
+    "stage": "dev3yr",
+    "started": "2026-07-23T10:05:40Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "xmkt-afternoon-liquidity-trough-coherent-impact-repair",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 5,
-    "idea": "zc-binding-tick-discovery-suppression-release",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 6,
     "idea": "zn-tic-foreign-holdings-release-deferred-repricing",
@@ -520,7 +518,7 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 9,
    "registered": 122,
    "dev3yr": 0,
    "robustness": 0,
