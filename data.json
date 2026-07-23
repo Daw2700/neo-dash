@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T17:49:25Z",
+  "stamp": "2026-07-23T17:49:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T17:42:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-fund-tournament-midyear-rank-risk-shifting",
+    "stage": "dev3yr",
+    "started": "2026-07-23T17:49:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mes-fund-tournament-midyear-rank-risk-shifting",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 8,
     "idea": "mng-naesb-timely-nomination-cycle-cliff",
@@ -535,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 162,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 12,
