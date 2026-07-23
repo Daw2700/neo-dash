@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T01:58:50Z",
+  "stamp": "2026-07-23T02:03:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 737,
-  "n_results": 902,
-  "n_trials": 30890,
+  "n_registered": 739,
+  "n_results": 904,
+  "n_trials": 30892,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7
@@ -299,6 +299,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T02:02:06.745132+00:00",
+   "hash": "b6bdf375",
+   "name": "zs-delivery-option-decay-ramp-ROBUSTNESS-868",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T02:01:37.803684+00:00",
+   "hash": "6299d924",
+   "name": "mbt-multiday-closure-no-overshoot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.1356"
+  },
+  {
+   "t": "2026-07-23T02:01:11.007996+00:00",
+   "hash": "7b9d9616",
+   "name": "mbt-equity-overnight-overextrapolation-us-session-fade",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.542"
+  },
+  {
+   "t": "2026-07-23T01:58:53.271329+00:00",
+   "hash": "250b8476",
+   "name": "rep-mbt-equity-overnight-overextrapolation-us-session-fade-met",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T01:58:41.221239+00:00",
    "hash": "6299d924",
    "name": "mbt-multiday-closure-no-overshoot",
@@ -361,52 +393,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.927"
-  },
-  {
-   "t": "2026-07-23T01:44:28.197125+00:00",
-   "hash": "372fb899",
-   "name": "mes-preclosure-inventory-aversion-reversal-dose-response",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.721"
-  },
-  {
-   "t": "2026-07-23T01:44:24.715635+00:00",
-   "hash": "2651408f",
-   "name": "zn-wed-close-equity-duration-rotation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.198"
-  },
-  {
-   "t": "2026-07-23T01:43:00.923897+00:00",
-   "hash": "95afe179",
-   "name": "mes-expiry-week-dealer-capacity-impact-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.626"
-  },
-  {
-   "t": "2026-07-23T01:31:35.915245+00:00",
-   "hash": "8554e6c3",
-   "name": "mcl-vwap-vs-range-midpoint-inventory-shelf-recal",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "replication: mbt-equity-overnight-overextrapolation-us-session-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-23T01:57:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZS",
     "task": "robustness: zs-delivery-option-decay-ramp",
     "stage": "dev3yr",
@@ -414,7 +406,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MBT",
     "task": "recheck: mbt-multiday-closure-no-overshoot",
     "stage": "dev3yr",
@@ -453,7 +445,7 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 96,
+   "registered": 98,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -515,7 +507,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 54
+    "trials": 56
    }
   ]
  },
