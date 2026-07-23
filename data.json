@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:01:28Z",
+  "stamp": "2026-07-23T15:01:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -444,18 +444,17 @@
     "stage": "decision",
     "started": "2026-07-23T14:59:02Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-5",
+    "market": "ZC",
+    "task": "zc-deadhour-move-in-spread-units-deferred-completion",
+    "stage": "dev3yr",
+    "started": "2026-07-23T15:01:32Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "zc-deadhour-move-in-spread-units-deferred-completion",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 11,
     "idea": "mnq-shared-maker-capital-scarcity-impact-premium",
@@ -476,7 +475,7 @@
    }
   ],
   "funnel": {
-   "idea": 3,
+   "idea": 2,
    "registered": 152,
    "dev3yr": 0,
    "robustness": 0,
