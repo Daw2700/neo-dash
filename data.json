@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-23T04:04:16Z",
+  "stamp": "2026-07-23T04:19:22Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 772,
+  "n_registered": 774,
   "n_results": 946,
   "n_trials": 39813,
   "holdout_looks_spent": 0,
@@ -315,6 +315,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T04:10:17.957931+00:00",
+   "hash": "08579929",
+   "name": "scout-53b-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T04:04:58.030118+00:00",
+   "hash": "183a7427",
+   "name": "scout-53-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T04:04:08.441107+00:00",
    "hash": "2501cf95",
    "name": "mcl-ine-day-session-regional-physical-signal",
@@ -393,22 +409,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.831"
-  },
-  {
-   "t": "2026-07-23T03:45:29.172672+00:00",
-   "hash": "a5428f92",
-   "name": "m6e-prorata-depth-illusion-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.1216"
-  },
-  {
-   "t": "2026-07-23T03:38:04.824401+00:00",
-   "hash": "348de1d4",
-   "name": "cojump-flow-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.0041"
   }
  ],
  "pipeline": {
@@ -425,7 +425,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 104,
+   "registered": 106,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
