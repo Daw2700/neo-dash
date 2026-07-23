@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T08:43:24Z",
+  "stamp": "2026-07-23T08:43:26Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -428,18 +428,17 @@
     "stage": "dev3yr",
     "started": "2026-07-23T08:43:02Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-1256-mtm-placeholder-substitution-window",
+    "stage": "dev3yr",
+    "started": "2026-07-23T08:43:26Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mes-1256-mtm-placeholder-substitution-window",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mym-venue-allocation-wedge-continuation",
@@ -478,7 +477,7 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 115,
    "dev3yr": 0,
    "robustness": 0,
