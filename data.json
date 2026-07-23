@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T07:11:09Z",
+  "stamp": "2026-07-23T07:13:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 833,
-  "n_results": 1014,
-  "n_trials": 49150,
+  "n_registered": 836,
+  "n_results": 1016,
+  "n_trials": 49152,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T07:13:33.772095+00:00",
+   "hash": "71124a34",
+   "name": "mes-orb-failed-breakout-reclaim-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-23T07:13:17.639186+00:00",
+   "hash": "b09c1d3f",
+   "name": "zs-both-sided-overnight-sweep-liquidation-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.057"
+  },
+  {
+   "t": "2026-07-23T07:13:11.106581+00:00",
+   "hash": "53d91a2b",
+   "name": "m2k-umich-prelim-elasticity-repricing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.015"
+  },
+  {
    "t": "2026-07-23T07:11:03.179386+00:00",
    "hash": "40cfe01c",
    "name": "met-onshore-mark-gap-offshore-continuation",
@@ -381,52 +405,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.108"
-  },
-  {
-   "t": "2026-07-23T06:48:57.557101+00:00",
-   "hash": "e7629de6",
-   "name": "mes-quarter-start-institutional-rebalance-execution-window",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.338"
-  },
-  {
-   "t": "2026-07-23T06:46:29.960791+00:00",
-   "hash": "8238b202",
-   "name": "scout-57-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T06:45:31.906409+00:00",
-   "hash": "c8a7c55e",
-   "name": "mym-volirreg-liquidity-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.13"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-both-sided-overnight-sweep-liquidation-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:09:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-umich-prelim-consumer-elasticity-relative-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-23T07:10:25Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-opening-range-failed-breakout-reclaim-fade",
     "stage": "dev3yr",
@@ -483,7 +467,7 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 110,
+   "registered": 111,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -545,7 +529,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 18548
+    "trials": 18550
    }
   ]
  },
@@ -589,8 +573,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 32,
-   "n_killed": 22,
+   "n_tested": 33,
+   "n_killed": 23,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -681,8 +665,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 18,
-   "n_killed": 14,
+   "n_tested": 19,
+   "n_killed": 15,
    "book_sleeves": [],
    "agents_now": []
   }
