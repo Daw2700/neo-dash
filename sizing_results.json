@@ -78,6 +78,22 @@
     "max_micros": 7
    }
   },
+  "zn-nth-weekday-institutional-process-clock": {
+   "growth": {
+    "max_micros": 8
+   },
+   "apex150": {
+    "max_micros": 8
+   }
+  },
+  "zc-farm-cash-rent-duedate-liquidation-window": {
+   "growth": {
+    "max_micros": 5
+   },
+   "apex150": {
+    "max_micros": 4
+   }
+  },
   "mgc-china-lpr-fix-evening-window": {
    "growth": {
     "max_micros": 8
@@ -117,17 +133,40 @@
    "apex150": {
     "max_micros": 1
    }
-  },
-  "mcl-closure-length-dose-response-reopen-overshoot": {
-   "growth": {
-    "max_micros": 5
-   },
-   "apex150": {
-    "max_micros": 3
-   }
   }
  },
  "bundles": [
+  {
+   "id": "Cross-market spread|growth",
+   "name": "Cross-market spread",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 5,
+    "b3-monday-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "scan-mbt": 3,
+    "zn-nth-weekday-institutional-process-clock": 5,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 24,
+   "p_breach": 0.2,
+   "usd_mo": 1397,
+   "usd_mo_5acct": 6985,
+   "pct_goal": 0.699,
+   "wr": 0.555,
+   "wr_month": 0.806,
+   "months": {
+    "win_per_yr": 9.7,
+    "lose_per_yr": 2.3,
+    "avg_win": 3174,
+    "avg_lose": -1438
+   },
+   "first_pay_days": 81,
+   "pay_rate_1yr": 0.908
+  },
   {
    "id": "Everything (full pool)|growth",
    "name": "Everything (full pool)",
@@ -136,124 +175,30 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "zn-nth-weekday-institutional-process-clock": 2,
     "zs-china-state-reserve-auction-window": 1,
     "b3-tom-long": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.181,
-   "usd_mo": 1192,
-   "usd_mo_5acct": 5960,
-   "pct_goal": 0.596,
-   "wr": 0.536,
-   "wr_month": 0.806,
+   "total_micros": 13,
+   "p_breach": 0.194,
+   "usd_mo": 1183,
+   "usd_mo_5acct": 5915,
+   "pct_goal": 0.592,
+   "wr": 0.556,
+   "wr_month": 0.778,
    "months": {
-    "win_per_yr": 9.7,
-    "lose_per_yr": 2.3,
-    "avg_win": 2485,
-    "avg_lose": -1089
-   },
-   "first_pay_days": 88,
-   "pay_rate_1yr": 0.944
-  },
-  {
-   "id": "Cross-market spread|growth",
-   "name": "Cross-market spread",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b3-monday-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "scan-mbt": 3,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 18,
-   "p_breach": 0.18,
-   "usd_mo": 1126,
-   "usd_mo_5acct": 5630,
-   "pct_goal": 0.563,
-   "wr": 0.545,
-   "wr_month": 0.75,
-   "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 2722,
-    "avg_lose": -1013
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 2564,
+    "avg_lose": -977
    },
    "first_pay_days": 89,
-   "pay_rate_1yr": 0.907
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b3-tom-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 4,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 14,
-   "p_breach": 0.192,
-   "usd_mo": 937,
-   "usd_mo_5acct": 4685,
-   "pct_goal": 0.469,
-   "wr": 0.578,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2657,
-    "avg_lose": -867
-   },
-   "first_pay_days": 98,
-   "pay_rate_1yr": 0.853
-  },
-  {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 1,
-    "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
-    "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
-    "b3-tom-long": 1
-   },
-   "total_micros": 13,
-   "p_breach": 0.196,
-   "usd_mo": 774,
-   "usd_mo_5acct": 3870,
-   "pct_goal": 0.387,
-   "wr": 0.523,
-   "wr_month": 0.833,
-   "months": {
-    "win_per_yr": 10.0,
-    "lose_per_yr": 2.0,
-    "avg_win": 1558,
-    "avg_lose": -787
-   },
-   "first_pay_days": 54,
-   "pay_rate_1yr": 0.989
+   "pay_rate_1yr": 0.939
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -284,6 +229,69 @@
    },
    "first_pay_days": 106,
    "pay_rate_1yr": 0.867
+  },
+  {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "b3-monday-long": 1,
+    "b4-open-drive": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "zn-nth-weekday-institutional-process-clock": 2,
+    "b3-tom-long": 1
+   },
+   "total_micros": 11,
+   "p_breach": 0.184,
+   "usd_mo": 747,
+   "usd_mo_5acct": 3735,
+   "pct_goal": 0.373,
+   "wr": 0.541,
+   "wr_month": 0.833,
+   "months": {
+    "win_per_yr": 10.0,
+    "lose_per_yr": 2.0,
+    "avg_win": 1491,
+    "avg_lose": -676
+   },
+   "first_pay_days": 55,
+   "pay_rate_1yr": 0.988
+  },
+  {
+   "id": "Cross-market spread|apex150",
+   "name": "Cross-market spread",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "b3-monday-long": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "scan-mbt": 1,
+    "zc-farm-cash-rent-duedate-liquidation-window": 1,
+    "zn-nth-weekday-institutional-process-clock": 3
+   },
+   "total_micros": 14,
+   "p_breach": 0.183,
+   "usd_mo": 711,
+   "usd_mo_5acct": 3555,
+   "pct_goal": 0.355,
+   "wr": 0.559,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1676,
+    "avg_lose": -608
+   },
+   "first_pay_days": 73,
+   "pay_rate_1yr": 0.94
   },
   {
    "id": "Validated 8 (the book)|growth",
@@ -343,34 +351,32 @@
    "pay_rate_1yr": 0.798
   },
   {
-   "id": "Cross-market spread|apex150",
-   "name": "Cross-market spread",
-   "plan": "apex150 (verified)",
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b2-vix-reversion": 3,
-    "b3-monday-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "scan-mbt": 1
+    "b2-vix-reversion": 2,
+    "b3-tom-long": 2,
+    "zn-nth-weekday-institutional-process-clock": 1,
+    "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 13,
-   "p_breach": 0.176,
-   "usd_mo": 549,
-   "usd_mo_5acct": 2745,
-   "pct_goal": 0.275,
-   "wr": 0.552,
-   "wr_month": 0.75,
+   "total_micros": 6,
+   "p_breach": 0.199,
+   "usd_mo": 544,
+   "usd_mo_5acct": 2720,
+   "pct_goal": 0.272,
+   "wr": 0.613,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 1387,
-    "avg_lose": -596
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1915,
+    "avg_lose": -1050
    },
-   "first_pay_days": 82,
-   "pay_rate_1yr": 0.922
+   "first_pay_days": 123,
+   "pay_rate_1yr": 0.743
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -379,29 +385,27 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 3,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 2,
-    "mgc-china-lpr-fix-evening-window": 4
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "zn-nth-weekday-institutional-process-clock": 3
    },
-   "total_micros": 16,
-   "p_breach": 0.2,
-   "usd_mo": 525,
-   "usd_mo_5acct": 2625,
-   "pct_goal": 0.263,
-   "wr": 0.541,
-   "wr_month": 0.639,
+   "total_micros": 9,
+   "p_breach": 0.194,
+   "usd_mo": 512,
+   "usd_mo_5acct": 2560,
+   "pct_goal": 0.256,
+   "wr": 0.584,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 7.7,
-    "lose_per_yr": 4.3,
-    "avg_win": 1672,
-    "avg_lose": -544
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1305,
+    "avg_lose": -469
    },
-   "first_pay_days": 77,
-   "pay_rate_1yr": 0.932
+   "first_pay_days": 86,
+   "pay_rate_1yr": 0.923
   },
   {
    "id": "Frequent-firing engine|apex150",

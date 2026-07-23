@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T15:15:19Z",
+  "stamp": "2026-07-23T15:20:29Z",
   "stale_after_min": 30,
-  "status": "d-cashrent-book-entry approve applied \u2014 zc-farm-cash-rent-duedate-liquidation-window admitted to the book (11 sleeves on the ledger); dashboard mirror + sizing recompute still pending for it, china-auction, crude-liquidity-channel and settle-divergence (d-settlediv-mirror-sync)",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 995,
-  "n_results": 1174,
-  "n_trials": 68244,
+  "n_registered": 996,
+  "n_results": 1175,
+  "n_trials": 68245,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6
@@ -178,7 +178,11 @@
    "wr": 0.6944,
    "usd_mo": 76,
    "pf": 2.723,
-   "usd_trade": 76.4
+   "usd_trade": 76.4,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   {
    "id": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
@@ -214,7 +218,11 @@
    "wr": 0.5667,
    "usd_mo": 51,
    "pf": 1.909,
-   "usd_trade": 61.6
+   "usd_trade": 61.6,
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   },
   {
    "id": "mgc-china-lpr-fix-evening-window",
@@ -311,6 +319,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T15:18:11.519352+00:00",
+   "hash": "4d1cf52c",
+   "name": "zn-nth-weekday-institutional-process-clock",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T15:16:09.060194+00:00",
+   "hash": "f66aaacc",
+   "name": "scout-68b-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T15:13:57.590168+00:00",
    "hash": "6df5f117",
    "name": "zn-nth-weekday-institutional-process-clock-ROBUSTNESS-1132",
@@ -389,22 +413,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.323"
-  },
-  {
-   "t": "2026-07-23T15:00:28.806649+00:00",
-   "hash": "f548d890",
-   "name": "test-xyz",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T14:55:36.552846+00:00",
-   "hash": "8f7779fe",
-   "name": "mnq-cost-router-leadlag",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
   }
  ],
  "pipeline": {
@@ -420,22 +428,6 @@
    {
     "agent": "tester-2",
     "market": "ZN",
-    "task": "zn-nth-weekday-institutional-process-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-23T15:07:59Z",
-    "state": "running"
-   },
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Sixth machine-discovered sleeve ready: f",
-    "stage": "decision",
-    "started": "2026-07-23T15:08:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZN",
     "task": "robustness: zn-nth-weekday-institutional-process-clock",
     "stage": "dev3yr",
     "started": "2026-07-23T15:11:33Z",
@@ -445,7 +437,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 152,
+   "registered": 153,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -507,7 +499,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 27923
+    "trials": 27924
    }
   ]
  },
@@ -1045,8 +1037,17 @@
      "t": "2026-07-23T15:11:25.321948+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T15:18:11.519352+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   },
   "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end": {
    "name": "mcl-quarter-end-funding-stress-forced-unwind-vs-normal-quarter-end",
@@ -1136,7 +1137,11 @@
      "stage": "replication",
      "verdict": "REPLICATES"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 5,
+    "apex_max": 4
+   }
   },
   "mgc-china-lpr-fix-evening-window": {
    "name": "mgc-china-lpr-fix-evening-window",
@@ -1519,34 +1524,32 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 2,
     "b4-open-drive": 1,
     "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "zn-nth-weekday-institutional-process-clock": 2,
     "b3-tom-long": 1
    },
-   "total_micros": 13,
-   "p_breach": 0.196,
-   "usd_mo": 774,
-   "usd_mo_5acct": 3870,
-   "pct_goal": 1.393,
-   "wr": 0.523,
+   "total_micros": 11,
+   "p_breach": 0.184,
+   "usd_mo": 747,
+   "usd_mo_5acct": 3735,
+   "pct_goal": 1.345,
+   "wr": 0.541,
    "wr_month": 0.833,
    "months": {
     "win_per_yr": 10.0,
     "lose_per_yr": 2.0,
-    "avg_win": 1558,
-    "avg_lose": -787
+    "avg_win": 1491,
+    "avg_lose": -676
    },
-   "first_pay_days": 54,
-   "pay_rate_1yr": 0.989,
+   "first_pay_days": 55,
+   "pay_rate_1yr": 0.988,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 13932
+   "usd_mo_total": 13446
   },
   {
    "id": "Cross-market spread|apex150",
@@ -1557,29 +1560,30 @@
    "members": {
     "b2-vix-reversion": 3,
     "b3-monday-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
     "mes-crude-liquidity-channel-risk-transfer": 3,
-    "mgc-china-lpr-fix-evening-window": 2,
-    "scan-mbt": 1
+    "scan-mbt": 1,
+    "zc-farm-cash-rent-duedate-liquidation-window": 1,
+    "zn-nth-weekday-institutional-process-clock": 3
    },
-   "total_micros": 13,
-   "p_breach": 0.176,
-   "usd_mo": 549,
-   "usd_mo_5acct": 2745,
-   "pct_goal": 0.988,
-   "wr": 0.552,
+   "total_micros": 14,
+   "p_breach": 0.183,
+   "usd_mo": 711,
+   "usd_mo_5acct": 3555,
+   "pct_goal": 1.28,
+   "wr": 0.559,
    "wr_month": 0.75,
    "months": {
     "win_per_yr": 9.0,
     "lose_per_yr": 3.0,
-    "avg_win": 1387,
-    "avg_lose": -596
+    "avg_win": 1676,
+    "avg_lose": -608
    },
-   "first_pay_days": 82,
-   "pay_rate_1yr": 0.922,
+   "first_pay_days": 73,
+   "pay_rate_1yr": 0.94,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9882
+   "usd_mo_total": 12798
   },
   {
    "id": "Risk-premium core (rare, high WR)|apex150",
@@ -1588,32 +1592,64 @@
    "provisional": true,
    "assumed_rules": false,
    "members": {
-    "b10-nagel-vix-reversal": 1,
-    "b2-opex-release": 3,
     "b2-vix-reversion": 3,
     "b3-tom-long": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 2,
-    "mgc-china-lpr-fix-evening-window": 4
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "zn-nth-weekday-institutional-process-clock": 3
    },
-   "total_micros": 16,
-   "p_breach": 0.2,
-   "usd_mo": 525,
-   "usd_mo_5acct": 2625,
-   "pct_goal": 0.945,
-   "wr": 0.541,
-   "wr_month": 0.639,
+   "total_micros": 9,
+   "p_breach": 0.194,
+   "usd_mo": 512,
+   "usd_mo_5acct": 2560,
+   "pct_goal": 0.922,
+   "wr": 0.584,
+   "wr_month": 0.75,
    "months": {
-    "win_per_yr": 7.7,
-    "lose_per_yr": 4.3,
-    "avg_win": 1672,
-    "avg_lose": -544
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1305,
+    "avg_lose": -469
    },
-   "first_pay_days": 77,
-   "pay_rate_1yr": 0.932,
+   "first_pay_days": 86,
+   "pay_rate_1yr": 0.923,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 9450
+   "usd_mo_total": 9216
+  },
+  {
+   "id": "Cross-market spread|growth",
+   "name": "Cross-market spread",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 5,
+    "b3-monday-long": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 5,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "scan-mbt": 3,
+    "zn-nth-weekday-institutional-process-clock": 5,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 24,
+   "p_breach": 0.2,
+   "usd_mo": 1397,
+   "usd_mo_5acct": 6985,
+   "pct_goal": 0.699,
+   "wr": 0.555,
+   "wr_month": 0.806,
+   "months": {
+    "win_per_yr": 9.7,
+    "lose_per_yr": 2.3,
+    "avg_win": 3174,
+    "avg_lose": -1438
+   },
+   "first_pay_days": 81,
+   "pay_rate_1yr": 0.908,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 6985
   },
   {
    "id": "Frequent-firing engine|apex150",
@@ -1719,99 +1755,33 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "scan-mbt": 1,
     "b3-nr7-breakout": 2,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 2,
     "b4-open-drive": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "mcl-inside-week-unresolved-positioning-carryover": 1,
+    "zn-nth-weekday-institutional-process-clock": 2,
     "zs-china-state-reserve-auction-window": 1,
     "b3-tom-long": 1
    },
-   "total_micros": 14,
-   "p_breach": 0.181,
-   "usd_mo": 1192,
-   "usd_mo_5acct": 5960,
-   "pct_goal": 0.596,
-   "wr": 0.536,
-   "wr_month": 0.806,
+   "total_micros": 13,
+   "p_breach": 0.194,
+   "usd_mo": 1183,
+   "usd_mo_5acct": 5915,
+   "pct_goal": 0.592,
+   "wr": 0.556,
+   "wr_month": 0.778,
    "months": {
-    "win_per_yr": 9.7,
-    "lose_per_yr": 2.3,
-    "avg_win": 2485,
-    "avg_lose": -1089
-   },
-   "first_pay_days": 88,
-   "pay_rate_1yr": 0.944,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 5960
-  },
-  {
-   "id": "Cross-market spread|growth",
-   "name": "Cross-market spread",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b3-monday-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "scan-mbt": 3,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 18,
-   "p_breach": 0.18,
-   "usd_mo": 1126,
-   "usd_mo_5acct": 5630,
-   "pct_goal": 0.563,
-   "wr": 0.545,
-   "wr_month": 0.75,
-   "months": {
-    "win_per_yr": 9.0,
-    "lose_per_yr": 3.0,
-    "avg_win": 2722,
-    "avg_lose": -1013
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 2564,
+    "avg_lose": -977
    },
    "first_pay_days": 89,
-   "pay_rate_1yr": 0.907,
+   "pay_rate_1yr": 0.939,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 5630
-  },
-  {
-   "id": "Risk-premium core (rare, high WR)|growth",
-   "name": "Risk-premium core (rare, high WR)",
-   "plan": "tradeify-growth",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 4,
-    "b3-tom-long": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 4,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "zs-china-state-reserve-auction-window": 1
-   },
-   "total_micros": 14,
-   "p_breach": 0.192,
-   "usd_mo": 937,
-   "usd_mo_5acct": 4685,
-   "pct_goal": 0.469,
-   "wr": 0.578,
-   "wr_month": 0.722,
-   "months": {
-    "win_per_yr": 8.7,
-    "lose_per_yr": 3.3,
-    "avg_win": 2657,
-    "avg_lose": -867
-   },
-   "first_pay_days": 98,
-   "pay_rate_1yr": 0.853,
-   "firm": "Tradeify",
-   "accounts": 5,
-   "usd_mo_total": 4685
+   "usd_mo_total": 5915
   },
   {
    "id": "Validated 8 + vix-reversion|growth",
@@ -1908,6 +1878,37 @@
    "firm": "Tradeify",
    "accounts": 5,
    "usd_mo_total": 2920
+  },
+  {
+   "id": "Risk-premium core (rare, high WR)|growth",
+   "name": "Risk-premium core (rare, high WR)",
+   "plan": "tradeify-growth",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "b3-tom-long": 2,
+    "zn-nth-weekday-institutional-process-clock": 1,
+    "zs-china-state-reserve-auction-window": 1
+   },
+   "total_micros": 6,
+   "p_breach": 0.199,
+   "usd_mo": 544,
+   "usd_mo_5acct": 2720,
+   "pct_goal": 0.272,
+   "wr": 0.613,
+   "wr_month": 0.722,
+   "months": {
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 1915,
+    "avg_lose": -1050
+   },
+   "first_pay_days": 123,
+   "pay_rate_1yr": 0.743,
+   "firm": "Tradeify",
+   "accounts": 5,
+   "usd_mo_total": 2720
   }
  ],
  "sizing_meta": {
