@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-23T19:54:39Z",
+  "stamp": "2026-07-23T19:55:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-precautionary-demand-premium-multiasset-decay",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:43:47Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-gold-oil-ratio-macro-rotation-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:44:10Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "recheck: mgc-gold-oil-ratio-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-23T19:50:25Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 10,
@@ -491,7 +466,7 @@
   "funnel": {
    "idea": 3,
    "registered": 165,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 13,
