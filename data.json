@@ -1,12 +1,12 @@
 {
  "meta": {
-  "stamp": "2026-07-23T06:43:32Z",
+  "stamp": "2026-07-23T06:44:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 824,
-  "n_results": 1002,
-  "n_trials": 39869,
+  "n_registered": 825,
+  "n_results": 1003,
+  "n_trials": 39870,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 8
@@ -311,6 +311,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T06:44:51.553666+00:00",
+   "hash": "61e8dc49",
+   "name": "mbt-natgas-hashprice-margin-squeeze",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.0897"
+  },
+  {
+   "t": "2026-07-23T06:44:43.957773+00:00",
+   "hash": "c8a7c55e",
+   "name": "mym-volirreg-liquidity-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T06:43:22.497224+00:00",
    "hash": "b2f602fc",
    "name": "zc-southamerican-season-price-leadership-handoff",
@@ -389,34 +405,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.03"
-  },
-  {
-   "t": "2026-07-23T06:22:16.041056+00:00",
-   "hash": "696b354c",
-   "name": "mcl-china-month-boundary-pmi-thin-hour",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.735"
-  },
-  {
-   "t": "2026-07-23T05:55:31.374074+00:00",
-   "hash": "7dbeca30",
-   "name": "mcl-impact-halflife-matched-holding-horizon",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.467"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MNG",
-    "task": "recheck: mbt-natgas-hashprice-margin-squeeze",
-    "stage": "dev3yr",
-    "started": "2026-07-23T06:42:44Z",
-    "state": "running"
-   },
    {
     "agent": "sweep",
     "market": null,
@@ -426,7 +418,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MYM",
     "task": "mym-volume-irregularity-liquidity-uncertainty-premium",
     "stage": "dev3yr",
@@ -434,7 +426,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-scheduled-sovereign-rating-review-window",
     "stage": "dev3yr",
@@ -455,7 +447,7 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 109,
+   "registered": 110,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
@@ -517,7 +509,7 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 9033
+    "trials": 9034
    }
   ]
  },
