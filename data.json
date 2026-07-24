@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:21:42Z",
+  "stamp": "2026-07-24T08:24:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1280,
-  "n_results": 1470,
-  "n_trials": 84370,
+  "n_registered": 1283,
+  "n_results": 1472,
+  "n_trials": 84372,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84370,
-   "registered": 1280,
-   "tested": 1024,
+   "trials": 84372,
+   "registered": 1283,
+   "tested": 1026,
    "passed": 193,
    "survived": 45,
    "replicated": 16,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T08:23:52.572780+00:00",
+   "hash": "2421e127",
+   "name": "mes-quarter-end-pm-settled-quarterly-expiry-collision",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.0"
+  },
+  {
+   "t": "2026-07-24T08:23:49.873251+00:00",
+   "hash": "a5103732",
+   "name": "mcl-intraday-margin-call-topup",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.86"
+  },
+  {
+   "t": "2026-07-24T08:23:31.441378+00:00",
+   "hash": "54c382ac",
+   "name": "m6e-eu-syndication-ratelock-fx-window",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T08:17:24.225197+00:00",
    "hash": "41cac8c8",
    "name": "mnq-nisa-tokyo-january-inflow",
@@ -406,30 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T07:47:02.995192+00:00",
-   "hash": "47ebad2a",
-   "name": "m2k-nfib-preopen-smallcap-release-impounding",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 2.065"
-  },
-  {
-   "t": "2026-07-24T07:44:32.202614+00:00",
-   "hash": "b02cd8b1",
-   "name": "m2k-nfib-preopen-smallcap-release-impounding-REPLICATION-1406",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T07:38:58.043038+00:00",
-   "hash": "47ebad2a",
-   "name": "m2k-nfib-preopen-smallcap-release-impounding",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-quarter-end-pm-settled-quarterly-expiry-collision",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:21:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-eu-joint-bond-syndication-ratelock-fx-window",
     "stage": "dev3yr",
@@ -472,8 +464,8 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 219,
-   "dev3yr": 3,
+   "registered": 220,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
@@ -534,7 +526,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5171
+    "trials": 5173
    }
   ]
  },
@@ -560,8 +552,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 207,
-   "n_killed": 173,
+   "n_tested": 208,
+   "n_killed": 174,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -609,8 +601,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 92,
-   "n_killed": 64,
+   "n_tested": 93,
+   "n_killed": 65,
    "book_sleeves": [],
    "agents_now": []
   },
