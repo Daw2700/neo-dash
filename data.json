@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:50:14Z",
+  "stamp": "2026-07-24T07:50:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -9,7 +9,7 @@
   "n_trials": 84363,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 6,
+  "needs_attention_count": 7,
   "lifetime": {
    "trials": 84363,
    "registered": 1274,
@@ -1486,6 +1486,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-nfib-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Thirteenth graduate: NFIB release-morning drift (PF 1.797 / 2.065)",
+   "recommendation": "ADMIT to the book \u2014 replication stronger than dev (the strong-carry signature), with the monthly-event caveat noted",
+   "evidence": "dev3yr: n=35, PF 1.797, $16.14/trade on M2K | robustness: SURVIVES | replication: n=35, PF 2.065 on MES \u2014 sibling leg BEAT the parent",
+   "what_yes_means": "Book grows by one; sizing recomputes; golden card auto-updates if the book improves",
+   "recap": "On mornings when the NFIB small-business survey drops (monthly, pre-open), equity indexes drift tradeably after the release. Fires ~once a month.",
+   "why": "Both legs cleared their bars with room, and the replication outperforming the parent is the signature your two strongest sleeves showed. Two honest notes: (1) monthly event, so n=35 per leg is the structural max for the window \u2014 same family as the RMA window you admitted; (2) the S&P reacting HARDER than the Russell means this isn't really 'small-cap information impounding' \u2014 it's a broad index release-morning drift that happens to be tradeable. The edge replicated; the story behind it is simpler than the scout's original claim.",
+   "steps": [
+    "Approve: joins the validated book; everything recomputes automatically",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-24T07:50:59Z"
+  },
   {
    "id": "d-september-book-entry",
    "kind": "book_entry",
