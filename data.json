@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T11:07:07Z",
+  "stamp": "2026-07-24T11:07:28Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,24 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T11:07:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-24T11:07:06Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [],
   "funnel": {
    "idea": 0,
