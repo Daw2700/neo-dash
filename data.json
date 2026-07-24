@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:55:30Z",
+  "stamp": "2026-07-24T08:04:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1274,
-  "n_results": 1463,
-  "n_trials": 84363,
+  "n_registered": 1277,
+  "n_results": 1466,
+  "n_trials": 84366,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84363,
-   "registered": 1274,
-   "tested": 1020,
+   "trials": 84366,
+   "registered": 1277,
+   "tested": 1022,
    "passed": 193,
-   "survived": 44,
+   "survived": 45,
    "replicated": 16,
    "book": 14
   }
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T07:59:55.098585+00:00",
+   "hash": "8c2ce4c4",
+   "name": "mym-offcycle-fiscal-quarter-second-earnings-wave",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.057"
+  },
+  {
+   "t": "2026-07-24T07:59:42.406548+00:00",
+   "hash": "6af7bf35",
+   "name": "zc-late-planting-acreage-premium",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T07:59:18.063047+00:00",
+   "hash": "0e0a49d0",
+   "name": "m2k-sloos-credit-availability-quarterly-release",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.627"
+  },
+  {
+   "t": "2026-07-24T07:57:28.491931+00:00",
+   "hash": "146b5c14",
+   "name": "ROBUSTNESS-BATTERY zc-late-planting-acreage-premium (candidate 6af7bf35094015dd)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T07:47:02.995192+00:00",
    "hash": "47ebad2a",
    "name": "m2k-nfib-preopen-smallcap-release-impounding",
@@ -398,38 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.468"
-  },
-  {
-   "t": "2026-07-24T07:28:09.149895+00:00",
-   "hash": "47ebad2a",
-   "name": "m2k-nfib-preopen-smallcap-release-impounding",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.797"
-  },
-  {
-   "t": "2026-07-24T07:12:27.109335+00:00",
-   "hash": "a12b00f1",
-   "name": "scout-80-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T07:11:28.709097+00:00",
-   "hash": "27d6629e",
-   "name": "zs-percent-of-full-carry-storage-election",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.611"
-  },
-  {
-   "t": "2026-07-24T07:11:28.360190+00:00",
-   "hash": "8ac64afb",
-   "name": "mgc-contango-vs-financing-deviation-vault-stress",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 2.031"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-sloos-credit-availability-quarterly-release",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:55:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MYM",
     "task": "mym-offcycle-fiscal-quarter-second-earnings-wave",
     "stage": "dev3yr",
@@ -517,8 +509,8 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 217,
-   "dev3yr": 3,
+   "registered": 218,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
@@ -579,7 +571,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5164
+    "trials": 5167
    }
   ]
  },
@@ -618,8 +610,8 @@
    "ticker": "MYM",
    "display": "Dow",
    "status": "active",
-   "n_tested": 23,
-   "n_killed": 20,
+   "n_tested": 24,
+   "n_killed": 21,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -627,8 +619,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 40,
+   "n_tested": 55,
+   "n_killed": 41,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1376,6 +1368,11 @@
      "t": "2026-07-24T07:35:53.778612+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-24T07:59:42.406548+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ],
    "sizing": {
