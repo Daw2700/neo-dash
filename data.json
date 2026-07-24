@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:07:59Z",
+  "stamp": "2026-07-24T02:08:00Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,18 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T02:07:35Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "robustness: mcl-intrasession-excursion-asymmetry-overnight-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:08:00Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-participation-ramp-backloading-next-session-range-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:08:00Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mnq-participation-ramp-backloading-next-session-range-gate",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 5,
     "idea": "mnq-expansion-age-clock-post-shock-reentry",
@@ -527,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 8,
    "registered": 187,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
