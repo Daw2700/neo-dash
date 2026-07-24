@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:23:52Z",
+  "stamp": "2026-07-24T03:34:51Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 1210,
+  "n_registered": 1211,
   "n_results": 1402,
   "n_trials": 84302,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 7,
   "lifetime": {
    "trials": 84302,
-   "registered": 1210,
+   "registered": 1211,
    "tested": 978,
    "passed": 182,
    "survived": 38,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T03:29:21.364721+00:00",
+   "hash": "2a8c5fe3",
+   "name": "scout-77-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T03:19:38.816616+00:00",
    "hash": "20a0422a",
    "name": "met-eth-pos-endogenous-volratio-regime",
@@ -422,31 +430,123 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T02:42:29.646317+00:00",
-   "hash": "19030329",
-   "name": "mcl-weekly-close-location-hedger-immediacy-reversal",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T03:15:55Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "zn-statistical-benchmark-revision-history-rewrite-fade",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "zc-monday-merchandiser-close-hedge-completion",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 4,
+    "idea": "mes-quarterly-redemption-notice-deadline-preliquidation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.47
+   },
+   {
+    "rank": 5,
+    "idea": "m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.46
+   },
+   {
+    "rank": 6,
+    "idea": "zn-tokyo-first-full-week-session-duration-add",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mnq-aggregate-turnover-overconfidence-reversal",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 8,
+    "idea": "mcl-underwater-highwatermark-convexity-risk-shift",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "mes-momentum-crash-bear-highvol-conditional-trend-gate",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 10,
+    "idea": "mng-storage-containment-physical-cap-asymmetry",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 11,
+    "idea": "mes-index-float-sharecount-update-nonprice-flow",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 12,
+    "idea": "mnq-release-magnitude-habituation-streak-break",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.32
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
-   "registered": 195,
+   "idea": 12,
+   "registered": 196,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
