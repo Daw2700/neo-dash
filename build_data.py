@@ -63,6 +63,9 @@ def tier_of(h):
     return "killed"
 
 def short_verdict(v):
+    if isinstance(v, list):
+        v = " ".join(str(x) for x in v)
+    v = str(v)          # workers occasionally emit lists/dicts/None here
     u = v.upper()
     for tok in ("KILLED", "DEMOTED", "REPLICATES", "PASSES", "PREDICTED NULL", "FAIL"):
         if tok in u:

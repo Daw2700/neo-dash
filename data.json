@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:28:27Z",
+  "stamp": "2026-07-24T00:29:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1160,
-  "n_results": 1350,
-  "n_trials": 79215,
+  "n_results": 1351,
+  "n_trials": 79216,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79215,
+   "trials": 79216,
    "registered": 1160,
-   "tested": 940,
+   "tested": 941,
    "passed": 172,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:29:07.779639+00:00",
+   "hash": "cd7e2c09",
+   "name": "zc-crop-progress-monday-evening-thinbook-overshoot",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.318"
+  },
+  {
    "t": "2026-07-24T00:28:05.686206+00:00",
    "hash": "9af2db75",
    "name": "m6e-monthend-fix-relequity-hedge",
@@ -350,14 +358,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.48"
-  },
-  {
-   "t": "2026-07-24T00:27:26.019792+00:00",
-   "hash": "cd7e2c09",
-   "name": "zc-crop-progress-monday-evening-thinbook-overshoot",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T00:17:55.006924+00:00",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-crop-progress-monday-evening-thin-book-overshoot",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:24:49Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-vix-soq-settlement-auction-hedge-unwind",
     "stage": "dev3yr",
@@ -451,24 +443,23 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-bidweek-physical-index-hedge-window",
     "stage": "dev3yr",
     "started": "2026-07-24T00:28:27Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-spot-month-position-limit-forced-prefnd-liquidation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:29:30Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "zs-spot-month-position-limit-forced-prefnd-liquidation",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 7,
     "idea": "mcl-options-expiry-strike-concentration-unpin",
@@ -552,8 +543,8 @@
    }
   ],
   "funnel": {
-   "idea": 10,
-   "registered": 183,
+   "idea": 9,
+   "registered": 182,
    "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
@@ -615,7 +606,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 12
+    "trials": 13
    }
   ]
  },
@@ -745,8 +736,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 55,
-   "n_killed": 49,
+   "n_tested": 56,
+   "n_killed": 50,
    "book_sleeves": [
     "zc-rma-volatility-factor-five-day-window",
     "zc-farm-cash-rent-duedate-liquidation-window"
