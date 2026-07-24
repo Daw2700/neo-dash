@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:31:27Z",
+  "stamp": "2026-07-24T02:38:24Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1196,
-  "n_results": 1389,
-  "n_trials": 79254,
+  "n_registered": 1199,
+  "n_results": 1392,
+  "n_trials": 79257,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79254,
-   "registered": 1196,
-   "tested": 969,
-   "passed": 179,
+   "trials": 79257,
+   "registered": 1199,
+   "tested": 972,
+   "passed": 181,
    "survived": 37,
    "replicated": 14,
    "book": 13
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:36:00.785763+00:00",
+   "hash": "47220c5a",
+   "name": "mnq-trendfollow-cohort-dd-liquidity",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.041"
+  },
+  {
+   "t": "2026-07-24T02:33:38.112356+00:00",
+   "hash": "9e92c18a",
+   "name": "mnq-expansion-age-clock-post-shock-reentry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.585"
+  },
+  {
+   "t": "2026-07-24T02:33:28.486050+00:00",
+   "hash": "19030329",
+   "name": "mcl-weekly-close-location-hedger-immediacy-reversal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.257"
+  },
+  {
    "t": "2026-07-24T02:22:24.719593+00:00",
    "hash": "bccf31ea",
    "name": "mnq-ramp-backload-orb-gate",
@@ -406,52 +430,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.97"
-  },
-  {
-   "t": "2026-07-24T02:02:47.055081+00:00",
-   "hash": "ae16290a",
-   "name": "mcl-intrasession-excursion-asymmetry-overnight-repair",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.25"
-  },
-  {
-   "t": "2026-07-24T02:02:44.495574+00:00",
-   "hash": "b4e6aa98",
-   "name": "mnq-closehour-liquidity-cost-overnight",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.399"
-  },
-  {
-   "t": "2026-07-24T01:51:27.565893+00:00",
-   "hash": "2f8e1e2c",
-   "name": "mgc-week-drought-continuation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-expansion-age-clock-post-shock-reentry",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:31:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-weekly-close-location-hedger-immediacy-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:31:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-trendfollowing-cohort-drawdown-forced-liquidation-state",
     "stage": "dev3yr",
@@ -509,10 +493,10 @@
   "funnel": {
    "idea": 5,
    "registered": 190,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 15,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -570,7 +554,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 51
+    "trials": 54
    }
   ]
  },
@@ -579,8 +563,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 146,
-   "n_killed": 99,
+   "n_tested": 148,
+   "n_killed": 100,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -644,7 +628,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 86,
+   "n_tested": 87,
    "n_killed": 61,
    "book_sleeves": [],
    "agents_now": []
