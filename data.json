@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:56:43Z",
+  "stamp": "2026-07-24T08:56:47Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -515,10 +515,19 @@
      "MNQ"
     ],
     "score": 0.55
+   },
+   {
+    "rank": 3,
+    "idea": "mes-dominant-clip-size-unfinished-parent-order-continuation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.47
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 10,
    "registered": 221,
    "dev3yr": 0,
    "robustness": 0,
