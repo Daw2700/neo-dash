@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:11:29Z",
+  "stamp": "2026-07-24T05:16:13Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1238,
-  "n_results": 1429,
-  "n_trials": 84329,
+  "n_registered": 1239,
+  "n_results": 1430,
+  "n_trials": 84330,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84329,
-   "registered": 1238,
+   "trials": 84330,
+   "registered": 1239,
    "tested": 998,
    "passed": 188,
-   "survived": 39,
+   "survived": 40,
    "replicated": 15,
    "book": 13
   }
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T05:15:55.016653+00:00",
+   "hash": "15e65616",
+   "name": "zn-rrp-drain-collateral-scarcity-funding-bid",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T05:13:08.996669+00:00",
+   "hash": "804a8c1a",
+   "name": "zn-rrp-drain-collateral-scarcity-funding-bid__ROBUSTNESS",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T05:11:21.739611+00:00",
    "hash": "f4fe05b8",
    "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
@@ -414,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.116"
-  },
-  {
-   "t": "2026-07-24T04:48:07.663174+00:00",
-   "hash": "02b899c0",
-   "name": "zs-growing-season-weekend-weather-premium-discharge",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T04:46:07.348611+00:00",
-   "hash": "029cae9c",
-   "name": "zs-growing-season-weekend-weather-premium-discharge__ROBUSTNESS",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -448,6 +448,14 @@
     "task": "robustness: megaearn-overnight-fade",
     "stage": "dev3yr",
     "started": "2026-07-24T05:01:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "robustness: zn-rrp-drain-collateral-scarcity-funding-bid",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:11:31Z",
     "state": "running"
    }
   ],
@@ -491,8 +499,8 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 203,
-   "dev3yr": 2,
+   "registered": 204,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -553,7 +561,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5130
+    "trials": 5131
    }
   ]
  },
