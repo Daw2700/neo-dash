@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:32:19Z",
+  "stamp": "2026-07-24T00:32:21Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T00:31:36Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-halt-window-macro-repricing-crossmarket-convergence",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:32:21Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "zs-halt-window-macro-repricing-crossmarket-convergence",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 10,
     "idea": "mes-dividend-cash-equitization-payday-cluster",
@@ -517,9 +516,9 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 182,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
