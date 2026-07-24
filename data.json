@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:16:51Z",
+  "stamp": "2026-07-24T00:18:15Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1156,
-  "n_results": 1347,
-  "n_trials": 79212,
+  "n_registered": 1157,
+  "n_results": 1348,
+  "n_trials": 79213,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79212,
-   "registered": 1156,
+   "trials": 79213,
+   "registered": 1157,
    "tested": 938,
    "passed": 172,
    "survived": 37,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:17:55.006924+00:00",
+   "hash": "5d5b87a3",
+   "name": "mes-xmkt-avgcorr-long",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.973"
+  },
+  {
+   "t": "2026-07-24T00:17:36.379837+00:00",
+   "hash": "8f868aee",
+   "name": "scout-74-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T00:16:33.617887+00:00",
    "hash": "eaa9b81e",
    "name": "mym-multiweek-trend-volscaled",
@@ -414,22 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T23:57:21.791422+00:00",
-   "hash": "7f429a7c",
-   "name": "m2k-mes-size-premium-multiweek-rv",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.45"
-  },
-  {
-   "t": "2026-07-23T23:57:13.098533+00:00",
-   "hash": "e64579f0",
-   "name": "mes-derivative-income-etf-weekly-call-roll-cap",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.875"
   }
  ],
  "pipeline": {
@@ -441,21 +441,13 @@
     "stage": "idea-scout",
     "started": "2026-07-24T00:12:53Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "recheck: mes-xmkt-avgcorr-long",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:13:38Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 181,
-   "dev3yr": 1,
+   "registered": 182,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 9
+    "trials": 10
    }
   ]
  },
