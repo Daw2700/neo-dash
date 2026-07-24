@@ -1,23 +1,23 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:27:07Z",
+  "stamp": "2026-07-24T06:37:20Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "d-expansionage-book-entry approve applied \u2014 mnq-expansion-age-clock-post-shock-reentry admitted to the validated book (14 sleeves); both VALID mirrors updated, sizing + bundle recompute run",
   "engine_state": "ok",
-  "n_registered": 1255,
-  "n_results": 1446,
-  "n_trials": 84346,
+  "n_registered": 1258,
+  "n_results": 1449,
+  "n_trials": 84349,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 7,
+  "needs_attention_count": 6,
   "lifetime": {
-   "trials": 84346,
-   "registered": 1255,
-   "tested": 1009,
-   "passed": 190,
+   "trials": 84349,
+   "registered": 1258,
+   "tested": 1011,
+   "passed": 191,
    "survived": 42,
    "replicated": 15,
-   "book": 13
+   "book": 14
   }
  },
  "leaderboard": [
@@ -132,6 +132,18 @@
     "growth_max": 4,
     "apex_max": 2
    }
+  },
+  {
+   "id": "mnq-expansion-age-clock-post-shock-reentry",
+   "name": "mnq-expansion-age-clock-post-shock-reentry",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "pinned": false,
+   "n": 146,
+   "wr": 0.589,
+   "usd_mo": 230,
+   "pf": 1.585,
+   "usd_trade": 56.7
   },
   {
    "id": "b10-nagel-vix-reversal",
@@ -316,25 +328,41 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "mgc-china-lpr-fix-evening-window",
-   "name": "mgc-china-lpr-fix-evening-window",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 27,
-   "wr": 0.5926,
-   "usd_mo": 8,
-   "pf": 1.887,
-   "usd_trade": 10.6,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T06:32:18.473852+00:00",
+   "hash": "9950c549",
+   "name": "xsec-carry-rank-micro-complex-neutral",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.114"
+  },
+  {
+   "t": "2026-07-24T06:31:39.631482+00:00",
+   "hash": "cef92ee9",
+   "name": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.785"
+  },
+  {
+   "t": "2026-07-24T06:31:30.547027+00:00",
+   "hash": "eeaa72a4",
+   "name": "mgc-close-location-breadth-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.359"
+  },
+  {
+   "t": "2026-07-24T06:28:55.147178+00:00",
+   "hash": "f51d666b",
+   "name": "zs-repeated-extreme-testing-commercial-refill-exhaustion-REPLICATION-1390",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-24T06:17:39.938536+00:00",
    "hash": "cef92ee9",
@@ -398,38 +426,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.225"
-  },
-  {
-   "t": "2026-07-24T06:03:13.439354+00:00",
-   "hash": "aa21bd77",
-   "name": "mcl-session-extreme-dwell-absorption-fade__ROBUSTNESS",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T06:02:59.216430+00:00",
-   "hash": "68076abe",
-   "name": "zn-prediction-market-vs-futures-prerelease-divergence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-24T05:57:42.639262+00:00",
-   "hash": "184a81b0",
-   "name": "mng-cumulative-degree-day-anomaly-storage-path",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF None"
-  },
-  {
-   "t": "2026-07-24T05:56:53.978173+00:00",
-   "hash": "3a3a70de",
-   "name": "m6e-sunday-reopen-thin-desk-print-reversion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.6309"
   }
  ],
  "pipeline": {
@@ -437,25 +433,17 @@
    {
     "agent": "tester-1",
     "market": "MCL",
-    "task": "replication: zs-repeated-extreme-testing-commercial-refill-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:26:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
     "task": "xsec-carry-rank-micro-complex-neutral",
     "stage": "dev3yr",
     "started": "2026-07-24T06:26:43Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-complex-close-location-conviction-breadth-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:27:07Z",
+    "agent": "decision",
+    "market": null,
+    "task": "your approve: Twelfth graduate: post-shock expansion-a",
+    "stage": "decision",
+    "started": "2026-07-24T06:31:15Z",
     "state": "running"
    }
   ],
@@ -499,11 +487,11 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 209,
-   "dev3yr": 3,
+   "registered": 210,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 18,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -561,7 +549,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5147
+    "trials": 5150
    }
   ]
  },
@@ -570,10 +558,11 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 151,
-   "n_killed": 102,
+   "n_tested": 152,
+   "n_killed": 103,
    "book_sleeves": [
     "b3-nr7-breakout",
+    "mnq-expansion-age-clock-post-shock-reentry",
     "b10-nagel-vix-reversal",
     "b3-monday-long",
     "mnq-event-free-day-flow-persistence",
@@ -617,7 +606,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 72,
+   "n_tested": 73,
    "n_killed": 58,
    "book_sleeves": [],
    "agents_now": []
@@ -984,6 +973,42 @@
    "sizing": {
     "growth_max": 4,
     "apex_max": 2
+   }
+  },
+  "mnq-expansion-age-clock-post-shock-reentry": {
+   "name": "mnq-expansion-age-clock-post-shock-reentry",
+   "market": "MNQ",
+   "tier": "BOOK SLEEVE",
+   "mechanism": "Risk-budget-constrained holders cut exposure into a session whose range exceeds 1.5x its trailing 20-session average range, then rebuild the position on a fixed sessions-since clock set by their own lookback rather than at a specific price level, so the payer is whoever was forced to sell into the expansion and must re-establish a few sessions later at a worse price (scout-76 axis D, 1301_scout76_screen.py ledger 57852860d35e2d32: MNQ age bucket 3-5 sessions after a wide session -> next-session mean +19.00bp n=142 share_pos 0.585, replicated MES/MYM, M2K does not confirm). Distinct from mes-volcontrol-releverage-lag (35e00878a6e26adf) which triggers on a vol LEVEL crossing back down through a pre-spike threshold; this triggers on a fixed sessions-since-expansion age clock regardless of vol level.",
+   "metrics": {
+    "n": 146,
+    "wr": 0.589,
+    "pf": 1.585,
+    "usd_mo": 230,
+    "usd_trade": 56.7
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-24T02:33:38.112356+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-24T02:42:51.104434+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-24T02:51:30.867916+00:00",
+     "stage": "replication",
+     "verdict": "REPLICATES"
+    }
+   ],
+   "robustness": {
+    "plateau": "pass",
+    "mechanism_controls": "pass",
+    "ex_best_year": "pass",
+    "mes_replication": "pass"
    }
   },
   "b10-nagel-vix-reversal": {
@@ -1422,61 +1447,9 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  "mgc-china-lpr-fix-evening-window": {
-   "name": "mgc-china-lpr-fix-evening-window",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "China Loan Prime Rate is fixed at 09:15 Beijing time on the 20th of each month; the print lands ~20:00-23:00 ET the evening before (the 19th), a thin Globex window with only Asian desks marking gold, so SGE-side repricing of rate-sensitive physical/retail demand transmits into COMEX gold before US desks arrive to arbitrage it away.",
-   "metrics": {
-    "n": 27,
-    "wr": 0.5926,
-    "pf": 1.887,
-    "usd_mo": 8,
-    "usd_trade": 10.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T10:02:09.794157+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T10:09:48.610703+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T10:14:59.559673+00:00",
-     "stage": "replication",
-     "verdict": "KILLED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  },
  "decisions": [
-  {
-   "id": "d-expansionage-book-entry",
-   "kind": "book_entry",
-   "needs_attention": true,
-   "title": "Twelfth graduate: post-shock expansion-age clock (PF 1.585, n=146)",
-   "recommendation": "ADMIT to the book \u2014 strong dual-leg on real samples (dev PF 1.585, replication PF 1.362 on MES)",
-   "evidence": "dev3yr: n=146, PF 1.585, $56.7/trade on MNQ | robustness: SURVIVES | replication: n=134, PF 1.362 on MES",
-   "what_yes_means": "Book grows by one; sizing and all bundles recompute; golden card auto-updates if the book improves",
-   "recap": "After a volatility shock, markets reprice in measurable phases. This times re-entry by the age of the expansion phase rather than price level \u2014 a clock, not a chart pattern. The same clock works on the S&P.",
-   "why": "Both legs are strong on samples big enough to mean something (146 and 134 trades), the battery passed all placebos \u2014 including the timing placebos that killed five other candidates tonight \u2014 and the mechanism is a documented volatility-regime phenomenon, not a calendar artifact.",
-   "steps": [
-    "Approve: joins the validated book; everything recomputes automatically",
-    "Deny: remains a replicated candidate, fully preserved",
-    "Question: the card returns with any analysis you want",
-    "Live/paper exposure still requires its own GO regardless"
-   ],
-   "staged": "2026-07-24T03:01:29Z"
-  },
   {
    "id": "d-september-book-entry",
    "kind": "book_entry",
