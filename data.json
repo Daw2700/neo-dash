@@ -1,9 +1,9 @@
 {
  "meta": {
-  "stamp": "2026-07-24T10:44:41Z",
+  "stamp": "2026-07-24T10:45:03Z",
   "stale_after_min": 30,
-  "status": "usage-capped \u2014 cooling down",
-  "engine_state": "error",
+  "status": "funnel running \u2014 1 tester in flight",
+  "engine_state": "ok",
   "n_registered": 1288,
   "n_results": 1476,
   "n_trials": 84376,
@@ -433,29 +433,12 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T10:44:41Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-aggressor-run-termination-absorber-unwind",
-    "stage": "dev3yr",
-    "started": "2026-07-24T10:44:41Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 221,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
