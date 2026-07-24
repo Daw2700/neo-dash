@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:24:07Z",
+  "stamp": "2026-07-24T08:24:09Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,23 +449,29 @@
     "stage": "dev3yr",
     "started": "2026-07-24T08:21:42Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
+   },
    {
-    "rank": 13,
-    "idea": "zn-srf-usage-reserve-scarcity-state-gate",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.38
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T08:24:09Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "ZN",
+    "task": "zn-srf-usage-reserve-scarcity-state-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-24T08:24:09Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 220,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
