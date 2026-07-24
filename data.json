@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:47:52Z",
+  "stamp": "2026-07-24T04:52:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1231,
-  "n_results": 1420,
-  "n_trials": 84320,
+  "n_results": 1421,
+  "n_trials": 84321,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84320,
+   "trials": 84321,
    "registered": 1231,
    "tested": 993,
    "passed": 185,
@@ -302,18 +302,6 @@
    "usd_trade": 48.9
   },
   {
-   "id": "zs-growing-season-weekend-weather-premium-discharge",
-   "name": "zs-growing-season-weekend-weather-premium-discharge",
-   "market": "ZS",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 52,
-   "wr": 0.5,
-   "usd_mo": 466,
-   "pf": 1.947,
-   "usd_trade": 322.6
-  },
-  {
    "id": "m2k-midmonth-payday-contribution-inflow",
    "name": "m2k-midmonth-payday-contribution-inflow",
    "market": "M2K",
@@ -328,9 +316,29 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  {
+   "id": "mgc-china-lpr-fix-evening-window",
+   "name": "mgc-china-lpr-fix-evening-window",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 27,
+   "wr": 0.5926,
+   "usd_mo": 8,
+   "pf": 1.887,
+   "usd_trade": 10.6
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T04:48:07.663174+00:00",
+   "hash": "02b899c0",
+   "name": "zs-growing-season-weekend-weather-premium-discharge",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
   {
    "t": "2026-07-24T04:46:07.348611+00:00",
    "hash": "029cae9c",
@@ -418,43 +426,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.29"
-  },
-  {
-   "t": "2026-07-24T04:20:44.706427+00:00",
-   "hash": "379edecf",
-   "name": "zn-tokyo-first-full-week-session-duration-add",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.104"
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZS",
-    "task": "zs-growing-season-weekend-weather-premium-discharge",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:36:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-jolts-stale-labor-print-knee-jerk-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:36:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "robustness: zs-growing-season-weekend-weather-premium-discharge",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:43:43Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 6,
@@ -541,10 +516,10 @@
   "funnel": {
    "idea": 9,
    "registered": 201,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 16,
    "golden_staged": 1
   },
   "throughput": [
@@ -602,7 +577,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5121
+    "trials": 5122
    }
   ]
  },
@@ -1440,26 +1415,6 @@
     }
    ]
   },
-  "zs-growing-season-weekend-weather-premium-discharge": {
-   "name": "zs-growing-season-weekend-weather-premium-discharge",
-   "market": "ZS",
-   "tier": "candidate",
-   "mechanism": "Soybean yields are weather-sensitive during Jun-Aug pod-fill, so during the May-Aug growing season Friday RTH closes carry a weekend weather-risk premium (buyers of protection bid the close up ahead of two days with no ability to react to forecasts); because most weekends deliver benign/uneventful forecasts, that premium is systematically discharged on the next-session reopen (usually Monday). A trader who is short ZS over the weekend during growing season collects this premium as the average gap is negative; longs who held into the close effectively paid for insurance that mostly was not needed.",
-   "metrics": {
-    "n": 52,
-    "wr": 0.5,
-    "pf": 1.947,
-    "usd_mo": 466,
-    "usd_trade": 322.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-24T04:40:02.785428+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    }
-   ]
-  },
   "m2k-midmonth-payday-contribution-inflow": {
    "name": "m2k-midmonth-payday-contribution-inflow",
    "market": "M2K",
@@ -1483,6 +1438,36 @@
     "growth_max": 8,
     "apex_max": 8
    }
+  },
+  "mgc-china-lpr-fix-evening-window": {
+   "name": "mgc-china-lpr-fix-evening-window",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "China Loan Prime Rate is fixed at 09:15 Beijing time on the 20th of each month; the print lands ~20:00-23:00 ET the evening before (the 19th), a thin Globex window with only Asian desks marking gold, so SGE-side repricing of rate-sensitive physical/retail demand transmits into COMEX gold before US desks arrive to arbitrage it away.",
+   "metrics": {
+    "n": 27,
+    "wr": 0.5926,
+    "pf": 1.887,
+    "usd_mo": 8,
+    "usd_trade": 10.6
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-23T10:02:09.794157+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-23T10:09:48.610703+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-23T10:14:59.559673+00:00",
+     "stage": "replication",
+     "verdict": "KILLED"
+    }
+   ]
   }
  },
  "decisions": [
