@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:21:14Z",
+  "stamp": "2026-07-24T05:28:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1239,
-  "n_results": 1430,
-  "n_trials": 84330,
+  "n_registered": 1242,
+  "n_results": 1433,
+  "n_trials": 84333,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84330,
-   "registered": 1239,
-   "tested": 998,
+   "trials": 84333,
+   "registered": 1242,
+   "tested": 1000,
    "passed": 188,
    "survived": 40,
    "replicated": 15,
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T05:25:57.990867+00:00",
+   "hash": "7a24e415",
+   "name": "m6e-german-sentiment-survey-release-euro-morning-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.6034"
+  },
+  {
+   "t": "2026-07-24T05:25:13.452936+00:00",
+   "hash": "15e65616",
+   "name": "zn-rrp-drain-collateral-scarcity-funding-bid",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.087"
+  },
+  {
+   "t": "2026-07-24T05:23:34.358143+00:00",
+   "hash": "90732ac1",
+   "name": "mes-qra-duration-repricing-transmission",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.862"
+  },
+  {
+   "t": "2026-07-24T05:23:20.071427+00:00",
+   "hash": "0c7b9a23",
+   "name": "zn-rrp-drain-collateral-scarcity-funding-bid-REPLICATION-1374",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T05:15:55.016653+00:00",
    "hash": "15e65616",
    "name": "zn-rrp-drain-collateral-scarcity-funding-bid",
@@ -398,38 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.553"
-  },
-  {
-   "t": "2026-07-24T04:56:55.032325+00:00",
-   "hash": "f4fe05b8",
-   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
-   "status": "overturned",
-   "kind": "result",
-   "detail": "PF 1.2165"
-  },
-  {
-   "t": "2026-07-24T04:56:31.086660+00:00",
-   "hash": "114a9134",
-   "name": "megaearn-overnight-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.202"
-  },
-  {
-   "t": "2026-07-24T04:54:53.018168+00:00",
-   "hash": "4474e930",
-   "name": "mes-trs-imm-quarterly-roll-dealer-hedge-flow",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.518"
-  },
-  {
-   "t": "2026-07-24T04:53:46.110466+00:00",
-   "hash": "f4fe05b8",
-   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.116"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-qra-refunding-coupon-supply-equity-duration-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:21:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M6E",
     "task": "m6e-german-sentiment-survey-release-euro-morning-fade",
     "stage": "dev3yr",
@@ -481,8 +473,8 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 204,
-   "dev3yr": 3,
+   "registered": 205,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -543,7 +535,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5131
+    "trials": 5134
    }
   ]
  },
@@ -568,8 +560,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 205,
-   "n_killed": 171,
+   "n_tested": 206,
+   "n_killed": 172,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -655,8 +647,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 54,
-   "n_killed": 52,
+   "n_tested": 55,
+   "n_killed": 53,
    "book_sleeves": [],
    "agents_now": []
   },
