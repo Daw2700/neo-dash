@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:23:29Z",
+  "stamp": "2026-07-24T03:23:52Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 1210,
   "n_results": 1402,
@@ -441,21 +441,13 @@
     "stage": "idea-scout",
     "started": "2026-07-24T03:15:55Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MET",
-    "task": "met-proof-of-stake-endogenous-volatility-harvest-regime",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:15:55Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 195,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
