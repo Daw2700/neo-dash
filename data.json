@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:51:34Z",
+  "stamp": "2026-07-24T00:51:57Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "M6E",
-    "task": "robustness: zs-halt-window-macro-convergence",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:40:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MBT",
-    "task": "mbt-listed-miner-monthly-opex-treasury-sale",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:40:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M6E",
-    "task": "m6e-us-afternoon-rates-move-in-fx-vacuum-deferred-transmission",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:47:18Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 15,
@@ -473,7 +448,7 @@
   "funnel": {
    "idea": 1,
    "registered": 183,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
