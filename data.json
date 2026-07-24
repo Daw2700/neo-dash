@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:13:20Z",
+  "stamp": "2026-07-24T06:21:58Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1252,
-  "n_results": 1443,
-  "n_trials": 84343,
+  "n_registered": 1255,
+  "n_results": 1446,
+  "n_trials": 84346,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84343,
-   "registered": 1252,
-   "tested": 1008,
+   "trials": 84346,
+   "registered": 1255,
+   "tested": 1009,
    "passed": 190,
-   "survived": 41,
+   "survived": 42,
    "replicated": 15,
    "book": 13
   }
@@ -336,6 +336,46 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T06:17:39.938536+00:00",
+   "hash": "cef92ee9",
+   "name": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T06:17:12.835496+00:00",
+   "hash": "d3bfb722",
+   "name": "m2k-mes-carry-spread-lending-tightness",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.568"
+  },
+  {
+   "t": "2026-07-24T06:17:04.844896+00:00",
+   "hash": "2321084e",
+   "name": "mcl-session-extreme-dwell-absorption-fade",
+   "status": "fail",
+   "kind": "result",
+   "detail": "PF 0.593"
+  },
+  {
+   "t": "2026-07-24T06:15:15.436828+00:00",
+   "hash": "de1005ce",
+   "name": "mcl-session-extreme-dwell-absorption-fade-REPLICATION-1387",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T06:14:40.903414+00:00",
+   "hash": "898b7ccf",
+   "name": "zs-repeated-extreme-testing-commercial-refill-exhaustion__ROBUSTNESS",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T06:08:36.300308+00:00",
    "hash": "5a7951f1",
    "name": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
@@ -390,46 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.6309"
-  },
-  {
-   "t": "2026-07-24T05:56:24.017384+00:00",
-   "hash": "2321084e",
-   "name": "mcl-session-extreme-dwell-absorption-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.453"
-  },
-  {
-   "t": "2026-07-24T05:38:51.332652+00:00",
-   "hash": "84f9aca0",
-   "name": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.7339"
-  },
-  {
-   "t": "2026-07-24T05:38:02.531744+00:00",
-   "hash": "2f5c206a",
-   "name": "scout-79-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T05:35:55.973427+00:00",
-   "hash": "84f9aca0",
-   "name": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.0873"
-  },
-  {
-   "t": "2026-07-24T05:29:55.399646+00:00",
-   "hash": "253f3b4b",
-   "name": "met-tuesday-us-session-weekly-derisk-cadence",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.697"
   }
  ],
  "pipeline": {
@@ -437,25 +437,9 @@
    {
     "agent": "tester-1",
     "market": "MCL",
-    "task": "replication: mcl-session-extreme-dwell-absorption-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:12:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
     "task": "robustness: zs-repeated-extreme-testing-commercial-refill-exhaustion",
     "stage": "dev3yr",
     "started": "2026-07-24T06:12:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-mes-carry-spread-securities-lending-tightness",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:13:20Z",
     "state": "running"
    }
   ],
@@ -517,11 +501,11 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 207,
-   "dev3yr": 3,
+   "registered": 209,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 19,
+   "book_candidate": 18,
    "golden_staged": 1
   },
   "throughput": [
@@ -579,7 +563,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5144
+    "trials": 5147
    }
   ]
  },
@@ -626,8 +610,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 52,
-   "n_killed": 39,
+   "n_tested": 53,
+   "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
   },
