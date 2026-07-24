@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:32:56Z",
+  "stamp": "2026-07-24T07:33:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,22 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-cash-management-bill-unscheduled-supply-concession",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:24:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-eia-five-year-average-window-roll-anchor-artifact",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:24:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "robustness: m2k-nfib-preopen-smallcap-release-impounding",
     "stage": "dev3yr",
@@ -554,7 +538,7 @@
   "funnel": {
    "idea": 10,
    "registered": 215,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
