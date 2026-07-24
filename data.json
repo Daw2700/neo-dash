@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:28:14Z",
+  "stamp": "2026-07-24T05:32:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1242,
-  "n_results": 1433,
-  "n_trials": 84333,
+  "n_registered": 1243,
+  "n_results": 1434,
+  "n_trials": 84334,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84333,
-   "registered": 1242,
-   "tested": 1000,
+   "trials": 84334,
+   "registered": 1243,
+   "tested": 1001,
    "passed": 188,
    "survived": 40,
    "replicated": 15,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T05:29:55.399646+00:00",
+   "hash": "253f3b4b",
+   "name": "met-tuesday-us-session-weekly-derisk-cadence",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.697"
+  },
+  {
    "t": "2026-07-24T05:25:57.990867+00:00",
    "hash": "7a24e415",
    "name": "m6e-german-sentiment-survey-release-euro-morning-fade",
@@ -422,14 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T04:58:07.487329+00:00",
-   "hash": "993fd2e7",
-   "name": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.553"
   }
  ],
  "pipeline": {
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T05:21:14Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-tuesday-us-session-weekly-derisk-cadence",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:28:16Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 2,
-    "idea": "met-tuesday-us-session-weekly-derisk-cadence",
-    "source": "data-screen",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.3
-   },
    {
     "rank": 9,
     "idea": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
@@ -472,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 205,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -535,7 +534,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5134
+    "trials": 5135
    }
   ]
  },
@@ -638,8 +637,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 28,
+   "n_tested": 30,
+   "n_killed": 29,
    "book_sleeves": [],
    "agents_now": []
   },
