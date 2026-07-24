@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:06:47Z",
+  "stamp": "2026-07-24T07:06:48Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,40 +433,53 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 11,
-    "idea": "mgc-m6e-cointegration-residual-error-correction",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.36
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T07:06:48Z",
+    "state": "running"
    },
    {
-    "rank": 12,
-    "idea": "mgc-contango-vs-financing-deviation-vault-stress",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.34
+    "agent": "sweep",
+    "market": null,
+    "task": "vectorized grammar sweep",
+    "stage": "sweep",
+    "started": "2026-07-24T07:06:48Z",
+    "state": "running"
    },
    {
-    "rank": 13,
-    "idea": "zs-percent-of-full-carry-storage-election",
-    "source": "literature",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.32
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-m6e-cointegration-residual-error-correction",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:06:48Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MGC",
+    "task": "mgc-contango-vs-financing-deviation-vault-stress",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:06:48Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-5",
+    "market": "ZS",
+    "task": "zs-percent-of-full-carry-storage-election",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:06:48Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 3,
+   "idea": 0,
    "registered": 213,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
