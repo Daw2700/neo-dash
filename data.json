@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:21:05Z",
+  "stamp": "2026-07-24T04:21:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T04:19:19Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-momentum-crash-bear-highvol-conditional-trend-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:21:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-storage-containment-physical-cap-asymmetry",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:21:07Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mes-momentum-crash-bear-highvol-conditional-trend-gate",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.38
-   },
-   {
-    "rank": 10,
-    "idea": "mng-storage-containment-physical-cap-asymmetry",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.36
-   },
    {
     "rank": 11,
     "idea": "mes-index-float-sharecount-update-nonprice-flow",
@@ -482,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 200,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
