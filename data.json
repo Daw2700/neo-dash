@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:24:27Z",
+  "stamp": "2026-07-24T07:32:54Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1267,
-  "n_results": 1456,
-  "n_trials": 84356,
+  "n_registered": 1270,
+  "n_results": 1459,
+  "n_trials": 84359,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 84356,
-   "registered": 1267,
-   "tested": 1015,
-   "passed": 191,
+   "trials": 84359,
+   "registered": 1270,
+   "tested": 1018,
+   "passed": 192,
    "survived": 43,
    "replicated": 15,
    "book": 14
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T07:30:18.006987+00:00",
+   "hash": "88a08e91",
+   "name": "mng-eia-5yr-avg-window-roll-artifact",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.495"
+  },
+  {
+   "t": "2026-07-24T07:29:12.975680+00:00",
+   "hash": "3b2c9ddf",
+   "name": "zn-cmb-unscheduled-supply-concession",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.468"
+  },
+  {
+   "t": "2026-07-24T07:28:09.149895+00:00",
+   "hash": "47ebad2a",
+   "name": "m2k-nfib-preopen-smallcap-release-impounding",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.797"
+  },
+  {
    "t": "2026-07-24T07:12:27.109335+00:00",
    "hash": "a12b00f1",
    "name": "scout-80-screen",
@@ -406,44 +430,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.981"
-  },
-  {
-   "t": "2026-07-24T06:46:40.697812+00:00",
-   "hash": "25a2749e",
-   "name": "m6e-queue-bound-onetick-absorption-carry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.8616"
-  },
-  {
-   "t": "2026-07-24T06:44:58.354186+00:00",
-   "hash": "3830a3ec",
-   "name": "ROBUSTNESS-BATTERY mgc-close-location-breadth-fade (candidate eeaa72a4f13c1563)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T06:44:31.256117+00:00",
-   "hash": "c9dbce0d",
-   "name": "RECHECK-xsec-carry-rank-micro-complex-neutral",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "m2k-nfib-preopen-smallcap-release-impounding",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:24:26Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-cash-management-bill-unscheduled-supply-concession",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-eia-five-year-average-window-roll-anchor-artifact",
     "stage": "dev3yr",
@@ -554,10 +546,10 @@
   "funnel": {
    "idea": 10,
    "registered": 215,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 16,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5157
+    "trials": 5160
    }
   ]
  },
@@ -663,7 +655,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 53,
+   "n_tested": 54,
    "n_killed": 40,
    "book_sleeves": [],
    "agents_now": []
@@ -699,8 +691,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 40,
-   "n_killed": 35,
+   "n_tested": 41,
+   "n_killed": 36,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -737,8 +729,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 93,
-   "n_killed": 79,
+   "n_tested": 94,
+   "n_killed": 80,
    "book_sleeves": [],
    "agents_now": []
   },
