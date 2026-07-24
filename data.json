@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:14:15Z",
+  "stamp": "2026-07-24T01:16:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1177,
-  "n_results": 1367,
-  "n_trials": 79232,
+  "n_results": 1368,
+  "n_trials": 79233,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79232,
+   "trials": 79233,
    "registered": 1177,
-   "tested": 955,
+   "tested": 956,
    "passed": 174,
    "survived": 37,
    "replicated": 14,
@@ -332,6 +332,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T01:15:36.234163+00:00",
+   "hash": "ab19446d",
+   "name": "sil-mgc-delivery-cycle-stagger-onelegged-roll-dislocation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.186"
+  },
+  {
    "t": "2026-07-24T01:14:00.279814+00:00",
    "hash": "245ea487",
    "name": "met-macro-release-thin-book-overshoot-vs-mbt",
@@ -346,14 +354,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.915"
-  },
-  {
-   "t": "2026-07-24T01:13:39.944206+00:00",
-   "hash": "ab19446d",
-   "name": "sil-mgc-delivery-cycle-stagger-onelegged-roll-dislocation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T00:54:55.820835+00:00",
@@ -432,14 +432,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "SIL",
-    "task": "sil-mgc-delivery-cycle-stagger-onelegged-roll-dislocation",
-    "stage": "dev3yr",
-    "started": "2026-07-24T01:10:03Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MES",
     "task": "mes-macro-reaction-sign-streak-crowding-flip",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-shoulder-month-storage-print-information-void-fade",
     "stage": "dev3yr",
@@ -522,8 +514,8 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 185,
-   "dev3yr": 3,
+   "registered": 184,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
@@ -584,7 +576,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 29
+    "trials": 30
    }
   ]
  },
@@ -640,8 +632,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 67,
-   "n_killed": 56,
+   "n_tested": 68,
+   "n_killed": 57,
    "book_sleeves": [],
    "agents_now": []
   },
