@@ -1,9 +1,9 @@
 {
  "meta": {
-  "stamp": "2026-07-24T09:11:52Z",
+  "stamp": "2026-07-24T09:12:14Z",
   "stale_after_min": 30,
-  "status": "usage-capped \u2014 cooling down",
-  "engine_state": "error",
+  "status": "funnel running \u2014 3 testers in flight",
+  "engine_state": "ok",
   "n_registered": 1288,
   "n_results": 1476,
   "n_trials": 84376,
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "zc-implied-derived-outright-depth-overimpact-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-24T09:11:52Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MGC",
-    "task": "mgc-one-touch-urgent-volume-share-inventory-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-24T09:11:52Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNG",
-    "task": "mng-cpc-monthly-longrange-outlook-repricing",
-    "stage": "dev3yr",
-    "started": "2026-07-24T09:11:52Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 7,
@@ -531,12 +506,21 @@
      "M2K"
     ],
     "score": null
+   },
+   {
+    "rank": 4,
+    "idea": "zc-implied-derived-outright-depth-overimpact-reversion",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
    }
   ],
   "funnel": {
-   "idea": 8,
+   "idea": 9,
    "registered": 221,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
