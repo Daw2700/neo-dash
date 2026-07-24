@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:34:51Z",
+  "stamp": "2026-07-24T03:34:53Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:34:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-statistical-benchmark-revision-history-rewrite-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:34:53Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-monday-merchandiser-close-hedge-completion",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:34:53Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "zn-statistical-benchmark-revision-history-rewrite-fade",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.55
-   },
-   {
-    "rank": 3,
-    "idea": "zc-monday-merchandiser-close-hedge-completion",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.52
-   },
    {
     "rank": 4,
     "idea": "mes-quarterly-redemption-notice-deadline-preliquidation",
@@ -545,9 +543,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 196,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
