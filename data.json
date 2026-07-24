@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:19:19Z",
+  "stamp": "2026-07-24T04:21:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1219,
-  "n_results": 1410,
-  "n_trials": 84310,
+  "n_registered": 1222,
+  "n_results": 1412,
+  "n_trials": 84312,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84310,
-   "registered": 1219,
-   "tested": 983,
+   "trials": 84312,
+   "registered": 1222,
+   "tested": 985,
    "passed": 184,
    "survived": 39,
    "replicated": 15,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:20:47.728654+00:00",
+   "hash": "1eb7343a",
+   "name": "mnq-turnover-overconfidence-reversal",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.29"
+  },
+  {
+   "t": "2026-07-24T04:20:44.706427+00:00",
+   "hash": "379edecf",
+   "name": "zn-tokyo-first-full-week-session-duration-add",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.104"
+  },
+  {
+   "t": "2026-07-24T04:20:34.601450+00:00",
+   "hash": "46c63f61",
+   "name": "mcl-underwater-highwatermark-convexity-risk-shift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T04:10:10.807480+00:00",
    "hash": "2698be1f",
    "name": "m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
@@ -406,52 +430,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.578"
-  },
-  {
-   "t": "2026-07-24T03:39:32.850786+00:00",
-   "hash": "8c0e8e9f",
-   "name": "zn-statistical-benchmark-revision-history-rewrite-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.553"
-  },
-  {
-   "t": "2026-07-24T03:36:19.535545+00:00",
-   "hash": "8d2a95d2",
-   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.984"
-  },
-  {
-   "t": "2026-07-24T03:29:21.364721+00:00",
-   "hash": "2a8c5fe3",
-   "name": "scout-77-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-tokyo-first-full-week-session-duration-add",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:18:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-aggregate-turnover-overconfidence-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:18:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-underwater-highwatermark-convexity-risk-shift",
     "stage": "dev3yr",
@@ -499,8 +483,8 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 199,
-   "dev3yr": 3,
+   "registered": 200,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -561,7 +545,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5111
+    "trials": 5113
    }
   ]
  },
@@ -570,8 +554,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 148,
-   "n_killed": 100,
+   "n_tested": 149,
+   "n_killed": 101,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -682,8 +666,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 90,
-   "n_killed": 77,
+   "n_tested": 91,
+   "n_killed": 78,
    "book_sleeves": [],
    "agents_now": []
   },
