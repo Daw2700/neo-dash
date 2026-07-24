@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:34:53Z",
+  "stamp": "2026-07-24T03:41:30Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1211,
-  "n_results": 1402,
-  "n_trials": 84302,
+  "n_registered": 1214,
+  "n_results": 1405,
+  "n_trials": 84305,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84302,
-   "registered": 1211,
-   "tested": 978,
-   "passed": 182,
+   "trials": 84305,
+   "registered": 1214,
+   "tested": 981,
+   "passed": 183,
    "survived": 38,
    "replicated": 15,
    "book": 13
@@ -302,6 +302,18 @@
    "usd_trade": 48.9
   },
   {
+   "id": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 145,
+   "wr": 0.593,
+   "usd_mo": 21,
+   "pf": 1.984,
+   "usd_trade": 5.3
+  },
+  {
    "id": "m2k-midmonth-payday-contribution-inflow",
    "name": "m2k-midmonth-payday-contribution-inflow",
    "market": "M2K",
@@ -316,25 +328,33 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "mgc-china-lpr-fix-evening-window",
-   "name": "mgc-china-lpr-fix-evening-window",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 27,
-   "wr": 0.5926,
-   "usd_mo": 8,
-   "pf": 1.887,
-   "usd_trade": 10.6,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T03:40:10.284799+00:00",
+   "hash": "53dc4be6",
+   "name": "zc-monday-merchandiser-close-hedge-completion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.578"
+  },
+  {
+   "t": "2026-07-24T03:39:32.850786+00:00",
+   "hash": "8c0e8e9f",
+   "name": "zn-statistical-benchmark-revision-history-rewrite-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.553"
+  },
+  {
+   "t": "2026-07-24T03:36:19.535545+00:00",
+   "hash": "8d2a95d2",
+   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.984"
+  },
   {
    "t": "2026-07-24T03:29:21.364721+00:00",
    "hash": "2a8c5fe3",
@@ -406,44 +426,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T02:51:30.867916+00:00",
-   "hash": "9e92c18a",
-   "name": "mnq-expansion-age-clock-post-shock-reentry",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.362"
-  },
-  {
-   "t": "2026-07-24T02:49:00.608060+00:00",
-   "hash": "7421cd53",
-   "name": "mnq-expansion-age-clock-post-shock-reentry-REPLICATION-1340",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T02:42:51.104434+00:00",
-   "hash": "9e92c18a",
-   "name": "mnq-expansion-age-clock-post-shock-reentry",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MGC",
-    "task": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:34:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-statistical-benchmark-revision-history-rewrite-fade",
     "stage": "dev3yr",
@@ -451,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "ZC",
     "task": "zc-monday-merchandiser-close-hedge-completion",
     "stage": "dev3yr",
@@ -545,10 +533,10 @@
   "funnel": {
    "idea": 9,
    "registered": 196,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 16,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -606,7 +594,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5103
+    "trials": 5106
    }
   ]
  },
@@ -662,7 +650,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 70,
+   "n_tested": 71,
    "n_killed": 57,
    "book_sleeves": [],
    "agents_now": []
@@ -727,8 +715,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 89,
-   "n_killed": 76,
+   "n_tested": 90,
+   "n_killed": 77,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -736,8 +724,8 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 57,
-   "n_killed": 51,
+   "n_tested": 58,
+   "n_killed": 52,
    "book_sleeves": [
     "zc-rma-volatility-factor-five-day-window",
     "zc-farm-cash-rent-duedate-liquidation-window"
@@ -1444,6 +1432,26 @@
     }
    ]
   },
+  "mgc-friday-preclosure-unhedgeable-closure-inventory-bid": {
+   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "Metals dealers running long-physical/short-futures inventory cannot hedge across the weekend closure, so short-futures flattening is forced into the last liquid hour before the 17:00 ET halt on Fridays, producing one-sided buy pressure paid for by whoever supplies liquidity in the thinning book.",
+   "metrics": {
+    "n": 145,
+    "wr": 0.593,
+    "pf": 1.984,
+    "usd_mo": 21,
+    "usd_trade": 5.3
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-24T03:36:19.535545+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "m2k-midmonth-payday-contribution-inflow": {
    "name": "m2k-midmonth-payday-contribution-inflow",
    "market": "M2K",
@@ -1461,40 +1469,6 @@
      "t": "2026-07-24T00:54:55.820835+00:00",
      "stage": "dev3yr",
      "verdict": "DEMOTED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  "mgc-china-lpr-fix-evening-window": {
-   "name": "mgc-china-lpr-fix-evening-window",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "China Loan Prime Rate is fixed at 09:15 Beijing time on the 20th of each month; the print lands ~20:00-23:00 ET the evening before (the 19th), a thin Globex window with only Asian desks marking gold, so SGE-side repricing of rate-sensitive physical/retail demand transmits into COMEX gold before US desks arrive to arbitrage it away.",
-   "metrics": {
-    "n": 27,
-    "wr": 0.5926,
-    "pf": 1.887,
-    "usd_mo": 8,
-    "usd_trade": 10.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T10:02:09.794157+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T10:09:48.610703+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T10:14:59.559673+00:00",
-     "stage": "replication",
-     "verdict": "KILLED"
     }
    ],
    "sizing": {
