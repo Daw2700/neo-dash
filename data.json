@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:32:55Z",
+  "stamp": "2026-07-24T05:33:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZN",
-    "task": "replication: zn-rrp-drain-collateral-scarcity-funding-bid",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:21:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-german-sentiment-survey-release-euro-morning-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:21:14Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MET",
-    "task": "met-tuesday-us-session-weekly-derisk-cadence",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:28:16Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 9,
@@ -473,7 +448,7 @@
   "funnel": {
    "idea": 1,
    "registered": 205,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
