@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:38:26Z",
+  "stamp": "2026-07-24T02:38:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,6 +441,22 @@
     "stage": "dev3yr",
     "started": "2026-07-24T02:31:27Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "robustness: mcl-weekly-close-location-hedger-immediacy-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:38:28Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-expansion-age-clock-post-shock-reentry",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:38:28Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -493,7 +509,7 @@
   "funnel": {
    "idea": 5,
    "registered": 190,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
