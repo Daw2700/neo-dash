@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T13:19:23Z",
+  "stamp": "2026-07-24T13:19:45Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -435,11 +435,11 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
+    "agent": "decision",
     "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T13:19:23Z",
+    "task": "your approve: Fifth machine-discovered sleeve ready: q",
+    "stage": "decision",
+    "started": "2026-07-24T13:19:45Z",
     "state": "running"
    }
   ],
