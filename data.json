@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:38:52Z",
+  "stamp": "2026-07-24T02:46:22Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1199,
-  "n_results": 1392,
-  "n_trials": 79257,
+  "n_registered": 1202,
+  "n_results": 1395,
+  "n_trials": 79260,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79257,
-   "registered": 1199,
-   "tested": 972,
-   "passed": 181,
-   "survived": 37,
+   "trials": 79260,
+   "registered": 1202,
+   "tested": 973,
+   "passed": 182,
+   "survived": 38,
    "replicated": 14,
    "book": 13
   }
@@ -336,6 +336,46 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:42:51.104434+00:00",
+   "hash": "9e92c18a",
+   "name": "mnq-expansion-age-clock-post-shock-reentry",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T02:42:29.646317+00:00",
+   "hash": "19030329",
+   "name": "mcl-weekly-close-location-hedger-immediacy-reversal",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T02:41:18.557295+00:00",
+   "hash": "67aaaeb3",
+   "name": "mgc-continuous-extreme-count-overnight-carry",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.398"
+  },
+  {
+   "t": "2026-07-24T02:40:44.183253+00:00",
+   "hash": "a453fb8b",
+   "name": "ROBUSTNESS-BATTERY mnq-expansion-age-clock-post-shock-reentry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T02:40:06.511689+00:00",
+   "hash": "fd0c3ccc",
+   "name": "mcl-weekly-close-location-hedger-immediacy-reversal-ROBUSTNESS-1337",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T02:36:00.785763+00:00",
    "hash": "47220c5a",
    "name": "mnq-trendfollow-cohort-dd-liquidity",
@@ -390,46 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T02:11:50.235398+00:00",
-   "hash": "bccf31ea",
-   "name": "mnq-ramp-backload-orb-gate",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.312"
-  },
-  {
-   "t": "2026-07-24T02:09:59.842430+00:00",
-   "hash": "8201a68d",
-   "name": "robust-mnq-closehour-liquidity-cost-overnight",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T02:09:43.541838+00:00",
-   "hash": "ebbbc5b7",
-   "name": "ROBUSTNESS-BATTERY mcl-intrasession-excursion-asymmetry-overnight-repair",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T02:03:38.206000+00:00",
-   "hash": "79fe7459",
-   "name": "mcl-crossmarket-gap-ratification-laggard",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.97"
-  },
-  {
-   "t": "2026-07-24T02:03:18.951426+00:00",
-   "hash": "79fe7459",
-   "name": "mcl-crossmarket-gap-ratification-laggard",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.97"
   }
  ],
  "pipeline": {
@@ -448,14 +448,6 @@
     "task": "robustness: mnq-expansion-age-clock-post-shock-reentry",
     "stage": "dev3yr",
     "started": "2026-07-24T02:38:28Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-continuous-extreme-count-overnight-carry",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:38:52Z",
     "state": "running"
    }
   ],
@@ -499,8 +491,8 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 190,
-   "dev3yr": 3,
+   "registered": 192,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -561,7 +553,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 54
+    "trials": 57
    }
   ]
  },
@@ -617,7 +609,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 69,
+   "n_tested": 70,
    "n_killed": 57,
    "book_sleeves": [],
    "agents_now": []
