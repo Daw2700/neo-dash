@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:03:13Z",
+  "stamp": "2026-07-24T06:07:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1249,
-  "n_results": 1440,
-  "n_trials": 84340,
+  "n_registered": 1252,
+  "n_results": 1442,
+  "n_trials": 84342,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84340,
-   "registered": 1249,
-   "tested": 1006,
-   "passed": 189,
-   "survived": 40,
+   "trials": 84342,
+   "registered": 1252,
+   "tested": 1007,
+   "passed": 190,
+   "survived": 41,
    "replicated": 15,
    "book": 13
   }
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T06:06:50.941661+00:00",
+   "hash": "2321084e",
+   "name": "mcl-session-extreme-dwell-absorption-fade",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T06:06:14.743633+00:00",
+   "hash": "5a7951f1",
+   "name": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T06:05:07.368177+00:00",
+   "hash": "cef92ee9",
+   "name": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.225"
+  },
+  {
+   "t": "2026-07-24T06:03:13.439354+00:00",
+   "hash": "aa21bd77",
+   "name": "mcl-session-extreme-dwell-absorption-fade__ROBUSTNESS",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T06:02:59.216430+00:00",
    "hash": "68076abe",
    "name": "zn-prediction-market-vs-futures-prerelease-divergence",
@@ -398,38 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.697"
-  },
-  {
-   "t": "2026-07-24T05:25:57.990867+00:00",
-   "hash": "7a24e415",
-   "name": "m6e-german-sentiment-survey-release-euro-morning-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.6034"
-  },
-  {
-   "t": "2026-07-24T05:25:13.452936+00:00",
-   "hash": "15e65616",
-   "name": "zn-rrp-drain-collateral-scarcity-funding-bid",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.087"
-  },
-  {
-   "t": "2026-07-24T05:23:34.358143+00:00",
-   "hash": "90732ac1",
-   "name": "mes-qra-duration-repricing-transmission",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.862"
-  },
-  {
-   "t": "2026-07-24T05:23:20.071427+00:00",
-   "hash": "0c7b9a23",
-   "name": "zn-rrp-drain-collateral-scarcity-funding-bid-REPLICATION-1374",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T06:01:49Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:03:15Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 7,
     "idea": "m2k-mes-carry-spread-securities-lending-tightness",
@@ -526,12 +525,12 @@
    }
   ],
   "funnel": {
-   "idea": 8,
-   "registered": 206,
-   "dev3yr": 2,
+   "idea": 7,
+   "registered": 208,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 18,
+   "book_candidate": 19,
    "golden_staged": 1
   },
   "throughput": [
@@ -589,7 +588,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5141
+    "trials": 5143
    }
   ]
  },
@@ -731,7 +730,7 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 32,
+   "n_tested": 33,
    "n_killed": 24,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
