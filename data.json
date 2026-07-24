@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:59:41Z",
+  "stamp": "2026-07-24T01:09:59Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1174,
   "n_results": 1365,
@@ -429,19 +429,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T00:52:02Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mcl-mng-intercommodity-margin-credit-expiry-forced-remargin",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 2,
+    "idea": "sil-mgc-delivery-cycle-stagger-onelegged-roll-dislocation",
+    "source": "data-screen",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 3,
+    "idea": "met-macro-release-thin-book-overshoot-vs-mbt",
+    "source": "literature",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 4,
+    "idea": "mes-macro-reaction-sign-streak-crowding-flip",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 5,
+    "idea": "mng-shoulder-month-storage-print-information-void-fade",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.36
+   },
+   {
+    "rank": 6,
+    "idea": "xmkt-simultaneous-session-extreme-cotiming-macro-stamp",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-expiry-weekday-geometry-compressed-liquidation",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.34
+   },
+   {
+    "rank": 8,
+    "idea": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.33
+   },
+   {
+    "rank": 9,
+    "idea": "zn-nonroll-month-unrefreshed-book-monthend-impact",
+    "source": "data-screen",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 10,
+    "idea": "mes-vix-wednesday-to-friday-equity-hedge-void",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.28
+   },
+   {
+    "rank": 11,
+    "idea": "mcl-week-scale-participation-flood-risk-premium-decay",
+    "source": "data-screen",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.22
+   },
+   {
+    "rank": 12,
+    "idea": "mgc-week-scale-participation-drought-continuation",
+    "source": "data-screen",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.18
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 184,
    "dev3yr": 0,
    "robustness": 0,
