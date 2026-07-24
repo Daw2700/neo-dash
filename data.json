@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:52:18Z",
+  "stamp": "2026-07-24T04:52:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -429,35 +429,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-equity-trs-imm-quarterly-roll-dealer-hedge-flow",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:52:20Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-refinery-turnaround-crackswitch-seasonal-demand-dip",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:52:20Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-megacap-earnings-overnight-index-overshoot-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:52:20Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-equity-trs-imm-quarterly-roll-dealer-hedge-flow",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 7,
-    "idea": "mcl-refinery-turnaround-crackswitch-seasonal-demand-dip",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 8,
-    "idea": "mnq-megacap-earnings-overnight-index-overshoot-fade",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
@@ -514,9 +512,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 6,
    "registered": 201,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
