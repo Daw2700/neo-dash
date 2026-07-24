@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:55:06Z",
+  "stamp": "2026-07-24T07:55:28Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "replication: m2k-nfib-preopen-smallcap-release-impounding",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:40:33Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZC",
     "task": "robustness: zc-late-planting-acreage-premium",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M2K",
     "task": "m2k-sloos-credit-availability-quarterly-release",
     "stage": "dev3yr",
@@ -527,7 +519,7 @@
   "funnel": {
    "idea": 7,
    "registered": 217,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
