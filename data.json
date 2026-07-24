@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T09:43:11Z",
+  "stamp": "2026-07-24T09:43:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -515,10 +515,19 @@
      "MES"
     ],
     "score": 0.32
+   },
+   {
+    "rank": 11,
+    "idea": "mnq-aggressor-run-termination-absorber-unwind",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 10,
    "registered": 221,
    "dev3yr": 0,
    "robustness": 0,
