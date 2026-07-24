@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:47:16Z",
+  "stamp": "2026-07-24T00:51:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1171,
-  "n_results": 1363,
-  "n_trials": 79228,
+  "n_registered": 1172,
+  "n_results": 1364,
+  "n_trials": 79229,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79228,
-   "registered": 1171,
-   "tested": 951,
+   "trials": 79229,
+   "registered": 1172,
+   "tested": 952,
    "passed": 173,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:49:01.562886+00:00",
+   "hash": "99875de6",
+   "name": "m6e-us-afternoon-rates-vacuum-deferred-transmission",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.1785"
+  },
+  {
    "t": "2026-07-24T00:44:59.395982+00:00",
    "hash": "a1c88093",
    "name": "zs-halt-window-macro-convergence",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.749"
-  },
-  {
-   "t": "2026-07-24T00:31:15.047546+00:00",
-   "hash": "1508fceb",
-   "name": "mng-bidweek-physical-index-hedge-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.546"
   }
  ],
  "pipeline": {
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T00:40:45Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-us-afternoon-rates-move-in-fx-vacuum-deferred-transmission",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:47:18Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 14,
-    "idea": "m6e-us-afternoon-rates-move-in-fx-vacuum-deferred-transmission",
-    "source": "data-screen",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.38
-   },
    {
     "rank": 15,
     "idea": "m2k-midmonth-payday-contribution-inflow",
@@ -472,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 183,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -535,7 +534,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 25
+    "trials": 26
    }
   ]
  },
@@ -647,8 +646,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 52,
-   "n_killed": 51,
+   "n_tested": 53,
+   "n_killed": 52,
    "book_sleeves": [],
    "agents_now": []
   },
