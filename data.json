@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T13:17:15Z",
+  "stamp": "2026-07-24T13:17:18Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -440,6 +440,14 @@
     "task": "your approve: Thirteenth graduate: NFIB release-mornin",
     "stage": "decision",
     "started": "2026-07-24T13:17:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T13:17:18Z",
     "state": "running"
    }
   ],
