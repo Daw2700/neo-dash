@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-24T10:45:08Z",
+  "stamp": "2026-07-24T10:45:30Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1288,
   "n_results": 1476,
@@ -433,16 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T10:45:07Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [],
   "funnel": {
    "idea": 0,
