@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:25:45Z",
+  "stamp": "2026-07-24T04:33:19Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1226,
-  "n_results": 1416,
-  "n_trials": 84316,
+  "n_registered": 1227,
+  "n_results": 1417,
+  "n_trials": 84317,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84316,
-   "registered": 1226,
-   "tested": 989,
+   "trials": 84317,
+   "registered": 1227,
+   "tested": 990,
    "passed": 184,
    "survived": 39,
    "replicated": 15,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:28:34.862708+00:00",
+   "hash": "73212671",
+   "name": "mnq-release-magnitude-habituation-streak-break",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.4518"
+  },
+  {
    "t": "2026-07-24T04:25:24.238765+00:00",
    "hash": "18485149",
    "name": "scout-78-screen",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.52"
-  },
-  {
-   "t": "2026-07-24T03:59:24.023926+00:00",
-   "hash": "8d2a95d2",
-   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
-   "status": "fail",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -441,21 +441,13 @@
     "stage": "idea-scout",
     "started": "2026-07-24T04:24:42Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNQ",
-    "task": "mnq-release-magnitude-habituation-streak-break",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:24:42Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 200,
-   "dev3yr": 1,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5117
+    "trials": 5118
    }
   ]
  },
@@ -525,8 +517,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 149,
-   "n_killed": 101,
+   "n_tested": 150,
+   "n_killed": 102,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
