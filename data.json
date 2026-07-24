@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:21:16Z",
+  "stamp": "2026-07-24T08:21:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T08:14:12Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-cme-intraday-variation-margin-call-topup-window",
+    "stage": "dev3yr",
+    "started": "2026-07-24T08:21:18Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-quarter-end-pm-settled-quarterly-expiry-collision",
+    "stage": "dev3yr",
+    "started": "2026-07-24T08:21:18Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mcl-cme-intraday-variation-margin-call-topup-window",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 11,
-    "idea": "mes-quarter-end-pm-settled-quarterly-expiry-collision",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 12,
     "idea": "m6e-eu-joint-bond-syndication-ratelock-fx-window",
@@ -482,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 219,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
