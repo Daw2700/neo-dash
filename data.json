@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:08:00Z",
+  "stamp": "2026-07-24T02:16:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1192,
-  "n_results": 1385,
-  "n_trials": 79250,
+  "n_registered": 1195,
+  "n_results": 1388,
+  "n_trials": 79253,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79250,
-   "registered": 1192,
-   "tested": 968,
-   "passed": 178,
+   "trials": 79253,
+   "registered": 1195,
+   "tested": 969,
+   "passed": 179,
    "survived": 37,
    "replicated": 14,
    "book": 13
@@ -336,6 +336,46 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:12:39.304657+00:00",
+   "hash": "b4e6aa98",
+   "name": "mnq-closehour-liquidity-cost-overnight",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T02:12:04.409309+00:00",
+   "hash": "ae16290a",
+   "name": "mcl-intrasession-excursion-asymmetry-overnight-repair",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T02:11:50.235398+00:00",
+   "hash": "bccf31ea",
+   "name": "mnq-ramp-backload-orb-gate",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.312"
+  },
+  {
+   "t": "2026-07-24T02:09:59.842430+00:00",
+   "hash": "8201a68d",
+   "name": "robust-mnq-closehour-liquidity-cost-overnight",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T02:09:43.541838+00:00",
+   "hash": "ebbbc5b7",
+   "name": "ROBUSTNESS-BATTERY mcl-intrasession-excursion-asymmetry-overnight-repair",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T02:03:38.206000+00:00",
    "hash": "79fe7459",
    "name": "mcl-crossmarket-gap-ratification-laggard",
@@ -390,46 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T01:41:46.335460+00:00",
-   "hash": "caf6e5b3",
-   "name": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T01:41:42.607493+00:00",
-   "hash": "caf6e5b3",
-   "name": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T01:39:20.204770+00:00",
-   "hash": "b57062f8",
-   "name": "robust-m6e-intermeeting-gap-length-unopposed-data-accumulation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T01:35:48.097768+00:00",
-   "hash": "57852860",
-   "name": "scout-76-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T01:34:59.939371+00:00",
-   "hash": "2f8e1e2c",
-   "name": "mgc-week-drought-continuation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 3.494"
   }
  ],
  "pipeline": {
@@ -446,14 +446,6 @@
     "agent": "tester-2",
     "market": "MCL",
     "task": "robustness: mcl-intrasession-excursion-asymmetry-overnight-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:08:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-participation-ramp-backloading-next-session-range-gate",
     "stage": "dev3yr",
     "started": "2026-07-24T02:08:00Z",
     "state": "running"
@@ -535,11 +527,11 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 187,
-   "dev3yr": 3,
+   "registered": 189,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 16,
    "golden_staged": 1
   },
   "throughput": [
@@ -597,7 +589,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 47
+    "trials": 50
    }
   ]
  },
@@ -606,7 +598,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 145,
+   "n_tested": 146,
    "n_killed": 99,
    "book_sleeves": [
     "b3-nr7-breakout",
