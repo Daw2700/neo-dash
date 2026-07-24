@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:52:02Z",
+  "stamp": "2026-07-24T00:59:41Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1172,
-  "n_results": 1364,
-  "n_trials": 79229,
+  "n_registered": 1174,
+  "n_results": 1365,
+  "n_trials": 79230,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79229,
-   "registered": 1172,
-   "tested": 952,
-   "passed": 173,
+   "trials": 79230,
+   "registered": 1174,
+   "tested": 953,
+   "passed": 174,
    "survived": 37,
    "replicated": 14,
    "book": 13
@@ -302,6 +302,18 @@
    "usd_trade": 48.9
   },
   {
+   "id": "m2k-midmonth-payday-contribution-inflow",
+   "name": "m2k-midmonth-payday-contribution-inflow",
+   "market": "M2K",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 35,
+   "wr": 0.6,
+   "usd_mo": 23,
+   "pf": 1.939,
+   "usd_trade": 23.9
+  },
+  {
    "id": "mgc-china-lpr-fix-evening-window",
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -316,25 +328,25 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "market": "MES",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 93,
-   "wr": 0.6237,
-   "usd_mo": 76,
-   "pf": 1.687,
-   "usd_trade": 29.4,
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 4
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T00:54:55.820835+00:00",
+   "hash": "d3c5abaa",
+   "name": "m2k-midmonth-payday-contribution-inflow",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "PF 1.939"
+  },
+  {
+   "t": "2026-07-24T00:54:40.933905+00:00",
+   "hash": "ef6dfd86",
+   "name": "scout-75-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-24T00:49:01.562886+00:00",
    "hash": "99875de6",
@@ -414,22 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.646"
-  },
-  {
-   "t": "2026-07-24T00:31:53.984894+00:00",
-   "hash": "c0da8819",
-   "name": "mes-vix-soq-settlement-unwind",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF nan"
-  },
-  {
-   "t": "2026-07-24T00:31:23.339959+00:00",
-   "hash": "9beac0d8",
-   "name": "zs-spot-month-prefnd-liquidation",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.749"
   }
  ],
  "pipeline": {
@@ -441,24 +437,16 @@
     "stage": "idea-scout",
     "started": "2026-07-24T00:52:02Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-midmonth-payday-contribution-inflow",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:52:02Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 183,
-   "dev3yr": 1,
+   "registered": 184,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 14,
+   "book_candidate": 15,
    "golden_staged": 1
   },
   "throughput": [
@@ -516,7 +504,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 26
+    "trials": 27
    }
   ]
  },
@@ -563,7 +551,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 50,
+   "n_tested": 51,
    "n_killed": 39,
    "book_sleeves": [],
    "agents_now": []
@@ -1354,6 +1342,26 @@
     }
    ]
   },
+  "m2k-midmonth-payday-contribution-inflow": {
+   "name": "m2k-midmonth-payday-contribution-inflow",
+   "market": "M2K",
+   "tier": "candidate",
+   "mechanism": "Defined-contribution payroll deferrals settle on a semi-monthly clock anchored to the 1st and the 15th of each month and are invested on receipt by target-date and index funds with no discretion over timing; the 15th leg is the half of that cycle not already absorbed by turn-of-month flow, and small-cap sleeves of those contributions are a fixed proportion, so the buying on M2K around the 15th should be price-insensitive and calendar-fixed, independent of the already-registered MES payroll-15th test.",
+   "metrics": {
+    "n": 35,
+    "wr": 0.6,
+    "pf": 1.939,
+    "usd_mo": 23,
+    "usd_trade": 23.9
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-24T00:54:55.820835+00:00",
+     "stage": "dev3yr",
+     "verdict": "DEMOTED"
+    }
+   ]
+  },
   "mgc-china-lpr-fix-evening-window": {
    "name": "mgc-china-lpr-fix-evening-window",
    "market": "MGC",
@@ -1386,40 +1394,6 @@
    "sizing": {
     "growth_max": 8,
     "apex_max": 8
-   }
-  },
-  "mes-petrodollar-recycling-sovereign-inflow-lag": {
-   "name": "mes-petrodollar-recycling-sovereign-inflow-lag",
-   "market": "MES",
-   "tier": "candidate",
-   "mechanism": "Sustained high crude oil revenue accrues to oil-exporting sovereign wealth funds, which redeploy into global equities on a budgeting cycle that lags the revenue accrual by roughly one quarter, so a slow flow-driven equity bid is conditional on LAGGED cumulative crude return rather than contemporaneous crude moves.",
-   "metrics": {
-    "n": 93,
-    "wr": 0.6237,
-    "pf": 1.687,
-    "usd_mo": 76,
-    "usd_trade": 29.4
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T20:20:55.649694+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T20:27:13.722963+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T20:37:13.372105+00:00",
-     "stage": "replication",
-     "verdict": "REPLICATES"
-    }
-   ],
-   "sizing": {
-    "growth_max": 7,
-    "apex_max": 4
    }
   }
  },
