@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:21:50Z",
+  "stamp": "2026-07-24T04:21:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T04:21:07Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-index-float-sharecount-update-nonprice-flow",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:21:52Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mes-index-float-sharecount-update-nonprice-flow",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.33
-   },
    {
     "rank": 12,
     "idea": "mnq-release-magnitude-habituation-streak-break",
@@ -472,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 2,
+   "idea": 1,
    "registered": 199,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
