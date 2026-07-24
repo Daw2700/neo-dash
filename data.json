@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:36:09Z",
+  "stamp": "2026-07-24T05:36:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
@@ -441,13 +441,21 @@
     "stage": "idea-scout",
     "started": "2026-07-24T05:33:23Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MBT",
+    "task": "recheck: mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:36:11Z",
+    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 205,
-   "dev3yr": 0,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
