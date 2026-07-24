@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:36:05Z",
+  "stamp": "2026-07-24T04:36:07Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZS",
+    "task": "zs-growing-season-weekend-weather-premium-discharge",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:36:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-corporate-issuance-rate-lock-hedge-pressure-window",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:36:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-jolts-stale-labor-print-knee-jerk-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:36:07Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zs-growing-season-weekend-weather-premium-discharge",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 4,
-    "idea": "zn-corporate-issuance-rate-lock-hedge-pressure-window",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 3,
-    "idea": "mes-jolts-stale-labor-print-knee-jerk-fade",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 6,
     "idea": "mes-equity-trs-imm-quarterly-roll-dealer-hedge-flow",
@@ -545,9 +543,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 200,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
