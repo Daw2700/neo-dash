@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:47:35Z",
+  "stamp": "2026-07-24T08:56:18Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1285,
-  "n_results": 1474,
-  "n_trials": 84374,
+  "n_registered": 1288,
+  "n_results": 1476,
+  "n_trials": 84376,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84374,
-   "registered": 1285,
-   "tested": 1028,
-   "passed": 193,
+   "trials": 84376,
+   "registered": 1288,
+   "tested": 1030,
+   "passed": 194,
    "survived": 45,
    "replicated": 16,
    "book": 14
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T08:52:28.113255+00:00",
+   "hash": "ff95bc22",
+   "name": "mes-dominant-clip-size-unfinished-parent-order-continuation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.847"
+  },
+  {
+   "t": "2026-07-24T08:50:56.092240+00:00",
+   "hash": "e444fdd6",
+   "name": "m2k-late-week-terminal-extreme-weekend-carryover-reversal",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.705"
+  },
+  {
+   "t": "2026-07-24T08:50:40.255839+00:00",
+   "hash": "1df60c82",
+   "name": "tape-complexity-gate",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T08:31:16.991389+00:00",
    "hash": "a5caa6e6",
    "name": "scout-81-screen",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.216"
-  },
-  {
-   "t": "2026-07-24T08:05:51.605905+00:00",
-   "hash": "8eb94bdd",
-   "name": "rep-zc-late-planting-acreage-premium-zs",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T07:59:55.098585+00:00",
-   "hash": "8c2ce4c4",
-   "name": "mym-offcycle-fiscal-quarter-second-earnings-wave",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.057"
-  },
-  {
-   "t": "2026-07-24T07:59:42.406548+00:00",
-   "hash": "6af7bf35",
-   "name": "zc-late-planting-acreage-premium",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-late-week-terminal-extreme-weekend-carryover-reversal",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:47:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MES",
     "task": "mes-dominant-clip-size-unfinished-parent-order-continuation",
     "stage": "dev3yr",
@@ -535,11 +527,11 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 220,
-   "dev3yr": 3,
+   "registered": 221,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 18,
+   "book_candidate": 19,
    "golden_staged": 1
   },
   "throughput": [
@@ -597,7 +589,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5175
+    "trials": 5177
    }
   ]
  },
@@ -623,8 +615,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 208,
-   "n_killed": 174,
+   "n_tested": 209,
+   "n_killed": 175,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -645,7 +637,7 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 55,
+   "n_tested": 56,
    "n_killed": 41,
    "book_sleeves": [],
    "agents_now": []
