@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:07:33Z",
+  "stamp": "2026-07-24T02:07:35Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,6 +449,14 @@
     "stage": "dev3yr",
     "started": "2026-07-24T01:59:31Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-closehour-liquidity-cost-overnight",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:07:35Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -537,7 +545,7 @@
   "funnel": {
    "idea": 9,
    "registered": 187,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
