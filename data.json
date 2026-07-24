@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:33:22Z",
+  "stamp": "2026-07-24T07:40:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1270,
-  "n_results": 1459,
-  "n_trials": 84359,
+  "n_registered": 1273,
+  "n_results": 1462,
+  "n_trials": 84362,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 84359,
-   "registered": 1270,
-   "tested": 1018,
-   "passed": 192,
-   "survived": 43,
+   "trials": 84362,
+   "registered": 1273,
+   "tested": 1020,
+   "passed": 193,
+   "survived": 44,
    "replicated": 15,
    "book": 14
   }
@@ -278,6 +278,18 @@
    }
   },
   {
+   "id": "zc-late-planting-acreage-premium",
+   "name": "zc-late-planting-acreage-premium",
+   "market": "ZC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 15,
+   "wr": 0.6,
+   "usd_mo": 44,
+   "pf": 2.732,
+   "usd_trade": 106.1
+  },
+  {
    "id": "zn-fr2004-dealer-inventory-capacity-state",
    "name": "zn-fr2004-dealer-inventory-capacity-state",
    "market": "ZN",
@@ -316,25 +328,41 @@
    "usd_mo": 71,
    "pf": 2.106,
    "usd_trade": 48.9
-  },
-  {
-   "id": "m2k-midmonth-payday-contribution-inflow",
-   "name": "m2k-midmonth-payday-contribution-inflow",
-   "market": "M2K",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 35,
-   "wr": 0.6,
-   "usd_mo": 23,
-   "pf": 1.939,
-   "usd_trade": 23.9,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T07:38:58.043038+00:00",
+   "hash": "47ebad2a",
+   "name": "m2k-nfib-preopen-smallcap-release-impounding",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T07:38:05.207013+00:00",
+   "hash": "ab544d25",
+   "name": "mcl-china-import-quota-batch-release-demand-step",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.962"
+  },
+  {
+   "t": "2026-07-24T07:35:53.778612+00:00",
+   "hash": "6af7bf35",
+   "name": "zc-late-planting-acreage-premium",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 2.732"
+  },
+  {
+   "t": "2026-07-24T07:35:35.855575+00:00",
+   "hash": "3c58eaf5",
+   "name": "ROBUSTNESS-BATTERY m2k-nfib-preopen-smallcap-release-impounding (candidate 47ebad2ae2169151)",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-24T07:30:18.006987+00:00",
    "hash": "88a08e91",
@@ -398,38 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.933"
-  },
-  {
-   "t": "2026-07-24T06:57:27.358979+00:00",
-   "hash": "eeaa72a4",
-   "name": "mgc-close-location-breadth-fade",
-   "status": "fail",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T06:55:56.611825+00:00",
-   "hash": "fd3875d6",
-   "name": "mgc-close-location-breadth-fade-REPLICATION-1396",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T06:48:45.257267+00:00",
-   "hash": "eeaa72a4",
-   "name": "mgc-close-location-breadth-fade",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T06:48:06.228478+00:00",
-   "hash": "9950c549",
-   "name": "xsec-carry-rank-micro-complex-neutral",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.981"
   }
  ],
  "pipeline": {
@@ -444,14 +440,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-late-planting-period-acreage-uncertainty-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:33:21Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "mcl-china-import-quota-batch-release-demand-step",
     "stage": "dev3yr",
@@ -535,11 +523,11 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 215,
-   "dev3yr": 3,
+   "registered": 216,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 18,
    "golden_staged": 1
   },
   "throughput": [
@@ -597,7 +585,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5160
+    "trials": 5163
    }
   ]
  },
@@ -672,8 +660,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 91,
-   "n_killed": 63,
+   "n_tested": 92,
+   "n_killed": 64,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -728,7 +716,7 @@
    "ticker": "ZC",
    "display": "Corn",
    "status": "active",
-   "n_tested": 58,
+   "n_tested": 59,
    "n_killed": 52,
    "book_sleeves": [
     "zc-rma-volatility-factor-five-day-window",
@@ -1377,6 +1365,26 @@
     "apex_max": 7
    }
   },
+  "zc-late-planting-acreage-premium": {
+   "name": "zc-late-planting-acreage-premium",
+   "market": "ZC",
+   "tier": "candidate",
+   "mechanism": "Corn crop insurance final planting date (~Jun 5) opens a late-planting period during which the insured yield guarantee decays 1 percent per day and prevented-planting becomes a live economic alternative, so acreage stays genuinely unresolved for about three weeks; a scout-80 data screen (ledger a12b00f1435c571b) found this uncertainty premium is bid into ZC only in the earliest slice of that window -- Jun 06-12 mean +58.6bp/day (n=18, 72% up) -- while Jun 13-19 (-11.9bp, n=16), Jun 20-26 (-64.9bp, n=18) and Jun 27-30 (-318.6bp, n=11, below the n>=15 minimum) all reversed or failed sample, and Apr/May/Jul/Aug day-6-30 placebos were flat (-0.9 to +9.2bp). This probe tests only the surviving Jun 06-12 build as an unconditional long, exactly as 506_zc_pollination_window_weather_premium tests its calendar window -- the prior directional hypothesis (guarantee-decay selling pressure) was refuted by the same screen, so this is a post-screen reframing of the sign and carries elevated mining risk.",
+   "metrics": {
+    "n": 15,
+    "wr": 0.6,
+    "pf": 2.732,
+    "usd_mo": 44,
+    "usd_trade": 106.1
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-24T07:35:53.778612+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "zn-fr2004-dealer-inventory-capacity-state": {
    "name": "zn-fr2004-dealer-inventory-capacity-state",
    "market": "ZN",
@@ -1475,30 +1483,6 @@
      "verdict": "REPLICATES"
     }
    ]
-  },
-  "m2k-midmonth-payday-contribution-inflow": {
-   "name": "m2k-midmonth-payday-contribution-inflow",
-   "market": "M2K",
-   "tier": "candidate",
-   "mechanism": "Defined-contribution payroll deferrals settle on a semi-monthly clock anchored to the 1st and the 15th of each month and are invested on receipt by target-date and index funds with no discretion over timing; the 15th leg is the half of that cycle not already absorbed by turn-of-month flow, and small-cap sleeves of those contributions are a fixed proportion, so the buying on M2K around the 15th should be price-insensitive and calendar-fixed, independent of the already-registered MES payroll-15th test.",
-   "metrics": {
-    "n": 35,
-    "wr": 0.6,
-    "pf": 1.939,
-    "usd_mo": 23,
-    "usd_trade": 23.9
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-24T00:54:55.820835+00:00",
-     "stage": "dev3yr",
-     "verdict": "DEMOTED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  },
  "decisions": [
