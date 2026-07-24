@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:28:00Z",
+  "stamp": "2026-07-24T01:28:02Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "M6E",
+    "task": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:28:02Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-nonroll-month-unrefreshed-book-monthend-impact",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:28:02Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-vix-wednesday-to-friday-equity-hedge-void",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:28:02Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.33
-   },
-   {
-    "rank": 9,
-    "idea": "zn-nonroll-month-unrefreshed-book-monthend-impact",
-    "source": "data-screen",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.32
-   },
-   {
-    "rank": 10,
-    "idea": "mes-vix-wednesday-to-friday-equity-hedge-void",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.28
-   },
    {
     "rank": 11,
     "idea": "mcl-week-scale-participation-flood-risk-premium-decay",
@@ -482,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 2,
    "registered": 184,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
