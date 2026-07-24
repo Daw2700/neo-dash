@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T09:11:50Z",
+  "stamp": "2026-07-24T09:11:52Z",
   "stale_after_min": 30,
   "status": "usage-capped \u2014 cooling down",
   "engine_state": "error",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZC",
+    "task": "zc-implied-derived-outright-depth-overimpact-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:11:52Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "mgc-one-touch-urgent-volume-share-inventory-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:11:52Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-cpc-monthly-longrange-outlook-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:11:52Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "zc-implied-derived-outright-depth-overimpact-reversion",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 5,
-    "idea": "mgc-one-touch-urgent-volume-share-inventory-repair",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 6,
-    "idea": "mng-cpc-monthly-longrange-outlook-repricing",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.42
-   },
    {
     "rank": 7,
     "idea": "mcl-cot-cohort-disagreement-forced-liquidation-expansion",
@@ -526,7 +524,7 @@
     "score": 0.47
    },
    {
-    "rank": 11,
+    "rank": 8,
     "idea": "robustness: m2k-late-week-terminal-extreme-weekend-carryover-reversal",
     "source": null,
     "markets": [
@@ -536,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 8,
    "registered": 221,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
