@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:09:18Z",
+  "stamp": "2026-07-24T04:14:15Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1219,
-  "n_results": 1409,
-  "n_trials": 84309,
+  "n_results": 1410,
+  "n_trials": 84310,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84309,
+   "trials": 84310,
    "registered": 1219,
    "tested": 983,
    "passed": 184,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:10:10.807480+00:00",
+   "hash": "2698be1f",
+   "name": "m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-24T04:06:51.494632+00:00",
    "hash": "05bffe5b",
    "name": "ROBUSTNESS-BATTERY m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
@@ -422,36 +430,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T03:19:38.816616+00:00",
-   "hash": "20a0422a",
-   "name": "met-eth-pos-endogenous-volratio-regime",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.422"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-quarterly-redemption-notice-deadline-preliquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:56:54Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M2K",
-    "task": "m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:57:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "M2K",
     "task": "robustness: m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
     "stage": "dev3yr",
@@ -527,10 +511,10 @@
   "funnel": {
    "idea": 7,
    "registered": 199,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 16,
    "golden_staged": 1
   },
   "throughput": [
@@ -588,7 +572,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5110
+    "trials": 5111
    }
   ]
  },
