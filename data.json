@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:29:54Z",
+  "stamp": "2026-07-24T00:31:33Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1160,
-  "n_results": 1351,
-  "n_trials": 79216,
+  "n_registered": 1163,
+  "n_results": 1354,
+  "n_trials": 79219,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79216,
-   "registered": 1160,
-   "tested": 941,
+   "trials": 79219,
+   "registered": 1163,
+   "tested": 944,
    "passed": 172,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:31:23.339959+00:00",
+   "hash": "9beac0d8",
+   "name": "zs-spot-month-prefnd-liquidation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.749"
+  },
+  {
+   "t": "2026-07-24T00:31:15.047546+00:00",
+   "hash": "1508fceb",
+   "name": "mng-bidweek-physical-index-hedge-window",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.546"
+  },
+  {
+   "t": "2026-07-24T00:31:02.192912+00:00",
+   "hash": "c0da8819",
+   "name": "mes-vix-soq-settlement-unwind",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF nan"
+  },
+  {
    "t": "2026-07-24T00:29:07.779639+00:00",
    "hash": "cd7e2c09",
    "name": "zc-crop-progress-monday-evening-thinbook-overshoot",
@@ -406,30 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.966"
-  },
-  {
-   "t": "2026-07-24T00:12:33.136224+00:00",
-   "hash": "dc16095a",
-   "name": "mgc-1000-expectations-slot-dominance",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.149"
-  },
-  {
-   "t": "2026-07-24T00:12:12.510197+00:00",
-   "hash": "5aa26d43",
-   "name": "mes-buffer-etf-monthstart-optionroll-hedge",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.046"
-  },
-  {
-   "t": "2026-07-24T00:09:59.133984+00:00",
-   "hash": "c332d3a6",
-   "name": "mnq-propfirm-cohort-time-certain-autoflat-clock",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.753"
   }
  ],
  "pipeline": {
@@ -440,22 +440,6 @@
     "task": "mes-vix-soq-settlement-auction-hedge-unwind",
     "stage": "dev3yr",
     "started": "2026-07-24T00:28:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MNG",
-    "task": "mng-bidweek-physical-index-hedge-window",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:28:27Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZS",
-    "task": "zs-spot-month-position-limit-forced-prefnd-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:29:30Z",
     "state": "running"
    }
   ],
@@ -545,7 +529,7 @@
   "funnel": {
    "idea": 9,
    "registered": 182,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -606,7 +590,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 13
+    "trials": 16
    }
   ]
  },
@@ -689,8 +673,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 36,
-   "n_killed": 31,
+   "n_tested": 37,
+   "n_killed": 32,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -748,8 +732,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 29,
-   "n_killed": 23,
+   "n_tested": 30,
+   "n_killed": 24,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
    ],
