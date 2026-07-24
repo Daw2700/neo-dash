@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:01:56Z",
+  "stamp": "2026-07-24T05:11:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1235,
-  "n_results": 1426,
-  "n_trials": 84326,
+  "n_registered": 1238,
+  "n_results": 1429,
+  "n_trials": 84329,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84326,
-   "registered": 1235,
-   "tested": 997,
-   "passed": 187,
+   "trials": 84329,
+   "registered": 1238,
+   "tested": 998,
+   "passed": 188,
    "survived": 39,
    "replicated": 15,
    "book": 13
@@ -336,6 +336,46 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T05:11:21.739611+00:00",
+   "hash": "f4fe05b8",
+   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T05:06:59.569908+00:00",
+   "hash": "114a9134",
+   "name": "megaearn-overnight-fade",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T05:05:14.819300+00:00",
+   "hash": "15e65616",
+   "name": "zn-rrp-drain-collateral-scarcity-funding-bid",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.627"
+  },
+  {
+   "t": "2026-07-24T05:05:00.358171+00:00",
+   "hash": "b1b8c7ad",
+   "name": "megaearn-overnight-fade__ROBUSTNESS",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T05:03:55.880070+00:00",
+   "hash": "1da011f0",
+   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip / ROBUSTNESS-BATTERY",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T04:58:07.487329+00:00",
    "hash": "993fd2e7",
    "name": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
@@ -390,46 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T04:42:17.836459+00:00",
-   "hash": "84d87f92",
-   "name": "mes-jolts-stale-labor-print-knee-jerk-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.3246"
-  },
-  {
-   "t": "2026-07-24T04:40:02.785428+00:00",
-   "hash": "02b899c0",
-   "name": "zs-growing-season-weekend-weather-premium-discharge",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.947"
-  },
-  {
-   "t": "2026-07-24T04:38:46.123632+00:00",
-   "hash": "e53b9e1e",
-   "name": "zn-corporate-issuance-rate-lock-hedge-pressure-window",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.57"
-  },
-  {
-   "t": "2026-07-24T04:28:34.862708+00:00",
-   "hash": "73212671",
-   "name": "mnq-release-magnitude-habituation-streak-break",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.4518"
-  },
-  {
-   "t": "2026-07-24T04:25:24.238765+00:00",
-   "hash": "18485149",
-   "name": "scout-78-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -446,14 +446,6 @@
     "agent": "tester-2",
     "market": "MNQ",
     "task": "robustness: megaearn-overnight-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:01:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZN",
-    "task": "zn-rrp-drain-collateral-scarcity-funding-bid",
     "stage": "dev3yr",
     "started": "2026-07-24T05:01:56Z",
     "state": "running"
@@ -499,11 +491,11 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 201,
-   "dev3yr": 3,
+   "registered": 203,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 18,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -561,7 +553,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5127
+    "trials": 5130
    }
   ]
  },
@@ -682,7 +674,7 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 92,
+   "n_tested": 93,
    "n_killed": 79,
    "book_sleeves": [],
    "agents_now": []
