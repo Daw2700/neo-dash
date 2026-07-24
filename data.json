@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:21:13Z",
+  "stamp": "2026-07-24T05:21:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,26 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "replication: zn-rrp-drain-collateral-scarcity-funding-bid",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:21:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-qra-refunding-coupon-supply-equity-duration-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:21:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-german-sentiment-survey-release-euro-morning-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:21:14Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 11,
-    "idea": "mes-qra-refunding-coupon-supply-equity-duration-repricing",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
-   {
-    "rank": 12,
-    "idea": "m6e-german-sentiment-survey-release-euro-morning-fade",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 2,
     "idea": "met-tuesday-us-session-weekly-derisk-cadence",
@@ -473,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 204,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
