@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T13:19:47Z",
+  "stamp": "2026-07-24T13:20:09Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,24 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Fifth machine-discovered sleeve ready: q",
-    "stage": "decision",
-    "started": "2026-07-24T13:19:45Z",
-    "state": "running"
-   },
-   {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T13:19:47Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [],
   "funnel": {
    "idea": 0,
