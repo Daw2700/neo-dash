@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:01:03Z",
+  "stamp": "2026-07-24T03:01:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -9,7 +9,7 @@
   "n_trials": 79261,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 6,
+  "needs_attention_count": 7,
   "lifetime": {
    "trials": 79261,
    "registered": 1203,
@@ -1449,6 +1449,24 @@
   }
  },
  "decisions": [
+  {
+   "id": "d-expansionage-book-entry",
+   "kind": "book_entry",
+   "needs_attention": true,
+   "title": "Twelfth graduate: post-shock expansion-age clock (PF 1.585, n=146)",
+   "recommendation": "ADMIT to the book \u2014 strong dual-leg on real samples (dev PF 1.585, replication PF 1.362 on MES)",
+   "evidence": "dev3yr: n=146, PF 1.585, $56.7/trade on MNQ | robustness: SURVIVES | replication: n=134, PF 1.362 on MES",
+   "what_yes_means": "Book grows by one; sizing and all bundles recompute; golden card auto-updates if the book improves",
+   "recap": "After a volatility shock, markets reprice in measurable phases. This times re-entry by the age of the expansion phase rather than price level \u2014 a clock, not a chart pattern. The same clock works on the S&P.",
+   "why": "Both legs are strong on samples big enough to mean something (146 and 134 trades), the battery passed all placebos \u2014 including the timing placebos that killed five other candidates tonight \u2014 and the mechanism is a documented volatility-regime phenomenon, not a calendar artifact.",
+   "steps": [
+    "Approve: joins the validated book; everything recomputes automatically",
+    "Deny: remains a replicated candidate, fully preserved",
+    "Question: the card returns with any analysis you want",
+    "Live/paper exposure still requires its own GO regardless"
+   ],
+   "staged": "2026-07-24T03:01:29Z"
+  },
   {
    "id": "d-september-book-entry",
    "kind": "book_entry",
