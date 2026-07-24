@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:16:43Z",
+  "stamp": "2026-07-24T02:21:20Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1195,
+  "n_registered": 1196,
   "n_results": 1388,
   "n_trials": 79253,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 6,
   "lifetime": {
    "trials": 79253,
-   "registered": 1195,
+   "registered": 1196,
    "tested": 969,
    "passed": 179,
    "survived": 37,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:19:49.806597+00:00",
+   "hash": "b57af08e",
+   "name": "ROBUSTNESS-BATTERY mnq-ramp-backload-orb-gate",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T02:12:39.304657+00:00",
    "hash": "b4e6aa98",
    "name": "mnq-closehour-liquidity-cost-overnight",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.067"
-  },
-  {
-   "t": "2026-07-24T01:48:47.997392+00:00",
-   "hash": "6d86a86c",
-   "name": "robust-mgc-week-drought-continuation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -448,6 +448,14 @@
     "task": "robustness: mcl-intrasession-excursion-asymmetry-overnight-repair",
     "stage": "dev3yr",
     "started": "2026-07-24T02:08:00Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mnq-ramp-backload-orb-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:16:46Z",
     "state": "running"
    }
   ],
@@ -527,8 +535,8 @@
   ],
   "funnel": {
    "idea": 8,
-   "registered": 189,
-   "dev3yr": 2,
+   "registered": 190,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
