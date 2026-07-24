@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:52:20Z",
+  "stamp": "2026-07-24T04:54:04Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1231,
-  "n_results": 1421,
-  "n_trials": 84321,
+  "n_registered": 1232,
+  "n_results": 1422,
+  "n_trials": 84322,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84321,
-   "registered": 1231,
-   "tested": 993,
+   "trials": 84322,
+   "registered": 1232,
+   "tested": 994,
    "passed": 185,
    "survived": 39,
    "replicated": 15,
@@ -332,6 +332,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:53:46.110466+00:00",
+   "hash": "f4fe05b8",
+   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.116"
+  },
+  {
    "t": "2026-07-24T04:48:07.663174+00:00",
    "hash": "02b899c0",
    "name": "zs-growing-season-weekend-weather-premium-discharge",
@@ -418,14 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.035"
-  },
-  {
-   "t": "2026-07-24T04:20:47.728654+00:00",
-   "hash": "1eb7343a",
-   "name": "mnq-turnover-overconfidence-reversal",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.29"
   }
  ],
  "pipeline": {
@@ -440,14 +440,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MCL",
-    "task": "mcl-refinery-turnaround-crackswitch-seasonal-demand-dip",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:52:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "mnq-megacap-earnings-overnight-index-overshoot-fade",
     "stage": "dev3yr",
@@ -514,7 +506,7 @@
   "funnel": {
    "idea": 6,
    "registered": 201,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -575,7 +567,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5122
+    "trials": 5123
    }
   ]
  },
@@ -649,8 +641,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 89,
-   "n_killed": 63,
+   "n_tested": 90,
+   "n_killed": 64,
    "book_sleeves": [],
    "agents_now": []
   },
