@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:46:22Z",
+  "stamp": "2026-07-24T02:51:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1202,
+  "n_registered": 1203,
   "n_results": 1395,
   "n_trials": 79260,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 6,
   "lifetime": {
    "trials": 79260,
-   "registered": 1202,
+   "registered": 1203,
    "tested": 973,
    "passed": 182,
    "survived": 38,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:49:00.608060+00:00",
+   "hash": "7421cd53",
+   "name": "mnq-expansion-age-clock-post-shock-reentry-REPLICATION-1340",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T02:42:51.104434+00:00",
    "hash": "9e92c18a",
    "name": "mnq-expansion-age-clock-post-shock-reentry",
@@ -422,14 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T02:12:04.409309+00:00",
-   "hash": "ae16290a",
-   "name": "mcl-intrasession-excursion-asymmetry-overnight-repair",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -448,6 +448,14 @@
     "task": "robustness: mnq-expansion-age-clock-post-shock-reentry",
     "stage": "dev3yr",
     "started": "2026-07-24T02:38:28Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "replication: mnq-expansion-age-clock-post-shock-reentry",
+    "stage": "dev3yr",
+    "started": "2026-07-24T02:46:24Z",
     "state": "running"
    }
   ],
@@ -491,8 +499,8 @@
   ],
   "funnel": {
    "idea": 4,
-   "registered": 192,
-   "dev3yr": 2,
+   "registered": 193,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
