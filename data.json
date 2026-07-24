@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T10:44:39Z",
+  "stamp": "2026-07-24T10:44:41Z",
   "stale_after_min": 30,
   "status": "usage-capped \u2014 cooling down",
   "engine_state": "error",
@@ -433,22 +433,29 @@
   }
  ],
  "pipeline": {
-  "workers": [],
-  "backlog": [
+  "workers": [
    {
-    "rank": 11,
-    "idea": "mnq-aggressor-run-termination-absorber-unwind",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.3
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T10:44:41Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-aggressor-run-termination-absorber-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:44:41Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 1,
+   "idea": 0,
    "registered": 221,
-   "dev3yr": 0,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
