@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:16:19Z",
+  "stamp": "2026-07-24T03:23:29Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1208,
-  "n_results": 1400,
-  "n_trials": 84300,
+  "n_registered": 1210,
+  "n_results": 1402,
+  "n_trials": 84302,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84300,
-   "registered": 1208,
-   "tested": 976,
+   "trials": 84302,
+   "registered": 1210,
+   "tested": 978,
    "passed": 182,
    "survived": 38,
    "replicated": 15,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T03:19:38.816616+00:00",
+   "hash": "20a0422a",
+   "name": "met-eth-pos-endogenous-volratio-regime",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.422"
+  },
+  {
+   "t": "2026-07-24T03:18:20.186945+00:00",
+   "hash": "2fba4691",
+   "name": "mes-hourly-impact-coefficient-surprise",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.838"
+  },
+  {
    "t": "2026-07-24T03:09:18.368360+00:00",
    "hash": "a775b60a",
    "name": "sweep-9-daytype-sequence-state",
@@ -414,22 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T02:41:18.557295+00:00",
-   "hash": "67aaaeb3",
-   "name": "mgc-continuous-extreme-count-overnight-carry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.398"
-  },
-  {
-   "t": "2026-07-24T02:40:44.183253+00:00",
-   "hash": "a453fb8b",
-   "name": "ROBUSTNESS-BATTERY mnq-expansion-age-clock-post-shock-reentry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-hourly-impact-coefficient-surprise-unfamiliar-participant",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:15:55Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MET",
     "task": "met-proof-of-stake-endogenous-volatility-harvest-regime",
     "stage": "dev3yr",
@@ -463,7 +455,7 @@
   "funnel": {
    "idea": 0,
    "registered": 195,
-   "dev3yr": 2,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -524,7 +516,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5101
+    "trials": 5103
    }
   ]
  },
@@ -549,8 +541,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 199,
-   "n_killed": 165,
+   "n_tested": 200,
+   "n_killed": 166,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -627,8 +619,8 @@
    "ticker": "MET",
    "display": "Ether",
    "status": "active",
-   "n_tested": 28,
-   "n_killed": 27,
+   "n_tested": 29,
+   "n_killed": 28,
    "book_sleeves": [],
    "agents_now": []
   },
