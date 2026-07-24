@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:31:12Z",
+  "stamp": "2026-07-24T01:31:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,32 +441,37 @@
     "stage": "dev3yr",
     "started": "2026-07-24T01:28:02Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 11,
-    "idea": "mcl-week-scale-participation-flood-risk-premium-decay",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.22
    },
    {
-    "rank": 12,
-    "idea": "mgc-week-scale-participation-drought-continuation",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.18
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T01:31:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-week-scale-participation-flood-risk-premium-decay",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:31:14Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MGC",
+    "task": "mgc-week-scale-participation-drought-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:31:14Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 185,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
