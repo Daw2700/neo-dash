@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T09:42:47Z",
+  "stamp": "2026-07-24T09:42:49Z",
   "stale_after_min": 30,
   "status": "usage-capped \u2014 cooling down",
   "engine_state": "error",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-complexity-gated-shorthorizon-liquidity-provision-rent",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:42:49Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "mnq-aggressor-run-termination-absorber-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:42:49Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-crosscomplex-tape-complexity-divergence-expansion-gate",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:42:49Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mes-complexity-gated-shorthorizon-liquidity-provision-rent",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.32
-   },
-   {
-    "rank": 11,
-    "idea": "mnq-aggressor-run-termination-absorber-unwind",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.3
-   },
-   {
-    "rank": 1,
-    "idea": "mnq-crosscomplex-tape-complexity-divergence-expansion-gate",
-    "source": "data-screen",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.55
-   },
    {
     "rank": 3,
     "idea": "mes-dominant-clip-size-unfinished-parent-order-continuation",
@@ -472,7 +470,7 @@
     "score": 0.47
    },
    {
-    "rank": 5,
+    "rank": 2,
     "idea": "robustness: m2k-late-week-terminal-extreme-weekend-carryover-reversal",
     "source": null,
     "markets": [
@@ -536,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 11,
+   "idea": 8,
    "registered": 221,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
