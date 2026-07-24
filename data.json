@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:27:05Z",
+  "stamp": "2026-07-24T06:27:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T06:26:43Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-complex-close-location-conviction-breadth-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:27:07Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mgc-complex-close-location-conviction-breadth-fade",
-    "source": "data-screen",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "m6e-queue-bound-onetick-absorption-carry",
@@ -499,9 +498,9 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 209,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
