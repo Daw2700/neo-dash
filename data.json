@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:36:11Z",
+  "stamp": "2026-07-24T05:38:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
-  "n_registered": 1244,
-  "n_results": 1435,
-  "n_trials": 84335,
+  "n_registered": 1245,
+  "n_results": 1436,
+  "n_trials": 84336,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84335,
-   "registered": 1244,
+   "trials": 84336,
+   "registered": 1245,
    "tested": 1002,
    "passed": 188,
    "survived": 40,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T05:38:51.332652+00:00",
+   "hash": "84f9aca0",
+   "name": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.7339"
+  },
+  {
+   "t": "2026-07-24T05:38:02.531744+00:00",
+   "hash": "2f5c206a",
+   "name": "scout-79-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T05:35:55.973427+00:00",
    "hash": "84f9aca0",
    "name": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
@@ -414,22 +430,6 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T05:05:14.819300+00:00",
-   "hash": "15e65616",
-   "name": "zn-rrp-drain-collateral-scarcity-funding-bid",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.627"
-  },
-  {
-   "t": "2026-07-24T05:05:00.358171+00:00",
-   "hash": "b1b8c7ad",
-   "name": "megaearn-overnight-fade__ROBUSTNESS",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -441,21 +441,13 @@
     "stage": "idea-scout",
     "started": "2026-07-24T05:33:23Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MBT",
-    "task": "recheck: mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:36:11Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 205,
-   "dev3yr": 1,
+   "registered": 206,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5136
+    "trials": 5137
    }
   ]
  },
