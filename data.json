@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:43:41Z",
+  "stamp": "2026-07-24T04:47:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1230,
+  "n_registered": 1231,
   "n_results": 1420,
   "n_trials": 84320,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 7,
   "lifetime": {
    "trials": 84320,
-   "registered": 1230,
+   "registered": 1231,
    "tested": 993,
    "passed": 185,
    "survived": 39,
@@ -332,6 +332,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:46:07.348611+00:00",
+   "hash": "029cae9c",
+   "name": "zs-growing-season-weekend-weather-premium-discharge__ROBUSTNESS",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T04:42:17.836459+00:00",
    "hash": "84d87f92",
    "name": "mes-jolts-stale-labor-print-knee-jerk-fade",
@@ -418,14 +426,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.104"
-  },
-  {
-   "t": "2026-07-24T04:10:10.807480+00:00",
-   "hash": "2698be1f",
-   "name": "m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -444,6 +444,14 @@
     "task": "mes-jolts-stale-labor-print-knee-jerk-fade",
     "stage": "dev3yr",
     "started": "2026-07-24T04:36:07Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "robustness: zs-growing-season-weekend-weather-premium-discharge",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:43:43Z",
     "state": "running"
    }
   ],
@@ -532,8 +540,8 @@
   ],
   "funnel": {
    "idea": 9,
-   "registered": 200,
-   "dev3yr": 2,
+   "registered": 201,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -1875,37 +1883,34 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "zc-rma-volatility-factor-five-day-window": 2,
+    "zc-rma-volatility-factor-five-day-window": 1,
     "mes-crude-liquidity-channel-risk-transfer": 1,
     "zs-china-state-reserve-auction-window": 1,
-    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
     "mnq-event-free-day-flow-persistence": 1,
-    "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1
+    "mcl-inside-week-unresolved-positioning-carryover": 2
    },
-   "total_micros": 17,
-   "p_breach": 0.19,
-   "usd_mo": 1428,
-   "usd_mo_5acct": 7140,
-   "pct_goal": 0.714,
-   "wr": 0.548,
-   "wr_month": 0.917,
+   "total_micros": 12,
+   "p_breach": 0.194,
+   "usd_mo": 1279,
+   "usd_mo_5acct": 6395,
+   "pct_goal": 0.639,
+   "wr": 0.55,
+   "wr_month": 0.833,
    "months": {
-    "win_per_yr": 11.0,
-    "lose_per_yr": 1.0,
-    "avg_win": 2382,
-    "avg_lose": -1670
+    "win_per_yr": 10.0,
+    "lose_per_yr": 2.0,
+    "avg_win": 2375,
+    "avg_lose": -645
    },
-   "first_pay_days": 70,
-   "pay_rate_1yr": 0.973,
+   "first_pay_days": 75,
+   "pay_rate_1yr": 0.966,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 7140
+   "usd_mo_total": 6395
   },
   {
    "id": "Validated book (all approved sleeves)|growth",

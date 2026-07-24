@@ -141,14 +141,6 @@
    "apex150": {
     "max_micros": 8
    }
-  },
-  "mgc-china-lpr-fix-evening-window": {
-   "growth": {
-    "max_micros": 8
-   },
-   "apex150": {
-    "max_micros": 8
-   }
   }
  },
  "bundles": [
@@ -193,34 +185,31 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "zc-rma-volatility-factor-five-day-window": 2,
+    "zc-rma-volatility-factor-five-day-window": 1,
     "mes-crude-liquidity-channel-risk-transfer": 1,
     "zs-china-state-reserve-auction-window": 1,
-    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
     "mnq-event-free-day-flow-persistence": 1,
-    "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 3,
-    "mgc-china-lpr-fix-evening-window": 1
+    "mcl-inside-week-unresolved-positioning-carryover": 2
    },
-   "total_micros": 17,
-   "p_breach": 0.19,
-   "usd_mo": 1428,
-   "usd_mo_5acct": 7140,
-   "pct_goal": 0.714,
-   "wr": 0.548,
-   "wr_month": 0.917,
+   "total_micros": 12,
+   "p_breach": 0.194,
+   "usd_mo": 1279,
+   "usd_mo_5acct": 6395,
+   "pct_goal": 0.639,
+   "wr": 0.55,
+   "wr_month": 0.833,
    "months": {
-    "win_per_yr": 11.0,
-    "lose_per_yr": 1.0,
-    "avg_win": 2382,
-    "avg_lose": -1670
+    "win_per_yr": 10.0,
+    "lose_per_yr": 2.0,
+    "avg_win": 2375,
+    "avg_lose": -645
    },
-   "first_pay_days": 70,
-   "pay_rate_1yr": 0.973
+   "first_pay_days": 75,
+   "pay_rate_1yr": 0.966
   },
   {
    "id": "Validated book (all approved sleeves)|growth",
