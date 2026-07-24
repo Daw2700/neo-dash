@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:07:54Z",
+  "stamp": "2026-07-24T06:12:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1252,
-  "n_results": 1442,
-  "n_trials": 84342,
+  "n_results": 1443,
+  "n_trials": 84343,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84342,
+   "trials": 84343,
    "registered": 1252,
-   "tested": 1007,
+   "tested": 1008,
    "passed": 190,
    "survived": 41,
    "replicated": 15,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T06:08:36.300308+00:00",
+   "hash": "5a7951f1",
+   "name": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.671"
+  },
+  {
    "t": "2026-07-24T06:06:50.941661+00:00",
    "hash": "2321084e",
    "name": "mcl-session-extreme-dwell-absorption-fade",
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T06:06:14.743633+00:00",
-   "hash": "5a7951f1",
-   "name": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T06:05:07.368177+00:00",
@@ -436,22 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "robustness: mcl-session-extreme-dwell-absorption-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:01:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZS",
-    "task": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:01:49Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNG",
     "task": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
     "stage": "dev3yr",
@@ -526,8 +510,8 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 208,
-   "dev3yr": 3,
+   "registered": 207,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
@@ -588,7 +572,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5143
+    "trials": 5144
    }
   ]
  },
@@ -671,8 +655,8 @@
    "ticker": "MNG",
    "display": "Nat Gas",
    "status": "active",
-   "n_tested": 39,
-   "n_killed": 34,
+   "n_tested": 40,
+   "n_killed": 35,
    "book_sleeves": [],
    "agents_now": []
   },
