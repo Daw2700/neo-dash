@@ -173,9 +173,32 @@ def greedy(members, plan, cap_per=5):
             "usd_mo": round(final["surv_adj_monthly"])}
 
 bundles = []
+# Warm start: greedy is order-dependent and not monotone — adding a sleeve can
+# steer it to a worse local optimum. Re-evaluate the best-known allocation from
+# the previous run and keep whichever solution scores higher today.
+try:
+    _prev = {b["id"]: b["members"] for b in json.load(open("sizing_results.json")).get("bundles", [])}
+except Exception:
+    _prev = {}
+
+def _rescore(micros, plan):
+    micros = {m: q for m, q in micros.items() if q and m in CSV}
+    if not micros:
+        return None
+    r = sim(sum(daily(s) * q for s, q in micros.items()), plan, 3000)
+    if r["p_breach"] > BREACH_CAP:
+        return None
+    return {"micros": micros, "p_breach": round(r["p_breach"], 3),
+            "usd_mo": round(r["surv_adj_monthly"])}
+
 for name, members in BUNDLES:
     for plan, label in (("growth", "tradeify-growth"), ("apex150", "apex150 (verified)")):
         r = greedy(members, plan)
+        prev = _prev.get(f"{name}|{plan}")
+        if prev and set(prev) <= set(members):
+            pr = _rescore(prev, plan)
+            if pr and (r is None or pr["usd_mo"] > r["usd_mo"]):
+                r = pr
         if r is None:
             continue
         bundles.append({
