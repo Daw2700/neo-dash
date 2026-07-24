@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:40:44Z",
+  "stamp": "2026-07-24T00:40:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T00:40:19Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MBT",
+    "task": "mbt-listed-miner-monthly-opex-treasury-sale",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:40:45Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-weekly-ethanol-grind-demand-print",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:40:45Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 12,
-    "idea": "mbt-listed-miner-monthly-opex-treasury-sale",
-    "source": "literature",
-    "markets": [
-     "MBT"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 13,
-    "idea": "zc-weekly-ethanol-grind-demand-print",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 14,
     "idea": "m6e-us-afternoon-rates-move-in-fx-vacuum-deferred-transmission",
@@ -482,9 +480,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 2,
    "registered": 182,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
