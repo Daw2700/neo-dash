@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-24T02:21:20Z",
+  "stamp": "2026-07-24T02:26:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1196,
-  "n_results": 1388,
-  "n_trials": 79253,
+  "n_results": 1389,
+  "n_trials": 79254,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79253,
+   "trials": 79254,
    "registered": 1196,
    "tested": 969,
    "passed": 179,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:22:24.719593+00:00",
+   "hash": "bccf31ea",
+   "name": "mnq-ramp-backload-orb-gate",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-24T02:19:49.806597+00:00",
    "hash": "b57af08e",
    "name": "ROBUSTNESS-BATTERY mnq-ramp-backload-orb-gate",
@@ -422,36 +430,12 @@
    "status": "demoted",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T01:49:29.747316+00:00",
-   "hash": "63ed2727",
-   "name": "mcl-week-scale-participation-flood-risk-premium-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.067"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "robustness: mnq-closehour-liquidity-cost-overnight",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:07:35Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
-    "task": "robustness: mcl-intrasession-excursion-asymmetry-overnight-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:08:00Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: mnq-ramp-backload-orb-gate",
     "stage": "dev3yr",
@@ -536,10 +520,10 @@
   "funnel": {
    "idea": 8,
    "registered": 190,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 16,
+   "book_candidate": 15,
    "golden_staged": 1
   },
   "throughput": [
@@ -597,7 +581,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 50
+    "trials": 51
    }
   ]
  },
