@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:33:19Z",
+  "stamp": "2026-07-24T04:36:05Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1227,
   "n_results": 1417,
@@ -433,19 +433,119 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T04:24:42Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zs-growing-season-weekend-weather-premium-discharge",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 4,
+    "idea": "zn-corporate-issuance-rate-lock-hedge-pressure-window",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 3,
+    "idea": "mes-jolts-stale-labor-print-knee-jerk-fade",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 6,
+    "idea": "mes-equity-trs-imm-quarterly-roll-dealer-hedge-flow",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-refinery-turnaround-crackswitch-seasonal-demand-dip",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mnq-megacap-earnings-overnight-index-overshoot-fade",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 10,
+    "idea": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 5,
+    "idea": "zn-rrp-drain-collateral-scarcity-funding-bid",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 11,
+    "idea": "mes-qra-refunding-coupon-supply-equity-duration-repricing",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 12,
+    "idea": "m6e-german-sentiment-survey-release-euro-morning-fade",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 2,
+    "idea": "met-tuesday-us-session-weekly-derisk-cadence",
+    "source": "data-screen",
+    "markets": [
+     "MET"
+    ],
+    "score": 0.3
+   },
+   {
+    "rank": 9,
+    "idea": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 12,
    "registered": 200,
    "dev3yr": 0,
    "robustness": 0,
