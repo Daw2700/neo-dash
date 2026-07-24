@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:53:40Z",
+  "stamp": "2026-07-24T05:53:42Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "mcl-session-extreme-dwell-absorption-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:53:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNG",
+    "task": "mng-cumulative-degree-day-anomaly-storage-path",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:53:42Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-sunday-reopen-thin-desk-print-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:53:42Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mcl-session-extreme-dwell-absorption-fade",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "mng-cumulative-degree-day-anomaly-storage-path",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 4,
-    "idea": "m6e-sunday-reopen-thin-desk-print-reversion",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.48
-   },
    {
     "rank": 5,
     "idea": "zn-prediction-market-vs-futures-prerelease-divergence",
@@ -554,9 +552,9 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 206,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
