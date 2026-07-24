@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:24:09Z",
+  "stamp": "2026-07-24T08:24:31Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-cme-intraday-variation-margin-call-topup-window",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:21:18Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-eu-joint-bond-syndication-ratelock-fx-window",
     "stage": "dev3yr",
@@ -459,7 +451,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "ZN",
     "task": "zn-srf-usage-reserve-scarcity-state-gate",
     "stage": "dev3yr",
@@ -471,7 +463,7 @@
   "funnel": {
    "idea": 0,
    "registered": 220,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
