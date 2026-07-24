@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:55:11Z",
+  "stamp": "2026-07-24T05:01:29Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1234,
-  "n_results": 1423,
-  "n_trials": 84323,
+  "n_registered": 1235,
+  "n_results": 1426,
+  "n_trials": 84326,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84323,
-   "registered": 1234,
-   "tested": 995,
-   "passed": 185,
+   "trials": 84326,
+   "registered": 1235,
+   "tested": 997,
+   "passed": 187,
    "survived": 39,
    "replicated": 15,
    "book": 13
@@ -327,10 +327,38 @@
    "wr": 0.5926,
    "usd_mo": 8,
    "pf": 1.887,
-   "usd_trade": 10.6
+   "usd_trade": 10.6,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T04:58:07.487329+00:00",
+   "hash": "993fd2e7",
+   "name": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.553"
+  },
+  {
+   "t": "2026-07-24T04:56:55.032325+00:00",
+   "hash": "f4fe05b8",
+   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
+   "status": "overturned",
+   "kind": "result",
+   "detail": "PF 1.2165"
+  },
+  {
+   "t": "2026-07-24T04:56:31.086660+00:00",
+   "hash": "114a9134",
+   "name": "megaearn-overnight-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.202"
+  },
   {
    "t": "2026-07-24T04:54:53.018168+00:00",
    "hash": "4474e930",
@@ -338,14 +366,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.518"
-  },
-  {
-   "t": "2026-07-24T04:54:27.503807+00:00",
-   "hash": "114a9134",
-   "name": "megaearn-overnight-fade",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T04:53:46.110466+00:00",
@@ -410,36 +430,12 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T04:25:01.287496+00:00",
-   "hash": "6bb2a8f7",
-   "name": "mng-storage-containment-physical-cap-asymmetry",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.012"
-  },
-  {
-   "t": "2026-07-24T04:24:29.106503+00:00",
-   "hash": "3cdc5f15",
-   "name": "mes-index-float-sharecount-update-nonprice-flow",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.429"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-megacap-earnings-overnight-index-overshoot-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:52:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MCL",
     "task": "recheck: mcl-refinery-turnaround-crackswitch-seasonal-dip",
     "stage": "dev3yr",
@@ -447,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
     "stage": "dev3yr",
@@ -504,11 +500,11 @@
   ],
   "funnel": {
    "idea": 5,
-   "registered": 202,
-   "dev3yr": 3,
+   "registered": 201,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 16,
+   "book_candidate": 18,
    "golden_staged": 1
   },
   "throughput": [
@@ -566,7 +562,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5124
+    "trials": 5127
    }
   ]
  },
@@ -575,7 +571,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 150,
+   "n_tested": 151,
    "n_killed": 102,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -622,8 +618,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 71,
-   "n_killed": 57,
+   "n_tested": 72,
+   "n_killed": 58,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -641,7 +637,7 @@
    "display": "Crude Oil",
    "status": "active",
    "n_tested": 90,
-   "n_killed": 64,
+   "n_killed": 63,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -1456,7 +1452,11 @@
      "stage": "replication",
      "verdict": "KILLED"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  },
  "decisions": [
@@ -1857,34 +1857,37 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "zc-rma-volatility-factor-five-day-window": 1,
+    "zc-rma-volatility-factor-five-day-window": 2,
     "mes-crude-liquidity-channel-risk-transfer": 1,
     "zs-china-state-reserve-auction-window": 1,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
     "mnq-event-free-day-flow-persistence": 1,
+    "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "mgc-china-lpr-fix-evening-window": 1
    },
-   "total_micros": 12,
-   "p_breach": 0.194,
-   "usd_mo": 1279,
-   "usd_mo_5acct": 6395,
-   "pct_goal": 0.639,
-   "wr": 0.55,
-   "wr_month": 0.833,
+   "total_micros": 17,
+   "p_breach": 0.19,
+   "usd_mo": 1428,
+   "usd_mo_5acct": 7140,
+   "pct_goal": 0.714,
+   "wr": 0.548,
+   "wr_month": 0.917,
    "months": {
-    "win_per_yr": 10.0,
-    "lose_per_yr": 2.0,
-    "avg_win": 2375,
-    "avg_lose": -645
+    "win_per_yr": 11.0,
+    "lose_per_yr": 1.0,
+    "avg_win": 2382,
+    "avg_lose": -1670
    },
-   "first_pay_days": 75,
-   "pay_rate_1yr": 0.966,
+   "first_pay_days": 70,
+   "pay_rate_1yr": 0.973,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 6395
+   "usd_mo_total": 7140
   },
   {
    "id": "Validated book (all approved sleeves)|growth",
