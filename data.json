@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:09:34Z",
+  "stamp": "2026-07-24T07:11:40Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 3 testers in flight",
+  "status": "funnel running \u2014 2 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1264,
-  "n_results": 1454,
-  "n_trials": 84354,
+  "n_registered": 1266,
+  "n_results": 1456,
+  "n_trials": 84356,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 84354,
-   "registered": 1264,
-   "tested": 1013,
+   "trials": 84356,
+   "registered": 1266,
+   "tested": 1015,
    "passed": 191,
    "survived": 43,
    "replicated": 15,
@@ -336,20 +336,36 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T07:11:28.709097+00:00",
+   "hash": "27d6629e",
+   "name": "zs-percent-of-full-carry-storage-election",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.611"
+  },
+  {
+   "t": "2026-07-24T07:11:28.360190+00:00",
+   "hash": "8ac64afb",
+   "name": "mgc-contango-vs-financing-deviation-vault-stress",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 2.031"
+  },
+  {
+   "t": "2026-07-24T07:10:11.578774+00:00",
+   "hash": "9fb221f7",
+   "name": "sweep-10-price-clock-renko-event",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T07:09:28.991655+00:00",
    "hash": "131c2748",
    "name": "mgc-m6e-cointegration-residual-error-correction",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.933"
-  },
-  {
-   "t": "2026-07-24T07:08:45.986398+00:00",
-   "hash": "8ac64afb",
-   "name": "mgc-contango-vs-financing-deviation-vault-stress",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T06:57:27.358979+00:00",
@@ -414,22 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 1.114"
-  },
-  {
-   "t": "2026-07-24T06:31:39.631482+00:00",
-   "hash": "cef92ee9",
-   "name": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.785"
-  },
-  {
-   "t": "2026-07-24T06:31:30.547027+00:00",
-   "hash": "eeaa72a4",
-   "name": "mgc-close-location-breadth-fade",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.359"
   }
  ],
  "pipeline": {
@@ -449,29 +449,13 @@
     "stage": "sweep",
     "started": "2026-07-24T07:06:48Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MGC",
-    "task": "mgc-contango-vs-financing-deviation-vault-stress",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:06:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "ZS",
-    "task": "zs-percent-of-full-carry-storage-election",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:06:48Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
    "registered": 214,
-   "dev3yr": 2,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -532,7 +516,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5155
+    "trials": 5157
    }
   ]
  },
@@ -589,8 +573,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 74,
-   "n_killed": 59,
+   "n_tested": 75,
+   "n_killed": 60,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -675,8 +659,8 @@
    "ticker": "ZS",
    "display": "Soybeans",
    "status": "active",
-   "n_tested": 33,
-   "n_killed": 24,
+   "n_tested": 34,
+   "n_killed": 25,
    "book_sleeves": [
     "zs-china-state-reserve-auction-window"
    ],
