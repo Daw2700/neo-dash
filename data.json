@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:54:07Z",
+  "stamp": "2026-07-24T04:55:10Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1232,
-  "n_results": 1422,
-  "n_trials": 84322,
+  "n_registered": 1234,
+  "n_results": 1423,
+  "n_trials": 84323,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84322,
-   "registered": 1232,
-   "tested": 994,
+   "trials": 84323,
+   "registered": 1234,
+   "tested": 995,
    "passed": 185,
    "survived": 39,
    "replicated": 15,
@@ -332,6 +332,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:54:53.018168+00:00",
+   "hash": "4474e930",
+   "name": "mes-trs-imm-quarterly-roll-dealer-hedge-flow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.518"
+  },
+  {
+   "t": "2026-07-24T04:54:27.503807+00:00",
+   "hash": "114a9134",
+   "name": "megaearn-overnight-fade",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T04:53:46.110466+00:00",
    "hash": "f4fe05b8",
    "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
@@ -410,36 +426,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.429"
-  },
-  {
-   "t": "2026-07-24T04:24:16.511486+00:00",
-   "hash": "61c12bcb",
-   "name": "mes-crash-trend-gate",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.922"
-  },
-  {
-   "t": "2026-07-24T04:21:39.262407+00:00",
-   "hash": "46c63f61",
-   "name": "mcl-underwater-highwatermark-convexity-risk-shift",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.035"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-equity-trs-imm-quarterly-roll-dealer-hedge-flow",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:52:20Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-megacap-earnings-overnight-index-overshoot-fade",
     "stage": "dev3yr",
@@ -447,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "recheck: mcl-refinery-turnaround-crackswitch-seasonal-dip",
     "stage": "dev3yr",
@@ -513,8 +505,8 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 201,
-   "dev3yr": 3,
+   "registered": 202,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -575,7 +567,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5123
+    "trials": 5124
    }
   ]
  },
@@ -600,8 +592,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 204,
-   "n_killed": 170,
+   "n_tested": 205,
+   "n_killed": 171,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
