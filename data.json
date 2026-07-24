@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:22:56Z",
+  "stamp": "2026-07-24T01:27:34Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1180,
-  "n_results": 1371,
-  "n_trials": 79236,
+  "n_registered": 1181,
+  "n_results": 1372,
+  "n_trials": 79237,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79236,
-   "registered": 1180,
-   "tested": 959,
+   "trials": 79237,
+   "registered": 1181,
+   "tested": 960,
    "passed": 174,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T01:25:17.355730+00:00",
+   "hash": "6d2ffc90",
+   "name": "mcl-expiry-weekday-geometry-compressed-liquidation",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.695"
+  },
+  {
    "t": "2026-07-24T01:20:33.729556+00:00",
    "hash": "1cac7a90",
    "name": "mes-zn-cotime-extreme-defense",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.996"
-  },
-  {
-   "t": "2026-07-24T00:42:44.033779+00:00",
-   "hash": "b11ecdc3",
-   "name": "zc-weekly-ethanol-grind-demand-print",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.425"
   }
  ],
  "pipeline": {
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T01:16:05Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-expiry-weekday-geometry-compressed-liquidation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:22:58Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mcl-expiry-weekday-geometry-compressed-liquidation",
-    "source": "data-screen",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.34
-   },
    {
     "rank": 8,
     "idea": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
@@ -508,9 +507,9 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 184,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
@@ -571,7 +570,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 33
+    "trials": 34
    }
   ]
  },
@@ -645,8 +644,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 82,
-   "n_killed": 58,
+   "n_tested": 83,
+   "n_killed": 59,
    "book_sleeves": [],
    "agents_now": []
   },
