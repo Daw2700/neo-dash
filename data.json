@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:08:59Z",
+  "stamp": "2026-07-24T08:14:07Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "ZC",
-    "task": "robustness: zc-late-planting-acreage-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:55:06Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MYM",
-    "task": "mym-offcycle-fiscal-quarter-second-earnings-wave",
-    "stage": "dev3yr",
-    "started": "2026-07-24T07:55:30Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "ZC",
-    "task": "replication: zc-late-planting-acreage-premium",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:04:13Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 8,
@@ -518,7 +493,7 @@
   "funnel": {
    "idea": 6,
    "registered": 219,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
