@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:27:34Z",
+  "stamp": "2026-07-24T01:27:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -433,32 +433,7 @@
   }
  ],
  "pipeline": {
-  "workers": [
-   {
-    "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-macro-reaction-sign-streak-crowding-flip",
-    "stage": "dev3yr",
-    "started": "2026-07-24T01:14:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "xmkt-simultaneous-session-extreme-cotiming-macro-stamp",
-    "stage": "dev3yr",
-    "started": "2026-07-24T01:16:05Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MCL",
-    "task": "mcl-expiry-weekday-geometry-compressed-liquidation",
-    "stage": "dev3yr",
-    "started": "2026-07-24T01:22:58Z",
-    "state": "running"
-   }
-  ],
+  "workers": [],
   "backlog": [
    {
     "rank": 8,
@@ -509,7 +484,7 @@
   "funnel": {
    "idea": 5,
    "registered": 184,
-   "dev3yr": 3,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
