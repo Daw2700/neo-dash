@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:26:15Z",
+  "stamp": "2026-07-24T08:27:18Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running \u2014 1 tester in flight",
   "engine_state": "ok",
   "n_registered": 1284,
-  "n_results": 1473,
-  "n_trials": 84373,
+  "n_results": 1474,
+  "n_trials": 84374,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84373,
+   "trials": 84374,
    "registered": 1284,
-   "tested": 1027,
+   "tested": 1028,
    "passed": 193,
    "survived": 45,
    "replicated": 16,
@@ -336,20 +336,20 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T08:26:44.151097+00:00",
+   "hash": "7dc77132",
+   "name": "zn-srf-usage-reserve-scarcity-state-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF inf"
+  },
+  {
    "t": "2026-07-24T08:26:05.788357+00:00",
    "hash": "54c382ac",
    "name": "m6e-eu-syndication-ratelock-fx-window",
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.821"
-  },
-  {
-   "t": "2026-07-24T08:25:57.319034+00:00",
-   "hash": "7dc77132",
-   "name": "zn-srf-usage-reserve-scarcity-state-gate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T08:23:52.572780+00:00",
@@ -441,21 +441,13 @@
     "stage": "idea-scout",
     "started": "2026-07-24T08:24:09Z",
     "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZN",
-    "task": "zn-srf-usage-reserve-scarcity-state-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:24:09Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 220,
-   "dev3yr": 1,
+   "registered": 219,
+   "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
@@ -516,7 +508,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5174
+    "trials": 5175
    }
   ]
  },
@@ -638,8 +630,8 @@
    "ticker": "ZN",
    "display": "10-yr Note",
    "status": "active",
-   "n_tested": 94,
-   "n_killed": 80,
+   "n_tested": 95,
+   "n_killed": 81,
    "book_sleeves": [],
    "agents_now": []
   },
