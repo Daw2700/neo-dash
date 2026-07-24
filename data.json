@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:15:29Z",
+  "stamp": "2026-07-24T07:24:24Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,19 +433,128 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T07:06:48Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "m2k-nfib-preopen-smallcap-release-impounding",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.6
+   },
+   {
+    "rank": 2,
+    "idea": "zn-cash-management-bill-unscheduled-supply-concession",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mng-eia-five-year-average-window-roll-anchor-artifact",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.47
+   },
+   {
+    "rank": 4,
+    "idea": "zc-late-planting-period-acreage-uncertainty-premium",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "mcl-china-import-quota-batch-release-demand-step",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "m2k-sloos-credit-availability-quarterly-release",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 7,
+    "idea": "mym-offcycle-fiscal-quarter-second-earnings-wave",
+    "source": "literature",
+    "markets": [
+     "MYM"
+    ],
+    "score": 0.44
+   },
+   {
+    "rank": 8,
+    "idea": "mnq-japan-nisa-annual-allowance-reset-january-tokyo-hours-inflow",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 9,
+    "idea": "mes-mutual-fund-capital-gain-distribution-cashraise-window",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 10,
+    "idea": "mcl-cme-intraday-variation-margin-call-topup-window",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 11,
+    "idea": "mes-quarter-end-pm-settled-quarterly-expiry-collision",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 12,
+    "idea": "m6e-eu-joint-bond-syndication-ratelock-fx-window",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "zn-srf-usage-reserve-scarcity-state-gate",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.38
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 13,
    "registered": 215,
    "dev3yr": 0,
    "robustness": 0,
