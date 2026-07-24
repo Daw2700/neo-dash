@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:18:55Z",
+  "stamp": "2026-07-24T04:19:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "M2K",
-    "task": "robustness: m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:04:44Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "ZN",
     "task": "zn-tokyo-first-full-week-session-duration-add",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-aggregate-turnover-overconfidence-reversal",
     "stage": "dev3yr",
@@ -509,7 +501,7 @@
   "funnel": {
    "idea": 5,
    "registered": 199,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
