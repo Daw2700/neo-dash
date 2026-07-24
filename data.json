@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:55:28Z",
+  "stamp": "2026-07-24T07:55:30Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T07:55:06Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MYM",
+    "task": "mym-offcycle-fiscal-quarter-second-earnings-wave",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:55:30Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mym-offcycle-fiscal-quarter-second-earnings-wave",
-    "source": "literature",
-    "markets": [
-     "MYM"
-    ],
-    "score": 0.44
-   },
    {
     "rank": 8,
     "idea": "mnq-japan-nisa-annual-allowance-reset-january-tokyo-hours-inflow",
@@ -517,9 +516,9 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 6,
    "registered": 217,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
