@@ -1,21 +1,21 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:46:24Z",
+  "stamp": "2026-07-24T03:51:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1215,
-  "n_results": 1405,
-  "n_trials": 84305,
+  "n_results": 1406,
+  "n_trials": 84306,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84305,
+   "trials": 84306,
    "registered": 1215,
    "tested": 981,
    "passed": 183,
-   "survived": 38,
+   "survived": 39,
    "replicated": 15,
    "book": 13
   }
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T03:48:57.380775+00:00",
+   "hash": "8d2a95d2",
+   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
+   "status": "survives robustness",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
    "t": "2026-07-24T03:44:54.703188+00:00",
    "hash": "bf4a4d3a",
    "name": "ROBUSTNESS-BATTERY mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
@@ -422,36 +430,12 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.515"
-  },
-  {
-   "t": "2026-07-24T03:04:16.962738+00:00",
-   "hash": "91795318",
-   "name": "ROBUSTNESS-BATTERY mgc-continuous-extreme-count-overnight-carry",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "ZN",
-    "task": "zn-statistical-benchmark-revision-history-rewrite-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:34:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "ZC",
-    "task": "zc-monday-merchandiser-close-hedge-completion",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:34:53Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MGC",
     "task": "robustness: mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
     "stage": "dev3yr",
@@ -545,7 +529,7 @@
   "funnel": {
    "idea": 9,
    "registered": 197,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -606,7 +590,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5106
+    "trials": 5107
    }
   ]
  },
@@ -1461,6 +1445,11 @@
      "t": "2026-07-24T03:36:19.535545+00:00",
      "stage": "dev3yr",
      "verdict": "PASSES"
+    },
+    {
+     "t": "2026-07-24T03:48:57.380775+00:00",
+     "stage": "robustness",
+     "verdict": "SURVIVES robustness"
     }
    ],
    "sizing": {
