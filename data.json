@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:27:18Z",
+  "stamp": "2026-07-24T08:42:23Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 1284,
+  "n_registered": 1285,
   "n_results": 1474,
   "n_trials": 84374,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 7,
   "lifetime": {
    "trials": 84374,
-   "registered": 1284,
+   "registered": 1285,
    "tested": 1028,
    "passed": 193,
    "survived": 45,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T08:31:16.991389+00:00",
+   "hash": "a5caa6e6",
+   "name": "scout-81-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T08:26:44.151097+00:00",
    "hash": "7dc77132",
    "name": "zn-srf-usage-reserve-scarcity-state-gate",
@@ -422,14 +430,6 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T07:59:18.063047+00:00",
-   "hash": "0e0a49d0",
-   "name": "m2k-sloos-credit-availability-quarterly-release",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.627"
   }
  ],
  "pipeline": {
@@ -446,7 +446,7 @@
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 219,
+   "registered": 220,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
