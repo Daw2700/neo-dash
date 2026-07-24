@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:01:29Z",
+  "stamp": "2026-07-24T03:11:03Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1203,
-  "n_results": 1396,
-  "n_trials": 79261,
+  "n_registered": 1208,
+  "n_results": 1400,
+  "n_trials": 84300,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79261,
-   "registered": 1203,
-   "tested": 973,
+   "trials": 84300,
+   "registered": 1208,
+   "tested": 976,
    "passed": 182,
    "survived": 38,
    "replicated": 15,
@@ -336,6 +336,54 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T03:09:18.368360+00:00",
+   "hash": "a775b60a",
+   "name": "sweep-9-daytype-sequence-state",
+   "status": "killed",
+   "kind": "sweep",
+   "detail": "5,040 configs"
+  },
+  {
+   "t": "2026-07-24T03:06:56.803635+00:00",
+   "hash": "67aaaeb3",
+   "name": "mgc-continuous-extreme-count-overnight-carry",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T03:05:04.410211+00:00",
+   "hash": "4c50ae27",
+   "name": "mes-retail-consensus-signal-agreement-counterparty",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.669"
+  },
+  {
+   "t": "2026-07-24T03:04:58.736585+00:00",
+   "hash": "6cfe23ba",
+   "name": "mcl-closehour-liquidity-cost-range-expansion-sizing",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.515"
+  },
+  {
+   "t": "2026-07-24T03:04:16.962738+00:00",
+   "hash": "91795318",
+   "name": "ROBUSTNESS-BATTERY mgc-continuous-extreme-count-overnight-carry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T03:03:01.121984+00:00",
+   "hash": "91f7ff25",
+   "name": "mes-retail-consensus-signal-agreement-counterparty",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T02:51:30.867916+00:00",
    "hash": "9e92c18a",
    "name": "mnq-expansion-age-clock-post-shock-reentry",
@@ -382,54 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T02:40:06.511689+00:00",
-   "hash": "fd0c3ccc",
-   "name": "mcl-weekly-close-location-hedger-immediacy-reversal-ROBUSTNESS-1337",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T02:36:00.785763+00:00",
-   "hash": "47220c5a",
-   "name": "mnq-trendfollow-cohort-dd-liquidity",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.041"
-  },
-  {
-   "t": "2026-07-24T02:33:38.112356+00:00",
-   "hash": "9e92c18a",
-   "name": "mnq-expansion-age-clock-post-shock-reentry",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.585"
-  },
-  {
-   "t": "2026-07-24T02:33:28.486050+00:00",
-   "hash": "19030329",
-   "name": "mcl-weekly-close-location-hedger-immediacy-reversal",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.257"
-  },
-  {
-   "t": "2026-07-24T02:22:24.719593+00:00",
-   "hash": "bccf31ea",
-   "name": "mnq-ramp-backload-orb-gate",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T02:19:49.806597+00:00",
-   "hash": "b57af08e",
-   "name": "ROBUSTNESS-BATTERY mnq-ramp-backload-orb-gate",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
@@ -448,22 +448,6 @@
     "task": "vectorized grammar sweep",
     "stage": "sweep",
     "started": "2026-07-24T03:00:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-retail-consensus-signal-agreement-counterparty",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:00:39Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-4",
-    "market": "MCL",
-    "task": "mcl-closing-hour-liquidity-cost-next-session-range-expansion-sizing",
-    "stage": "dev3yr",
-    "started": "2026-07-24T03:01:03Z",
     "state": "running"
    }
   ],
@@ -489,11 +473,11 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 193,
-   "dev3yr": 3,
+   "registered": 195,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 16,
    "golden_staged": 1
   },
   "throughput": [
@@ -551,7 +535,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 58
+    "trials": 5101
    }
   ]
  },
@@ -576,8 +560,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 198,
-   "n_killed": 164,
+   "n_tested": 199,
+   "n_killed": 165,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -625,8 +609,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 87,
-   "n_killed": 61,
+   "n_tested": 88,
+   "n_killed": 62,
    "book_sleeves": [],
    "agents_now": []
   },
