@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:09:59Z",
+  "stamp": "2026-07-24T01:10:03Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -429,35 +429,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MCL",
+    "task": "mcl-mng-intercommodity-margin-credit-expiry-forced-remargin",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:10:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "SIL",
+    "task": "sil-mgc-delivery-cycle-stagger-onelegged-roll-dislocation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:10:03Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MET",
+    "task": "met-macro-release-thin-book-overshoot-vs-mbt",
+    "stage": "dev3yr",
+    "started": "2026-07-24T01:10:03Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "mcl-mng-intercommodity-margin-credit-expiry-forced-remargin",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 2,
-    "idea": "sil-mgc-delivery-cycle-stagger-onelegged-roll-dislocation",
-    "source": "data-screen",
-    "markets": [
-     "SIL"
-    ],
-    "score": 0.44
-   },
-   {
-    "rank": 3,
-    "idea": "met-macro-release-thin-book-overshoot-vs-mbt",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 4,
     "idea": "mes-macro-reaction-sign-streak-crowding-flip",
@@ -541,9 +539,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 9,
    "registered": 184,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 15,
