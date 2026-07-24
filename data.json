@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:55:10Z",
+  "stamp": "2026-07-24T04:55:11Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -445,18 +445,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T04:54:07Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MGC",
+    "task": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:55:11Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mgc-cpi-real-rate-asymmetric-overreaction-fade",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 5,
     "idea": "zn-rrp-drain-collateral-scarcity-funding-bid",
@@ -504,9 +503,9 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 202,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
