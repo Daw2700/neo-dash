@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:53:42Z",
+  "stamp": "2026-07-24T06:01:17Z",
   "stale_after_min": 30,
-  "status": "funnel running",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1245,
-  "n_results": 1436,
-  "n_trials": 84336,
+  "n_registered": 1248,
+  "n_results": 1439,
+  "n_trials": 84339,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84336,
-   "registered": 1245,
-   "tested": 1002,
-   "passed": 188,
+   "trials": 84339,
+   "registered": 1248,
+   "tested": 1005,
+   "passed": 189,
    "survived": 40,
    "replicated": 15,
    "book": 13
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T05:57:42.639262+00:00",
+   "hash": "184a81b0",
+   "name": "mng-cumulative-degree-day-anomaly-storage-path",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF None"
+  },
+  {
+   "t": "2026-07-24T05:56:53.978173+00:00",
+   "hash": "3a3a70de",
+   "name": "m6e-sunday-reopen-thin-desk-print-reversion",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.6309"
+  },
+  {
+   "t": "2026-07-24T05:56:24.017384+00:00",
+   "hash": "2321084e",
+   "name": "mcl-session-extreme-dwell-absorption-fade",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.453"
+  },
+  {
    "t": "2026-07-24T05:38:51.332652+00:00",
    "hash": "84f9aca0",
    "name": "mbt-corporate-treasury-buyer-convertible-funded-purchase-pulse",
@@ -406,44 +430,12 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T05:13:08.996669+00:00",
-   "hash": "804a8c1a",
-   "name": "zn-rrp-drain-collateral-scarcity-funding-bid__ROBUSTNESS",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T05:11:21.739611+00:00",
-   "hash": "f4fe05b8",
-   "name": "mcl-refinery-turnaround-crackswitch-seasonal-dip",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T05:06:59.569908+00:00",
-   "hash": "114a9134",
-   "name": "megaearn-overnight-fade",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "mcl-session-extreme-dwell-absorption-fade",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:53:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-cumulative-degree-day-anomaly-storage-path",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "M6E",
     "task": "m6e-sunday-reopen-thin-desk-print-reversion",
     "stage": "dev3yr",
@@ -554,10 +546,10 @@
   "funnel": {
    "idea": 10,
    "registered": 206,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 18,
    "golden_staged": 1
   },
   "throughput": [
@@ -615,7 +607,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5137
+    "trials": 5140
    }
   ]
  },
@@ -689,7 +681,7 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 90,
+   "n_tested": 91,
    "n_killed": 63,
    "book_sleeves": [],
    "agents_now": []
@@ -727,8 +719,8 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 55,
-   "n_killed": 53,
+   "n_tested": 56,
+   "n_killed": 54,
    "book_sleeves": [],
    "agents_now": []
   },
