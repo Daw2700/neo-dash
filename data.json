@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:06:21Z",
+  "stamp": "2026-07-24T00:06:23Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-23T23:54:23Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-volofvol-conditioned-variance-premium-harvest",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:06:23Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "mnq-propfirm-cohort-time-certain-autoflat-clock",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:06:23Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 6,
-    "idea": "mes-volofvol-conditioned-variance-premium-harvest",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.4
-   },
-   {
-    "rank": 9,
-    "idea": "mnq-propfirm-cohort-time-certain-autoflat-clock",
-    "source": "literature",
-    "markets": [
-     "MNQ"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 10,
     "idea": "mgc-1000-expectations-slot-dominance",
@@ -509,9 +507,9 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 5,
    "registered": 181,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
