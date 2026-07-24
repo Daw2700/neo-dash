@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:21:52Z",
+  "stamp": "2026-07-24T04:24:38Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1222,
-  "n_results": 1413,
-  "n_trials": 84313,
+  "n_registered": 1225,
+  "n_results": 1415,
+  "n_trials": 84315,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84313,
-   "registered": 1222,
-   "tested": 986,
+   "trials": 84315,
+   "registered": 1225,
+   "tested": 988,
    "passed": 184,
    "survived": 39,
    "replicated": 15,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T04:24:29.106503+00:00",
+   "hash": "3cdc5f15",
+   "name": "mes-index-float-sharecount-update-nonprice-flow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.429"
+  },
+  {
+   "t": "2026-07-24T04:24:16.511486+00:00",
+   "hash": "61c12bcb",
+   "name": "mes-crash-trend-gate",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.922"
+  },
+  {
+   "t": "2026-07-24T04:24:01.779580+00:00",
+   "hash": "6bb2a8f7",
+   "name": "mng-storage-containment-physical-cap-asymmetry",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T04:21:39.262407+00:00",
    "hash": "46c63f61",
    "name": "mcl-underwater-highwatermark-convexity-risk-shift",
@@ -406,56 +430,16 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T03:48:57.380775+00:00",
-   "hash": "8d2a95d2",
-   "name": "mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T03:44:54.703188+00:00",
-   "hash": "bf4a4d3a",
-   "name": "ROBUSTNESS-BATTERY mgc-friday-preclosure-unhedgeable-closure-inventory-bid",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T03:40:10.284799+00:00",
-   "hash": "53dc4be6",
-   "name": "zc-monday-merchandiser-close-hedge-completion",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.578"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MES",
-    "task": "mes-momentum-crash-bear-highvol-conditional-trend-gate",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:21:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNG",
     "task": "mng-storage-containment-physical-cap-asymmetry",
     "stage": "dev3yr",
     "started": "2026-07-24T04:21:07Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-index-float-sharecount-update-nonprice-flow",
-    "stage": "dev3yr",
-    "started": "2026-07-24T04:21:52Z",
     "state": "running"
    }
   ],
@@ -472,8 +456,8 @@
   ],
   "funnel": {
    "idea": 1,
-   "registered": 199,
-   "dev3yr": 3,
+   "registered": 200,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
@@ -534,7 +518,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5114
+    "trials": 5116
    }
   ]
  },
@@ -559,8 +543,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 201,
-   "n_killed": 167,
+   "n_tested": 203,
+   "n_killed": 169,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
