@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:20:39Z",
+  "stamp": "2026-07-24T00:24:47Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,19 +433,146 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T00:12:53Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "zn-mbs-negative-convexity-hedging-cascade",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.72
+   },
+   {
+    "rank": 2,
+    "idea": "zc-crop-progress-monday-evening-thin-book-overshoot",
+    "source": "data-screen",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.7
+   },
+   {
+    "rank": 3,
+    "idea": "m6e-monthend-fix-hedge-rebalance-signed-by-relative-equity",
+    "source": "literature",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.68
+   },
+   {
+    "rank": 4,
+    "idea": "mes-vix-soq-settlement-auction-hedge-unwind",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.62
+   },
+   {
+    "rank": 5,
+    "idea": "mng-bidweek-physical-index-hedge-window",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.58
+   },
+   {
+    "rank": 6,
+    "idea": "zs-spot-month-position-limit-forced-prefnd-liquidation",
+    "source": "literature",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-options-expiry-strike-concentration-unpin",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.52
+   },
+   {
+    "rank": 8,
+    "idea": "zn-fomc-blackout-unopposed-data-impounding",
+    "source": "literature",
+    "markets": [
+     "ZN"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 9,
+    "idea": "zs-halt-window-macro-repricing-crossmarket-convergence",
+    "source": "data-screen",
+    "markets": [
+     "ZS"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 10,
+    "idea": "mes-dividend-cash-equitization-payday-cluster",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 11,
+    "idea": "sil-lbma-benchmark-auction-shallow-participant-imbalance",
+    "source": "literature",
+    "markets": [
+     "SIL"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 12,
+    "idea": "mbt-listed-miner-monthly-opex-treasury-sale",
+    "source": "literature",
+    "markets": [
+     "MBT"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 13,
+    "idea": "zc-weekly-ethanol-grind-demand-print",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 14,
+    "idea": "m6e-us-afternoon-rates-move-in-fx-vacuum-deferred-transmission",
+    "source": "data-screen",
+    "markets": [
+     "M6E"
+    ],
+    "score": 0.38
+   },
+   {
+    "rank": 15,
+    "idea": "m2k-midmonth-payday-contribution-inflow",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 15,
    "registered": 182,
    "dev3yr": 0,
    "robustness": 0,
