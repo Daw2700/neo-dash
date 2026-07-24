@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:59:31Z",
+  "stamp": "2026-07-24T02:07:33Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1189,
-  "n_results": 1381,
-  "n_trials": 79246,
+  "n_registered": 1192,
+  "n_results": 1385,
+  "n_trials": 79250,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79246,
-   "registered": 1189,
-   "tested": 965,
-   "passed": 176,
+   "trials": 79250,
+   "registered": 1192,
+   "tested": 968,
+   "passed": 178,
    "survived": 37,
    "replicated": 14,
    "book": 13
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T02:03:38.206000+00:00",
+   "hash": "79fe7459",
+   "name": "mcl-crossmarket-gap-ratification-laggard",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.97"
+  },
+  {
+   "t": "2026-07-24T02:03:18.951426+00:00",
+   "hash": "79fe7459",
+   "name": "mcl-crossmarket-gap-ratification-laggard",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.97"
+  },
+  {
+   "t": "2026-07-24T02:02:47.055081+00:00",
+   "hash": "ae16290a",
+   "name": "mcl-intrasession-excursion-asymmetry-overnight-repair",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.25"
+  },
+  {
+   "t": "2026-07-24T02:02:44.495574+00:00",
+   "hash": "b4e6aa98",
+   "name": "mnq-closehour-liquidity-cost-overnight",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.399"
+  },
+  {
    "t": "2026-07-24T01:51:27.565893+00:00",
    "hash": "2f8e1e2c",
    "name": "mgc-week-drought-continuation",
@@ -398,38 +430,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 3.494"
-  },
-  {
-   "t": "2026-07-24T01:33:25.269981+00:00",
-   "hash": "63ed2727",
-   "name": "mcl-week-scale-participation-flood-risk-premium-decay",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.067"
-  },
-  {
-   "t": "2026-07-24T01:31:41.007672+00:00",
-   "hash": "caf6e5b3",
-   "name": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.7228"
-  },
-  {
-   "t": "2026-07-24T01:30:55.423137+00:00",
-   "hash": "7a65444e",
-   "name": "zn-nonroll-monthend-unrefreshed-book-impact",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.448"
-  },
-  {
-   "t": "2026-07-24T01:30:35.528230+00:00",
-   "hash": "df997fdd",
-   "name": "mes-vix-wednesday-to-friday-equity-hedge-void",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.747"
   }
  ],
  "pipeline": {
@@ -446,14 +446,6 @@
     "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-intrasession-excursion-asymmetry-overnight-repair",
-    "stage": "dev3yr",
-    "started": "2026-07-24T01:59:31Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MNQ",
-    "task": "mnq-closing-hour-liquidity-cost-unfinished-risk-transfer-overnight-premium",
     "stage": "dev3yr",
     "started": "2026-07-24T01:59:31Z",
     "state": "running"
@@ -545,10 +537,10 @@
   "funnel": {
    "idea": 9,
    "registered": 187,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 15,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -606,7 +598,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 43
+    "trials": 47
    }
   ]
  },
@@ -615,7 +607,7 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 144,
+   "n_tested": 145,
    "n_killed": 99,
    "book_sleeves": [
     "b3-nr7-breakout",
@@ -680,8 +672,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 84,
-   "n_killed": 60,
+   "n_tested": 86,
+   "n_killed": 61,
    "book_sleeves": [],
    "agents_now": []
   },
