@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T13:17:44Z",
+  "stamp": "2026-07-24T13:18:06Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -435,11 +435,11 @@
  "pipeline": {
   "workers": [
    {
-    "agent": "scout",
+    "agent": "decision",
     "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T13:17:44Z",
+    "task": "your deny: Eleventh graduate, with a caveat: Septem",
+    "stage": "decision",
+    "started": "2026-07-24T13:18:06Z",
     "state": "running"
    }
   ],
