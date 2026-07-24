@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:15:53Z",
+  "stamp": "2026-07-24T03:15:55Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,32 +449,37 @@
     "stage": "sweep",
     "started": "2026-07-24T03:00:39Z",
     "state": "running"
-   }
-  ],
-  "backlog": [
-   {
-    "rank": 11,
-    "idea": "mes-hourly-impact-coefficient-surprise-unfamiliar-participant",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.3
    },
    {
-    "rank": 12,
-    "idea": "met-proof-of-stake-endogenous-volatility-harvest-regime",
-    "source": "literature",
-    "markets": [
-     "MET"
-    ],
-    "score": 0.25
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T03:15:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-hourly-impact-coefficient-surprise-unfamiliar-participant",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:15:55Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-5",
+    "market": "MET",
+    "task": "met-proof-of-stake-endogenous-volatility-harvest-regime",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:15:55Z",
+    "state": "running"
    }
   ],
+  "backlog": [],
   "funnel": {
-   "idea": 2,
+   "idea": 0,
    "registered": 195,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
