@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:24:47Z",
+  "stamp": "2026-07-24T00:24:50Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "ZN",
+    "task": "zn-mbs-negative-convexity-hedging-cascade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:24:49Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZC",
+    "task": "zc-crop-progress-monday-evening-thin-book-overshoot",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:24:49Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M6E",
+    "task": "m6e-monthend-fix-hedge-rebalance-signed-by-relative-equity",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:24:49Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "zn-mbs-negative-convexity-hedging-cascade",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.72
-   },
-   {
-    "rank": 2,
-    "idea": "zc-crop-progress-monday-evening-thin-book-overshoot",
-    "source": "data-screen",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.7
-   },
-   {
-    "rank": 3,
-    "idea": "m6e-monthend-fix-hedge-rebalance-signed-by-relative-equity",
-    "source": "literature",
-    "markets": [
-     "M6E"
-    ],
-    "score": 0.68
-   },
    {
     "rank": 4,
     "idea": "mes-vix-soq-settlement-auction-hedge-unwind",
@@ -572,9 +570,9 @@
    }
   ],
   "funnel": {
-   "idea": 15,
+   "idea": 12,
    "registered": 182,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
