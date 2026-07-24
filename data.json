@@ -1,8 +1,8 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:42:31Z",
+  "stamp": "2026-07-24T06:42:53Z",
   "stale_after_min": 30,
-  "status": "d-expansionage-book-entry approve applied \u2014 mnq-expansion-age-clock-post-shock-reentry admitted to the validated book (14 sleeves); both VALID mirrors updated, sizing + bundle recompute run",
+  "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1258,
   "n_results": 1449,
@@ -436,22 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MCL",
-    "task": "xsec-carry-rank-micro-complex-neutral",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:26:43Z",
-    "state": "running"
-   },
-   {
-    "agent": "decision",
-    "market": null,
-    "task": "your approve: Twelfth graduate: post-shock expansion-a",
-    "stage": "decision",
-    "started": "2026-07-24T06:31:15Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MNQ",
     "task": "robustness: mgc-close-location-breadth-fade",
     "stage": "dev3yr",
@@ -459,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "recheck: xsec-carry-rank-micro-complex-neutral",
     "stage": "dev3yr",
@@ -508,7 +492,7 @@
   "funnel": {
    "idea": 4,
    "registered": 210,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
