@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:08:34Z",
+  "stamp": "2026-07-24T00:10:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1150,
-  "n_results": 1339,
-  "n_trials": 79204,
+  "n_registered": 1152,
+  "n_results": 1341,
+  "n_trials": 79206,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79204,
-   "registered": 1150,
-   "tested": 932,
+   "trials": 79206,
+   "registered": 1152,
+   "tested": 934,
    "passed": 172,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:09:59.133984+00:00",
+   "hash": "c332d3a6",
+   "name": "mnq-propfirm-cohort-time-certain-autoflat-clock",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.753"
+  },
+  {
+   "t": "2026-07-24T00:09:58.556051+00:00",
+   "hash": "dc16095a",
+   "name": "mgc-1000-expectations-slot-dominance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.149"
+  },
+  {
    "t": "2026-07-24T00:08:12.699771+00:00",
    "hash": "7a9eaab6",
    "name": "mes-volofvol-variance-premium",
@@ -414,36 +430,12 @@
    "status": "result",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T23:44:19.221894+00:00",
-   "hash": "9d659566",
-   "name": "mnq-invvar-scaling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.031"
-  },
-  {
-   "t": "2026-07-23T23:41:43.870737+00:00",
-   "hash": "26584da7",
-   "name": "mes-september-complex-wide-rth-only-weakness",
-   "status": "replicates",
-   "kind": "result",
-   "detail": "PF 1.405"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "mnq-propfirm-cohort-time-certain-autoflat-clock",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:06:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "mgc-1000-expectations-slot-dominance",
     "stage": "dev3yr",
@@ -451,7 +443,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MES",
     "task": "xmkt-average-correlation-scaled-exposure",
     "stage": "dev3yr",
@@ -491,7 +483,7 @@
   "funnel": {
    "idea": 3,
    "registered": 181,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -552,7 +544,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 1
+    "trials": 3
    }
   ]
  },
@@ -561,8 +553,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 143,
-   "n_killed": 98,
+   "n_tested": 144,
+   "n_killed": 99,
    "book_sleeves": [
     "b3-nr7-breakout",
     "b10-nagel-vix-reversal",
@@ -608,8 +600,8 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 66,
-   "n_killed": 55,
+   "n_tested": 67,
+   "n_killed": 56,
    "book_sleeves": [],
    "agents_now": []
   },
