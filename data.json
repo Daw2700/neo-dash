@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:54:34Z",
+  "stamp": "2026-07-24T06:59:49Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1261,
-  "n_results": 1452,
-  "n_trials": 84352,
+  "n_registered": 1262,
+  "n_results": 1453,
+  "n_trials": 84353,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 84352,
-   "registered": 1261,
+   "trials": 84353,
+   "registered": 1262,
    "tested": 1012,
    "passed": 191,
    "survived": 43,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T06:57:27.358979+00:00",
+   "hash": "eeaa72a4",
+   "name": "mgc-close-location-breadth-fade",
+   "status": "fail",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-24T06:55:56.611825+00:00",
+   "hash": "fd3875d6",
+   "name": "mgc-close-location-breadth-fade-REPLICATION-1396",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T06:48:45.257267+00:00",
    "hash": "eeaa72a4",
    "name": "mgc-close-location-breadth-fade",
@@ -414,22 +430,6 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T06:17:12.835496+00:00",
-   "hash": "d3bfb722",
-   "name": "m2k-mes-carry-spread-lending-tightness",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.568"
-  },
-  {
-   "t": "2026-07-24T06:17:04.844896+00:00",
-   "hash": "2321084e",
-   "name": "mcl-session-extreme-dwell-absorption-fade",
-   "status": "fail",
-   "kind": "result",
-   "detail": "PF 0.593"
   }
  ],
  "pipeline": {
@@ -448,6 +448,14 @@
     "task": "recheck: xsec-carry-rank-micro-complex-neutral",
     "stage": "dev3yr",
     "started": "2026-07-24T06:42:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "replication: mgc-close-location-breadth-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:54:36Z",
     "state": "running"
    }
   ],
@@ -482,11 +490,11 @@
   ],
   "funnel": {
    "idea": 3,
-   "registered": 212,
-   "dev3yr": 2,
+   "registered": 213,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 17,
+   "book_candidate": 16,
    "golden_staged": 1
   },
   "throughput": [
@@ -544,7 +552,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5153
+    "trials": 5154
    }
   ]
  },
@@ -1730,30 +1738,32 @@
    "provisional": false,
    "assumed_rules": false,
    "members": {
-    "mnq-expansion-age-clock-post-shock-reentry": 1,
+    "zc-rma-volatility-factor-five-day-window": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "scan-mbt": 1,
     "b10-nagel-vix-reversal": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "mnq-event-free-day-flow-persistence": 1,
-    "mes-settle-tradable-divergence": 1
+    "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "mnq-event-free-day-flow-persistence": 1
    },
-   "total_micros": 6,
-   "p_breach": 0.199,
-   "usd_mo": 699,
-   "usd_mo_5acct": 3495,
-   "pct_goal": 1.258,
-   "wr": 0.536,
+   "total_micros": 10,
+   "p_breach": 0.184,
+   "usd_mo": 735,
+   "usd_mo_5acct": 3675,
+   "pct_goal": 1.323,
+   "wr": 0.552,
    "wr_month": 0.778,
    "months": {
     "win_per_yr": 9.3,
     "lose_per_yr": 2.7,
-    "avg_win": 1548,
-    "avg_lose": -694
+    "avg_win": 1573,
+    "avg_lose": -520
    },
-   "first_pay_days": 48,
-   "pay_rate_1yr": 0.993,
+   "first_pay_days": 46,
+   "pay_rate_1yr": 0.994,
    "firm": "Apex",
    "accounts": 18,
-   "usd_mo_total": 12582
+   "usd_mo_total": 13230
   },
   {
    "id": "Frequent-firing engine|apex150",

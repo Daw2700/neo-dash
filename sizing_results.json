@@ -406,6 +406,37 @@
    "pay_rate_1yr": 0.939
   },
   {
+   "id": "Validated book (all approved sleeves)|apex150",
+   "name": "Validated book (all approved sleeves)",
+   "plan": "apex150 (verified)",
+   "provisional": false,
+   "assumed_rules": false,
+   "members": {
+    "zc-rma-volatility-factor-five-day-window": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 1,
+    "scan-mbt": 1,
+    "b10-nagel-vix-reversal": 2,
+    "b3-monday-long": 1,
+    "mes-gold-overnight-macro-signal-open-continuation": 2,
+    "mnq-event-free-day-flow-persistence": 1
+   },
+   "total_micros": 10,
+   "p_breach": 0.184,
+   "usd_mo": 735,
+   "usd_mo_5acct": 3675,
+   "pct_goal": 0.367,
+   "wr": 0.552,
+   "wr_month": 0.778,
+   "months": {
+    "win_per_yr": 9.3,
+    "lose_per_yr": 2.7,
+    "avg_win": 1573,
+    "avg_lose": -520
+   },
+   "first_pay_days": 46,
+   "pay_rate_1yr": 0.994
+  },
+  {
    "id": "Risk-premium core (rare, high WR)|growth",
    "name": "Risk-premium core (rare, high WR)",
    "plan": "tradeify-growth",
@@ -434,35 +465,6 @@
    },
    "first_pay_days": 96,
    "pay_rate_1yr": 0.821
-  },
-  {
-   "id": "Validated book (all approved sleeves)|apex150",
-   "name": "Validated book (all approved sleeves)",
-   "plan": "apex150 (verified)",
-   "provisional": false,
-   "assumed_rules": false,
-   "members": {
-    "mnq-expansion-age-clock-post-shock-reentry": 1,
-    "b10-nagel-vix-reversal": 2,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
-    "mnq-event-free-day-flow-persistence": 1,
-    "mes-settle-tradable-divergence": 1
-   },
-   "total_micros": 6,
-   "p_breach": 0.199,
-   "usd_mo": 699,
-   "usd_mo_5acct": 3495,
-   "pct_goal": 0.349,
-   "wr": 0.536,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 1548,
-    "avg_lose": -694
-   },
-   "first_pay_days": 48,
-   "pay_rate_1yr": 0.993
   },
   {
    "id": "Frequent-firing engine|apex150",
