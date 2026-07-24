@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:10:43Z",
+  "stamp": "2026-07-24T00:12:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1152,
-  "n_results": 1341,
-  "n_trials": 79206,
+  "n_registered": 1154,
+  "n_results": 1342,
+  "n_trials": 79207,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79206,
-   "registered": 1152,
-   "tested": 934,
+   "trials": 79207,
+   "registered": 1154,
+   "tested": 935,
    "passed": 172,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:12:12.510197+00:00",
+   "hash": "5aa26d43",
+   "name": "mes-buffer-etf-monthstart-optionroll-hedge",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.046"
+  },
+  {
+   "t": "2026-07-24T00:12:01.732293+00:00",
+   "hash": "5d5b87a3",
+   "name": "mes-xmkt-avgcorr-long",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T00:09:59.133984+00:00",
    "hash": "c332d3a6",
    "name": "mnq-propfirm-cohort-time-certain-autoflat-clock",
@@ -414,22 +430,6 @@
    "status": "passes",
    "kind": "result",
    "detail": "PF 1.183"
-  },
-  {
-   "t": "2026-07-23T23:48:57.647751+00:00",
-   "hash": "9d659566",
-   "name": "mnq-invvar-scaling",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.031"
-  },
-  {
-   "t": "2026-07-23T23:47:24.117982+00:00",
-   "hash": "9d659566",
-   "name": "mnq-invvar-scaling",
-   "status": "result",
-   "kind": "result",
-   "detail": "\u2014"
   }
  ],
  "pipeline": {
@@ -448,14 +448,6 @@
     "task": "recheck: mgc-1000-expectations-slot-dominance",
     "stage": "dev3yr",
     "started": "2026-07-24T00:10:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-buffer-etf-monthstart-optionroll-hedge",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:10:43Z",
     "state": "running"
    }
   ],
@@ -481,8 +473,8 @@
   ],
   "funnel": {
    "idea": 2,
-   "registered": 181,
-   "dev3yr": 3,
+   "registered": 182,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -543,7 +535,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 3
+    "trials": 4
    }
   ]
  },
@@ -568,8 +560,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 192,
-   "n_killed": 158,
+   "n_tested": 193,
+   "n_killed": 159,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
