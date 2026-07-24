@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T10:13:43Z",
+  "stamp": "2026-07-24T10:13:45Z",
   "stale_after_min": 30,
   "status": "usage-capped \u2014 cooling down",
   "engine_state": "error",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MGC",
+    "task": "mgc-one-touch-urgent-volume-share-inventory-repair",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:13:45Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNG",
+    "task": "mng-cpc-monthly-longrange-outlook-repricing",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:13:45Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MCL",
+    "task": "mcl-cot-cohort-disagreement-forced-liquidation-expansion",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:13:45Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "mgc-one-touch-urgent-volume-share-inventory-repair",
-    "source": "literature",
-    "markets": [
-     "MGC"
-    ],
-    "score": 0.45
-   },
-   {
-    "rank": 6,
-    "idea": "mng-cpc-monthly-longrange-outlook-repricing",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.42
-   },
-   {
-    "rank": 7,
-    "idea": "mcl-cot-cohort-disagreement-forced-liquidation-expansion",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.4
-   },
    {
     "rank": 8,
     "idea": "mes-zn-tail-only-transmission-threshold-degrossing",
@@ -500,9 +498,9 @@
    }
   ],
   "funnel": {
-   "idea": 7,
+   "idea": 4,
    "registered": 221,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
