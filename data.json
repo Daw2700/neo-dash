@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T09:12:14Z",
+  "stamp": "2026-07-24T09:12:17Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -515,10 +515,19 @@
      "ZC"
     ],
     "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-one-touch-urgent-volume-share-inventory-repair",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 10,
    "registered": 221,
    "dev3yr": 0,
    "robustness": 0,
