@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:00:39Z",
+  "stamp": "2026-07-24T03:01:01Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,14 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNQ",
-    "task": "replication: mnq-expansion-age-clock-post-shock-reentry",
-    "stage": "dev3yr",
-    "started": "2026-07-24T02:46:24Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MGC",
     "task": "robustness: mgc-continuous-extreme-count-overnight-carry",
     "stage": "dev3yr",
@@ -459,7 +451,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MES",
     "task": "mes-retail-consensus-signal-agreement-counterparty",
     "stage": "dev3yr",
@@ -499,7 +491,7 @@
   "funnel": {
    "idea": 3,
    "registered": 193,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
