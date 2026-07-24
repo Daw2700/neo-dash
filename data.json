@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:06:23Z",
+  "stamp": "2026-07-24T00:06:45Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -437,21 +437,13 @@
    {
     "agent": "tester-1",
     "market": "MES",
-    "task": "robustness: sched-annday-premium-full",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:54:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
     "task": "mes-volofvol-conditioned-variance-premium-harvest",
     "stage": "dev3yr",
     "started": "2026-07-24T00:06:23Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-propfirm-cohort-time-certain-autoflat-clock",
     "stage": "dev3yr",
@@ -509,7 +501,7 @@
   "funnel": {
    "idea": 5,
    "registered": 181,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
