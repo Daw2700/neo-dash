@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T05:01:54Z",
+  "stamp": "2026-07-24T05:01:56Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,18 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T05:01:30Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MNQ",
+    "task": "robustness: megaearn-overnight-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:01:56Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-rrp-drain-collateral-scarcity-funding-bid",
+    "stage": "dev3yr",
+    "started": "2026-07-24T05:01:56Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "zn-rrp-drain-collateral-scarcity-funding-bid",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.35
-   },
    {
     "rank": 11,
     "idea": "mes-qra-refunding-coupon-supply-equity-duration-repricing",
@@ -491,9 +498,9 @@
    }
   ],
   "funnel": {
-   "idea": 5,
+   "idea": 4,
    "registered": 201,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
