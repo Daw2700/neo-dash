@@ -1,18 +1,18 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:04:11Z",
+  "stamp": "2026-07-24T08:08:59Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1277,
-  "n_results": 1466,
-  "n_trials": 84366,
+  "n_registered": 1278,
+  "n_results": 1467,
+  "n_trials": 84367,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84366,
-   "registered": 1277,
+   "trials": 84367,
+   "registered": 1278,
    "tested": 1022,
    "passed": 193,
    "survived": 45,
@@ -336,6 +336,22 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T08:06:59.537019+00:00",
+   "hash": "6af7bf35",
+   "name": "zc-late-planting-acreage-premium",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.216"
+  },
+  {
+   "t": "2026-07-24T08:05:51.605905+00:00",
+   "hash": "8eb94bdd",
+   "name": "rep-zc-late-planting-acreage-premium-zs",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T07:59:55.098585+00:00",
    "hash": "8c2ce4c4",
    "name": "mym-offcycle-fiscal-quarter-second-earnings-wave",
@@ -414,22 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T07:30:18.006987+00:00",
-   "hash": "88a08e91",
-   "name": "mng-eia-5yr-avg-window-roll-artifact",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.495"
-  },
-  {
-   "t": "2026-07-24T07:29:12.975680+00:00",
-   "hash": "3b2c9ddf",
-   "name": "zn-cmb-unscheduled-supply-concession",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.468"
   }
  ],
  "pipeline": {
@@ -448,6 +448,14 @@
     "task": "mym-offcycle-fiscal-quarter-second-earnings-wave",
     "stage": "dev3yr",
     "started": "2026-07-24T07:55:30Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "replication: zc-late-planting-acreage-premium",
+    "stage": "dev3yr",
+    "started": "2026-07-24T08:04:13Z",
     "state": "running"
    }
   ],
@@ -509,8 +517,8 @@
   ],
   "funnel": {
    "idea": 6,
-   "registered": 218,
-   "dev3yr": 2,
+   "registered": 219,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
@@ -571,7 +579,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5167
+    "trials": 5168
    }
   ]
  },
@@ -1373,6 +1381,11 @@
      "t": "2026-07-24T07:59:42.406548+00:00",
      "stage": "robustness",
      "verdict": "SURVIVES robustness"
+    },
+    {
+     "t": "2026-07-24T08:06:59.537019+00:00",
+     "stage": "replication",
+     "verdict": "KILLED"
     }
    ],
    "sizing": {
