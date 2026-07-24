@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T10:29:11Z",
+  "stamp": "2026-07-24T10:29:13Z",
   "stale_after_min": 30,
   "status": "usage-capped \u2014 cooling down",
   "engine_state": "error",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-zn-tail-only-transmission-threshold-degrossing",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:29:13Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M2K",
+    "task": "m2k-weekday-sentiment-speculative-defensive-rotation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:29:13Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-complexity-gated-shorthorizon-liquidity-provision-rent",
+    "stage": "dev3yr",
+    "started": "2026-07-24T10:29:13Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 8,
-    "idea": "mes-zn-tail-only-transmission-threshold-degrossing",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.35
-   },
-   {
-    "rank": 9,
-    "idea": "m2k-weekday-sentiment-speculative-defensive-rotation",
-    "source": "literature",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.35
-   },
-   {
-    "rank": 10,
-    "idea": "mes-complexity-gated-shorthorizon-liquidity-provision-rent",
-    "source": "data-screen",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 11,
     "idea": "mnq-aggressor-run-termination-absorber-unwind",
@@ -473,9 +471,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 1,
    "registered": 221,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
