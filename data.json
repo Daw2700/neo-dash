@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T09:58:16Z",
+  "stamp": "2026-07-24T09:58:18Z",
   "stale_after_min": 30,
   "status": "usage-capped \u2014 cooling down",
   "engine_state": "error",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "MES",
+    "task": "mes-dominant-clip-size-unfinished-parent-order-continuation",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:58:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "M2K",
+    "task": "robustness: m2k-late-week-terminal-extreme-weekend-carryover-reversal",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:58:17Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZC",
+    "task": "zc-implied-derived-outright-depth-overimpact-reversion",
+    "stage": "dev3yr",
+    "started": "2026-07-24T09:58:17Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 3,
-    "idea": "mes-dominant-clip-size-unfinished-parent-order-continuation",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.47
-   },
-   {
-    "rank": 2,
-    "idea": "robustness: m2k-late-week-terminal-extreme-weekend-carryover-reversal",
-    "source": null,
-    "markets": [
-     "M2K"
-    ],
-    "score": null
-   },
-   {
-    "rank": 4,
-    "idea": "zc-implied-derived-outright-depth-overimpact-reversion",
-    "source": "literature",
-    "markets": [
-     "ZC"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 5,
     "idea": "mgc-one-touch-urgent-volume-share-inventory-repair",
@@ -527,9 +525,9 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 7,
    "registered": 221,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 19,
