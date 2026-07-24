@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:26:43Z",
+  "stamp": "2026-07-24T06:27:05Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -437,21 +437,13 @@
    {
     "agent": "tester-1",
     "market": "MCL",
-    "task": "robustness: zs-repeated-extreme-testing-commercial-refill-exhaustion",
-    "stage": "dev3yr",
-    "started": "2026-07-24T06:12:56Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MCL",
     "task": "replication: zs-repeated-extreme-testing-commercial-refill-exhaustion",
     "stage": "dev3yr",
     "started": "2026-07-24T06:26:43Z",
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "xsec-carry-rank-micro-complex-neutral",
     "stage": "dev3yr",
@@ -509,7 +501,7 @@
   "funnel": {
    "idea": 5,
    "registered": 209,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
