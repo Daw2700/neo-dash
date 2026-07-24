@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:42:30Z",
+  "stamp": "2026-07-24T06:42:31Z",
   "stale_after_min": 30,
   "status": "d-expansionage-book-entry approve applied \u2014 mnq-expansion-age-clock-post-shock-reentry admitted to the validated book (14 sleeves); both VALID mirrors updated, sizing + bundle recompute run",
   "engine_state": "ok",
@@ -449,6 +449,22 @@
     "stage": "decision",
     "started": "2026-07-24T06:31:15Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNQ",
+    "task": "robustness: mgc-close-location-breadth-fade",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:42:31Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MNQ",
+    "task": "recheck: xsec-carry-rank-micro-complex-neutral",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:42:31Z",
+    "state": "running"
    }
   ],
   "backlog": [
@@ -492,7 +508,7 @@
   "funnel": {
    "idea": 4,
    "registered": 210,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
