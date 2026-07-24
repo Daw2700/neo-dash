@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:31:35Z",
+  "stamp": "2026-07-24T00:31:37Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T00:28:27Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MCL",
+    "task": "mcl-options-expiry-strike-concentration-unpin",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:31:36Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZN",
+    "task": "zn-fomc-blackout-unopposed-data-impounding",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:31:36Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 7,
-    "idea": "mcl-options-expiry-strike-concentration-unpin",
-    "source": "literature",
-    "markets": [
-     "MCL"
-    ],
-    "score": 0.52
-   },
-   {
-    "rank": 8,
-    "idea": "zn-fomc-blackout-unopposed-data-impounding",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
    {
     "rank": 9,
     "idea": "zs-halt-window-macro-repricing-crossmarket-convergence",
@@ -527,9 +525,9 @@
    }
   ],
   "funnel": {
-   "idea": 9,
+   "idea": 7,
    "registered": 182,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
