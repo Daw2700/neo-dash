@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:01:20Z",
+  "stamp": "2026-07-24T06:01:43Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -436,22 +436,6 @@
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MNG",
-    "task": "mng-cumulative-degree-day-anomaly-storage-path",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:53:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "M6E",
-    "task": "m6e-sunday-reopen-thin-desk-print-reversion",
-    "stage": "dev3yr",
-    "started": "2026-07-24T05:53:42Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "MCL",
     "task": "robustness: mcl-session-extreme-dwell-absorption-fade",
     "stage": "dev3yr",
@@ -554,7 +538,7 @@
   "funnel": {
    "idea": 10,
    "registered": 206,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
