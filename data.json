@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T14:15:29Z",
+  "stamp": "2026-07-24T14:15:31Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,7 +433,16 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "scout",
+    "market": null,
+    "task": "scout",
+    "stage": "idea-scout",
+    "started": "2026-07-24T14:15:31Z",
+    "state": "running"
+   }
+  ],
   "backlog": [],
   "funnel": {
    "idea": 0,
