@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T03:00:37Z",
+  "stamp": "2026-07-24T03:00:39Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,18 +441,33 @@
     "stage": "dev3yr",
     "started": "2026-07-24T02:46:24Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MGC",
+    "task": "robustness: mgc-continuous-extreme-count-overnight-carry",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:00:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "sweep",
+    "market": null,
+    "task": "vectorized grammar sweep",
+    "stage": "sweep",
+    "started": "2026-07-24T03:00:39Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-4",
+    "market": "MES",
+    "task": "mes-retail-consensus-signal-agreement-counterparty",
+    "stage": "dev3yr",
+    "started": "2026-07-24T03:00:39Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 9,
-    "idea": "mes-retail-consensus-signal-agreement-counterparty",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.32
-   },
    {
     "rank": 10,
     "idea": "mcl-closing-hour-liquidity-cost-next-session-range-expansion-sizing",
@@ -482,9 +497,9 @@
    }
   ],
   "funnel": {
-   "idea": 4,
+   "idea": 3,
    "registered": 193,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
