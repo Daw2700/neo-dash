@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:14:12Z",
+  "stamp": "2026-07-24T08:21:14Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1278,
-  "n_results": 1467,
-  "n_trials": 84367,
+  "n_registered": 1280,
+  "n_results": 1470,
+  "n_trials": 84370,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 84367,
-   "registered": 1278,
-   "tested": 1022,
+   "trials": 84370,
+   "registered": 1280,
+   "tested": 1024,
    "passed": 193,
    "survived": 45,
    "replicated": 16,
@@ -336,6 +336,30 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T08:17:24.225197+00:00",
+   "hash": "41cac8c8",
+   "name": "mnq-nisa-tokyo-january-inflow",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.834"
+  },
+  {
+   "t": "2026-07-24T08:16:25.920069+00:00",
+   "hash": "8c2ce4c4",
+   "name": "mym-offcycle-fiscal-quarter-second-earnings-wave",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.057"
+  },
+  {
+   "t": "2026-07-24T08:16:19.442922+00:00",
+   "hash": "cd3717b9",
+   "name": "mes-mutual-fund-capgain-cashraise",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.998"
+  },
+  {
    "t": "2026-07-24T08:06:59.537019+00:00",
    "hash": "6af7bf35",
    "name": "zc-late-planting-acreage-premium",
@@ -406,54 +430,14 @@
    "status": "survives robustness",
    "kind": "result",
    "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-24T07:38:05.207013+00:00",
-   "hash": "ab544d25",
-   "name": "mcl-china-import-quota-batch-release-demand-step",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.962"
-  },
-  {
-   "t": "2026-07-24T07:35:53.778612+00:00",
-   "hash": "6af7bf35",
-   "name": "zc-late-planting-acreage-premium",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 2.732"
-  },
-  {
-   "t": "2026-07-24T07:35:35.855575+00:00",
-   "hash": "3c58eaf5",
-   "name": "ROBUSTNESS-BATTERY m2k-nfib-preopen-smallcap-release-impounding (candidate 47ebad2ae2169151)",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
    {
     "agent": "tester-1",
-    "market": "MYM",
-    "task": "recheck: mym-offcycle-fiscal-quarter-second-earnings-wave",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:14:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
     "market": "MNQ",
     "task": "mnq-japan-nisa-annual-allowance-reset-january-tokyo-hours-inflow",
-    "stage": "dev3yr",
-    "started": "2026-07-24T08:14:12Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "MES",
-    "task": "mes-mutual-fund-capital-gain-distribution-cashraise-window",
     "stage": "dev3yr",
     "started": "2026-07-24T08:14:12Z",
     "state": "running"
@@ -500,7 +484,7 @@
   "funnel": {
    "idea": 4,
    "registered": 219,
-   "dev3yr": 3,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
@@ -561,7 +545,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 5168
+    "trials": 5171
    }
   ]
  },
@@ -570,8 +554,8 @@
    "ticker": "MNQ",
    "display": "Nasdaq-100",
    "status": "active",
-   "n_tested": 152,
-   "n_killed": 103,
+   "n_tested": 153,
+   "n_killed": 104,
    "book_sleeves": [
     "b3-nr7-breakout",
     "mnq-expansion-age-clock-post-shock-reentry",
@@ -587,8 +571,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 206,
-   "n_killed": 172,
+   "n_tested": 207,
+   "n_killed": 173,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
