@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:24:24Z",
+  "stamp": "2026-07-24T07:24:27Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,35 +433,33 @@
   }
  ],
  "pipeline": {
-  "workers": [],
+  "workers": [
+   {
+    "agent": "tester-1",
+    "market": "M2K",
+    "task": "m2k-nfib-preopen-smallcap-release-impounding",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:24:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-cash-management-bill-unscheduled-supply-concession",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:24:26Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-eia-five-year-average-window-roll-anchor-artifact",
+    "stage": "dev3yr",
+    "started": "2026-07-24T07:24:26Z",
+    "state": "running"
+   }
+  ],
   "backlog": [
-   {
-    "rank": 1,
-    "idea": "m2k-nfib-preopen-smallcap-release-impounding",
-    "source": "data-screen",
-    "markets": [
-     "M2K"
-    ],
-    "score": 0.6
-   },
-   {
-    "rank": 2,
-    "idea": "zn-cash-management-bill-unscheduled-supply-concession",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.5
-   },
-   {
-    "rank": 3,
-    "idea": "mng-eia-five-year-average-window-roll-anchor-artifact",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.47
-   },
    {
     "rank": 4,
     "idea": "zc-late-planting-period-acreage-uncertainty-premium",
@@ -554,9 +552,9 @@
    }
   ],
   "funnel": {
-   "idea": 13,
+   "idea": 10,
    "registered": 215,
-   "dev3yr": 0,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 16,
