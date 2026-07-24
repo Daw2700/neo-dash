@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:28:25Z",
+  "stamp": "2026-07-24T00:28:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T00:24:49Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "MES",
+    "task": "mes-vix-soq-settlement-auction-hedge-unwind",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:28:27Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MNG",
+    "task": "mng-bidweek-physical-index-hedge-window",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:28:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 4,
-    "idea": "mes-vix-soq-settlement-auction-hedge-unwind",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.62
-   },
-   {
-    "rank": 5,
-    "idea": "mng-bidweek-physical-index-hedge-window",
-    "source": "literature",
-    "markets": [
-     "MNG"
-    ],
-    "score": 0.58
-   },
    {
     "rank": 6,
     "idea": "zs-spot-month-position-limit-forced-prefnd-liquidation",
@@ -554,9 +552,9 @@
    }
   ],
   "funnel": {
-   "idea": 12,
+   "idea": 10,
    "registered": 183,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
