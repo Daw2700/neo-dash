@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T07:11:42Z",
+  "stamp": "2026-07-24T07:15:29Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 2 testers in flight",
+  "status": "funnel running",
   "engine_state": "ok",
-  "n_registered": 1266,
+  "n_registered": 1267,
   "n_results": 1456,
   "n_trials": 84356,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 6,
   "lifetime": {
    "trials": 84356,
-   "registered": 1266,
+   "registered": 1267,
    "tested": 1015,
    "passed": 191,
    "survived": 43,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T07:12:27.109335+00:00",
+   "hash": "a12b00f1",
+   "name": "scout-80-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-24T07:11:28.709097+00:00",
    "hash": "27d6629e",
    "name": "zs-percent-of-full-carry-storage-election",
@@ -422,14 +430,6 @@
    "status": "registered",
    "kind": "register",
    "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-24T06:32:18.473852+00:00",
-   "hash": "9950c549",
-   "name": "xsec-carry-rank-micro-complex-neutral",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 1.114"
   }
  ],
  "pipeline": {
@@ -441,20 +441,12 @@
     "stage": "idea-scout",
     "started": "2026-07-24T07:06:48Z",
     "state": "running"
-   },
-   {
-    "agent": "sweep",
-    "market": null,
-    "task": "vectorized grammar sweep",
-    "stage": "sweep",
-    "started": "2026-07-24T07:06:48Z",
-    "state": "running"
    }
   ],
   "backlog": [],
   "funnel": {
    "idea": 0,
-   "registered": 214,
+   "registered": 215,
    "dev3yr": 0,
    "robustness": 0,
    "mes_replication": 0,
