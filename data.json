@@ -1,20 +1,20 @@
 {
  "meta": {
-  "stamp": "2026-07-24T01:31:14Z",
+  "stamp": "2026-07-24T01:36:32Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1184,
-  "n_results": 1374,
-  "n_trials": 79239,
+  "n_registered": 1187,
+  "n_results": 1377,
+  "n_trials": 79242,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 6,
   "lifetime": {
-   "trials": 79239,
-   "registered": 1184,
-   "tested": 962,
-   "passed": 174,
+   "trials": 79242,
+   "registered": 1187,
+   "tested": 965,
+   "passed": 176,
    "survived": 37,
    "replicated": 14,
    "book": 13
@@ -246,6 +246,18 @@
    }
   },
   {
+   "id": "mgc-week-drought-continuation",
+   "name": "mgc-week-drought-continuation",
+   "market": "MGC",
+   "tier": "candidate",
+   "pinned": false,
+   "n": 39,
+   "wr": 0.641,
+   "usd_mo": 158,
+   "pf": 3.494,
+   "usd_trade": 145.8
+  },
+  {
    "id": "mcl-inside-week-unresolved-positioning-carryover",
    "name": "mcl-inside-week-unresolved-positioning-carryover",
    "market": "MCL",
@@ -316,25 +328,41 @@
     "growth_max": 8,
     "apex_max": 8
    }
-  },
-  {
-   "id": "mgc-china-lpr-fix-evening-window",
-   "name": "mgc-china-lpr-fix-evening-window",
-   "market": "MGC",
-   "tier": "candidate",
-   "pinned": false,
-   "n": 27,
-   "wr": 0.5926,
-   "usd_mo": 8,
-   "pf": 1.887,
-   "usd_trade": 10.6,
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T01:35:48.097768+00:00",
+   "hash": "57852860",
+   "name": "scout-76-screen",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
+   "t": "2026-07-24T01:34:59.939371+00:00",
+   "hash": "2f8e1e2c",
+   "name": "mgc-week-drought-continuation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 3.494"
+  },
+  {
+   "t": "2026-07-24T01:33:25.269981+00:00",
+   "hash": "63ed2727",
+   "name": "mcl-week-scale-participation-flood-risk-premium-decay",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.067"
+  },
+  {
+   "t": "2026-07-24T01:31:41.007672+00:00",
+   "hash": "caf6e5b3",
+   "name": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
+   "status": "passes",
+   "kind": "result",
+   "detail": "PF 1.7228"
+  },
   {
    "t": "2026-07-24T01:30:55.423137+00:00",
    "hash": "7a65444e",
@@ -350,14 +378,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.747"
-  },
-  {
-   "t": "2026-07-24T01:30:13.906569+00:00",
-   "hash": "caf6e5b3",
-   "name": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   },
   {
    "t": "2026-07-24T01:25:17.355730+00:00",
@@ -406,42 +426,10 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.457"
-  },
-  {
-   "t": "2026-07-24T01:13:40.477870+00:00",
-   "hash": "64367fd3",
-   "name": "mcl-ng-margin-credit-expiry-fade",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.915"
-  },
-  {
-   "t": "2026-07-24T00:54:55.820835+00:00",
-   "hash": "d3c5abaa",
-   "name": "m2k-midmonth-payday-contribution-inflow",
-   "status": "demoted",
-   "kind": "result",
-   "detail": "PF 1.939"
-  },
-  {
-   "t": "2026-07-24T00:54:40.933905+00:00",
-   "hash": "ef6dfd86",
-   "name": "scout-75-screen",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
   }
  ],
  "pipeline": {
   "workers": [
-   {
-    "agent": "tester-1",
-    "market": "M6E",
-    "task": "m6e-intermeeting-gap-length-unopposed-data-accumulation",
-    "stage": "dev3yr",
-    "started": "2026-07-24T01:28:02Z",
-    "state": "running"
-   },
    {
     "agent": "scout",
     "market": null,
@@ -451,7 +439,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-3",
+    "agent": "tester-2",
     "market": "MCL",
     "task": "mcl-week-scale-participation-flood-risk-premium-decay",
     "stage": "dev3yr",
@@ -459,7 +447,7 @@
     "state": "running"
    },
    {
-    "agent": "tester-4",
+    "agent": "tester-3",
     "market": "MGC",
     "task": "mgc-week-scale-participation-drought-continuation",
     "stage": "dev3yr",
@@ -471,10 +459,10 @@
   "funnel": {
    "idea": 0,
    "registered": 185,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 15,
+   "book_candidate": 17,
    "golden_staged": 1
   },
   "throughput": [
@@ -532,7 +520,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 36
+    "trials": 39
    }
   ]
  },
@@ -588,7 +576,7 @@
    "ticker": "MGC",
    "display": "Gold",
    "status": "active",
-   "n_tested": 68,
+   "n_tested": 69,
    "n_killed": 57,
    "book_sleeves": [],
    "agents_now": []
@@ -606,8 +594,8 @@
    "ticker": "MCL",
    "display": "Crude Oil",
    "status": "active",
-   "n_tested": 83,
-   "n_killed": 59,
+   "n_tested": 84,
+   "n_killed": 60,
    "book_sleeves": [],
    "agents_now": []
   },
@@ -644,7 +632,7 @@
    "ticker": "M6E",
    "display": "Euro FX",
    "status": "active",
-   "n_tested": 53,
+   "n_tested": 54,
    "n_killed": 52,
    "book_sleeves": [],
    "agents_now": []
@@ -1237,6 +1225,26 @@
     "apex_max": 1
    }
   },
+  "mgc-week-drought-continuation": {
+   "name": "mgc-week-drought-continuation",
+   "market": "MGC",
+   "tier": "candidate",
+   "mechanism": "In a gold week whose total volume ranks in the bottom quartile of its trailing 12-week distribution, the marginal buyer is a persistent programme allocator whose sliced order keeps executing into the following week, so a drought week own-direction continues into the next week rather than reverting.",
+   "metrics": {
+    "n": 39,
+    "wr": 0.641,
+    "pf": 3.494,
+    "usd_mo": 158,
+    "usd_trade": 145.8
+   },
+   "verdict_history": [
+    {
+     "t": "2026-07-24T01:34:59.939371+00:00",
+     "stage": "dev3yr",
+     "verdict": "PASSES"
+    }
+   ]
+  },
   "mcl-inside-week-unresolved-positioning-carryover": {
    "name": "mcl-inside-week-unresolved-positioning-carryover",
    "market": "MCL",
@@ -1387,40 +1395,6 @@
      "t": "2026-07-24T00:54:55.820835+00:00",
      "stage": "dev3yr",
      "verdict": "DEMOTED"
-    }
-   ],
-   "sizing": {
-    "growth_max": 8,
-    "apex_max": 8
-   }
-  },
-  "mgc-china-lpr-fix-evening-window": {
-   "name": "mgc-china-lpr-fix-evening-window",
-   "market": "MGC",
-   "tier": "candidate",
-   "mechanism": "China Loan Prime Rate is fixed at 09:15 Beijing time on the 20th of each month; the print lands ~20:00-23:00 ET the evening before (the 19th), a thin Globex window with only Asian desks marking gold, so SGE-side repricing of rate-sensitive physical/retail demand transmits into COMEX gold before US desks arrive to arbitrage it away.",
-   "metrics": {
-    "n": 27,
-    "wr": 0.5926,
-    "pf": 1.887,
-    "usd_mo": 8,
-    "usd_trade": 10.6
-   },
-   "verdict_history": [
-    {
-     "t": "2026-07-23T10:02:09.794157+00:00",
-     "stage": "dev3yr",
-     "verdict": "PASSES"
-    },
-    {
-     "t": "2026-07-23T10:09:48.610703+00:00",
-     "stage": "robustness",
-     "verdict": "SURVIVES robustness"
-    },
-    {
-     "t": "2026-07-23T10:14:59.559673+00:00",
-     "stage": "replication",
-     "verdict": "KILLED"
     }
    ],
    "sizing": {
