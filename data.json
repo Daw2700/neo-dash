@@ -1,19 +1,19 @@
 {
  "meta": {
-  "stamp": "2026-07-23T23:54:49Z",
+  "stamp": "2026-07-24T00:01:54Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1146,
-  "n_results": 1335,
-  "n_trials": 79200,
+  "n_registered": 1149,
+  "n_results": 1338,
+  "n_trials": 79203,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79200,
-   "registered": 1146,
-   "tested": 929,
+   "trials": 79203,
+   "registered": 1149,
+   "tested": 931,
    "passed": 172,
    "survived": 37,
    "replicated": 14,
@@ -336,6 +336,38 @@
  ],
  "feed": [
   {
+   "t": "2026-07-23T23:59:09.761339+00:00",
+   "hash": "a26faec1",
+   "name": "sched-annday-premium-full",
+   "status": "demoted",
+   "kind": "result",
+   "detail": "\u2014"
+  },
+  {
+   "t": "2026-07-23T23:57:21.791422+00:00",
+   "hash": "7f429a7c",
+   "name": "m2k-mes-size-premium-multiweek-rv",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.45"
+  },
+  {
+   "t": "2026-07-23T23:57:13.098533+00:00",
+   "hash": "e64579f0",
+   "name": "mes-derivative-income-etf-weekly-call-roll-cap",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 0.875"
+  },
+  {
+   "t": "2026-07-23T23:57:01.228906+00:00",
+   "hash": "27fc6358",
+   "name": "robust-sched-annday-premium-full",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
+  {
    "t": "2026-07-23T23:52:22.098576+00:00",
    "hash": "4e96214c",
    "name": "met-tape-density-maturation-repricing",
@@ -398,38 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.697"
-  },
-  {
-   "t": "2026-07-23T23:39:46.522013+00:00",
-   "hash": "4fb16f57",
-   "name": "mes-september-complex-wide-rth-only-weakness-REPLICATION-1277",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T23:29:35.979387+00:00",
-   "hash": "26584da7",
-   "name": "mes-september-complex-wide-rth-only-weakness",
-   "status": "survives robustness",
-   "kind": "result",
-   "detail": "\u2014"
-  },
-  {
-   "t": "2026-07-23T23:26:43.828152+00:00",
-   "hash": "0f1f0890",
-   "name": "ROBUSTNESS-BATTERY mes-september-complex-wide-rth-only-weakness",
-   "status": "registered",
-   "kind": "register",
-   "detail": "awaiting test"
-  },
-  {
-   "t": "2026-07-23T23:25:41.602353+00:00",
-   "hash": "7ec32277",
-   "name": "mym-price-weight-herfindahl-effective-breadth-variance-split",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.879"
   }
  ],
  "pipeline": {
@@ -440,22 +440,6 @@
     "task": "robustness: sched-annday-premium-full",
     "stage": "dev3yr",
     "started": "2026-07-23T23:54:23Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-2",
-    "market": "MES",
-    "task": "mes-derivative-income-etf-weekly-call-roll-cap",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:54:48Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
-    "market": "M2K",
-    "task": "m2k-mes-size-premium-multiweek-relative-value",
-    "stage": "dev3yr",
-    "started": "2026-07-23T23:54:48Z",
     "state": "running"
    }
   ],
@@ -526,18 +510,14 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 180,
-   "dev3yr": 3,
+   "registered": 181,
+   "dev3yr": 1,
    "robustness": 0,
    "mes_replication": 0,
-   "book_candidate": 15,
+   "book_candidate": 14,
    "golden_staged": 1
   },
   "throughput": [
-   {
-    "date": "2026-07-10",
-    "trials": 0
-   },
    {
     "date": "2026-07-11",
     "trials": 0
@@ -588,7 +568,11 @@
    },
    {
     "date": "2026-07-23",
-    "trials": 38882
+    "trials": 38885
+   },
+   {
+    "date": "2026-07-24",
+    "trials": 0
    }
   ]
  },
@@ -613,8 +597,8 @@
    "ticker": "MES",
    "display": "S&P 500",
    "status": "active",
-   "n_tested": 190,
-   "n_killed": 156,
+   "n_tested": 191,
+   "n_killed": 157,
    "book_sleeves": [
     "mes-crude-liquidity-channel-risk-transfer",
     "mes-gold-overnight-macro-signal-open-continuation",
@@ -635,8 +619,8 @@
    "ticker": "M2K",
    "display": "Russell 2000",
    "status": "active",
-   "n_tested": 49,
-   "n_killed": 38,
+   "n_tested": 50,
+   "n_killed": 39,
    "book_sleeves": [],
    "agents_now": []
   },
