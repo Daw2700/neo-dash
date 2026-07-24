@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T08:42:23Z",
+  "stamp": "2026-07-24T08:47:33Z",
   "stale_after_min": 30,
   "status": "funnel running",
   "engine_state": "ok",
@@ -433,19 +433,110 @@
   }
  ],
  "pipeline": {
-  "workers": [
+  "workers": [],
+  "backlog": [
    {
-    "agent": "scout",
-    "market": null,
-    "task": "scout",
-    "stage": "idea-scout",
-    "started": "2026-07-24T08:24:09Z",
-    "state": "running"
+    "rank": 1,
+    "idea": "mnq-crosscomplex-tape-complexity-divergence-expansion-gate",
+    "source": "data-screen",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.55
+   },
+   {
+    "rank": 2,
+    "idea": "m2k-late-week-terminal-extreme-weekend-carryover-reversal",
+    "source": "data-screen",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.5
+   },
+   {
+    "rank": 3,
+    "idea": "mes-dominant-clip-size-unfinished-parent-order-continuation",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.47
+   },
+   {
+    "rank": 4,
+    "idea": "zc-implied-derived-outright-depth-overimpact-reversion",
+    "source": "literature",
+    "markets": [
+     "ZC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 5,
+    "idea": "mgc-one-touch-urgent-volume-share-inventory-repair",
+    "source": "literature",
+    "markets": [
+     "MGC"
+    ],
+    "score": 0.45
+   },
+   {
+    "rank": 6,
+    "idea": "mng-cpc-monthly-longrange-outlook-repricing",
+    "source": "literature",
+    "markets": [
+     "MNG"
+    ],
+    "score": 0.42
+   },
+   {
+    "rank": 7,
+    "idea": "mcl-cot-cohort-disagreement-forced-liquidation-expansion",
+    "source": "literature",
+    "markets": [
+     "MCL"
+    ],
+    "score": 0.4
+   },
+   {
+    "rank": 8,
+    "idea": "mes-zn-tail-only-transmission-threshold-degrossing",
+    "source": "literature",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 9,
+    "idea": "m2k-weekday-sentiment-speculative-defensive-rotation",
+    "source": "literature",
+    "markets": [
+     "M2K"
+    ],
+    "score": 0.35
+   },
+   {
+    "rank": 10,
+    "idea": "mes-complexity-gated-shorthorizon-liquidity-provision-rent",
+    "source": "data-screen",
+    "markets": [
+     "MES"
+    ],
+    "score": 0.32
+   },
+   {
+    "rank": 11,
+    "idea": "mnq-aggressor-run-termination-absorber-unwind",
+    "source": "literature",
+    "markets": [
+     "MNQ"
+    ],
+    "score": 0.3
    }
   ],
-  "backlog": [],
   "funnel": {
-   "idea": 0,
+   "idea": 11,
    "registered": 220,
    "dev3yr": 0,
    "robustness": 0,
