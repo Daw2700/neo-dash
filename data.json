@@ -1,10 +1,10 @@
 {
  "meta": {
-  "stamp": "2026-07-24T04:04:42Z",
+  "stamp": "2026-07-24T04:09:18Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
-  "n_registered": 1218,
+  "n_registered": 1219,
   "n_results": 1409,
   "n_trials": 84309,
   "holdout_looks_spent": 0,
@@ -12,7 +12,7 @@
   "needs_attention_count": 7,
   "lifetime": {
    "trials": 84309,
-   "registered": 1218,
+   "registered": 1219,
    "tested": 983,
    "passed": 184,
    "survived": 39,
@@ -327,10 +327,22 @@
    "wr": 0.5926,
    "usd_mo": 8,
    "pf": 1.887,
-   "usd_trade": 10.6
+   "usd_trade": 10.6,
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  ],
  "feed": [
+  {
+   "t": "2026-07-24T04:06:51.494632+00:00",
+   "hash": "05bffe5b",
+   "name": "ROBUSTNESS-BATTERY m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
+   "status": "registered",
+   "kind": "register",
+   "detail": "awaiting test"
+  },
   {
    "t": "2026-07-24T04:00:41.851321+00:00",
    "hash": "2698be1f",
@@ -418,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.422"
-  },
-  {
-   "t": "2026-07-24T03:18:20.186945+00:00",
-   "hash": "2fba4691",
-   "name": "mes-hourly-impact-coefficient-surprise",
-   "status": "killed",
-   "kind": "result",
-   "detail": "PF 0.838"
   }
  ],
  "pipeline": {
@@ -444,6 +448,14 @@
     "task": "m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
     "stage": "dev3yr",
     "started": "2026-07-24T03:57:18Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "M2K",
+    "task": "robustness: m2k-daylight-length-seasonal-risk-aversion-onset-recovery",
+    "stage": "dev3yr",
+    "started": "2026-07-24T04:04:44Z",
     "state": "running"
    }
   ],
@@ -514,8 +526,8 @@
   ],
   "funnel": {
    "idea": 7,
-   "registered": 198,
-   "dev3yr": 2,
+   "registered": 199,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 17,
@@ -1466,7 +1478,11 @@
      "stage": "replication",
      "verdict": "KILLED"
     }
-   ]
+   ],
+   "sizing": {
+    "growth_max": 8,
+    "apex_max": 8
+   }
   }
  },
  "decisions": [
@@ -1656,80 +1672,6 @@
  },
  "bundles": [
   {
-   "id": "Everything (full pool)|apex150",
-   "name": "Everything (full pool)",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 2,
-    "zc-rma-volatility-factor-five-day-window": 5,
-    "zc-farm-cash-rent-duedate-liquidation-window": 1,
-    "scan-mbt": 1,
-    "b3-nr7-breakout": 1,
-    "b10-nagel-vix-reversal": 2,
-    "mnq-event-free-day-flow-persistence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 1,
-    "zn-fr2004-dealer-inventory-capacity-state": 1,
-    "mgc-friday-preclosure-unhedgeable-closure-inventory-bid": 4,
-    "m2k-midmonth-payday-contribution-inflow": 3
-   },
-   "total_micros": 22,
-   "p_breach": 0.193,
-   "usd_mo": 1170,
-   "usd_mo_5acct": 5850,
-   "pct_goal": 2.106,
-   "wr": 0.585,
-   "wr_month": 0.778,
-   "months": {
-    "win_per_yr": 9.3,
-    "lose_per_yr": 2.7,
-    "avg_win": 2361,
-    "avg_lose": -641
-   },
-   "first_pay_days": 41,
-   "pay_rate_1yr": 0.995,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 21060
-  },
-  {
-   "id": "Cross-market spread|apex150",
-   "name": "Cross-market spread",
-   "plan": "apex150 (verified)",
-   "provisional": true,
-   "assumed_rules": false,
-   "members": {
-    "b2-vix-reversion": 3,
-    "b3-monday-long": 1,
-    "m2k-midmonth-payday-contribution-inflow": 2,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mes-crude-liquidity-channel-risk-transfer": 3,
-    "mgc-friday-preclosure-unhedgeable-closure-inventory-bid": 5,
-    "scan-mbt": 2,
-    "zc-rma-volatility-factor-five-day-window": 5,
-    "zn-fr2004-dealer-inventory-capacity-state": 2
-   },
-   "total_micros": 25,
-   "p_breach": 0.194,
-   "usd_mo": 996,
-   "usd_mo_5acct": 4980,
-   "pct_goal": 1.793,
-   "wr": 0.562,
-   "wr_month": 0.806,
-   "months": {
-    "win_per_yr": 9.7,
-    "lose_per_yr": 2.3,
-    "avg_win": 2061,
-    "avg_lose": -737
-   },
-   "first_pay_days": 64,
-   "pay_rate_1yr": 0.968,
-   "firm": "Apex",
-   "accounts": 18,
-   "usd_mo_total": 17928
-  },
-  {
    "id": "Validated book + vix-reversion|apex150",
    "name": "Validated book + vix-reversion",
    "plan": "apex150 (verified)",
@@ -1764,6 +1706,74 @@
    "firm": "Apex",
    "accounts": 18,
    "usd_mo_total": 15786
+  },
+  {
+   "id": "Everything (full pool)|apex150",
+   "name": "Everything (full pool)",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 2,
+    "b3-nr7-breakout": 1,
+    "b10-nagel-vix-reversal": 1,
+    "mnq-event-free-day-flow-persistence": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 1,
+    "m2k-midmonth-payday-contribution-inflow": 2
+   },
+   "total_micros": 8,
+   "p_breach": 0.19,
+   "usd_mo": 785,
+   "usd_mo_5acct": 3925,
+   "pct_goal": 1.413,
+   "wr": 0.564,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1715,
+    "avg_lose": -466
+   },
+   "first_pay_days": 48,
+   "pay_rate_1yr": 0.989,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 14130
+  },
+  {
+   "id": "Cross-market spread|apex150",
+   "name": "Cross-market spread",
+   "plan": "apex150 (verified)",
+   "provisional": true,
+   "assumed_rules": false,
+   "members": {
+    "b2-vix-reversion": 3,
+    "b3-monday-long": 1,
+    "m2k-midmonth-payday-contribution-inflow": 2,
+    "mcl-inside-week-unresolved-positioning-carryover": 2,
+    "mes-crude-liquidity-channel-risk-transfer": 3,
+    "scan-mbt": 1,
+    "zc-rma-volatility-factor-five-day-window": 1,
+    "zn-fr2004-dealer-inventory-capacity-state": 2
+   },
+   "total_micros": 15,
+   "p_breach": 0.198,
+   "usd_mo": 761,
+   "usd_mo_5acct": 3805,
+   "pct_goal": 1.37,
+   "wr": 0.553,
+   "wr_month": 0.75,
+   "months": {
+    "win_per_yr": 9.0,
+    "lose_per_yr": 3.0,
+    "avg_win": 1815,
+    "avg_lose": -587
+   },
+   "first_pay_days": 72,
+   "pay_rate_1yr": 0.939,
+   "firm": "Apex",
+   "accounts": 18,
+   "usd_mo_total": 13698
   },
   {
    "id": "Validated book (all approved sleeves)|apex150",
@@ -1838,33 +1848,32 @@
    "members": {
     "b2-vix-reversion": 5,
     "b3-monday-long": 2,
-    "m2k-midmonth-payday-contribution-inflow": 5,
+    "m2k-midmonth-payday-contribution-inflow": 3,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mes-crude-liquidity-channel-risk-transfer": 5,
-    "mgc-friday-preclosure-unhedgeable-closure-inventory-bid": 5,
-    "scan-mbt": 3,
+    "mes-crude-liquidity-channel-risk-transfer": 4,
+    "scan-mbt": 2,
     "zc-rma-volatility-factor-five-day-window": 5,
-    "zn-fr2004-dealer-inventory-capacity-state": 3,
+    "zn-fr2004-dealer-inventory-capacity-state": 2,
     "zs-china-state-reserve-auction-window": 1
    },
-   "total_micros": 39,
-   "p_breach": 0.2,
-   "usd_mo": 1603,
-   "usd_mo_5acct": 8015,
-   "pct_goal": 0.801,
-   "wr": 0.557,
+   "total_micros": 29,
+   "p_breach": 0.198,
+   "usd_mo": 1450,
+   "usd_mo_5acct": 7250,
+   "pct_goal": 0.725,
+   "wr": 0.553,
    "wr_month": 0.806,
    "months": {
     "win_per_yr": 9.7,
     "lose_per_yr": 2.3,
-    "avg_win": 3911,
-    "avg_lose": -1318
+    "avg_win": 3392,
+    "avg_lose": -1252
    },
-   "first_pay_days": 73,
-   "pay_rate_1yr": 0.896,
+   "first_pay_days": 75,
+   "pay_rate_1yr": 0.909,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 8015
+   "usd_mo_total": 7250
   },
   {
    "id": "Everything (full pool)|growth",
@@ -1874,38 +1883,37 @@
    "assumed_rules": false,
    "members": {
     "b2-vix-reversion": 2,
-    "zc-rma-volatility-factor-five-day-window": 1,
+    "zc-rma-volatility-factor-five-day-window": 2,
     "mes-crude-liquidity-channel-risk-transfer": 1,
     "zs-china-state-reserve-auction-window": 1,
-    "scan-mbt": 2,
+    "scan-mbt": 1,
     "b3-nr7-breakout": 1,
     "b10-nagel-vix-reversal": 1,
     "b3-monday-long": 1,
-    "mes-gold-overnight-macro-signal-open-continuation": 1,
     "mnq-event-free-day-flow-persistence": 1,
     "b3-preholiday-drift": 1,
     "mes-settle-tradable-divergence": 1,
-    "mcl-inside-week-unresolved-positioning-carryover": 2,
-    "mgc-friday-preclosure-unhedgeable-closure-inventory-bid": 2
+    "mcl-inside-week-unresolved-positioning-carryover": 3,
+    "mgc-china-lpr-fix-evening-window": 1
    },
-   "total_micros": 18,
-   "p_breach": 0.194,
-   "usd_mo": 1441,
-   "usd_mo_5acct": 7205,
-   "pct_goal": 0.721,
-   "wr": 0.561,
+   "total_micros": 17,
+   "p_breach": 0.19,
+   "usd_mo": 1428,
+   "usd_mo_5acct": 7140,
+   "pct_goal": 0.714,
+   "wr": 0.548,
    "wr_month": 0.917,
    "months": {
     "win_per_yr": 11.0,
     "lose_per_yr": 1.0,
-    "avg_win": 2401,
-    "avg_lose": -1640
+    "avg_win": 2382,
+    "avg_lose": -1670
    },
-   "first_pay_days": 69,
-   "pay_rate_1yr": 0.972,
+   "first_pay_days": 70,
+   "pay_rate_1yr": 0.973,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 7205
+   "usd_mo_total": 7140
   },
   {
    "id": "Validated book (all approved sleeves)|growth",
@@ -2049,30 +2057,29 @@
    "members": {
     "b10-nagel-vix-reversal": 4,
     "b2-vix-reversion": 5,
-    "b3-preholiday-drift": 4,
-    "m2k-midmonth-payday-contribution-inflow": 2,
+    "b3-preholiday-drift": 3,
+    "m2k-midmonth-payday-contribution-inflow": 5,
     "mcl-inside-week-unresolved-positioning-carryover": 5,
-    "mgc-friday-preclosure-unhedgeable-closure-inventory-bid": 5,
     "zn-fr2004-dealer-inventory-capacity-state": 2
    },
-   "total_micros": 27,
-   "p_breach": 0.184,
-   "usd_mo": 727,
-   "usd_mo_5acct": 3635,
-   "pct_goal": 0.363,
-   "wr": 0.608,
-   "wr_month": 0.694,
+   "total_micros": 24,
+   "p_breach": 0.19,
+   "usd_mo": 729,
+   "usd_mo_5acct": 3645,
+   "pct_goal": 0.364,
+   "wr": 0.623,
+   "wr_month": 0.722,
    "months": {
-    "win_per_yr": 8.3,
-    "lose_per_yr": 3.7,
-    "avg_win": 2999,
-    "avg_lose": -1273
+    "win_per_yr": 8.7,
+    "lose_per_yr": 3.3,
+    "avg_win": 2755,
+    "avg_lose": -1306
    },
-   "first_pay_days": 91,
-   "pay_rate_1yr": 0.834,
+   "first_pay_days": 96,
+   "pay_rate_1yr": 0.821,
    "firm": "Tradeify",
    "accounts": 5,
-   "usd_mo_total": 3635
+   "usd_mo_total": 3645
   }
  ],
  "sizing_meta": {
