@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T06:01:48Z",
+  "stamp": "2026-07-24T06:01:50Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -441,27 +441,25 @@
     "stage": "dev3yr",
     "started": "2026-07-24T06:01:20Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-2",
+    "market": "ZN",
+    "task": "zn-prediction-market-vs-futures-prerelease-divergence",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:01:49Z",
+    "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "ZS",
+    "task": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
+    "stage": "dev3yr",
+    "started": "2026-07-24T06:01:49Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 5,
-    "idea": "zn-prediction-market-vs-futures-prerelease-divergence",
-    "source": "literature",
-    "markets": [
-     "ZN"
-    ],
-    "score": 0.47
-   },
-   {
-    "rank": 3,
-    "idea": "zs-repeated-extreme-testing-commercial-refill-exhaustion",
-    "source": "data-screen",
-    "markets": [
-     "ZS"
-    ],
-    "score": 0.46
-   },
    {
     "rank": 6,
     "idea": "mng-eia-consensus-dispersion-not-surprise-postprint-drift",
@@ -536,9 +534,9 @@
    }
   ],
   "funnel": {
-   "idea": 10,
+   "idea": 8,
    "registered": 206,
-   "dev3yr": 1,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 18,
