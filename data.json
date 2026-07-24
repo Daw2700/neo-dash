@@ -1,15 +1,15 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:18:15Z",
+  "stamp": "2026-07-24T00:20:39Z",
   "stale_after_min": 30,
-  "status": "funnel running \u2014 1 tester in flight",
+  "status": "funnel running",
   "engine_state": "ok",
   "n_registered": 1157,
   "n_results": 1348,
   "n_trials": 79213,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
-  "needs_attention_count": 7,
+  "needs_attention_count": 6,
   "lifetime": {
    "trials": 79213,
    "registered": 1157,
@@ -1525,32 +1525,6 @@
     "Live/paper exposure still requires its own GO regardless"
    ],
    "staged": "2026-07-22T14:19:27Z"
-  },
-  {
-   "id": "d-settlediv-mirror-sync",
-   "kind": "cleanup",
-   "needs_attention": true,
-   "title": "Six approved book entries are on the ledger, but the published book and all sizing still exclude all six",
-   "recommendation": "Approve the six-hash mirror edit + a sizing re-run so all six new sleeves actually count",
-   "evidence": "Book membership is hard-coded in two places: ~/mnq_lab/dashboard/build_dashboard.py (VALID \u2014 updated to 13 sleeves) and, outside the executor's write scope, ~/neo-dashboard/build_data.py (VALID hash set, still at 7). sizing.py needs no manual edit: it derives VALIDATED from the build_data leaderboard tier and auto-maps any strategy with a data/trades_<id>.csv. All six logs now sit under their leaderboard ids \u2014 trades_mes-settle-tradable-divergence.csv (n=288), trades_mes-crude-liquidity-channel-risk-transfer.csv (n=55), trades_zs-china-state-reserve-auction-window.csv (n=108), trades_zc-farm-cash-rent-duedate-liquidation-window.csv (n=30), trades_mnq-event-free-day-flow-persistence.csv (n=675) and trades_zc-rma-volatility-factor-five-day-window.csv (n=15, 2023-02-22..2025-02-28, copied from the worker's short-named trades_zc-rma-volfactor-five-day-window.csv, which would otherwise have been skipped by the auto-map) \u2014 so adding the six hashes is the whole job. Pending: mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zc-farm-cash-rent-duedate-liquidation-window (472a81f2e6f1b0a6) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; mnq-event-free-day-flow-persistence (27ca26e37ce18df2) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing; zc-rma-volatility-factor-five-day-window (14f51e7397ad8290) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-   "what_yes_means": "The site shows a 13-sleeve book, sizing computes max micros for all six new sleeves under the same 20% breach cap, and every bundle + the $10k roadmap recompute including them",
-   "recap": "You've now approved six sleeves into the book \u2014 settle-vs-tradable divergence, the crude-shock equity risk-transfer, the China state-reserve auction window, the farm cash-rent due-date window, the event-free-day flow persistence sleeve, and the RMA crop-insurance February window \u2014 and the ledger says so for all six. The dashboard hasn't caught up: its own copy of the book list lives in a file the executor wasn't allowed to edit, so the site still shows 7 sleeves and none of the six gets any micros in any bundle.",
-   "why": "The ledger is the source of truth and it already records all six admissions, so no number in the record is wrong \u2014 but the screen you read, the sizing, and the $10k roadmap are driven by a duplicated hash list in the public dashboard repo. Rather than silently edit a repo the engine auto-pushes, the engine asks first. This is now six hashes and a re-run. Two things worth knowing before the recompute: the event-free sleeve fires on nearly every session and correlates +0.70 / +0.57 per-day with b3-nr7-breakout and b4-open-drive, and the RMA sleeve you just approved trades the IDENTICAL 15 ZC sessions as the cash-rent sleeve's March-1 leg (corr +0.42, same direction 10/15). Neither will diversify the way a count of sleeves suggests.",
-   "steps": [
-    "Approve: add 5e5ccf350206d13f, 628b3b410c1fbe65, 109efb3a44241183, 472a81f2e6f1b0a6, 27ca26e37ce18df2 and 14f51e7397ad8290 to ~/neo-dashboard/build_data.py VALID",
-    "Re-run sizing.py then build_data.py; engine pushes on its next publish",
-    "No CSV-map or VALIDATED edit needed \u2014 sizing.py auto-derives all six, and all six trade logs now sit under their leaderboard ids",
-    "Deny: all six ledger admissions still stand, but the published book stays at 7 sleeves and none of the six sleeves earns any allocation"
-   ],
-   "pending_mirrors": [
-    "mes-settle-tradable-divergence (5e5ccf350206d13f) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "mes-crude-liquidity-channel-risk-transfer (628b3b410c1fbe65) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "zs-china-state-reserve-auction-window (109efb3a44241183) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "zc-farm-cash-rent-duedate-liquidation-window (472a81f2e6f1b0a6) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "mnq-event-free-day-flow-persistence (27ca26e37ce18df2) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing",
-    "zc-rma-volatility-factor-five-day-window (14f51e7397ad8290) \u2014 approved for ADMISSION 2026-07-23; needs adding, not removing"
-   ],
-   "staged": "2026-07-23T14:45:17Z"
   }
  ],
  "roadmap": {
