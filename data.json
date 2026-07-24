@@ -1,6 +1,6 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:34:25Z",
+  "stamp": "2026-07-24T00:34:27Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
@@ -449,18 +449,17 @@
     "stage": "dev3yr",
     "started": "2026-07-24T00:32:21Z",
     "state": "running"
+   },
+   {
+    "agent": "tester-3",
+    "market": "MES",
+    "task": "mes-dividend-cash-equitization-payday-cluster",
+    "stage": "dev3yr",
+    "started": "2026-07-24T00:34:27Z",
+    "state": "running"
    }
   ],
   "backlog": [
-   {
-    "rank": 10,
-    "idea": "mes-dividend-cash-equitization-payday-cluster",
-    "source": "literature",
-    "markets": [
-     "MES"
-    ],
-    "score": 0.45
-   },
    {
     "rank": 11,
     "idea": "sil-lbma-benchmark-auction-shallow-participant-imbalance",
@@ -508,9 +507,9 @@
    }
   ],
   "funnel": {
-   "idea": 6,
+   "idea": 5,
    "registered": 183,
-   "dev3yr": 2,
+   "dev3yr": 3,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
