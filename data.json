@@ -1,17 +1,17 @@
 {
  "meta": {
-  "stamp": "2026-07-24T00:12:30Z",
+  "stamp": "2026-07-24T00:12:52Z",
   "stale_after_min": 30,
   "status": "funnel running \u2014 3 testers in flight",
   "engine_state": "ok",
   "n_registered": 1154,
-  "n_results": 1342,
-  "n_trials": 79207,
+  "n_results": 1343,
+  "n_trials": 79208,
   "holdout_looks_spent": 0,
   "pinned_id": "b2-vix-reversion",
   "needs_attention_count": 7,
   "lifetime": {
-   "trials": 79207,
+   "trials": 79208,
    "registered": 1154,
    "tested": 935,
    "passed": 172,
@@ -336,6 +336,14 @@
  ],
  "feed": [
   {
+   "t": "2026-07-24T00:12:33.136224+00:00",
+   "hash": "dc16095a",
+   "name": "mgc-1000-expectations-slot-dominance",
+   "status": "killed",
+   "kind": "result",
+   "detail": "PF 1.149"
+  },
+  {
    "t": "2026-07-24T00:12:12.510197+00:00",
    "hash": "5aa26d43",
    "name": "mes-buffer-etf-monthstart-optionroll-hedge",
@@ -422,14 +430,6 @@
    "status": "killed",
    "kind": "result",
    "detail": "PF 0.38"
-  },
-  {
-   "t": "2026-07-23T23:49:53.547764+00:00",
-   "hash": "a26faec1",
-   "name": "sched-annday-premium-full",
-   "status": "passes",
-   "kind": "result",
-   "detail": "PF 1.183"
   }
  ],
  "pipeline": {
@@ -444,14 +444,6 @@
    },
    {
     "agent": "tester-2",
-    "market": "MGC",
-    "task": "recheck: mgc-1000-expectations-slot-dominance",
-    "stage": "dev3yr",
-    "started": "2026-07-24T00:10:19Z",
-    "state": "running"
-   },
-   {
-    "agent": "tester-3",
     "market": "SIL",
     "task": "sil-presettlement-minute-preposition-displacement",
     "stage": "dev3yr",
@@ -473,7 +465,7 @@
   "funnel": {
    "idea": 1,
    "registered": 182,
-   "dev3yr": 3,
+   "dev3yr": 2,
    "robustness": 0,
    "mes_replication": 0,
    "book_candidate": 14,
@@ -534,7 +526,7 @@
    },
    {
     "date": "2026-07-24",
-    "trials": 4
+    "trials": 5
    }
   ]
  },
